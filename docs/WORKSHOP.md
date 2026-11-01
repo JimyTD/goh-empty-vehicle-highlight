@@ -1,5 +1,9 @@
 # Workshop 发布材料
 
+已发布：https://steamcommunity.com/sharedfiles/filedetails/?id=3831496369 （Id 3831496369，2026-11-01）
+
+上传工具 Description 栏只接受 `A-Z a-z 0-9 , ; . - _ ( ) '` 和空格，不能有中文、BBCode、换行；完整描述发布后在网页 Edit title & description 里粘贴。
+
 上传工具：`<游戏目录>\binaries\x64\call_to_arms_workshop.exe`（先启动 Steam）
 
 | 字段 | 填写 |
