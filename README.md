@@ -14,7 +14,7 @@ A mod for *Call to Arms – Gates of Hell: Ostfront*. Pressing the vanilla "high
 2. 每种载具一个替身：同一模型、带 stuff extender 和专属物品，所有碰撞体关闭，因此能被 C 点亮、悬停显示名称，但不可拾取、不可选中、不挡子弹。
 3. 替身、物品、名称和脚本块由 `tools/gen_proxies.py` 从当前安装的游戏数据生成（当前 822 种载具）。
 
-详细的引擎分析见 [docs/NOTES.md](docs/NOTES.md)。
+详细的引擎分析见 [docs/NOTES.md](docs/NOTES.md)，Workshop 发布材料见 [docs/WORKSHOP.md](docs/WORKSHOP.md)。
 
 ## 目录
 
