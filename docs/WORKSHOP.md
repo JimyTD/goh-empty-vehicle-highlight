@@ -5,7 +5,7 @@
 | 字段 | 填写 |
 |---|---|
 | Upload Directory | 本仓库的 `mod\empty_vehicle_highlight`（上传工具若回写 `mod.info`，改动会留在仓库里，提交即可） |
-| Preview Image | 本仓库的 `docs\workshop_preview.png`（512×512） |
+| Preview Image | 本仓库的 `docs\workshop_preview.jpg`（512×512） |
 | Title | `Empty Vehicle Highlight` |
 | Tags | 选与界面 / 游戏性相关的标签 |
 | Visibility | 先 Private，自己订阅测试后再改 Public |

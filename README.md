@@ -4,7 +4,7 @@ Call to Arms – Gates of Hell: Ostfront 模组。按原版“高亮地面物品
 
 A mod for *Call to Arms – Gates of Hell: Ostfront*. Pressing the vanilla "highlight items" key (**C**) also outlines every crewless vehicle; hovering shows the vehicle name.
 
-![preview](docs/workshop_preview.png)
+![preview](docs/workshop_preview.jpg)
 
 ## 原理
 
