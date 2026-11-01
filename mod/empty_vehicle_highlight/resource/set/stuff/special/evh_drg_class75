@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for drg_class75 (generated)
+	{entity "evh_drg_class75"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

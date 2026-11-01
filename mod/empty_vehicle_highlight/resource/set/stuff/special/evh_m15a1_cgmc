@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for m15a1_cgmc (generated)
+	{entity "evh_m15a1_cgmc"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

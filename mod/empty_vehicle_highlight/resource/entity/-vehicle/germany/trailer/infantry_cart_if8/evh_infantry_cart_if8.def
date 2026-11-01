@@ -1,0 +1,18 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for infantry_cart_if8 (generated)
+	{Extension "infantry_cart_if8.mdl"}
+	{extender "stuff"
+		{item "evh_infantry_cart_if8"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

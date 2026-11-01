@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for sherman1c_tulip_hybrid (generated)
+	{entity "evh_sherman1c_tulip_hybrid"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

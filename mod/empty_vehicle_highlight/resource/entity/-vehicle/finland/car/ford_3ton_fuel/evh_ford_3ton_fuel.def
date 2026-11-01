@@ -1,0 +1,50 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for ford_3ton_fuel (generated)
+	{Extension "ford_3ton_fuel.mdl"}
+	{extender "stuff"
+		{item "evh_ford_3ton_fuel"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "bodyback1" {able clear}}
+	{volume "bodyback10" {able clear}}
+	{volume "bodyback11" {able clear}}
+	{volume "bodyback12" {able clear}}
+	{volume "bodyback13" {able clear}}
+	{volume "bodyback14" {able clear}}
+	{volume "bodyback15" {able clear}}
+	{volume "bodyback16" {able clear}}
+	{volume "bodyback17" {able clear}}
+	{volume "bodyback18" {able clear}}
+	{volume "bodyback19" {able clear}}
+	{volume "bodyback2" {able clear}}
+	{volume "bodyback3" {able clear}}
+	{volume "bodyback4" {able clear}}
+	{volume "bodyback5" {able clear}}
+	{volume "bodyback6" {able clear}}
+	{volume "bodyback7" {able clear}}
+	{volume "bodyback8" {able clear}}
+	{volume "bodyback9" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "window1" {able clear}}
+	{volume "window2" {able clear}}
+	{volume "window3" {able clear}}
+	{volume "window4" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

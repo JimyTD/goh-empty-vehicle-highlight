@@ -1,0 +1,17 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for ammo_trailer (generated)
+	{Extension "ammo_trailer.mdl"}
+	{extender "stuff"
+		{item "evh_ammo_trailer"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

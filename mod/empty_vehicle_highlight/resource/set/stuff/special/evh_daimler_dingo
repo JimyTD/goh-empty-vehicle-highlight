@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for daimler_dingo (generated)
+	{entity "evh_daimler_dingo"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

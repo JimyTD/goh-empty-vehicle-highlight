@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 94mm_qf_3_7_aa_early (generated)
+	{entity "evh_94mm_qf_3_7_aa_early"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

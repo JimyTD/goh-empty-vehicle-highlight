@@ -1,0 +1,20 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for ap_2 (generated)
+	{Extension "ap_2.mdl"}
+	{extender "stuff"
+		{item "evh_ap_2"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "detail1" {able clear}}
+	{volume "shield_cover" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

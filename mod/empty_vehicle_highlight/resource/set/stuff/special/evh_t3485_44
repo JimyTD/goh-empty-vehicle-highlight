@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for t3485_44 (generated)
+	{entity "evh_t3485_44"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,47 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for sdkfz234_4 (generated)
+	{Extension "sdkfz234_4.mdl"}
+	{extender "stuff"
+		{item "evh_sdkfz234_4"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "detail1" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "gun_shield1" {able clear}}
+	{volume "gun_shield2" {able clear}}
+	{volume "gun_shield3" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "tshield1" {able clear}}
+	{volume "tshield2" {able clear}}
+	{volume "tshield3" {able clear}}
+	{volume "tshield4" {able clear}}
+	{volume "tshield5" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelleft3" {able clear}}
+	{volume "wheelleft4" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelright3" {able clear}}
+	{volume "wheelright4" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

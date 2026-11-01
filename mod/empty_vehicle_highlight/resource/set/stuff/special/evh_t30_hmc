@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for t30_hmc (generated)
+	{entity "evh_t30_hmc"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

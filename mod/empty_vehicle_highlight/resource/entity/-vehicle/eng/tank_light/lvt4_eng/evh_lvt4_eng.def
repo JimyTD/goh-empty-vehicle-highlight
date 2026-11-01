@@ -1,0 +1,37 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for lvt4_eng (generated)
+	{Extension "lvt4_eng.mdl"}
+	{extender "stuff"
+		{item "evh_lvt4_eng"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "fuel1" {able clear}}
+	{volume "fuel2" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield1a" {able clear}}
+	{volume "shield1b" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "transmission" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for blitz3_6_fuel (generated)
+	{entity "evh_blitz3_6_fuel"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

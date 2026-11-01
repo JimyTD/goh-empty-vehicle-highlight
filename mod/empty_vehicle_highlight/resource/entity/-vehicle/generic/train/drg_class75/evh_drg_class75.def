@@ -1,0 +1,47 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for drg_class75 (generated)
+	{Extension "drg_class75.mdl"}
+	{extender "stuff"
+		{item "evh_drg_class75"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "engine3" {able clear}}
+	{volume "engine4" {able clear}}
+	{volume "engine5" {able clear}}
+	{volume "hatch" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelleft3" {able clear}}
+	{volume "wheelleft4" {able clear}}
+	{volume "wheelleft5" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelright3" {able clear}}
+	{volume "wheelright4" {able clear}}
+	{volume "wheelright5" {able clear}}
+	{volume "window1" {able clear}}
+	{volume "window2" {able clear}}
+	{volume "window3" {able clear}}
+	{volume "window4" {able clear}}
+	{volume "window5" {able clear}}
+	{volume "window6" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,50 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 88mm_qf25_mk1_4p (generated)
+	{Extension "88mm_qf25_mk1_4p.mdl"}
+	{extender "stuff"
+		{item "evh_88mm_qf25_mk1_4p"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body10" {able clear}}
+	{volume "body11" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "body8" {able clear}}
+	{volume "body9" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "hole5" {able clear}}
+	{volume "hole6" {able clear}}
+	{volume "hole7" {able clear}}
+	{volume "hole8" {able clear}}
+	{volume "hole9" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield10" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "shield3" {able clear}}
+	{volume "shield4" {able clear}}
+	{volume "shield5" {able clear}}
+	{volume "shield6" {able clear}}
+	{volume "shield7" {able clear}}
+	{volume "shield8" {able clear}}
+	{volume "shield9" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

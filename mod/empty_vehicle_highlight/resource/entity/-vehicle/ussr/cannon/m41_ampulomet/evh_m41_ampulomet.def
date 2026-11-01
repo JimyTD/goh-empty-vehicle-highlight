@@ -1,0 +1,19 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for m41_ampulomet (generated)
+	{Extension "m41_ampulomet.mdl"}
+	{extender "stuff"
+		{item "evh_m41_ampulomet"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

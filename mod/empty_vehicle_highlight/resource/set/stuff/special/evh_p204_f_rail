@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for p204_f_rail (generated)
+	{entity "evh_p204_f_rail"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

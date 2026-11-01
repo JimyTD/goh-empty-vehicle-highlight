@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for mg42_lafette (generated)
+	{entity "evh_mg42_lafette"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for stuart5_recce (generated)
+	{entity "evh_stuart5_recce"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

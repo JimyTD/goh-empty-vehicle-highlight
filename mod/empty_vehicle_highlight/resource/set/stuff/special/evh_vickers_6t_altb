@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for vickers_6t_altb (generated)
+	{entity "evh_vickers_6t_altb"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

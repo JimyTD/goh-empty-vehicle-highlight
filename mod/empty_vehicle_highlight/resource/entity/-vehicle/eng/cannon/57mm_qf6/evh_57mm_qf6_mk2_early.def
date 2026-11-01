@@ -1,0 +1,32 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 57mm_qf6_mk2_early (generated)
+	{Extension "57mm_qf6_mk2.mdl"}
+	{extender "stuff"
+		{item "evh_57mm_qf6_mk2_early"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "shield21" {able clear}}
+	{volume "shield22" {able clear}}
+	{volume "shield23" {able clear}}
+	{volume "shield24" {able clear}}
+	{volume "shield3" {able clear}}
+	{volume "shield_lower" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

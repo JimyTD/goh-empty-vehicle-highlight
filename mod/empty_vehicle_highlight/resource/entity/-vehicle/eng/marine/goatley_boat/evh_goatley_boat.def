@@ -1,0 +1,17 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for goatley_boat (generated)
+	{Extension "goatley_boat.mdl"}
+	{extender "stuff"
+		{item "evh_goatley_boat"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ballast0" {able clear}}
+	{volume "ballast1" {able clear}}
+	{volume "body" {able clear}}
+	{volume "hole" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for m3a1_stuart (generated)
+	{entity "evh_m3a1_stuart"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

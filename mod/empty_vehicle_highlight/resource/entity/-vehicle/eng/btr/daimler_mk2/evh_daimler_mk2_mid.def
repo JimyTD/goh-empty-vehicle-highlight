@@ -1,0 +1,43 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for daimler_mk2_mid (generated)
+	{Extension "daimler_mk2.mdl"}
+	{extender "stuff"
+		{item "evh_daimler_mk2_mid"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "ammo4" {able clear}}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "fuel1" {able clear}}
+	{volume "fuel2" {able clear}}
+	{volume "mantlet" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "turret2" {able clear}}
+	{volume "turret3" {able clear}}
+	{volume "turret4" {able clear}}
+	{volume "turret5" {able clear}}
+	{volume "turret6" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 114mm_h18_how_mid (generated)
+	{entity "evh_114mm_h18_how_mid"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

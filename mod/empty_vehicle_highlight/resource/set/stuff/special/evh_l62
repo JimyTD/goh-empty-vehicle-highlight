@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for l62 (generated)
+	{entity "evh_l62"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

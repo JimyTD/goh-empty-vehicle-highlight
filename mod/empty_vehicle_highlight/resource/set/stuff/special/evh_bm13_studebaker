@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for bm13_studebaker (generated)
+	{entity "evh_bm13_studebaker"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

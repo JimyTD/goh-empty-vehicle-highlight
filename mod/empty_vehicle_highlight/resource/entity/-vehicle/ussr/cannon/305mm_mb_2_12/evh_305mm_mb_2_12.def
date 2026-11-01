@@ -1,0 +1,21 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 305mm_mb_2_12 (generated)
+	{Extension "305mm_mb_2_12.mdl"}
+	{extender "stuff"
+		{item "evh_305mm_mb_2_12"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel11" {able clear}}
+	{volume "barrel12" {able clear}}
+	{volume "barrel21" {able clear}}
+	{volume "barrel22" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

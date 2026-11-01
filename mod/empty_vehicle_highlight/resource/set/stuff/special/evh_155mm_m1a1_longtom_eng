@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 155mm_m1a1_longtom_eng (generated)
+	{entity "evh_155mm_m1a1_longtom_eng"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for m2_halftrack_at (generated)
+	{entity "evh_m2_halftrack_at"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

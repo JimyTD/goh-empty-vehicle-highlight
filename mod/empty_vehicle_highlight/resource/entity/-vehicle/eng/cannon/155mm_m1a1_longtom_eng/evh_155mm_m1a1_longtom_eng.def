@@ -1,0 +1,30 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 155mm_m1a1_longtom_eng (generated)
+	{Extension "155mm_m1a1_longtom_eng.mdl"}
+	{extender "stuff"
+		{item "evh_155mm_m1a1_longtom_eng"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "body8" {able clear}}
+	{volume "select" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,55 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for m8_greyhound_early (generated)
+	{Extension "m8_greyhound_early.mdl"}
+	{extender "stuff"
+		{item "evh_m8_greyhound_early"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "ammo4" {able clear}}
+	{volume "armor1" {able clear}}
+	{volume "armor10" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "armor4" {able clear}}
+	{volume "armor5" {able clear}}
+	{volume "armor6" {able clear}}
+	{volume "armor7" {able clear}}
+	{volume "armor8" {able clear}}
+	{volume "armor9" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "mantlet" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shieldl1" {able clear}}
+	{volume "shieldl2" {able clear}}
+	{volume "shieldl3" {able clear}}
+	{volume "shieldr1" {able clear}}
+	{volume "shieldr2" {able clear}}
+	{volume "shieldr3" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "turret2" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelleft3" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelright3" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

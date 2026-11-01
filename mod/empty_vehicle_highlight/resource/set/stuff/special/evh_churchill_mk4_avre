@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for churchill_mk4_avre (generated)
+	{entity "evh_churchill_mk4_avre"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

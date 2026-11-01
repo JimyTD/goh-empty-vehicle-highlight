@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for heavy_mg_vickers_mg (generated)
+	{entity "evh_heavy_mg_vickers_mg"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

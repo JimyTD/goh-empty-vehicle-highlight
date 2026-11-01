@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 40mm_qf2_early (generated)
+	{entity "evh_40mm_qf2_early"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

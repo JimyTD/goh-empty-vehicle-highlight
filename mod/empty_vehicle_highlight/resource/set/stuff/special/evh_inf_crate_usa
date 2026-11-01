@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for inf_crate_usa (generated)
+	{entity "evh_inf_crate_usa"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

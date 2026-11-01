@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for m8_greyhound (generated)
+	{entity "evh_m8_greyhound"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

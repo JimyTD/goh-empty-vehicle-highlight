@@ -1,0 +1,46 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for cckw_redball (generated)
+	{Extension "cckw_redball.mdl"}
+	{texmod "red_ball"}
+	{extender "stuff"
+		{item "evh_cckw_redball"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "bodyback1" {able clear}}
+	{volume "bodyback2" {able clear}}
+	{volume "bodyback3" {able clear}}
+	{volume "bodyback4" {able clear}}
+	{volume "bodyback5" {able clear}}
+	{volume "detail10" {able clear}}
+	{volume "detail2" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "hole5" {able clear}}
+	{volume "hole6" {able clear}}
+	{volume "hole7" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield_cover" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelleft3" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelright3" {able clear}}
+	{volume "window1" {able clear}}
+	{volume "window2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

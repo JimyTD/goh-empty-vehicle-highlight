@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for bf109_f4 (generated)
+	{entity "evh_bf109_f4"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

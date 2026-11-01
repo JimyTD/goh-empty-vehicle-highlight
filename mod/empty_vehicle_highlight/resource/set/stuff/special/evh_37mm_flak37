@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 37mm_flak37 (generated)
+	{entity "evh_37mm_flak37"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

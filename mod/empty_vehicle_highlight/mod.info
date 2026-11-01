@@ -1,0 +1,7 @@
+; Empty Vehicle Highlight
+{mod
+	{name "empty_vehicle_highlight"}
+	{desc "Press the vanilla 'highlight items' key (C) to also outline every crewless vehicle (tanks, cars, APCs, guns, planes, boats). Hovering shows the vehicle name."}
+	{minGameVersion "1.067"}
+	{maxGameVersion "1.070"}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for typhoon_mk1b (generated)
+	{entity "evh_typhoon_mk1b"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 50mm_kwk39_platform (generated)
+	{entity "evh_50mm_kwk39_platform"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

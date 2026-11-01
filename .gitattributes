@@ -1,0 +1,8 @@
+* text=auto
+*.set -text
+*.inc -text
+*.def -text
+*.info -text
+*.po -text
+*.pot -text
+*.png binary

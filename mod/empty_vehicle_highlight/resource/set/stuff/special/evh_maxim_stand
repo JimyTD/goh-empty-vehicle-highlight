@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for maxim_stand (generated)
+	{entity "evh_maxim_stand"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

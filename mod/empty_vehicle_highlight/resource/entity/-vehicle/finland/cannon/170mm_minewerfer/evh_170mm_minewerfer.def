@@ -1,0 +1,24 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 170mm_minewerfer (generated)
+	{Extension "170mm_minewerfer.mdl"}
+	{extender "stuff"
+		{item "evh_170mm_minewerfer"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

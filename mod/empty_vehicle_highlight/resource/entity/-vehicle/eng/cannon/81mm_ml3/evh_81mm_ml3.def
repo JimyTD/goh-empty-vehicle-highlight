@@ -1,0 +1,20 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 81mm_ml3 (generated)
+	{Extension "81mm_ml3.mdl"}
+	{extender "stuff"
+		{item "evh_81mm_ml3"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

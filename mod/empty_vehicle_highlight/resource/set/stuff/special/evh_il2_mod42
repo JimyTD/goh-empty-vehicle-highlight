@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for il2_mod42 (generated)
+	{entity "evh_il2_mod42"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,19 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for mgun_ring (generated)
+	{Extension "mgun_ring.mdl"}
+	{extender "stuff"
+		{item "evh_mgun_ring"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "turret1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,26 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for wagon_plato_ammo2 (generated)
+	{Extension "wagon_plato_ammo2.mdl"}
+	{extender "stuff"
+		{item "evh_wagon_plato_ammo2"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "body8" {able clear}}
+	{volume "body9" {able clear}}
+	{volume "wheel_back1" {able clear}}
+	{volume "wheel_back2" {able clear}}
+	{volume "wheel_front1" {able clear}}
+	{volume "wheel_front2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

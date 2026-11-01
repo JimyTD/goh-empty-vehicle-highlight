@@ -1,0 +1,80 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for mimosa (generated)
+	{Extension "mimosa.mdl"}
+	{extender "stuff"
+		{item "evh_mimosa"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "armor4" {able clear}}
+	{volume "armor5" {able clear}}
+	{volume "armor6" {able clear}}
+	{volume "armor7" {able clear}}
+	{volume "ballast1" {able clear}}
+	{volume "ballast2" {able clear}}
+	{volume "ballast3" {able clear}}
+	{volume "ballast4" {able clear}}
+	{volume "ballast5" {able clear}}
+	{volume "ballast6" {able clear}}
+	{volume "ballast7" {able clear}}
+	{volume "ballast8" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "cabin1" {able clear}}
+	{volume "cabin2" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole10" {able clear}}
+	{volume "hole11" {able clear}}
+	{volume "hole12" {able clear}}
+	{volume "hole13" {able clear}}
+	{volume "hole14" {able clear}}
+	{volume "hole15" {able clear}}
+	{volume "hole16" {able clear}}
+	{volume "hole17" {able clear}}
+	{volume "hole18" {able clear}}
+	{volume "hole19" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole20" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "hole5" {able clear}}
+	{volume "hole6" {able clear}}
+	{volume "hole7" {able clear}}
+	{volume "hole8" {able clear}}
+	{volume "hole9" {able clear}}
+	{volume "window1" {able clear}}
+	{volume "window10" {able clear}}
+	{volume "window11" {able clear}}
+	{volume "window12" {able clear}}
+	{volume "window13" {able clear}}
+	{volume "window14" {able clear}}
+	{volume "window15" {able clear}}
+	{volume "window16" {able clear}}
+	{volume "window17" {able clear}}
+	{volume "window18" {able clear}}
+	{volume "window19" {able clear}}
+	{volume "window2" {able clear}}
+	{volume "window20" {able clear}}
+	{volume "window21" {able clear}}
+	{volume "window22" {able clear}}
+	{volume "window23" {able clear}}
+	{volume "window24" {able clear}}
+	{volume "window25" {able clear}}
+	{volume "window26" {able clear}}
+	{volume "window3" {able clear}}
+	{volume "window4" {able clear}}
+	{volume "window5" {able clear}}
+	{volume "window6" {able clear}}
+	{volume "window7" {able clear}}
+	{volume "window8" {able clear}}
+	{volume "window9" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

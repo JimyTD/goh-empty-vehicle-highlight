@@ -1,0 +1,39 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for p47_d22_recon (generated)
+	{Extension "p47_d22_recon.mdl"}
+	{extender "stuff"
+		{item "evh_p47_d22_recon"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "1blade1" {able clear}}
+	{volume "1blade2" {able clear}}
+	{volume "aileron1" {able clear}}
+	{volume "aileron2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "canopy1" {able clear}}
+	{volume "canopy2" {able clear}}
+	{volume "elevator1" {able clear}}
+	{volume "elevator2" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "gear_l" {able clear}}
+	{volume "gear_r" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "rudder1" {able clear}}
+	{volume "spin1" {able clear}}
+	{volume "stabilizer1" {able clear}}
+	{volume "stabilizer2" {able clear}}
+	{volume "wheelback" {able clear}}
+	{volume "wheell" {able clear}}
+	{volume "wheelr" {able clear}}
+	{volume "wingl1" {able clear}}
+	{volume "wingl2" {able clear}}
+	{volume "wingr1" {able clear}}
+	{volume "wingr2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

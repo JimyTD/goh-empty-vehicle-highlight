@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for bt7a (generated)
+	{entity "evh_bt7a"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

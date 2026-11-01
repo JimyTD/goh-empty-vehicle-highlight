@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for mmg_carrier_rus (generated)
+	{entity "evh_mmg_carrier_rus"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

@@ -1,0 +1,25 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for schwimmwagen (generated)
+	{Extension "schwimmwagen.mdl"}
+	{extender "stuff"
+		{item "evh_schwimmwagen"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "detail2" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "window1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

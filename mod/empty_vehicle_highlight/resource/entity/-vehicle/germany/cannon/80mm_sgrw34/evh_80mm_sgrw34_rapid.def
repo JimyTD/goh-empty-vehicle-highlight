@@ -1,0 +1,18 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 80mm_sgrw34_rapid (generated)
+	{Extension "80mm_sgrw34.mdl"}
+	{extender "stuff"
+		{item "evh_80mm_sgrw34_rapid"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

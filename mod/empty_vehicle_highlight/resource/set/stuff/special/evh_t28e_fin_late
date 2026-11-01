@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for t28e_fin_late (generated)
+	{entity "evh_t28e_fin_late"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

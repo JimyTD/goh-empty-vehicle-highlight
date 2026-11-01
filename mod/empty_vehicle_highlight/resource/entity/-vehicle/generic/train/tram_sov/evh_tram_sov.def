@@ -1,0 +1,115 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for tram_sov (generated)
+	{Extension "tram_sov.mdl"}
+	{extender "stuff"
+		{item "evh_tram_sov"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "armor10" {able clear}}
+	{volume "armor11" {able clear}}
+	{volume "armor12" {able clear}}
+	{volume "armor13" {able clear}}
+	{volume "armor14" {able clear}}
+	{volume "armor15" {able clear}}
+	{volume "armor16" {able clear}}
+	{volume "armor17" {able clear}}
+	{volume "armor18" {able clear}}
+	{volume "armor19" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor20" {able clear}}
+	{volume "armor21" {able clear}}
+	{volume "armor22" {able clear}}
+	{volume "armor23" {able clear}}
+	{volume "armor24" {able clear}}
+	{volume "armor25" {able clear}}
+	{volume "armor26" {able clear}}
+	{volume "armor27" {able clear}}
+	{volume "armor28" {able clear}}
+	{volume "armor29" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "armor30" {able clear}}
+	{volume "armor4" {able clear}}
+	{volume "armor5" {able clear}}
+	{volume "armor6" {able clear}}
+	{volume "armor7" {able clear}}
+	{volume "armor8" {able clear}}
+	{volume "armor9" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "glass1" {able clear}}
+	{volume "glass10" {able clear}}
+	{volume "glass11" {able clear}}
+	{volume "glass12" {able clear}}
+	{volume "glass13" {able clear}}
+	{volume "glass14" {able clear}}
+	{volume "glass15" {able clear}}
+	{volume "glass16" {able clear}}
+	{volume "glass17" {able clear}}
+	{volume "glass18" {able clear}}
+	{volume "glass19" {able clear}}
+	{volume "glass2" {able clear}}
+	{volume "glass20" {able clear}}
+	{volume "glass21" {able clear}}
+	{volume "glass22" {able clear}}
+	{volume "glass23" {able clear}}
+	{volume "glass24" {able clear}}
+	{volume "glass25" {able clear}}
+	{volume "glass26" {able clear}}
+	{volume "glass27" {able clear}}
+	{volume "glass28" {able clear}}
+	{volume "glass29" {able clear}}
+	{volume "glass3" {able clear}}
+	{volume "glass30" {able clear}}
+	{volume "glass31" {able clear}}
+	{volume "glass32" {able clear}}
+	{volume "glass33" {able clear}}
+	{volume "glass34" {able clear}}
+	{volume "glass35" {able clear}}
+	{volume "glass36" {able clear}}
+	{volume "glass37" {able clear}}
+	{volume "glass38" {able clear}}
+	{volume "glass39" {able clear}}
+	{volume "glass4" {able clear}}
+	{volume "glass40" {able clear}}
+	{volume "glass41" {able clear}}
+	{volume "glass42" {able clear}}
+	{volume "glass43" {able clear}}
+	{volume "glass44" {able clear}}
+	{volume "glass45" {able clear}}
+	{volume "glass46" {able clear}}
+	{volume "glass47" {able clear}}
+	{volume "glass48" {able clear}}
+	{volume "glass49" {able clear}}
+	{volume "glass5" {able clear}}
+	{volume "glass50" {able clear}}
+	{volume "glass51" {able clear}}
+	{volume "glass52" {able clear}}
+	{volume "glass53" {able clear}}
+	{volume "glass54" {able clear}}
+	{volume "glass55" {able clear}}
+	{volume "glass56" {able clear}}
+	{volume "glass57" {able clear}}
+	{volume "glass58" {able clear}}
+	{volume "glass59" {able clear}}
+	{volume "glass6" {able clear}}
+	{volume "glass60" {able clear}}
+	{volume "glass61" {able clear}}
+	{volume "glass62" {able clear}}
+	{volume "glass63" {able clear}}
+	{volume "glass64" {able clear}}
+	{volume "glass65" {able clear}}
+	{volume "glass66" {able clear}}
+	{volume "glass67" {able clear}}
+	{volume "glass68" {able clear}}
+	{volume "glass7" {able clear}}
+	{volume "glass8" {able clear}}
+	{volume "glass9" {able clear}}
+	{volume "hole1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

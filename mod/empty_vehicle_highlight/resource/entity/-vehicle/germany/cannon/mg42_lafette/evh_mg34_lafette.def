@@ -1,0 +1,20 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for mg34_lafette (generated)
+	{Extension "mg42_lafette.mdl"}
+	{extender "stuff"
+		{item "evh_mg34_lafette"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "select" {able clear}}
+	{volume "standc" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

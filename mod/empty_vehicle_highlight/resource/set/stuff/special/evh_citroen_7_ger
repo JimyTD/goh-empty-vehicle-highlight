@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for citroen_7_ger (generated)
+	{entity "evh_citroen_7_ger"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

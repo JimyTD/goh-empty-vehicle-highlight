@@ -1,0 +1,3295 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: empty_vehicle_highlight\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgctxt "desc/stuff/evh_blenheim_mk1_eng"
+msgid "Bristol Blenheim Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blenheim_mk1_eng_recon"
+msgid "Bristol Blenheim Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_horsa_mk1"
+msgid "Airspeed AS.51 Horsa Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_hurribomber_mk2c"
+msgid "Hawker Hurribomber IIc"
+msgstr ""
+
+msgctxt "desc/stuff/evh_hurricane_mk1a"
+msgid "Hawker Hurricane Ia"
+msgstr ""
+
+msgctxt "desc/stuff/evh_typhoon_mk1b"
+msgid "Hawker Typhoon Ib"
+msgstr ""
+
+msgctxt "desc/stuff/evh_typhoon_mk1b_recon"
+msgid "Hawker Typhoon Ib"
+msgstr ""
+
+msgctxt "desc/stuff/evh_aec_mk1"
+msgid "AEC Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_aec_mk2"
+msgid "AEC Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_aec_mk3"
+msgid "AEC Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bren_carrier"
+msgid "Bren No.2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bren_carrier_boys"
+msgid "Bren No.2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_dingo"
+msgid "Daimler Dingo Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_dingo_boys"
+msgid "Daimler Dingo Mk.II (Boys)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_dingo_early"
+msgid "Daimler Dingo Mk.II (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_mk1"
+msgid "Daimler Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_mk1_lj"
+msgid "Daimler Mk.I 'Littlejohn'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_mk2"
+msgid "Daimler Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_mk2_lj"
+msgid "Daimler Mk.II 'Littlejohn'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_daimler_mk2_mid"
+msgid "Daimler Mk.II (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_humber_mk2"
+msgid "Humber Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_humber_mk4"
+msgid "Humber Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_humber_recon_mk2"
+msgid "Humber Light Reconnaissance Car Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_humber_recon_mk3"
+msgid "Humber Light Reconnaissance Car Mk.IIIA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_humber_scout"
+msgid "Humber Scout Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5_halftrack"
+msgid "M5 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5_halftrack_at"
+msgid "M5 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5a1_halftrack"
+msgid "M5A1 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5a1_halftrack_at"
+msgid "M5A1 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mmg_carrier_mk1"
+msgid "Machine Gun Carrier Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mmg_carrier_mk2"
+msgid "Machine Gun Carrier Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_morris_cs9"
+msgid "Morris CS9"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mortar_carrier_mk1"
+msgid "2-inch Mortar Carrier Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mortar_carrier_mk1_boys"
+msgid "2-inch Mortar Carrier Mk.I (Boys)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mortar_carrier_mk2"
+msgid "2-inch Mortar Carrier Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_staghound_mk1"
+msgid "Staghound Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_staghound_mk2"
+msgid "Staghound Mk.II CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_staghound_mk3"
+msgid "Staghound Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_staghound_mkaa"
+msgid "Staghound AA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk1"
+msgid "Universal Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk1_2mg"
+msgid "Universal Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk1_boys"
+msgid "Universal Mk.I (Boys)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk2"
+msgid "Universal Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk2_2mg"
+msgid "Universal Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk2_boys"
+msgid "Universal Mk.II (Boys)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_mk2_piat"
+msgid "Universal Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wasp_mk2c"
+msgid "Wasp Mk.IIc"
+msgstr ""
+
+msgctxt "desc/stuff/evh_107mm_ml4_2"
+msgid "ML 4.2-inch Mortar"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_bl_4_5"
+msgid "BL 4.5-inch Mk.II Gun"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_bl_4_5_mk1"
+msgid "BL 4.5-inch Mk.I Gun"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_qf_how"
+msgid "QF 4.5-inch Howitzer"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_qf_how_wooden"
+msgid "QF 4.5-inch Howitzer"
+msgstr ""
+
+msgctxt "desc/stuff/evh_140mm_bl_5_5"
+msgid "BL 5.5-inch Mk.III Gun"
+msgstr ""
+
+msgctxt "desc/stuff/evh_140mm_bl_5_5_late"
+msgid "BL 5.5-inch Mk.III Gun (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_152mm_bl_6"
+msgid "BL 6-inch 26-cwt Howitzer Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_152mm_bl_6_mk19"
+msgid "BL 6-inch Mk.XIX"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_m1a1_longtom_eng"
+msgid "155mm Gun M1A1 'Long Tom'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_183mm_bl_7_2"
+msgid "BL 7.2-inch Howitzer Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_183mm_bl_7_2_mk6"
+msgid "BL 7.2-inch Howitzer Mk.VI"
+msgstr ""
+
+msgctxt "desc/stuff/evh_203mm_bl_8"
+msgid "BL 8-inch Howitzer Mk.VIII"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_oerlikon"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_polsten"
+msgid "Polsten No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_qf_mk1"
+msgid "QF 37mm Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf2_early"
+msgid "QF 2-pdr (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf2_late"
+msgid "QF 2-pdr (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf2_littlejohn_late"
+msgid "QF 2-pdr 'Littlejohn' (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf2_littlejohn_mid"
+msgid "QF 2-pdr 'Littlejohn' (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf2_mid"
+msgid "QF 2-pdr (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf40"
+msgid "QF 40mm Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_qf40_early"
+msgid "QF 40mm Mk.III (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_qf6_mk2_early"
+msgid "QF 6-pdr Mk.II (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_qf6_mk2_late"
+msgid "QF 6-pdr Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_qf6_mk4_early"
+msgid "QF 6-pdr Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_qf6_mk4_late"
+msgid "QF 6-pdr Mk.IV (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_m1a1_eng"
+msgid "75mm M1A1 (M8 Carriage)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_land_mattress"
+msgid "Land Mattress"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_qf17_25"
+msgid "QF 17/25-pdr 'Pheasant'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_qf17_early"
+msgid "QF 17-pdr"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_qf17_late"
+msgid "QF 17-pdr"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_qf17_mid"
+msgid "QF 17-pdr"
+msgstr ""
+
+msgctxt "desc/stuff/evh_81mm_ml3"
+msgid "ML 3-inch Mortar"
+msgstr ""
+
+msgctxt "desc/stuff/evh_81mm_ml3_early"
+msgid "ML 3-inch Mortar (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_84mm_qf18_2pa"
+msgid "QF 18-pdr Mk.IIPA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_84mm_qf18_4p"
+msgid "QF 18-pdr Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_84mm_qf18_5p"
+msgid "QF 18-pdr Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_qf25_mk1_4p"
+msgid "QF 18/25-pdr Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_qf25_mk1_5p"
+msgid "QF 18/25-pdr Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_qf25_mk2"
+msgid "QF 25-pdr Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_qf25_mk2_late"
+msgid "QF 25-pdr Mk.II (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_94mm_qf_3_7_aa_mid"
+msgid "QF 3.7-inch AA (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_94mm_qf_3_7_aa_early"
+msgid "QF 3.7-inch AA (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_94mm_qf_3_7_aa_late"
+msgid "QF 3.7-inch AA (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_94mm_qf_how"
+msgid "QF 3.7-inch Howitzer"
+msgstr ""
+
+msgctxt "desc/stuff/evh_94mm_qf_how_early"
+msgid "QF 3.7-inch Howitzer (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_vickers_mg"
+msgid "Vickers Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_vickers_mg"
+msgid "Vickers Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyc_fuel"
+msgid "Bedford OYC (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyd"
+msgid "Bedford OYD (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyd_art_ammo"
+msgid "Bedford OYD (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyd_boys"
+msgid "Bedford OYD (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyd_engineer"
+msgid "Bedford OYD (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_oyd_piat"
+msgid "Bedford OYD (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_qld_art_ammo"
+msgid "Bedford QLD (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_qld_engineer"
+msgid "Bedford QLD (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_qlt"
+msgid "Bedford QLT (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bedford_qlt_piat"
+msgid "Bedford QLT (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_morris_c8"
+msgid "Morris C8 FAT"
+msgstr ""
+
+msgctxt "desc/stuff/evh_morris_c9_aa"
+msgid "Morris C9/B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb_eng"
+msgid "Willys MB"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb_mg_eng"
+msgid "Willys MB (MG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb_vgo_eng"
+msgid "Willys MB (MG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_drifter_eng"
+msgid "Naval Drifter"
+msgstr ""
+
+msgctxt "desc/stuff/evh_goatley_boat"
+msgid "Goatley Boat"
+msgstr ""
+
+msgctxt "desc/stuff/evh_hms_boadicea"
+msgid "HMS Boadicea"
+msgstr ""
+
+msgctxt "desc/stuff/evh_lca"
+msgid "Land Craft Assault (LCA)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_lca_grh"
+msgid "Land Craft Assault (LCA)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mimosa"
+msgid "Motor Yacht"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk1"
+msgid "Churchill Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk2"
+msgid "Churchill Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk3"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk3_l50"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk3_l50_late"
+msgid "Churchill Mk.III (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk3_qf75"
+msgid "Churchill Mk.III* (75mm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk4"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk4_avre"
+msgid "Churchill Mk.IV (AVRE)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk4_l50"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk4_l50_late"
+msgid "Churchill Mk.IV (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk4_qf75"
+msgid "Churchill Mk.IV (75mm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk5"
+msgid "Churchill Mk.V CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk7"
+msgid "Churchill Mk.VII"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk7_croc"
+msgid "Churchill Mk.VII 'Crocodile'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill_mk8"
+msgid "Churchill Mk.VIII"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk1"
+msgid "Cruiser Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk1_cs"
+msgid "Cruiser Mk.I CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk2"
+msgid "Cruiser Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk2a"
+msgid "Cruiser Mk.IIA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk2a_cs"
+msgid "Cruiser Mk.IIA CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk3"
+msgid "Cruiser Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk3_late"
+msgid "Cruiser Mk.III*"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk4"
+msgid "Cruiser Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cruiser_mk4a"
+msgid "Cruiser Mk.IVA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_light_tank_mk8"
+msgid "Light Mk.VIII 'Harry Hopkins'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_lvt4_eng"
+msgid "LVT-4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m22_locust"
+msgid "M22 Locust"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m22_locust_littlejohn"
+msgid "M22 Locust 'Little John'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_matilda1"
+msgid "Matilda I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_matilda1_50"
+msgid "Matilda I (.5-inch)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuart1"
+msgid "Stuart I 'Honey'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuart3"
+msgid "Stuart III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuart5"
+msgid "Stuart V"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuart5_recce"
+msgid "Stuart V Recce"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuart6"
+msgid "Stuart VI"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tetrarch_mk7"
+msgid "Light Mk.VII Tetrarch"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tetrarch_mk7_littlejohn"
+msgid "Light Mk.VII Tetrarch 'Little John'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_vickers_aa_mk1"
+msgid "Light AA Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_vickers_mk6"
+msgid "Light Mk.VIb"
+msgstr ""
+
+msgctxt "desc/stuff/evh_achilles_mk2"
+msgid "17-pdr SP Achilles Mk.IIc"
+msgstr ""
+
+msgctxt "desc/stuff/evh_archer"
+msgid "Valentine 17-pdr Mk.I 'Archer'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bishop"
+msgid "Valentine 25-pdr Mk.I 'Bishop'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_challenger_a30"
+msgid "Challenger"
+msgstr ""
+
+msgctxt "desc/stuff/evh_comet1_a34"
+msgid "Comet I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell4"
+msgid "Cromwell Mk.IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell4_tulip"
+msgid "Cromwell Mk.IV 'Tulip'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell5"
+msgid "Cromwell Mk.V"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell6"
+msgid "Cromwell Mk.VI CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell7"
+msgid "Cromwell Mk.VII"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cromwell8"
+msgid "Cromwell Mk.VIII CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_aa_mk1"
+msgid "Crusader Mk.III AA Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_aa_mk2"
+msgid "Crusader Mk.III AA Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_mk1"
+msgid "Crusader Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_mk1_cs"
+msgid "Crusader Mk.I CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_mk2"
+msgid "Crusader Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_mk2_cs"
+msgid "Crusader Mk.II CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_crusader_mk3"
+msgid "Crusader Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_grant"
+msgid "Grant I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_matilda2_mk1"
+msgid "Matilda II Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_matilda2_mk3"
+msgid "Matilda II Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_matilda2_mk4_cs"
+msgid "Matilda II Mk.IV CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ram_kangaroo"
+msgid "Ram Mk.I Kangaroo"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ram_kangaroo_mk2"
+msgid "Ram Mk.II Kangaroo"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sexton_mk2"
+msgid "25-pdr SP Tracked Mk.II 'Sexton'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1"
+msgid "Sherman I (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1_armor"
+msgid "Sherman I (Late) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1b"
+msgid "Sherman Ib"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1c"
+msgid "Sherman Ic"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1c_armor"
+msgid "Sherman Ic (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1c_hybrid"
+msgid "Sherman Ic (Hybrid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman1c_tulip_hybrid"
+msgid "Sherman Ic (Hybrid) 'Tulip'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman2_dd"
+msgid "Sherman II (DD)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman2_dv"
+msgid "Sherman II (Early DV)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman2_late"
+msgid "Sherman II (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman2a"
+msgid "Sherman IIa"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_dv"
+msgid "Sherman III (Early DV)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_dv_armor"
+msgid "Sherman III (Early DV) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_early"
+msgid "Sherman III (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_early_armor"
+msgid "Sherman III (Early) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_late"
+msgid "Sherman III (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_mid"
+msgid "Sherman III (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman3_mid_armor"
+msgid "Sherman III (Mid) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_crab"
+msgid "Sherman V 'Crab'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_croc"
+msgid "Sherman V 'Crocodile'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_dv"
+msgid "Sherman V (Early DV)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_dv_armor"
+msgid "Sherman V (Early DV) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_late"
+msgid "Sherman V (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_late_tulip"
+msgid "Sherman V (Late) 'Tulip'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_mid"
+msgid "Sherman V (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5_mid_armor"
+msgid "Sherman V (Mid) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sherman5c"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk1"
+msgid "Valentine Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk10"
+msgid "Valentine Mk.X"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk11"
+msgid "Valentine Mk.XI"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk2"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk3"
+msgid "Valentine Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk3cs"
+msgid "Valentine Mk.III CS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine_mk9"
+msgid "Valentine Mk.IX"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wolverine_mk1"
+msgid "3-in SP Mk.I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ammo_trailer_eng"
+msgid "British Ammo Trailer"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blenheim_mk1"
+msgid "Blenheim Mk.1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blenheim_mk1_recon"
+msgid "Blenheim Mk.1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba10_fin"
+msgid "BAF C"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba10_fin_mid"
+msgid "BAF C (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba10m_fin"
+msgid "BAF C (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba6_fin"
+msgid "BAF B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_l182"
+msgid "Landsverk 182"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t20_fin"
+msgid "T-20"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_h33"
+msgid "105 H/33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_k13"
+msgid "105 K/13"
+msgstr ""
+
+msgctxt "desc/stuff/evh_107mm_k10"
+msgid "107 K/10"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_k34"
+msgid "105 K/34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_h18_how_early"
+msgid "114 H/18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_h18_how_late"
+msgid "114 H/18 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_h18_how_mid"
+msgid "114 H/18 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_120mm_k78_31"
+msgid "120 K/78-31"
+msgstr ""
+
+msgctxt "desc/stuff/evh_120mm_krh40"
+msgid "120 Krh/40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_122mm_m1910_fin"
+msgid "122 H/10-30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_h40"
+msgid "150 H/40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_rkh41"
+msgid "150 Rkh/41"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_h17"
+msgid "155 H/17"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_k17"
+msgid "155 K/17"
+msgstr ""
+
+msgctxt "desc/stuff/evh_170mm_minewerfer"
+msgid "17cm Minenwerfer"
+msgstr ""
+
+msgctxt "desc/stuff/evh_203mm_h17"
+msgid "203 H/17"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_itk35"
+msgid "20 ItK/35 Breda"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_itk40"
+msgid "20 ItK/40 VKT"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_l39"
+msgid "20 Pst Kiv/39"
+msgstr ""
+
+msgctxt "desc/stuff/evh_210mm_h17"
+msgid "210 H/17"
+msgstr ""
+
+msgctxt "desc/stuff/evh_25mm_pstk37"
+msgid "25 PstK/37"
+msgstr ""
+
+msgctxt "desc/stuff/evh_300mm_krh42"
+msgid "300 Krh/42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_pstk36"
+msgid "37 PstK/36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_itk38b"
+msgid "40 ItK/38b"
+msgstr ""
+
+msgctxt "desc/stuff/evh_45mm_pstk32"
+msgid "45 PstK/32"
+msgstr ""
+
+msgctxt "desc/stuff/evh_45mm_pstk32_mid"
+msgid "45 PstK/32 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_47mm_pstk39"
+msgid "47 PstK/39"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_krh38"
+msgid "50 Krh/38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_pstk38"
+msgid "50 PstK/38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_pstk38_late"
+msgid "50 PstK/38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_itk37"
+msgid "75 ItK/37"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_itk37_stat"
+msgid "75 ItK/37 (Static)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_itk37_stat_early"
+msgid "75 ItK/37 (Static)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_itk37_stat_late"
+msgid "75 ItK/37 (Static)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_k40"
+msgid "75 K/40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_k44"
+msgid "75 K/44"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_pstk9738"
+msgid "75 PstK/97-38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_itk31"
+msgid "76 ItK/31"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k00"
+msgid "76 K/00"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02"
+msgid "76 K/02"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02_late"
+msgid "76 K/02 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02_mid"
+msgid "76 K/02 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02_30_40"
+msgid "76 K/02-30/40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02_30_40_late"
+msgid "76 K/02-30/40 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k02_30_40_mid"
+msgid "76 K/02-30/40 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k36"
+msgid "76 K/36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k36_late"
+msgid "76 K/36 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_k36_mid"
+msgid "76 K/36 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_lk13"
+msgid "76 LK/13"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1927_fin"
+msgid "76 RK/27"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1927_fin_mid"
+msgid "76 RK/27 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_rk27_39"
+msgid "76 RK/27-39"
+msgstr ""
+
+msgctxt "desc/stuff/evh_81mm_krh36"
+msgid "81 Krh/36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_84mm_k18"
+msgid "84 K/18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_84mm_k18_late"
+msgid "84 K/18 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ds39_stand_fin"
+msgid "DS-39/VKT Stand"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_maxim_m1910_30"
+msgid "Maxim M/09-09"
+msgstr ""
+
+msgctxt "desc/stuff/evh_maxim_m1910_30"
+msgid "Maxim M/09-09"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_maxim_m32_33"
+msgid "Maxim M/32-33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_maxim_m32_33"
+msgid "Maxim M/32-33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mg08_fin"
+msgid "Maxim MG 08"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_3ton"
+msgid "Ford 3-Ton (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_3ton_ammo"
+msgid "Ford 3-Ton (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_3ton_breda"
+msgid "Ford 3-Ton (20 ItK/35)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_3ton_eng"
+msgid "Ford 3-Ton (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_3ton_fuel"
+msgid "Ford 3-Ton (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_v3000"
+msgid "Ford V3000S (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_v3000_ammo"
+msgid "Ford V3000S (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_v3000_eng"
+msgid "Ford V3000S (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_v3000_fuel"
+msgid "Ford V3000S (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_latil_m2tl6"
+msgid "Latil M2 TL6"
+msgstr ""
+
+msgctxt "desc/stuff/evh_volvo_127d"
+msgid "Volvo LV 127D (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_volvo_127d_itk40"
+msgid "Volvo LV 127D (20 ItK/40)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_isu152_fin"
+msgid "JSU 152"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_40e_fin"
+msgid "KV-1B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_40e_fin_late"
+msgid "KV-1B (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_42_fin"
+msgid "KV-1A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_42_fin_late"
+msgid "KV-1A (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt42"
+msgid "BT-42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt5_fin"
+msgid "BT-5"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt5_fin_mid"
+msgid "BT-5 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ft17_fin"
+msgid "FT-17 (Koiras)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ft17_mg_fin"
+msgid "FT-17 (Naaras)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kht130_fin"
+msgid "KhT-130 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_l62"
+msgid "Landsverk L-62 Anti II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_33_fin"
+msgid "T-26B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_33_fin_mid"
+msgid "T-26B (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26c"
+msgid "T-26C"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26e"
+msgid "T-26E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26e_mid"
+msgid "T-26E (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t37a_fin"
+msgid "T-37A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t50_fin"
+msgid "T-50"
+msgstr ""
+
+msgctxt "desc/stuff/evh_vickers_6t_altb"
+msgid "Vickers 6-Ton Alt.B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4j_fin"
+msgid "PzKw IVJ"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3g_fin"
+msgid "Stu 40 G (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3g_fin_early"
+msgid "Stu 40 G"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28_38_fin"
+msgid "T-28 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28e_fin"
+msgid "T-28E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28e_fin_late"
+msgid "T-28E (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_41_fin"
+msgid "T-34B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_41_fin_late"
+msgid "T-34B (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44_fin"
+msgid "T-34/85"
+msgstr ""
+
+msgctxt "desc/stuff/evh_citroen_7_civ"
+msgid "Citroën 7"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_b3000"
+msgid "Ford B3000 (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_renault_agr_civ"
+msgid "Renault AGR"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal"
+msgid "Tractor"
+msgstr ""
+
+msgctxt "desc/stuff/evh_small_barge"
+msgid "Barge"
+msgstr ""
+
+msgctxt "desc/stuff/evh_inf_crate_eng"
+msgid "British Ammo Crate"
+msgstr ""
+
+msgctxt "desc/stuff/evh_inf_crate_fin"
+msgid "Finnish Ammo Crate"
+msgstr ""
+
+msgctxt "desc/stuff/evh_inf_crate_ger"
+msgid "German Ammo Crate"
+msgstr ""
+
+msgctxt "desc/stuff/evh_inf_crate_rus"
+msgid "Soviet Ammo Crate"
+msgstr ""
+
+msgctxt "desc/stuff/evh_inf_crate_usa"
+msgid "American Ammo Crate"
+msgstr ""
+
+msgctxt "desc/stuff/evh_180mm_tm1"
+msgid "TM-1-180"
+msgstr ""
+
+msgctxt "desc/stuff/evh_drg_class75"
+msgid "DRG Class 75"
+msgstr ""
+
+msgctxt "desc/stuff/evh_drg_class75_rus"
+msgid "DRG Class 75"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tram_eu"
+msgid "Tram"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tram_sov"
+msgid "Tram"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon1"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon1a"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon1a_ammo"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon_plato"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon_plato_ammo1"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon_plato_ammo2"
+msgid "Cargo Wagon"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wagon_tanker"
+msgid "Cistern"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bf109_e4b"
+msgid "Bf-109 E4/B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bf109_f4"
+msgid "Bf 109 F-4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bf109_g6"
+msgid "Bf 109 G-6"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bf110_e2"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_fi156"
+msgid "Fi-156"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kfz13"
+msgid "Kfz.13 (MG34)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kfz14"
+msgid "Kfz.14 Command"
+msgstr ""
+
+msgctxt "desc/stuff/evh_p204_f"
+msgid "Pz.SpW. P204(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_p204_f_rail"
+msgid "Pz.SpW. P204(f) Rail"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzerwerfer42"
+msgid "Panzerwerfer 42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz10"
+msgid "Sd.Kfz 10"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz10_4"
+msgid "Sd.Kfz 10/4 (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz10_pak38"
+msgid "Sd.Kfz 10 (5cm PaK)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz221"
+msgid "Sd.Kfz 221"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz222a"
+msgid "Sd.Kfz 222 Ausf.A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz231"
+msgid "Sd.Kfz 231"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz234_1"
+msgid "Sd.Kfz 234/1 (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz234_2"
+msgid "Sd.Kfz 234/2 (5cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz234_3"
+msgid "Sd.Kfz 234/3 (7.5cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz234_4"
+msgid "Sd.Kfz 234/4 (7.5cm PaK 40)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz250a_1"
+msgid "Sd.Kfz 250/1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz250a_11"
+msgid "Sd.Kfz 250/11 (sPzB 41)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz250a_3"
+msgid "Sd.Kfz 250/3"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz250a_9"
+msgid "Sd.Kfz 250/9 (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251b"
+msgid "Sd.Kfz 251/1 Ausf. B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251c"
+msgid "Sd.Kfz 251/1 Ausf. C"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251c_tarp"
+msgid "Sd.Kfz 251/1 Ausf. C"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251c_2"
+msgid "Sd.Kfz 251/2 (8cm GrW)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_1"
+msgid "Sd.Kfz 251/1 Ausf. D"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_16"
+msgid "Sd.Kfz 251/16 Ausf. D (14mm Flamm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_17"
+msgid "Sd.Kfz 251/17 Ausf. D (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_1_stuka"
+msgid "Sd.Kfz 251/1 Ausf. D (Wurfrahmen 40)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_21"
+msgid "Sd.Kfz 251/21 Ausf. D (15mm Drilling)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz251d_22"
+msgid "Sd.Kfz 251/22 Ausf. D (7.5cm PaK 40)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz6_2"
+msgid "Sd.Kfz 6/2 (3.7cm FlaK)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz6_ammo"
+msgid "Sd.Kfz 6 (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz6_cargo"
+msgid "Sd.Kfz 6"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz7"
+msgid "Sd.Kfz 7 (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz7_1"
+msgid "Sd.Kfz 7/1 (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz7_2"
+msgid "Sd.Kfz 7/2 (3.7cm FlaK)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz8_flak18"
+msgid "Sd.Kfz 8 (8.8cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_unic304f"
+msgid "Unic U304(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_100mm_nbw35"
+msgid "10cm NbW 35"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_lefh18"
+msgid "10.5cm LeFH 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_lefh18_40"
+msgid "10.5cm LeFH 18/40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_sk18"
+msgid "10cm sK 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_120mm_sgrw42"
+msgid "12cm sGrW 42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_nebelwerfer41"
+msgid "15cm Nebelwerfer 41"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_sfh18"
+msgid "15cm sFH 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_sig33"
+msgid "15cm sIG 33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_sig33_late"
+msgid "15cm sIG 33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_gpf_ger"
+msgid "15.5cm GPF K 418(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_gpf_platform"
+msgid "15.5cm GPF K 418(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_170mm_k18"
+msgid "17cm K18 Mörserlafette"
+msgstr ""
+
+msgctxt "desc/stuff/evh_200mm_ldgw40"
+msgid "20cm leLdgW"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_flak30"
+msgid "2cm FlaK 30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_flak38"
+msgid "2cm FlaK 38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_20mm_flakvierling38"
+msgid "2cm Flakvierling 38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_210mm_k39"
+msgid "21cm Kanone 39"
+msgstr ""
+
+msgctxt "desc/stuff/evh_210mm_morser18"
+msgid "21cm Mörser 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_210mm_nebelwerfer42"
+msgid "21cm Nebelwerfer 42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_28mm_pzb41"
+msgid "2.8cm sPzB 41"
+msgstr ""
+
+msgctxt "desc/stuff/evh_300mm_nebelwerfer42"
+msgid "30cm Nebelwerfer 42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_flak37"
+msgid "3.7cm FlaK 37"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_pak36"
+msgid "3.7cm PaK 36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_pak36_late"
+msgid "3.7cm PaK 36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_47mm_pakt"
+msgid "4.7cm PaK(t)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_flak41"
+msgid "5cm Flak 41"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_kwk39_platform"
+msgid "5cm KwK 39 L/60"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_pak38"
+msgid "5cm PaK 38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_pak38_late"
+msgid "5cm PaK 38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_600mm_thor"
+msgid "60cm Gerät Nr. III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_legebig18"
+msgid "7.5cm le Gebirgs IG 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_legebig18_snow"
+msgid "7.5cm le Gebirgs IG 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_leig18"
+msgid "7.5cm leIG 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_lg40"
+msgid "7.5cm LG 40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_pak40"
+msgid "7.5cm PaK 40"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_pak9738"
+msgid "7.5cm PaK 97/38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_pak9738_late"
+msgid "7.5cm PaK 97/38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_80mm_sgrw34"
+msgid "8cm sGrW 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_80mm_sgrw34_rapid"
+msgid "8cm sGrW 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_flak18"
+msgid "8.8cm FlaK 18"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_flak36"
+msgid "8.8cm FlaK 36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_88mm_pak4341"
+msgid "8.8cm PaK 43/41"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_mg34"
+msgid "Lafette MG 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mg34_lafette"
+msgid "Lafette MG 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mg42_lafette"
+msgid "Lafette MG 42"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mgun_ring"
+msgid "MG42 Mount"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzernest_krab"
+msgid "Panzernest"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzernest_krab_ger"
+msgid "Panzernest"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6"
+msgid "Opel Blitz (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6_art_ammo"
+msgid "Opel Blitz (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6_engineering"
+msgid "Opel Blitz (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6_flak30"
+msgid "Opel Blitz (2cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6_fuel"
+msgid "Opel Blitz (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_blitz3_6_radio"
+msgid "Opel Blitz"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bmw_r71"
+msgid "BMW R71 (MG34)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_citroen_7_ger"
+msgid "Citroën 7 (WH)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kettenkrad"
+msgid "Sd.Kfz 2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kettenkrad_eng"
+msgid "Sd.Kfz 2 (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kfz15"
+msgid "Kfz.15 (MG34)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kfz70"
+msgid "Kfz.70 (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kubelwagen"
+msgid "VW82 Kübelwagen"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kubelwagen_dak"
+msgid "VW82 Kübelwagen (MG34)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kubelwagen_mg"
+msgid "VW82 Kübelwagen (MG34)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_opel_maultier"
+msgid "Opel Maultier"
+msgstr ""
+
+msgctxt "desc/stuff/evh_schwimmwagen"
+msgid "VW166 Schwimmwagen"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_sw34"
+msgid "150cm Flak-Scheinwerfer 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_150mm_sw34_ger"
+msgid "150cm Flak-Scheinwerfer 34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m42_truppenfahrrad"
+msgid "M42 Truppenfahrrad"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz302"
+msgid "Sd.Kfz 302"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdkfz303b"
+msgid "Sd.Kfz 303b"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ferdinand"
+msgid "Panzerjäger Tiger (P) 'Ferdinand'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_flammpanzer_b2"
+msgid "Pz.Kpfw. B2 Flamm"
+msgstr ""
+
+msgctxt "desc/stuff/evh_jagdtiger"
+msgid "Panzerjäger Tiger Ausf.B 'Jagdtiger'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzerb2"
+msgid "Pz.Kpfw B2 740(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz756r"
+msgid "Pz.Kpfw 756(r) 'KW-IB KwK 40 L/43'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sturmtiger"
+msgid "Sturmmörser"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tiger1e"
+msgid "Pz.Kpfw Tiger Ausf.E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tiger1h"
+msgid "Pz.Kpfw VI H Ausf.H1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tiger1hunt"
+msgid "Pz.Kpfw Tiger Ausf.E 'Ace'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tiger2h"
+msgid "Pz.Kpfw Tiger II Ausf.B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_tiger2p"
+msgid "Pz.Kpfw Tiger II Ausf.B (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bison"
+msgid "Sturmpanzer I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_geschutzwagen_39h"
+msgid "Geschuetzwagen 39H(f) (7.5cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_grille_k"
+msgid "Grille Ausf.K (15cm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_grille_m"
+msgid "Grille Ausf.M (3cm MK 103)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_h39_turret"
+msgid "H39 Turret"
+msgstr ""
+
+msgctxt "desc/stuff/evh_hetzer"
+msgid "Jagdpanzer 38"
+msgstr ""
+
+msgctxt "desc/stuff/evh_marder2"
+msgid "Marder II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_marder3m"
+msgid "Marder III Ausf.M"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer1b"
+msgid "Pz.Kpfw I Ausf.B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer1f"
+msgid "Pz.Kpfw I Ausf.F"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer2c"
+msgid "Pz.Kpfw II Ausf.C"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer2f"
+msgid "Pz.Kpfw II Ausf.F"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer2l"
+msgid "Pz.Kpfw II Ausf.L"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer731r"
+msgid "Pz.Kpfw 731(r) 'T-37'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer742r"
+msgid "Pz.Kpfw 742(r) 'BT'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzerjager1"
+msgid "Panzerjäger I"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz35t"
+msgid "Pz.Kpfw 35(t)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz38h_735"
+msgid "Pz.Kpfw 38H 735(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz38h_w40"
+msgid "Pz.Kpfw 38H 735(f) (Wurfrahmen 40)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz38t_a"
+msgid "Pz.Kpfw 38(t) Ausf.A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz38t_f"
+msgid "Pz.Kpfw 38(t) Ausf.F"
+msgstr ""
+
+msgctxt "desc/stuff/evh_pz38t_g"
+msgid "Pz.Kpfw 38(t) Ausf.G"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wespe"
+msgid "Wespe"
+msgstr ""
+
+msgctxt "desc/stuff/evh_hummel"
+msgid "Hummel"
+msgstr ""
+
+msgctxt "desc/stuff/evh_jagdpanther"
+msgid "Jagdpanther"
+msgstr ""
+
+msgctxt "desc/stuff/evh_jagdpanzer4_l48"
+msgid "Jagdpanzer IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_jagdpanzer4_l48_early"
+msgid "Jagdpanzer IV (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_nashorn"
+msgid "Nashorn"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ostwind"
+msgid "FlakPz.IV Ostwind"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer35s"
+msgid "Pz.Kpfw 35S 739(f)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3_flamm"
+msgid "Pz.Kpfw III Flamm"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3e"
+msgid "Pz.Kpfw III Ausf.E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3f"
+msgid "Pz.Kpfw III Ausf.F"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3h"
+msgid "Pz.Kpfw III Ausf.H"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3j"
+msgid "Pz.Kpfw III Ausf.J"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3j1"
+msgid "Pz.Kpfw III Ausf.J (L/60)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3l"
+msgid "Pz.Kpfw III Ausf.L"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3m"
+msgid "Pz.Kpfw III Ausf.M"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer3n"
+msgid "Pz.Kpfw III Ausf.N"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4_70_v"
+msgid "Panzer IV/70 (V)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4b"
+msgid "Pz.Kpfw IV Ausf.B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4d"
+msgid "Pz.Kpfw IV Ausf.D"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4f1"
+msgid "Pz.Kpfw IV Ausf.F1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4f2"
+msgid "Pz.Kpfw IV Ausf.F2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4g"
+msgid "Pz.Kpfw IV Ausf.G"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4h"
+msgid "Pz.Kpfw IV Ausf.H"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer4j"
+msgid "Pz.Kpfw IV Ausf.J"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer5a"
+msgid "Pz.Kpfw Panther Ausf.A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer5a_armor"
+msgid "Pz.Kpfw Panther Ausf.A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer5d"
+msgid "Pz.Kpfw Panther Ausf.D"
+msgstr ""
+
+msgctxt "desc/stuff/evh_panzer5g"
+msgid "Pz.Kpfw Panther Ausf.G"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sig33b"
+msgid "StuIG 33"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3a"
+msgid "StuG III Ausf.A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3b"
+msgid "StuG III Ausf.B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3f"
+msgid "StuG III Ausf.F"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3g"
+msgid "StuG III Ausf.G (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stug3g_late"
+msgid "StuG III Ausf.G (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stuh42"
+msgid "StuH 42 Ausf.G"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sturmpanzer4"
+msgid "Sturmpanzer IV"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wirbelwind"
+msgid "FlakPz.IV Wirbelwind"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ammo_trailer"
+msgid "Sd.Ah.51 (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_infantry_cart_if8"
+msgid "Infantry Cart If.8 (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sdah_57_1"
+msgid "Sd.Ah. 57/1 (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_air-bag"
+msgid "Barge"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ya5_k"
+msgid "Barge"
+msgstr ""
+
+msgctxt "desc/stuff/evh_c47_d"
+msgid "Douglas C-47 Skytrain"
+msgstr ""
+
+msgctxt "desc/stuff/evh_p47_d22"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/stuff/evh_p47_d22_recon"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m13_mgmc"
+msgid "MGMC M13"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m15a1_cgmc"
+msgid "CGMC M15A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m16_mgmc"
+msgid "MGMC M16"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m20"
+msgid "M20"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m21_mortar_carrier"
+msgid "81mm Mortar Carrier M21"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m2_halftrack"
+msgid "M2 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m2_halftrack_at"
+msgid "M2 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_gmc"
+msgid "75mm GMC M3"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_halftrack"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_halftrack_inf"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_halftrack_inf_late"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_commander"
+msgid "M3A1 Scout Car (Command)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_gmc"
+msgid "75mm GMC M3A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_halftrack"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_halftrack_inf"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_halftrack_inf_late"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_scout"
+msgid "M3A1 Scout Car"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_transport"
+msgid "M3A1 Scout Car (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4_mortar_carrier"
+msgid "81mm Mortar Carrier M4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_mortar_carrier"
+msgid "81mm Mortar Carrier M4A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5_hst"
+msgid "M5 High-Speed Tractor (HMG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m8_greyhound"
+msgid "M8 Greyhound"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m8_greyhound_early"
+msgid "M8 Greyhound (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t19_hmc"
+msgid "105mm HMC T19"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t30_hmc"
+msgid "75mm HMC T30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_m2a1"
+msgid "105mm Howitzer M2A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_105mm_m3"
+msgid "105mm Howitzer M3"
+msgstr ""
+
+msgctxt "desc/stuff/evh_107mm_m2"
+msgid "4.2-inch Mortar M2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_114mm_m1"
+msgid "4.5-inch Gun M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_gpf_us"
+msgid "155mm GPF M1918M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_m1"
+msgid "155mm Howitzer M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_m1a1_longtom"
+msgid "155mm Gun M1A1 'Long Tom'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_m1a1_longtom_sm"
+msgid "155mm Gun M1A1 'Long Tom'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_155mm_schneider_us"
+msgid "155mm Howitzer M1917"
+msgstr ""
+
+msgctxt "desc/stuff/evh_203mm_m1"
+msgid "8-inch Howitzer M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_m3"
+msgid "37mm Gun M3"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_m3a1"
+msgid "37mm Gun M3A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_40mm_m1"
+msgid "40mm Automatic Gun M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50cal_quad_m45"
+msgid "M55 Quadmount"
+msgstr ""
+
+msgctxt "desc/stuff/evh_50mm_rocket_projector"
+msgid "2-inch Rocket Projector"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_m1"
+msgid "57mm Gun M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_m1_early"
+msgid "57mm Gun M1 (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_m1_late"
+msgid "57mm Gun M1 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_60mm_m2"
+msgid "60mm Mortar M2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_60mm_m2_late"
+msgid "60mm Mortar M2 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_m1897"
+msgid "75mm M1897A4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_m1a1"
+msgid "75mm M1A1 (M8 Carriage)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_75mm_m3a3"
+msgid "75mm M1A1 (M3A3 Carriage)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m5_m1"
+msgid "3-inch Gun M5 (M1 Carriage)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m5_m6"
+msgid "3-inch Gun M5 (M6 Carriage)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_81mm_m1"
+msgid "81mm Mortar M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_81mm_m1_sm"
+msgid "81mm Mortar M1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_90mm_m1a1"
+msgid "90mm Gun M1A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_m1917_30cal"
+msgid "Browning M1917A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m1917_30cal"
+msgid "Browning M1917A1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m2_30cal_tripod"
+msgid "Browning M1919A4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m2_50cal_tripod"
+msgid "Browning M2HB"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb"
+msgid "Willys MB"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb_30cal"
+msgid "Willys MB (MG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_willys_mb_50cal"
+msgid "Willys MB (HMG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw"
+msgid "GMC CCKW-353 (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_inf"
+msgid "GMC CCKW-353 (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_art_ammo"
+msgid "GMC CCKW-353 (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_engineer"
+msgid "GMC CCKW-352 (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_engineer_late"
+msgid "GMC CCKW-352 (HMG) (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_fuel"
+msgid "GMC CCKW (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_cckw_redball"
+msgid "GMC CCKW (HMG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ford_gpa"
+msgid "Ford GPA"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m6_gmc"
+msgid "37mm GMC M6"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wc51"
+msgid "WC-51"
+msgstr ""
+
+msgctxt "desc/stuff/evh_wc52_50cal"
+msgid "WC-52 (MG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_usa_stretcher"
+msgid "Stretcher"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m26_pershing"
+msgid "M26 Pershing"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26e4"
+msgid "T26E4 'Super Pershing'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_lvt4"
+msgid "LVT-4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m18_hellcat"
+msgid "76mm GMC M18 'Hellcat'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m18_hellcat_late"
+msgid "76mm GMC M18 'Hellcat' (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m24_chaffee"
+msgid "M24 Chaffee"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_stuart_early"
+msgid "M3 Stuart (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_stuart_late"
+msgid "M3 Stuart (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_stuart"
+msgid "M3A1 Stuart"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5a1_stuart"
+msgid "M5A1 Stuart"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m5a1_stuart_late"
+msgid "M5A1 Stuart (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m8_hmc"
+msgid "75mm HMC M8"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m10_gmc"
+msgid "3-inch GMC M10"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m10_gmc_early"
+msgid "3-inch GMC M10"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m10_gmc_late"
+msgid "3-inch GMC M10 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m12_gmc"
+msgid "155mm GMC M12"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m12_gmc_sm"
+msgid "155mm GMC M12"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36_gmc"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36_gmc_late"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36_gmc_t33"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36b1_gmc"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36b1_gmc_late"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m36b1_gmc_t33"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_lee"
+msgid "M3 Lee"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4_105"
+msgid "M4(105)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4_75_early"
+msgid "M4 (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4_75_early_armor"
+msgid "M4 (Early) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4_75_late"
+msgid "M4 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_75_dd"
+msgid "M4A1 (DD)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_75_early"
+msgid "M4A1 (Early DV)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_75_late"
+msgid "M4A1 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_75_mid"
+msgid "M4A1 (Mid)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_75_mid_armor"
+msgid "M4A1 (Mid) (Armor)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_76w"
+msgid "M4A1(76)W (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a1_76w_mid"
+msgid "M4A1(76)W"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_105"
+msgid "M4A3(105)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_105_hvss"
+msgid "M4A3(105) HVSS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_75_early"
+msgid "M4A3 (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_75_late"
+msgid "M4A3 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_75w"
+msgid "M4A3(75)W (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_75w_e4_5"
+msgid "M4A3(75)W 'E4-5' (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_75w_early"
+msgid "M4A3(75)W (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_76w"
+msgid "M4A3(76)W"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_76w_field1"
+msgid "M4A3(76)W HVSS 'Field mod'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_76w_field2"
+msgid "M4A3(76)W HVSS 'Field mod'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_76w_field3"
+msgid "M4A3(76)W HVSS 'Field mod'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_76w_hvss"
+msgid "M4A3(76)W HVSS"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3_calliope"
+msgid "M4A3(75)W 'T34 Calliope'"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3e2_75"
+msgid "M4A3E2(75)W"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3e2_76"
+msgid "M4A3E2(76)W"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m7_hmc"
+msgid "105mm HMC M7"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m7_hmc_sm"
+msgid "105mm HMC M7"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m7b1_hmc"
+msgid "105mm HMC M7B1"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t1e3_m4a1_75"
+msgid "T1E3 M4A1 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ammo_trailer_usa"
+msgid "Cargo Trailer 1/4-Ton (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_il2_mod42"
+msgid "IL-2 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_po2"
+msgid "U-2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_yak1_ser69"
+msgid "Yak-1-69"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba10"
+msgid "BA-10"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba20"
+msgid "BA-20"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba20_command"
+msgid "BA-20 Command"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba6"
+msgid "BA-6"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ba64"
+msgid "BA-64B"
+msgstr ""
+
+msgctxt "desc/stuff/evh_fai_m"
+msgid "FAI-M"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz98"
+msgid "RF-8-GAZ-98"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1e1_scout"
+msgid "M3A1E1 Scout Car"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1e1_scout_mgun"
+msgid "M3A1E1 Scout Car (MG)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mmg_carrier_rus"
+msgid "Carrier Medium MG"
+msgstr ""
+
+msgctxt "desc/stuff/evh_nkl26"
+msgid "NKL-26"
+msgstr ""
+
+msgctxt "desc/stuff/evh_stalinetz60"
+msgid "Stalinets-60"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t20"
+msgid "T-20"
+msgstr ""
+
+msgctxt "desc/stuff/evh_universal_carrier_rus"
+msgid "Universal Carrier"
+msgstr ""
+
+msgctxt "desc/stuff/evh_100mm_bs3"
+msgid "100mm BS-3 M1944"
+msgstr ""
+
+msgctxt "desc/stuff/evh_107mm_m1910_30"
+msgid "107mm M1910/30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_120mm_pm38"
+msgid "120mm PM-38 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_122mm_a19"
+msgid "122mm A-19 M1931/37"
+msgstr ""
+
+msgctxt "desc/stuff/evh_122mm_m1910"
+msgid "122mm M1910/30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_122mm_m30"
+msgid "122mm M-30 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_152mm_br2"
+msgid "152mm Br-2 M1935"
+msgstr ""
+
+msgctxt "desc/stuff/evh_152mm_ml20"
+msgid "152mm ML-20 M1937"
+msgstr ""
+
+msgctxt "desc/stuff/evh_203mm_b4"
+msgid "203mm B-4 M1931"
+msgstr ""
+
+msgctxt "desc/stuff/evh_25mm_72k"
+msgid "25mm 72-K M1940"
+msgstr ""
+
+msgctxt "desc/stuff/evh_280mm_br5"
+msgid "280mm Br-5 M1939"
+msgstr ""
+
+msgctxt "desc/stuff/evh_300mm_m30"
+msgid "300mm M-30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_300mm_m31"
+msgid "300mm M-31"
+msgstr ""
+
+msgctxt "desc/stuff/evh_305mm_mb_2_12"
+msgid "305mm MB-2-12"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_61k"
+msgid "37mm 61-K M1939"
+msgstr ""
+
+msgctxt "desc/stuff/evh_37mm_m30"
+msgid "37mm 1-K M1930"
+msgstr ""
+
+msgctxt "desc/stuff/evh_45mm_21k_naval"
+msgid "45mm 21-K"
+msgstr ""
+
+msgctxt "desc/stuff/evh_45mm_m37"
+msgid "45mm M-37 M1937"
+msgstr ""
+
+msgctxt "desc/stuff/evh_45mm_m42"
+msgid "45mm M-42 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_zis2"
+msgid "57mm ZIS-2 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_57mm_zis2_late"
+msgid "57mm ZIS-2 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_bpk76"
+msgid "76mm BPK-76"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_f22"
+msgid "76mm F-22 M1936"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1902"
+msgid "76mm M1902"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1927"
+msgid "76mm M1927"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1927_late"
+msgid "76mm M1927"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1933"
+msgid "76mm M1933"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m1938"
+msgid "76mm M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_m43"
+msgid "76mm OB-25 M1943"
+msgstr ""
+
+msgctxt "desc/stuff/evh_76mm_zis3"
+msgid "76mm ZIS-3 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_82mm_bm37"
+msgid "82mm BM-37 M1937"
+msgstr ""
+
+msgctxt "desc/stuff/evh_85mm_52k"
+msgid "85mm 52-K M1939"
+msgstr ""
+
+msgctxt "desc/stuff/evh_broneschitok_1"
+msgid "Gun Shield"
+msgstr ""
+
+msgctxt "desc/stuff/evh_broneschitok_2"
+msgid "Gun Shield (Ski)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_broneschitok_2_dp"
+msgid "Gun Shield (Ski)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ds39_stand"
+msgid "DS-39 Stand"
+msgstr ""
+
+msgctxt "desc/stuff/evh_dshk_aa"
+msgid "DShK M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_dshk_stan"
+msgid "DShK M1938 Stand"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m41_ampulomet"
+msgid "Ampulomet M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_heavy_mg_maxim"
+msgid "Maxim M1910/30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_maxim"
+msgid "Maxim M1910/30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_maxim_stand"
+msgid "Maxim M1910/30 Stand"
+msgstr ""
+
+msgctxt "desc/stuff/evh_maxim_x4"
+msgid "Quad M4 Maxim"
+msgstr ""
+
+msgctxt "desc/stuff/evh_sg43_stand"
+msgid "SG-43 Stand"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bm13_studebaker"
+msgid "BM-13 Katyusha"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bm31_12"
+msgid "BM-31-12 Andryusha"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz67"
+msgid "GAZ-67"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz67b"
+msgid "GAZ-67b"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz_aaa"
+msgid "GAZ-AAA (Transport)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz_aaa_72k"
+msgid "GAZ-AAA 72-K"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz_aaa_maximx4"
+msgid "GAZ-AAA (Quad Maxim)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz_aaa_supply"
+msgid "GAZ-AAA (Supply)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_gaz_fuel"
+msgid "GAZ-AAA (Fuel)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m72"
+msgid "M72 (DP-27)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_yag10_29k"
+msgid "YaG-10 29-K"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis5"
+msgid "ZIS-5"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis5_dshk"
+msgid "ZIS-5 (DShK)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis5eng"
+msgid "ZIS-5 (Engineer)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis6_bm13_16"
+msgid "BM-13-16 (ZiS-6)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis6_bm8_48"
+msgid "BM-8-48 (ZiS-6)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_mo4"
+msgid "MO-4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_churchill3"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/stuff/evh_is1_43"
+msgid "IS-1 M1943"
+msgstr ""
+
+msgctxt "desc/stuff/evh_is2_43"
+msgid "IS-2 M1943"
+msgstr ""
+
+msgctxt "desc/stuff/evh_is2_44"
+msgid "IS-2 M1944"
+msgstr ""
+
+msgctxt "desc/stuff/evh_is2_45"
+msgid "IS-2 M1945"
+msgstr ""
+
+msgctxt "desc/stuff/evh_isu122s"
+msgid "ISU-122S"
+msgstr ""
+
+msgctxt "desc/stuff/evh_isu152"
+msgid "ISU-152"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_39"
+msgid "KV-1 M1939"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_40"
+msgid "KV-1 M1940"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_40e"
+msgid "KV-1E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_41"
+msgid "KV-1 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1_42"
+msgid "KV-1 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv1s"
+msgid "KV-1S M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv2_40"
+msgid "KV-2 M1940"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv8"
+msgid "KV-8 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kv85"
+msgid "KV-85"
+msgstr ""
+
+msgctxt "desc/stuff/evh_smk"
+msgid "SMK"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su100y"
+msgid "SU-100Y"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su152"
+msgid "SU-152"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su152_late"
+msgid "SU-152"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t35"
+msgid "T-35 M1936"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t35_late"
+msgid "T-35 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt2"
+msgid "BT-2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt2_da2"
+msgid "BT-2 DA-2"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt5"
+msgid "BT-5 M1934"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt7"
+msgid "BT-7 M1937"
+msgstr ""
+
+msgctxt "desc/stuff/evh_bt7a"
+msgid "BT-7A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kht130"
+msgid "KhT-130 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_kht26"
+msgid "KhT-26 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_stuart_late_rus"
+msgid "M3 Stuart (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3a1_stuart_rus"
+msgid "M3A1 Stuart"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su26"
+msgid "SU-26"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su76"
+msgid "SU-76M"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_31"
+msgid "T-26 M1931"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_33"
+msgid "T-26 M1933"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_38"
+msgid "T-26 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t26_39"
+msgid "T-26 M1939"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t27"
+msgid "T-27"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t30"
+msgid "T-30 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t37a"
+msgid "T-37A"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t40"
+msgid "T-40 M1940"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t50"
+msgid "T-50"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t60"
+msgid "T-60 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t60_bm8_24"
+msgid "BM-8-24 (T-60)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t70"
+msgid "T-70 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t70m"
+msgid "T-70M M1943"
+msgstr ""
+
+msgctxt "desc/stuff/evh_zis30"
+msgid "Zis-30"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m3_lee_rus"
+msgid "M3 Lee"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a2_75_early_rus"
+msgid "M4A2 (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a2_75_late_rus"
+msgid "M4A2 (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a2_76w_early_rus"
+msgid "M4A2(76)W (Early)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a2_76w_late_rus"
+msgid "M4A2(76)W (Late)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_m4a3e4_rus"
+msgid "M4A3E4"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su100"
+msgid "SU-100"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su122"
+msgid "SU-122"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su85"
+msgid "SU-85"
+msgstr ""
+
+msgctxt "desc/stuff/evh_su85m"
+msgid "SU-85M"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28"
+msgid "T-28 M1936"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28_38"
+msgid "T-28 M1938"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t28e"
+msgid "T-28E"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3457_41"
+msgid "T-34 M1941 (57mm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3457_43"
+msgid "T-34 M1942 (57mm)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_40"
+msgid "T-34 M1940"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_41"
+msgid "T-34 M1941"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_41e"
+msgid "Shielded T-34"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_42"
+msgid "T-34 M1942"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_43"
+msgid "T-34 M1943"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3476_43_flame"
+msgid "OT-34 M1943 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44"
+msgid "T-34-85 M1944"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44_flame"
+msgid "OT-34-85 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44a"
+msgid "T-34-85 M1944"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44a_flame"
+msgid "OT-34-85 (Flame)"
+msgstr ""
+
+msgctxt "desc/stuff/evh_t3485_44b"
+msgid "T-34-85 M1944"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine2"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine7"
+msgid "Valentine Mk.VII"
+msgstr ""
+
+msgctxt "desc/stuff/evh_valentine9"
+msgid "Valentine Mk.IX"
+msgstr ""
+
+msgctxt "desc/stuff/evh_ap_2"
+msgid "2-AP-3 (Supply)"
+msgstr ""

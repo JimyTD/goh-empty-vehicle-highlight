@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 80mm_sgrw34_rapid (generated)
+	{entity "evh_80mm_sgrw34_rapid"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}

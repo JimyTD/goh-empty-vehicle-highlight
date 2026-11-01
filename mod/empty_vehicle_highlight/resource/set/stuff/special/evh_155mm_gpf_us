@@ -1,0 +1,11 @@
+{item
+	;// empty_vehicle_highlight proxy item for 155mm_gpf_us (generated)
+	{entity "evh_155mm_gpf_us"}
+	{inventory
+		{size 4 1}
+		{weight 100}
+		{block 5}
+		{fsm "stuff"}
+	}
+	{mass 20}
+}
