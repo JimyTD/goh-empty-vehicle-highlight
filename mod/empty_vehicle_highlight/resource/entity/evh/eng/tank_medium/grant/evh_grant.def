@@ -1,0 +1,77 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for grant (generated)
+	{Extension "../../../../-vehicle/eng/tank_medium/grant/grant.mdl"}
+	{extender "stuff"
+		{item "evh_grant"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel11" {able clear}}
+	{volume "barrel12" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "engine3" {able clear}}
+	{volume "fuel1" {able clear}}
+	{volume "fuel2" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shieldl1" {able clear}}
+	{volume "shieldl2" {able clear}}
+	{volume "shieldl3" {able clear}}
+	{volume "shieldl4" {able clear}}
+	{volume "shieldl5" {able clear}}
+	{volume "shieldl6" {able clear}}
+	{volume "shieldr1" {able clear}}
+	{volume "shieldr2" {able clear}}
+	{volume "shieldr3" {able clear}}
+	{volume "shieldr4" {able clear}}
+	{volume "shieldr5" {able clear}}
+	{volume "shieldr6" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft10" {able clear}}
+	{volume "trackleft11" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackleft8" {able clear}}
+	{volume "trackleft9" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright10" {able clear}}
+	{volume "trackright11" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "trackright8" {able clear}}
+	{volume "trackright9" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "turret2" {able clear}}
+	{volume "turret3" {able clear}}
+	{volume "turret4" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

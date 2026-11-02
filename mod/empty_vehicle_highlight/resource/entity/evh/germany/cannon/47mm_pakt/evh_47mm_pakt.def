@@ -1,0 +1,28 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 47mm_pakt (generated)
+	{Extension "../../../../-vehicle/germany/cannon/47mm_pakt/47mm_pakt.mdl"}
+	{extender "stuff"
+		{item "evh_47mm_pakt"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standl1" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "standr1" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

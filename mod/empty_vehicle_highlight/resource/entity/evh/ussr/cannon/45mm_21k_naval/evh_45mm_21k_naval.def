@@ -1,0 +1,20 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 45mm_21k_naval (generated)
+	{Extension "../../../../-vehicle/ussr/cannon/45mm_21k_naval/45mm_21k_naval.mdl"}
+	{extender "stuff"
+		{item "evh_45mm_21k_naval"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

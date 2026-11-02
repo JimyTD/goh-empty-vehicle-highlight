@@ -1,0 +1,52 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for panzer3j (generated)
+	{Extension "../../../../-vehicle/germany/tank_medium/panzer3j/panzer3j.mdl"}
+	{extender "stuff"
+		{item "evh_panzer3j"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "barrel" {able clear}}
+	{volume "basket" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "breach" {able clear}}
+	{volume "cupola" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "mantlet1" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield3" {able clear}}
+	{volume "shield4" {able clear}}
+	{volume "shieldw1" {able clear}}
+	{volume "shieldw2" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackleft8" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "trackright8" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret" {able clear}}
+	{volume "turret1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

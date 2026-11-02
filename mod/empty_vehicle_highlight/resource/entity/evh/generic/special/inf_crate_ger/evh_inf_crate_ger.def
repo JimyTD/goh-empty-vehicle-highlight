@@ -1,0 +1,14 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for inf_crate_ger (generated)
+	{Extension "../../../../-vehicle/generic/special/inf_crate_ger/inf_crate.mdl"}
+	{extender "stuff"
+		{item "evh_inf_crate_ger"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,51 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for sdkfz10 (generated)
+	{Extension "../../../../-vehicle/germany/btr/sdkfz10/sdkfz10.mdl"}
+	{extender "stuff"
+		{item "evh_sdkfz10"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "glassl" {able clear}}
+	{volume "glassr" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "hole5" {able clear}}
+	{volume "hole6" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield_cover" {able clear}}
+	{volume "shield_cover2" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackleft8" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "trackright8" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

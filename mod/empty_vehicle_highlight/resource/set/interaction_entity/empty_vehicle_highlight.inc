@@ -7,7 +7,9 @@
 ;//      spawned at the vehicle's "basis" bone. It is a stuff item, so the
 ;//      vanilla "highlight items" key (C) outlines it, and hovering shows the
 ;//      vehicle name. Proxies are generated per vehicle by tools/gen_proxies.py
-;//      into empty_vehicle_highlight_proxies.inc ({"<name>" {on "evh_proxy"}}).
+;//      into empty_vehicle_highlight_proxies.inc
+;//      ({"<name> obstacle_ignore_height" {on "evh_proxy"}}); proxy entities live
+;//      in /entity/evh/, items in /set/stuff/evh/ (outside the library's scan).
 ;//      A proxy lives 3.3 s and is re-spawned every 3 s while the vehicle
 ;//      stays empty, so it disappears by itself once the vehicle is crewed.
 ;//

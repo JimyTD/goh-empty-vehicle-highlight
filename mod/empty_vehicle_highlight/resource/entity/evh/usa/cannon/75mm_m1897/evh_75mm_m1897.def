@@ -1,0 +1,28 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 75mm_m1897 (generated)
+	{Extension "../../../../-vehicle/usa/cannon/75mm_m1897/75mm_m1897.mdl"}
+	{extender "stuff"
+		{item "evh_75mm_m1897"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

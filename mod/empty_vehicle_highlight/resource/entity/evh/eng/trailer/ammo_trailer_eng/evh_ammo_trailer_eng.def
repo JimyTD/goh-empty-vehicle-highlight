@@ -1,0 +1,19 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for ammo_trailer_eng (generated)
+	{Extension "../../../../-vehicle/eng/trailer/ammo_trailer_eng/ammo_trailer_eng.mdl"}
+	{extender "stuff"
+		{item "evh_ammo_trailer_eng"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

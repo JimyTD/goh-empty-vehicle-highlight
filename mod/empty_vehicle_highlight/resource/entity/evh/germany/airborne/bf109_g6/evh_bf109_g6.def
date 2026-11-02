@@ -1,0 +1,37 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for bf109_g6 (generated)
+	{Extension "../../../../-vehicle/germany/airborne/bf109_g6/bf109_g6.mdl"}
+	{extender "stuff"
+		{item "evh_bf109_g6"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "1blade1" {able clear}}
+	{volume "1blade2" {able clear}}
+	{volume "1blade3" {able clear}}
+	{volume "aileron1" {able clear}}
+	{volume "aileron2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "canopy" {able clear}}
+	{volume "elevator1" {able clear}}
+	{volume "elevator2" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "gear_l" {able clear}}
+	{volume "gear_r" {able clear}}
+	{volume "rudder" {able clear}}
+	{volume "spin1" {able clear}}
+	{volume "stabilizer1" {able clear}}
+	{volume "stabilizer2" {able clear}}
+	{volume "wheelback" {able clear}}
+	{volume "wheell" {able clear}}
+	{volume "wheelr" {able clear}}
+	{volume "wingl1" {able clear}}
+	{volume "wingl2" {able clear}}
+	{volume "wingr1" {able clear}}
+	{volume "wingr2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

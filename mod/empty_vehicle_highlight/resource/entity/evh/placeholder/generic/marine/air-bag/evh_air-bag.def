@@ -1,0 +1,16 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for air-bag (generated)
+	{Extension "../../../../../-vehicle/placeholder/generic/marine/air-bag/air-bag.mdl"}
+	{extender "stuff"
+		{item "evh_air-bag"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "bady" {able clear}}
+	{volume "ballast" {able clear}}
+	{volume "engine" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

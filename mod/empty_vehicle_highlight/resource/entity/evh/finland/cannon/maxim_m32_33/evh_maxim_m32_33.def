@@ -1,0 +1,25 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for maxim_m32_33 (generated)
+	{Extension "../../../../-vehicle/finland/cannon/maxim_m32_33/maxim_m32_33.mdl"}
+	{extender "stuff"
+		{item "evh_maxim_m32_33"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo_box" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "select" {able clear}}
+	{volume "standc" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "water_can" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

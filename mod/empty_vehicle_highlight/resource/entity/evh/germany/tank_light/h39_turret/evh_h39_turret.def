@@ -1,0 +1,21 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for h39_turret (generated)
+	{Extension "../../../../-vehicle/germany/tank_light/h39_turret/h39_turret.mdl"}
+	{extender "stuff"
+		{item "evh_h39_turret"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "cupola" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

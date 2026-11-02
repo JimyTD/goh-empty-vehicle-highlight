@@ -1,0 +1,22 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 150mm_rkh41 (generated)
+	{Extension "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/150mm_nebelwerfer41.mdl"}
+	{extender "stuff"
+		{item "evh_150mm_rkh41"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "select" {able clear}}
+	{volume "standc" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

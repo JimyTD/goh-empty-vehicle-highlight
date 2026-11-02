@@ -1,12 +1,20 @@
 """Generate per-vehicle highlight proxies for the empty_vehicle_highlight mod.
 
 For every vehicle def in /entity/-vehicle (wrecks under /x/ and *_x / *_xx skipped):
-  * proxy entity   <mdl folder>/evh_<name>.def   - same model as the vehicle, all
-                    volumes "able clear", stuff extender -> lights up with key C
-  * item           set/stuff/special/evh_<name>  - hover text key desc/stuff/evh_<name>
+  * proxy entity   entity/evh/<faction>/.../evh_<name>.def - same model as the vehicle
+                    (relative path back into /entity/-vehicle), all volumes
+                    "able clear", stuff extender -> lights up with key C
+  * item           set/stuff/evh/evh_<name>  - hover text key desc/stuff/evh_<name>
   * localization   desc/stuff/evh_<name> = vehicle name (copied from desc/entity/<name>)
-  * script block   {"<name>" {on "evh_proxy" {spawn "evh_<name>" ...}}}
-  * entity.set     vanilla set/interaction_entity/entity.set + our two includes
+  * script block   {"<name> obstacle_ignore_height" {on "evh_proxy" {spawn "evh_<name>" ...}}}
+  * debug.inc      vanilla set/interaction_entity/debug.inc + our two includes
+
+Compatibility rules (see README):
+  * nothing under /entity/-vehicle/ or /set/stuff/special/: the in-game library
+    scans those folders and crashes / lists our proxies.
+  * do not override entity.set (big mods replace it); hook into the tiny debug.inc,
+    which every entity.set keeps including.
+  * script block keys never equal a bare vanilla entity name.
 
 Reads the game paks only; writes into mod/empty_vehicle_highlight/.
 Game folder: env GOH_DIR, else the default below.
@@ -18,11 +26,18 @@ import shutil
 import zipfile
 from pathlib import Path
 
-GAME = Path(os.environ.get("GOH_DIR", r"F:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell"))
+GAME = Path(os.environ.get("GOH_DIR", r"D:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell"))
 MOD = Path(__file__).resolve().parent.parent / "mod" / "empty_vehicle_highlight"
 INCLUDES = ['empty_vehicle_highlight.inc', 'empty_vehicle_highlight_proxies.inc']
 VPAK = "-vehicle"                      # paths inside -vehicle.pak start with this
+PROXY_ROOT = "evh"                     # proxies live in /entity/evh/<path below -vehicle/>
+ITEM_DIR = "evh"                       # items live in /set/stuff/evh/
+HOOK_FILE = "set/interaction_entity/debug.inc"
+KEY_SUFFIX = "obstacle_ignore_height"  # prop from /properties/vehicle.ext
 PROXY_LIFE = 3.3                       # must stay > refresh period in the .inc (3 s)
+
+# outputs of older versions that must not be shipped any more
+LEGACY = ["resource/set/interaction_entity/entity.set", f"resource/entity/{VPAK}"]
 
 vz = zipfile.ZipFile(GAME / "resource/entity/-vehicle.pak")
 files = {n.lower(): n for n in vz.namelist()}
@@ -102,35 +117,44 @@ def po_header(lang):
             f'"Language: {lang}\\n"\n\n')
 
 
-def write_entity_set():
-    """Copy the vanilla entity.set from the installed game and append our includes,
+def write_hook():
+    """Copy the vanilla debug.inc from the installed game and append our includes,
     so a game update only needs a re-run of this script."""
-    raw = zipfile.ZipFile(GAME / "resource/gamelogic.pak").read("set/interaction_entity/entity.set")
+    raw = zipfile.ZipFile(GAME / "resource/gamelogic.pak").read(HOOK_FILE)
     nl = b"\r\n" if b"\r\n" in raw else b"\n"
-    body = raw.rstrip()
-    if not body.endswith(b"}"):
-        raise SystemExit("unexpected entity.set layout: no closing brace")
-    add = nl + b"\t;// mod empty_vehicle_highlight (keep last so its handlers chain after vanilla ones)" + nl
-    add += b"".join(b'\t(include "' + i.encode() + b'")' + nl for i in INCLUDES)
-    out = body[:-1].rstrip() + nl + add + b"}" + nl
-    p = MOD / "resource/set/interaction_entity/entity.set"
+    if b"(include" in raw:
+        raise SystemExit(f"unexpected {HOOK_FILE} layout: already has includes")
+    add = nl + b";// mod empty_vehicle_highlight: hooked here instead of entity.set for compatibility" + nl
+    add += b"".join(b'(include "' + i.encode() + b'")' + nl for i in INCLUDES)
+    out = raw.rstrip() + nl + add
+    p = MOD / "resource" / HOOK_FILE
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_bytes(out)
 
 
 def main():
-    write_entity_set()
+    for rel in LEGACY:
+        p = MOD / rel
+        if p.is_dir():
+            shutil.rmtree(p)
+        elif p.exists():
+            p.unlink()
+    old_items = MOD / "resource/set/stuff/special"
+    for p in old_items.glob("evh_*"):
+        p.unlink()
+    if old_items.is_dir() and not any(old_items.iterdir()):
+        old_items.rmdir()
+
+    write_hook()
     names = load_names()
     defs = sorted(n for n in vz.namelist()
                   if n.endswith(".def") and not re.search(r"/x/|_xx?\.def$", n))
 
-    out_entity = MOD / "resource" / "entity"
-    out_items = MOD / "resource" / "set" / "stuff" / "special"
+    out_entity = MOD / "resource" / "entity" / PROXY_ROOT
+    out_items = MOD / "resource" / "set" / "stuff" / ITEM_DIR
     # remove previous generation
-    for p in (out_entity / VPAK,):
-        shutil.rmtree(p, ignore_errors=True)
-    for p in out_items.glob("evh_*"):
-        p.unlink()
+    shutil.rmtree(out_entity, ignore_errors=True)
+    shutil.rmtree(out_items, ignore_errors=True)
     out_items.mkdir(parents=True, exist_ok=True)
 
     blocks, pot, po, skipped = [], [], [], []
@@ -143,9 +167,13 @@ def main():
         mdl_text = strip_comments(read(mdl) or "")
         vols = sorted(set(re.findall(r'(?i)\{\s*volume\s+"([^"]+)"', mdl_text)))
         proxy = f"evh_{name}"
+        # proxy sits at /entity/evh/<faction>/..., model stays at /entity/-vehicle/<faction>/...
+        mdl_dir = posixpath.dirname(mdl)
+        proxy_dir = posixpath.join(PROXY_ROOT, posixpath.relpath(mdl_dir, VPAK))
+        mdl_ref = posixpath.relpath(mdl, proxy_dir)
         lines = ["{game_entity",
                  f"\t;// empty_vehicle_highlight proxy for {name} (generated)",
-                 f'\t{{Extension "{posixpath.basename(mdl)}"}}']
+                 f'\t{{Extension "{mdl_ref}"}}']
         if texmod:
             lines.append(f'\t{{texmod "{texmod}"}}')
         lines += ["\t{extender \"stuff\"",
@@ -157,7 +185,7 @@ def main():
             lines.append(f'\t{{volume "{v}" {{able clear}}}}')
         lines += ['\t{lodclass "vehicle"}', "\t{NoGroupMesh 1}", "\t{NoVisibilityPatch}",
                   "\t{NoCastShadows}", "}", ""]
-        dest = out_entity / Path(posixpath.dirname(mdl)) / f"{proxy}.def"
+        dest = MOD / "resource" / "entity" / Path(proxy_dir) / f"{proxy}.def"
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text("\n".join(lines), encoding="utf-8")
 
@@ -173,7 +201,7 @@ def main():
         pot.append(f'msgctxt "desc/stuff/{proxy}"\nmsgid "{en}"\nmsgstr ""\n')
         po.append(f'msgctxt "desc/stuff/{proxy}"\nmsgid "{en}"\nmsgstr "{zh}"\n')
 
-        blocks.append(f'{{"{name}"\n\t{{on "evh_proxy"\n'
+        blocks.append(f'{{"{name} {KEY_SUFFIX}"\n\t{{on "evh_proxy"\n'
                       f'\t\t{{spawn "{proxy}" "basis" x {{delay {PROXY_LIFE} {{delete}}}}}}\n\t}}\n}}')
 
     inc = MOD / "resource/set/interaction_entity/empty_vehicle_highlight_proxies.inc"

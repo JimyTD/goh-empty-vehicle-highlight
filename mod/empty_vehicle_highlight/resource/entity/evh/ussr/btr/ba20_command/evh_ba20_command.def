@@ -1,0 +1,26 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for ba20_command (generated)
+	{Extension "../../../../-vehicle/ussr/btr/ba20_command/ba20_command.mdl"}
+	{extender "stuff"
+		{item "evh_ba20_command"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "cupola" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

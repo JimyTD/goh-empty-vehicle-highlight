@@ -1,0 +1,51 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for opel_maultier (generated)
+	{Extension "../../../../-vehicle/germany/car/opel_maultier/opel_maultier.mdl"}
+	{extender "stuff"
+		{item "evh_opel_maultier"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "bodyback1" {able clear}}
+	{volume "bodyback2" {able clear}}
+	{volume "bodyback3" {able clear}}
+	{volume "bodyback4" {able clear}}
+	{volume "bodyback5" {able clear}}
+	{volume "bodyback6" {able clear}}
+	{volume "bodyback7" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "glass" {able clear}}
+	{volume "glassl" {able clear}}
+	{volume "glassr" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

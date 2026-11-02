@@ -6,7 +6,7 @@ import os
 import shutil
 from pathlib import Path
 
-GAME = Path(os.environ.get("GOH_DIR", r"F:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell"))
+GAME = Path(os.environ.get("GOH_DIR", r"D:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell"))
 SRC = Path(__file__).resolve().parent.parent / "mod" / "empty_vehicle_highlight"
 DST = GAME / "mods" / SRC.name
 

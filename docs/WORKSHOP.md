@@ -31,7 +31,7 @@ Press the vanilla [b]"highlight items"[/b] key (default [b]C[/b]) to also outlin
 [list]
 [*]Turrets/hatches in the outline use the default pose.
 [*]On side slopes the outline may be slightly off (roll is not copied).
-[*]Overrides [i]set/interaction_entity/entity.set[/i] - conflicts with other mods that override the same file.
+[*]Only appends two include lines to the small vanilla [i]set/interaction_entity/debug.inc[/i]; it no longer overrides [i]entity.set[/i], so it works alongside most big mods. Vehicles added by other mods are not highlighted.
 [*]Multiplayer not tested.
 [/list]
 
@@ -53,7 +53,7 @@ Source code & generator: https://github.com/JimyTD/goh-empty-vehicle-highlight
 [list]
 [*]轮廓中的炮塔、舱门为默认姿态。
 [*]横向斜坡上轮廓可能略有偏差（不复制侧倾）。
-[*]覆盖了 [i]set/interaction_entity/entity.set[/i]，与同样覆盖该文件的模组冲突。
+[*]只在原版很小的 [i]set/interaction_entity/debug.inc[/i] 末尾追加两行引用，不再覆盖 [i]entity.set[/i]，可与大多数大型模组同时使用。其他模组新增的载具不会高亮。
 [*]未测试联机。
 [/list]
 

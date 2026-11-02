@@ -1,0 +1,44 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for matilda2_mk3 (generated)
+	{Extension "../../../../-vehicle/eng/tank_medium/matilda2_mk3/matilda2_mk3.mdl"}
+	{extender "stuff"
+		{item "evh_matilda2_mk3"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "cupola" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "engine3" {able clear}}
+	{volume "fuel1" {able clear}}
+	{volume "fuel2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "turret2" {able clear}}
+	{volume "turret3" {able clear}}
+	{volume "turret4" {able clear}}
+	{volume "turret5" {able clear}}
+	{volume "turret6" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

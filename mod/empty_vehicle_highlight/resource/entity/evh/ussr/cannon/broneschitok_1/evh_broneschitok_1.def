@@ -1,0 +1,17 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for broneschitok_1 (generated)
+	{Extension "../../../../-vehicle/ussr/cannon/broneschitok_1/broneschitok_1.mdl"}
+	{extender "stuff"
+		{item "evh_broneschitok_1"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "hole1" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

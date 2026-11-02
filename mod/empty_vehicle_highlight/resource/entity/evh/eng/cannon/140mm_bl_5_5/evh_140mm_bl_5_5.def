@@ -1,0 +1,27 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 140mm_bl_5_5 (generated)
+	{Extension "../../../../-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.mdl"}
+	{extender "stuff"
+		{item "evh_140mm_bl_5_5"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "body7" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

@@ -1,0 +1,64 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 600mm_thor (generated)
+	{Extension "../../../../-vehicle/germany/cannon/600mm_thor/600mm_thor.mdl"}
+	{extender "stuff"
+		{item "evh_600mm_thor"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "armor4" {able clear}}
+	{volume "armor5" {able clear}}
+	{volume "armor6" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "barrel5" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shell1" {able clear}}
+	{volume "shell2" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft10" {able clear}}
+	{volume "trackleft11" {able clear}}
+	{volume "trackleft12" {able clear}}
+	{volume "trackleft13" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackleft8" {able clear}}
+	{volume "trackleft9" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright10" {able clear}}
+	{volume "trackright11" {able clear}}
+	{volume "trackright12" {able clear}}
+	{volume "trackright13" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "trackright8" {able clear}}
+	{volume "trackright9" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

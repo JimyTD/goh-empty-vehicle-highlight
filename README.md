@@ -16,6 +16,12 @@ A mod for *Call to Arms – Gates of Hell: Ostfront*. Pressing the vanilla "high
 2. 每种载具一个替身：同一模型、带 stuff extender 和专属物品，所有碰撞体关闭，因此能被 C 点亮、悬停显示名称，但不可拾取、不可选中、不挡子弹。
 3. 替身、物品、名称和脚本块由 `tools/gen_proxies.py` 从当前安装的游戏数据生成（当前 822 种载具）。
 
+### 兼容性约定
+
+- 替身实体放在 `/entity/evh/`，物品放在 `/set/stuff/evh/`。单位资料库会扫描 `/entity/-vehicle/` 和 `/set/stuff/special/`，替身放在那里会被当成载具/物品读入，导致进资料库闪退。
+- 不覆盖 `entity.set`（大型模组常改它），而是在原版很小的 `debug.inc` 末尾追加两行 include；各模组的 `entity.set` 通常都保留对它的引用。
+- 每种载具的脚本块 key 写成 `"<载具名> obstacle_ignore_height"`，不与原版或其他模组的同名载具块重名。
+
 详细的引擎分析见 [docs/NOTES.md](docs/NOTES.md)，Workshop 发布材料见 [docs/WORKSHOP.md](docs/WORKSHOP.md)。
 
 ## 目录
@@ -24,11 +30,11 @@ A mod for *Call to Arms – Gates of Hell: Ostfront*. Pressing the vanilla "high
 mod/empty_vehicle_highlight/     模组本体（即上传 Workshop 的目录）
   mod.info
   resource/set/interaction_entity/
-    entity.set                         原版文件 + 两行 include（生成）
+    debug.inc                          原版文件 + 两行 include（生成）
     empty_vehicle_highlight.inc        核心逻辑（手写）
     empty_vehicle_highlight_proxies.inc 每种载具的生成块（生成）
-  resource/set/stuff/special/evh_*     替身物品（生成）
-  resource/entity/-vehicle/**/evh_*.def 替身实体（生成）
+  resource/set/stuff/evh/evh_*         替身物品（生成）
+  resource/entity/evh/**/evh_*.def     替身实体，模型用相对路径指回原版（生成）
   localizations/{default,ch}/...       替身悬停名称（生成）
 tools/
   gen_proxies.py   重新生成所有生成文件
@@ -56,7 +62,8 @@ python tools/check_log.py
 
 - 替身只复制载具的偏航和俯仰，不复制侧倾；横向斜坡上会略有错位。
 - 替身的炮塔、舱门是默认姿态，弃车时炮塔转过的话这部分轮廓会对不上。
-- 覆盖了原版 `set/interaction_entity/entity.set`，与其他同样覆盖该文件的模组冲突。
+- 覆盖了原版 `set/interaction_entity/debug.inc`（只追加两行 include），与同样覆盖该文件、或自带的 `entity.set` 不再引用 `debug.inc` 的模组冲突。
+- 其他模组新增的载具没有替身，不会高亮。
 - 未测试联机。
 
 ## License

@@ -1,0 +1,28 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 203mm_b4 (generated)
+	{Extension "../../../../-vehicle/ussr/cannon/203mm_b4/203mm_b4.mdl"}
+	{extender "stuff"
+		{item "evh_203mm_b4"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "barrel5" {able clear}}
+	{volume "barrel6" {able clear}}
+	{volume "barrel7" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

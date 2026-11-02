@@ -1,0 +1,27 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 50mm_kwk39_platform (generated)
+	{Extension "../../../../-vehicle/germany/cannon/50mm_kwk39_platform/50mm_kwk39_platform.mdl"}
+	{extender "stuff"
+		{item "evh_50mm_kwk39_platform"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "shield3" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

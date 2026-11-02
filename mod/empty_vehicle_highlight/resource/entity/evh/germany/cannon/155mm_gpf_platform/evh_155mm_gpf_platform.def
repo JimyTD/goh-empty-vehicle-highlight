@@ -1,0 +1,20 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 155mm_gpf_platform (generated)
+	{Extension "../../../../-vehicle/germany/cannon/155mm_gpf_platform/155mm_gpf_platform.mdl"}
+	{extender "stuff"
+		{item "evh_155mm_gpf_platform"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

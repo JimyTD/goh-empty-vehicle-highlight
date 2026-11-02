@@ -1,0 +1,21 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 75mm_itk37_stat_early (generated)
+	{Extension "../../../../-vehicle/finland/cannon/75mm_itk37_stat/75mm_itk37_stat.mdl"}
+	{extender "stuff"
+		{item "evh_75mm_itk37_stat_early"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "barrel4" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

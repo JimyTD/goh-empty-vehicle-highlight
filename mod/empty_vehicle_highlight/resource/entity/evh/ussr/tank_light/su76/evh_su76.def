@@ -1,0 +1,34 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for su76 (generated)
+	{Extension "../../../../-vehicle/ussr/tank_light/su76/su76.mdl"}
+	{extender "stuff"
+		{item "evh_su76"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "ammo4" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "mantlet1" {able clear}}
+	{volume "mantlet2" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "tshield1" {able clear}}
+	{volume "tshield2" {able clear}}
+	{volume "tshield3" {able clear}}
+	{volume "tshield4" {able clear}}
+	{volume "tshield5" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

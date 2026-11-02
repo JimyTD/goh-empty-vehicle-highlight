@@ -1,0 +1,66 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for m4a2_76w_late_rus (generated)
+	{Extension "../../../../-vehicle/ussr/tank_medium/m4a2_76w_late_rus/m4a2_76w_late_rus.mdl"}
+	{extender "stuff"
+		{item "evh_m4a2_76w_late_rus"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "ammo1" {able clear}}
+	{volume "ammo2" {able clear}}
+	{volume "ammo3" {able clear}}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "armor3" {able clear}}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "breech" {able clear}}
+	{volume "cupola2" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "engine3" {able clear}}
+	{volume "fuel1" {able clear}}
+	{volume "fuel2" {able clear}}
+	{volume "fuel3" {able clear}}
+	{volume "fuel4" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "mantlet" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "trackleft" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft10" {able clear}}
+	{volume "trackleft11" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackleft7" {able clear}}
+	{volume "trackleft8" {able clear}}
+	{volume "trackleft9" {able clear}}
+	{volume "trackright" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright10" {able clear}}
+	{volume "trackright11" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "trackright7" {able clear}}
+	{volume "trackright8" {able clear}}
+	{volume "trackright9" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "turret2" {able clear}}
+	{volume "turret3" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

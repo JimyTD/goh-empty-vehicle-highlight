@@ -1,0 +1,18 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 81mm_m1 (generated)
+	{Extension "../../../../-vehicle/usa/cannon/81mm_m1/81mm_m1.mdl"}
+	{extender "stuff"
+		{item "evh_81mm_m1"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "select" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

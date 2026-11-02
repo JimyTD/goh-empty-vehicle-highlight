@@ -1,0 +1,29 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for kubelwagen (generated)
+	{Extension "../../../../-vehicle/germany/car/kubelwagen/kubelwagen.mdl"}
+	{extender "stuff"
+		{item "evh_kubelwagen"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "body6" {able clear}}
+	{volume "engine" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "glass" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield_cover" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelspare" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

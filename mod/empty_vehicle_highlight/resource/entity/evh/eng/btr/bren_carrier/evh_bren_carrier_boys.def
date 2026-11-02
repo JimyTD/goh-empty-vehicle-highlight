@@ -1,0 +1,45 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for bren_carrier_boys (generated)
+	{Extension "../../../../-vehicle/eng/btr/bren_carrier/bren_carrier.mdl"}
+	{extender "stuff"
+		{item "evh_bren_carrier_boys"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "armor1" {able clear}}
+	{volume "armor2" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "body5" {able clear}}
+	{volume "detail5" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "engine3" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "hole3" {able clear}}
+	{volume "hole4" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "trackleft1" {able clear}}
+	{volume "trackleft2" {able clear}}
+	{volume "trackleft3" {able clear}}
+	{volume "trackleft4" {able clear}}
+	{volume "trackleft5" {able clear}}
+	{volume "trackleft6" {able clear}}
+	{volume "trackright1" {able clear}}
+	{volume "trackright2" {able clear}}
+	{volume "trackright3" {able clear}}
+	{volume "trackright4" {able clear}}
+	{volume "trackright5" {able clear}}
+	{volume "trackright6" {able clear}}
+	{volume "transmission" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

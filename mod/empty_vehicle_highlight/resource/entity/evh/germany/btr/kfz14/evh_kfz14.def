@@ -1,0 +1,26 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for kfz14 (generated)
+	{Extension "../../../../-vehicle/germany/btr/kfz14/kfz14.mdl"}
+	{extender "stuff"
+		{item "evh_kfz14"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelspare" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

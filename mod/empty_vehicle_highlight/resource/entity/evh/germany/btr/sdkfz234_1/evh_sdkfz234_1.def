@@ -1,0 +1,41 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for sdkfz234_1 (generated)
+	{Extension "../../../../-vehicle/germany/btr/sdkfz234_1/sdkfz234_1.mdl"}
+	{extender "stuff"
+		{item "evh_sdkfz234_1"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "body2" {able clear}}
+	{volume "body3" {able clear}}
+	{volume "body4" {able clear}}
+	{volume "detail11" {able clear}}
+	{volume "engine1" {able clear}}
+	{volume "engine2" {able clear}}
+	{volume "fuel" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "ram" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "shield3" {able clear}}
+	{volume "shield4" {able clear}}
+	{volume "shield5" {able clear}}
+	{volume "transmission" {able clear}}
+	{volume "turret1" {able clear}}
+	{volume "wheelleft1" {able clear}}
+	{volume "wheelleft2" {able clear}}
+	{volume "wheelleft3" {able clear}}
+	{volume "wheelleft4" {able clear}}
+	{volume "wheelright1" {able clear}}
+	{volume "wheelright2" {able clear}}
+	{volume "wheelright3" {able clear}}
+	{volume "wheelright4" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}

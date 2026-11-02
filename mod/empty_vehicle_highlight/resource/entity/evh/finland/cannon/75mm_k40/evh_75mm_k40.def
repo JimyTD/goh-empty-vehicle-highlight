@@ -1,0 +1,28 @@
+{game_entity
+	;// empty_vehicle_highlight proxy for 75mm_k40 (generated)
+	{Extension "../../../../-vehicle/finland/cannon/75mm_k40/75mm_pak40.mdl"}
+	{extender "stuff"
+		{item "evh_75mm_k40"}
+	}
+	{props "steel" "nocover"}
+	{obstacleID "stuff"}
+	{volume "barrel1" {able clear}}
+	{volume "barrel2" {able clear}}
+	{volume "barrel3" {able clear}}
+	{volume "body1" {able clear}}
+	{volume "hole1" {able clear}}
+	{volume "hole2" {able clear}}
+	{volume "select" {able clear}}
+	{volume "shield1" {able clear}}
+	{volume "shield2" {able clear}}
+	{volume "shield3" {able clear}}
+	{volume "shield_lower" {able clear}}
+	{volume "standl" {able clear}}
+	{volume "standr" {able clear}}
+	{volume "wheelleft" {able clear}}
+	{volume "wheelright" {able clear}}
+	{lodclass "vehicle"}
+	{NoGroupMesh 1}
+	{NoVisibilityPatch}
+	{NoCastShadows}
+}
