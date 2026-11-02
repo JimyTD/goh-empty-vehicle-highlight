@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for horsa_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/airborne/horsa_mk1/horsa_mk1.mdl"}
+	{Extension "horsa_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_horsa_mk1"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t35_late (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/t35_late/t35_late.mdl"}
+	{Extension "t35_late.mdl"}
 	{extender "stuff"
 		{item "evh_t35_late"}
 	}

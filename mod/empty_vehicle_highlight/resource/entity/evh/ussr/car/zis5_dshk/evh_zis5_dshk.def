@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for zis5_dshk (generated)
-	{Extension "../../../../-vehicle/ussr/car/zis5_dshk/zis5_dshk.mdl"}
+	{Extension "zis5_dshk.mdl"}
 	{extender "stuff"
 		{item "evh_zis5_dshk"}
 	}

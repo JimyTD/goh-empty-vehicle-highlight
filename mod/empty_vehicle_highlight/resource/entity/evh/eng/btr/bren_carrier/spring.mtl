@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/brencarrier_spring"}
+	{bump "$/_vehicle/eng/brencarrier_spring_bp"}
+	{specular "$/_vehicle/eng/brencarrier_spring_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

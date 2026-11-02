@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for lvt4_eng (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/lvt4_eng/lvt4_eng.mdl"}
+	{Extension "lvt4_eng.mdl"}
 	{extender "stuff"
 		{item "evh_lvt4_eng"}
 	}

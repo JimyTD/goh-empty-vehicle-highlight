@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for tram_sov (generated)
-	{Extension "../../../../-vehicle/generic/train/tram_sov/tram_sov.mdl"}
+	{Extension "tram_sov.mdl"}
 	{extender "stuff"
 		{item "evh_tram_sov"}
 	}

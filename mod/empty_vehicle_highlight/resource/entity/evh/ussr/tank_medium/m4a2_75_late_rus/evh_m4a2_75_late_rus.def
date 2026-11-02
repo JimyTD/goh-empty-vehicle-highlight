@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m4a2_75_late_rus (generated)
-	{Extension "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/m4a2_75_late_rus.mdl"}
+	{Extension "m4a2_75_late_rus.mdl"}
 	{extender "stuff"
 		{item "evh_m4a2_75_late_rus"}
 	}

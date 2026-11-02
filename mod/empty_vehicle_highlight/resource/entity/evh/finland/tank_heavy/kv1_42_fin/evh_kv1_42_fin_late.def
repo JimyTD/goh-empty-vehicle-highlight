@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kv1_42_fin_late (generated)
-	{Extension "../../../../-vehicle/finland/tank_heavy/kv1_42_fin/kv1_42.mdl"}
+	{Extension "kv1_42.mdl"}
 	{extender "stuff"
 		{item "evh_kv1_42_fin_late"}
 	}

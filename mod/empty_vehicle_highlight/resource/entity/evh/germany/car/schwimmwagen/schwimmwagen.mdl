@@ -1,0 +1,553 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: detail2 mgun_1_rot1
+;Exported by:	 nic21
+;Date:			 04.04.2025 14:20:51
+;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\car\Schwimmwagen\Schwimmwagen.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/car/schwimmwagen/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/car/schwimmwagen/stop.anm"} {speed 0.6}}
+		{sequence "hit" {file "../../../../-vehicle/germany/car/schwimmwagen/hit.anm"} {speed 0.6}}
+		{sequence "wipers" {file "../../../../-vehicle/germany/car/schwimmwagen/wipers.anm"} {speed 0.4}{resume}}
+		{sequence "move" {file "../../../../-vehicle/germany/car/schwimmwagen/move.anm"} {speed 1}{resume}}
+		{sequence "water" {file "../../../../-vehicle/germany/car/schwimmwagen/water.anm"} {speed 0.6}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.33;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/car/schwimmwagen/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.0693 	 0 	 7.8547}
+			{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/car/schwimmwagen/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -27.2991 	 0.0884 	 5.0107}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						1.2469 	 -0.0884 	 1.3633
+					}
+				}
+				{bone "engine_hood"
+					{parameters "id=engine;"}
+					{Position 3.5501 	 -0.0884 	 6.2232}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/engine_hood.ply"}
+				}
+				{bone "prop_holder"
+					{parameters "id=engine;"}
+					{Position -4.7658 	 -0.0884 	 -0.69}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/prop_holder.ply"}
+					{bone "prop_help"
+						{matrix34
+							0.9205 	 0 	 0.3907
+							0 	 1 	 0
+							-0.3907 	 0 	 0.9205
+							0.4073 	 0 	 7.2164
+						}
+						{bone "prop"
+							{parameters "id=engine;"}
+							{Position 0 	 0 	 0}
+							{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/prop.ply"}
+						}
+					}
+				}
+			}
+			{bone "windshield1"
+				{parameters "id=body;"}
+				{Position 12.388 	 0 	 12.2226}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/windshield1.ply"}
+				{bone "wiper"
+					{parameters "id=body;"}
+					{matrix34
+						0.866 	 0 	 0.5
+						0 	 1 	 0
+						-0.5 	 0 	 0.866
+						0.2713 	 2.7997 	 0.3143
+					}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/wiper.ply"}
+				}
+				{bone "window1"
+					{parameters "id=window1;"}
+					{Position -1.6111 	 0 	 2.9258}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/window1.ply"}
+				}
+			}
+			{bone "enumerator"
+				{Position 34.5005 	 1.8978 	 6.455}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/enumerator.ply"}
+			}
+			{bone "rim"
+				{parameters "id=body;"}
+				{Position -4.5662 	 0 	 9.5377}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/rim.ply"}
+				{bone "tarp"
+					{parameters "id=body;"}
+					{Position -13.7109 	 0.1539 	 3.636}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/tarp.ply"}
+				}
+			}
+			{bone revolute "mgun_1_rot1"
+				{parameters "id=body;"}
+				{limits -10 10}
+				{speed 0.008}
+				{Position 14.5155 	 -10.5269 	 13.11}
+				
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.5736 	 0 	 -0.8192
+					0 	 1 	 0
+					0.8192 	 0 	 -0.5736
+					7.8269 	 5.5754 	 9.9664
+				}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/steer.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9863 	 -0.0517 	 -0.1564
+					0.0523 	 -0.9986 	 0
+					-0.1562 	 -0.0082 	 0.9877
+					-25.64 	 -10.9565 	 12.9213
+				}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.9863 	 0.0517 	 -0.1564
+					-0.0523 	 -0.9986 	 0
+					-0.1562 	 0.0082 	 0.9877
+					-25.64 	 10.95 	 12.9213
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 0.6038 	 -13.1936 	 8.1018}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/detail1.ply"}
+			}
+			{bone revolute "detail2"
+				{parameters "id=body;"}
+				{matrix34
+					-0.9945 	 0 	 0.1045
+					0 	 -1 	 0
+					0.1045 	 0 	 0.9945
+					26.4591 	 0.0003 	 9.7051
+				}
+				
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -14.1043 	 12.9046 	 8.8329}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 12.8566 	 12.7143 	 7.5716}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/detail4.ply"}
+			}
+			{bone "fuel"
+				{Position 17.7518 	 -0.1259 	 8.8898}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-28.6692 	 12.6481 	 10.1449
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-28.6692 	 -12.5503 	 10.1449
+				}
+			}
+			{bone "visor2"
+				{Position 12.3895 	 5.3397 	 16.041}
+			}
+			{bone "visor1"
+				{Position 12.3895 	 -5.2919 	 16.041}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					0.4487 	 0 	 4.079
+				}
+			}
+			{bone "armorlightr"
+				{Position 26.7161 	 -11.41 	 9.8611}
+			}
+			{bone "armorlightl"
+				{Position 26.7161 	 11.4584 	 9.8611}
+			}
+			{bone "seat01"
+				{matrix34
+					0.9446 	 0.0618 	 0.3223
+					-0.0625 	 0.998 	 -0.0083
+					-0.3221 	 -0.0123 	 0.9466
+					6.5509 	 -5.4621 	 -4.8728
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9404 	 -0.035 	 0.3384
+					0.034 	 0.9994 	 0.009
+					-0.3385 	 0.003 	 0.941
+					6.8064 	 4.9447 	 -4.3219
+				}
+			}
+			{bone "scissor"
+				{Position -6.2525 	 0.0113 	 5.1934}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/scissor.ply"
+					{Layer waterscissor}
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0.9343 	 -0.035 	 0.3547
+					0.0338 	 0.9994 	 0.0096
+					-0.3548 	 0.003 	 0.9349
+					-9.0085 	 4.9447 	 -4.3882
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					0.9389 	 0.0618 	 0.3387
+					-0.0623 	 0.998 	 -0.0094
+					-0.3386 	 -0.0123 	 0.9408
+					-9.0667 	 -5.4621 	 -4.4856
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 20.4663 	 0 	 6.2748}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 10.9561 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{orientation
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.33;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0459 	 1.3011 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/wheell1.ply"}
+					}
+					{bone "stl"
+						{parameters "id=body;"}
+						{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/stl.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -11.024 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{orientation
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.33;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0459 	 -1.2332 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/wheelr1.ply"}
+					}
+					{bone "str"
+						{parameters "id=body;"}
+						{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/str.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -11.024 	 0}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.33;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 10.9561 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.33;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					0.0063 	 12.3127 	 -6.2517
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-0.0228 	 -12.2529 	 -6.2755
+				}
+			}
+			{bone "front_susp"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/front_susp.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -19.3631 	 0 	 6.2748}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -11.3122 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.33;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -0.945 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/wheelr2.ply"}
+				}
+				{bone "drumr"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/drumr.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 11.2442 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.33;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 1.0129 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/wheell2.ply"}
+				}
+				{bone "druml"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/druml.ply"}
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-4.558 	 12.2891 	 -4.7667
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-4.5848 	 -12.2529 	 -4.7667
+				}
+			}
+			{bone "rear_susp"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/rear_susp.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				2.9741 	 25.7122 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				4.0463 	 -26.6044 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passengers;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-10.5071 	 -26.9656 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passengers;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-10.5292 	 25.7686 	 0
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/car/schwimmwagen/body1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.2876 	 0 	 4.885
+	}
+}
+{volume "detail2"
+	{cylinder 6.07776 3.07026}
+	{bone "detail2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "engine1"
+	{box 4.94476 8.49697 13.7317}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		1.3266 	 -0.0475 	 -1.0502
+	}
+}
+{volume "fuel"
+	{polyhedron "../../../../-vehicle/germany/car/schwimmwagen/fuel.vol"}
+	{bone "fuel"}
+	{Position 0 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/car/schwimmwagen/hole1.vol"}
+	{bone "body"}
+	{Position -2.7229 	 0.0238 	 11.2521}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/car/schwimmwagen/hole2.vol"}
+	{bone "body"}
+	{Position -2.7895 	 0 	 8.6693}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/car/schwimmwagen/ram.vol"}
+	{bone "body"}
+	{Position -0.8307 	 0 	 1.1224}
+}
+{volume "wheelleft1"
+	{cylinder 6.49606 3.07028}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0214 	 0.0094 	 0.0263
+	}
+}
+{volume "wheelleft2"
+	{cylinder 6.49606 3.07026}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0263
+	}
+}
+{volume "wheelright1"
+	{cylinder 6.49606 3.07026}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0214 	 0.0094 	 -0.0178
+	}
+}
+{volume "wheelright2"
+	{cylinder 6.49606 3.07026}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0178
+	}
+}
+{volume "window1"
+	{box 0.117795 5.45778 17.5947}
+	{bone "window1"}
+	{matrix34
+		0.8683 	 0 	 0.4961
+		-0.4961 	 0 	 0.8683
+		0 	 -1 	 0
+		0.0445 	 0.1939 	 -0.1073
+	}
+}

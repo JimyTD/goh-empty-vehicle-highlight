@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "/entity/-vehicle/ussr/tank_heavy/kv1_39/regiment_decal"}
+	{blend blend}
+}

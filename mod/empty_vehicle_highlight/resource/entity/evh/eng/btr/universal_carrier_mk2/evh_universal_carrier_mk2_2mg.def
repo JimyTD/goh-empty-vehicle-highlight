@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for universal_carrier_mk2_2mg (generated)
-	{Extension "../../../../-vehicle/eng/btr/universal_carrier_mk2/universal_carrier_mk2.mdl"}
+	{Extension "universal_carrier_mk2.mdl"}
 	{extender "stuff"
 		{item "evh_universal_carrier_mk2_2mg"}
 	}

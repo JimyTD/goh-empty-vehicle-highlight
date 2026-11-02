@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ford_3ton (generated)
-	{Extension "../../../../-vehicle/finland/car/ford_3ton/ford_3ton.mdl"}
+	{Extension "ford_3ton.mdl"}
 	{extender "stuff"
 		{item "evh_ford_3ton"}
 	}

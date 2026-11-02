@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m18_hellcat_late (generated)
-	{Extension "../../../../-vehicle/usa/tank_light/m18_hellcat_late/m18_hellcat_late.mdl"}
+	{Extension "m18_hellcat_late.mdl"}
 	{extender "stuff"
 		{item "evh_m18_hellcat_late"}
 	}

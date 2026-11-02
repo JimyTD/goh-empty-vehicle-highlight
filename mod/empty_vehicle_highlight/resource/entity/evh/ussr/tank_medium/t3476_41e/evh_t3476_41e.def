@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t3476_41e (generated)
-	{Extension "../../../../-vehicle/ussr/tank_medium/t3476_41e/t3476_41e.mdl"}
+	{Extension "t3476_41e.mdl"}
 	{extender "stuff"
 		{item "evh_t3476_41e"}
 	}

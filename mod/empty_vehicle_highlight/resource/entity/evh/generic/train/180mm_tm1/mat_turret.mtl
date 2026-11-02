@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/180mm_tm1_turret"}
+	{bump "$/_vehicle/180mm_tm1_turret_bp"}
+	{specular "$/_vehicle/180mm_tm1_turret_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

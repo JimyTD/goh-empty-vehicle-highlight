@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/bclass_destroyer2"}
+	{bump "$/_vehicle/eng/bclass_destroyer2_bp"}
+	{specular "$/_vehicle/eng/bclass_destroyer2_sp"}
+	{color "255 255 255 25"}
+	{blend none}
+}

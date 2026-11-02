@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m6_gmc (generated)
-	{Extension "../../../../-vehicle/usa/car/m6_gmc/m6_gmc.mdl"}
+	{Extension "m6_gmc.mdl"}
 	{extender "stuff"
 		{item "evh_m6_gmc"}
 	}

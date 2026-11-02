@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stuart5_recce (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/stuart5_recce/stuart5_recce.mdl"}
+	{Extension "stuart5_recce.mdl"}
 	{extender "stuff"
 		{item "evh_stuart5_recce"}
 	}

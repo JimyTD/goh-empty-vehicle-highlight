@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for maxim_m32_33 (generated)
-	{Extension "../../../../-vehicle/finland/cannon/maxim_m32_33/maxim_m32_33.mdl"}
+	{Extension "maxim_m32_33.mdl"}
 	{extender "stuff"
 		{item "evh_maxim_m32_33"}
 	}

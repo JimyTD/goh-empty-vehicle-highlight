@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m4_mortar_carrier (generated)
-	{Extension "../../../../-vehicle/usa/btr/m4_mortar_carrier/m4_mortar_carrier.mdl"}
+	{Extension "m4_mortar_carrier.mdl"}
 	{extender "stuff"
 		{item "evh_m4_mortar_carrier"}
 	}

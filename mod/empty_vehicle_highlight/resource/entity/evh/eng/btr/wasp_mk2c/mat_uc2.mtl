@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/wasp_mk2c"}
+	{bump "$/_vehicle/eng/wasp_mk2c_bp"}
+	{specular "$/_vehicle/eng/wasp_mk2c_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

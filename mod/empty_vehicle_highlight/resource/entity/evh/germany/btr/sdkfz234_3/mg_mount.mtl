@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "/entity/-vehicle/germany/btr/sdkfz234_3/mg_mount"}
+	{bump "/entity/-vehicle/germany/btr/sdkfz234_3/mg_mount_bp"}
+	{specular "/entity/-vehicle/germany/btr/sdkfz234_3/mg_mount_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

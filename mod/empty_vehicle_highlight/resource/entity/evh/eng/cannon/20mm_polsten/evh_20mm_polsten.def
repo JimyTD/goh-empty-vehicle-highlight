@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 20mm_polsten (generated)
-	{Extension "../../../../-vehicle/eng/cannon/20mm_polsten/20mm_polsten.mdl"}
+	{Extension "20mm_polsten.mdl"}
 	{extender "stuff"
 		{item "evh_20mm_polsten"}
 	}

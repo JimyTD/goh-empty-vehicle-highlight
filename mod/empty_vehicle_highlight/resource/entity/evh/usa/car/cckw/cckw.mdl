@@ -1,0 +1,765 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: backdoor doorleft doorright
+;Exported by:	 TigerF
+;Date:			 29.11.2023 16:48:08
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_usa\vehicles\car\cckw\cckw_353_LWB_transport\cckw353.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/usa/car/cckw/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/usa/car/cckw/stop.anm"} {speed 0.7}}
+		{sequence "doorleft" {file "../../../../-vehicle/usa/car/cckw/doorleft.anm"} {speed 0.6}{events {0 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/usa/car/cckw/doorright.anm"} {speed 0.6}{events {0 "open_right"}}}
+		{sequence "open_back" {file "../../../../-vehicle/usa/car/cckw/open_back.anm"} {speed 0.7} {events {0 "open_rear"}}}
+		{sequence "close_back" {file "../../../../-vehicle/usa/car/cckw/close_back.anm"} {speed 0.7} {events {0 "close_rear"}}}
+		{sequence "board" {file "../../../../-vehicle/usa/car/cckw/board.anm"} {speed 1}{events {0 "board"}}}
+		{sequence "wipers" {file "../../../../-vehicle/usa/car/cckw/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=22;wheelradius=0.50;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/usa/car/cckw/body_r.anm"}{speed 0.7}}
+			}
+			{Position 9.2144 	 0.0168 	 16.0216}
+			{VolumeView "../../../../-vehicle/usa/car/cckw/body.ply"}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/car/cckw/bodyback_r.anm"}{speed 0.7}}
+				}
+				{Position -43.0706 	 0 	 5.5348}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/bodyback.ply"}
+				{bone "shield_cover"
+					{parameters "id=shield_cover;"}
+					{Position -0.5488 	 0.0004 	 22.2468}
+					{VolumeView "../../../../-vehicle/usa/car/cckw/shield_cover.ply"}
+				}
+				{bone "seat01"
+					{matrix34
+						-0.2786 	 -0.9567 	 0.0837
+						0.9604 	 -0.2776 	 0.0243
+						0 	 0.0872 	 0.9962
+						34.7905 	 12.0245 	 2.1104
+					}
+				}
+				{bone "seat02"
+					{matrix34
+						-0.0872 	 0.9907 	 0.1041
+						-0.9962 	 -0.0867 	 -0.0091
+						0 	 -0.1045 	 0.9945
+						33.9382 	 -12.075 	 2.1327
+					}
+				}
+				{bone "seat03"
+					{matrix34
+						0.2152 	 -0.9551 	 0.2037
+						0.9766 	 0.2112 	 -0.0416
+						-0.0033 	 0.2079 	 0.9781
+						11.8508 	 11.9522 	 2.1436
+					}
+				}
+				{bone "seat04"
+					{matrix34
+						0.1075 	 0.9869 	 0.12
+						-0.9942 	 0.1056 	 0.0216
+						0.0086 	 -0.1216 	 0.9925
+						11.5372 	 -12.9992 	 2.1271
+					}
+				}
+				{bone "seat05"
+					{matrix34
+						-0.0137 	 0.9944 	 0.1045
+						-0.9999 	 -0.0136 	 -0.0014
+						0 	 -0.1045 	 0.9945
+						-10.1882 	 -12.347 	 2.0587
+					}
+				}
+				{bone "seat06"
+					{matrix34
+						-0.1835 	 -0.9646 	 0.1894
+						0.9829 	 -0.1824 	 0.0236
+						0.0118 	 0.1905 	 0.9816
+						-9.9342 	 11.2632 	 2.1458
+					}
+				}
+				{bone "seat07"
+					{matrix34
+						0.2706 	 0.9436 	 0.1908
+						-0.9613 	 0.2756 	 0
+						-0.0526 	 -0.1834 	 0.9816
+						23.6981 	 -12.4001 	 2.1439
+					}
+				}
+				{bone "seat08"
+					{matrix34
+						0.175 	 -0.9663 	 0.1888
+						0.9845 	 0.1729 	 -0.0278
+						-0.0058 	 0.1907 	 0.9816
+						23.2538 	 11.0852 	 2.1397
+					}
+				}
+				{bone "seat09"
+					{matrix34
+						-0.0483 	 0.9933 	 0.1045
+						-0.9988 	 -0.0485 	 -0.0014
+						0.0036 	 -0.1045 	 0.9945
+						-21.3841 	 -11.5147 	 2.0587
+					}
+				}
+				{bone "seat10"
+					{matrix34
+						0.1817 	 -0.962 	 0.2037
+						0.9833 	 0.177 	 -0.0416
+						0.0039 	 0.2079 	 0.9781
+						-21.3765 	 11.2918 	 2.1436
+					}
+				}
+				{bone "seat11"
+					{matrix34
+						-0.1771 	 -0.9806 	 0.0837
+						0.9841 	 -0.1757 	 0.0243
+						-0.0091 	 0.0867 	 0.9962
+						0.7666 	 12.0245 	 2.1104
+					}
+				}
+				{bone "seat12"
+					{matrix34
+						-0.0352 	 0.9939 	 0.1041
+						-0.9994 	 -0.0344 	 -0.0091
+						-0.0055 	 -0.1044 	 0.9945
+						0.8613 	 -12.0749 	 2.1327
+					}
+				}
+				{bone "backdoor"
+					{parameters "id=bodyback;"}
+					{Position -28.3168 	 0 	 1.3354}
+					
+				}
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position 21.7562 	 6.1971 	 22.2992}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/window1.ply"}
+			}
+			{bone "window4"
+				{parameters "id=window4;"}
+				{Position 21.7562 	 -6.1562 	 22.2992}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/window4.ply"}
+			}
+			{bone "window5"
+				{parameters "id=window5;"}
+				{Position 0.8123 	 0.0187 	 22.9136}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/window5.ply"}
+			}
+			{bone "wiper1"
+				{parameters "id=body;"}
+				{matrix34
+					0.8925 	 0.134 	 0.4306
+					-0.0435 	 0.976 	 -0.2136
+					-0.4489 	 0.1719 	 0.8769
+					20.2804 	 5.6641 	 26.8064
+				}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/wiper1.ply"}
+			}
+			{bone "wiper2"
+				{parameters "id=body;"}
+				{matrix34
+					0.8951 	 -0.106 	 0.4331
+					0.1051 	 0.9941 	 0.0262
+					-0.4333 	 0.0221 	 0.901
+					20.3213 	 -5.654 	 26.7689
+				}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/wiper2.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/car/cckw/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 37.859 	 -0.3426 	 6.7878}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/engine.ply"}
+				{bone "engine_hood"
+					{parameters "id=engine;"}
+					{Position -11.9215 	 0.3934 	 10.9376}
+					{VolumeView "../../../../-vehicle/usa/car/cckw/engine_hood.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.8238 	 0.3995 	 2.5075
+					}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{Position 20.9838 	 13.8468 	 11.1377}
+				
+				{bone "window2"
+					{parameters "id=window2;"}
+					{Position -8.7486 	 0.2321 	 10.3194}
+					
+				}
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{Position 20.9788 	 -13.7733 	 2.537}
+				
+				{bone "window3"
+					{parameters "id=window3;"}
+					{Position -8.6689 	 -0.2764 	 18.5484}
+					
+				}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;steermax=100;"}
+				{matrix34
+					-0.9063 	 0 	 -0.4226
+					0 	 1 	 0
+					0.4226 	 0 	 -0.9063
+					17.5944 	 6.6096 	 17.5581
+				}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/steer.ply"}
+			}
+			{bone "headlightr"
+				{Position 49.2474 	 -9.3349 	 9.6077}
+			}
+			{bone "headlightl"
+				{Position 49.2474 	 9.2966 	 9.6077}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.0698 	 0.8366 	 0.5433
+					-0.9976 	 -0.0585 	 -0.038
+					0 	 -0.5446 	 0.8387
+					-21.8512 	 13.1687 	 -1.2499
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-70.7901 	 -0.0161 	 -1.2774
+				}
+			}
+			{bone "visor1"
+				{Position 22.8947 	 -5.8015 	 22.3037}
+			}
+			{bone "visor2"
+				{Position 22.8947 	 6.6469 	 22.3106}
+			}
+			{bone "transmission"
+				{Position 6.9659 	 -0.8868 	 -3.19}
+			}
+			{bone "driver"
+				{matrix34
+					0.9781 	 -0.1198 	 0.1704
+					0.1219 	 0.9925 	 -0.0018
+					-0.1689 	 0.0226 	 0.9854
+					9.9999 	 5.913 	 0.0297
+				}
+			}
+			{bone "commander"
+				{matrix34
+					0.9817 	 0.1489 	 0.1186
+					-0.1499 	 0.9887 	 0
+					-0.1173 	 -0.0178 	 0.9929
+					10.3758 	 -6.0416 	 0.0297
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-71.0337 	 14.1983 	 3.7313
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-71.0337 	 -14.2433 	 3.7313
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					34.3864 	 11.8089 	 10.3755
+				}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -10.065 	 12.7853 	 3.7411}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/detail2.ply"}
+			}
+			{bone "fuel"
+				{parameters "id=fuel;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/usa/car/cckw/fuel.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				11.252 	 27.4203 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				11.2647 	 -30.4331 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passangers;"}
+			{Position -82.9412 	 -11.9025 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passangers;"}
+			{Position -82.9412 	 10.8882 	 0}
+		}
+		{bone "body_virt"
+			{Position -5.2461 	 0 	 16.179}
+			{bone "pivot_front"
+				{Position 54.4411 	 0 	 -6.7216}
+				{bone revolute "steerl1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 14.4656 	 0
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							0.0872 	 0 	 -0.9962
+							0.1541 	 -2.1309 	 9.4467
+						}
+					}
+					{bone prizmatic "suspension_l1"
+						{limits -0.08 0.08}
+						{speed 0.1}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							0 	 -2.9115 	 0
+						}
+						{bone revolute "wheell1"
+							{parameters "id=wheelleft1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0 	 0 	 0
+							}
+							{VolumeView "../../../../-vehicle/usa/car/cckw/wheell1.ply"}
+						}
+						{bone "breakl"
+							{parameters "id=body;"}
+							{Position 0 	 -1.3933 	 0}
+							{VolumeView "../../../../-vehicle/usa/car/cckw/breakl.ply"}
+						}
+					}
+				}
+				{bone revolute "steerr1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -14.4412 	 0
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							0.0872 	 0 	 -0.9962
+							0.125 	 2.0969 	 9.4516
+						}
+					}
+					{bone prizmatic "suspension_r1"
+						{limits -0.08 0.08}
+						{speed 0.1}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							0 	 2.9024 	 0
+						}
+						{bone revolute "wheelr1"
+							{parameters "id=wheelright1;"}
+							{matrix34
+								0.9848 	 0 	 0.1736
+								0.1736 	 0 	 -0.9848
+								0 	 1 	 0
+								0 	 0 	 0
+							}
+							{VolumeView "../../../../-vehicle/usa/car/cckw/wheelr1.ply"}
+						}
+						{bone "breakr"
+							{parameters "id=body;"}
+							{Position 0 	 1.3933 	 0}
+							{VolumeView "../../../../-vehicle/usa/car/cckw/breakr.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position 0 	 17.3771 	 0}
+					{bone revolute "wheell4"
+						{parameters "id=wheelleft3;radius=0.479;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position 0 	 -17.3436 	 0}
+					{bone revolute "wheelr4"
+						{parameters "id=wheelright3;radius=0.479;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+					}
+				}
+				{bone "susp_front"
+					{parameters "id=body;"}
+					{Position 0.0353 	 0.0168 	 -0.008}
+					{VolumeView "../../../../-vehicle/usa/car/cckw/susp_front.ply"}
+				}
+			}
+			{bone "pivot_back"
+				{Position -28.4963 	 0 	 -6.7216}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position 10.5049 	 16.3877 	 0}
+					{bone revolute "wheell2"
+						{parameters "id=wheelleft2;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/cckw/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position 10.5049 	 -16.3541 	 0}
+					{bone revolute "wheelr2"
+						{parameters "id=wheelright2;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/cckw/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position -11.4057 	 16.3877 	 0}
+					{bone revolute "wheell3"
+						{parameters "id=wheelleft3;"}
+						{matrix34
+							0.9945 	 0 	 0.1045
+							0.1045 	 0 	 -0.9945
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/cckw/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.08}
+					{speed 0.1}
+					{Position -11.4057 	 -16.3541 	 0}
+					{bone revolute "wheelr3"
+						{parameters "id=wheelright3;"}
+						{matrix34
+							0.9945 	 0 	 -0.1045
+							-0.1045 	 0 	 -0.9945
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/cckw/wheelr3.ply"}
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9455 	 0 	 0.3256
+						0 	 -1 	 0
+						0.3256 	 0 	 0.9455
+						-16.9381 	 -16.6002 	 -8.1142
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9455 	 0 	 0.3256
+						0 	 -1 	 0
+						0.3256 	 0 	 0.9455
+						-16.9113 	 16.6275 	 -8.1142
+					}
+				}
+				{bone "susp_back"
+					{parameters "id=body;"}
+					{Position 42.9568 	 0.0168 	 6.5642}
+					{VolumeView "../../../../-vehicle/usa/car/cckw/susp_back.ply"}
+				}
+			}
+		}
+		{bone "dummy"
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				-28.951 	 0 	 16.7872
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/body1.vol"}
+	{bone "body"}
+	{Position 37.2089 	 0.0985 	 7.8454}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/body2.vol"}
+	{bone "body"}
+	{Position 11.8737 	 0.0985 	 13.2437}
+}
+{volume "body3"
+	{box 16.8172 71.719 9.35011}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-34.7756 	 -0.0128 	 1.3214
+	}
+}
+{volume "bodyback1"
+	{box 44.9033 69.1251 9.93476}
+	{bone "bodyback"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		6.8554 	 -0.0589 	 5.9149
+	}
+}
+{volume "bodyback2"
+	{box 43.8852 0.691476 9.68264}
+	{bone "backdoor"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-0.2163 	 0.2272 	 4.3959
+	}
+}
+{volume "detail2"
+	{cylinder 9.9063 4.94484}
+	{bone "detail2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.0304
+	}
+}
+{volume "engine"
+	{box 17.2326 16.0487 8.46835}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-2.2148 	 0.336 	 -1.1481
+	}
+}
+{volume "fuel"
+	{box 8.82926 11.4393 12.7702}
+	{bone "fuel"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-13.2325 	 -14.1305 	 1.5457
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/hole1.vol"}
+	{bone "body"}
+	{Position 11.6008 	 0.1427 	 21.0252}
+}
+{volume "hole2"
+	{box 23.9774 5.8535 19.2487}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		15.1602 	 0.0018 	 22.5661
+	}
+}
+{volume "hole3"
+	{box 41.8884 71.752 27.2938}
+	{bone "bodyback"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		3.8869 	 -0.0187 	 15.6826
+	}
+}
+{volume "hole4"
+	{box 19.593 5.77735 17.3709}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-10.2434 	 -0.0372 	 3.1953
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/ram.vol"}
+	{bone "body"}
+	{Position -13.3654 	 0.0744 	 -1.6028}
+}
+{volume "shield_cover"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/shield_cover.vol"}
+	{bone "shield_cover"}
+	{Position 8.3346 	 0.5263 	 -0.1811}
+}
+{volume "transmission"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/transmission.vol"}
+	{bone "transmission"}
+	{Position 0.0177 	 0.0073 	 -0.1122}
+}
+{volume "wheelleft1"
+	{cylinder 9.9063 4.94484}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.8257
+	}
+}
+{volume "wheelleft2"
+	{cylinder 9.9063 10.5792}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0113
+	}
+}
+{volume "wheelleft3"
+	{cylinder 9.9063 10.5792}
+	{bone "wheell3"}
+	{matrix34
+		0.9945 	 0.1045 	 0
+		0.1045 	 -0.9945 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.9063 4.93463}
+	{bone "wheelr1"}
+	{matrix34
+		0.9848 	 0.1736 	 0
+		0.1736 	 -0.9848 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.9096
+	}
+}
+{volume "wheelright2"
+	{cylinder 9.9063 10.5694}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0163
+	}
+}
+{volume "wheelright3"
+	{cylinder 9.9063 10.5694}
+	{bone "wheelr3"}
+	{matrix34
+		0.9945 	 -0.1045 	 0
+		-0.1045 	 -0.9945 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "window1"
+	{box 11.7218 6.16851 0.701126}
+	{bone "window1"}
+	{matrix34
+		0.107 	 -0.9934 	 0.0414
+		-0.3712 	 -0.0013 	 0.9286
+		-0.9224 	 -0.1147 	 -0.3689
+		0.0911 	 -0.0891 	 0.0019
+	}
+}
+{volume "window2"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/window2.vol"}
+	{bone "window2"}
+	{Position 0.1085 	 0.0304 	 -0.3126}
+}
+{volume "window3"
+	{polyhedron "../../../../-vehicle/usa/car/cckw/window3.vol"}
+	{bone "window3"}
+	{Position 0.0337 	 -0.1364 	 0.0591}
+}
+{volume "window4"
+	{box 11.5754 6.23981 0.715362}
+	{bone "window4"}
+	{matrix34
+		-0.1017 	 -0.9936 	 -0.0485
+		-0.392 	 -0.0048 	 0.9199
+		-0.9143 	 0.1126 	 -0.389
+		0.044 	 0.0594 	 -0.0474
+	}
+}

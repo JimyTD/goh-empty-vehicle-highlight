@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/ford_truck_civ"}
+	{bump "$/_vehicle/ford_truck_bp"}
+	{specular "$/_vehicle/ford_truck_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,0 +1,894 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: turret
+;Exported by:	 TigerF
+;Date:			 04.03.2025 16:03:43
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Morris_c9_aa\Morris_c9_aa.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/car/morris_c9_aa/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/car/morris_c9_aa/stop.anm"} {speed 0.7}}
+		{sequence "recoil" {file "../../../../-vehicle/eng/car/morris_c9_aa/recoil.anm"} {speed 1.1}}
+		{sequence "aim_v" {file "../../../../-vehicle/eng/car/morris_c9_aa/aim_v.anm"} {speed 0.9}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/eng/car/morris_c9_aa/aim_h.anm"} {speed 0.9}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=30;wheelradius=0.515;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				26.4394 	 40.698 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				27.7483 	 -43.0517 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passangers;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-8.0011 	 -34.2666 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passangers;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-10.1692 	 31.3244 	 0
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/car/morris_c9_aa/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.288 	 0 	 10.1599}
+			{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/morris_c9_aa/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 32.4009 	 -2.9565 	 13.135}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/engine.ply"}
+				{bone "hoodl1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9925 	 0 	 -0.1219
+						0 	 1 	 0
+						0.1219 	 0 	 0.9925
+						1.2381 	 2.9565 	 11.0058
+					}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/hoodl1.ply"}
+					{bone "hoodl2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.9554 	 0 	 -0.2954
+							0 	 1 	 0
+							0.2954 	 0 	 0.9554
+							0.1917 	 8.465 	 -1.7926
+						}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/hoodl2.ply"}
+					}
+				}
+				{bone "hoodr1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9925 	 0 	 -0.1219
+						0 	 1 	 0
+						0.1219 	 0 	 0.9925
+						1.2381 	 2.9565 	 11.0058
+					}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/hoodr1.ply"}
+					{bone "hoodr2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.8591 	 0.4353 	 -0.2693
+							-0.4637 	 0.8846 	 -0.0495
+							0.2167 	 0.1674 	 0.9618
+							0.39 	 -15.1254 	 -2.5491
+						}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/hoodr2.ply"}
+					}
+				}
+				{bone "grill"
+					{parameters "id=engine;"}
+					{Position 14.8831 	 2.9499 	 -0.8277}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/grill.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						7.4757 	 0.0733 	 3.4422
+					}
+				}
+				{bone "engine1"
+					{Position 14.1703 	 2.9763 	 -0.4194}
+				}
+			}
+			{bone "dimlightr"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					47.0112 	 -11.5314 	 10.6429
+				}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					47.0112 	 11.6324 	 10.6429
+				}
+			}
+			{bone "visor1"
+				{Position 32.5562 	 9.2836 	 29.7812}
+			}
+			{bone "visor2"
+				{Position 32.5562 	 -9.3042 	 29.7743}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9659 	 -0.2588 	 0
+					0.2588 	 -0.9659 	 0
+					0 	 0 	 1
+					14.609 	 4.1991 	 6.2087
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-54.6045 	 0.0007 	 4.1042
+				}
+			}
+			{bone "fuel2"
+				{Position 10.2329 	 12.0392 	 2.7155}
+			}
+			{bone "fuel1"
+				{Position 10.2329 	 -12.0415 	 2.7155}
+			}
+			{bone "transmission"
+				{Position 13.128 	 0.2826 	 6.0974}
+			}
+			{bone "framer"
+				{parameters "id=body;"}
+				{Position 32.8447 	 -14.6799 	 23.9878}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/framer.ply"}
+				{bone "window2"
+					{parameters "id=window2;"}
+					{Position -1.3047 	 5.1643 	 3.385}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/window2.ply"}
+				}
+			}
+			{bone "framel"
+				{parameters "id=body;"}
+				{Position 32.8447 	 3.1061 	 23.9878}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/framel.ply"}
+				{bone "window1"
+					{parameters "id=window1;"}
+					{Position -1.255 	 5.1012 	 3.4178}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/window1.ply"}
+				}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -48.9215 	 -14.588 	 17.4796}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -48.9215 	 16.6758 	 17.4796}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail5.ply"}
+			}
+			{bone "legl"
+				{parameters "id=body;"}
+				{Position -8.6497 	 19.8152 	 5.1023}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/legl.ply"}
+			}
+			{bone "legr"
+				{parameters "id=body;"}
+				{Position -8.6498 	 -19.8152 	 5.1023}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/legr.ply"}
+			}
+			{bone "holder_gun"
+				{parameters "id=body;"}
+				{Position -40.5624 	 0 	 7.2361}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/holder_gun.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 52.3472 	 -1.571 	 7.8779}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail1.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position -24.4095 	 3.9339 	 6.9372}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail6.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{matrix34
+					0.9998 	 -0.0175 	 0
+					0.0175 	 0.9998 	 0
+					0 	 0 	 1
+					-47.1684 	 8.1932 	 11.3186
+				}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail9.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{matrix34
+					-0.9998 	 -0.0175 	 0
+					0.0175 	 -0.9998 	 0
+					0 	 0 	 1
+					-41.9474 	 8.1932 	 11.3186
+				}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail10.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 40.4787 	 18.0683 	 12.316}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 40.4787 	 -17.8892 	 12.316}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail3.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.6384 	 0 	 -0.7697
+					0 	 1 	 0
+					0.7697 	 0 	 -0.6384
+					26.3854 	 -8.6871 	 23.1076
+				}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/steer.ply"}
+			}
+			{bone "seat01"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					18.3505 	 17.5158 	 19.1754
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					18.3505 	 5.905 	 19.1754
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					18.3505 	 -16.8375 	 19.1754
+				}
+			}
+			{bone "driver"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					18.3505 	 -7.5356 	 19.1754
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/morris_c9_aa/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.008}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-8.6498 	 0 	 9.5584
+				}
+				
+				{bone "gun_rod"
+					{parameters "id=turret;"}
+					
+				}
+				{bone "aim_hor"
+					{parameters "id=turret;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						2.5895 	 -10.2545 	 12.7868
+					}
+					
+				}
+				{bone "aim_ver"
+					{parameters "id=turret;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						1.1772 	 9.07 	 14.0127
+					}
+					
+				}
+				{bone "commander"
+					{Position -16.0662 	 -6.2908 	 6.936}
+				}
+				{bone "charger"
+					{Position -5.3235 	 13.3948 	 5.2696}
+				}
+				{bone "gunner"
+					{matrix34
+						0.9925 	 0.1219 	 0
+						-0.1219 	 0.9925 	 0
+						0 	 0 	 1
+						-5.6805 	 -15.758 	 4.7716
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/car/morris_c9_aa/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -5 90}
+					{speed 0.008}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-2.9712 	 0 	 16.1928
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							25.0346 	 0.2575 	 0
+						}
+						
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0.0015
+								0 	 1 	 0
+								-0.0015 	 0 	 1
+								35.4507 	 0.004 	 0.0131
+							}
+						}
+					}
+					{bone "gun_spring"
+						{parameters "id=gun;"}
+						{matrix34
+							0 	 0 	 1
+							1 	 0 	 0
+							0 	 1 	 0
+							21.3626 	 0.2575 	 0
+						}
+						
+					}
+					{bone "shells"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.2045 	 2.9095 	 0.009
+						}
+						
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0.0015 	 0
+							0 	 0 	 -1
+							-0.0015 	 1 	 0
+							21.0518 	 15.3337 	 13.4506
+						}
+					}
+				}
+				{bone "shield2"
+					{parameters "id=turret;"}
+					{Position 11.2872 	 12.3569 	 12.1501}
+					
+				}
+				{bone "shield1"
+					{parameters "id=turret;"}
+					{Position 12.2471 	 -12.3569 	 12.1501}
+					
+				}
+				{bone "camera"
+					{matrix34
+						1 	 0.0009 	 -0.0003
+						-0.0009 	 1 	 0
+						0.0003 	 0 	 1
+						-2.0056 	 -3.4428 	 20.6652
+					}
+				}
+				{bone "fx_invers"
+					{matrix34
+						0.9703 	 0 	 0.2419
+						0 	 1 	 0
+						-0.2419 	 0 	 0.9703
+						9.4261 	 -0.7514 	 3.4795
+					}
+				}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -34.0522 	 -14.6507 	 17.4796}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position -34.0522 	 16.6131 	 17.4796}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/detail8.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -32.0653 	 0 	 10.1642}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 17.9469 	 0.1894}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.515;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.0002 	 -0.1894
+					}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -0.0001 	 -17.9466 	 0.1894}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.515;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0.0001 	 -0.0002 	 -0.1894
+					}
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/wheelr2.ply"}
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 -1 	 0
+					0.3256 	 0 	 0.9455
+					-6.2996 	 -17.9445 	 -8.2185
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 -1 	 0
+					0.3256 	 0 	 0.9455
+					-6.2728 	 18.005 	 -8.2185
+				}
+			}
+			{bone "susp_back"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/susp_back.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 31.0697 	 0 	 10.1415}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.3406 	 -0.1577
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						0 	 -4.6075 	 9.9849
+					}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -4.6064 	 -0.1157
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.515;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.7364 	 0.042
+						}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/wheell1.ply"}
+					}
+					{bone "druml"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 1
+							-0.0364 	 -4.6065 	 0.0647
+						}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/druml.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0.0359 	 -13.3406 	 -0.1577
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						-0.0356 	 4.6103 	 9.9848
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0359 	 4.6063 	 -0.1157
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.515;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.0003 	 0.042
+						}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/wheelr1.ply"}
+					}
+					{bone "drumr"
+						{parameters "id=body;"}
+						{Position -0.0364 	 4.6063 	 0.0647}
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/drumr.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 17.947 	 -0.042}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.515;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -17.9469 	 -0.042}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.515;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/susp_front.ply"}
+			}
+			{bone "rod"
+				{parameters "id=body;"}
+				{Position 4.4188 	 -1.9943 	 0.3311}
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/rod.ply"}
+			}
+		}
+	}
+}
+{volume "barrel1"
+	{box 20.1791 6.67056 4.85132}
+	{bone "gun_rot"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		2.761 	 -0.355 	 0.0315
+	}
+}
+{volume "barrel2"
+	{cylinder 2.17168 11.7697}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		18.5402 	 0.3086 	 0.0139
+	}
+}
+{volume "barrel3"
+	{cylinder 1.30412 36.7338}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		16.568 	 -0.0139 	 0.0511
+	}
+}
+{volume "body1"
+	{box 1.36378 14.0791 30.4283}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		32.3199 	 -0.8004 	 17.02
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/body2.vol"}
+	{bone "body"}
+	{Position 18.713 	 -0.0225 	 16.1216}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/body3.vol"}
+	{bone "body"}
+	{Position -2.817 	 -0.0348 	 4.089}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/body4.vol"}
+	{bone "body"}
+	{Position 27.7952 	 0.061 	 12.8656}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/body5.vol"}
+	{bone "body"}
+	{Position 33.0747 	 18.3513 	 19.7861}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/body6.vol"}
+	{bone "body"}
+	{Position 33.0747 	 -19.8987 	 19.7861}
+}
+{volume "detail4"
+	{box 19.3333 11.4667 4.9408}
+	{bone "detail4"}
+	{Position 0.0238 	 -0.0568 	 -0.1388}
+}
+{volume "detail5"
+	{box 9.28 11.4667 4.9408}
+	{bone "detail5"}
+	{Position -4.9752 	 0.236 	 -0.1388}
+}
+{volume "detail7"
+	{box 9.28 11.4667 4.9408}
+	{bone "detail7"}
+	{Position -0.0009 	 -0.1291 	 -0.1388}
+}
+{volume "detail8"
+	{box 19.3333 11.4667 4.9408}
+	{bone "detail8"}
+	{Position -4.8981 	 -0.006 	 -0.1388}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/engine2.vol"}
+	{bone "engine"}
+	{Position 6.9472 	 3.0249 	 2.9849}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/engine3.vol"}
+	{bone "engine"}
+	{Position 6.8574 	 2.9888 	 7.985}
+}
+{volume "fuel1"
+	{cylinder 2.94153 14.9837}
+	{bone "fuel1"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		0.179 	 0.0802 	 -0.4392
+	}
+}
+{volume "fuel2"
+	{cylinder 2.94153 14.9837}
+	{bone "fuel2"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		0.179 	 0.0512 	 -0.4392
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/ram.vol"}
+	{bone "body"}
+	{Position 0.8071 	 0.0912 	 4.2588}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/shield1.vol"}
+	{bone "shield1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.966 	 -0.1032 	 -0.0011
+	}
+}
+{volume "shield2"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/shield2.vol"}
+	{bone "shield2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0061 	 0.1469 	 -0.0011
+	}
+}
+{volume "transmission"
+	{box 11.8573 6.73431 5.28829}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		2.0883 	 -0.0543 	 0.0385
+	}
+}
+{volume "turret1"
+	{cylinder 8.29114 3.43587}
+	{bone "turret"}
+	{Position -0.0275 	 -0.0139 	 -0.2525}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/turret2.vol"}
+	{bone "turret"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.9464 	 -5.2814 	 8.9272
+	}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/turret3.vol"}
+	{bone "turret"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.9464 	 1.9848 	 8.9272
+	}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/car/morris_c9_aa/turret4.vol"}
+	{bone "turret"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		1.2524 	 1.6958 	 10.8215
+	}
+}
+{volume "turret5"
+	{box 4.69481 8.6004 12.1638}
+	{bone "turret"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-1.414 	 -6.5094 	 9.5231
+	}
+}
+{volume "turret6"
+	{box 11.4232 31.4668 0.787402}
+	{bone "turret"}
+	{Position -10.4237 	 -0.026 	 2.4619}
+}
+{volume "wheelleft1"
+	{cylinder 10.1378 5.53333}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelleft2"
+	{cylinder 10.1378 5.53333}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0058
+	}
+}
+{volume "wheelright1"
+	{cylinder 10.1378 5.53333}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelright2"
+	{cylinder 10.1378 5.53333}
+	{bone "wheelr2"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "window1"
+	{box 9.85453 6.30154 0.215188}
+	{bone "window1"}
+	{matrix34
+		0 	 -1 	 0
+		-0.342 	 0 	 0.9397
+		-0.9397 	 0 	 -0.342
+		-0.0522 	 0.043 	 0.0252
+	}
+}
+{volume "window2"
+	{box 9.85453 6.30154 0.215188}
+	{bone "window2"}
+	{matrix34
+		0 	 -1 	 0
+		-0.342 	 0 	 0.9397
+		-0.9397 	 0 	 -0.342
+		-0.0025 	 -0.0174 	 0.058
+	}
+}

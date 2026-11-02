@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bt5_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/bt5_fin/bt5_fin.mdl"}
+	{Extension "bt5_fin.mdl"}
 	{extender "stuff"
 		{item "evh_bt5_fin"}
 	}

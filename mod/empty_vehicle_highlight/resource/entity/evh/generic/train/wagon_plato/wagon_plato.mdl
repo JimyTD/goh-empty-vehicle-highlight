@@ -1,0 +1,217 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 TigerF
+;Date:			 08.09.2020 17:26:41
+;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\_mozdony\wagons\wagon3_plato\wagon3_plato.max
+{skeleton
+	{bone "basis"
+		{parameters "wheelradius=0.6;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "link1"
+			{Position 102.907 	 0 	 19.6034}
+		}
+		{bone "link2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-102.853 	 0 	 19.6034
+			}
+		}
+		{bone "pivot_back"
+			{Position -54.0555 	 0 	 12.6459}
+			{bone revolute "wheel_back"
+				{parameters "id=wheel_back;"}
+				{orientation
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+				}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/wheel_back.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 54.3339 	 0 	 12.6459}
+			{bone revolute "wheel_front"
+				{parameters "id=wheel_front;"}
+				{orientation
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+				}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/wheel_front.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position 0.0003 	 0 	 23.2438}
+			{VolumeView "../../../../-vehicle/generic/train/wagon_plato/body.ply"}
+			{bone "plato"
+				{Position -0.0019 	 -0.0009 	 3.7491}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/plato.ply"}
+			}
+			{bone "doorf"
+				{parameters "id=body;"}
+				{Position 90.7008 	 -0.6677 	 3.2208}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorf.ply"}
+			}
+			{bone "doorb"
+				{parameters "id=body;"}
+				{Position -90.7225 	 0.5982 	 3.2486}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorb.ply"}
+			}
+			{bone "doorr1"
+				{parameters "id=body;"}
+				{Position 58.9923 	 -28.8413 	 3.1752}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorr1.ply"}
+			}
+			{bone "doorr2"
+				{parameters "id=body;"}
+				{Position 0.0005 	 -28.8413 	 3.1752}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorr2.ply"}
+			}
+			{bone "doorr3"
+				{parameters "id=body;"}
+				{Position -58.7924 	 -28.8413 	 3.1752}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorr3.ply"}
+			}
+			{bone "doorl1"
+				{parameters "id=body;"}
+				{Position 58.7108 	 28.7699 	 3.1868}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorl1.ply"}
+			}
+			{bone "doorl2"
+				{parameters "id=body;"}
+				{Position 0.6429 	 28.7699 	 3.1868}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorl2.ply"}
+			}
+			{bone "doorl3"
+				{parameters "id=body;"}
+				{Position -59.368 	 28.7699 	 3.1868}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_plato/doorl3.ply"}
+			}
+			{bone "fxfire2"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					0.6931 	 0 	 2.986
+				}
+			}
+		}
+	}
+}
+{volume "body1"
+	{box 186.455 6.92237 57.6696}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.2248 	 0.3213 	 1.3504
+	}
+}
+{volume "body2"
+	{box 1.33353 6.78752 57.0442}
+	{bone "doorb"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		1.0717 	 -0.636 	 4.9763
+	}
+}
+{volume "body3"
+	{box 1.33353 6.78752 57.0442}
+	{bone "doorf"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.9295 	 0.6299 	 5.0041
+	}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/generic/train/wagon_plato/body4.vol"}
+	{bone "doorr1"}
+	{Position -0.7838 	 1.0187 	 7.7216}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/generic/train/wagon_plato/body5.vol"}
+	{bone "doorr3"}
+	{Position 0.5533 	 1.0187 	 7.7216}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/generic/train/wagon_plato/body6.vol"}
+	{bone "doorl3"}
+	{Position 1.1289 	 -1.0023 	 7.71}
+}
+{volume "body7"
+	{box 54.6598 13.9047 1.25861}
+	{bone "doorl2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.6292 	 -1.0023 	 7.71
+	}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/generic/train/wagon_plato/body8.vol"}
+	{bone "doorl1"}
+	{Position -0.5024 	 -1.0023 	 7.71}
+}
+{volume "body9"
+	{box 54.6598 13.9047 1.25861}
+	{bone "doorr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.0132 	 1.0187 	 7.7216
+	}
+}
+{volume "wheel_back1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_back"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0005 	 0 	 15.5496
+	}
+}
+{volume "wheel_back2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_back"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0005 	 0 	 -15.5212
+	}
+}
+{volume "wheel_front1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_front"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 15.2953
+	}
+}
+{volume "wheel_front2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_front"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -15.3628
+	}
+}

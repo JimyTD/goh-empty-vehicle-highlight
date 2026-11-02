@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 76mm_m1938 (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/76mm_m1938/76mm_m1938.mdl"}
+	{Extension "76mm_m1938.mdl"}
 	{extender "stuff"
 		{item "evh_76mm_m1938"}
 	}

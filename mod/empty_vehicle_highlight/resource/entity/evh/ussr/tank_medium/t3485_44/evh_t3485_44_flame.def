@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t3485_44_flame (generated)
-	{Extension "../../../../-vehicle/ussr/tank_medium/t3485_44/t3485_44_flame.mdl"}
+	{Extension "t3485_44_flame.mdl"}
 	{extender "stuff"
 		{item "evh_t3485_44_flame"}
 	}

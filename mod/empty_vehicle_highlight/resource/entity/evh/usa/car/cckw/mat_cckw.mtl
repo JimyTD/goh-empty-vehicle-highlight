@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/cckw_353_lwb_transport"}
+	{bump "$/_vehicle/cckw_353_lwb_transport_bp"}
+	{specular "$/_vehicle/cckw_353_lwb_transport_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for pz38h_w40 (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/pz38h_w40/pz38h_w40.mdl"}
+	{Extension "pz38h_w40.mdl"}
 	{extender "stuff"
 		{item "evh_pz38h_w40"}
 	}

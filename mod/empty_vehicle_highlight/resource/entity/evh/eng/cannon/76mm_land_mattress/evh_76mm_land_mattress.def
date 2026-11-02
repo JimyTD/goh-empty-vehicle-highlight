@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 76mm_land_mattress (generated)
-	{Extension "../../../../-vehicle/eng/cannon/76mm_land_mattress/76mm_land_mattress.mdl"}
+	{Extension "76mm_land_mattress.mdl"}
 	{extender "stuff"
 		{item "evh_76mm_land_mattress"}
 	}

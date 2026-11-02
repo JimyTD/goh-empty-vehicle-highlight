@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for cckw_redball (generated)
-	{Extension "../../../../-vehicle/usa/car/cckw_redball/cckw_redball.mdl"}
+	{Extension "cckw_redball.mdl"}
 	{texmod "red_ball"}
 	{extender "stuff"
 		{item "evh_cckw_redball"}

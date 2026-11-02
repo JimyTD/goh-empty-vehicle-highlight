@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for unic304f (generated)
-	{Extension "../../../../-vehicle/germany/btr/unic304f/unic304f.mdl"}
+	{Extension "unic304f.mdl"}
 	{extender "stuff"
 		{item "evh_unic304f"}
 	}

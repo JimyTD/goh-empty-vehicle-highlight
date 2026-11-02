@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m3_stuart_late_rus (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/m3_stuart_late_rus/m3_stuart_late_rus.mdl"}
+	{Extension "m3_stuart_late_rus.mdl"}
 	{extender "stuff"
 		{item "evh_m3_stuart_late_rus"}
 	}

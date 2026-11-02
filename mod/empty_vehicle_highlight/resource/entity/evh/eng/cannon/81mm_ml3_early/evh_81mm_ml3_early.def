@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 81mm_ml3_early (generated)
-	{Extension "../../../../-vehicle/eng/cannon/81mm_ml3_early/81mm_ml3_early.mdl"}
+	{Extension "81mm_ml3_early.mdl"}
 	{extender "stuff"
 		{item "evh_81mm_ml3_early"}
 	}

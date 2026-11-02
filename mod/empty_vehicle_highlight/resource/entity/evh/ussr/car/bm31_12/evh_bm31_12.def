@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bm31_12 (generated)
-	{Extension "../../../../-vehicle/ussr/car/bm31_12/bm31_12.mdl"}
+	{Extension "bm31_12.mdl"}
 	{extender "stuff"
 		{item "evh_bm31_12"}
 	}

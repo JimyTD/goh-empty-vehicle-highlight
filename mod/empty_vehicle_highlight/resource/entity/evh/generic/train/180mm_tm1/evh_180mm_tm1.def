@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 180mm_tm1 (generated)
-	{Extension "../../../../-vehicle/generic/train/180mm_tm1/180mm_tm1.mdl"}
+	{Extension "180mm_tm1.mdl"}
 	{extender "stuff"
 		{item "evh_180mm_tm1"}
 	}

@@ -1,0 +1,836 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: backdoor2_1 backdoor2_2 doorleft doorright seat01 seat02 seat03 seat04 seat05 seat06 seat07 seat08 seat09 seat10 seat11 seat12 seat13 seat14 seat15 seat16 seat17 seat18 seat19 seat20 seat21 seat22
+;Exported by:	 nic21
+;Date:			 18.12.2025 16:31:41
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\car\Bedford_QLT\bedford_qlt.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/car/bedford_qlt/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/car/bedford_qlt/stop.anm"} {speed 0.7}}
+		{sequence "close_back" {file "../../../../-vehicle/eng/car/bedford_qlt/close_back.anm"} {speed 0.7} {events {0 "open_rear"}}}
+		{sequence "open_back" {file "../../../../-vehicle/eng/car/bedford_qlt/open_back.anm"} {speed 0.7} {events {0 "close_rear"}}}
+		{sequence "doorleft" {file "../../../../-vehicle/eng/car/bedford_qlt/doorleft.anm"} {speed 0.6}{events {0 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/eng/car/bedford_qlt/doorright.anm"} {speed 0.6}{events {0 "open_right"}}}
+		{sequence "board" {file "../../../../-vehicle/eng/car/bedford_qlt/board.anm"} {speed 1}{events {0 "board"}}}
+		{sequence "wipers" {file "../../../../-vehicle/eng/car/bedford_qlt/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.46;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_qlt/body_r.anm"}{speed 0.7}}
+			}
+			{Position -2.0866 	 -0.0984 	 29.0074}
+			{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/body.ply"}
+			{bone "wiper2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9744 	 0 	 0.225
+					-0.0041 	 0.9998 	 0.0177
+					-0.2249 	 -0.0181 	 0.9742
+					53.3501 	 -6.9475 	 18.1622
+				}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wiper2.ply"}
+			}
+			{bone "wiper1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9744 	 0 	 0.225
+					-0.0041 	 0.9998 	 0.0177
+					-0.2249 	 -0.0181 	 0.9742
+					53.3501 	 7.4708 	 18.1579
+				}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wiper1.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{Position 49.4702 	 -9.1661 	 7.3795}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/steer.ply"}
+			}
+			{bone "headlightr"
+				{Position 60.272 	 -10.6133 	 0.8548}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					60.272 	 10.8137 	 0.8548
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_qlt/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 51.338 	 0.0658 	 -0.9515}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/engine.ply"}
+				{bone "body_inside"
+					{parameters "id=engine;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/body_inside.ply"}
+				}
+				{bone "grill"
+					{parameters "id=engine;"}
+					{Position 9.1534 	 0 	 6.3224}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/grill.ply"}
+					{bone "detail1"
+						{parameters "id=engine;"}
+						{Position 1.744 	 -0.0131 	 -10.85}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail1.ply"}
+					}
+				}
+				{bone "fxfire1"
+					{Position -5.5506 	 1.3712 	 -0.1229}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{Position 53.8626 	 14.8378 	 0.8709}
+				
+				{bone "enumerator1"
+					{Position -10.4839 	 2.2488 	 2.0431}
+					
+				}
+				{bone "glass1"
+					{parameters "id=glass1;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 0.0523
+						0 	 -0.0523 	 0.9986
+						-9.2923 	 0.8183 	 12.6303
+					}
+					
+				}
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{Position 53.822 	 -14.6122 	 8.3611}
+				
+				{bone "enumerator2"
+					{Position -9.0805 	 -2.0585 	 -5.3789}
+					
+				}
+				{bone "glass2"
+					{parameters "id=glass2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 -0.0523
+						0 	 0.0523 	 0.9986
+						-9.1684 	 -0.588 	 5.1612
+					}
+					
+				}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position -52.8066 	 0.1105 	 -14.9338}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail6.ply"}
+			}
+			{bone "fuel2"
+				{Position 8.0407 	 -15.5906 	 -13.909}
+			}
+			{bone "fuel1"
+				{Position 8.0407 	 15.7874 	 -13.909}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.816 	 -0.0714 	 -0.5736
+					0.0872 	 -0.9962 	 0
+					-0.5714 	 -0.05 	 0.8192
+					-11.6373 	 6.1028 	 -15.5908
+				}
+			}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_qlt/bodyback_r.anm"}{speed 0.7}}
+				}
+				{Position -18.5145 	 0.0092 	 5.335}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/bodyback.ply"}
+				{bone "shield_cover"
+					{parameters "id=shield_cover;"}
+					{Position 0.0155 	 0.096 	 14.9733}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/shield_cover.ply"}
+				}
+				{bone "backdoor2_2"
+					{parameters "id=bodyback;"}
+					{Position -49.2053 	 -21.5381 	 -4.2518}
+					
+				}
+				{bone "detail3"
+					{parameters "id=bodyback;"}
+					{Position 11.888 	 -16.1034 	 -18.4401}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail3.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=bodyback;"}
+					{Position 6.6058 	 -16.1034 	 -18.4401}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail2.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=bodyback;"}
+					{Position 11.888 	 16.939 	 -18.4401}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail5.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=bodyback;"}
+					{Position 6.6058 	 16.939 	 -18.4401}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/detail4.ply"}
+				}
+				{bone "backdoor1_2"
+					{parameters "id=bodyback;"}
+					{Position 45.7678 	 -21.9773 	 -4.0774}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/backdoor1_2.ply"}
+				}
+				{bone "backdoor1_1"
+					{parameters "id=bodyback;"}
+					{Position 45.7678 	 22.0643 	 -4.0865}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/backdoor1_1.ply"}
+				}
+				{bone "backdoor2_1"
+					{parameters "id=bodyback;"}
+					{Position -49.2053 	 21.7493 	 -4.244}
+					
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-49.8818 	 15.8372 	 -14.7755
+					}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-49.8818 	 -15.6392 	 -14.7755
+					}
+				}
+				{bone revolute "seat10"
+					{matrix34
+						0.0508 	 0.9986 	 0.0111
+						-0.9983 	 0.0511 	 -0.0283
+						-0.0288 	 -0.0096 	 0.9995
+						-19.375 	 -16.292 	 -1.0409
+					}
+				}
+				{bone revolute "seat12"
+					{matrix34
+						0.003 	 0.9924 	 0.1233
+						-1 	 0.0027 	 0.0022
+						0.0018 	 -0.1233 	 0.9924
+						-32.232 	 -16.5829 	 -1.0409
+					}
+				}
+				{bone revolute "seat06"
+					{matrix34
+						0.0726 	 0.9952 	 0.0653
+						-0.9974 	 0.0727 	 0.0003
+						-0.0044 	 -0.0651 	 0.9979
+						5.4279 	 -15.9898 	 -2.0112
+					}
+				}
+				{bone revolute "seat04"
+					{matrix34
+						0 	 0.9994 	 -0.036
+						-1 	 0 	 0
+						0 	 0.036 	 0.9994
+						18.0274 	 -16.5609 	 -1.0409
+					}
+				}
+				{bone revolute "seat08"
+					{matrix34
+						0.0493 	 0.9829 	 0.1772
+						-0.9988 	 0.0493 	 0.0046
+						-0.0043 	 -0.1772 	 0.9842
+						-6.9456 	 -16.292 	 -1.0409
+					}
+				}
+				{bone revolute "seat02"
+					{matrix34
+						-0.0574 	 0.9982 	 -0.0148
+						-0.9983 	 -0.0574 	 -0.0014
+						-0.0022 	 0.0147 	 0.9999
+						29.3688 	 -16.6077 	 -0.7931
+					}
+				}
+				{bone revolute "seat03"
+					{matrix34
+						0.1403 	 -0.9877 	 0.0691
+						0.9901 	 0.14 	 -0.0098
+						0 	 0.0698 	 0.9976
+						17.2895 	 16.3336 	 -1.0409
+					}
+				}
+				{bone revolute "seat05"
+					{matrix34
+						0.0576 	 -0.98 	 0.1906
+						0.9982 	 0.0597 	 0.0054
+						-0.0167 	 0.1899 	 0.9817
+						4.5309 	 15.492 	 -1.0409
+					}
+				}
+				{bone revolute "seat07"
+					{matrix34
+						-0.0143 	 -0.99 	 0.1404
+						0.9999 	 -0.0142 	 0.0014
+						0.0006 	 0.1404 	 0.9901
+						-8.3545 	 15.9126 	 -2.0112
+					}
+				}
+				{bone revolute "seat09"
+					{matrix34
+						0.0493 	 -0.9911 	 0.1233
+						0.9987 	 0.05 	 0.0022
+						-0.0083 	 0.1231 	 0.9924
+						-21.1116 	 16.0426 	 -1.0409
+					}
+				}
+				{bone revolute "seat11"
+					{matrix34
+						0.2216 	 -0.9751 	 0.0111
+						0.9748 	 0.2212 	 -0.0283
+						0.0251 	 0.017 	 0.9995
+						-32.5211 	 16.3336 	 -1.0409
+					}
+				}
+				{bone revolute "seat01"
+					{matrix34
+						-0.1995 	 -0.9798 	 -0.0152
+						0.9783 	 -0.2 	 0.0546
+						-0.0565 	 -0.004 	 0.9984
+						29.0656 	 16.2957 	 -1.0409
+					}
+				}
+				{bone revolute "seat14"
+					{matrix34
+						0.0537 	 -0.9962 	 0.0691
+						0.9985 	 0.0531 	 -0.0098
+						0.0061 	 0.0695 	 0.9976
+						17.9832 	 2.2194 	 -1.0409
+					}
+				}
+				{bone revolute "seat13"
+					{matrix34
+						0.1168 	 0.993 	 -0.0148
+						-0.9932 	 0.1168 	 -0.0014
+						0.0003 	 0.0149 	 0.9999
+						28.2674 	 -2.1479 	 -0.7931
+					}
+				}
+				{bone revolute "seat15"
+					{matrix34
+						0 	 0.9994 	 -0.036
+						-1 	 0 	 0
+						0 	 0.036 	 0.9994
+						8.2584 	 -2.1249 	 -1.0409
+					}
+				}
+				{bone revolute "seat16"
+					{matrix34
+						-0.0335 	 -0.9993 	 -0.018
+						0.9994 	 -0.0334 	 -0.0051
+						0.0045 	 -0.0181 	 0.9998
+						-1.5194 	 2.4072 	 -1.0409
+					}
+				}
+				{bone revolute "seat17"
+					{matrix34
+						0 	 0.9994 	 -0.036
+						-1 	 0 	 0
+						0 	 0.036 	 0.9994
+						-11.5127 	 -2.0409 	 -1.0409
+					}
+				}
+				{bone revolute "seat18"
+					{matrix34
+						0.0537 	 -0.9984 	 -0.018
+						0.9985 	 0.0538 	 -0.0051
+						0.0061 	 -0.0177 	 0.9998
+						-20.7824 	 2.2333 	 -1.0409
+					}
+				}
+				{bone revolute "seat19"
+					{matrix34
+						0 	 0.9994 	 -0.036
+						-1 	 0 	 0
+						0 	 0.036 	 0.9994
+						-30.8055 	 -2.1206 	 -1.0409
+					}
+				}
+				{bone revolute "seat20"
+					{matrix34
+						0.0537 	 -0.9984 	 -0.018
+						0.9985 	 0.0538 	 -0.0051
+						0.0061 	 -0.0177 	 0.9998
+						-40.0428 	 2.2995 	 -1.0409
+					}
+				}
+				{bone revolute "seat21"
+					{matrix34
+						0.003 	 0.9924 	 0.1233
+						-1 	 0.0027 	 0.0022
+						0.0018 	 -0.1233 	 0.9924
+						-42.9013 	 -16.5829 	 -1.0409
+					}
+				}
+				{bone revolute "seat22"
+					{matrix34
+						-0.0384 	 -0.9992 	 0.0111
+						0.9989 	 -0.0387 	 -0.0283
+						0.0287 	 0.01 	 0.9995
+						-42.9986 	 16.3336 	 -1.0409
+					}
+				}
+			}
+			{bone "body5"
+				{Position 4.1879 	 0 	 -11.3996}
+			}
+			{bone "glass5"
+				{parameters "id=glass5;"}
+				{Position 31.9305 	 0.0984 	 14.0028}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/glass5.ply"}
+			}
+			{bone "transmission"
+				{parameters "id=body;"}
+				{Position 8.1593 	 0.0999 	 -16.5587}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/transmission.ply"}
+			}
+			{bone "driver"
+				{Position 39.7441 	 -8.937 	 -0.1295}
+			}
+			{bone "commander"
+				{Position 39.7441 	 10.2466 	 -0.1295}
+			}
+			{bone "glass4"
+				{parameters "id=glass4;"}
+				{Position 54.2651 	 6.9673 	 13.5029}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/glass4.ply"}
+			}
+			{bone "glass3"
+				{parameters "id=glass3;"}
+				{Position 54.2651 	 -6.7705 	 13.5029}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/glass3.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -29.86 	 0 	 10.2954}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -21.2453 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						-0.0022 	 3.4434 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 21.2304 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						-0.0022 	 -3.4257 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wheell2.ply"}
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-6.1639 	 15.9449 	 -9.3505
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-6.1639 	 -17.3622 	 -9.3505
+				}
+			}
+			{bone "supsb"
+				{parameters "id=body;"}
+				{Position 9.9014 	 0.0014 	 2.2309}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/supsb.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 41.419 	 0 	 10.2954}
+			{bone "fxtracel1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-0.0017 	 17.3622 	 -10.2954
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-0.0017 	 -17.3622 	 -9.3505
+				}
+			}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.6527 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -7.5777 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.53;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -3.4257 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wheell1.ply"}
+					}
+					{bone "axlel1"
+						{parameters "id=body;"}
+						{Position 0.0092 	 -7.5732 	 0}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/axlel1.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -13.65 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 7.5954 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.53;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0017 	 3.4434 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/wheelr1.ply"}
+					}
+					{bone "axler1"
+						{parameters "id=body;"}
+						{Position 0.0092 	 7.5909 	 0}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/axler1.ply"}
+					}
+				}
+			}
+			{bone "supsf"
+				{parameters "id=body;"}
+				{Position -9.5237 	 -0.0091 	 1.4962}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/supsf.ply"}
+			}
+			{bone "beamf"
+				{parameters "id=body;"}
+				{Position -4.7955 	 0.0068 	 -0.899}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/beamf.ply"}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 17.3622 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.53;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -17.3622 	 0}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.53;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				42.6181 	 -42.6181 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				38.8189 	 43.3071 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passangers;"}
+			{Position -82.6772 	 -9.4488 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passangers;"}
+			{Position -82.6772 	 9.4685 	 0}
+		}
+		{bone "visor1"
+			{Position 55.505 	 6.8689 	 42.5103}
+		}
+		{bone "visor2"
+			{Position 55.505 	 -6.8689 	 42.5104}
+		}
+		{bone "dummy"
+			{Position 0 	 0 	 19.685}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/body1.vol"}
+	{bone "body"}
+	{Position 45.0422 	 0.1032 	 8.4338}
+}
+{volume "body2"
+	{box 17.4633 31.0128 3.52622}
+	{bone "body"}
+	{Position 40.6084 	 0.0984 	 -6.8877}
+}
+{volume "body3"
+	{box 7.8937 24.1142 7.40507}
+	{bone "body"}
+	{Position 53.206 	 0.0984 	 -9.0544}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/body4.vol"}
+	{bone "body"}
+	{Position 59.4858 	 0.0984 	 -9.2065}
+}
+{volume "bodyback1"
+	{box 98.4154 45.3715 18.6733}
+	{bone "bodyback"}
+	{Position -0.5206 	 0 	 -3.9775}
+}
+{volume "bodyback2"
+	{box 10.1059 1.0499 18.6906}
+	{bone "backdoor1_1"}
+	{Position -5.0197 	 0 	 -0.0082}
+}
+{volume "bodyback3"
+	{box 10.1059 1.0499 18.6906}
+	{bone "backdoor1_2"}
+	{Position -5.0197 	 0.0455 	 -0.0173}
+}
+{volume "bodyback4"
+	{box 21.6267 0.562491 15.6299}
+	{bone "backdoor2_1"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		-0.204 	 -10.8071 	 -0.1786
+	}
+}
+{volume "bodyback5"
+	{box 21.6267 0.562491 15.6299}
+	{bone "backdoor2_2"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		-0.204 	 10.8071 	 -0.1708
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/engine1.vol"}
+	{bone "engine"}
+	{Position 6.1015 	 0.0327 	 -0.0048}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/engine2.vol"}
+	{bone "engine"}
+	{Position 7.326 	 0.0001 	 0.2492}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/engine3.vol"}
+	{bone "engine"}
+	{Position -1.6465 	 0.0389 	 -1.4936}
+}
+{volume "fuel1"
+	{box 18.2844 7.46581 7.93312}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0.0046}
+}
+{volume "fuel2"
+	{box 18.2844 7.46581 7.93312}
+	{bone "fuel2"}
+	{Position 0 	 0 	 0}
+}
+{volume "glass1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/glass1.vol"}
+	{bone "glass1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.9986 	 -0.0523
+		0 	 0.0523 	 0.9986
+		-0.0035 	 0.115 	 0.0811
+	}
+}
+{volume "glass2"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/glass2.vol"}
+	{bone "glass2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.9986 	 0.0523
+		0 	 -0.0523 	 0.9986
+		0.1241 	 -0.2546 	 0.0578
+	}
+}
+{volume "glass3"
+	{box 10.7575 7.97616 0.219568}
+	{bone "glass3"}
+	{matrix34
+		0 	 1 	 0
+		-0.2433 	 0 	 0.97
+		0.97 	 0 	 0.2433
+		-0.0323 	 -0.0623 	 0.1148
+	}
+}
+{volume "glass4"
+	{box 10.7575 7.97616 0.219568}
+	{bone "glass4"}
+	{matrix34
+		0 	 1 	 0
+		-0.2433 	 0 	 0.97
+		0.97 	 0 	 0.2433
+		-0.0323 	 0.0401 	 0.1148
+	}
+}
+{volume "glass5"
+	{box 11.4729 3.9804 0.234141}
+	{bone "glass5"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		0.0716 	 0.0404 	 0.0408
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/hole1.vol"}
+	{bone "bodyback"}
+	{Position -1.338 	 0.1723 	 -3.3824}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/hole2.vol"}
+	{bone "bodyback"}
+	{Position -1.338 	 -0.0454 	 10.4493}
+}
+{volume "hole3"
+	{box 10.1059 45.9105 18.6906}
+	{bone "bodyback"}
+	{Position 40.7734 	 -0.0092 	 -4.082}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/hole4.vol"}
+	{bone "body"}
+	{Position 44.5627 	 0.0653 	 13.641}
+}
+{volume "hole5"
+	{box 5.44594 10.575 7.5}
+	{bone "body"}
+	{Position 53.1024 	 -6.8293 	 13.6572}
+}
+{volume "hole6"
+	{box 5.44594 10.575 7.5}
+	{bone "body"}
+	{Position 53.1004 	 6.9972 	 13.6501}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/ram.vol"}
+	{bone "body"}
+	{Position -4.0362 	 0.3154 	 -13.7909}
+}
+{volume "shield_cover"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_qlt/shield_cover.vol"}
+	{bone "shield_cover"}
+	{Position -0.3491 	 -0.0002 	 -0.8141}
+}
+{volume "transmission"
+	{cylinder 3.14529 5.3062}
+	{bone "transmission"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0.017 	 0 	 0
+	}
+}
+{volume "wheelleft1"
+	{cylinder 10.5945 5.35335}
+	{bone "wheell1"}
+	{Position 0 	 0 	 -0.4425}
+}
+{volume "wheelleft2"
+	{cylinder 10.5945 5.35335}
+	{bone "wheell2"}
+	{Position 0 	 0 	 -0.4425}
+}
+{volume "wheelright1"
+	{cylinder 10.5945 5.35335}
+	{bone "wheelr1"}
+	{Position 0 	 0 	 0.4397}
+}
+{volume "wheelright2"
+	{cylinder 10.5945 5.35335}
+	{bone "wheelr2"}
+	{Position 0 	 0 	 0.4397}
+}

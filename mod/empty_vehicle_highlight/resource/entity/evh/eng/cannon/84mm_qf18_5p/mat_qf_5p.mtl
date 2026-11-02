@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/84mm_qf18"}
+	{bump "$/_vehicle/eng/84mm_qf18_bp"}
+	{specular "$/_vehicle/eng/84mm_qf18_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/firefly_armoured"}
+	{bump "$/_vehicle/eng/firefly_armoured_bp"}
+	{specular "$/_vehicle/eng/firefly_armoured_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

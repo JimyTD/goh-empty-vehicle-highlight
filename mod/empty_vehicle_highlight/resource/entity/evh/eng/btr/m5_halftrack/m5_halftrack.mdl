@@ -1,0 +1,1267 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 mgun_1_rot1 rear_door ws_shield zar1 zar2 zar3
+;Exported by:	 TigerF
+;Date:			 05.11.2024 17:36:37
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\btr\M5_halftrack\M5_halftrack.max
+{skeleton
+	{animation
+		{sequence "board" {file "../../../../-vehicle/eng/btr/m5_halftrack/board.anm"} {speed 1} {events {0 "board"}}}
+		{sequence "start" {file "../../../../-vehicle/eng/btr/m5_halftrack/start.anm"} {speed 0.65}}
+		{sequence "stop" {file "../../../../-vehicle/eng/btr/m5_halftrack/stop.anm"} {speed 0.65}}
+		{sequence "hit" {file "../../../../-vehicle/eng/btr/m5_halftrack/hit.anm"} {speed 0.7}}
+		{sequence "open_back" {file "../../../../-vehicle/eng/btr/m5_halftrack/open_back.anm"} {speed 0.7}{resume} {events {2 "hatch_light"}}}
+		{sequence "close_back" {file "../../../../-vehicle/eng/btr/m5_halftrack/close_back.anm"} {speed 0.7}{resume} {events {14 "hatch_light"}}}
+		{sequence "doorleft" {file "../../../../-vehicle/eng/btr/m5_halftrack/doorleft.anm"} {speed 0.6}{events {1 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/eng/btr/m5_halftrack/doorright.anm"} {speed 0.6}{events {1 "open_right"}}}
+		{sequence "open" {file "../../../../-vehicle/eng/btr/m5_halftrack/open.anm"} {speed 0.3}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=26;wheelradius=0.49;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/btr/m5_halftrack/body_r.anm"}{speed 0.7}}
+			}
+			{Position -5.0861 	 0 	 12.511}
+			{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/m5_halftrack/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 39.9119 	 -0.2787 	 6.1834}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/engine.ply"}
+				{bone "fxfire1"
+					{Position 0.9067 	 -1.114 	 1.2384}
+				}
+				{bone "detail1"
+					{parameters "id=engine;"}
+					{Position 21.4526 	 0.3426 	 -1.2926}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail1.ply"}
+				}
+				{bone "hoodl1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9941 	 0 	 -0.1088
+						0 	 1 	 0
+						0.1088 	 0 	 0.9941
+						9.9202 	 3.333 	 9.5528
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/hoodl1.ply"}
+					{bone "hoodl2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.9753 	 -0.2208 	 -0.0069
+							0.2208 	 0.9753 	 -0.0016
+							0.007 	 0 	 1
+							1.0258 	 5.7274 	 -0.4011
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/hoodl2.ply"}
+						{bone "enumerator1"
+							{matrix34
+								0.9688 	 0.2193 	 0.1158
+								-0.2208 	 0.9753 	 0
+								-0.1129 	 -0.0256 	 0.9933
+								-14.6019 	 0.3667 	 -1.0588
+							}
+							{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/enumerator1.ply"}
+						}
+					}
+				}
+				{bone "hoodr1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.996 	 0 	 -0.0889
+						0 	 1 	 0
+						0.0889 	 0 	 0.996
+						9.9202 	 -2.7722 	 9.5528
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/hoodr1.ply"}
+					{bone "hoodr2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.9666 	 0.2555 	 -0.0188
+							-0.2559 	 0.9664 	 -0.0228
+							0.0123 	 0.0269 	 0.9996
+							0.6212 	 -5.8372 	 -0.4216
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/hoodr2.ply"}
+						{bone "enumerator2"
+							{matrix34
+								0.9611 	 -0.2569 	 0.1011
+								0.2555 	 0.9664 	 0.0269
+								-0.1046 	 0 	 0.9945
+								-9.8979 	 0.0527 	 -0.8462
+							}
+							{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/enumerator2.ply"}
+						}
+					}
+				}
+			}
+			{bone "doorl1"
+				{parameters "id=body;"}
+				{Position 21.5281 	 16.099 	 16.8148}
+				
+				{bone "doorl_ext"
+					{parameters "id=body;"}
+					{Position -1.4727 	 0.3449 	 1.8747}
+					
+				}
+			}
+			{bone "doorr1"
+				{parameters "id=body;"}
+				{Position 21.5281 	 -16.0992 	 16.8148}
+				
+				{bone "doorr_ext"
+					{parameters "id=body;"}
+					{Position -1.4727 	 -0.3449 	 1.8747}
+					
+				}
+			}
+			{bone "ws_shield"
+				{parameters "id=body;"}
+				{matrix34
+					0.4695 	 0 	 -0.8829
+					0 	 1 	 0
+					0.8829 	 0 	 0.4695
+					19.4999 	 14.5538 	 25.5067
+				}
+				
+			}
+			{bone "holder1"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 -0.9998
+					0 	 0.9998 	 -0.0175
+					25.7989 	 -13.7587 	 18.7049
+				}
+				
+			}
+			{bone "holder2"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 -0.9998
+					0 	 0.9998 	 -0.0175
+					25.7989 	 -2.4897 	 18.7049
+				}
+				
+			}
+			{bone "holder3"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 0.9998
+					0 	 -0.9998 	 -0.0175
+					25.7989 	 13.6558 	 18.7049
+				}
+				
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position 20.3171 	 7.5935 	 21.8295}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/window1.ply"}
+			}
+			{bone "window2"
+				{parameters "id=window2;"}
+				{Position 20.3171 	 -7.6496 	 21.8295}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/window2.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.6354 	 -0.7716 	 -0.029
+					0.7717 	 -0.6335 	 -0.0559
+					0.0248 	 -0.0579 	 0.998
+					-18.5992 	 -21.2324 	 0.6575
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					55.1771 	 -10.7406 	 13.5269
+				}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					55.1771 	 10.726 	 13.5264
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-49.9245 	 17.9519 	 4.7565
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-49.9245 	 -17.8944 	 4.7565
+				}
+			}
+			{bone "visor1"
+				{Position 22.4143 	 -9.5641 	 21.3722}
+			}
+			{bone "visor2"
+				{Position 22.4143 	 9.4505 	 21.3722}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-48.1582 	 0 	 1.6602
+				}
+			}
+			{bone revolute "wheell2"
+				{parameters "id=trackleft;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0119 	 16.524 	 -0.0276
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell2.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.1;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.2394 	 16.5511 	 3.0899
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell8.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;radius=0.50;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.6191 	 16.5258 	 -0.475
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell7.ply"}
+			}
+			{bone revolute "wheelr2"
+				{parameters "id=trackright;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0119 	 -16.5036 	 -0.0276
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr2.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.1;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.2394 	 -16.5426 	 3.0899
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr8.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;radius=0.5;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.6191 	 -16.5638 	 -0.475
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr7.ply"}
+			}
+			{bone "seat01"
+				{matrix34
+					0.9819 	 0.0281 	 0.1876
+					-0.0282 	 0.9996 	 -0.002
+					-0.1875 	 -0.0034 	 0.9823
+					14.3336 	 -9.6185 	 1.3855
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9712 	 -0.0015 	 0.2382
+					-0.0001 	 1 	 0.0067
+					-0.2382 	 -0.0065 	 0.9712
+					14.7999 	 9.335 	 1.4021
+				}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 18.1076 	 17.1296 	 5.5296}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 21.2562 	 16.3595 	 2.0388}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 19.2942 	 -17.0543 	 4.1325}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 40.8396 	 14.945 	 7.2012}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail6.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.6691 	 0 	 -0.7431
+					0 	 1 	 0
+					0.7431 	 0 	 -0.6691
+					17.3434 	 10.4889 	 16.2814
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/steer.ply"}
+			}
+			{bone "fuel2"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-6.2284 	 -17.2886 	 17.6602
+				}
+			}
+			{bone "fuel1"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-6.2284 	 16.971 	 17.6602
+				}
+			}
+			{bone "transmission"
+				{Position 23.1971 	 0 	 2.1272}
+			}
+			{bone "passengers_ver"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					1.7463 	 0.1427 	 6.9964
+				}
+				{bone "seat02"
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						-44.2478 	 -9.4665 	 4.3124
+					}
+				}
+				{bone "seat03"
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						-33.8001 	 -9.8852 	 4.7883
+					}
+				}
+				{bone "seat05"
+					{matrix34
+						0.1219 	 0.9919 	 -0.0346
+						-0.9925 	 0.1218 	 -0.0043
+						0 	 0.0349 	 0.9994
+						-12.8889 	 -9.372 	 4.7883
+					}
+				}
+				{bone "seat04"
+					{matrix34
+						-0.1219 	 0.9912 	 -0.0519
+						-0.9925 	 -0.1217 	 0.0064
+						0 	 0.0523 	 0.9986
+						-24.0663 	 -9.4665 	 4.3124
+					}
+				}
+				{bone "seat06"
+					{matrix34
+						-0.1219 	 0.9912 	 0.0519
+						-0.9925 	 -0.1217 	 -0.0064
+						0 	 -0.0523 	 0.9986
+						-3.8361 	 -9.8852 	 4.7883
+					}
+				}
+				{bone "seat07"
+					{matrix34
+						0.1219 	 -0.9912 	 0.0519
+						0.9925 	 0.1217 	 -0.0064
+						0 	 0.0523 	 0.9986
+						-43.437 	 9.6304 	 4.7883
+					}
+				}
+				{bone "seat08"
+					{matrix34
+						-0.1219 	 -0.9919 	 -0.0346
+						0.9925 	 -0.1218 	 -0.0043
+						0 	 -0.0349 	 0.9994
+						-33.4856 	 9.735 	 4.7883
+					}
+				}
+				{bone "seat09"
+					{matrix34
+						0.1219 	 -0.9912 	 -0.0519
+						0.9925 	 0.1217 	 0.0064
+						0 	 -0.0523 	 0.9986
+						-22.9395 	 9.8295 	 4.3125
+					}
+				}
+				{bone "seat10"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						-12.3559 	 9.7886 	 4.7883
+					}
+				}
+				{bone "seat11"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						-3.2731 	 9.6393 	 4.3125
+					}
+				}
+				{bone "seat12"
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9994 	 -0.0349
+						0 	 0.0349 	 0.9994
+						8.6365 	 -0.8379 	 3.0245
+					}
+				}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position 40.8396 	 -14.8115 	 7.2012}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail7.ply"}
+			}
+			{bone "fxfire5"
+				{Position -7.6695 	 -1.3926 	 4.8906}
+			}
+			{bone "rear_door"
+				{parameters "id=body;"}
+				{matrix34
+					-0.3827 	 0.9239 	 0
+					-0.9239 	 -0.3827 	 0.0002
+					0.0002 	 0 	 1
+					-50.0995 	 -6.751 	 5.9532
+				}
+				
+				{bone "detail8"
+					{parameters "id=body;"}
+					{matrix34
+						-0.3827 	 -0.9239 	 0.0002
+						0.9239 	 -0.3827 	 0
+						0 	 0.0002 	 1
+						9.0575 	 -2.395 	 9.5143
+					}
+					
+				}
+			}
+			{bone revolute "mgun_1_rot1"
+				{parameters "id=body;"}
+				{limits -50 50}
+				{Position -2.2799 	 0 	 28.3425}
+				
+				{bone revolute "mgun_1_rot2"
+					{parameters "id=body;"}
+					{limits -25 45}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-1.134 	 1.1771 	 3.8541
+					}
+					
+					{bone "mgun"
+						{matrix34
+							1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 1
+							-6.5221 	 -0.4734 	 1.1686
+						}
+					}
+				}
+				{bone "gunner"
+					{Position -11.6031 	 0.0065 	 -4.9062}
+				}
+			}
+			{bone "zar3"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-50.1849 	 7.105 	 11.9664
+				}
+				
+			}
+			{bone "zar1"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 -0.7071 	 -0.7071
+					0 	 -0.7071 	 0.7071
+					-1 	 0 	 0
+					-50.3375 	 7.1071 	 14.6154
+				}
+				
+			}
+			{bone "zar2"
+				{parameters "id=body;"}
+				{Position -50.1849 	 7.1071 	 15.8233}
+				
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position -13.706 	 21.142 	 11.5897}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail9.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 26.7358 	 17.6728 	 15.2415}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail2.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{Position -17.4846 	 17.3058 	 16.0601}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail10.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					26.7358 	 -17.6934 	 15.2415
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail11.ply"}
+			}
+			{bone "detail12"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-18.5562 	 -17.1547 	 20.8189
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/detail12.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 43.6291 	 0 	 9.6374}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-0.0003 	 -15.7605 	 -9.6213
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.0003 	 15.7578 	 -9.6212
+				}
+			}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.6728 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.07}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.49;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 3.2135 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell1.ply"}
+					}
+					{bone "break_l"
+						{parameters "id=body;"}
+						{Position 0 	 1.2213 	 0}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/break_l.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -13.6416 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.07}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.49;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -3.2451 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr1.ply"}
+					}
+					{bone "break_r"
+						{parameters "id=body;"}
+						{Position 0 	 -1.2521 	 0}
+						{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/break_r.ply"}
+					}
+				}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/susp_front.ply"}
+			}
+			{bone "susp_rod"
+				{Position -4.4774 	 -2.5878 	 -0.8564}
+			}
+			{bone prizmatic "suspension_r9"
+				{limits -0.08 0.08}
+				{speed 0.07}
+				{Position 0 	 -13.6416 	 0}
+				{bone revolute "wheelr9"
+					{parameters "id=wheelright9;radius=0.49;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l9"
+				{limits -0.08 0.08}
+				{speed 0.07}
+				{Position 0 	 13.6728 	 0}
+				{bone revolute "wheell9"
+					{parameters "id=wheelleft9;radius=0.49;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -30.9296 	 0 	 9.6374}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.6033 	 30.0415 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				5.6754 	 -29.7885 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{Position -68.9607 	 3.2984 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{Position -68.9323 	 -3.0632 	 0}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-33.7706 	 30.0415 	 0
+			}
+		}
+		{bone "emit6"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-33.8792 	 -29.7885 	 0
+			}
+		}
+		{bone "dummy"
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -25.356 	 16.7162 	 8.7161}
+			{bone prizmatic "suspension_l3"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position 11.835 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position 4.4975 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position -4.4445 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position -11.8009 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.48;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheell6.ply"}
+				}
+			}
+			{bone "fxtracel3"
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					1.0878 	 0.0975 	 -8.6991
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 1 	 0
+					-0.3256 	 0 	 -0.9455
+					-15.353 	 -0.0819 	 -7.8018
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 0.2114 	 -0.1253 	 -4.3841}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/trackl.ply"}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position -0.0089 	 0.1027 	 -3.2296}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/suspl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position -25.356 	 -16.6463 	 8.7161}
+			{bone prizmatic "suspension_r3"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position 11.835 	 -0.0117 	 -4.3733}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position 4.4975 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position -4.4445 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position -11.8009 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.48;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/wheelr6.ply"}
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 1 	 0
+					-0.3256 	 0 	 -0.9455
+					-15.3543 	 0.0476 	 -7.802
+				}
+			}
+			{bone "fxtracer3"
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					1.0866 	 0.1151 	 -8.6993
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0.2114 	 0.0552 	 -4.3841}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/trackr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position -0.0089 	 -0.1027 	 -3.2296}
+				{VolumeView "../../../../-vehicle/eng/btr/m5_halftrack/suspr.ply"}
+			}
+		}
+	}
+}
+{volume "armor1"
+	{box 7.57826 0.387479 31.207}
+	{bone "ws_shield"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		3.6907 	 -14.5367 	 -0.3208
+	}
+}
+{volume "armor2"
+	{cylinder 3.28471 17.2239}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		65.775 	 0.0359 	 1.7179
+	}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/armor3.vol"}
+	{bone "body"}
+	{Position -48.1242 	 15.6886 	 6.5247}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/armor4.vol"}
+	{bone "body"}
+	{Position -48.1242 	 -15.688 	 6.5247}
+}
+{volume "body10"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body10.vol"}
+	{bone "body"}
+	{Position -19.6173 	 0 	 17.4949}
+}
+{volume "body11"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body11.vol"}
+	{bone "body"}
+	{Position 5.9468 	 0 	 7.6754}
+}
+{volume "body12"
+	{box 58.7416 9.68572 23.1626}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-20.4826 	 -0.0344 	 4.5589
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body1.vol"}
+	{bone "body"}
+	{Position 56.0596 	 0 	 8.7593}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body2.vol"}
+	{bone "body"}
+	{Position 37.1726 	 0 	 10.5081}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body3.vol"}
+	{bone "body"}
+	{Position 29.9287 	 0 	 0.2543}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body4.vol"}
+	{bone "body"}
+	{Position 14.3201 	 0 	 2.0851}
+}
+{volume "body5"
+	{box 14.8833 12.874 0.341929}
+	{bone "doorl1"}
+	{matrix34
+		0.9733 	 -0.2294 	 0
+		0 	 0 	 1
+		-0.2294 	 -0.9733 	 0
+		-7.2472 	 1.2928 	 -4.5649
+	}
+}
+{volume "body6"
+	{box 14.8833 12.874 0.341839}
+	{bone "doorr1"}
+	{matrix34
+		0.9733 	 0.2297 	 0
+		0 	 0 	 1
+		0.2297 	 -0.9733 	 0
+		-7.2489 	 -1.2857 	 -4.5679
+	}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body7.vol"}
+	{bone "body"}
+	{Position 20.3306 	 -0.0329 	 22.7329}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body8.vol"}
+	{bone "doorl_ext"}
+	{Position -5.7745 	 0.9479 	 3.4591}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/body9.vol"}
+	{bone "doorr_ext"}
+	{Position -5.7762 	 -0.9408 	 3.4603}
+}
+{volume "engine"
+	{box 19.8298 11.61 14.0365}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.2279 	 0.2723 	 2.0676
+	}
+}
+{volume "fuel1"
+	{box 19.9295 4.63421 9.34165}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		-0.1597 	 0 	 -2.6662
+	}
+}
+{volume "fuel2"
+	{box 19.9295 4.63421 9.34165}
+	{bone "fuel2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		-0.0959 	 0 	 -2.6662
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 0.2945 	 0 	 0.9213}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 0.2945 	 0.0322 	 0.7719}
+}
+{volume "hole3"
+	{box 56.7555 15.7782 37.4618}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-20.5859 	 -0.0695 	 17.9536
+	}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/hole4.vol"}
+	{bone "body"}
+	{Position 20.5377 	 -7.6333 	 21.7054}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/hole5.vol"}
+	{bone "body"}
+	{Position 20.5377 	 7.5674 	 21.7054}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/ram.vol"}
+	{bone "body"}
+	{Position 6.3361 	 0 	 2.9282}
+}
+{volume "trackleft1"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/trackleft1.vol"}
+	{bone "wheelsl"}
+	{Position 0.2169 	 -0.1239 	 0.7994}
+}
+{volume "trackleft2"
+	{cylinder 5.52307 5.93118}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0173
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.33071 5.75453}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0219
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft7"
+	{cylinder 4.9205 5.75445}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1791
+	}
+}
+{volume "trackright1"
+	{polyhedron "../../../../-vehicle/eng/btr/m5_halftrack/trackright1.vol"}
+	{bone "wheelsr"}
+	{Position 0.2169 	 0.037 	 0.7994}
+}
+{volume "trackright2"
+	{cylinder 5.52307 5.93118}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1566
+	}
+}
+{volume "trackright3"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright4"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright5"
+	{cylinder 4.33071 5.75445}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright6"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright7"
+	{cylinder 4.9205 5.75445}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.291
+	}
+}
+{volume "transmission"
+	{cylinder 3.72999 15.3349}
+	{bone "transmission"}
+	{matrix34
+		0 	 0.309 	 -0.9511
+		0 	 0.9511 	 0.309
+		1 	 0 	 0
+		0.3596 	 -0.0737 	 0.0545
+	}
+}
+{volume "wheelleft1"
+	{cylinder 9.64567 4.8622}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.8299
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.64567 4.8622}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.8533
+	}
+}
+{volume "window1"
+	{box 0.368708 5.90296 14.3915}
+	{bone "window1"}
+	{matrix34
+		-0.8833 	 0 	 -0.4688
+		-0.4688 	 0 	 0.8833
+		0 	 1 	 0
+		-0.002 	 -0.0123 	 0.0211
+	}
+}
+{volume "window2"
+	{box 0.368708 5.90296 14.3915}
+	{bone "window2"}
+	{matrix34
+		-0.8833 	 0 	 -0.4688
+		-0.4688 	 0 	 0.8833
+		0 	 1 	 0
+		-0.002 	 0.0213 	 0.0211
+	}
+}

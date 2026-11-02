@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 150mm_rkh41 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/150mm_nebelwerfer41.mdl"}
+	{Extension "150mm_nebelwerfer41.mdl"}
 	{extender "stuff"
 		{item "evh_150mm_rkh41"}
 	}

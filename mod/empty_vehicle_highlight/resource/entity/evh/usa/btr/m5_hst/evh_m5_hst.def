@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m5_hst (generated)
-	{Extension "../../../../-vehicle/usa/btr/m5_hst/m5_hst.mdl"}
+	{Extension "m5_hst.mdl"}
 	{extender "stuff"
 		{item "evh_m5_hst"}
 	}

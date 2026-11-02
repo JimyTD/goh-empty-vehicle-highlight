@@ -1,0 +1,1183 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: mgun_h_rot1 turret
+;Exported by:	 Robin
+;Date:			 17.11.2024 18:20:22
+;File:			 E:\SVN GoH GER 3D models\vehicles\tank_heavy\panzer 756r\PzKpfw_756R.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_heavy/pz756r/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_heavy/pz756r/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_heavy/pz756r/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_heavy/pz756r/open.anm"} {speed 0.5}{resume} {events {2 "hatch_medium"}}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_heavy/pz756r/hit.anm"} {speed 0.8}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.36;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/pz756r/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.4989 	 0.0798 	 21.7869}
+			{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/body.ply"}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{Position 42.2774 	 10.0353 	 10.7674}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/hatch_driver.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					61.4042 	 27.5246 	 -5.0892
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.42;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-55.6646 	 26.5593 	 -6.6117
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					35.8846 	 26.8771 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.2225 	 26.8771 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-35.8509 	 26.8771 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					61.4042 	 -25.7013 	 -5.0892
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.42;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-55.6646 	 -26.6668 	 -6.6117
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					35.8846 	 -26.3489 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.2225 	 -26.3489 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.21;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-35.8508 	 -26.3489 	 -1.5952
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr11.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 38.1694 	 -0.7464 	 -1.7251}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail1.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -3.0112 	 0.3605 	 7.4846}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail3.ply"}
+			}
+			{bone "visor2"
+				{Position 48.2543 	 -4.7464 	 11.5015}
+			}
+			{bone "fxfire4"
+				{Position 9.3793 	 -0.0798 	 10.8404}
+			}
+			{bone "headlightr"
+				{Position 52.2648 	 -7.8646 	 7.2712}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-0.9945 	 0.1045 	 0
+					-0.1045 	 -0.9945 	 0
+					0 	 0 	 1
+					-63.5154 	 13.5421 	 -1.0703
+				}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{Position 49.0512 	 9.3653 	 6.4859}
+				{bone revolute "mgun_h_rot2"
+					{limits -12 15}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							7.9439 	 0 	 0
+						}
+					}
+					{bone "mgunshield_hull"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-49.0512 	 6.4859 	 -9.3653
+						}
+						
+					}
+					{bone "mgun_h"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							1.652 	 -0.2237 	 0.0206
+						}
+						
+					}
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9976 	 0.0698
+					-1 	 0 	 0
+					0 	 -0.0698 	 0.9976
+					-35.1457 	 31.0649 	 4.0994
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 0.9703 	 0.2419
+					-1 	 0 	 0
+					0 	 -0.2419 	 0.9703
+					-48.2158 	 31.0982 	 3.6235
+				}
+			}
+			{bone "seat05"
+				{matrix34
+					0.0698 	 -0.9853 	 0.1561
+					0.9976 	 0.0689 	 -0.0109
+					0 	 0.1564 	 0.9877
+					-47.3953 	 -31.8904 	 -0.2346
+				}
+			}
+			{bone "seat06"
+				{matrix34
+					0.1045 	 -0.9945 	 0
+					0.9945 	 0.1045 	 0
+					0 	 0 	 1
+					-35.0012 	 -31.4812 	 -0.2346
+				}
+			}
+			{bone "seat07"
+				{matrix34
+					0.1219 	 -0.9803 	 0.1553
+					0.9925 	 0.1204 	 -0.0191
+					0 	 0.1564 	 0.9877
+					-19.8753 	 -31.5165 	 -0.6668
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/pz756r/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -37.5892 	 -0.0798 	 3.7002}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/engine.ply"}
+				{bone "fxfire1"
+					{Position -4.1396 	 0 	 2.0473}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.7217 	 0.6922 	 0
+						-0.6922 	 -0.7217 	 0
+						0 	 0 	 1
+						3.2173 	 11.7942 	 8.5602
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.7573 	 -0.6531 	 0
+						0.6531 	 -0.7573 	 0
+						0 	 0 	 1
+						3.1929 	 -11.4995 	 8.5602
+					}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{Position -4.2855 	 8.7402 	 7.0908}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/engine_hatch2.ply"}
+				}
+				{bone "engine_hatch3"
+					{parameters "id=engine;"}
+					{Position -4.2855 	 -8.7471 	 7.0908}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/engine_hatch3.ply"}
+				}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position 17.2245 	 0 	 8.3831}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/engine_hatch1.ply"}
+				}
+				{bone "detail2"
+					{matrix34
+						0.1219 	 -0.9925 	 0
+						0.9925 	 0.1219 	 0
+						0 	 0 	 1
+						-16.9747 	 10.0089 	 10.2064
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail2.ply"}
+				}
+			}
+			{bone "transmission"
+				{Position -56.8558 	 17.8764 	 -6.8139}
+			}
+			{bone "fuel2"
+				{Position 15.2003 	 -15.8841 	 -12.737}
+			}
+			{bone "fuel1"
+				{Position 7.7614 	 15.7992 	 -12.737}
+			}
+			{bone "ammo1"
+				{Position 9.1632 	 -0.0062 	 -11.7334}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/pz756r/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.008}
+				{Position 11.5842 	 -0.0798 	 14.538}
+				
+				{bone "hatch_top"
+					{parameters "id=turret;"}
+					{Position -18.0817 	 0 	 14.2585}
+					
+				}
+				{bone "hatchl"
+					{parameters "id=turret;"}
+					{Position 3.9478 	 -0.2736 	 19.8226}
+					
+				}
+				{bone "hatchr"
+					{parameters "id=turret;"}
+					{Position 3.946 	 -9.7899 	 19.8226}
+					
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/pz756r/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -8 18}
+					{speed 0.008}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						17.3031 	 0.1998 	 7.1634
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							22.4416 	 -0.4533 	 -1.0255
+						}
+						
+						{bone "foresight1"
+							{Position 42.7723 	 -0.0044 	 0.0171}
+						}
+					}
+					{bone "mgun_c"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.596 	 0.2025 	 4.9806
+						}
+						
+						{bone "foresight5"
+							{Position 6.3353 	 -0.0351 	 -0.23}
+						}
+					}
+				}
+				{bone revolute "mgun_r_rot1"
+					{limits -15 15}
+					{terminator}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-29.8858 	 0.1129 	 7.7026
+					}
+					{bone revolute "mgun_r_rot2"
+						{limits -12 12}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0664 	 0 	 0
+						}
+						{bone "foresight6"
+							{matrix34
+								1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 -1
+								7.4747 	 0.0051 	 -0.0041
+							}
+						}
+						{bone "mgunshield_rear"
+							{parameters "id=turret;"}
+							{matrix34
+								-1 	 0 	 0
+								0 	 0 	 -1
+								0 	 -1 	 0
+								0.8021 	 0.0001 	 0.0041
+							}
+							
+						}
+						{bone "mgun_r"
+							{parameters "id=turret;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 -1
+								-9.4385 	 1.1135 	 -0.0026
+							}
+							
+						}
+					}
+				}
+				{bone "visor1"
+					{Position 11.4323 	 -5.1271 	 16.8733}
+				}
+				{bone "fxfire3"
+					{Position 4.0067 	 -5.069 	 9.5564}
+				}
+				{bone "enumerator2"
+					{Position -10.0947 	 -15.7878 	 8.5242}
+					
+				}
+				{bone "enumerator1"
+					{Position -7.3732 	 15.9815 	 8.531}
+					
+				}
+				{bone "ammo3"
+					{Position -14.9313 	 -13.2661 	 2.4496}
+				}
+				{bone "ammo4"
+					{Position -14.9313 	 13.0847 	 2.4496}
+				}
+			}
+			{bone "detail4"
+				{Position -13.1954 	 22.24 	 5.5633}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail4.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail4_lod1.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/detail4_lod2.ply"}
+				}
+			}
+			{bone "ammo2"
+				{Position 33.7576 	 -11.9732 	 -11.7334}
+			}
+		}
+		{bone "body_virt"
+			{Position -0.7486 	 0 	 14.9308}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 1.1415 	 -20.2111 	 -3.0073}
+				{bone prizmatic "suspension_r6"
+					{limits -0.08 0.08}
+					{speed 0.16}
+					{Position -42.772 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.12 0.1}
+					{speed 0.16}
+					{Position -28.0546 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.16 0.12}
+					{speed 0.16}
+					{Position -10.7307 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.16 0.12}
+					{speed 0.16}
+					{Position 8.1819 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.12 0.1}
+					{speed 0.16}
+					{Position 26.9028 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.16}
+					{Position 45.7393 	 -6.4253 	 -4.7637}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheelr2.ply"}
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9272 	 0 	 0.3746
+						0 	 1 	 0
+						-0.3746 	 0 	 -0.9272
+						-47.1349 	 -5.1768 	 -11.6479
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9272 	 0 	 0.3746
+						-0.3746 	 0 	 -0.9272
+						0 	 -1 	 0
+						34.0936 	 -5.1768 	 -10.9837
+					}
+				}
+				{bone "torzr"
+					{Position 6.5697 	 -0.7696 	 -2.2865}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/torzr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.1607 	 -5.8664 	 0.6329}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/trackr.ply"}
+				}
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 1.1415 	 20.0259 	 -3.0073}
+				{bone prizmatic "suspension_l6"
+					{limits -0.08 0.08}
+					{speed 0.16}
+					{Position -42.772 	 6.5638 	 -4.7637}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.12 0.1}
+					{speed 0.16}
+					{Position -28.0546 	 6.5637 	 -4.7637}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.16 0.12}
+					{speed 0.16}
+					{Position -10.7308 	 6.5638 	 -4.7637}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.16 0.12}
+					{speed 0.16}
+					{Position 8.1819 	 6.5637 	 -4.7637}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.12 0.1}
+					{speed 0.16}
+					{Position 26.9028 	 6.5638 	 -4.7637}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.16}
+					{Position 45.7394 	 6.5638 	 -4.7637}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/wheell2.ply"}
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9272 	 0 	 0.3746
+						0 	 1 	 0
+						-0.3746 	 0 	 -0.9272
+						-47.1349 	 6.2412 	 -11.6479
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9272 	 0 	 0.3746
+						-0.3746 	 0 	 -0.9272
+						0 	 -1 	 0
+						34.0936 	 6.2412 	 -10.9837
+					}
+				}
+				{bone "torzl"
+					{Position 6.5697 	 0.9548 	 -2.2865}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/torzl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.1607 	 6.0879 	 0.6329}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/trackl.ply"}
+				}
+			}
+		}
+		{bone "emit9"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-21.9079 	 -53.7402 	 0
+			}
+		}
+		{bone "emit8"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-37.1991 	 -54.1339 	 0
+			}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-50.8046 	 -53.937 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-49.7932 	 54.1339 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-35.903 	 53.7402 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				8.2195 	 -44.1059 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				8.2195 	 45.1083 	 0
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/ram.vol"}
+	{bone "body"}
+	{Position 1.9212 	 -0.0742 	 -3.2209}
+}
+{volume "ammo1"
+	{box 22.4436 26.9461 3.70866}
+	{bone "ammo1"}
+	{Position 0 	 0 	 1.8543}
+}
+{volume "ammo2"
+	{box 19.2681 2.98425 12.5614}
+	{bone "ammo2"}
+	{Position 0 	 0 	 6.2807}
+}
+{volume "ammo3"
+	{box 10.4163 2.98425 10.9284}
+	{bone "ammo3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.9848 	 -0.1736
+		0 	 0.1736 	 0.9848
+		0 	 0.9488 	 5.3812
+	}
+}
+{volume "ammo4"
+	{box 10.4163 2.98425 10.9284}
+	{bone "ammo4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.9848 	 0.1736
+		0 	 -0.1736 	 0.9848
+		0 	 -0.9489 	 5.3812
+	}
+}
+{volume "armor4"
+	{box 20.105 1.21111 0.802601}
+	{bone "body"}
+	{matrix34
+		0.5299 	 -0.848 	 0
+		0 	 0 	 1
+		-0.848 	 -0.5299 	 0
+		30.3943 	 9.569 	 11.2936
+	}
+}
+{volume "armor5"
+	{box 22.3714 1.21111 0.802601}
+	{bone "body"}
+	{matrix34
+		-0.4757 	 -0.8796 	 0
+		0 	 0 	 1
+		-0.8796 	 0.4757 	 0
+		30.3804 	 -8.4395 	 11.2936
+	}
+}
+{volume "armor6"
+	{box 38.1351 2.68105 0.763971}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		10.7228 	 18.9523 	 10.5026
+	}
+}
+{volume "armor7"
+	{box 38.1351 2.68105 0.763971}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		10.7228 	 -19.1046 	 10.5026
+	}
+}
+{volume "armor8"
+	{box 34.7287 0.589831 2.19055}
+	{bone "body"}
+	{matrix34
+		0 	 -1 	 0
+		0.8594 	 0 	 0.5112
+		-0.5112 	 0 	 0.8594
+		45.961 	 0.0054 	 11.6032
+	}
+}
+{volume "armor9"
+	{box 0.836927 12.4495 6.16902}
+	{bone "turret"}
+	{matrix34
+		0.1736 	 0 	 0.9848
+		0 	 1 	 0
+		-0.9848 	 0 	 0.1736
+		17.7605 	 0.0853 	 12.6851
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/barrel1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		7.3738 	 -0.4724 	 -1.0307
+	}
+}
+{volume "barrel2"
+	{cylinder 1.76187 61.2188}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		11.18 	 -0.0005 	 0.0048
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/body1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.8245 	 -18.4267 	 -4.2771
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/body2.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		20.0446 	 -18.8211 	 7.8368
+	}
+}
+{volume "breech"
+	{box 22.0058 5.85287 4.78271}
+	{bone "gun_rot"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		-7.9907 	 -0.6054 	 -1.4447
+	}
+}
+{volume "cupola"
+	{cylinder 7.08436 5.73475}
+	{bone "turret"}
+	{Position 3.87 	 -5.0428 	 16.8903}
+}
+{volume "detail2"
+	{box 12.0274 17.1152 10.0801}
+	{bone "detail2"}
+	{matrix34
+		0.0872 	 0.9962 	 0
+		-0.9962 	 0.0872 	 0
+		0 	 0 	 1
+		0.0624 	 -0.0306 	 2.9955
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/engine1.vol"}
+	{bone "engine"}
+	{Position 2.3999 	 -0.0534 	 -8.2137}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/engine2.vol"}
+	{bone "engine"}
+	{Position 2.2863 	 -0.0534 	 3.9449}
+}
+{volume "fuel1"
+	{box 30.514 3.93701 21.9685}
+	{bone "fuel1"}
+	{Position 1.0137 	 0 	 10.9843}
+}
+{volume "fuel2"
+	{box 48.4764 3.93701 21.9685}
+	{bone "fuel2"}
+	{Position 2.6337 	 0 	 10.9843}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/hole1.vol"}
+	{bone "wheelsr"}
+	{Position 2.5515 	 -5.9679 	 0.3844}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/hole2.vol"}
+	{bone "wheelsl"}
+	{Position 2.342 	 5.7878 	 0.3844}
+}
+{volume "hole3"
+	{box 7.38828 6.29522 0.984252}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		-0.515 	 0 	 0.8572
+		0.8572 	 0 	 0.515
+		48.7212 	 -0.0798 	 6.8513
+	}
+}
+{volume "hull_armor1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/hull_armor1.vol"}
+	{bone "body"}
+	{Position 64.6716 	 -0.0294 	 -1.9728}
+}
+{volume "hull_armor2"
+	{box 0.54084 5.33383 33.7169}
+	{bone "body"}
+	{matrix34
+		0.9205 	 0 	 -0.3907
+		0.3907 	 0 	 0.9205
+		0 	 -1 	 0
+		63.6471 	 -0.0849 	 -7.1159
+	}
+}
+{volume "hull_armor3"
+	{box 34.7287 0.589831 7.55362}
+	{bone "body"}
+	{matrix34
+		0 	 -1 	 0
+		0.8572 	 0 	 0.515
+		-0.515 	 0 	 0.8572
+		48.4534 	 0.0054 	 7.4542
+	}
+}
+{volume "trackleft1"
+	{cylinder 7.72011 12.6088}
+	{bone "wheelsl"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		59.4623 	 6.0879 	 4.7412
+	}
+}
+{volume "trackleft2"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.5012 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.5257 	 0
+	}
+}
+{volume "trackleft4"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.5627 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.5033 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.467 	 0
+	}
+}
+{volume "trackleft7"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_l6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 -0.5536 	 0
+	}
+}
+{volume "trackleft8"
+	{cylinder 9.44469 12.5764}
+	{bone "wheelsl"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-57.5542 	 6.0716 	 3.2491
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.1045 	 5.7879 	 0.3768}
+}
+{volume "trackright1"
+	{cylinder 7.72011 12.6088}
+	{bone "wheelsr"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		59.4623 	 -5.7631 	 4.7412
+	}
+}
+{volume "trackright2"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.6627 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.6451 	 0
+	}
+}
+{volume "trackright4"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.6679 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.6748 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.7161 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 6.4187 6.81471}
+	{bone "suspension_r6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0651 	 0.8105 	 0.0373
+	}
+}
+{volume "trackright8"
+	{cylinder 9.44469 12.5764}
+	{bone "wheelsr"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-57.5542 	 -5.7793 	 3.2491
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.1045 	 -6.063 	 0.3768}
+}
+{volume "transmission"
+	{cylinder 6.42724 35.8366}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -17.9183 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret1.vol"}
+	{bone "turret"}
+	{Position -0.0398 	 0 	 5.8556}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret2.vol"}
+	{bone "turret"}
+	{Position -17.5267 	 0 	 7.6766}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret3.vol"}
+	{bone "turret"}
+	{Position -0.0398 	 0 	 -3.0848}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret4.vol"}
+	{bone "turret"}
+	{Position 19.6341 	 -8.7371 	 6.0351}
+}
+{volume "turret5"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret5.vol"}
+	{bone "turret"}
+	{Position 19.6341 	 8.5028 	 6.0352}
+}
+{volume "turret6"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/pz756r/turret6.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.9605 	 -1.1412 	 0.174
+	}
+}

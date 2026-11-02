@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t20_fin (generated)
-	{Extension "../../../../-vehicle/finland/btr/t20_fin/t20.mdl"}
+	{Extension "t20.mdl"}
 	{extender "stuff"
 		{item "evh_t20_fin"}
 	}

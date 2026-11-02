@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for il2_mod42 (generated)
-	{Extension "../../../../-vehicle/ussr/airborne/il2_mod42/il2_mod42.mdl"}
+	{Extension "il2_mod42.mdl"}
 	{extender "stuff"
 		{item "evh_il2_mod42"}
 	}

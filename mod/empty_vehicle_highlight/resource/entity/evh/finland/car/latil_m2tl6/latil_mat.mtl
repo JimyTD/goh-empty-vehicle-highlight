@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/fin/latil_m2tl6"}
+	{bump "$/_vehicle/fin/latil_m2tl6_bp"}
+	{specular "$/_vehicle/fin/latil_m2tl6_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

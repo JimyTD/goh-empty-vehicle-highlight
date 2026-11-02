@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/fin/kv1e_fin"}
+	{bump "$/_vehicle/rus/kv1_1940_bp"}
+	{specular "$/_vehicle/rus/kv1_1940_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

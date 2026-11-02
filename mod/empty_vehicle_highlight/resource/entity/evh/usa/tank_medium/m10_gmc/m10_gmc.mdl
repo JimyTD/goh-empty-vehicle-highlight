@@ -1,0 +1,1178 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch2 hatch_driver turret
+;Exported by:	 guita
+;Date:			 21.11.2023 13:22:14
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\m10\m10_gmc.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/fire.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/hit.anm"} {speed 0.5}}
+		{sequence "open_driver" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/open_driver.anm"} {speed 0.5}{resume} {events {2 "hatch_medium"} {78 "hatch_medium"}}}
+		{sequence "open_co_driver" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/open_co_driver.anm"} {speed 0.5}{resume} {events {2 "hatch_medium"} {78 "hatch_medium"}}}
+		{sequence "mgun_aa" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/mgun_aa.anm"} {speed 0.6}{resume}}
+		{sequence "shell_eject" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/shell_eject.anm"} {speed 0.4}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.26;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.1752 	 0 	 17.8644}
+			{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.006}
+				{Position -0.3647 	 0 	 20.4207}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=turret;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -10 30}
+					{speed 0.006}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						20.6891 	 -0.0179 	 4.2598
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-17.6656 	 0 	 -0.0179
+						}
+						
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								76.6949 	 -0.0003 	 -0.0008
+							}
+						}
+						{bone "fx_invers"
+							{matrix34
+								-0.8914 	 -0.2849 	 0.3524
+								0.2895 	 -0.9563 	 -0.0407
+								0.3486 	 0.0658 	 0.9349
+								-8.2531 	 -2.3314 	 8.2632
+							}
+						}
+						{bone "breechblock"
+							{parameters "id=gun;"}
+							{matrix34
+								0 	 1 	 0
+								-1 	 0 	 0
+								0 	 0 	 1
+								-2.1307 	 0 	 0.5416
+							}
+							
+						}
+					}
+				}
+				{bone revolute "mgun_a_rot1"
+					{parameters "id=turret;"}
+					{limits -30 30}
+					{terminator}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-18.6153 	 0.4707 	 13.77
+					}
+					
+					{bone revolute "mgun_a_rot2"
+						{parameters "id=turret;"}
+						{limits -10 30}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-1.3553 	 0.5925 	 2.7821
+						}
+						
+						{bone "mgun"
+							{Position -8.757 	 0.8705 	 -0.0269}
+						}
+					}
+					{bone "gunner2"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							10.1123 	 -0.6194 	 3.6526
+						}
+					}
+				}
+				{bone "detail8"
+					{parameters "id=turret;"}
+					{Position 3.2122 	 0 	 8.6434}
+					
+				}
+				{bone "charger"
+					{matrix34
+						0.2787 	 0.9604 	 0
+						-0.9604 	 0.2787 	 0
+						0 	 0 	 1
+						-10.5063 	 -8.1809 	 -7.4402
+					}
+				}
+				{bone "sight"
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						31.8654 	 7.9464 	 6.7194
+					}
+				}
+				{bone "ammo4"
+					{Position -16.7542 	 -9.2206 	 2.0812}
+				}
+				{bone "ammo3"
+					{Position -16.6678 	 9.6435 	 2.0812}
+				}
+				{bone "charger2"
+					{matrix34
+						0.9272 	 0.3746 	 0
+						-0.3746 	 0.9272 	 0
+						0 	 0 	 1
+						0.6891 	 -11.8871 	 -8.1863
+					}
+				}
+				{bone "gunner"
+					{matrix34
+						0.8572 	 -0.515 	 0
+						0.515 	 0.8572 	 0
+						0 	 0 	 1
+						0.4857 	 9.2781 	 -8.1863
+					}
+				}
+				{bone "visor1"
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						-8.0656 	 -4.8038 	 15.9556
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m10_gmc/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -39.3163 	 0 	 4.7138}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/engine.ply"}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position 8.337 	 9.9238 	 12.3317}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/engine_hatch1.ply"}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{Position 8.3369 	 -9.9438 	 12.2947}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/engine_hatch2.ply"}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9636 	 -0.1908 	 -0.1873
+						0.1873 	 -0.9816 	 0.0364
+						-0.1908 	 0 	 0.9816
+						-17.289 	 -2.3355 	 -4.4984
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9636 	 0.1908 	 -0.1873
+						-0.1873 	 -0.9816 	 -0.0364
+						-0.1908 	 0 	 0.9816
+						-17.289 	 2.371 	 -4.4984
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						1 	 0 	 0
+						0 	 1 	 0
+						9.1656 	 0.0065 	 8.648
+					}
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					51.384 	 21.1866 	 -2.1709
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					25.4364 	 21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-2.9707 	 21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-31.3779 	 21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-45.7419 	 21.1866 	 -3.6166
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					51.384 	 -21.1867 	 -2.1709
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					25.4364 	 -21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-2.9707 	 -21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-31.3778 	 -21.2014 	 0.5021
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-45.7419 	 -21.1867 	 -3.6166
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr11.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -52.7777 	 3.3642 	 14.6588}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -54.9742 	 4.6202 	 11.4441}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -55.4389 	 -9.0835 	 11.2752}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position -58.0435 	 -8.9664 	 5.1011}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -58.0405 	 13.9193 	 4.5229}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail7.ply"}
+			}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{matrix34
+					0.9205 	 0 	 -0.3907
+					0 	 1 	 0
+					0.3907 	 0 	 0.9205
+					29.4307 	 15.023 	 18.8376
+				}
+				
+			}
+			{bone "hatch2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9336 	 0 	 -0.3584
+					0 	 1 	 0
+					0.3584 	 0 	 0.9336
+					29.3168 	 -14.9946 	 18.729
+				}
+				
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					1.7149 	 -0.0118 	 18.1417
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 0.0073
+					-0.0073 	 0 	 1
+					0 	 -1 	 0
+					33.6118 	 15.052 	 12.0744
+				}
+			}
+			{bone "headlightr"
+				{Position 45.1649 	 -17.8913 	 11.8577}
+			}
+			{bone "headlightl"
+				{Position 45.1649 	 17.9068 	 11.8563}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-55.456 	 -19.8226 	 14.9378
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-55.456 	 19.468 	 14.9378
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-48.2457 	 -0.0239 	 -5.0394
+				}
+			}
+			{bone "transmission"
+				{Position 49.4974 	 0.0021 	 -0.6803}
+			}
+			{bone "ammo2"
+				{matrix34
+					0 	 1 	 0
+					0 	 0 	 1
+					1 	 0 	 0
+					1.3157 	 21.5649 	 11.7424
+				}
+			}
+			{bone "ammo1"
+				{matrix34
+					0 	 1 	 0
+					0 	 0 	 1
+					1 	 0 	 0
+					1.1752 	 -19.9329 	 11.5741
+				}
+			}
+			{bone "fuel2"
+				{Position -29.9854 	 -17.0425 	 9.6041}
+			}
+			{bone "fuel1"
+				{Position -29.9854 	 17.9363 	 9.6041}
+			}
+			{bone "seat01"
+				{matrix34
+					-0.9848 	 0 	 0.1736
+					0 	 -1 	 0
+					0.1736 	 0 	 0.9848
+					-51.944 	 8.1316 	 10.5139
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.7002 	 -0.7002 	 0.1392
+					0.7071 	 -0.7071 	 0
+					0.0984 	 0.0984 	 0.9903
+					-52.4482 	 -26.0251 	 10.6018
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.9945 	 0 	 0.1045
+					0 	 -1 	 0
+					0.1045 	 0 	 0.9945
+					-52.1831 	 -9.5899 	 10.6226
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					-0.6304 	 0.7525 	 0.1906
+					-0.766 	 -0.6428 	 0.0043
+					0.1257 	 -0.1433 	 0.9817
+					-51.9558 	 23.0441 	 10.6835
+				}
+			}
+			{bone "sus_l1"
+				{Position -23.7003 	 20.8995 	 -4.7858}
+			}
+			{bone "sus_l2"
+				{Position 4.785 	 20.8995 	 -4.7858}
+			}
+			{bone "sus_l3"
+				{Position 33.6515 	 20.8995 	 -4.7858}
+			}
+			{bone "sus_r1"
+				{Position 33.6515 	 -20.9039 	 -4.7858}
+			}
+			{bone "sus_r2"
+				{Position 4.785 	 -20.9039 	 -4.7858}
+			}
+			{bone "sus_r3"
+				{Position -23.7003 	 -20.9039 	 -4.7858}
+			}
+		}
+		{bone "body_virt"
+			{Position 0 	 0 	 13.0126}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 3.7456 	 20.9673 	 0.0169}
+				{bone prizmatic "suspension_l2"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 36.6584 	 0.2194 	 -6.0889}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 20.1224 	 0.2194 	 -6.0421}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.16 0.16}
+					{speed 0.15}
+					{Position 8.2513 	 0.2194 	 -6.0243}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.16 0.16}
+					{speed 0.15}
+					{Position -8.2848 	 0.2194 	 -6.0089}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -20.1558 	 0.2194 	 -6.0889}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -36.6919 	 0.2194 	 -6.065}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheell7.ply"}
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9925 	 0 	 0.1219
+						0 	 -1 	 0
+						0.1219 	 0 	 0.9925
+						-47.8279 	 -0.0258 	 -10.5913
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						1.2543 	 -0.0259 	 -13.0181
+					}
+				}
+				{bone "suspl"
+					{parameters "id=trackleft;"}
+					{orientation
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+					}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/suspl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position -2.6399 	 0.199 	 -1.9154}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 3.7456 	 -20.9672 	 0.0169}
+				{bone prizmatic "suspension_r2"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 36.6584 	 -0.2194 	 -6.0889}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 20.1224 	 -0.2194 	 -6.0421}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.16 0.16}
+					{speed 0.15}
+					{Position 8.2513 	 -0.2194 	 -6.0243}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.16 0.16}
+					{speed 0.15}
+					{Position -8.2848 	 -0.2194 	 -6.0089}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -20.1558 	 -0.2194 	 -6.0889}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -36.6919 	 -0.2194 	 -6.065}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/wheelr7.ply"}
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						1.2543 	 0.03 	 -13.0181
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9925 	 0 	 0.1219
+						0 	 -1 	 0
+						0.1219 	 0 	 0.9925
+						-47.8279 	 0.03 	 -10.5913
+					}
+				}
+				{bone "suspr"
+					{parameters "id=trackright;"}
+					{orientation
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+					}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position -2.6399 	 -0.199 	 -1.9154}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				28.8092 	 43.9222 	 0.5422
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-0.859 	 -46.5965 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-0.859 	 43.947 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{Position -78.9058 	 9.6946 	 0}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-47.3397 	 -47.881 	 0
+			}
+		}
+		{bone "emit6"
+			{Position -79.1769 	 -7.49 	 0}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-47.3397 	 48.1586 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				28.8092 	 -46.5965 	 0
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/ammo1.vol"}
+	{bone "ammo1"}
+	{matrix34
+		0 	 0 	 1
+		1 	 0 	 0
+		0 	 1 	 0
+		-1.7613 	 0.1682 	 0.1405
+	}
+}
+{volume "ammo2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/ammo2.vol"}
+	{bone "ammo2"}
+	{matrix34
+		0 	 0 	 1
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo3"
+	{box 14.078 7.18755 2.19824}
+	{bone "ammo3"}
+	{matrix34
+		0.5299 	 0.848 	 0
+		-0.61 	 0.3812 	 0.6947
+		0.5891 	 -0.3681 	 0.7193
+		0 	 0 	 0
+	}
+}
+{volume "ammo4"
+	{box 14.078 7.18755 2.19824}
+	{bone "ammo4"}
+	{matrix34
+		-0.515 	 0.8572 	 0
+		-0.6166 	 -0.3705 	 0.6947
+		0.5954 	 0.3578 	 0.7193
+		0 	 0 	 0
+	}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/armor4.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-14.0544 	 0 	 4.4674
+	}
+}
+{volume "armor5"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/armor5.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-14.0544 	 0 	 4.4674
+	}
+}
+{volume "armor6"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/armor6.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-14.0544 	 0 	 4.4674
+	}
+}
+{volume "barrel1"
+	{cylinder 2.56081 4.8697}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		7.9018 	 0.0016 	 -0.0345
+	}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/barrel2.vol"}
+	{bone "gun"}
+	{Position 51.8259 	 0 	 0}
+}
+{volume "basket1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/basket1.vol"}
+	{bone "turret"}
+	{Position -20.6207 	 -10.6067 	 8.6229}
+}
+{volume "basket2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/basket2.vol"}
+	{bone "turret"}
+	{Position -20.6207 	 10.5337 	 8.6229}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/body1.vol"}
+	{bone "body"}
+	{Position 13.7193 	 -0.0155 	 11.8782}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/body2.vol"}
+	{bone "body"}
+	{Position 18.2725 	 -0.0171 	 -0.4029}
+}
+{volume "breech"
+	{box 32.7981 6.60011 11.5644}
+	{bone "gun_rot"}
+	{Position -11.5336 	 0.2982 	 -0.2195}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/engine1.vol"}
+	{bone "engine"}
+	{Position -0.0142 	 -0.0155 	 7.1644}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/engine2.vol"}
+	{bone "engine"}
+	{Position 6.5885 	 -0.0171 	 -5.1166}
+}
+{volume "fuel1"
+	{box 20.2232 6.57631 6.52076}
+	{bone "fuel1"}
+	{Position -4.7938 	 1.7265 	 1.3481}
+}
+{volume "fuel2"
+	{box 20.2232 6.57631 6.52076}
+	{bone "fuel2"}
+	{Position -4.7938 	 -2.3172 	 1.2451}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -4.654 	 1.0573 	 -1.7505}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -4.1677 	 0.7361 	 -1.7505}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/hole3.vol"}
+	{bone "turret"}
+	{Position -5.3359 	 -0.0172 	 5.9878}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/ram.vol"}
+	{bone "body"}
+	{Position 1.4116 	 0.0008 	 -3.0134}
+}
+{volume "trackleft10"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackleft10.vol"}
+	{bone "sus_l2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft11"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackleft11.vol"}
+	{bone "sus_l1"}
+	{Position 57.3517 	 0 	 0}
+}
+{volume "trackleft1"
+	{cylinder 6.45846 8.47167}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0798 	 0.2389 	 -0.0124
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.19685 5.06167}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0115
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.19685 5.06167}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0026
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.19685 5.06167}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0225
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.19685 5.02463}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0162
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.19685 5.06167}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0286
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.19685 5.08415}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0448
+	}
+}
+{volume "trackleft8"
+	{cylinder 5.80433 4.1547}
+	{bone "wheell11"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0449
+	}
+}
+{volume "trackleft9"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackleft9.vol"}
+	{bone "sus_l3"}
+	{Position -57.3517 	 0 	 0}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -5.9772 	 0.9468 	 -1.6544}
+}
+{volume "trackright10"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackright10.vol"}
+	{bone "sus_r2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright11"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackright11.vol"}
+	{bone "sus_r1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright1"
+	{cylinder 6.45782 8.33169}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.078 	 0.2389 	 0.0571
+	}
+}
+{volume "trackright2"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright3"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright4"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright5"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright6"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright7"
+	{cylinder 5.19685 5.1439}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0201
+	}
+}
+{volume "trackright8"
+	{cylinder 5.74629 4.14722}
+	{bone "wheelr11"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0282
+	}
+}
+{volume "trackright9"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackright9.vol"}
+	{bone "sus_r3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -5.4909 	 0.6256 	 -1.6544}
+}
+{volume "transmission"
+	{cylinder 3.82284 29.4686}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.09 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/turret1.vol"}
+	{bone "turret"}
+	{Position -1.468 	 -0.0267 	 4.9396}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/turret2.vol"}
+	{bone "turret"}
+	{Position 20.8714 	 -0.0184 	 4.9072}
+}
+{volume "turret3"
+	{cylinder 20.525 1.33252}
+	{bone "turret"}
+	{Position -0.0122 	 0.0352 	 -2.8686}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/turret4.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.3472 	 -3.3194 	 0.1214
+	}
+}
+{volume "turret5"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m10_gmc/turret5.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.3357 	 3.4656 	 0.1214
+	}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m3a1e1_scout_mgun (generated)
-	{Extension "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/m3a1e1_scout_mgun.mdl"}
+	{Extension "m3a1e1_scout_mgun.mdl"}
 	{extender "stuff"
 		{item "evh_m3a1e1_scout_mgun"}
 	}

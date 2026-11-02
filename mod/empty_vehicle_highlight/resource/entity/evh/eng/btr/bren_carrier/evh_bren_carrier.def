@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bren_carrier (generated)
-	{Extension "../../../../-vehicle/eng/btr/bren_carrier/bren_carrier.mdl"}
+	{Extension "bren_carrier.mdl"}
 	{extender "stuff"
 		{item "evh_bren_carrier"}
 	}

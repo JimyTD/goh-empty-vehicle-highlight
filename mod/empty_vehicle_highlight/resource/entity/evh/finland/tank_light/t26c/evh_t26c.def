@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t26c (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/t26c/t26c.mdl"}
+	{Extension "t26c.mdl"}
 	{extender "stuff"
 		{item "evh_t26c"}
 	}

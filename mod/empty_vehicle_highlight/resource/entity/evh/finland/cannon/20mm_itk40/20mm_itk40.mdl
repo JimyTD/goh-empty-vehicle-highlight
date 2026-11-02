@@ -1,0 +1,399 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: gun_rot leg_center leg_left leg_right mudguard_left mudguard_right stand turret valve_left valve_right
+;Exported by:	 TigerF
+;Date:			 13.07.2025 22:10:30
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\Cannon\20 ITK 40 VKT\20 ITK 40 VKT.max
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/20mm_itk40/recoil.anm"} {speed 1.5}}
+		{sequence "close" {file "../../../../-vehicle/finland/cannon/20mm_itk40/close.anm"} {speed 0.5}}
+		{sequence "fire00" {file "../../../../-vehicle/finland/cannon/20mm_itk40/fire00.anm"} {speed 0.5}}
+		{sequence "fire01" {file "../../../../-vehicle/finland/cannon/20mm_itk40/fire01.anm"} {speed 0.5}}
+		{sequence "aim_v" {file "../../../../-vehicle/finland/cannon/20mm_itk40/aim_v.anm"} {speed 0.8}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/finland/cannon/20mm_itk40/aim_h.anm"} {speed 0.8}{resume}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.5;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_front"
+			{Position 1.6329 	 0 	 7.1655}
+			{bone prizmatic "suspension_r1"
+				{limits -0.05 0.05}
+				{speed 0.09}
+				{Position 0 	 -14.0148 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						-39.35 	 -1.9685 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/wheelr.ply"}
+				}
+				{bone "mudguard_right"
+					{parameters "id=body;"}
+					{Position -39.3677 	 -1.3246 	 3.1533}
+					{visibility 0}
+					
+				}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0.05 0.05}
+				{speed 0.09}
+				{Position 0 	 14.0468 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						-39.35 	 1.9685 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/wheell.ply"}
+				}
+				{bone "mudguard_left"
+					{parameters "id=body;"}
+					{Position -39.3677 	 1.5065 	 3.1918}
+					{visibility 0}
+					
+				}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/cannon/20mm_itk40/body_r.anm"}{speed 0.5}}
+			}
+			{Position 1.6329 	 0 	 3.8701}
+			{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{Position 0.8319 	 0.0234 	 1.6114}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/finland/cannon/20mm_itk40/gun_r.anm"}{speed 0.5}}
+					}
+					{matrix34
+						0.9998 	 0 	 0.0175
+						-0.0175 	 0 	 0.9998
+						0 	 -1 	 0
+						3.6499 	 0 	 9.2127
+					}
+					
+					{bone "gun1"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0.0045 	 0
+							0 	 0 	 -1
+							-0.0045 	 1 	 0
+							7.4303 	 0.4415 	 -1.5179
+						}
+						
+						{bone "shooter00"
+							{matrix34
+								0.9997 	 0 	 -0.0262
+								0 	 1 	 0
+								0.0262 	 0 	 0.9997
+								27.1439 	 -0.0122 	 -0.6409
+							}
+						}
+						{bone "fxshell1"
+							{matrix34
+								-0.454 	 0 	 -0.891
+								-0.891 	 0 	 0.454
+								0 	 1 	 0
+								-3.8008 	 0.038 	 -1.5198
+							}
+						}
+					}
+					{bone "gun2"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0.0045 	 0
+							0 	 0 	 -1
+							-0.0045 	 1 	 0
+							7.4303 	 0.4415 	 1.5179
+						}
+						
+						{bone "shooter01"
+							{matrix34
+								0.9997 	 0 	 -0.0262
+								0 	 1 	 0
+								0.0262 	 0 	 0.9997
+								27.1436 	 -0.0031 	 -0.6409
+							}
+						}
+						{bone "fxshell2"
+							{matrix34
+								-0.454 	 0 	 -0.891
+								-0.891 	 0 	 0.454
+								0 	 1 	 0
+								-3.8007 	 0.0766 	 -1.5198
+							}
+						}
+					}
+					{bone "foresight1"
+						{matrix34
+							0.9998 	 -0.0216 	 0
+							0 	 0 	 -1
+							0.0216 	 0.9998 	 0
+							35.6382 	 -0.0947 	 0.0345
+						}
+					}
+				}
+				{bone "aim_horizontal"
+					{parameters "id=body;"}
+					{Position -7.2756 	 0 	 5.3694}
+					
+				}
+				{bone "aim_vertical"
+					{parameters "id=body;"}
+					{Position -7.5965 	 -5.3476 	 10.2025}
+					
+				}
+				{bone "sight_detail"
+					{parameters "id=body;"}
+					{Position -6.1988 	 3.6029 	 15.6234}
+					
+				}
+				{bone "gunner"
+					{Position -15.1448 	 -0.0243 	 -0.038}
+				}
+				{bone "commander"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						-1.3468 	 19.5984 	 -5.5113
+					}
+				}
+				{bone "visor"
+					{Position 5.1589 	 -0.0234 	 11.6373}
+				}
+			}
+			{bone "valve_left"
+				{parameters "id=body;"}
+				{Position 4.5834 	 9.8196 	 1.6599}
+				
+			}
+			{bone "leg_left"
+				{parameters "id=body;"}
+				{matrix34
+					0.8988 	 -0.4384 	 0
+					0.4384 	 0.8988 	 0
+					0 	 0 	 1
+					4.6462 	 9.7703 	 -2.2584
+				}
+				
+			}
+			{bone "valve_right"
+				{parameters "id=body;"}
+				{Position 4.5834 	 -9.7727 	 1.6599}
+				
+			}
+			{bone "leg_right"
+				{parameters "id=body;"}
+				{matrix34
+					0.8988 	 0.4384 	 0
+					-0.4384 	 0.8988 	 0
+					0 	 0 	 1
+					4.6462 	 -9.7235 	 -2.2584
+				}
+				
+			}
+			{bone "suspension_right"
+				{parameters "id=wheelright;"}
+				{Position -0.1096 	 -9.4873 	 0.0162}
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/suspension_right.ply"}
+			}
+			{bone "suspension_left"
+				{parameters "id=wheelleft;"}
+				{Position -0.1096 	 9.5341 	 0.0788}
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/suspension_left.ply"}
+			}
+			{bone "leg_center"
+				{parameters "id=body;"}
+				{Position -6.7795 	 0.0234 	 -2.0369}
+				
+			}
+			{bone "stand"
+				{parameters "id=body;"}
+				{Position -7.1027 	 0.0234 	 0.5513}
+				{visibility 0}
+				
+			}
+			{bone "seat1"
+				{matrix34
+					0 	 -1 	 0
+					0.9945 	 0 	 0.1045
+					-0.1045 	 0 	 0.9945
+					0.0626 	 9.9803 	 -0.4353
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					0 	 1 	 0
+					-0.9945 	 0 	 -0.1045
+					-0.1045 	 0 	 0.9945
+					0.1132 	 -10.3397 	 -0.4679
+				}
+			}
+		}
+		{bone "emit1"
+			{Position -14.4009 	 -19.5573 	 0}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				1.1181 	 23.2841 	 0
+			}
+		}
+		{bone "driver2"
+			{Position -14.909 	 -12.0956 	 0.0408}
+		}
+		{bone "driver1"
+			{Position -14.8966 	 12.749 	 0.0408}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-30.0328 	 0.161 	 12.3883
+			}
+		}
+		{bone "support2"
+			{Position -37.5588 	 -29.4262 	 0}
+		}
+		{bone "support1"
+			{Position -37.5588 	 29.1622 	 0}
+		}
+	}
+}
+{obstacle "close"
+	{polygon2
+		{radius 0}
+		{vertex 10.2959 15.9753}
+		{vertex -9.69585 15.9753}
+		{vertex -34.2559 0}
+		{vertex -9.69585 -15.6975}
+		{vertex 10.2959 -15.6975}
+	}
+	{Tags "close"}
+	{rotate}
+}
+{obstacle "open"
+	{obb2
+		{center 1.24595 0}
+		{extent 9.2126 12.2549}
+		{axis -1 0}
+	}
+	{Tags "open"}
+	{rotate}
+}
+{volume "barrel1"
+	{box 16.0489 6.60961 2.53277}
+	{bone "gun_rot"}
+	{matrix34
+		0.9998 	 -0.0175 	 0
+		0 	 0 	 -1
+		0.0175 	 0.9998 	 0
+		0.0384 	 0.2513 	 -0.0618
+	}
+}
+{volume "barrel2"
+	{cylinder 0.667753 26.4253}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0.0175 	 0.9998 	 0
+		0.9998 	 -0.0175 	 0
+		21.0796 	 0.1587 	 -1.5196
+	}
+}
+{volume "barrel3"
+	{cylinder 0.667753 26.4253}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0.0175 	 0.9998 	 0
+		0.9998 	 -0.0175 	 0
+		21.0795 	 0.1587 	 1.4952
+	}
+}
+{volume "body1"
+	{cylinder 5.36969 3.22869}
+	{bone "body"}
+	{Position 0.796 	 0.0234 	 0.7971}
+}
+{volume "body2"
+	{box 6.46179 23.0597 1.70963}
+	{bone "body"}
+	{Position 1.8648 	 0.0152 	 0.2443}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/finland/cannon/20mm_itk40/body3.vol"}
+	{bone "turret"}
+	{Position 0.3084 	 -5.1913 	 6.6764}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/finland/cannon/20mm_itk40/body4.vol"}
+	{bone "turret"}
+	{Position -10.3478 	 4.2049 	 10.8691}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/finland/cannon/20mm_itk40/body5.vol"}
+	{bone "body"}
+	{Position -0.6734 	 0.0534 	 -3.8719}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/finland/cannon/20mm_itk40/hole1.vol"}
+	{bone "turret"}
+	{Position 0.3416 	 0.0248 	 6.9209}
+}
+{volume "select"
+	{box 43.4067 44.7045 33.6005}
+	{bone "body"}
+	{Position -1.4606 	 -0.0008 	 12.9004}
+}
+{volume "stand"
+	{cylinder 0.801195 26.0352}
+	{bone "stand"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-12.0709 	 -0.033 	 -0.2117
+	}
+}
+{volume "wheelleft"
+	{cylinder 7.18504 2.89044}
+	{bone "wheell"}
+	{matrix34
+		0.9976 	 -0.0698 	 0
+		-0.0698 	 -0.9976 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.5087
+	}
+}
+{volume "wheelright"
+	{cylinder 7.18504 2.89044}
+	{bone "wheelr"}
+	{matrix34
+		0.9976 	 -0.0698 	 0
+		-0.0698 	 -0.9976 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.5387
+	}
+}

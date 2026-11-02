@@ -1,0 +1,1432 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: gunsight hatch1 hatch2 mgun_h_rot1 nahverteidigungswaffe turret
+;Exported by:	 TigerF
+;Date:			 08.06.2024 16:42:08
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\jagdpanzer4\L48\jagdpanzer4_l48.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/open.anm"} {speed 0.3}{resume} {events {0 "hatch_light"} {3 "hatch_light"}}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hit.anm"} {speed 0.8}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.36;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.7673 	 0.031 	 13.3325}
+			{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -34.1311 	 0 	 5.464}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/engine.ply"}
+				{bone "hatch_eng1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.999 	 0 	 0.0444
+						0 	 1 	 0
+						-0.0444 	 0 	 0.999
+						-9.6447 	 -16.7707 	 10.9315
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hatch_eng1.ply"}
+					{bone "detail5"
+						{parameters "id=engine;"}
+						{matrix34
+							0.999 	 0 	 -0.0444
+							0 	 1 	 0
+							0.0444 	 0 	 0.999
+							11.9554 	 4.4245 	 0.5909
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail5.ply"}
+					}
+					{bone "detail4"
+						{parameters "id=engine;"}
+						{matrix34
+							0.999 	 0 	 -0.0444
+							0 	 1 	 0
+							0.0444 	 0 	 0.999
+							8.1429 	 8.351 	 0.0182
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail4.ply"}
+					}
+				}
+				{bone "hatch_eng2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.999 	 0 	 0.0444
+						0 	 1 	 0
+						-0.0444 	 0 	 0.999
+						4.3539 	 1.342 	 11.7137
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hatch_eng2.ply"}
+					{bone "detail12"
+						{parameters "id=engine;"}
+						{matrix34
+							1 	 0 	 -0.0028
+							0 	 1 	 0
+							0.0028 	 0 	 1
+							-0.4568 	 8.8573 	 1.9098
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail12.ply"}
+					}
+					{bone "detail11"
+						{parameters "id=engine;"}
+						{matrix34
+							1 	 0 	 0.0001
+							0 	 1 	 0
+							-0.0001 	 0 	 1
+							-14.1093 	 8.6872 	 2.176
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail11.ply"}
+					}
+				}
+				{bone "detail1"
+					{parameters "id=engine;"}
+					{Position -0.4456 	 18.0793 	 11.8905}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail1.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=engine;"}
+					{Position -3.3453 	 -2.8273 	 11.2224}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail3.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position 13.6833 	 0.1527 	 14.3474}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/detail6.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						0.2817 	 0.5952 	 6.3517
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.0468 	 0.5904 	 0.8057
+						0.9982 	 -0.0028 	 0.06
+						0.0377 	 0.8071 	 -0.5892
+						-17.1238 	 -2.0895 	 5.0602
+					}
+				}
+			}
+			{bone "antenna1"
+				{parameters "id=body;"}
+				{Position -20.2966 	 -18.9841 	 20.022}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/antenna1.ply"}
+				{bone "antenna2"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 17.6329}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/antenna2.ply"}
+				}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{speed 0.01}
+				{Position 25.6732 	 -16.4198 	 13.5709}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{speed 0.01}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0.0007
+					}
+					{bone "mgun_h"
+						{Position -14.3735 	 -0.9903 	 0.0363}
+						
+						{bone "foresight4"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								17.2626 	 1.0895 	 -0.0069
+							}
+						}
+					}
+				}
+			}
+			{bone revolute "turret"
+				{limits -15 12}
+				{speed 0.007}
+				{Position 26.6786 	 -3.9086 	 12.4263}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -8 15}
+					{speed 0.007}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							16.2544 	 0 	 0
+						}
+						
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0.0079
+								0 	 1 	 0
+								-0.0079 	 0 	 1
+								37.3997 	 -0.0696 	 0.0519
+							}
+						}
+					}
+					{bone "mantlet"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.3409 	 0.8107 	 0.0651
+						}
+						
+					}
+				}
+			}
+			{bone revolute "gunsight"
+				{parameters "id=body;"}
+				{Position 22.0848 	 -2.3646 	 12.5659}
+				
+				{bone "visor1"
+					{Position -12.3868 	 8.944 	 10.656}
+				}
+			}
+			{bone "enumerator"
+				{Position 6.9903 	 23.5989 	 15.8945}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/enumerator.ply"}
+			}
+			{bone "enumerator1"
+				{Position 9.4341 	 -23.6093 	 15.8945}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/enumerator1.ply"}
+			}
+			{bone "armorlightl"
+				{Position 40.4147 	 20.988 	 12.4855}
+			}
+			{bone "hatch2"
+				{parameters "id=body;"}
+				{Position -15.0921 	 -12.3209 	 21.1204}
+				
+			}
+			{bone "hatch1"
+				{parameters "id=body;"}
+				{Position -17.1873 	 10.4699 	 20.8617}
+				
+			}
+			{bone "shield"
+				{parameters "id=shield;"}
+				{Position -3.1436 	 -0.031 	 7.5217}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shield.ply"}
+				{bone "shieldl1"
+					{parameters "id=shieldl1;"}
+					{Position 36.4891 	 28.9818 	 -4.1734}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl1.ply"}
+				}
+				{bone "shieldl2"
+					{parameters "id=shieldl2;"}
+					{Position 13.3807 	 29.4848 	 -5.0223}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl2.ply"}
+				}
+				{bone "shieldl3"
+					{parameters "id=shieldl3;"}
+					{Position -8.5584 	 29.4954 	 -5.0223}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl3.ply"}
+				}
+				{bone "shieldl4"
+					{parameters "id=shieldl4;"}
+					{Position -33.2682 	 29.1523 	 -2.5701}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl4.ply"}
+				}
+				{bone "shieldl5"
+					{parameters "id=shieldl5;"}
+					{Position -29.8251 	 22.9996 	 7.9543}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl5.ply"}
+				}
+				{bone "shieldr1"
+					{parameters "id=shieldr1;"}
+					{Position 36.4891 	 -28.8218 	 -4.1734}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr1.ply"}
+				}
+				{bone "shieldr2"
+					{parameters "id=shieldr2;"}
+					{Position 13.3807 	 -29.4034 	 -5.0223}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr2.ply"}
+				}
+				{bone "shieldr3"
+					{parameters "id=shieldr3;"}
+					{Position -8.5584 	 -29.4013 	 -5.0223}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr3.ply"}
+				}
+				{bone "shieldr4"
+					{parameters "id=shieldr4;"}
+					{Position -33.2682 	 -29.1711 	 -2.5701}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr4.ply"}
+				}
+				{bone "shieldr5"
+					{parameters "id=shieldr5;"}
+					{Position -29.8251 	 -23.0659 	 7.9543}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr5.ply"}
+				}
+			}
+			{bone "hatchl"
+				{parameters "id=body;"}
+				{Position 44.032 	 12.6906 	 8.1533}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hatchl.ply"}
+			}
+			{bone "hatchc"
+				{parameters "id=body;"}
+				{Position 40.4536 	 -2.0423 	 7.6083}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hatchc.ply"}
+			}
+			{bone "hatchr"
+				{parameters "id=body;"}
+				{Position 44.032 	 -12.6906 	 8.1533}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hatchr.ply"}
+			}
+			{bone "shieldl6"
+				{parameters "id=id=shieldl6;"}
+				{Position 50.2601 	 22.5957 	 6.8748}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl6.ply"}
+			}
+			{bone "shieldr6"
+				{parameters "id=shieldr6;"}
+				{Position 50.2136 	 -22.7827 	 6.7136}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr6.ply"}
+			}
+			{bone "shieldl7"
+				{parameters "id=shieldl7;"}
+				{Position -52.2885 	 22.8871 	 6.6895}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl7.ply"}
+			}
+			{bone "shieldr7"
+				{parameters "id=shieldr7;"}
+				{Position -52.5522 	 -22.8582 	 6.4389}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr7.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					0.9903 	 0 	 0.1388
+					0.1388 	 0 	 -0.9903
+					0 	 1 	 0
+					42.3154 	 23.3051 	 -0.5208
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell1.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					24.8771 	 23.1728 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					6.3209 	 23.1727 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell11.ply"}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.3705 	 23.1727 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell12.ply"}
+			}
+			{bone revolute "wheell13"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-48.8645 	 22.6665 	 -2.7628
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell13.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					0.9903 	 0 	 0.1388
+					0.1388 	 0 	 -0.9903
+					0 	 1 	 0
+					42.3154 	 -23.1351 	 -0.5208
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr1.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					24.8771 	 -23.144 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					6.3209 	 -23.144 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr11.ply"}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.3706 	 -23.144 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr12.ply"}
+			}
+			{bone revolute "wheelr13"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-48.8646 	 -22.4893 	 -2.7628
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr13.ply"}
+			}
+			{bone "ammo1"
+				{Position 19.6564 	 -13.4612 	 -2.3982}
+			}
+			{bone "ammo2"
+				{Position 11.2933 	 -18.6583 	 13.6647}
+			}
+			{bone "ammo3"
+				{Position -4.3696 	 -18.6583 	 13.6647}
+			}
+			{bone "ammo4"
+				{Position 0.7369 	 15.2542 	 1.1109}
+			}
+			{bone "ammo5"
+				{Position -4.3696 	 18.6876 	 13.6647}
+			}
+			{bone "ammo6"
+				{Position 11.2933 	 18.6876 	 13.6647}
+			}
+			{bone "fuel"
+				{Position -0.7322 	 -0.4826 	 -3.5278}
+			}
+			{bone "transmission"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					42.2874 	 -0.3547 	 -0.474
+				}
+			}
+			{bone "fxfire3"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-10.2941 	 8.5121 	 16.2125
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-0.8048 	 -0.031 	 8.6869
+				}
+			}
+			{bone "visor2"
+				{Position 33.5481 	 9.185 	 11.864}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-40.8909 	 22.2756 	 10.4339
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-50.029 	 7.712 	 10.2684
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-51.3758 	 -10.6027 	 10.254
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-43.6872 	 -22.7199 	 9.7102
+				}
+			}
+			{bone revolute "nahverteidigungswaffe"
+				{parameters "id=body;"}
+				{Position -11.4982 	 0.0619 	 20.4382}
+				
+				{bone "smoke_shot1"
+					{matrix34
+						-0.6428 	 0 	 -0.766
+						0 	 -1 	 0
+						-0.766 	 0 	 0.6428
+						1.9645 	 -0.0333 	 3.6618
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.6428 	 0 	 0.766
+						0 	 1 	 0
+						-0.766 	 0 	 0.6428
+						0.5038 	 -0.0333 	 1.9246
+					}
+				}
+			}
+			{bone revolute "wheelr14"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-12.1409 	 -23.144 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr14.ply"}
+			}
+			{bone revolute "wheell14"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-12.1409 	 23.1727 	 3.6779
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell14.ply"}
+			}
+			{bone "shield1"
+				{parameters "id=shield1;"}
+				{Position -49.2367 	 -0.1369 	 15.9805}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shield1.ply"}
+			}
+		}
+		{bone "body_virt"
+			{Position -2.0979 	 0 	 14.6825}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0.6926 	 19.1384 	 -8.4731}
+				{bone prizmatic "suspension_l2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 33.6225 	 4.2204 	 -0.9409}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 24.2195 	 4.2204 	 -0.9409}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 14.8361 	 4.3853 	 -0.9409}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position 5.2452 	 4.3853 	 -0.9409}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;radius=0.22;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position -4.081 	 4.3853 	 -0.9409}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;radius=0.22;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -13.6719 	 4.3853 	 -0.9409}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l8"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position -22.9981 	 4.3853 	 -0.9409}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -32.589 	 4.3853 	 -0.9409}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheell9.ply"}
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position -1.337 	 4.1962 	 3.9914}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/trackl.ply"}
+				}
+				{bone "suspl"
+					{parameters "id=trackleft;"}
+					{Position 0.406 	 1.2827 	 -1.0559}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/suspl.ply"}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 4.3981 	 -6.1565
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-50.9648 	 4.0897 	 -2.8206
+					}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0.6926 	 -20.043 	 -8.4731}
+				{bone prizmatic "suspension_r2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 33.6225 	 -2.9238 	 -0.9409}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 24.2195 	 -2.9238 	 -0.9409}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 14.8361 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position 5.2452 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position -4.081 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -13.6719 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r8"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position -22.9982 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;radius=0.22;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -32.589 	 -3.0886 	 -0.9409}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;radius=0.22;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/wheelr9.ply"}
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position -1.337 	 -3.1011 	 3.9914}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/trackr.ply"}
+				}
+				{bone "suspr"
+					{parameters "id=trackright;"}
+					{Position 0.406 	 -0.2834 	 -1.0559}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/suspr.ply"}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 -3.074 	 -6.1565
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-50.9649 	 -3.173 	 -2.8206
+					}
+				}
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-38.9815 	 41.6329 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-68.6031 	 10.0861 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{Position -69.7314 	 -13.9543 	 0}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-29.5755 	 -43.3718 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-10.1954 	 41.81 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-7.6438 	 -45.4254 	 0
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/ram.vol"}
+	{bone "body"}
+	{Position -3.1729 	 -0.0171 	 -13.3325}
+}
+{volume "ammo1"
+	{box 5.94685 11.3961 6.72365}
+	{bone "ammo1"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "ammo2"
+	{box 7.44713 5.21654 9.00787}
+	{bone "ammo2"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo3"
+	{box 7.44713 5.21654 9.00787}
+	{bone "ammo3"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo4"
+	{box 24.5851 2.92595 13.7418}
+	{bone "ammo4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "ammo5"
+	{box 7.44713 5.21654 9.00787}
+	{bone "ammo5"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo6"
+	{box 7.44713 5.21654 9.00787}
+	{bone "ammo6"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "barrel1"
+	{cylinder 1.64013 36.6051}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		34.5569 	 0 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body1.vol"}
+	{bone "body"}
+	{Position 44.6085 	 -0.0018 	 0.7699}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body2.vol"}
+	{bone "body"}
+	{Position 7.373 	 -0.0018 	 1.3417}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body3.vol"}
+	{bone "body"}
+	{Position 6.6026 	 -0.0018 	 15.2961}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body4.vol"}
+	{bone "body"}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/body5.vol"}
+	{bone "body"}
+	{Position 27.0428 	 -3.3586 	 14.8564}
+}
+{volume "breech"
+	{box 23.3505 4.79951 6.47126}
+	{bone "gun_rot"}
+	{Position -7.6885 	 0.6954 	 0.0115}
+}
+{volume "detail11"
+	{cylinder 4.33071 4.25395}
+	{bone "detail11"}
+	{matrix34
+		0.9999 	 -0.0102 	 0
+		0.0102 	 0.9999 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "detail12"
+	{cylinder 4.33071 4.25395}
+	{bone "detail12"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/engine1.vol"}
+	{bone "engine"}
+	{Position -0.0492 	 -0.0018 	 -4.1223}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/engine2.vol"}
+	{bone "engine"}
+	{Position -0.0492 	 -0.0018 	 7.8098}
+}
+{volume "fuel"
+	{box 28.7473 33.6715 4.33071}
+	{bone "fuel"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hole1.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 3.0743 	 4.9345
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/hole2.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -4.1623 	 4.9345
+	}
+}
+{volume "hole3"
+	{cylinder 7.80314 1.47439}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		-0.766 	 0 	 0.6428
+		0.6428 	 0 	 0.766
+		26.5215 	 -3.9068 	 15.2611
+	}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/mantlet.vol"}
+	{bone "mantlet"}
+	{Position 3.3252 	 0 	 1.0902}
+}
+{volume "shield1"
+	{box 1.11058 7.04028 41.3437}
+	{bone "shield1"}
+	{matrix34
+		-0.9971 	 0 	 -0.0758
+		-0.0758 	 0 	 0.9971
+		0 	 1 	 0
+		0.3825 	 -0.0175 	 0.1129
+	}
+}
+{volume "shieldl2"
+	{box 21.8711 14.2045 0.373311}
+	{bone "shieldl2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.0401 	 0.4905 	 0.0649
+	}
+}
+{volume "shieldl3"
+	{box 21.8711 14.2045 0.373311}
+	{bone "shieldl3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.0713 	 0.48 	 0.0649
+	}
+}
+{volume "shieldl4"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl4.vol"}
+	{bone "shieldl4"}
+	{Position -0.0449 	 0.0377 	 0.1443}
+}
+{volume "shieldl5"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl5.vol"}
+	{bone "shieldl5"}
+	{Position -0.5493 	 0.1062 	 -0.0509}
+}
+{volume "shieldl7"
+	{box 10.6532 9.26151 0.29}
+	{bone "shieldl7"}
+	{matrix34
+		0.8927 	 0 	 0.4506
+		0 	 1 	 0
+		-0.4506 	 0 	 0.8927
+		-1.6849 	 -0.3618 	 0.013
+	}
+}
+{volume "shieldr1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr1.vol"}
+	{bone "shieldr1"}
+	{Position -0.0603 	 -0.0844 	 0.103}
+}
+{volume "shieldr2"
+	{box 21.8711 14.2045 0.373311}
+	{bone "shieldr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.0401 	 -0.4934 	 0.0649
+	}
+}
+{volume "shieldr3"
+	{box 21.8711 14.2045 0.373311}
+	{bone "shieldr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.0713 	 -0.4956 	 0.0649
+	}
+}
+{volume "shieldr4"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr4.vol"}
+	{bone "shieldr4"}
+	{Position -0.0449 	 -0.0121 	 0.0123}
+}
+{volume "shieldr5"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldr5.vol"}
+	{bone "shieldr5"}
+	{Position -0.5493 	 -0.1414 	 -0.0509}
+}
+{volume "shieldr6"
+	{box 6.91769 9.26151 0.29}
+	{bone "shieldr6"}
+	{matrix34
+		0.7996 	 0 	 -0.6005
+		0 	 1 	 0
+		0.6005 	 0 	 0.7996
+		0.0224 	 0.181 	 -0.1292
+	}
+}
+{volume "shieldr7"
+	{box 10.6532 9.26151 0.29}
+	{bone "shieldr7"}
+	{matrix34
+		0.8927 	 0 	 0.4506
+		0 	 1 	 0
+		-0.4506 	 0 	 0.8927
+		-1.4211 	 0.5774 	 0.2637
+	}
+}
+{volume "shield"
+	{box 0.136553 0.36745 0.63559}
+	{bone "shield"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-16.0292 	 -0.3178 	 -10.901
+	}
+}
+{volume "shieldl1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/shieldl1.vol"}
+	{bone "shieldl1"}
+	{Position -0.0603 	 0.0207 	 0.103}
+}
+{volume "shieldl6"
+	{box 6.91769 9.26151 0.29}
+	{bone "shieldl6"}
+	{matrix34
+		0.867 	 0 	 -0.4984
+		0 	 1 	 0
+		0.4984 	 0 	 0.867
+		0.3599 	 0.0522 	 0.199
+	}
+}
+{volume "trackleft10"
+	{cylinder 6.37154 4.32247}
+	{bone "wheell13"}
+	{Position 0 	 0 	 0.5557}
+}
+{volume "trackleft1"
+	{cylinder 7.08661 6.16398}
+	{bone "wheell1"}
+	{matrix34
+		0.9903 	 0.1388 	 0
+		-0.1388 	 0.9903 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.042
+	}
+}
+{volume "trackleft2"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1539
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft7"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft8"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft9"
+	{cylinder 4.33071 4.25395}
+	{bone "wheell9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/trackleft.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 3.7663 	 4.9345
+	}
+}
+{volume "trackright10"
+	{cylinder 6.69291 4.34032}
+	{bone "wheelr13"}
+	{Position 0 	 0 	 -0.5875}
+}
+{volume "trackright1"
+	{cylinder 7.08661 6.16398}
+	{bone "wheelr1"}
+	{matrix34
+		0.9903 	 0.1388 	 0
+		-0.1388 	 0.9903 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1826
+	}
+}
+{volume "trackright2"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright4"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright8"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright9"
+	{cylinder 4.33071 4.25395}
+	{bone "wheelr9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/trackright.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -3.4703 	 4.9345
+	}
+}
+{volume "transmission"
+	{cylinder 4.42913 30.315}
+	{bone "transmission"}
+	{Position 0 	 0 	 -0.0686}
+}

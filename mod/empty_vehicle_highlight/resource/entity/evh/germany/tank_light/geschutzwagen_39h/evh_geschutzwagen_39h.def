@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for geschutzwagen_39h (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/geschutzwagen_39h.mdl"}
+	{Extension "geschutzwagen_39h.mdl"}
 	{extender "stuff"
 		{item "evh_geschutzwagen_39h"}
 	}

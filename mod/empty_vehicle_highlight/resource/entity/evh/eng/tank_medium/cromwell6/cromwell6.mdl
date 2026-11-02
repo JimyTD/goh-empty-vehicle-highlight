@@ -1,0 +1,1131 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: mgun_h_rot1 seat01 seat02 seat03 seat04 turret
+;Exported by:	 nic21
+;Date:			 18.12.2025 16:04:03
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_medium\Cromwell_4_6_A27M\cromwell6.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/cromwell6/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/cromwell6/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_medium/cromwell6/fire.anm"} {speed 0.6}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_medium/cromwell6/open.anm"} {speed 0.3}{resume} {events {12 "hatch_medium"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.415;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body_virt"
+			{Position 0 	 0 	 9.3701}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0 	 -23.6614 	 0}
+				{bone "suspr"
+					{parameters "id=trackright;"}
+					{Position 5.8712 	 5.2469 	 1.577}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.4003 	 0 	 1.5826}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/trackr.ply"}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 37.2425 	 -0.1436 	 0.0093}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 19.5352 	 -0.1436 	 0.0093}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 0.5176 	 -0.1436 	 0.0093}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -18.8643 	 -0.1436 	 0.0093}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -36.5761 	 -0.1436 	 0.0093}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr6.ply"}
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-44.1339 	 0 	 -7.5591
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9698 	 -0.1736 	 0.171
+						0.171 	 -0.9848 	 -0.0302
+						0.1736 	 0 	 0.9848
+						0.4003 	 0 	 -9.3701
+					}
+				}
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0 	 23.6614 	 0}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.4003 	 0.009 	 1.5826}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/trackl.ply"}
+				}
+				{bone "suspl"
+					{parameters "id=trackleft;"}
+					{Position 5.8712 	 -5.2471 	 1.5769}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/suspl.ply"}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 37.2425 	 0.1466 	 0.0093}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 19.5351 	 0.1466 	 0.0093}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 0.5175 	 0.1466 	 0.0093}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -18.8643 	 0.1466 	 0.0093}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -36.5762 	 0.1466 	 0.0093}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell6.ply"}
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9707 	 0.1685 	 0.171
+						-0.1761 	 -0.9839 	 -0.0302
+						0.1632 	 -0.0594 	 0.9848
+						0.4003 	 0 	 -9.3701
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-44.1339 	 0 	 -7.5592
+					}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/cromwell6/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 19.5546}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/body.ply"}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 16.3085 	 -21.62 	 3.4468}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail6.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/cromwell6/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -33.8056 	 1.4272 	 1.5993}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/engine.ply"}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position -13.222 	 -1.4272 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine2.ply"}
+				}
+				{bone "hatch_engine3"
+					{parameters "id=engine;"}
+					{Position -10.092 	 -14.7233 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine3.ply"}
+				}
+				{bone "hatch_engine4"
+					{parameters "id=engine;"}
+					{Position -12.0802 	 -1.4272 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine4.ply"}
+				}
+				{bone "hatch_engine5"
+					{parameters "id=engine;"}
+					{Position 6.5221 	 -1.4272 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine5.ply"}
+				}
+				{bone "hatch_engine6"
+					{parameters "id=engine;"}
+					{Position 18.5103 	 11.8689 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine6.ply"}
+				}
+				{bone "hatch_engine7"
+					{parameters "id=engine;"}
+					{Position 18.4906 	 -14.7233 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine7.ply"}
+				}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{Position -10.0724 	 11.8689 	 9.0429}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_engine1.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=engine;"}
+					{Position 15.9038 	 21.4638 	 4.7199}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail3.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position 14.6839 	 24.123 	 4.6375}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail5.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position 14.4915 	 19.18 	 7.2875}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail4.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=engine;"}
+					{Position -0.1954 	 22.7793 	 6.7095}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail2.ply"}
+				}
+				{bone "detail1"
+					{parameters "id=engine;"}
+					{Position -5.913 	 22.782 	 6.7095}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail1.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=engine;"}
+					{Position -7.0626 	 -25.2158 	 5.7796}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail10.ply"}
+				}
+				{bone "detail7"
+					{parameters "id=engine;"}
+					{Position 14.6654 	 -22.1615 	 6.686}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail7.ply"}
+				}
+				{bone "detail9"
+					{parameters "id=engine;"}
+					{Position -23.7235 	 -1.4401 	 -6.486}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/detail9.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.4783 	 0 	 2.2773
+					}
+				}
+				{bone "fuel1"
+					{Position 7.6299 	 -13.75 	 -2.3458}
+				}
+				{bone "fuel2"
+					{Position 7.6299 	 10.8957 	 -2.3458}
+				}
+				{bone "transmission"
+					{Position -17.339 	 -1.4272 	 -6.0284}
+				}
+			}
+			{bone "fenders"
+				{parameters "id=body;"}
+				{Position -1.2546 	 0 	 0.5811}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/fenders.ply"}
+			}
+			{bone "hatch_body1_1"
+				{parameters "id=body;"}
+				{Position 43.4055 	 -11.5157 	 6.6916}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_body1_1.ply"}
+				{bone "hatch_body1_2"
+					{parameters "id=body;"}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_body1_2.ply"}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/cromwell6/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 9.6063 	 0 	 10.5846}
+				
+				{bone "shield2"
+					{parameters "id=turret;"}
+					{Position 21.3306 	 9.8373 	 7.1438}
+					
+				}
+				{bone "shield3"
+					{parameters "id=turret;"}
+					{Position 21.3306 	 -8.1299 	 6.9332}
+					
+				}
+				{bone "shield4"
+					{parameters "id=turret;"}
+					{Position 11.4541 	 -16.9203 	 7.8682}
+					
+				}
+				{bone "shield5"
+					{parameters "id=turret;"}
+					{Position 1.8988 	 -18.5827 	 7.8682}
+					
+				}
+				{bone "shield6"
+					{parameters "id=turret;"}
+					{Position 2.1388 	 18.4694 	 4.9368}
+					
+				}
+				{bone "shield7"
+					{parameters "id=turret;"}
+					{Position 11.4541 	 16.9105 	 7.8682}
+					
+				}
+				{bone "hatch_turret2_ring"
+					{parameters "id=turret;"}
+					{Position -4.4823 	 7.7954 	 15.0522}
+					
+					{bone "hatch_turret2_2"
+						{parameters "id=turret;"}
+						{Position 3.8467 	 0 	 0.0055}
+						
+					}
+					{bone "hatch_turret2_1"
+						{parameters "id=turret;"}
+						{Position -3.8502 	 0 	 0.0055}
+						
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/cromwell6/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						15.8998 	 -0.0203 	 6.8687
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.7677 	 -1.0433 	 1.023
+						}
+						
+						{bone "foresight1"
+							{Position 24.845 	 0 	 0}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.3937 	 0.0591 	 -2.7369
+						}
+					}
+				}
+				{bone "detail8"
+					{parameters "id=turret;"}
+					{Position -18.6717 	 15.0402 	 10.8244}
+					
+				}
+				{bone "hatch_turret1_1"
+					{parameters "id=turret;"}
+					{Position -9.8286 	 -7.0914 	 14.2112}
+					
+				}
+				{bone "detail11"
+					{parameters "id=turret;"}
+					{Position -18.6717 	 -15.0402 	 11.0803}
+					
+				}
+				{bone "hatch_turret1_2"
+					{parameters "id=turret;"}
+					{Position 1.3329 	 -7.0914 	 14.2112}
+					
+				}
+				{bone "at2_1"
+					{parameters "id=turret;"}
+					{Position -11.2801 	 -13.2783 	 15.7466}
+					
+					{bone "at2_2"
+						{parameters "id=turret;"}
+						{Position -0.0153 	 0 	 4.311}
+						
+						{bone "at2_3"
+							{parameters "id=turret;"}
+							{Position -0.0153 	 0 	 4.311}
+							
+							{bone "at2_4"
+								{parameters "id=turret;"}
+								{Position -0.0153 	 0 	 4.3307}
+								
+							}
+						}
+					}
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -13.8746 	 12.1133 	 16.4553}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position -0.0153 	 0 	 4.311}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position -0.0153 	 0 	 4.3307}
+							
+							{bone "at1_4"
+								{parameters "id=turret;"}
+								{Position -0.0153 	 0 	 4.311}
+								
+							}
+						}
+					}
+				}
+				{bone "visor1"
+					{Position 9.7906 	 -8.0118 	 14.1915}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-4.4823 	 7.7954 	 10.219
+					}
+				}
+				{bone "enumerator1"
+					{Position 3.4834 	 -16.7972 	 5.6197}
+					
+				}
+				{bone "enumerator2"
+					{Position 8.2182 	 15.9516 	 5.5149}
+					
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.8192 	 0 	 0.5736
+						0 	 1 	 0
+						-0.5736 	 0 	 0.8192
+						10.8485 	 -12.3137 	 13.5632
+					}
+					{bone "smoke_shot1"
+						{matrix34
+							0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							0.0872 	 0 	 0.9962
+							3.4594 	 0 	 0
+						}
+					}
+				}
+				{bone "sight"
+					{Position 20.6557 	 4.6077 	 7.4559}
+				}
+			}
+			{bone "shield1"
+				{parameters "id=body;"}
+				{Position 53.5639 	 0.0999 	 2.5407}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/shield1.ply"}
+			}
+			{bone "hatch_co_driver"
+				{parameters "id=body;"}
+				{Position 40.0394 	 17.9134 	 7.9454}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_co_driver.ply"}
+			}
+			{bone "hatch_driver1_1"
+				{parameters "id=body;"}
+				{Position 33.1693 	 -13.8583 	 10.6226}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_driver1_1.ply"}
+			}
+			{bone "hatch_driver1_2"
+				{parameters "id=body;"}
+				{Position 33.1693 	 -2.874 	 10.6226}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/hatch_driver1_2.ply"}
+			}
+			{bone "visor2"
+				{Position 44.3793 	 -7.8543 	 11.2919}
+			}
+			{bone "headlightr"
+				{Position 54.4066 	 -10.2953 	 1.8521}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.7071 	 0 	 0.7071
+					0 	 -1 	 0
+					0.7071 	 0 	 0.7071
+					-56.5158 	 -6.8898 	 9.2232
+				}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.7071 	 0 	 0.7071
+					0 	 -1 	 0
+					0.7071 	 0 	 0.7071
+					-56.5158 	 6.8898 	 9.2232
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					54.0385 	 23.6282 	 -5.1945
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell1.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-52.032 	 23.6308 	 -5.5097
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheell7.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					54.0385 	 -23.6251 	 -5.1945
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr1.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-52.032 	 -23.6278 	 -5.5097
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell6/wheelr7.ply"}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					9.612 	 0 	 10.5846
+				}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{Position 43.5039 	 4.7047 	 6.5084}
+				{bone revolute "mgun_h_rot2"
+					{limits -8 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone revolute "machine_gun_mount"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.2656 	 0.1378 	 0.1772
+						}
+					}
+				}
+			}
+			{bone revolute "seat01"
+				{matrix34
+					-0.9962 	 -0.0872 	 0
+					0.0872 	 -0.9962 	 0
+					0 	 0 	 1
+					-22.0276 	 -9.5246 	 12.5704
+				}
+			}
+			{bone revolute "seat02"
+				{matrix34
+					-0.8628 	 0.498 	 -0.0872
+					-0.4999 	 -0.8661 	 0
+					-0.0755 	 0.0436 	 0.9962
+					-28.8386 	 11.761 	 10.3542
+				}
+			}
+			{bone revolute "seat03"
+				{matrix34
+					-0.8192 	 -0.5736 	 0
+					0.5736 	 -0.8192 	 0
+					0 	 0 	 1
+					-49.1732 	 -16.4236 	 11.511
+				}
+			}
+			{bone revolute "seat04"
+				{matrix34
+					-0.8192 	 0.5736 	 0
+					-0.5736 	 -0.8192 	 0
+					0 	 0 	 1
+					-48.7795 	 16.2519 	 11.4049
+				}
+			}
+			{bone "ammo4"
+				{Position 19.5827 	 0 	 0.4841}
+			}
+			{bone "ammo3"
+				{Position 6.2243 	 13.6417 	 0.4841}
+			}
+			{bone "ammo2"
+				{Position 6.2243 	 -13.6417 	 0.4841}
+			}
+			{bone "ammo1"
+				{Position -1.8718 	 0 	 0.4841}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				68.8976 	 -11.9009 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-9.0606 	 -43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-9.0606 	 43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-22.0276 	 -43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-49.1732 	 -43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-28.8386 	 43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-48.7795 	 43.3071 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				33.4646 	 43.3071 	 0
+			}
+			{visibility 0}
+		}
+	}
+}
+{volume "ammo1"
+	{box 4.92126 32.5942 7.63069}
+	{bone "ammo1"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo2"
+	{box 5.62485 7.17072 7.63069}
+	{bone "ammo2"}
+	{orientation
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+	}
+}
+{volume "ammo3"
+	{box 5.62485 7.17072 7.63069}
+	{bone "ammo3"}
+	{orientation
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+	}
+}
+{volume "ammo4"
+	{box 4.92126 32.5942 7.63069}
+	{bone "ammo4"}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/armor1.vol"}
+	{bone "engine"}
+	{Position 3.8403 	 17.2859 	 6.3648}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/armor2.vol"}
+	{bone "engine"}
+	{Position 3.8403 	 -20.1403 	 6.3648}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/armor3.vol"}
+	{bone "body"}
+	{Position 18.4588 	 -22.2638 	 7.96}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/armor4.vol"}
+	{bone "body"}
+	{Position 6.2344 	 22.266 	 7.9641}
+}
+{volume "armor5"
+	{box 3.2245 33.6468 10.9097}
+	{bone "engine"}
+	{Position -24.2153 	 -1.3875 	 3.2914}
+}
+{volume "barrel1"
+	{cylinder 1.60236 17.0606}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		8.5303 	 0 	 0
+	}
+}
+{volume "barrel2"
+	{cylinder 2.201 8.01849}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		20.9173 	 0 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/body1.vol"}
+	{bone "body"}
+	{Position 51.1519 	 0 	 -3.5346}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/body2.vol"}
+	{bone "body"}
+	{Position 18.4604 	 0 	 7.961}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/body3.vol"}
+	{bone "body"}
+	{Position 18.4604 	 0 	 -2.6304}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/body4.vol"}
+	{bone "body"}
+	{Position 18.4604 	 0 	 -2.6304}
+}
+{volume "body5"
+	{cylinder 3.96661 1.12275}
+	{bone "body"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		42.3599 	 4.7514 	 6.5078
+	}
+}
+{volume "breech"
+	{box 15.2615 6.16153 7.45735}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-7.1055 	 0.1237 	 0
+	}
+}
+{volume "detail11"
+	{cylinder 8.07401 2.68519}
+	{bone "detail11"}
+	{matrix34
+		0.8957 	 -0.4446 	 0
+		0 	 0 	 -1
+		0.4446 	 0.8957 	 0
+		0 	 0 	 0
+	}
+}
+{volume "detail8"
+	{cylinder 8.07401 2.68519}
+	{bone "detail8"}
+	{matrix34
+		0.8958 	 0.4444 	 0
+		0 	 0 	 -1
+		-0.4444 	 0.8958 	 0
+		0 	 0 	 0
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/engine1.vol"}
+	{bone "engine"}
+	{Position 1.6804 	 -1.4272 	 -4.2297}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/engine2.vol"}
+	{bone "engine"}
+	{Position 2.595 	 -1.4272 	 6.3648}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/engine3.vol"}
+	{bone "engine"}
+	{Position 1.6804 	 -1.4272 	 -4.2297}
+}
+{volume "fuel1"
+	{box 22.9302 6.73741 14.6236}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0}
+}
+{volume "fuel2"
+	{box 22.9302 6.73741 14.6236}
+	{bone "fuel2"}
+	{Position 0 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/hole1.vol"}
+	{bone "turret"}
+	{Position 16.9242 	 1.3168 	 6.8766}
+}
+{volume "hole2"
+	{box 47.4866 3.85014 2.2}
+	{bone "engine"}
+	{Position 3.8403 	 17.2859 	 4.9878}
+}
+{volume "hole3"
+	{box 47.4866 3.85014 2.2}
+	{bone "engine"}
+	{Position 3.8403 	 -20.1403 	 4.9878}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/hole4.vol"}
+	{bone "wheelsr"}
+	{Position 0.3636 	 0 	 0.4146}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/hole5.vol"}
+	{bone "wheelsl"}
+	{Position 0.3636 	 0 	 0.4146}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/ram.vol"}
+	{bone "body"}
+	{Position 0 	 0 	 -19.5546}
+}
+{volume "shield1"
+	{box 6.78657 15.9442 1.46809}
+	{bone "shield1"}
+	{matrix34
+		0.9397 	 0 	 -0.342
+		0 	 1 	 0
+		0.342 	 0 	 0.9397
+		0.0153 	 0 	 -0.4835
+	}
+}
+{volume "shield2"
+	{box 1.49103 6.4061 8.32429}
+	{bone "shield2"}
+	{Position -1.0024 	 0 	 0.0172}
+}
+{volume "shield3"
+	{box 1.49103 6.4061 8.32429}
+	{bone "shield3"}
+	{Position -1.0024 	 0 	 0.2278}
+}
+{volume "shield4"
+	{box 1.49103 6.4061 8.32429}
+	{bone "shield4"}
+	{matrix34
+		0.1763 	 -0.9843 	 0
+		0.9843 	 0.1763 	 0
+		0 	 0 	 1
+		0.0196 	 0.7589 	 0
+	}
+}
+{volume "shield5"
+	{box 1.49103 6.4061 8.32429}
+	{bone "shield5"}
+	{matrix34
+		0.1763 	 -0.9843 	 0
+		0.9843 	 0.1763 	 0
+		0 	 0 	 1
+		0.0311 	 0.7564 	 0
+	}
+}
+{volume "shield6"
+	{box 1.49103 6.4061 5.827}
+	{bone "shield6"}
+	{matrix34
+		-0.1696 	 -0.9855 	 0
+		0.9855 	 -0.1696 	 0
+		0 	 0 	 1
+		0.0422 	 -0.7716 	 -0.0098
+	}
+}
+{volume "shield7"
+	{box 1.49103 6.4061 8.32429}
+	{bone "shield7"}
+	{matrix34
+		-0.171 	 -0.9853 	 0
+		0.9853 	 -0.171 	 0
+		0 	 0 	 1
+		0.0255 	 -0.7719 	 0
+	}
+}
+{volume "trackleft1"
+	{cylinder 5.13189 5.65121}
+	{bone "wheell1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft2"
+	{cylinder 8.15971 5.59414}
+	{bone "wheell2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft3"
+	{cylinder 8.15971 5.59414}
+	{bone "wheell3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft4"
+	{cylinder 8.15971 5.59414}
+	{bone "wheell4"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft5"
+	{cylinder 8.15971 5.59414}
+	{bone "wheell5"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft6"
+	{cylinder 8.15971 5.59414}
+	{bone "wheell6"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft7"
+	{cylinder 7.17358 5.7648}
+	{bone "wheell7"}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0.4003 	 0 	 1.5826}
+}
+{volume "trackright1"
+	{cylinder 5.13189 5.65121}
+	{bone "wheelr1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright2"
+	{cylinder 8.15971 5.59414}
+	{bone "wheelr2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright3"
+	{cylinder 8.15971 5.59414}
+	{bone "wheelr3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright4"
+	{cylinder 8.16929 5.59414}
+	{bone "wheelr4"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright5"
+	{cylinder 8.15971 5.59414}
+	{bone "wheelr5"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright6"
+	{cylinder 8.15971 5.59414}
+	{bone "wheelr6"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright7"
+	{cylinder 7.17358 5.7648}
+	{bone "wheelr7"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0.4003 	 -0.0091 	 1.5826}
+}
+{volume "transmission"
+	{box 9.7162 31.7653 8.16961}
+	{bone "transmission"}
+	{Position 0 	 0 	 0.8684}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/turret1.vol"}
+	{bone "turret"}
+	{Position -1.2057 	 0 	 7.1132}
+}
+{volume "turret2"
+	{cylinder 14.5971 0.575463}
+	{bone "turret"}
+	{Position -0.0057 	 0 	 0.101}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/turret3.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.0039 	 -0.1935 	 0
+	}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/cromwell6/turret4.vol"}
+	{bone "turret"}
+	{Position -1.2057 	 0 	 30.4204}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for blitz3_6_art_ammo (generated)
-	{Extension "../../../../-vehicle/germany/car/blitz3_6_art_ammo/blitz3_6_art_ammo.mdl"}
+	{Extension "blitz3_6_art_ammo.mdl"}
 	{extender "stuff"
 		{item "evh_blitz3_6_art_ammo"}
 	}

@@ -1,0 +1,1643 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: left_door mgun_h_rot1 right_door turret
+;Exported by:	 nic21
+;Date:			 18.12.2025 16:44:56
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_heavy\churchill_MK1_2\Churchill_Mk2.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/fire.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/hit.anm"} {speed 0.8}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/open.anm"} {speed 0.3}{resume}{events {2 "hatch_heavy"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/open_driver.anm"} {speed 0.5}{events {2 "hatch_heavy"} {62 "hatch_heavy"}}}
+		{sequence "open_gunner3" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/open_gunner3.anm"} {speed 0.5}{events {2 "hatch_heavy"} {62 "hatch_heavy"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.4;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.329 	 -0.0001 	 13.6336}
+			{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -40.6286 	 0 	 7.4275}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine.ply"}
+				{bone "engine_hatch6"
+					{parameters "id=engine;"}
+					{Position -19.8173 	 7.8177 	 7.8407}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch6.ply"}
+				}
+				{bone "engine_hatch5"
+					{parameters "id=engine;"}
+					{Position -19.8173 	 -7.8326 	 7.8291}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch5.ply"}
+				}
+				{bone "engine_hatch3"
+					{parameters "id=engine;"}
+					{Position 10.899 	 -11.5943 	 8.2583}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch3.ply"}
+				}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position 13.7721 	 -11.5943 	 8.2579}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch1.ply"}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{Position 13.6094 	 11.6056 	 8.2525}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch2.ply"}
+				}
+				{bone "engine_hatch4"
+					{parameters "id=engine;"}
+					{Position -0.6086 	 11.6056 	 8.2529}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine_hatch4.ply"}
+				}
+				{bone "detail6"
+					{Position -15.7693 	 3.0896 	 8.7247}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail6.ply"}
+				}
+				{bone "detail9"
+					{parameters "id=engine;"}
+					{Position -28.0454 	 7.8087 	 1.1679}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail9.ply"}
+				}
+				{bone "detail3"
+					{Position -7.5301 	 27.5127 	 0.2097}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail3.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=body;"}
+					{Position 43.3362 	 27.0644 	 0.5426}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail4.ply"}
+				}
+				{bone "detail2"
+					{Position -7.5301 	 -27.5138 	 0.2097}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail2.ply"}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.309 	 0 	 0.9511
+						0 	 1 	 0
+						-0.9511 	 0 	 -0.309
+						-9.2531 	 1.7366 	 11.6373
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.309 	 0 	 0.9511
+						0 	 1 	 0
+						-0.9511 	 0 	 -0.309
+						-9.2531 	 -1.5786 	 11.6373
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						4.9298 	 0.6264 	 1.709
+					}
+				}
+				{bone "shield3"
+					{parameters "id=shield3;"}
+					{Position -19.2053 	 21.2262 	 6.7601}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield3.ply"}
+					{bone "detail7"
+						{parameters "id=engine;"}
+						{Position 5.076 	 -0.3299 	 3.4724}
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail7.ply"}
+					}
+				}
+				{bone "shield4"
+					{parameters "id=shield4;"}
+					{Position -19.2053 	 -21.1332 	 6.7601}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield4.ply"}
+					{bone "detail8"
+						{parameters "id=engine;"}
+						{Position 5.0761 	 0.3405 	 3.4724}
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail8.ply"}
+					}
+				}
+				{bone "detail13"
+					{parameters "id=engine;"}
+					{Position 15.3653 	 29.1178 	 2.7633}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail13.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=engine;"}
+					{Position 12.2366 	 -29.1235 	 2.7725}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail10.ply"}
+				}
+				{bone "detail12"
+					{parameters "id=engine;"}
+					{Position -15.6791 	 -4.174 	 9.0447}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail12.ply"}
+				}
+				{bone "detail11"
+					{parameters "id=engine;"}
+					{Position -16.2732 	 4.7139 	 8.5435}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail11.ply"}
+				}
+			}
+			{bone "left_door"
+				{parameters "id=body;"}
+				{Position 28.0453 	 26.7739 	 5.6291}
+				
+			}
+			{bone "right_door"
+				{parameters "id=body;"}
+				{Position 28.0475 	 -26.7686 	 5.6291}
+				
+			}
+			{bone "gunner_hatch1"
+				{parameters "id=body;"}
+				{Position 33.2464 	 3.3995 	 15.9288}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/gunner_hatch1.ply"}
+			}
+			{bone "gunner_hatch2"
+				{parameters "id=body;"}
+				{Position 23.1044 	 3.3174 	 15.9234}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/gunner_hatch2.ply"}
+			}
+			{bone "driver_hatch2"
+				{parameters "id=body;"}
+				{Position 23.8136 	 -3.7622 	 15.9287}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/driver_hatch2.ply"}
+			}
+			{bone "driver_hatch1"
+				{parameters "id=body;"}
+				{Position 33.9475 	 -3.5109 	 15.9359}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/driver_hatch1.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 2.7077 	 -27.0713 	 7.9701}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail5.ply"}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					4.7517 	 0.0001 	 11.4766
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.8829 	 0 	 0.4695
+					0 	 -1 	 0
+					0.4695 	 0 	 0.8829
+					-52.5457 	 -13.853 	 14.2241
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					-0.8829 	 0 	 0.4695
+					0 	 -1 	 0
+					0.4695 	 0 	 0.8829
+					-52.5191 	 10.1097 	 14.2384
+				}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					53.0709 	 12.8655 	 7.9036
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 -0.0035
+					0 	 1 	 0
+					0.0035 	 0 	 1
+					52.3201 	 -12.9424 	 8.1177
+				}
+			}
+			{bone "visor2"
+				{Position 39.0645 	 -11.854 	 16.6833}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					60.1855 	 -21.4015 	 6.5064
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr1.ply"}
+			}
+			{bone revolute "wheell13"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-57.4025 	 21.3686 	 6.9996
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell13.ply"}
+			}
+			{bone revolute "wheelr13"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-57.4025 	 -21.3671 	 6.9996
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr13.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.003}
+				{Position 3.4657 	 0.0001 	 16.5539}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_heavy/churchill_mk2/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -12.5 20}
+					{speed 0.003}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						14.1021 	 -0.0168 	 5.9162
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.2593 	 0.0145 	 -0.0291
+						}
+						
+						{bone "foresight1"
+							{Position 28.9771 	 0.0006 	 -0.0002}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							9.3414 	 0.0107 	 4.9477
+						}
+					}
+					{bone "barrel1"
+						{Position 5.2633 	 0.0609 	 -0.0315}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							5.1741 	 1.1833 	 -4.7889
+						}
+					}
+				}
+				{bone "vison_ring"
+					{parameters "id=turret;"}
+					{Position -6.9507 	 6.1008 	 15.1662}
+					
+					{bone "turret_hatchl1"
+						{parameters "id=turret;"}
+						{Position 4.1846 	 -3.0812 	 0.6549}
+						
+					}
+					{bone "turret_hatchl2"
+						{parameters "id=turret;"}
+						{Position -4.165 	 3.0776 	 0.6539}
+						
+					}
+				}
+				{bone "basket"
+					{parameters "id=turret;"}
+					{Position -20.8663 	 -9.0131 	 10.9224}
+					
+				}
+				{bone "visor1"
+					{Position 4.3721 	 -7.7553 	 15.1604}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						-7.2817 	 5.8189 	 8.9095
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.8572 	 0 	 0.515
+						0 	 1 	 0
+						-0.515 	 0 	 0.8572
+						14.5605 	 -9.79 	 13.3099
+					}
+					{bone "smoke_shot1"
+						{Position 1.7292 	 0.0085 	 -0.0007}
+					}
+				}
+				{bone "hatch_helper1"
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9913 	 0.132
+						0 	 -0.132 	 0.9913
+						-1.1542 	 -10.4266 	 14.0744
+					}
+					{bone "turret_hatchr1"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "hatch_helper2"
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9891 	 0.147
+						0 	 -0.147 	 0.9891
+						-12.4335 	 -10.4849 	 14.0662
+					}
+					{bone "turret_hatchr2"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "antr1"
+					{parameters "id=turret;"}
+					{Position -16.1064 	 -9.0052 	 17.5751}
+					
+					{bone "antr2"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 5.9082}
+						
+					}
+				}
+				{bone "antl1"
+					{parameters "id=turret;"}
+					{Position -17.4994 	 3.5766 	 16.7183}
+					
+					{bone "antl2"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 5.8912}
+						
+						{bone "antl3"
+							{parameters "id=turret;"}
+							{Position 0 	 0 	 4.6026}
+							
+							{bone "antl4"
+								{parameters "id=turret;"}
+								{Position 0 	 0 	 3.9838}
+								
+							}
+						}
+					}
+				}
+				{bone "basket2"
+					{parameters "id=turret;"}
+					{Position -2.2714 	 -17.0578 	 9.6154}
+					
+				}
+			}
+			{bone "transmission"
+				{Position -57.1675 	 0.8585 	 7.1962}
+			}
+			{bone "fuel2"
+				{Position -24.8027 	 20.674 	 11.3466}
+			}
+			{bone "fuel1"
+				{Position -24.8027 	 -20.6891 	 11.3466}
+			}
+			{bone "ammo3"
+				{Position 23.9805 	 -7.2099 	 0.6255}
+			}
+			{bone "ammo2"
+				{Position 6.8142 	 20.674 	 6.5415}
+			}
+			{bone "ammo1"
+				{Position 10.3838 	 -20.6891 	 6.4827}
+			}
+			{bone "seat03"
+				{matrix34
+					0 	 -0.8829 	 0.4695
+					1 	 0 	 0
+					0 	 0.4695 	 0.8829
+					-33.9753 	 5.4726 	 14.2384
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 0.8829 	 0.4695
+					-1 	 0 	 0
+					0 	 -0.4695 	 0.8829
+					-36.1527 	 -5.3107 	 14.2384
+				}
+			}
+			{bone "enumerator1"
+				{Position 5.4052 	 -26.5687 	 4.4393}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.6903 	 26.5472 	 3.9947
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/enumerator2.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					60.1856 	 21.4029 	 6.5064
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell1.ply"}
+			}
+			{bone "front_ddoor"
+				{parameters "id=body;"}
+				{Position 41.0491 	 -9.6746 	 13.4297}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/front_ddoor.ply"}
+			}
+			{bone "shield1"
+				{parameters "id=shield1;"}
+				{Position 43.6414 	 15.3781 	 13.9792}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield1.ply"}
+			}
+			{bone "shield2"
+				{parameters "id=shield2;"}
+				{Position 41.5674 	 -15.1424 	 11.7913}
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield2.ply"}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{speed 0.01}
+				{Position 39.352 	 6.2243 	 10.6886}
+				{bone revolute "mgun_h_rot2"
+					{limits -9 20}
+					{speed 0.01}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0.0007
+					}
+					{bone "mgun_hull"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.4813 	 0.1461 	 0.1315
+						}
+						
+						{bone "foresight4"
+							{Position 8.814 	 -0.9368 	 -0.0504}
+						}
+					}
+				}
+				{bone "mgun_hor"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					
+				}
+			}
+			{bone revolute "wheelr2"
+				{parameters "id=trackright;radius=0.17;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.9346 	 -20.7302 	 -8.0117
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr2.ply"}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr2_lod1.ply"}
+				}
+			}
+			{bone revolute "wheell2"
+				{parameters "id=trackleft;radius=0.17;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.9346 	 20.7315 	 -8.0117
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell2.ply"}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell2_lod1.ply"}
+				}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;radius=0.17;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-49.647 	 -20.7302 	 -5.9277
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr12.ply"}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr12_lod1.ply"}
+				}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;radius=0.17;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-49.647 	 20.7316 	 -5.9277
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell12.ply"}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell12_lod1.ply"}
+				}
+			}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-35.9708 	 52.531 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-52.8747 	 -50.7926 	 0
+			}
+		}
+		{bone "emit7"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-37.2722 	 -50.7926 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-52.848 	 52.531 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				21.3628 	 50.0984 	 0.6718
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-0.4542 	 -45.4254 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-0.7662 	 41.81 	 0
+			}
+		}
+		{bone "body_virt"
+			{Position 0.0966 	 0 	 14.6825}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0.6926 	 19.1384 	 -8.4731}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 4.8825 	 -6.1565
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-52.7873 	 1.7446 	 -2.1908
+					}
+				}
+				{bone "suspl"
+					{parameters "id=body;"}
+					{Position 0.2558 	 1.5775 	 3.2274}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/suspl.ply"}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position 36.4988 	 1.593 	 -2.361}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell3.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell3_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position 27.2849 	 1.593 	 -2.361}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell4.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell4_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.06 0.06}
+					{speed 0.15}
+					{Position 18.0745 	 1.593 	 -2.361}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell5.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell5_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 8.8588 	 1.593 	 -2.361}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell6.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell6_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -0.3533 	 1.593 	 -2.361}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell7.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell7_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l8"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -9.5638 	 1.593 	 -2.361}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell8.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell8_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l9"
+					{limits -0.06 0.06}
+					{speed 0.15}
+					{Position -18.7772 	 1.593 	 -2.361}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell9.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell9_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l10"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position -27.991 	 1.593 	 -2.361}
+					{bone revolute "wheell10"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell10.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell10_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l11"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position -37.1982 	 1.593 	 -2.361}
+					{bone revolute "wheell11"
+						{parameters "id=trackleft;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell11.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheell11_lod1.ply"}
+						}
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.3718 	 2.1371 	 8.3577}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0.6926 	 -20.043 	 -8.4731}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 -5.4859 	 -6.1565
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-52.7873 	 -1.6434 	 -2.1908
+					}
+				}
+				{bone "suspr"
+					{parameters "id=body;"}
+					{Position 0.2558 	 -0.6732 	 3.2274}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/suspr.ply"}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position 36.4988 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr3.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr3_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position 27.2849 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr4.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr4_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.06 0.06}
+					{speed 0.15}
+					{Position 18.0745 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr5.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr5_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 8.8588 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr6.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr6_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -0.3533 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;radius=0.17;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr7.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr7_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r8"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -9.5638 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr8.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr8_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r9"
+					{limits -0.06 0.06}
+					{speed 0.15}
+					{Position -18.7772 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr9.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr9_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r10"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position -27.991 	 -0.6874 	 -2.3609}
+					{bone revolute "wheelr10"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr10.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr10_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r11"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{Position -37.1982 	 -0.6874 	 -2.361}
+					{bone revolute "wheelr11"
+						{parameters "id=trackright;radius=0.17;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr11.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/wheelr11_lod1.ply"}
+						}
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.3718 	 -1.2304 	 8.3577}
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk2/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				21.3628 	 -50.0984 	 0.6718
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/ram.vol"}
+	{bone "body"}
+	{Position -0.2486 	 0.0141 	 1.9182}
+}
+{volume "ammo1"
+	{box 10.1181 12.0909 9.72783}
+	{bone "ammo1"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "ammo2"
+	{box 10.1181 5.44093 9.72783}
+	{bone "ammo2"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "ammo3"
+	{box 10.1181 8.34275 9.72783}
+	{bone "ammo3"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "armorl1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorl1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		53.4979 	 25.7788 	 4.1688
+	}
+}
+{volume "armorl2"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorl2.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		53.4979 	 15.8945 	 4.1688
+	}
+}
+{volume "armorl3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorl3.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-63.5304 	 25.7956 	 4.1688
+	}
+}
+{volume "armorr1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorr1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		53.4979 	 -25.1658 	 4.1688
+	}
+}
+{volume "armorr2"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorr2.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		53.4979 	 -15.2816 	 4.1688
+	}
+}
+{volume "armorr3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/armorr3.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-63.5304 	 -26.3659 	 4.1688
+	}
+}
+{volume "armor_engine"
+	{box 0.739143 30.315 8.11379}
+	{bone "engine"}
+	{Position -27.5822 	 0.0002 	 3.3193}
+}
+{volume "barrel2"
+	{cylinder 1.00053 31.1895}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		13.2148 	 -0.0448 	 -0.0108
+	}
+}
+{volume "basket2"
+	{box 16.7332 6.84956 10.5128}
+	{bone "basket2"}
+	{matrix34
+		0.9848 	 0.1736 	 0
+		-0.1736 	 0.9848 	 0
+		0 	 0 	 1
+		6.9886 	 -2.4648 	 -3.3574
+	}
+}
+{volume "basket"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/basket.vol"}
+	{bone "basket"}
+	{Position -3.224 	 5.4462 	 -2.1785}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body1.vol"}
+	{bone "body"}
+	{Position 21.8425 	 0.0041 	 2.174}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body2.vol"}
+	{bone "body"}
+	{Position 14.5107 	 0.0041 	 12.1294}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body3.vol"}
+	{bone "body"}
+	{Position 18.3732 	 20.6846 	 5.771}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body4.vol"}
+	{bone "body"}
+	{Position 18.3732 	 -20.7077 	 5.771}
+}
+{volume "body5"
+	{box 11.1809 10.0598 0.768274}
+	{bone "right_door"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 -1
+		0 	 -1 	 0
+		-6.1799 	 0.2829 	 -0.0163
+	}
+}
+{volume "body6"
+	{box 11.1809 10.0598 0.775801}
+	{bone "left_door"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 -1
+		0 	 -1 	 0
+		-6.2312 	 -0.2871 	 -0.0163
+	}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/body7.vol"}
+	{bone "body"}
+	{Position 42.2662 	 6.5075 	 12.1294}
+}
+{volume "breech"
+	{box 5.92205 4.53209 15.0366}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-5.5429 	 -0.1989 	 1.396
+	}
+}
+{volume "detail2"
+	{box 11.2963 5.22121 2.59188}
+	{bone "detail2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.0148 	 -0.0051 	 -0.0043
+	}
+}
+{volume "detail3"
+	{box 11.2963 5.22121 2.59188}
+	{bone "detail3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.0148 	 -0.0051 	 -0.0043
+	}
+}
+{volume "detail7"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail7.vol"}
+	{bone "detail7"}
+	{Position -5.4061 	 -0.1114 	 -1.4669}
+}
+{volume "detail8"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/detail8.vol"}
+	{bone "detail8"}
+	{Position -5.4061 	 -0.1481 	 -1.4669}
+}
+{volume "detail9"
+	{cylinder 4.56977 24.6063}
+	{bone "detail9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-4.5441 	 -7.6841 	 5.1327
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine1.vol"}
+	{bone "engine"}
+	{Position 0.4112 	 0.0041 	 4.7019}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine2.vol"}
+	{bone "engine"}
+	{Position 0.4112 	 0.0041 	 4.7019}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine3.vol"}
+	{bone "engine"}
+	{Position 9.2709 	 20.6846 	 -1.6565}
+}
+{volume "engine4"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/engine4.vol"}
+	{bone "engine"}
+	{Position 9.2709 	 -20.7077 	 -1.6565}
+}
+{volume "fuel1"
+	{box 9.39048 28.6024 11.4567}
+	{bone "fuel1"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 -5.7283
+	}
+}
+{volume "fuel2"
+	{box 9.38976 28.6024 11.4567}
+	{bone "fuel2"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 -5.7284
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/hole1.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		6.3648 	 1.4397 	 3.9722
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/hole2.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		6.3648 	 -2.0181 	 3.9723
+	}
+}
+{volume "hole3"
+	{box 1.94927 3.15648 4.33442}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		42.2709 	 5.0108 	 10.9856
+	}
+}
+{volume "hole4"
+	{box 1.94888 3.06364 3.75868}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		42.2709 	 7.6138 	 11.8668
+	}
+}
+{volume "shield1"
+	{box 17.8687 6.07109 0.241636}
+	{bone "shield1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		8.4467 	 -0.0769 	 -1.3524
+	}
+}
+{volume "shield2"
+	{box 19.8541 6.07109 0.241636}
+	{bone "shield2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		9.5262 	 -0.1497 	 0.8355
+	}
+}
+{volume "shield3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield3.vol"}
+	{bone "shield3"}
+	{Position 0.1799 	 -0.0107 	 0.1033}
+}
+{volume "shield4"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/shield4.vol"}
+	{bone "shield4"}
+	{Position 0.1799 	 -0.0559 	 0.1033}
+}
+{volume "trackleft10"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l10"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0807 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft11"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.1471 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft12"
+	{box 5.87035 11.8733 8.9526}
+	{bone "wheelsl"}
+	{matrix34
+		-0.9693 	 0 	 0.246
+		0.246 	 0 	 0.9693
+		0 	 1 	 0
+		-49.7933 	 1.6781 	 4.6013
+	}
+}
+{volume "trackleft13"
+	{cylinder 7.48032 6.16398}
+	{bone "wheell13"}
+	{Position 0.336 	 -0.1508 	 0.8515}
+}
+{volume "trackleft1"
+	{cylinder 7.48032 6.16398}
+	{bone "wheell1"}
+	{Position 0.0437 	 -0.0544 	 0.556}
+}
+{volume "trackleft2"
+	{box 5.87035 11.8733 8.9526}
+	{bone "wheelsl"}
+	{matrix34
+		-0.78 	 0 	 -0.6258
+		-0.6258 	 0 	 0.78
+		0 	 1 	 0
+		47.2972 	 1.6781 	 2.2882
+	}
+}
+{volume "trackleft3"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.012 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft4"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0264 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft5"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0944 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft6"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0826 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft7"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0357 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft8"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l8"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0515 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft9"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_l9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0673 	 0.0852 	 3.0891
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0.5043 	 1.7595 	 8.27}
+}
+{volume "trackright10"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r10"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0807 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright11"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.1472 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright12"
+	{box 5.87035 11.8733 8.9526}
+	{bone "wheelsr"}
+	{matrix34
+		-0.9693 	 0 	 0.246
+		0.246 	 0 	 0.9693
+		0 	 1 	 0
+		-49.7933 	 -0.7658 	 4.6013
+	}
+}
+{volume "trackright13"
+	{cylinder 7.48032 6.16398}
+	{bone "wheelr13"}
+	{Position 0.336 	 -0.1508 	 -1.5982}
+}
+{volume "trackright1"
+	{cylinder 7.48032 6.16398}
+	{bone "wheelr1"}
+	{Position 0.0437 	 -0.0543 	 -0.8012}
+}
+{volume "trackright2"
+	{box 5.87035 11.8733 8.9526}
+	{bone "wheelsr"}
+	{matrix34
+		-0.78 	 0 	 -0.6258
+		-0.6258 	 0 	 0.78
+		0 	 1 	 0
+		47.2972 	 -0.7658 	 2.2882
+	}
+}
+{volume "trackright3"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0119 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright4"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0264 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright5"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0944 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright6"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0826 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright7"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0357 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright8"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r8"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0515 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright9"
+	{box 5.87035 11.8733 8.9526}
+	{bone "suspension_r9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0673 	 -0.0771 	 3.0891
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0.5043 	 -0.8741 	 8.27}
+}
+{volume "transmission"
+	{cylinder 5.66929 29.5498}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.8507 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/turret1.vol"}
+	{bone "turret"}
+	{Position -0.1502 	 -0.8351 	 7.7316}
+}
+{volume "turret2"
+	{cylinder 16.5709 1.43748}
+	{bone "turret"}
+	{Position 0 	 0 	 -0.0618}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_heavy/churchill_mk2/turret3.vol"}
+	{bone "turret"}
+	{Position -3.8762 	 -2.2479 	 0.1852}
+}

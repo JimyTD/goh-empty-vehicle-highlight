@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 155mm_schneider_us (generated)
-	{Extension "../../../../-vehicle/usa/cannon/155mm_schneider_us/155mm_schneider_us.mdl"}
+	{Extension "155mm_schneider_us.mdl"}
 	{extender "stuff"
 		{item "evh_155mm_schneider_us"}
 	}

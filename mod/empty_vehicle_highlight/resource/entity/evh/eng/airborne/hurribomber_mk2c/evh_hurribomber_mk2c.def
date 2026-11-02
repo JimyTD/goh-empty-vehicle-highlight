@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for hurribomber_mk2c (generated)
-	{Extension "../../../../-vehicle/eng/airborne/hurribomber_mk2c/hurribomber_mk2c.mdl"}
+	{Extension "hurribomber_mk2c.mdl"}
 	{extender "stuff"
 		{item "evh_hurribomber_mk2c"}
 	}

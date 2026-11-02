@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/usa/m4a3e4"}
+	{bump "$/_vehicle/usa/m4a3e4_bp"}
+	{specular "$/_vehicle/usa/m4a3e4_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

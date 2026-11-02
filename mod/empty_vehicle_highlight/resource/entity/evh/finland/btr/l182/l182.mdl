@@ -1,0 +1,710 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorleft doorright mgun_h_rot1 turret
+;Exported by:	 guita
+;Date:			 29.04.2022 14:14:26
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\btr\landswerk182\L182.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/finland/btr/l182/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/finland/btr/l182/stop.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/finland/btr/l182/open.anm"} {speed 0.25}{resume} {events {2 "hatch_light"}}}
+		{sequence "doorleft" {file "../../../../-vehicle/finland/btr/l182/doorleft.anm"} {speed 0.2} {events {1 "hatch_light"}} {events {20 "hatch_light"}}}
+		{sequence "doorright" {file "../../../../-vehicle/finland/btr/l182/doorright.anm"} {speed 0.2} {events {1 "hatch_light"}} {events {20 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.45;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/btr/l182/body_r.anm"}{speed 0.7}}
+			}
+			{Position -4.1505 	 -0.1109 	 15.7996}
+			{VolumeView "../../../../-vehicle/finland/btr/l182/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/btr/l182/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.008}
+				{Position -12.9482 	 0.1109 	 19.0758}
+				
+				{bone "turret_hatch"
+					{parameters "id=turret;"}
+					{Position -0.4146 	 -2.7898 	 10.768}
+					
+				}
+				{bone revolute "mgun_c_rot1"
+					{limits -15 15}
+					{speed 0.01}
+					{Position 15.4556 	 1.8582 	 4.9103}
+					{bone revolute "mgun_c_rot2"
+						{limits -8 15}
+						{speed 0.01}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0 	 0 	 0
+						}
+						{bone "foresight5"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								8.4295 	 -0.0104 	 0.0472
+							}
+						}
+						{bone "mgun_turret"
+							{parameters "id=turret;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0 	 0 	 0
+							}
+							
+						}
+					}
+				}
+				{bone revolute "gun_rot"
+					{limits -10 20}
+					{speed 0.008}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						15.3222 	 -3.7641 	 5.5156
+					}
+					{bone "gun"
+						{parameters "id=gun;"}
+						{animation
+							{sequence "repair" {file "../../../../-vehicle/finland/btr/l182/gun_r.anm"}{speed 0.7}}
+						}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						
+						{bone "foresight1"
+							{Position 21.0255 	 0.0102 	 0.4068}
+						}
+					}
+				}
+				{bone "visor1"
+					{matrix34
+						0.9994 	 0 	 -0.0349
+						0 	 1 	 0
+						0.0349 	 0 	 0.9994
+						3.461 	 4.9806 	 12.114
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-3.7317 	 -2.6046 	 4.0049
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/btr/l182/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 41.7723 	 0.1109 	 2.2603}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/engine.ply"}
+				{bone "engine_hatch"
+					{parameters "id=engine;"}
+					{Position -15.5217 	 0 	 10.6853}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/engine_hatch.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0.0349 	 0 	 0.9994
+						0 	 1 	 0
+						-0.9994 	 0 	 0.0349
+						-5.5466 	 -0.1313 	 4.5122
+					}
+				}
+			}
+			{bone "doorr_help"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9703 	 -0.2419
+					0 	 0.2419 	 0.9703
+					4.1226 	 -12.8989 	 15.0708
+				}
+				{bone "doorright"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					
+				}
+			}
+			{bone "doorl_help"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9703 	 0.2419
+					0 	 -0.2419 	 0.9703
+					4.1322 	 13.07 	 15.0115
+				}
+				{bone "doorleft"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					
+				}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{speed 0.01}
+				{Position 16.184 	 -5.4434 	 14.6715}
+				{bone revolute "mgun_h_rot2"
+					{limits -8 15}
+					{speed 0.01}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							8.1189 	 0.0037 	 0.0472
+						}
+					}
+					{bone "mgun_hull"
+						{parameters "id=pody;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						
+					}
+				}
+			}
+			{bone "cover_front"
+				{parameters "id=body;"}
+				{Position 11.9451 	 4.8636 	 19.1705}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/cover_front.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					0.7007 	 0 	 -0.7135
+					0 	 1 	 0
+					0.7135 	 0 	 0.7007
+					13.305 	 5.105 	 10.7982
+				}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/steer.ply"}
+			}
+			{bone revolute "steer2"
+				{parameters "id=body;"}
+				{matrix34
+					0.7543 	 0 	 0.6565
+					0 	 1 	 0
+					-0.6565 	 0 	 0.7543
+					-42.6044 	 1.9768 	 10.6201
+				}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/steer2.ply"}
+			}
+			{bone "coverl1"
+				{parameters "id=body;"}
+				{Position 23.2595 	 15.2553 	 12.483}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/coverl1.ply"}
+			}
+			{bone "coverr1"
+				{parameters "id=body;"}
+				{Position 23.2622 	 -15.0336 	 12.4835}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/coverr1.ply"}
+			}
+			{bone "coverl2"
+				{parameters "id=body;"}
+				{Position -48.7467 	 11.3317 	 7.8309}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/coverl2.ply"}
+			}
+			{bone "coverr2"
+				{parameters "id=body;"}
+				{Position -48.7411 	 -11.1097 	 7.8792}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/coverr2.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 22.5362 	 -17.36 	 -3.9635}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -16.8432 	 15.0173 	 11.5707}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -25.9204 	 -13.9911 	 12.096}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -46.1815 	 10.5001 	 5.4844}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/detail4.ply"}
+			}
+			{bone "doorback_help"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9744 	 0.225
+					0 	 -0.225 	 0.9744
+					-29.6394 	 10.7319 	 16.1809
+				}
+				{bone "doorback"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/doorback.ply"}
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					0.0349 	 0 	 0.9994
+					22.7989 	 -15.1029 	 9.3276
+				}
+			}
+			{bone "headlightl"
+				{matrix34
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					0.0349 	 0 	 0.9994
+					22.7989 	 15.4481 	 9.3276
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					0.0349 	 0 	 0.9994
+					12.4563 	 5.3191 	 20.1419
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-11.0442 	 0.1109 	 18.426
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.1361 	 -0.9686 	 -0.2079
+					0.9903 	 -0.1392 	 0
+					-0.0289 	 -0.2059 	 0.9781
+					-4.8863 	 -22.8718 	 -9.1335
+				}
+			}
+			{bone "transmission"
+				{matrix34
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					0.0349 	 0 	 0.9994
+					-5.7114 	 0.2317 	 -6.096
+				}
+			}
+			{bone "fuel"
+				{matrix34
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					0.0349 	 0 	 0.9994
+					24.5022 	 -6.7286 	 2.111
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-49.3388 	 10.9064 	 1.9014
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 41.2852 	 0 	 8.6372}
+			{bone prizmatic "suspension_l4"
+				{limits -0.07 0.07}
+				{speed 0.1}
+				{Position -0.1284 	 17.7341 	 -0.0022}
+				{bone revolute "wheell4"
+					{parameters "id=wheelleft4;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.07 0.07}
+				{speed 0.1}
+				{Position -0.1284 	 -17.7413 	 -0.0022}
+				{bone revolute "wheelr4"
+					{parameters "id=wheelright4;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+			{bone "rod"
+				{parameters "id=body;"}
+				{Position -4.6297 	 0 	 -2.8662}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/rod.ply"}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-0.0692 	 0 	 -0.165
+				}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/susp_front.ply"}
+			}
+			{bone revolute "steerl"
+				{matrix34
+					0.9945 	 0 	 -0.1045
+					0 	 -1 	 0
+					-0.1045 	 0 	 -0.9945
+					0 	 14.0038 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.1}
+					{matrix34
+						0.9945 	 0 	 -0.1045
+						0 	 -1 	 0
+						-0.1045 	 0 	 -0.9945
+						-0.1275 	 -3.7302 	 0.0156
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/finland/btr/l182/wheell1.ply"}
+					}
+					{bone "steerbox_l"
+						{parameters "id=body;"}
+						{matrix34
+							0.9945 	 0 	 -0.1045
+							0 	 1 	 0
+							0.1045 	 0 	 0.9945
+							0.1284 	 -3.7302 	 0.0022
+						}
+						{VolumeView "../../../../-vehicle/finland/btr/l182/steerbox_l.ply"}
+					}
+					{bone "fxtracel1"
+						{Position 0.1284 	 -1.1769 	 -8.6195}
+					}
+				}
+			}
+			{bone revolute "steerr"
+				{matrix34
+					0.9945 	 0 	 -0.1045
+					0 	 -1 	 0
+					-0.1045 	 0 	 -0.9945
+					0 	 -14.01 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.1}
+					{matrix34
+						0.9945 	 0 	 -0.1045
+						0 	 -1 	 0
+						-0.1045 	 0 	 -0.9945
+						-0.1275 	 3.7313 	 0.0156
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;"}
+						{matrix34
+							0.9945 	 0 	 -0.1045
+							-0.1045 	 0 	 -0.9945
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/finland/btr/l182/wheelr1.ply"}
+					}
+					{bone "fxtracer1"
+						{Position 0.1284 	 1.1757 	 -8.6428}
+					}
+					{bone "steerbox_r"
+						{parameters "id=body;"}
+						{matrix34
+							0.9945 	 0 	 -0.1045
+							0 	 1 	 0
+							0.1045 	 0 	 0.9945
+							0.1284 	 3.7313 	 0.0022
+						}
+						{VolumeView "../../../../-vehicle/finland/btr/l182/steerbox_r.ply"}
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -29.0202 	 0 	 9.659}
+			{bone "fxtracer2"
+				{matrix34
+					-0.8988 	 0 	 0.4384
+					0 	 -1 	 0
+					0.4384 	 0 	 0.8988
+					-15.0525 	 -15.1683 	 -8.5643
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.8988 	 0 	 0.4384
+					0 	 -1 	 0
+					0.4384 	 0 	 0.8988
+					-15.0525 	 15.3207 	 -8.5643
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.09 0.09}
+				{speed 0.1}
+				{Position 9.5019 	 -15.4506 	 -1.2183}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.09 0.09}
+				{speed 0.1}
+				{Position -9.4224 	 -15.4506 	 -1.2183}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.09 0.09}
+				{speed 0.1}
+				{Position 9.5019 	 15.4619 	 -1.2183}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.09 0.09}
+				{speed 0.1}
+				{Position -9.4224 	 15.4619 	 -1.2183}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/btr/l182/wheell3.ply"}
+				}
+			}
+			{bone "susp_back"
+				{parameters "id=body;"}
+				{Position 9.9854 	 -0.0021 	 -1.2209}
+				{VolumeView "../../../../-vehicle/finland/btr/l182/susp_back.ply"}
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.3235 	 30.4996 	 0.5206
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				6.8621 	 -30.5857 	 0.5206
+			}
+		}
+	}
+}
+{volume "barrel"
+	{cylinder 0.900209 21.3386}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		9.5233 	 0 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/body1.vol"}
+	{bone "body"}
+	{Position 21.0972 	 0.1215 	 2.6589}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/body2.vol"}
+	{bone "body"}
+	{Position -18.8426 	 0.1215 	 6.0965}
+}
+{volume "breech"
+	{box 9.1993 3.8174 5.91384}
+	{bone "gun_rot"}
+	{Position -5.5763 	 -0.191 	 -3.7478}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/engine1.vol"}
+	{bone "engine"}
+	{Position 1.6113 	 0.0107 	 -0.067}
+}
+{volume "fuel"
+	{box 5.1467 10.1772 8.28276}
+	{bone "fuel"}
+	{matrix34
+		0.9994 	 0 	 0.0349
+		0 	 1 	 0
+		-0.0349 	 0 	 0.9994
+		-0.1716 	 2.2543 	 2.0801
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/hole1.vol"}
+	{bone "body"}
+	{Position -24.8322 	 -14.7764 	 -1.8833}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/hole2.vol"}
+	{bone "body"}
+	{Position -24.8322 	 15.0424 	 -1.8833}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/hole3.vol"}
+	{bone "body"}
+	{Position -14.787 	 0.1874 	 19.715}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/ram.vol"}
+	{bone "body"}
+	{Position 1.7583 	 0.1114 	 0.9268}
+}
+{volume "transmission"
+	{cylinder 2.43525 57.8265}
+	{bone "transmission"}
+	{matrix34
+		0 	 1 	 0
+		-0.0698 	 0 	 0.9976
+		0.9976 	 0 	 0.0698
+		0 	 0 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/turret1.vol"}
+	{bone "turret"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		11.2626 	 0 	 5.9933
+	}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/finland/btr/l182/turret2.vol"}
+	{bone "turret"}
+	{Position 0 	 0 	 5.0899}
+}
+{volume "wheelleft1"
+	{cylinder 8.80768 3.37402}
+	{bone "wheell1"}
+	{matrix34
+		0.9511 	 -0.309 	 0
+		-0.309 	 -0.9511 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1992
+	}
+}
+{volume "wheelleft2"
+	{cylinder 8.80768 8.81625}
+	{bone "wheell2"}
+	{matrix34
+		0.9511 	 -0.309 	 0
+		-0.309 	 -0.9511 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0161
+	}
+}
+{volume "wheelleft3"
+	{cylinder 8.80768 8.7937}
+	{bone "wheell3"}
+	{matrix34
+		0.9511 	 -0.309 	 0
+		-0.309 	 -0.9511 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0199
+	}
+}
+{volume "wheelright1"
+	{cylinder 8.80768 3.37323}
+	{bone "wheelr1"}
+	{matrix34
+		0.9135 	 -0.4067 	 0
+		-0.4067 	 -0.9135 	 0
+		0 	 0 	 -1
+		0 	 0 	 1.1169
+	}
+}
+{volume "wheelright2"
+	{cylinder 8.80768 8.73742}
+	{bone "wheelr2"}
+	{matrix34
+		0.9511 	 -0.309 	 0
+		-0.309 	 -0.9511 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0347
+	}
+}
+{volume "wheelright3"
+	{cylinder 8.80768 8.67296}
+	{bone "wheelr3"}
+	{matrix34
+		0.9511 	 -0.309 	 0
+		-0.309 	 -0.9511 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0445
+	}
+}

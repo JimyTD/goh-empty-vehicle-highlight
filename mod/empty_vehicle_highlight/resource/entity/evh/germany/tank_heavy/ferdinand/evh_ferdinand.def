@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ferdinand (generated)
-	{Extension "../../../../-vehicle/germany/tank_heavy/ferdinand/ferdinand.mdl"}
+	{Extension "ferdinand.mdl"}
 	{extender "stuff"
 		{item "evh_ferdinand"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m3a1_transport (generated)
-	{Extension "../../../../-vehicle/usa/btr/m3a1_transport/m3a1_transport.mdl"}
+	{Extension "m3a1_transport.mdl"}
 	{extender "stuff"
 		{item "evh_m3a1_transport"}
 	}

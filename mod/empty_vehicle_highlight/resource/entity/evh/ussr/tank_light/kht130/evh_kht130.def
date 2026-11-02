@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kht130 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/kht130/kht130.mdl"}
+	{Extension "kht130.mdl"}
 	{extender "stuff"
 		{item "evh_kht130"}
 	}

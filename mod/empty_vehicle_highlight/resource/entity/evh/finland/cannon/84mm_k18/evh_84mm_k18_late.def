@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 84mm_k18_late (generated)
-	{Extension "../../../../-vehicle/finland/cannon/84mm_k18/84mm_k18.mdl"}
+	{Extension "84mm_k18.mdl"}
 	{extender "stuff"
 		{item "evh_84mm_k18_late"}
 	}

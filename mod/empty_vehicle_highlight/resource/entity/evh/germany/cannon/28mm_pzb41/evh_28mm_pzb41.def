@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 28mm_pzb41 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/28mm_pzb41/28mm_pzb41.mdl"}
+	{Extension "28mm_pzb41.mdl"}
 	{extender "stuff"
 		{item "evh_28mm_pzb41"}
 	}

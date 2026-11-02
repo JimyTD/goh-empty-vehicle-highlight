@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wagon1a_ammo (generated)
-	{Extension "../../../../-vehicle/generic/train/wagon1a/wagon1a_ammo.mdl"}
+	{Extension "wagon1a_ammo.mdl"}
 	{extender "stuff"
 		{item "evh_wagon1a_ammo"}
 	}

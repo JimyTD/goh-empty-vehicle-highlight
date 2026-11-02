@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "/entity/-vehicle/ussr/airborne/yak1_ser69/prop_work"}
+	{blend blend}
+}

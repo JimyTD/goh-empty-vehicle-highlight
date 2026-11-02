@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/zis5_wheel"}
+	{bump "$/_vehicle/zis5_wheel_bp"}
+	{specular "$/_vehicle/zis5_wheel_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

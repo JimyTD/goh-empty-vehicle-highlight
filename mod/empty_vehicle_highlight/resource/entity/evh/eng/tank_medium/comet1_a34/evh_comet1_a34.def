@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for comet1_a34 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/comet1_a34/comet1_a34.mdl"}
+	{Extension "comet1_a34.mdl"}
 	{extender "stuff"
 		{item "evh_comet1_a34"}
 	}

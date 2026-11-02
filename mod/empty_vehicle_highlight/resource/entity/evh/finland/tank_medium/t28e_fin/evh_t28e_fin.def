@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t28e_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_medium/t28e_fin/t28e_fin.mdl"}
+	{Extension "t28e_fin.mdl"}
 	{extender "stuff"
 		{item "evh_t28e_fin"}
 	}

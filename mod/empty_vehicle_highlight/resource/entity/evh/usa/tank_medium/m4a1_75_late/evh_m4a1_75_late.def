@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m4a1_75_late (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m4a1_75_late/m4a1_75_late.mdl"}
+	{Extension "m4a1_75_late.mdl"}
 	{extender "stuff"
 		{item "evh_m4a1_75_late"}
 	}

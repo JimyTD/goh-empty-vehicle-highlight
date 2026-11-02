@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bedford_oyd_art_ammo (generated)
-	{Extension "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/bedford_oyd_art_ammo.mdl"}
+	{Extension "bedford_oyd_art_ammo.mdl"}
 	{extender "stuff"
 		{item "evh_bedford_oyd_art_ammo"}
 	}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/ger/geschutzwagen"}
+	{bump "$/_vehicle/ger/geschutzwagen_bp"}
+	{specular "$/_vehicle/ger/geschutzwagen_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

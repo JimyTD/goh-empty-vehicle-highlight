@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "/entity/-vehicle/placeholder/generic/marine/ya5_k/dshk"}
+	{blend test}
+}

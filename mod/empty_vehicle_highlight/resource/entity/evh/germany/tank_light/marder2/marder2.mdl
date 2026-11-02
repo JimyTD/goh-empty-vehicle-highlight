@@ -1,0 +1,1077 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: turret
+;Exported by:	 nic21
+;Date:			 05.08.2025 18:16:41
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_light\marder2\Sd.Kfz.131.max
+{skeleton
+	{animation
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_light/marder2/fire.anm"} {speed 1}}
+		{sequence "start" {file "../../../../-vehicle/germany/tank_light/marder2/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_light/marder2/stop.anm"} {speed 0.6}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_light/marder2/hit.anm"} {speed 0.8}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.32;"}
+		{limits -0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_light/marder2/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.0104 	 -0.4414 	 16.045}
+			{VolumeView "../../../../-vehicle/germany/tank_light/marder2/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/marder2/engine_r.anm"}{speed 0.5}}
+				}
+				{Position -30.5843 	 0.4338 	 11.1601}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						-0.1736 	 0 	 0.9848
+						-0.9848 	 0 	 -0.1736
+						0 	 -1 	 0
+						-5.5438 	 -8.6251 	 1.2477
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.8293 	 0 	 0.5588
+						-0.5588 	 0 	 -0.8293
+						0 	 -1 	 0
+						-16.3203 	 -12.1069 	 -3.4074
+					}
+				}
+				{bone "detail1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.7945 	 -0.6073 	 0
+						0.6073 	 0.7945 	 0
+						0 	 0 	 1
+						-0.6983 	 7.2913 	 6.7241
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/detail1.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=engine;"}
+					{Position 4.5856 	 -8.2125 	 5.9859}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/detail2.ply"}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/marder2/turret_r.anm"}{speed 0.2}}
+				}
+				{limits -12 12}
+				{Position 16.2726 	 2.1316 	 13.9626}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{limits -8 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.8783 	 0.263 	 9.8124
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{animation
+							{sequence "repair" {file "../../../../-vehicle/germany/tank_light/marder2/gun_r.anm"}{speed 0.7}}
+						}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.4758 	 -1.4822 	 -0.5446
+						}
+						
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-10.4702 	 -0.4717 	 0.0409
+							}
+						}
+					}
+					{bone "visor1"
+						{Position -2.0324 	 7.2076 	 -7.2473}
+					}
+					{bone "foresight1"
+						{Position 59.5461 	 -1.5904 	 0.0133}
+					}
+				}
+				{bone "gun_shield"
+					{parameters "id=turret;"}
+					
+					{bone revolute "mgun_a_rot1"
+						{parameters "id=body;"}
+						{limits -50 50}
+						{Position -6.9916 	 -11.7748 	 13.5292}
+						
+						{bone revolute "mgun_a_rot2"
+							{parameters "id=body;"}
+							{limits -10 30}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								-0.4886 	 0 	 2.3295
+							}
+							
+							{bone "mgun2"
+								{Position -6.9026 	 -0.6973 	 0.0364}
+							}
+							{bone "mgun_rot"
+								{Position -6.9026 	 -0.6973 	 0.0364}
+							}
+						}
+					}
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "radius=0.42;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					39.3072 	 18.6352 	 -2.5117
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell1.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "radius=0.34;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-37.9853 	 19.2743 	 -3.6711
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell7.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "radius=0.34;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-37.9853 	 -18.3825 	 -3.6711
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr7.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 11.641 	 0 	 24.0667}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/detail3.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/detail3_lod1.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/detail3_lod2.ply"}
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-27.9108 	 20.4341 	 9.1921
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.766 	 0.6428 	 0
+					-0.6428 	 -0.766 	 0
+					0 	 0 	 1
+					-39.8916 	 19.1912 	 8.1443
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-39.4734 	 -4.0765 	 3.1822
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-25.3994 	 -21.1548 	 9.1921
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					31.9439 	 8.1532 	 10.0131
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					-1 	 0 	 0
+					0 	 -1 	 0
+					4.5889 	 0.4693 	 -6.5123
+				}
+			}
+			{bone "ammo1"
+				{Position -30.6812 	 11.3579 	 7.7933}
+			}
+			{bone "headlightr"
+				{Position 38.8836 	 -19.3943 	 9.6641}
+			}
+			{bone revolute "wheell8"
+				{parameters "radius=0.11;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.382 	 17.6734 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "radius=0.11;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					6.653 	 17.6734 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "radius=0.11;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.2915 	 17.6734 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "radius=0.11;id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.775 	 17.6734 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell11.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "radius=0.11;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.382 	 -16.7817 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "radius=0.11;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					6.653 	 -16.7817 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "radius=0.11;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.2915 	 -16.7817 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "radius=0.11;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.775 	 -16.7817 	 2.3118
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "radius=0.42;id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					39.307 	 -18.4526 	 -2.5119
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr1.ply"}
+			}
+			{bone "suspension"
+				{parameters "id=body;"}
+				{Position 11.641 	 0 	 24.0667}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/suspension.ply"}
+			}
+			{bone "driver"
+				{Position 15.2023 	 7.2906 	 -8.9787}
+			}
+			{bone "gunner"
+				{matrix34
+					0.5 	 -0.866 	 0
+					0.866 	 0.5 	 0
+					0 	 0 	 1
+					5.9238 	 13.7361 	 1.9398
+				}
+			}
+			{bone "charger"
+				{matrix34
+					0.9962 	 -0.0872 	 0
+					0.0872 	 0.9962 	 0
+					0 	 0 	 1
+					-13.4571 	 10.9682 	 1.0231
+				}
+			}
+			{bone "commander"
+				{matrix34
+					0.9962 	 -0.0872 	 0
+					0.0872 	 0.9962 	 0
+					0 	 0 	 1
+					-8.0199 	 -9.3175 	 5.4701
+				}
+			}
+			{bone "turret_shield"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/turret_shield.ply"}
+			}
+			{bone "ammo2"
+				{Position -30.6812 	 -17.5558 	 7.7933}
+			}
+			{bone "transmission"
+				{Position 37.6522 	 -13.2684 	 -4.5483}
+			}
+			{bone "fuel"
+				{Position -2.5607 	 -10.9245 	 -7.5134}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-23.1862 	 -36.304 	 -0.0595
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.1152 	 -0.9932 	 -0.0146
+				0.9915 	 -0.1141 	 -0.0621
+				0.06 	 -0.0216 	 0.998
+				-18.3054 	 33.4438 	 -0.0595
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				-0.1152 	 -0.9932 	 -0.0146
+				0.9915 	 -0.1141 	 -0.0621
+				0.06 	 -0.0216 	 0.998
+				-32.596 	 31.9688 	 -0.0595
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0.287 	 -0.9578 	 -0.0146
+				0.9558 	 0.2874 	 -0.0621
+				0.0637 	 0.0039 	 0.998
+				-47.9763 	 30.7624 	 -0.0595
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{Position -58.7367 	 -7.3003 	 -0.0595}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-35.9618 	 -33.8909 	 -0.0595
+			}
+		}
+		{bone revolute "roller_01_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-37.2289 	 19.6541 	 6.3068
+			}
+			{bone "roller_01"
+				{parameters "radius=0.31;"}
+				{Position 12.0943 	 0.3976 	 -0.038}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0113 	 0.0021 	 0.9714
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell6.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_02_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-24.7193 	 19.6541 	 6.5822
+			}
+			{bone "roller_02"
+				{parameters "radius=0.31;"}
+				{Position 12.1484 	 0.0694 	 -0.038}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.099 	 0.0549 	 0.9714
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell5.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_03_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-11.648 	 19.6541 	 6.6296
+			}
+			{bone "roller_03"
+				{parameters "radius=0.31;"}
+				{Position 11.49 	 0.0694 	 -0.038}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0584 	 0.0074 	 0.9714
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell4.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_04_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				0.2743 	 19.6541 	 6.6344
+			}
+			{bone "roller_04"
+				{parameters "radius=0.31;"}
+				{Position 11.9419 	 0.0694 	 -0.038}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.021 	 0.0026 	 0.9714
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell3.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_05_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				12.7348 	 19.6541 	 6.6837
+			}
+			{bone "roller_05"
+				{parameters "radius=0.31;"}
+				{Position 11.9698 	 0.0694 	 -0.038}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0139 	 -0.0466 	 0.9714
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheell2.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_06_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-37.2289 	 -20.0381 	 6.3068
+			}
+			{bone "roller_06"
+				{parameters "radius=0.31;"}
+				{Position 12.0943 	 0.3976 	 -0.204}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0115 	 0.0023 	 -1.8073
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr6.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_07_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-24.7193 	 -20.0381 	 6.5822
+			}
+			{bone "roller_07"
+				{parameters "radius=0.31;"}
+				{Position 12.1048 	 0.0694 	 -0.204}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0552 	 0.0551 	 -1.8073
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr5.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_08_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				-11.648 	 -20.0381 	 6.6296
+			}
+			{bone "roller_08"
+				{parameters "radius=0.31;"}
+				{Position 11.5603 	 0.0694 	 -0.204}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.1285 	 0.0076 	 -1.8073
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr4.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_09_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				0.2743 	 -20.0381 	 6.6344
+			}
+			{bone "roller_09"
+				{parameters "radius=0.31;"}
+				{Position 11.9604 	 0.0694 	 -0.204}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0027 	 0.0028 	 -1.8073
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr3.ply"}
+				}
+			}
+		}
+		{bone revolute "roller_10_joint"
+			{limits -10 10}
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				12.7348 	 -20.0381 	 6.6837
+			}
+			{bone "roller_10"
+				{parameters "radius=0.31;"}
+				{Position 12.0437 	 0.0694 	 -0.204}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0876 	 -0.0464 	 -1.8073
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelr2.ply"}
+				}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=body;"}
+			{Position 10.6305 	 -0.4413 	 40.1117}
+			{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelsl.ply"}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9814 	 0 	 0.1921
+					-0.1921 	 0 	 -0.9814
+					0 	 -1 	 0
+					-38.7933 	 20.3028 	 -39.3259
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					-10.8269 	 20.3028 	 -39.4041
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position -10.6979 	 20.3187 	 -29.2295}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/trackl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=body;"}
+			{Position 10.6305 	 -0.4414 	 40.1117}
+			{VolumeView "../../../../-vehicle/germany/tank_light/marder2/wheelsr.ply"}
+			{bone "fxtracer1"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					-10.8285 	 -19.3012 	 -39.4446
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9814 	 0 	 0.1921
+					-0.1921 	 0 	 -0.9814
+					0 	 -1 	 0
+					-38.7966 	 -19.3012 	 -39.329
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position -10.6979 	 -19.264 	 -29.2295}
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/trackr.ply"}
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 21.5734 21.0016 6.1081}
+	{bone "ammo1"}
+	{Position 0 	 0 	 3.054}
+}
+{volume "ammo2"
+	{box 21.5734 5.94004 6.1081}
+	{bone "ammo2"}
+	{Position 0 	 0 	 3.0541}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/armor1.vol"}
+	{bone "body"}
+	{Position 23.4706 	 1.856 	 12.7946}
+}
+{volume "barrel1"
+	{box 3.06615 3.55823 40.8858}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 -1
+		-1 	 0 	 0
+		-3.5395 	 -5.4361 	 0.009
+	}
+}
+{volume "barrel2"
+	{box 5.61517 4.84063 9.47287}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		-5.7024 	 -0.4354 	 0.4504
+	}
+}
+{volume "barrel3"
+	{cylinder 1.2122 62.7328}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		30.4004 	 -0.4897 	 0.0855
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/body1.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		1.7944 	 16.0564 	 -1.3831
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/body2.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		18.5415 	 2.3933 	 10.2002
+	}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/body3.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-28.0862 	 23.3923 	 9.9541
+	}
+}
+{volume "detail1"
+	{box 19.3109 9.73782 4.9437}
+	{bone "detail1"}
+	{matrix34
+		0.4937 	 0.8689 	 0.0349
+		-0.8674 	 0.4949 	 -0.0523
+		-0.0627 	 -0.0044 	 0.998
+		0.0518 	 -0.0334 	 -0.0782
+	}
+}
+{volume "detail2"
+	{box 9.5705 7.40074 2.81791}
+	{bone "detail2"}
+	{matrix34
+		0.5863 	 -0.809 	 0.0414
+		0.8081 	 0.5877 	 0.0397
+		-0.0564 	 0.0102 	 0.9984
+		-0.041 	 -0.0011 	 -0.0182
+	}
+}
+{volume "detail3"
+	{box 15.0985 36.4721 0.393701}
+	{bone "detail3"}
+	{Position -2.8535 	 0.3716 	 3.9245}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/engine1.vol"}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		31.33 	 15.6208 	 -12.2779
+	}
+}
+{volume "fuel"
+	{box 22.6772 5.5315 13.8583}
+	{bone "fuel"}
+	{Position 0 	 0 	 6.9291}
+}
+{volume "gun_shield1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/gun_shield1.vol"}
+	{bone "gun_shield"}
+	{Position -1.3912 	 0.3254 	 6.8998}
+}
+{volume "gun_shield2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/gun_shield2.vol"}
+	{bone "gun_shield"}
+	{Position -1.3912 	 0.3254 	 6.8998}
+}
+{volume "gun_shield3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/gun_shield3.vol"}
+	{bone "gun_shield"}
+	{Position -1.3912 	 0.3254 	 6.8998}
+}
+{volume "gun_shield4"
+	{box 6.86692 12.9535 0.702299}
+	{bone "gun_shield"}
+	{matrix34
+		0 	 1 	 0
+		-0.2777 	 0 	 0.9607
+		0.9607 	 0 	 0.2777
+		1.2094 	 12.3028 	 6.8527
+	}
+}
+{volume "gun_shield5"
+	{box 6.86692 12.9535 0.702299}
+	{bone "gun_shield"}
+	{matrix34
+		0 	 1 	 0
+		-0.2777 	 0 	 0.9607
+		0.9607 	 0 	 0.2777
+		1.2094 	 -11.4882 	 6.8527
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -12.0506 	 20.3891 	 -38.7666}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -12.0506 	 -19.4076 	 -38.7666}
+}
+{volume "hole3"
+	{box 27.3322 28.5545 12.3679}
+	{bone "body"}
+	{Position 5.6119 	 0.4145 	 1.8948}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/hole4.vol"}
+	{bone "gun_shield"}
+	{Position 4.8318 	 0.4215 	 -2.0818}
+}
+{volume "hole5"
+	{box 7.08887 1.57322 1.76663}
+	{bone "gun_shield"}
+	{Position 0.7772 	 7.4883 	 8.8923}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/ram.vol"}
+	{bone "body"}
+	{Position 1.1177 	 0.5273 	 -16.0412}
+}
+{volume "trackleft1"
+	{cylinder 7.26147 1.24735}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0002 	 0.0002 	 1.5824
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.71769 2.01186}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0002 	 -0.0002 	 1.0345
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.71769 2.01186}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0002 	 -0.0002 	 1.0085
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.71769 2.01186}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0002 	 -0.0002 	 1.0085
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.71769 2.01186}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0002 	 -0.0002 	 1.0345
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.71769 2.01186}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0002 	 -0.0002 	 1.0345
+	}
+}
+{volume "trackleft7"
+	{cylinder 6.9326 2.48735}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 1.0857
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -12.0506 	 20.385 	 -39.479}
+}
+{volume "trackright1"
+	{cylinder 7.26147 1.24735}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.8582
+	}
+}
+{volume "trackright2"
+	{cylinder 5.71769 2.01186}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1996
+	}
+}
+{volume "trackright3"
+	{cylinder 5.71769 2.01186}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1996
+	}
+}
+{volume "trackright4"
+	{cylinder 5.71769 2.01186}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1996
+	}
+}
+{volume "trackright5"
+	{cylinder 5.71769 2.01186}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1996
+	}
+}
+{volume "trackright6"
+	{cylinder 5.71769 2.01186}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1996
+	}
+}
+{volume "trackright7"
+	{cylinder 6.9326 2.48735}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.1142
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -12.0506 	 -19.4076 	 -39.479}
+}
+{volume "transmission"
+	{cylinder 3.60829 27.6968}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		0 	 13.8484 	 0
+	}
+}
+{volume "tshield1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/tshield1.vol"}
+	{bone "turret_shield"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -0.229 	 0.9734
+		0 	 -0.9734 	 -0.229
+		-0.1871 	 21.602 	 17.4924
+	}
+}
+{volume "tshield2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/tshield2.vol"}
+	{bone "turret_shield"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.2317 	 0.9728
+		0 	 -0.9728 	 0.2317
+		-0.1871 	 -20.2756 	 17.4924
+	}
+}
+{volume "tshield3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/tshield3.vol"}
+	{bone "turret_shield"}
+	{Position 18.7743 	 19.504 	 17.7872}
+}
+{volume "tshield4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/marder2/tshield4.vol"}
+	{bone "turret_shield"}
+	{matrix34
+		0.4945 	 0.8692 	 0
+		-0.1231 	 0.0701 	 0.9899
+		0.8604 	 -0.4895 	 0.1417
+		16.9302 	 -15.9382 	 17.8729
+	}
+}

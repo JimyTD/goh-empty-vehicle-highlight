@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sherman1c (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/sherman1c/sherman1c.mdl"}
+	{Extension "sherman1c.mdl"}
 	{extender "stuff"
 		{item "evh_sherman1c"}
 	}

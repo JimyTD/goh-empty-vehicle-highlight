@@ -1,0 +1,481 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: gun gun_rot sandbag shield_lower standl standr turret
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/recoil.anm"} {speed 0.75}}
+		{sequence "close" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/close.anm"} {speed 0.6}}
+		{sequence "shell_eject" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/shell_eject.anm"} {speed 0.8}}
+		{sequence "aim_v" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/aim_h.anm"} {speed 1}{resume}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.57;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 11.1338}
+			{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{Position -7.6789 	 0 	 2.5311}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/gun_r.anm"}{speed 0.6}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-1.4014 	 0 	 9.8241
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-1.766 	 0.0049 	 0
+						}
+						
+						{bone "breech"
+							{parameters "id=gun;"}
+							{Position -4.1688 	 -0.0332 	 -0.2228}
+							
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-7.1981 	 0 	 -0.1334
+							}
+						}
+						{bone "foresight1"
+							{Position 59.9329 	 0 	 -0.0036}
+						}
+						{bone "lever"
+							{parameters "id=gun;"}
+							{Position -5.893 	 -1.7272 	 2.9402}
+							
+						}
+					}
+				}
+				{bone "sight"
+					{parameters "id=body;"}
+					{Position -1.3997 	 6.2932 	 9.8257}
+					
+				}
+				{bone "hydraulic_cylinder"
+					{parameters "id=body;"}
+					{Position 3.2928 	 -4.3948 	 11.0271}
+					
+				}
+				{bone "visor"
+					{Position 6.4125 	 7.1069 	 17.8933}
+				}
+				{bone "aim_v"
+					{parameters "id=body;"}
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						-1.1248 	 -8.1025 	 3.0116
+					}
+					
+				}
+				{bone "shield1"
+					{parameters "id=shield1;"}
+					{Position 0.4943 	 0 	 9.6141}
+					
+				}
+				{bone "aim_hor"
+					{parameters "id=body;"}
+					{matrix34
+						0.8192 	 -0.5736 	 0
+						0.5736 	 0.8192 	 0
+						0 	 0 	 1
+						-4.6847 	 4.9895 	 2.555
+					}
+					
+				}
+			}
+			{bone "shield_lower"
+				{parameters "id=shield_lower;"}
+				{matrix34
+					0.7997 	 0 	 -0.6004
+					0 	 1 	 0
+					0.6004 	 0 	 0.7997
+					8.0265 	 -12.7837 	 -3.0638
+				}
+				
+			}
+			{bone "standl"
+				{parameters "id=body;"}
+				{Position -8.9111 	 8.5834 	 -1.298}
+				
+				{bone "detail1"
+					{parameters "id=body;"}
+					{Position -17.123 	 13.5357 	 -1.5378}
+					
+				}
+				{bone "fixer"
+					{parameters "id=body;"}
+					{matrix34
+						0.7206 	 -0.6674 	 0.1879
+						0.6872 	 0.7234 	 -0.0666
+						-0.0915 	 0.1771 	 0.9799
+						-17.3862 	 8.7398 	 -1.4843
+					}
+					
+				}
+				{bone "seat1"
+					{matrix34
+						0.5851 	 0.8108 	 -0.0158
+						-0.7989 	 0.573 	 -0.1828
+						-0.1392 	 0.1196 	 0.983
+						-11.4429 	 8.025 	 -9.5437
+					}
+				}
+				{bone "seat4"
+					{matrix34
+						0.5851 	 0.8108 	 -0.0158
+						-0.7989 	 0.573 	 -0.1828
+						-0.1392 	 0.1196 	 0.983
+						-22.7099 	 16.7841 	 -12.2047
+					}
+				}
+			}
+			{bone "standr"
+				{parameters "id=body;"}
+				{Position -8.9111 	 -8.5466 	 -1.298}
+				
+				{bone "detail2"
+					{parameters "id=body;"}
+					{Position -16.9578 	 -13.468 	 -2.5587}
+					
+				}
+				{bone "dragbar"
+					{parameters "id=body;"}
+					{matrix34
+						0.8639 	 0.4788 	 0.1564
+						-0.4871 	 0.8732 	 0.0172
+						-0.1283 	 -0.0911 	 0.9875
+						-39.7926 	 -22.6715 	 -6.0757
+					}
+					
+				}
+				{bone "seat2"
+					{matrix34
+						0.4848 	 -0.8738 	 -0.0369
+						0.8634 	 0.4714 	 0.1798
+						-0.1397 	 -0.119 	 0.983
+						-12.0911 	 -9.329 	 -9.7392
+					}
+				}
+				{bone "seat3"
+					{matrix34
+						0.4848 	 -0.8738 	 -0.0369
+						0.8634 	 0.4714 	 0.1798
+						-0.1397 	 -0.119 	 0.983
+						-25.5273 	 -17.9398 	 -12.6912
+					}
+				}
+			}
+			{bone "shield2"
+				{parameters "id=shield2;"}
+				{Position 8.8766 	 0 	 0.2107}
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/shield2.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 0 	 0 	 11.1338}
+			{bone "fxtracer1"
+				{Position 0.5709 	 -16.9624 	 -7.7941}
+			}
+			{bone "fxtracel1"
+				{Position 0.5709 	 16.917 	 -7.7941}
+			}
+			{bone "susp"
+				{parameters "id=body;"}
+				{Position -5.8411 	 0.0184 	 -0.0367}
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/susp.ply"}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position 0 	 17.0839 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.57;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/wheell.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position 0 	 -16.9273 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.57;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/wheelr.ply"}
+				}
+			}
+		}
+		{bone "emit2"
+			{Position -36.025 	 -12.5446 	 0}
+		}
+		{bone "emit1"
+			{Position -35.4562 	 11.7089 	 0}
+		}
+		{bone "driver2"
+			{Position -23.2366 	 -15.9035 	 0.0408}
+		}
+		{bone "driver1"
+			{Position -22.4981 	 15.9234 	 0.0408}
+		}
+		{bone "link1"
+			{Position -68.0167 	 0.0352 	 14.3352}
+		}
+		{bone "gunner"
+			{matrix34
+				0.9204 	 -0.391 	 0
+				0.391 	 0.9204 	 0
+				0 	 0 	 1
+				-24.5399 	 16.1037 	 0.0408
+			}
+		}
+		{bone "charger"
+			{matrix34
+				0.9756 	 0.2194 	 0
+				-0.2194 	 0.9756 	 0
+				0 	 0 	 1
+				-25.7143 	 -13.6862 	 0.0408
+			}
+		}
+		{bone "charger2"
+			{matrix34
+				0.9756 	 0.2194 	 0
+				-0.2194 	 0.9756 	 0
+				0 	 0 	 1
+				-54.6515 	 -15.3992 	 0.0408
+			}
+		}
+		{bone "commander"
+			{matrix34
+				0.9204 	 -0.391 	 0
+				0.391 	 0.9204 	 0
+				0 	 0 	 1
+				-54.6836 	 17.7395 	 0.0408
+			}
+		}
+		{bone "driver3"
+			{Position -54.6527 	 -7.9957 	 0.0408}
+		}
+		{bone "driver4"
+			{Position -54.6527 	 8.4945 	 0.0408}
+		}
+		{bone "emit3"
+			{Position -57.6422 	 -16.0443 	 0}
+		}
+		{bone "emit4"
+			{Position -57.6422 	 17.4744 	 0}
+		}
+		{bone revolute "sandbag"
+			{Position 5.9826 	 0 	 0}
+		}
+	}
+}
+{obstacle "close"
+	{obb2
+		{center -38.3004 0.0150032}
+		{extent 26.1542 8.79875}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "close"}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 0.0345182 6.67572e-006}
+		{extent 11.2976 18.0216}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "openl"
+	{obb2
+		{center -32.4648 -24.4458}
+		{extent 27.6747 2.13588}
+		{axis 0.829206 0.558943}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{obstacle "openr"
+	{obb2
+		{center -31.8019 24.2068}
+		{extent 2.04432 27.6688}
+		{axis 0.545062 0.838396}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{volume "barrel1"
+	{box 3.01349 3.89764 60.1417}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		4.8822 	 -4.2693 	 0.0117
+	}
+}
+{volume "barrel2"
+	{cylinder 1.08242 30.7102}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		14.118 	 4.4718 	 0
+	}
+}
+{volume "barrel3"
+	{cylinder 2.22034 53.8617}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		28.9039 	 0.1409 	 -0.0032
+	}
+}
+{volume "body1"
+	{box 26.2391 3.51095 11.1331}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-4.2986 	 -0.2478 	 -0.2056
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/cannon/105mm_lefh18_40/body2.vol"}
+	{bone "turret"}
+	{Position 0.8839 	 -0.0312 	 5.223}
+}
+{volume "hole1"
+	{box 2.03367 5.7176 18.9664}
+	{bone "shield1"}
+	{matrix34
+		0.8746 	 0 	 0.4848
+		0 	 1 	 0
+		-0.4848 	 0 	 0.8746
+		5.4733 	 0.0016 	 0.9438
+	}
+}
+{volume "hole2"
+	{box 2.03367 2.67739 3.18763}
+	{bone "shield1"}
+	{matrix34
+		0.8746 	 0 	 0.4848
+		-0.0085 	 0.9998 	 0.0153
+		-0.4847 	 -0.0175 	 0.8745
+		1.4306 	 7.9948 	 7.9357
+	}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/cannon/105mm_lefh18_40/hole3.vol"}
+	{bone "turret"}
+	{Position -0.0979 	 0 	 7.4279}
+}
+{volume "select"
+	{box 39.5759 37.5067 29.1662}
+	{bone "basis"}
+	{Position -3.2224 	 0 	 14.5831}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/germany/cannon/105mm_lefh18_40/shield1.vol"}
+	{bone "shield1"}
+	{Position 4.9391 	 0.0003 	 1.6701}
+}
+{volume "shield2"
+	{box 0.426399 5.92695 29.1117}
+	{bone "shield2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-1.1612 	 -0.0013 	 -0.0086
+	}
+}
+{volume "shield_lower"
+	{box 29.25 5.57455 0.440045}
+	{bone "shield_lower"}
+	{matrix34
+		0 	 1 	 0
+		-0.6004 	 0 	 0.7997
+		0.7997 	 0 	 0.6004
+		1.2646 	 12.735 	 -2.2048
+	}
+}
+{volume "standl"
+	{cylinder 1.19616 53.8995}
+	{bone "standl"}
+	{matrix34
+		-0.5591 	 -0.8291 	 -0.0009
+		-0.1445 	 0.0963 	 0.9848
+		-0.8164 	 0.5508 	 -0.1736
+		-22.0787 	 14.8424 	 -2.7926
+	}
+}
+{volume "standr"
+	{cylinder 1.19616 53.8995}
+	{bone "standr"}
+	{matrix34
+		0.5593 	 -0.829 	 -0.0009
+		-0.1435 	 -0.0979 	 0.9848
+		-0.8165 	 -0.5506 	 -0.1736
+		-22.0811 	 -14.7896 	 -2.7927
+	}
+}
+{volume "wheelleft"
+	{cylinder 11.2205 2.93268}
+	{bone "wheell"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4317
+	}
+}
+{volume "wheelright"
+	{cylinder 11.2205 2.93268}
+	{bone "wheelr"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4354
+	}
+}

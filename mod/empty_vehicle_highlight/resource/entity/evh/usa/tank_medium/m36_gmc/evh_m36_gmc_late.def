@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m36_gmc_late (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m36_gmc/m36_gmc.mdl"}
+	{Extension "m36_gmc.mdl"}
 	{extender "stuff"
 		{item "evh_m36_gmc_late"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdah_57_1 (generated)
-	{Extension "../../../../-vehicle/germany/trailer/sdah_57_1/sdah_57_1.mdl"}
+	{Extension "sdah_57_1.mdl"}
 	{extender "stuff"
 		{item "evh_sdah_57_1"}
 	}

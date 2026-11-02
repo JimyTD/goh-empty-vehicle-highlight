@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for air-bag (generated)
-	{Extension "../../../../../-vehicle/placeholder/generic/marine/air-bag/air-bag.mdl"}
+	{Extension "air-bag.mdl"}
 	{extender "stuff"
 		{item "evh_air-bag"}
 	}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/m4a3_calliope"}
+	{bump "$/_vehicle/m4a3_calliope_bp"}
+	{specular "$/_vehicle/m4a3_calliope_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

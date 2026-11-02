@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/bedford_qld"}
+	{bump "$/_vehicle/eng/bedford_qld_bp"}
+	{specular "$/_vehicle/eng/bedford_qld_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

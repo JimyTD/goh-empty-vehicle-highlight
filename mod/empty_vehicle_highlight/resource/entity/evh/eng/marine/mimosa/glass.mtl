@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/eng/mimosa_chain"}
+	{envmap "$/_vehicle/general/envmap_gold01"}
+	{mask "$/_vehicle/eng/mimosa_chain_sp"}
+	{blend blend}
+}

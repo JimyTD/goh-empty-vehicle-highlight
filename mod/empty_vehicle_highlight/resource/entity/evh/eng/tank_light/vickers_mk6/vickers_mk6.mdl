@@ -1,0 +1,721 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;Exported by:	 guita
+;Date:			 22.10.2025 12:52:17
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Vickers_MK_VI\Vickers_mkVIB.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/hit.anm"} {speed 0.8}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/open.anm"} {speed 0.4}{resume} {events {2 "hatch_light"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/open_driver.anm"} {speed 0.2}{events {2 "hatch_light"} {46 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.27;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.1501 	 0 	 12.96}
+			{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_r.anm"}{speed 0.7}}
+				}
+				{Position -9.6228 	 0 	 16.0806}
+				
+				{bone "turret_hatchl1"
+					{parameters "id=turret;"}
+					{Position 5.9679 	 9.8077 	 11.4697}
+					
+				}
+				{bone "turret_hatchl2"
+					{parameters "id=turret;"}
+					{Position -6.0972 	 5.4391 	 11.4892}
+					
+				}
+				{bone revolute "cupola"
+					{parameters "id=turret;"}
+					{Position -0.8256 	 -6.6174 	 11.4594}
+					
+					{bone "turret_hatchr1"
+						{parameters "id=turret;"}
+						{Position 5.0457 	 -1.9249 	 5.3413}
+						
+					}
+					{bone "turret_hatchr2"
+						{parameters "id=turret;"}
+						{Position -5.0197 	 1.6697 	 5.3593}
+						
+					}
+					{bone "visor1"
+						{Position 7.3664 	 0 	 1.8995}
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.8611 	 -0.0301 	 0.5075
+						0.0349 	 0.9994 	 0
+						-0.5072 	 0.0177 	 0.8616
+						5.6936 	 16.2663 	 10.16
+					}
+					{bone "smoke_shot1"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							5.2865 	 0 	 -0.0049
+						}
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.7679 	 -6.6672 	 9.7298
+					}
+				}
+				{bone "fxsmoke_shot2"
+					{matrix34
+						0.8604 	 0.0451 	 0.5075
+						-0.0523 	 0.9986 	 0
+						-0.5068 	 -0.0266 	 0.8616
+						5.6936 	 -16.3865 	 10.16
+					}
+					{bone "smoke_shot2"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							5.2865 	 0 	 -0.0049
+						}
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						10.5251 	 1.5349 	 6.1449
+					}
+					
+					{bone "foresight1"
+						{Position 14.0141 	 -0.9025 	 2.8948}
+					}
+					{bone "foresight3"
+						{Position 11.3427 	 -0.8498 	 -1.3037}
+					}
+					{bone "sight"
+						{Position 2.1317 	 0.3833 	 -4.3756}
+					}
+				}
+			}
+			{bone "driver_hatch1"
+				{parameters "id=body;"}
+				{Position 19.6804 	 11.7689 	 14.9843}
+				
+			}
+			{bone "driver_hatch2"
+				{parameters "id=body;"}
+				{Position 29.6844 	 11.5616 	 7.6887}
+				
+			}
+			{bone "hatch"
+				{parameters "id=body;"}
+				{Position -29.5229 	 8.2597 	 11.5333}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/hatch.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -8.2246 	 17.8019 	 6.5894}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/detail1.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 15.3181 	 -7.821 	 4.8713}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/engine.ply"}
+				{bone "enumerator2"
+					{matrix34
+						0 	 0.9135 	 -0.4068
+						-1 	 0 	 0
+						0 	 0.4068 	 0.9135
+						0.6259 	 -12.4416 	 7.6926
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/enumerator2.ply"}
+				}
+				{bone "engine_hatch"
+					{parameters "id=engine;"}
+					{Position 4.6721 	 -5.2887 	 10.2205}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/engine_hatch.ply"}
+					{bone "holder"
+						{parameters "id=engine;"}
+						{Position 3.4547 	 7.5415 	 0.5238}
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/holder.ply"}
+					}
+				}
+			}
+			{bone revolute "wheell4"
+				{parameters "id=body;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.87 	 19.248 	 -0.2054
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell4.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=body;radius=0.29;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					31.9487 	 18.3372 	 -1.1291
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell1.ply"}
+			}
+			{bone revolute "wheelr4"
+				{parameters "id=body;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.87 	 -19.2478 	 -0.2054
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr4.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=body;radius=0.29;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					31.9487 	 -18.3372 	 -1.1291
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -21.1027 	 -18.2408 	 3.3795}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -20.3368 	 -15.5322 	 3.3596}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -20.952 	 17.8175 	 3.4748}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 4.0189 	 17.7789 	 6.5608}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/detail5.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-1 	 0.0035 	 -0.0078
+					-0.0036 	 -0.9998 	 0.0171
+					-0.0077 	 0.0171 	 0.9998
+					-35.4664 	 -17.3969 	 10.1186
+				}
+			}
+			{bone "fxfire1"
+				{matrix34
+					0 	 0 	 1
+					-1 	 0 	 0
+					0 	 -1 	 0
+					25.1751 	 -8.1954 	 2.5197
+				}
+			}
+			{bone "enumerator1"
+				{matrix34
+					0 	 0.9397 	 0.342
+					-1 	 0 	 0
+					0 	 -0.342 	 0.9397
+					-0.5189 	 14.958 	 12.8903
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/enumerator1.ply"}
+			}
+			{bone "enumerator3"
+				{Position -39.1085 	 -10.5128 	 7.1344}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/enumerator3.ply"}
+			}
+			{bone "armorlightl"
+				{matrix34
+					0.9816 	 0 	 -0.1908
+					0 	 1 	 0
+					0.1908 	 0 	 0.9816
+					21.3135 	 16.451 	 12.1083
+				}
+			}
+			{bone "armorlightr"
+				{matrix34
+					0.9816 	 0 	 -0.1908
+					0 	 1 	 0
+					0.1908 	 0 	 0.9816
+					23.3657 	 -19.2106 	 12.1083
+				}
+			}
+			{bone "fuel"
+				{Position -17.334 	 -10.106 	 -0.0663}
+			}
+			{bone "fxfire4"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					-10.0935 	 0 	 11.0145
+				}
+			}
+			{bone "transmission"
+				{Position 31.9034 	 -0.6068 	 -1.2131}
+			}
+			{bone "visor2"
+				{Position 22.118 	 4.5312 	 11.5416}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 1
+					0 	 1 	 0
+					-38.5432 	 -9.1016 	 11.2814
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 1
+					0 	 1 	 0
+					-38.5432 	 -11.876 	 11.2814
+				}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -1.1396 	 18.2727 	 8.9777}
+			{bone prizmatic "suspension_l2"
+				{limits -0.06 0.06}
+				{speed 0.18}
+				{Position 19.9361 	 -0.0078 	 -2.8475}
+				{bone revolute "wheell2"
+					{parameters "id=body;radius=0.27;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position 6.4076 	 -0.0078 	 -2.8475}
+				{bone revolute "wheell3"
+					{parameters "id=body;radius=0.27;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position -7.7492 	 -0.0078 	 -2.8475}
+				{bone revolute "wheell5"
+					{parameters "id=body;radius=0.27;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.06 0.06}
+				{speed 0.18}
+				{Position -21.5307 	 -0.0078 	 -2.8475}
+				{bone revolute "wheell6"
+					{parameters "id=body;radius=0.27;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheell6.ply"}
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-0.9707 	 0.1685 	 0.171
+					-0.1761 	 -0.9839 	 -0.0302
+					0.1632 	 -0.0594 	 0.9848
+					0.4363 	 0.0648 	 -8.9592
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9511 	 0 	 0.309
+					0 	 -1 	 0
+					0.309 	 0 	 0.9511
+					-26.6943 	 0.0648 	 -7.3675
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 5.3041 	 0.0184 	 0.1318}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/trackl.ply"}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/suspl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position -1.1396 	 -18.2727 	 8.9777}
+			{bone prizmatic "suspension_r2"
+				{limits -0.06 0.06}
+				{speed 0.18}
+				{Position 19.9361 	 0.0078 	 -2.8475}
+				{bone revolute "wheelr2"
+					{parameters "id=body;radius=0.27;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position 6.4076 	 0.0078 	 -2.8475}
+				{bone revolute "wheelr3"
+					{parameters "id=body;radius=0.27;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position -7.7492 	 0.0078 	 -2.8475}
+				{bone revolute "wheelr5"
+					{parameters "id=body;radius=0.27;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.06 0.06}
+				{speed 0.18}
+				{Position -21.5307 	 0.0078 	 -2.8475}
+				{bone revolute "wheelr6"
+					{parameters "id=body;radius=0.27;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/wheelr6.ply"}
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-0.9698 	 -0.1736 	 0.171
+					0.171 	 -0.9848 	 -0.0302
+					0.1736 	 0 	 0.9848
+					0.4363 	 -0.0039 	 -8.9592
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9511 	 0 	 0.309
+					0 	 -1 	 0
+					0.309 	 0 	 0.9511
+					-26.6943 	 -0.0039 	 -7.3675
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 5.3041 	 0.0284 	 0.1319}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/trackr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/suspr.ply"}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				51.7983 	 5.3758 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				6.164 	 34.835 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				5.4287 	 -31.6508 	 0
+			}
+		}
+	}
+}
+{volume "armor1"
+	{box 9.1832 14.6133 1.94844}
+	{bone "engine_hatch"}
+	{matrix34
+		0.9336 	 0 	 -0.3584
+		0 	 1 	 0
+		0.3584 	 0 	 0.9336
+		4.9948 	 4.1776 	 -1.579
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/barrel1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.106 	 -0.328 	 0.0037
+	}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/barrel2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.7406 	 -0.1105 	 0.7965
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/body1.vol"}
+	{bone "body"}
+	{Position 29.8774 	 6.7086 	 2.0702}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/body2.vol"}
+	{bone "body"}
+	{Position 12.9524 	 6.7086 	 4.1447}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/body3.vol"}
+	{bone "body"}
+	{Position -16.5387 	 -0.0034 	 4.1447}
+}
+{volume "cupola"
+	{cylinder 6.4303 6.51272}
+	{bone "turret"}
+	{Position -0.8377 	 -6.6264 	 13.6596}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/engine1.vol"}
+	{bone "engine"}
+	{Position 7.2764 	 -0.375 	 -0.7266}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/engine2.vol"}
+	{bone "engine_hatch"}
+	{Position 9.8887 	 3.6097 	 -5.7252}
+}
+{volume "fuel"
+	{box 12.0742 6.16641 10.4329}
+	{bone "fuel"}
+	{Position 0.5082 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 5.2681 	 0.1174 	 -0.0638}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 5.2681 	 0.1216 	 -0.0638}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/ram.vol"}
+	{bone "body"}
+	{Position 1.7734 	 0 	 -0.9753}
+}
+{volume "trackleft1"
+	{cylinder 5.83346 1.57795}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.47903 1.5779}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.47903 1.5779}
+	{bone "wheell3"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.47903 1.5779}
+	{bone "wheell5"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.47903 1.5779}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 5.3281 	 0.0117 	 0.2417}
+}
+{volume "trackright1"
+	{cylinder 5.83346 1.5779}
+	{bone "wheelr1"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright2"
+	{cylinder 5.47903 1.5779}
+	{bone "wheelr2"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright3"
+	{cylinder 5.47903 1.5779}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 5.47903 1.5779}
+	{bone "wheelr5"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright6"
+	{cylinder 5.47903 1.5779}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 5.3281 	 0.016 	 0.2417}
+}
+{volume "transmission"
+	{cylinder 2.32039 28.1469}
+	{bone "transmission"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.6702 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/turret1.vol"}
+	{bone "turret"}
+	{Position -1.9908 	 0 	 4.6385}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/turret2.vol"}
+	{bone "turret"}
+	{Position 12.6656 	 0 	 0.3182}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/vickers_mk6/turret3.vol"}
+	{bone "turret"}
+	{Position 10.5931 	 1.509 	 5.7888}
+}

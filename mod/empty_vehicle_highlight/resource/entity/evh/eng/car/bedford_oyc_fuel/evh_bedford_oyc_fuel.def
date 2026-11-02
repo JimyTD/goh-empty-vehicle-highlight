@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bedford_oyc_fuel (generated)
-	{Extension "../../../../-vehicle/eng/car/bedford_oyc_fuel/bedford_oyc_fuel.mdl"}
+	{Extension "bedford_oyc_fuel.mdl"}
 	{extender "stuff"
 		{item "evh_bedford_oyc_fuel"}
 	}

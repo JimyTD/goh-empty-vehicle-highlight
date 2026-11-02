@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/comet"}
+	{bump "$/_vehicle/eng/comet_bp"}
+	{specular "$/_vehicle/eng/comet_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

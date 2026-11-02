@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for renault_agr_civ (generated)
-	{Extension "../../../../-vehicle/generic/car/renault_agr_civ/renault_agr_civ.mdl"}
+	{Extension "renault_agr_civ.mdl"}
 	{extender "stuff"
 		{item "evh_renault_agr_civ"}
 	}

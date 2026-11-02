@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdkfz8_flak18 (generated)
-	{Extension "../../../../-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.mdl"}
+	{Extension "sdkfz8_flak18.mdl"}
 	{extender "stuff"
 		{item "evh_sdkfz8_flak18"}
 	}

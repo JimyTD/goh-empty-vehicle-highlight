@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m22_locust (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/m22_locust/m22_locust.mdl"}
+	{Extension "m22_locust.mdl"}
 	{extender "stuff"
 		{item "evh_m22_locust"}
 	}

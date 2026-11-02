@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for fi156 (generated)
-	{Extension "../../../../-vehicle/germany/airborne/fi156/fi156.mdl"}
+	{Extension "fi156.mdl"}
 	{extender "stuff"
 		{item "evh_fi156"}
 	}

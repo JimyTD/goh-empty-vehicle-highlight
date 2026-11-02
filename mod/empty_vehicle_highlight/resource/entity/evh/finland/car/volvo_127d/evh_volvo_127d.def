@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for volvo_127d (generated)
-	{Extension "../../../../-vehicle/finland/car/volvo_127d/volvo_127d.mdl"}
+	{Extension "volvo_127d.mdl"}
 	{extender "stuff"
 		{item "evh_volvo_127d"}
 	}

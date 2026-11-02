@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzer35s (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/panzer35s/panzer35s.mdl"}
+	{Extension "panzer35s.mdl"}
 	{extender "stuff"
 		{item "evh_panzer35s"}
 	}

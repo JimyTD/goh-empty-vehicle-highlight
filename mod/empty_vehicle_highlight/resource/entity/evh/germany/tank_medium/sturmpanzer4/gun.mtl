@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/brummbar_gun_late"}
+	{bump "$/_vehicle/brummbar_gun_late_bp"}
+	{specular "$/_vehicle/brummbar_gun_late_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

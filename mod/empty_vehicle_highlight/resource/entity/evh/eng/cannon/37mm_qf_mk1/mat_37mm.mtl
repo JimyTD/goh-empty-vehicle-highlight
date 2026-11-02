@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/37mm_bofors"}
+	{bump "$/_vehicle/eng/37mm_bofors_bp"}
+	{specular "$/_vehicle/eng/37mm_bofors_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

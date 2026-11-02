@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for jagdpanther (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/jagdpanther/jagdpanther.mdl"}
+	{Extension "jagdpanther.mdl"}
 	{extender "stuff"
 		{item "evh_jagdpanther"}
 	}

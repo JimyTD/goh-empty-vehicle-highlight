@@ -1,0 +1,940 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: cover1 cover2 cover3 cover4 driverhatch loadercover turret
+;Exported by:	 nic21
+;Date:			 07.06.2025 01:54:00
+;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_heavy\Ferdinand\ferdinand_export.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/fire.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/hit.anm"} {speed 0.8}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/open.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"} {2 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/open_driver.anm"} {speed 0.26}{resume} {events {2 "hatch_heavy"} {99 "hatch_heavy"}}}
+		{sequence "shell_hatch" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/shell_hatch.anm"} {speed 0.5} {events {2 "hatch_small"}}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.4;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.8465 	 0.0394 	 35.5709}
+			{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/body.ply"}
+			{bone revolute "turret"
+				{Position -0.4283 	 -0.0078 	 9.8972}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/gun_r.anm"}{speed 0.7}}
+					}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							13.9832 	 0 	 0
+						}
+						
+						{bone "foresight1"
+							{Position 78.0137 	 -0.0323 	 -0.033}
+						}
+						{bone "visor1"
+							{Position -28.995 	 10.7391 	 11.7516}
+						}
+					}
+				}
+			}
+			{bone "gunholder"
+				{Position 46.4548 	 -0.0078 	 0.0582}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/gunholder.ply"}
+			}
+			{bone "loadercover"
+				{parameters "commonmesh;id=body;"}
+				{matrix34
+					0.9336 	 0 	 -0.3584
+					0 	 1 	 0
+					0.3584 	 0 	 0.9336
+					-64.4463 	 -3.7554 	 11.1289
+				}
+				
+			}
+			{bone "radiohatch"
+				{parameters "id=body;"}
+				{Position 34.6558 	 -10.3535 	 0.2185}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/radiohatch.ply"}
+			}
+			{bone "driverhatch"
+				{parameters "id=body;"}
+				{Position 34.6158 	 11.5408 	 0.1989}
+				
+			}
+			{bone "cover1"
+				{parameters "id=body;"}
+				{matrix34
+					0.7066 	 0.7076 	 -0.0007
+					-0.707 	 0.7061 	 0.0394
+					0.0283 	 -0.0274 	 0.9992
+					-47.158 	 5.5939 	 23.4379
+				}
+				
+			}
+			{bone "cover2"
+				{parameters "id=body;"}
+				{matrix34
+					0.6986 	 0.7155 	 0.0004
+					-0.7151 	 0.6981 	 0.0373
+					0.0264 	 -0.0264 	 0.9993
+					-38.8968 	 13.706 	 22.8832
+				}
+				
+			}
+			{bone "cover3"
+				{parameters "id=body;"}
+				{Position -20.4907 	 -11.9954 	 21.7291}
+				
+			}
+			{bone "cover4"
+				{parameters "id=body;"}
+				{Position -30.6872 	 -11.996 	 22.3654}
+				
+			}
+			{bone "binocover"
+				{parameters "id=body;"}
+				{Position -7.6982 	 4.3258 	 21.0191}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/binocover.ply"}
+			}
+			{bone "antenna"
+				{parameters "id=body;"}
+				{Position 39.288 	 -20.4035 	 3.7411}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/antenna.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					58.3858 	 -25.2559 	 -19.5669
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr1.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					58.3875 	 25.2387 	 -19.5725
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-55.6163 	 -26.5653 	 -21.5545
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr8.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-55.6102 	 26.5551 	 -21.5551
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell8.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 4.0101 	 -20.7807 	 -8.0805}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 4.0101 	 20.7586 	 -8.0805}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 14.7749 	 -32.2885 	 -12.0134}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 23.9319 	 29.6533 	 -6.698}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 21.3917 	 29.643 	 -8.9776}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 55.4235 	 0.7026 	 -7.1476}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/detail6.ply"}
+			}
+			{bone "enumerator1"
+				{Position -32.1868 	 -24.1111 	 11.6394}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{Position -32.1868 	 24.8874 	 11.6394}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/enumerator2.ply"}
+			}
+			{bone "fxfire1"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					24.0028 	 -0.078 	 -13.5392
+				}
+			}
+			{bone "fxfire3"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-42.9284 	 9.5174 	 17.2378
+				}
+			}
+			{bone "fxlight"
+				{matrix34
+					0.9816 	 0 	 -0.1908
+					0 	 1 	 0
+					0.1908 	 0 	 0.9816
+					83.4005 	 -0.076 	 -7.081
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.0752 	 0 	 -0.9972
+					0 	 -1 	 0
+					-0.9972 	 0 	 0.0752
+					-63.5635 	 -7.9204 	 -11.528
+				}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.0752 	 0 	 -0.9972
+					0 	 -1 	 0
+					-0.9972 	 0 	 0.0752
+					-63.5561 	 7.4375 	 -11.4299
+				}
+			}
+			{bone "visor2"
+				{Position 44.1227 	 10.9453 	 0.7403}
+			}
+			{bone "fx_invers"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-59.606 	 -0.0394 	 9.4044
+				}
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0.5237 	 22.3709 	 -26.3505}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelsl.ply"}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.895 	 3.2727 	 3.095}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/trackl.ply"}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9691 	 0 	 0.2467
+						0 	 -1 	 0
+						0.2467 	 0 	 0.9691
+						-45.2798 	 5.2848 	 -9.3506
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-0.0831 	 3.649 	 -8.7363
+					}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0.5237 	 -22.3897 	 -26.3505}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelsr.ply"}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9732 	 0 	 0.2298
+						0 	 -1 	 0
+						0.2298 	 0 	 0.9732
+						-45.3016 	 -6.5239 	 -9.2995
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-0.0842 	 -3.694 	 -8.7363
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.8951 	 -3.3177 	 3.095}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/trackr.ply"}
+				}
+			}
+			{bone "armorlightr"
+				{Position 49.3201 	 -23.0119 	 -2.0468}
+			}
+			{bone "armorlightl"
+				{Position 49.3201 	 22.9963 	 -2.0468}
+			}
+			{bone "ammo1"
+				{Position -35.6854 	 15.5165 	 1.2127}
+			}
+			{bone "ammo2"
+				{Position -35.6854 	 -15.4011 	 1.2127}
+			}
+			{bone "ammo3"
+				{Position -54.2674 	 16.5314 	 8.0134}
+			}
+			{bone "ammo4"
+				{Position -54.2674 	 -16.4336 	 8.0134}
+			}
+			{bone "fuel1"
+				{Position 17.9564 	 23.418 	 -8.3899}
+			}
+			{bone "fuel2"
+				{Position 17.9564 	 -23.3209 	 -8.3899}
+			}
+			{bone "transmission"
+				{Position -53.0111 	 -0.0142 	 -16.3206}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_heavy/ferdinand/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 19.4685 	 0 	 -12.7165}
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/engine.ply"}
+				{bone "engine_hutch"
+					{parameters "id=engine;"}
+					{Position 2.6837 	 0 	 13.7664}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/engine_hutch.ply"}
+				}
+				{bone "engine_top"
+					{parameters "id=engine;"}
+					{Position 4.3598 	 0 	 14.5278}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/engine_top.ply"}
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					27.428 	 28.1357 	 -6.0179
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 0.9962 	 0.0872
+					-1 	 0 	 0
+					0 	 -0.0872 	 0.9962
+					12.0439 	 28.1357 	 -6.0179
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.0087 	 -0.9962 	 0.0872
+					1 	 -0.0087 	 0
+					0.0008 	 0.0872 	 0.9962
+					13.49 	 -31.1527 	 -6.0179
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -0.9848 	 0.1736
+					1 	 0 	 0
+					0 	 0.1736 	 0.9848
+					30.258 	 -31.1527 	 -6.0179
+				}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 -0.0004 	 0
+				0.0004 	 -1 	 0
+				0 	 0 	 1
+				76.8271 	 8.9176 	 3.9001
+			}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{matrix34
+				-0.0004 	 1 	 0
+				-1 	 -0.0004 	 0
+				0 	 0 	 1
+				20.2469 	 -49.0958 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit2"
+			{matrix34
+				0.0004 	 -1 	 0
+				1 	 0.0004 	 0
+				0 	 0 	 1
+				20.2469 	 45.9481 	 0
+			}
+			{visibility 0}
+		}
+		{bone "body_virt"
+			{Position -0.647 	 0 	 11.5255}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position 40.9746 	 -26.9177 	 -3.2124}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.11 0.11}
+				{speed 0.18}
+				{Position 26.1485 	 -25.7917 	 -3.2124}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.14 0.14}
+				{speed 0.18}
+				{Position 8.0801 	 -26.9177 	 -3.2124}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.17 0.17}
+				{speed 0.18}
+				{Position -6.746 	 -25.7917 	 -3.2124}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.11 0.11}
+				{speed 0.18}
+				{Position -25.352 	 -25.7917 	 -3.2124}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position -40.1749 	 -26.9177 	 -3.2124}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheelr7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position 40.9745 	 26.9809 	 -3.2124}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.11 0.11}
+				{speed 0.18}
+				{Position 26.1485 	 25.8549 	 -3.2124}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.14 0.14}
+				{speed 0.18}
+				{Position 8.0801 	 26.9809 	 -3.2124}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.17 0.17}
+				{speed 0.18}
+				{Position -6.746 	 25.8549 	 -3.2124}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.11 0.11}
+				{speed 0.18}
+				{Position -25.352 	 25.8549 	 -3.2124}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position -40.1749 	 26.9809 	 -3.2124}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;radius=0.36;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/ferdinand/wheell7.ply"}
+				}
+			}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				29.353 	 -56.3836 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				12.585 	 -56.3836 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				11.0897 	 53.7197 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				26.5229 	 53.7197 	 0
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 13.7795 5.90551 20.6693}
+	{bone "ammo1"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo2"
+	{box 13.7795 5.90551 20.6693}
+	{bone "ammo2"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo3"
+	{box 9.84252 3.93701 20.6693}
+	{bone "ammo3"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo4"
+	{box 9.84252 3.93701 20.6693}
+	{bone "ammo4"}
+	{Position 0 	 0 	 0}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/armor1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		11.2824 	 1.4523 	 -0.0022
+	}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/armor2.vol"}
+	{bone "body"}
+	{Position 2.4487 	 0.0392 	 10.8377}
+}
+{volume "barrel"
+	{cylinder 1.82554 92.2682}
+	{bone "gun"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		29.7946 	 -0.0064 	 -0.0216
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body1.vol"}
+	{bone "body"}
+	{Position 61.9145 	 -0.0184 	 -15.0668}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body2.vol"}
+	{bone "body"}
+	{Position 50.1723 	 -0.0184 	 -17.1928}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body3.vol"}
+	{bone "body"}
+	{Position 43.5636 	 -0.0041 	 -7.1888}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body4.vol"}
+	{bone "body"}
+	{Position -27.4222 	 -0.0184 	 -17.1928}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body5.vol"}
+	{bone "body"}
+	{Position -30.8857 	 -0.0041 	 -7.1924}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/body6.vol"}
+	{bone "body"}
+	{Position -31.3079 	 -0.0076 	 11.0667}
+}
+{volume "breech"
+	{box 28.9871 8.85827 8.85827}
+	{bone "gun_rot"}
+	{Position -13.8936 	 -0.0488 	 0.0064}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/engine1.vol"}
+	{bone "engine"}
+	{Position 1.5709 	 -0.0107 	 -7.2093}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/engine2.vol"}
+	{bone "engine"}
+	{Position 1.5687 	 0.0036 	 5.5266}
+}
+{volume "fuel1"
+	{box 18.7008 9.84252 9.84252}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0}
+}
+{volume "fuel2"
+	{box 18.7008 9.84252 9.84252}
+	{bone "fuel2"}
+	{Position 0 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 0.1847 	 3.3094 	 -0.5516}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 0.1847 	 -3.293 	 -0.5516}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/hole3.vol"}
+	{bone "body"}
+	{Position 3.9405 	 -0.0078 	 10.7826}
+}
+{volume "mantlet1"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/mantlet1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		6.6913 	 -0.0488 	 0.0064
+	}
+}
+{volume "mantlet2"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/mantlet2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		6.6913 	 -0.0488 	 0.0064
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/ram.vol"}
+	{bone "body"}
+	{Position -0.2884 	 -0.0577 	 -16.8528}
+}
+{volume "trackleft1"
+	{cylinder 8.27902 12.5356}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0266 	 -0.0061 	 0.4288
+	}
+}
+{volume "trackleft2"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -1.2077
+	}
+}
+{volume "trackleft3"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -0.0818
+	}
+}
+{volume "trackleft4"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -1.2077
+	}
+}
+{volume "trackleft5"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -0.0817
+	}
+}
+{volume "trackleft6"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -0.0817
+	}
+}
+{volume "trackleft7"
+	{cylinder 7.06732 4.63819}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 -1.2077
+	}
+}
+{volume "trackleft8"
+	{cylinder 8.27902 12.5356}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0095 	 0.0103 	 -0.8822
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0.1847 	 3.3094 	 -0.5516}
+}
+{volume "trackright1"
+	{cylinder 8.27902 12.5356}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0266 	 -0.0061 	 -0.4413
+	}
+}
+{volume "trackright2"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 1.2133
+	}
+}
+{volume "trackright3"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 0.0874
+	}
+}
+{volume "trackright4"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 1.2133
+	}
+}
+{volume "trackright5"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 0.0874
+	}
+}
+{volume "trackright6"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 0.0874
+	}
+}
+{volume "trackright7"
+	{cylinder 7.06732 4.63819}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.0046 	 1.2133
+	}
+}
+{volume "trackright8"
+	{cylinder 8.27902 12.5356}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0095 	 0.0103 	 0.8697
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_heavy/ferdinand/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0.1847 	 -3.293 	 -0.5516}
+}
+{volume "transmission"
+	{cylinder 5.21816 34.7684}
+	{bone "transmission"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for h39_turret (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/h39_turret/h39_turret.mdl"}
+	{Extension "h39_turret.mdl"}
 	{extender "stuff"
 		{item "evh_h39_turret"}
 	}

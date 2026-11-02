@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/ger/flammpanzer_b2"}
+	{bump "$/_vehicle/ger/flammpanzer_b2_bp"}
+	{specular "$/_vehicle/ger/flammpanzer_b2_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kht26 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/kht26/kht26.mdl"}
+	{Extension "kht26.mdl"}
 	{extender "stuff"
 		{item "evh_kht26"}
 	}

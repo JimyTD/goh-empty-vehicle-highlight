@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/2inch_mortar"}
+	{bump "$/_vehicle/eng/2inch_mortar_bp"}
+	{specular "$/_vehicle/eng/2inch_mortar_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

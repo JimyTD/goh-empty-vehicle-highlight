@@ -1,0 +1,624 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: gun gun_rot standl standr turret
+;Exported by:	 nic21
+;Date:			 15.01.2026 18:10:13
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\cannon\76.2mm_QF17\76mm_qf17.max
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/eng/cannon/76mm_qf17/recoil.anm"} {speed 0.65}}
+		{sequence "close" {file "../../../../-vehicle/eng/cannon/76mm_qf17/close.anm"} {speed 0.6}}
+		{sequence "aim_v" {file "../../../../-vehicle/eng/cannon/76mm_qf17/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/eng/cannon/76mm_qf17/aim_h.anm"} {speed 1}{resume}}
+		{sequence "shell_eject" {file "../../../../-vehicle/eng/cannon/76mm_qf17/shell_eject.anm"} {speed 0.6}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.47;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "visor2"
+			{Position -19.0279 	 -12.1056 	 27.525}
+		}
+		{bone "link1"
+			{Position -75.0243 	 0.3229 	 14.1912}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/cannon/76mm_qf17/body_r.anm"}{speed 0.5}}
+			}
+			{Position 0 	 0 	 8.8641}
+			{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/body.ply"}
+			{bone "standr"
+				{parameters "id=body;"}
+				{matrix34
+					0.9999 	 0 	 0.0148
+					0 	 1 	 0
+					-0.0148 	 0 	 0.9999
+					-1.8929 	 -10.2772 	 -1.4442
+				}
+				
+				{bone "legr_lock"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 0.5 	 -0.0128
+						-0.4999 	 0.866 	 0.0074
+						0.0148 	 0 	 0.9999
+						-3.6613 	 -0.3343 	 1.378
+					}
+					
+				}
+				{bone "spader"
+					{parameters "id=body;"}
+					{matrix34
+						0.1059 	 0.0696 	 -0.9919
+						-0.4999 	 0.866 	 0.0074
+						0.8596 	 0.4951 	 0.1265
+						-55.1345 	 -31.8132 	 -1.7692
+					}
+					
+				}
+				{bone "2"
+					{parameters "id=body;"}
+					{matrix34
+						0.8613 	 0.4963 	 0.1091
+						-0.4999 	 0.866 	 0.0074
+						-0.0908 	 -0.0609 	 0.994
+						-59.3106 	 -32.6673 	 -1.125
+					}
+					
+					{bone "3"
+						{parameters "id=body;"}
+						{Position -0.2228 	 -0.6503 	 0.0047}
+						
+					}
+				}
+				{bone "spader_lock"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 0.5 	 -0.0128
+						-0.4999 	 0.866 	 0.0074
+						0.0148 	 0 	 0.9999
+						-52.7885 	 -27.8145 	 -1.382
+					}
+					
+				}
+				{bone "detail3"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 0.5 	 -0.0128
+						-0.4999 	 0.866 	 0.0074
+						0.0148 	 0 	 0.9999
+						-39.04 	 -24.6001 	 -0.1488
+					}
+					
+				}
+				{bone "detail4"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 0.5 	 -0.0128
+						-0.4999 	 0.866 	 0.0074
+						0.0148 	 0 	 0.9999
+						-19.9453 	 -13.8111 	 2.6279
+					}
+					
+				}
+				{bone "seat2"
+					{matrix34
+						0.4721 	 -0.8812 	 0.0252
+						0.8729 	 0.4713 	 0.1265
+						-0.1233 	 -0.0377 	 0.9916
+						-24.3029 	 -15.2744 	 -10.5298
+					}
+				}
+				{bone "seat3"
+					{matrix34
+						0.4873 	 -0.8728 	 0.0274
+						0.8645 	 0.4866 	 0.126
+						-0.1233 	 -0.0377 	 0.9916
+						-38.3803 	 -23.2069 	 -12.5793
+					}
+				}
+			}
+			{bone "standl"
+				{parameters "id=body;"}
+				{matrix34
+					0.9999 	 0 	 0.0148
+					0 	 1 	 0
+					-0.0148 	 0 	 0.9999
+					-1.8929 	 10.2771 	 -1.4442
+				}
+				
+				{bone "latch"
+					{parameters "id=body;"}
+					{matrix34
+						-0.8591 	 -0.5119 	 0
+						0.5119 	 -0.8591 	 0
+						0 	 0 	 1
+						-8.5295 	 2.5398 	 -0.3211
+					}
+					
+				}
+				{bone "legl_lock"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 -0.5 	 -0.0128
+						0.4999 	 0.866 	 -0.0074
+						0.0148 	 0 	 0.9999
+						-3.6613 	 0.3343 	 1.378
+					}
+					
+				}
+				{bone "spadel"
+					{parameters "id=body;"}
+					{matrix34
+						0.1059 	 -0.0696 	 -0.9919
+						0.4999 	 0.866 	 -0.0074
+						0.8596 	 -0.4951 	 0.1265
+						-55.1345 	 31.8132 	 -1.7692
+					}
+					
+				}
+				{bone "spadel_lock"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 -0.5 	 -0.0128
+						0.4999 	 0.866 	 -0.0074
+						0.0148 	 0 	 0.9999
+						-52.5989 	 28.1431 	 -1.3848
+					}
+					
+				}
+				{bone "detail2"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 -0.5 	 -0.0128
+						0.4999 	 0.866 	 -0.0074
+						0.0148 	 0 	 0.9999
+						-20.2886 	 14.1078 	 2.3644
+					}
+					
+				}
+				{bone "detail1"
+					{parameters "id=body;"}
+					{matrix34
+						0.8659 	 -0.5 	 -0.0128
+						0.4999 	 0.866 	 -0.0074
+						0.0148 	 0 	 0.9999
+						-17.1696 	 12.6415 	 0.8257
+					}
+					
+				}
+				{bone "seat4"
+					{matrix34
+						0.5135 	 0.8577 	 0.0261
+						-0.839 	 0.5082 	 -0.1942
+						-0.1798 	 0.0778 	 0.9806
+						-38.4543 	 22.5509 	 -11.6487
+					}
+				}
+			}
+			{bone "1"
+				{parameters "id=body;"}
+				{Position -0.712 	 5.9514 	 -2.0118}
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/1.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{limits -30 30}
+				{speed 0.008}
+				{Position -1.9344 	 0 	 2.4826}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/cannon/76mm_qf17/gun_r.anm"}{speed 0.5}}
+					}
+					{limits -6 16.5}
+					{speed 0.008}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						6.0056 	 0 	 8.0962
+					}
+					
+					{bone "visor"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							5.1888 	 7.6398 	 -6.1123
+						}
+					}
+					{bone "foresight1"
+						{Position 67.357 	 1.1989 	 0}
+					}
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0121 	 1.1929 	 0
+						}
+						
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-18.9993 	 0 	 0.1546
+							}
+						}
+						{bone "breech"
+							{parameters "id=gun;"}
+							{Position -21.4084 	 0.0001 	 -0.3639}
+							
+						}
+						{bone "lever"
+							{parameters "id=gun;"}
+							{Position -18.056 	 -3.4351 	 -4.2592}
+							
+						}
+					}
+				}
+				{bone "aim_ver"
+					{parameters "id=body;"}
+					{matrix34
+						0 	 1 	 0
+						0.8434 	 0 	 -0.5373
+						-0.5373 	 0 	 -0.8434
+						1.5298 	 9.5171 	 5.193
+					}
+					
+				}
+				{bone "aim_hor_helper"
+					{matrix34
+						0.7067 	 -0.0349 	 -0.7067
+						0.0247 	 0.9994 	 -0.0247
+						0.7071 	 0 	 0.7071
+						1.6526 	 7.0533 	 8.1916
+					}
+					{bone "aim_hor"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "gunner"
+					{Position -8.3219 	 8.8921 	 1.409}
+				}
+				{bone "seat1"
+					{Position -8.3219 	 8.8921 	 1.409}
+				}
+				{bone "shield1"
+					{parameters "id=shield;"}
+					{matrix34
+						0.9996 	 0 	 -0.0268
+						0 	 1 	 0
+						0.0268 	 0 	 0.9996
+						9.3525 	 0.0347 	 9.9993
+					}
+					
+					{bone "detail6"
+						{parameters "id=body;"}
+						{matrix34
+							0.9996 	 0 	 0.0268
+							0 	 1 	 0
+							-0.0268 	 0 	 0.9996
+							2.7649 	 10.7387 	 -0.7472
+						}
+						
+					}
+					{bone "detail5"
+						{parameters "id=body;"}
+						{matrix34
+							0.9996 	 0 	 0.0268
+							0 	 1 	 0
+							-0.0268 	 0 	 0.9996
+							-4.4715 	 18.2339 	 6.0627
+						}
+						
+					}
+					{bone "detail7"
+						{parameters "id=body;"}
+						{matrix34
+							0.9996 	 0 	 0.0268
+							0 	 1 	 0
+							-0.0268 	 0 	 0.9996
+							-1.303 	 -9.8349 	 5.3226
+						}
+						
+					}
+					{bone "shield2"
+						{parameters "id=shield;"}
+						{matrix34
+							0.9996 	 0 	 0.0268
+							0 	 1 	 0
+							-0.0268 	 0 	 0.9996
+							11.9163 	 0.0055 	 -9.6353
+						}
+						
+					}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 0 	 0 	 8.8641}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-0.0127 	 -19.3375 	 -8.874
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-0.0127 	 18.4386 	 -8.874
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0.03 0.03}
+				{speed 0.075}
+				{Position 0 	 -19.8905 	 0}
+				{bone revolute "wheelr1"
+					{parameters "id=wheelright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/wheelr1.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0.03 0.03}
+				{speed 0.075}
+				{Position 0 	 19.0415 	 0}
+				{bone revolute "wheell1"
+					{parameters "id=wheelleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/wheell1.ply"}
+				}
+			}
+			{bone "susp"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/susp.ply"}
+			}
+		}
+		{bone "emit2"
+			{Position -33.988 	 -11.611 	 0}
+		}
+		{bone "emit1"
+			{Position -34.1566 	 14.2503 	 0}
+		}
+		{bone "driver2"
+			{Position -15.6454 	 -19.1872 	 0.0408}
+		}
+		{bone "driver1"
+			{Position -16.6187 	 18.1682 	 0.0408}
+		}
+		{bone "charger"
+			{matrix34
+				0.9756 	 0.2194 	 0
+				-0.2194 	 0.9756 	 0
+				0 	 0 	 1
+				-25.7756 	 -10.186 	 0.0408
+			}
+		}
+		{bone "commander"
+			{Position -49.4554 	 21.1319 	 -0.65}
+		}
+		{bone "emit4"
+			{Position -51.2247 	 20.8221 	 0}
+		}
+		{bone "charger2"
+			{matrix34
+				0.9205 	 0.3907 	 0
+				-0.3907 	 0.9205 	 0
+				0 	 0 	 1
+				-44.3815 	 -13.4157 	 0.2623
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0.9205 	 0.3907 	 0
+				-0.3907 	 0.9205 	 0
+				0 	 0 	 1
+				-50.7925 	 -15.901 	 0.2216
+			}
+		}
+		{bone "driver4"
+			{Position -50.4532 	 9.3248 	 0.0408}
+		}
+		{bone "driver3"
+			{Position -69.5446 	 -0.0424 	 0}
+		}
+		{bone "sandbag"
+			{Position 27.1637 	 0 	 0.0253}
+		}
+	}
+}
+{obstacle "close"
+	{obb2
+		{center -39.6801 -0.0178275}
+		{extent 30.5266 11.2148}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "close"}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 3.47501 0.449659}
+		{extent 12.6285 21.4098}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "openl"
+	{obb2
+		{center -34.3769 -28.9719}
+		{extent 30.8723 1.78761}
+		{axis 0.866158 0.49977}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{obstacle "openr"
+	{obb2
+		{center -34.2784 29.0419}
+		{extent 1.78398 30.8722}
+		{axis 0.50046 0.86576}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{volume "barrel1"
+	{box 42.3177 2.70636 5.95208}
+	{bone "gun_rot"}
+	{Position 3.2539 	 -2.5502 	 0.0093}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/barrel2.vol"}
+	{bone "gun"}
+	{Position -5.8272 	 0 	 0.051}
+}
+{volume "barrel3"
+	{cylinder 1.40208 61.1981}
+	{bone "gun"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		35.8646 	 0 	 0
+	}
+}
+{volume "barrel4"
+	{box 5.44205 8.37731 6.98089}
+	{bone "gun"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-19.5698 	 -0.0143 	 -0.5588
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/body1.vol"}
+	{bone "body"}
+	{Position 1.6671 	 0.0048 	 0.0944}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/body2.vol"}
+	{bone "turret"}
+	{Position 8.5439 	 -0.028 	 4.6404}
+}
+{volume "body3"
+	{box 36.8811 5.05699 2.76216}
+	{bone "standl"}
+	{matrix34
+		0.8659 	 -0.5 	 -0.0128
+		0.0148 	 0 	 0.9999
+		-0.4999 	 -0.866 	 0.0074
+		-15.2874 	 8.8444 	 1.3018
+	}
+}
+{volume "body4"
+	{box 36.8811 5.05699 2.76216}
+	{bone "standr"}
+	{matrix34
+		0.8659 	 0.5 	 -0.0128
+		0.0148 	 0 	 0.9999
+		0.4999 	 -0.866 	 -0.0074
+		-15.2762 	 -8.8638 	 1.3017
+	}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/body5.vol"}
+	{bone "standl"}
+	{matrix34
+		0.8659 	 -0.5 	 -0.0128
+		0.4999 	 0.866 	 -0.0074
+		0.0148 	 0 	 0.9999
+		-44.599 	 25.7544 	 -2.3589
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/body6.vol"}
+	{bone "standr"}
+	{matrix34
+		0.8659 	 0.5 	 -0.0128
+		-0.4999 	 0.866 	 0.0074
+		0.0148 	 0 	 0.9999
+		-44.6051 	 -25.7437 	 -2.3588
+	}
+}
+{volume "hole1"
+	{box 7.97233 6.42796 14.3168}
+	{bone "turret"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.5936 	 0.1196 	 6.4839
+	}
+}
+{volume "select"
+	{box 32.7641 37.0201 30.6319}
+	{bone "basis"}
+	{Position -3.6088 	 0.027 	 15.5009}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_qf17/shield1.vol"}
+	{bone "shield1"}
+	{matrix34
+		0.9996 	 0 	 0.0268
+		0 	 1 	 0
+		-0.0268 	 0 	 0.9996
+		0 	 0 	 0
+	}
+}
+{volume "shield2"
+	{box 0.174379 3.68376 30.6449}
+	{bone "shield2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.0179 	 -0.0819 	 -1.6859
+	}
+}
+{volume "wheelleft"
+	{cylinder 9.15354 4.75233}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.4576
+	}
+}
+{volume "wheelright"
+	{cylinder 9.15354 4.76944}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.4158
+	}
+}

@@ -1,0 +1,1251 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aux_turret1 hatch_r
+;Exported by:	 guita
+;Date:			 04.02.2026 11:31:46
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Ram_kangaroo\Ram_Kangaroo.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hit.anm"} {speed 0.7}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/open_driver.anm"} {speed 0.6}{resume}{events {2 "hatch_medium"}}}
+		{sequence "open_commander" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/open_commander.anm"} {speed 0.45}{resume} {events {2 "hatch_medium"} {98 "hatch_medium"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.26;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.1778 	 -0.0008 	 23.723}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -37.771 	 -0.0013 	 -0.2963}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine.ply"}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position 5.2252 	 0.0021 	 12.5414}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hatch_engine2.ply"}
+					{bone "detail5"
+						{parameters "id=engine;"}
+						{Position -2.6343 	 -2.8033 	 0.7532}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail5.ply"}
+					}
+					{bone "detail6"
+						{parameters "id=engine;"}
+						{Position -5.446 	 2.8033 	 0.4524}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail6.ply"}
+					}
+					{bone "detail7"
+						{parameters "id=engine;"}
+						{Position -7.2719 	 -5.1599 	 -0.4603}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail7.ply"}
+					}
+					{bone "detail8"
+						{parameters "id=engine;"}
+						{Position -8.9401 	 5.3066 	 -0.6687}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail8.ply"}
+					}
+				}
+				{bone "engine_door1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9744 	 0 	 0.225
+						0 	 1 	 0
+						-0.225 	 0 	 0.9744
+						-8.6832 	 8.1015 	 -0.4307
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine_door1.ply"}
+				}
+				{bone "engine_door2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9744 	 0 	 0.225
+						0 	 1 	 0
+						-0.225 	 0 	 0.9744
+						-8.7201 	 -8.079 	 -0.2685
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine_door2.ply"}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9948 	 0 	 -0.1021
+						0 	 1 	 0
+						0.1021 	 0 	 -0.9948
+						-17.5194 	 3.0532 	 3.6508
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9948 	 0 	 -0.1021
+						0 	 1 	 0
+						0.1021 	 0 	 -0.9948
+						-17.5194 	 -3.1206 	 3.6508
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						8.3598 	 0.0027 	 6.7538
+					}
+				}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{Position 12.6725 	 0.0021 	 8.925}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hatch_engine1.ply"}
+					{bone "grill"
+						{parameters "id=engine;"}
+						{Position 3.511 	 0.0019 	 4.8605}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/grill.ply"}
+					}
+					{bone "detail3"
+						{parameters "id=engine;"}
+						{Position -2.1311 	 0.3643 	 4.9381}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail3.ply"}
+					}
+					{bone "detail2"
+						{parameters "id=engine;"}
+						{Position -2.957 	 -5.118 	 4.5323}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail2.ply"}
+					}
+					{bone "detail4"
+						{parameters "id=engine;"}
+						{Position -3.6743 	 7.3958 	 4.4575}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail4.ply"}
+					}
+				}
+				{bone "detail9"
+					{parameters "id=engine;"}
+					{Position 0.4196 	 21.6779 	 12.9173}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail9.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=engine;"}
+					{Position 0.4196 	 -21.7127 	 12.9173}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail10.ply"}
+				}
+			}
+			{bone "hatch_r"
+				{parameters "id=body;"}
+				{Position 31.7845 	 -10.4023 	 13.4055}
+				
+			}
+			{bone "transmission"
+				{Position 40.7964 	 0.4128 	 -6.6442}
+			}
+			{bone "fuel4"
+				{Position -36.9452 	 -20.5025 	 6.2054}
+			}
+			{bone "fuel3"
+				{Position -36.9451 	 20.5589 	 6.2054}
+			}
+			{bone "fuel2"
+				{Position -30.2738 	 -12.4627 	 -8.1692}
+			}
+			{bone "fuel1"
+				{Position -30.2739 	 12.3488 	 -8.1691}
+			}
+			{bone "sus_l1"
+				{Position 33.5025 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l2"
+				{Position 4.5427 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l3"
+				{Position -24.3147 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_r1"
+				{Position 32.3002 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r2"
+				{Position 3.7624 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r3"
+				{Position -24.3147 	 -20.45 	 -11.0801}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					52.7798 	 13.7806 	 0.3826
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					52.78 	 -13.8079 	 0.3827
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					1.3199 	 0.0009 	 8.3174
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					52.1205 	 21.8039 	 -8.2432
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					33.4906 	 21.5415 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					4.4379 	 21.5415 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-24.7635 	 21.5415 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-47.5813 	 21.5495 	 -9.3537
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					52.1208 	 -21.8022 	 -8.2432
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					33.4906 	 -21.5398 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					4.4379 	 -21.5398 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-24.7635 	 -21.5398 	 -5.7391
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-47.5813 	 -21.5478 	 -9.3537
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr11.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 55.9546 	 -0.1482 	 -2.744}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/detail1.ply"}
+			}
+			{bone "visor2"
+				{Position 30.3586 	 -7.8787 	 14.8611}
+			}
+			{bone "seat08"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-23.9841 	 24.7742 	 4.3406
+				}
+			}
+			{bone "seat09"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-22.4374 	 -24.8594 	 4.4285
+				}
+			}
+			{bone "seat10"
+				{matrix34
+					-0.1212 	 -0.9871 	 0.1045
+					0.9925 	 -0.1219 	 0
+					0.0127 	 0.1037 	 0.9945
+					-47.2151 	 -24.881 	 2.859
+				}
+			}
+			{bone "seat11"
+				{matrix34
+					0.1204 	 0.9743 	 0.1906
+					-0.9925 	 0.1218 	 0.0043
+					-0.0191 	 -0.1896 	 0.9817
+					-47.0276 	 25.1523 	 2.6277
+				}
+			}
+			{bone "night_cover"
+				{parameters "id=body;"}
+				{Position 52.7345 	 13.7911 	 0.3983}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/night_cover.ply"}
+				{bone "dimlightl"
+					{matrix34
+						0.866 	 0 	 -0.5
+						0 	 1 	 0
+						0.5 	 0 	 0.866
+						0.0494 	 -0.0105 	 0.4974
+					}
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					15.3769 	 -7.3157 	 -11.3563
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					13.3325 	 8.1508 	 -11.3563
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					2.983 	 9.2245 	 -11.3563
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					7.6288 	 -1.165 	 -11.3563
+				}
+			}
+			{bone "seat05"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					5.1623 	 -10.2229 	 -11.3563
+				}
+			}
+			{bone "seat06"
+				{matrix34
+					0.1047 	 -0.9945 	 0
+					0.9945 	 0.1047 	 0
+					0 	 0 	 1
+					-4.9421 	 -6.9102 	 -11.3563
+				}
+			}
+			{bone "seat07"
+				{matrix34
+					-0.0525 	 0.9986 	 0
+					-0.9986 	 -0.0525 	 0
+					0 	 0 	 1
+					-8.5341 	 6.0823 	 -11.3563
+				}
+			}
+			{bone "driver"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					21.7772 	 -9.1007 	 -5.6286
+				}
+			}
+			{bone "enumerator1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 1
+					0 	 1 	 0
+					-10.596 	 27.203 	 5.2512
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/enumerator1.ply"}
+			}
+			{bone revolute "aux_turret1"
+				{parameters "id=aux_turret1;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/ram_kangaroo/turret1_r.anm"}{speed 0.7}}
+				}
+				{limits -50 110}
+				{speed 0.01}
+				{matrix34
+					0.9998 	 -0.0175 	 0
+					0.0175 	 0.9998 	 0
+					0 	 0 	 1
+					27.271 	 8.728 	 9.1875
+				}
+				
+				{bone "visor1"
+					{Position 6.2292 	 2.2428 	 2.4566}
+				}
+				{bone "sight"
+					{Position 6.4788 	 0.8031 	 5.3467}
+				}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{matrix34
+						1 	 0 	 0.0005
+						-0.0005 	 0 	 1
+						0 	 -1 	 0
+						4.9898 	 0.0534 	 1.9864
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.4383 	 -0.0005 	 1.921
+						}
+					}
+					{bone "mg_mount"
+						{parameters "id=aux_turret1;"}
+						{matrix34
+							1 	 -0.0005 	 0
+							0 	 0 	 -1
+							0.0005 	 1 	 0
+							0 	 0 	 0
+						}
+						
+						{bone "mgun_hull"
+							{parameters "id=body;"}
+							{matrix34
+								1 	 0 	 0.0005
+								0 	 1 	 0
+								-0.0005 	 0 	 1
+								-0.0235 	 -2.2696 	 -0.2669
+							}
+							
+						}
+					}
+				}
+				{bone "hatch_driver1"
+					{parameters "id=aux_turret1;"}
+					{matrix34
+						0.9998 	 0.0175 	 0
+						-0.0175 	 0.9998 	 0
+						0 	 0 	 1
+						3.6918 	 2.3834 	 5.4586
+					}
+					
+					{bone "hatch_driver2"
+						{parameters "id=aux_turret1;"}
+						{Position -4.7811 	 1.5962 	 -0.005}
+						
+					}
+				}
+			}
+			{bone "commander"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					23.226 	 8.506 	 -5.5163
+				}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position 1.6298 	 20.789 	 11.2553}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 1
+					0 	 1 	 0
+					1.9736 	 0.1197 	 -11.2758
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9523 	 0 	 0.305
+					0.305 	 0 	 0.9523
+					0 	 1 	 0
+					-43.027 	 0.0902 	 -7.9989
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 39.8882 	 0.894 	 -4.3182}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 23.4422 	 0.894 	 -4.3182}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.11 0.11}
+				{speed 0.15}
+				{Position 10.8911 	 0.894 	 -4.3182}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.15 0.15}
+				{speed 0.15}
+				{Position -5.6104 	 0.894 	 -4.3182}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.15 0.15}
+				{speed 0.15}
+				{Position -18.3104 	 0.894 	 -4.3182}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.11 0.11}
+				{speed 0.15}
+				{Position -34.8118 	 0.894 	 -4.3182}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheell7.ply"}
+				}
+			}
+			{bone "suspl"
+				{parameters "id=body;"}
+				{Position 2.2267 	 0.2086 	 -1.7009}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/suspl.ply"}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 1.4025 	 0.8423 	 0.0026}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position 1.6298 	 -20.6368 	 11.2553}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 1
+					0 	 1 	 0
+					1.9736 	 -0.0447 	 -11.2758
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9523 	 0 	 0.305
+					0.305 	 0 	 0.9523
+					0 	 1 	 0
+					-43.027 	 -0.068 	 -7.9989
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.11 0.11}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					23.4422 	 -1.0462 	 -4.3182
+				}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.15 0.15}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					10.8911 	 -1.0462 	 -4.3182
+				}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.15 0.15}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-5.6104 	 -1.0462 	 -4.3182
+				}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.11 0.11}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-18.3104 	 -1.0462 	 -4.3182
+				}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.08 0.078}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-34.8118 	 -1.0462 	 -4.3182
+				}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.078}
+				{speed 0.15}
+				{Position 39.9437 	 -1.0462 	 -4.3182}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/wheelr2.ply"}
+				}
+			}
+			{bone "suspr"
+				{parameters "id=body;"}
+				{Position 2.2267 	 -0.3608 	 -1.7009}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/suspr.ply"}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 1.4025 	 -1.0576 	 0.0026}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackr.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				27.0963 	 -41.8041 	 0.6718
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-9.0454 	 41.711 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-8.7559 	 -41.8041 	 0.6718
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-24.1618 	 47.9586 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-22.6151 	 -48.4913 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-43.3173 	 -48.4863 	 0
+			}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-43.1299 	 48.1586 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				25.6468 	 41.2704 	 0
+			}
+		}
+		{bone "emit9"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.4868 	 41.711 	 0
+			}
+		}
+		{bone "emit8"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				4.7763 	 -41.8041 	 0.6718
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/ram.vol"}
+	{bone "body"}
+	{Position -0.0236 	 0.0148 	 -4.9297}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/armor1.vol"}
+	{bone "body"}
+	{Position 36.5439 	 21.5412 	 2.9904}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/armor2.vol"}
+	{bone "body"}
+	{Position 36.5439 	 -21.5135 	 2.9904}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/armor3.vol"}
+	{bone "body"}
+	{Position 25.3555 	 25.0559 	 7.6622}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/armor4.vol"}
+	{bone "body"}
+	{Position 25.3555 	 -25.0282 	 7.6622}
+}
+{volume "aux_turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/aux_turret1.vol"}
+	{bone "aux_turret1"}
+	{Position -0.0066 	 0.0015 	 2.4402}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body1.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		17.2881 	 0.0021 	 -6.1631
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body2.vol"}
+	{bone "body"}
+	{Position 8.9937 	 0.0052 	 7.4521}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body3.vol"}
+	{bone "body"}
+	{Position 1.1913 	 0.0183 	 11.1309}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body4.vol"}
+	{bone "body"}
+	{Position 24.3148 	 -13.0172 	 10.6646}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body5.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		52.549 	 -13.7039 	 -8.1342
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body6.vol"}
+	{bone "body"}
+	{Position 52.548 	 13.7282 	 -8.1338}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body7.vol"}
+	{bone "body"}
+	{Position 47.0659 	 -6.0299 	 -6.3963}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body8.vol"}
+	{bone "body"}
+	{Position 47.0659 	 6.04 	 -6.3963}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/body9.vol"}
+	{bone "body"}
+	{Position 20.9809 	 20.2027 	 10.1825}
+}
+{volume "detail10"
+	{cylinder 5.08742 4.14795}
+	{bone "detail10"}
+	{matrix34
+		-0.9793 	 -0.1273 	 -0.1572
+		0.1603 	 -0.9623 	 -0.2198
+		-0.1233 	 -0.2405 	 0.9628
+		-0.0121 	 0.0425 	 0.1122
+	}
+}
+{volume "detail9"
+	{cylinder 5.08742 4.14795}
+	{bone "detail9"}
+	{matrix34
+		0.989 	 0.1219 	 0.0844
+		-0.0972 	 0.963 	 -0.2512
+		-0.1119 	 0.2402 	 0.9642
+		0.0564 	 0.0398 	 0.0782
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine1.vol"}
+	{bone "engine"}
+	{Position 5.6142 	 0.0034 	 -5.8667}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine2.vol"}
+	{bone "engine"}
+	{Position 1.8728 	 0.002 	 7.7436}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine3.vol"}
+	{bone "engine"}
+	{Position -12.0651 	 -8.6884 	 8.1885}
+}
+{volume "engine4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/engine4.vol"}
+	{bone "engine"}
+	{Position -12.0651 	 8.5535 	 8.1885}
+}
+{volume "fuel1"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "fuel2"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel2"}
+	{orientation
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+	}
+}
+{volume "fuel3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/fuel3.vol"}
+	{bone "fuel3"}
+}
+{volume "fuel4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/fuel4.vol"}
+	{bone "fuel4"}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.998 	 0.7888 	 -1.0176}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.998 	 -0.9395 	 -1.0176}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hole3.vol"}
+	{bone "body"}
+	{Position 41.9747 	 -15.5285 	 1.9881}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hole4.vol"}
+	{bone "engine"}
+	{Position -13.6431 	 0.0743 	 1.6718}
+}
+{volume "hole5"
+	{cylinder 15.7166 17.171}
+	{bone "body"}
+	{Position -0.3122 	 -2.2445 	 6.8791}
+}
+{volume "trackleft10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackleft10.vol"}
+	{bone "sus_l3"}
+	{Position -0.3406 	 0 	 0}
+}
+{volume "trackleft11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheell11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0861
+	}
+}
+{volume "trackleft1"
+	{cylinder 6.79356 7.7732}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1786
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0436
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0481
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackleft8.vol"}
+	{bone "sus_l1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackleft9.vol"}
+	{bone "sus_l2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.1999 	 0.7867 	 0.0835}
+}
+{volume "trackright10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackright10.vol"}
+	{bone "sus_r3"}
+	{Position -0.4699 	 0 	 0}
+}
+{volume "trackright11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheelr11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.226
+	}
+}
+{volume "trackright1"
+	{cylinder 6.79356 7.93326}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4221
+	}
+}
+{volume "trackright2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackright8.vol"}
+	{bone "sus_r1"}
+	{Position 1.1314 	 0 	 0}
+}
+{volume "trackright9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackright9.vol"}
+	{bone "sus_r2"}
+	{Position 0.6343 	 0 	 0}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/ram_kangaroo/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.1999 	 -1.066 	 0.0835}
+}
+{volume "transmission"
+	{cylinder 5.04519 27.4814}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		4.7952 	 -0.3904 	 -1.3042
+	}
+}

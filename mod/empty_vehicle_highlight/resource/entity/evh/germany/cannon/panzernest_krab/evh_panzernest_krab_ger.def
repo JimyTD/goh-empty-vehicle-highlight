@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzernest_krab_ger (generated)
-	{Extension "../../../../-vehicle/germany/cannon/panzernest_krab/panzernest_krab.mdl"}
+	{Extension "panzernest_krab.mdl"}
 	{extender "stuff"
 		{item "evh_panzernest_krab_ger"}
 	}

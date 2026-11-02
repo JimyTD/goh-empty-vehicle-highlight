@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ford_v3000_eng (generated)
-	{Extension "../../../../-vehicle/finland/car/ford_v3000_eng/ford_v3000_eng.mdl"}
+	{Extension "ford_v3000_eng.mdl"}
 	{extender "stuff"
 		{item "evh_ford_v3000_eng"}
 	}

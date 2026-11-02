@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for maxim_stand (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/maxim_stand/maxim_stand.mdl"}
+	{Extension "maxim_stand.mdl"}
 	{extender "stuff"
 		{item "evh_maxim_stand"}
 	}

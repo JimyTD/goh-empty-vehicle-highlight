@@ -1,0 +1,1052 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: turret
+;Exported by:	 guita
+;Date:			 22.10.2025 21:26:57
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Matilda_MK1_A11\Matilda_I_A11.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_light/matilda1/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_light/matilda1/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_light/matilda1/hit.anm"} {speed 0.8}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_light/matilda1/open.anm"} {speed 0.4}{resume} {events {2 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.29;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_light/matilda1/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.8965 	 0 	 10.5619}
+			{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/matilda1/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 7.607 	 -0.0011 	 16.6697}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_light/matilda1/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						8.2205 	 -2.3009 	 4.0366
+					}
+					
+					{bone "foresight1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.1901 	 -0.4015 	 0.5995
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							2.0764 	 1.0727 	 -1.9874
+						}
+					}
+					{bone "barrel_50"
+						{parameters "id=gun;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "visor1"
+					{matrix34
+						1 	 0 	 0.0073
+						-0.0073 	 0 	 1
+						0 	 -1 	 0
+						5.3057 	 2.6811 	 11.8479
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-2.9212 	 0.0831 	 7.2414
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.858 	 0.0443 	 0.5117
+						-0.0858 	 0.9946 	 0.0578
+						-0.5064 	 -0.0935 	 0.8572
+						4.1698 	 -11.2991 	 7.6658
+					}
+					{bone "smoke_shot1"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							2.8554 	 0 	 0
+						}
+					}
+				}
+				{bone "fxsmoke_shot2"
+					{matrix34
+						0.8675 	 -0.0423 	 0.4956
+						0.0859 	 0.9942 	 -0.0654
+						-0.49 	 0.0993 	 0.8661
+						4.1697 	 11.337 	 7.6433
+					}
+					{bone "smoke_shot2"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							2.7491 	 0 	 0
+						}
+					}
+				}
+				{bone "hatch2"
+					{parameters "id=turret;"}
+					{matrix34
+						0.7067 	 0.7075 	 0
+						-0.7075 	 0.7067 	 0
+						0 	 0 	 1
+						-5.2115 	 5.2643 	 10.637
+					}
+					
+				}
+				{bone "hatch1"
+					{parameters "id=turret;"}
+					{matrix34
+						0.7198 	 -0.6942 	 0
+						0.6942 	 0.7198 	 0
+						0 	 0 	 1
+						-5.1385 	 -5.173 	 10.6284
+					}
+					
+				}
+			}
+			{bone "antenna1"
+				{parameters "id=body;"}
+				{Position -4.3043 	 -14.207 	 18.2121}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/antenna1.ply"}
+				{bone "antenna2"
+					{parameters "id=body;"}
+					{Position -0.0306 	 0 	 6.8577}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/antenna2.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/matilda1/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -29.6132 	 -0.0042 	 5.0509}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine.ply"}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position -2.8168 	 4.2304 	 4.0136}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine_hatch1.ply"}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9428 	 0 	 0.3335
+						0 	 1 	 0
+						-0.3335 	 0 	 0.9428
+						0.3761 	 13.0862 	 3.6016
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine_hatch2.ply"}
+				}
+				{bone "engine_hatch3"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9428 	 0 	 0.3335
+						0 	 1 	 0
+						-0.3335 	 0 	 0.9428
+						0.3761 	 -13.0339 	 3.6016
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine_hatch3.ply"}
+				}
+				{bone "engine_hatch4"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9454 	 0 	 0.326
+						0 	 1 	 0
+						-0.326 	 0 	 0.9454
+						16.9985 	 3.2982 	 9.8818
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine_hatch4.ply"}
+				}
+				{bone "engine_hatch5"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9454 	 0 	 0.326
+						0 	 1 	 0
+						-0.326 	 0 	 0.9454
+						16.9985 	 -3.2887 	 9.8818
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/engine_hatch5.ply"}
+				}
+				{bone "fuel2"
+					{Position 9.7927 	 -10.115 	 -0.4244}
+				}
+				{bone "fuel1"
+					{Position 9.7927 	 10.15 	 -0.4244}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						9.8595 	 0.0315 	 4.0089
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9205 	 0 	 -0.3907
+						0 	 -1 	 0
+						-0.3907 	 0 	 0.9205
+						-13.6665 	 -9.1484 	 2.4395
+					}
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -7.4373 	 -0.4953 	 8.1719}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -16.4964 	 13.3524 	 8.4753}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/detail2.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.26;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					42.6896 	 20.0869 	 2.1333
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell1.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.26;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					42.6896 	 -20.0896 	 2.1333
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr1.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					16.6676 	 19.2043 	 4.7774
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell10.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					16.6676 	 -19.2125 	 4.7774
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-14.6608 	 19.2043 	 4.7774
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell11.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.16;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-14.6608 	 -19.2125 	 4.7774
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr11.ply"}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;radius=0.29;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-41.5761 	 19.0649 	 1.9269
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell12.ply"}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;radius=0.29;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-41.5762 	 -19.0789 	 1.9891
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr12.ply"}
+			}
+			{bone "driver_hatch"
+				{parameters "id=body;"}
+				{Position 18.9417 	 0 	 15.8989}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/driver_hatch.ply"}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 0.0073
+					-0.0073 	 0 	 1
+					0 	 -1 	 0
+					31.3103 	 0.0411 	 11.3024
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					7.531 	 0.0273 	 13.3523
+				}
+			}
+			{bone "seat1"
+				{matrix34
+					-0.9995 	 0.005 	 0.0296
+					-0.005 	 -1 	 0
+					0.0296 	 -0.0001 	 0.9996
+					-40.4268 	 6.3543 	 -1.1849
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					-0.8821 	 0 	 0.471
+					0 	 -1 	 0
+					0.471 	 0 	 0.8821
+					-26.9045 	 -0.5708 	 9.1653
+				}
+			}
+			{bone "transmission"
+				{Position -35.6779 	 0.0547 	 2.0473}
+			}
+			{bone "headlightr"
+				{Position 22.0079 	 -17.3301 	 14.5119}
+			}
+			{bone "headlightl"
+				{Position 22.0079 	 17.3885 	 14.5119}
+			}
+			{bone "enumerator1"
+				{Position 21.5563 	 10.0155 	 13.6985}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{Position 25.1808 	 -9.2143 	 14.0877}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/enumerator2.ply"}
+			}
+		}
+		{bone "wheelsl"
+			{Position 0.1071 	 19.4207 	 7.3439}
+			{bone prizmatic "suspension_l2"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position 27.6335 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.06 0.06}
+				{speed 0.16}
+				{Position 20.1151 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position 11.2202 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.1 0.1}
+				{speed 0.16}
+				{Position 3.7018 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.1 0.1}
+				{speed 0.16}
+				{Position -3.6948 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.16;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position -11.2133 	 -0.3564 	 -3.5383}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l8"
+				{limits -0.06 0.06}
+				{speed 0.16}
+				{Position -20.1098 	 -0.3245 	 -3.5383}
+				{bone revolute "wheell8"
+					{parameters "id=trackleft;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell8.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l9"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position -27.6347 	 -0.3245 	 -3.5383}
+				{bone revolute "wheell9"
+					{parameters "id=trackleft;radius=0.16;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheell9.ply"}
+				}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/suspl.ply"}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position -0.7693 	 -0.3143 	 2.1607}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/trackl.ply"}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9816 	 0 	 0.1908
+					0 	 -1 	 0
+					0.1908 	 0 	 0.9816
+					-35.428 	 -0.3036 	 -5.4295
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.0412 	 -0.0746 	 -7.2539
+				}
+			}
+		}
+		{bone "wheelsr"
+			{Position 0.1071 	 -19.4292 	 7.3439}
+			{bone prizmatic "suspension_r2"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position 27.6335 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.06 0.06}
+				{speed 0.16}
+				{Position 20.1151 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position 11.2202 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.1 0.1}
+				{speed 0.16}
+				{Position 3.7018 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.1 0.1}
+				{speed 0.16}
+				{Position -3.6948 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position -11.2133 	 0.3565 	 -3.5383}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r8"
+				{limits -0.06 0.06}
+				{speed 0.16}
+				{Position -20.1098 	 0.3885 	 -3.5383}
+				{bone revolute "wheelr8"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr8.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r9"
+				{limits -0.05 0.05}
+				{speed 0.16}
+				{Position -27.6347 	 0.3885 	 -3.5383}
+				{bone revolute "wheelr9"
+					{parameters "id=trackright;radius=0.16;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/wheelr9.ply"}
+				}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/suspr.ply"}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position -0.7693 	 0.3625 	 2.1607}
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/trackr.ply"}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.0413 	 0.361 	 -7.2539
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9816 	 0 	 0.1908
+					0 	 -1 	 0
+					0.1908 	 0 	 0.9816
+					-35.428 	 0.3913 	 -5.4295
+				}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-2.0223 	 -30.0739 	 0
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				53.765 	 -0.2978 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-2.0223 	 30.0349 	 0
+			}
+		}
+		{bone "emit3"
+			{Position -51.1046 	 6.4037 	 0}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-18.2697 	 -30.0479 	 0
+			}
+		}
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/armor1.vol"}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0.3256 	 0 	 0.9455
+		0.9455 	 0 	 -0.3256
+		43.6244 	 9.9739 	 2.3455
+	}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/armor2.vol"}
+	{bone "body"}
+	{Position 43.6244 	 -9.9511 	 2.3455}
+}
+{volume "armor3"
+	{cylinder 4.69787 4.35631}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-12.0152 	 13.9402 	 -3.12
+	}
+}
+{volume "armor4"
+	{cylinder 4.69787 4.35631}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-12.0152 	 -13.9477 	 -3.12
+	}
+}
+{volume "armor5"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/armor5.vol"}
+	{bone "body"}
+	{Position 30.5972 	 -10.512 	 3.4857}
+}
+{volume "armor6"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/armor6.vol"}
+	{bone "body"}
+	{Position 30.5972 	 10.518 	 3.4857}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/barrel1.vol"}
+	{bone "gun_rot"}
+	{Position 4.7302 	 0.1637 	 0.6065}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/body1.vol"}
+	{bone "body"}
+	{Position 37.7921 	 0.0029 	 3.8471}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/body2.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		2.0931 	 12.8522 	 7.1312
+	}
+}
+{volume "breech"
+	{box 10.0019 1.55584 3.13011}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-5.058 	 -0.5235 	 0.5023
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/engine1.vol"}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		31.7063 	 12.8565 	 2.0803
+	}
+}
+{volume "fuel1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/fuel1.vol"}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0}
+}
+{volume "fuel2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/fuel2.vol"}
+	{bone "fuel2"}
+	{Position 0 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.7698 	 -0.3099 	 2.0098}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.7698 	 0.3965 	 2.0098}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/ram.vol"}
+	{bone "body"}
+	{Position 0.5062 	 0 	 2.6709}
+}
+{volume "trackleft10"
+	{cylinder 5.819 3.68523}
+	{bone "wheell12"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0314
+	}
+}
+{volume "trackleft1"
+	{cylinder 5.01638 2.93995}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.9151
+	}
+}
+{volume "trackleft2"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft3"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft4"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft5"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft6"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft7"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft8"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft9"
+	{cylinder 3.00983 3.43974}
+	{bone "wheell9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.7703 	 -0.3516 	 2.1837}
+}
+{volume "trackright10"
+	{cylinder 5.819 3.68523}
+	{bone "wheelr12"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0539
+	}
+}
+{volume "trackright1"
+	{cylinder 5.01638 2.93995}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.8706
+	}
+}
+{volume "trackright2"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0061
+	}
+}
+{volume "trackright3"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright4"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright5"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright6"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright7"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright8"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright9"
+	{cylinder 3.00983 3.43974}
+	{bone "wheelr9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2499
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.7703 	 0.3548 	 2.1837}
+}
+{volume "transmission"
+	{cylinder 3.22835 17.9028}
+	{bone "transmission"}
+	{matrix34
+		-0.9763 	 0 	 -0.2164
+		-0.2164 	 0 	 0.9763
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/turret1.vol"}
+	{bone "turret"}
+	{Position -1.007 	 0.0765 	 5.2639}
+}
+{volume "turret2"
+	{cylinder 10.6501 0.862332}
+	{bone "turret"}
+	{Position 0 	 0 	 -0.5709}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/turret3.vol"}
+	{bone "turret"}
+	{Position 7.6887 	 -2.4935 	 4.8338}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/turret4.vol"}
+	{bone "turret"}
+	{Position 10.1928 	 -2.4693 	 4.2299}
+}
+{volume "turret5"
+	{polyhedron "../../../../-vehicle/eng/tank_light/matilda1/turret5.vol"}
+	{bone "turret"}
+	{Position 9.3451 	 2.8228 	 4.268}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bt7 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/bt7/bt7.mdl"}
+	{Extension "bt7.mdl"}
 	{extender "stuff"
 		{item "evh_bt7"}
 	}

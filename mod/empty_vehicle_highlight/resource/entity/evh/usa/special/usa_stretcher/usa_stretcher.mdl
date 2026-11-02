@@ -1,0 +1,120 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 carlos
+;Date:			 19.11.2023 20:21:22
+;File:			 F:\GoH_3d_environment_west2\3d_environment\wounded stretcher\stretcher_export.max
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/usa/special/usa_stretcher/close.anm"} {speed 1}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.49;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{Position 0 	 0 	 1.2967}
+			{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/body.ply"}
+			{bone "us_belt"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					18.8521 	 0 	 2.3086
+				}
+				{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/us_belt.ply"}
+			}
+			{bone "us_pants_reg_spats"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					18.8521 	 0 	 2.3086
+				}
+				{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/us_pants_reg_spats.ply"}
+			}
+			{bone "us_m41_tunic_coat_var2"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					18.8521 	 0 	 2.3086
+				}
+				{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/us_m41_tunic_coat_var2.ply"}
+			}
+			{bone "us_head_1"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					18.8521 	 0 	 2.3086
+				}
+				{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/us_head_1.ply"}
+			}
+			{bone "blanket"
+				{parameters "id=body;"}
+				{Position 9.747 	 0.4756 	 6.4524}
+				{VolumeView "../../../../-vehicle/usa/special/usa_stretcher/blanket.ply"}
+			}
+		}
+		{bone "emit2"
+			{Position -31.1602 	 0.302 	 0}
+		}
+		{bone "emit1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				33.6548 	 1.0451 	 0
+			}
+		}
+		{bone "visor2"
+			{Position -13.1707 	 -2.0956 	 18.0651}
+		}
+		{bone "commander"
+			{Position -22.2451 	 -0.1542 	 -0.65}
+		}
+		{bone "gunner"
+			{matrix34
+				-0.9994 	 -0.0346 	 0
+				0.0346 	 -0.9994 	 0
+				0 	 0 	 1
+				27.2446 	 0.4752 	 0.0407
+			}
+		}
+		{bone "driver1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				24.2584 	 0.2901 	 0.0407
+			}
+		}
+		{bone "driver2"
+			{Position -19.7594 	 -0.2123 	 0.0408}
+		}
+		{bone "visor"
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 -1
+				0 	 1 	 0
+				28.203 	 -3.0709 	 18.2555
+			}
+		}
+	}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 1.95475 -0.193023}
+		{extent 22.167 6.55292}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{volume "body1"
+	{box 34.6614 9.30722 6.2583}
+	{bone "body"}
+	{Position 2.0699 	 -0.2059 	 2.4217}
+}

@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/p47_d22"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/p47_d22_sp"}
+	{blend blend}
+}

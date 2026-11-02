@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for goatley_boat (generated)
-	{Extension "../../../../-vehicle/eng/marine/goatley_boat/goatley_boat.mdl"}
+	{Extension "goatley_boat.mdl"}
 	{extender "stuff"
 		{item "evh_goatley_boat"}
 	}

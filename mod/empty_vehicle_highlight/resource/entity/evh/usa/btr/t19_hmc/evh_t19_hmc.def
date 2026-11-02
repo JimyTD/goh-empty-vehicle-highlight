@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t19_hmc (generated)
-	{Extension "../../../../-vehicle/usa/btr/t19_hmc/t19_hmc.mdl"}
+	{Extension "t19_hmc.mdl"}
 	{extender "stuff"
 		{item "evh_t19_hmc"}
 	}

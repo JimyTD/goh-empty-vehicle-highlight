@@ -1,0 +1,802 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: backdoor doorleft doorright
+;Exported by:	 TigerF
+;Date:			 15.10.2024 12:18:19
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Bedford_OYD\bedford_oyd.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/car/bedford_oyd/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/car/bedford_oyd/stop.anm"} {speed 0.7}}
+		{sequence "doorleft" {file "../../../../-vehicle/eng/car/bedford_oyd/doorleft.anm"} {speed 0.6}{events {0 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/eng/car/bedford_oyd/doorright.anm"} {speed 0.6}{events {0 "open_right"}}}
+		{sequence "close_back" {file "../../../../-vehicle/eng/car/bedford_oyd/close_back.anm"} {speed 0.7} {events {0 "close_rear"}}}
+		{sequence "open_back" {file "../../../../-vehicle/eng/car/bedford_oyd/open_back.anm"} {speed 0.7} {events {0 "open_rear"}}}
+		{sequence "board" {file "../../../../-vehicle/eng/car/bedford_oyd/board.anm"} {speed 1}{events {0 "board"}}}
+		{sequence "wipers" {file "../../../../-vehicle/eng/car/bedford_oyd/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.46;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_oyd/body_r.anm"}{speed 0.7}}
+			}
+			{Position 1.6752 	 0 	 9.0273}
+			{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/body.ply"}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_oyd/bodyback_r.anm"}{speed 0.7}}
+				}
+				{Position -24.7334 	 0 	 10.6035}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/bodyback.ply"}
+				{bone "backdoor"
+					{parameters "id=bodyback;"}
+					{Position -35.3047 	 17.8573 	 -0.8459}
+					
+				}
+				{bone "shield_cover"
+					{parameters "id=shield_cover;"}
+					{Position 0.8098 	 -0.0061 	 21.4069}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/shield_cover.ply"}
+				}
+				{bone "seat01"
+					{matrix34
+						-0.2786 	 -0.9567 	 0.0837
+						0.9604 	 -0.2776 	 0.0243
+						0 	 0.0872 	 0.9962
+						25.4545 	 11.9685 	 -0.2905
+					}
+				}
+				{bone "seat02"
+					{matrix34
+						-0.0872 	 0.9907 	 0.1041
+						-0.9962 	 -0.0867 	 -0.0091
+						0 	 -0.1045 	 0.9945
+						25.7845 	 -9.7697 	 -0.2681
+					}
+				}
+				{bone "seat03"
+					{matrix34
+						0.2152 	 -0.9551 	 0.2037
+						0.9766 	 0.2112 	 -0.0416
+						-0.0033 	 0.2079 	 0.9781
+						-0.6426 	 11.8962 	 -0.2572
+					}
+				}
+				{bone "seat04"
+					{matrix34
+						0.1075 	 0.9869 	 0.12
+						-0.9942 	 0.1056 	 0.0216
+						0.0086 	 -0.1216 	 0.9925
+						-0.4466 	 -11.1919 	 -0.2738
+					}
+				}
+				{bone "seat05"
+					{matrix34
+						-0.0137 	 0.9944 	 0.1045
+						-0.9999 	 -0.0136 	 -0.0014
+						0 	 -0.1045 	 0.9945
+						-14.0169 	 -10.5397 	 -0.3421
+					}
+				}
+				{bone "seat06"
+					{matrix34
+						-0.1835 	 -0.9646 	 0.1894
+						0.9829 	 -0.1824 	 0.0236
+						0.0118 	 0.1905 	 0.9816
+						-15.0419 	 11.2073 	 -0.2551
+					}
+				}
+				{bone "seat07"
+					{matrix34
+						0.2706 	 0.9436 	 0.1908
+						-0.9613 	 0.2756 	 0
+						-0.0526 	 -0.1834 	 0.9816
+						13.3101 	 -10.5928 	 -0.257
+					}
+				}
+				{bone "seat08"
+					{matrix34
+						0.175 	 -0.9663 	 0.1888
+						0.9845 	 0.1729 	 -0.0278
+						-0.0058 	 0.1907 	 0.9816
+						13.1324 	 11.0292 	 -0.2612
+					}
+				}
+				{bone "seat09"
+					{matrix34
+						0.1249 	 0.9867 	 0.1045
+						-0.9921 	 0.1257 	 -0.0014
+						-0.0145 	 -0.1035 	 0.9945
+						-28.4937 	 -9.7074 	 -0.3421
+					}
+				}
+				{bone "seat10"
+					{matrix34
+						0.1817 	 -0.962 	 0.2037
+						0.9833 	 0.177 	 -0.0416
+						0.0039 	 0.2079 	 0.9781
+						-27.9758 	 11.2358 	 -0.2572
+					}
+				}
+				{bone "detail3"
+					{parameters "id=bodyback;"}
+					{Position -23.0129 	 16.1071 	 -4.1537}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/detail3.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=bodyback;"}
+					{Position -26.9036 	 16.1072 	 -4.1537}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/detail4.ply"}
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-35.2333 	 15.3597 	 -2.8128
+					}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-35.2333 	 -15.2321 	 -2.8128
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/car/bedford_oyd/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 45.7477 	 -1.2962 	 8.6926}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.2547 	 1.3698 	 1.4365
+					}
+				}
+				{bone "engine_hoodr"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9781 	 0 	 -0.2079
+						0 	 1 	 0
+						0.2079 	 0 	 0.9781
+						1.531 	 1.2962 	 9.2592
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/engine_hoodr.ply"}
+				}
+				{bone "engine_hoodl"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9781 	 0 	 -0.2079
+						0 	 1 	 0
+						0.2079 	 0 	 0.9781
+						1.531 	 1.2962 	 9.2592
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/engine_hoodl.ply"}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9986 	 -0.0523
+					0 	 0.0523 	 0.9986
+					36.1068 	 14.8352 	 11.3636
+				}
+				
+				{bone "window2"
+					{parameters "id=window2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 0.0523
+						0 	 -0.0523 	 0.9986
+						-8.0462 	 -0.3345 	 13.4766
+					}
+					
+				}
+				{bone "enumerator1"
+					{matrix34
+						0.9992 	 0.041 	 0.0021
+						-0.0411 	 0.9978 	 0.0523
+						0 	 -0.0523 	 0.9986
+						-7.8049 	 0.8475 	 4.0767
+					}
+					
+				}
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9986 	 0.0523
+					0 	 -0.0523 	 0.9986
+					36.1068 	 -14.8352 	 19.3158
+				}
+				
+				{bone "window3"
+					{parameters "id=window3;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 -0.0523
+						0 	 0.0523 	 0.9986
+						-8.0462 	 -0.0817 	 5.5354
+					}
+					
+				}
+				{bone "enumerator2"
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9945 	 -0.1045
+						0 	 0.1045 	 0.9945
+						-4.5079 	 -0.839 	 -3.7488
+					}
+					
+				}
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position 37.151 	 -6.7989 	 24.5055}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/window1.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.1553 	 0.9803 	 0.1219
+					-0.9877 	 -0.1564 	 0
+					0.0191 	 -0.1204 	 0.9925
+					-13.7995 	 14.3869 	 -1.3347
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-56.1687 	 0.0007 	 3.3968
+				}
+			}
+			{bone "visor2"
+				{Position 31.1799 	 4.5076 	 25.1648}
+			}
+			{bone "visor1"
+				{Position 31.1799 	 -6.3193 	 25.1579}
+			}
+			{bone "headlightr"
+				{Position 55.7486 	 -11.114 	 13.1274}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					56.024 	 11.1267 	 13.1274
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9917 	 0.0798 	 0.101
+					-0.0809 	 0.9967 	 0.0071
+					-0.1001 	 -0.0152 	 0.9949
+					27.2494 	 -8.1732 	 5.184
+				}
+			}
+			{bone "commander"
+				{matrix34
+					0.9882 	 -0.0158 	 0.1521
+					0.0187 	 0.9997 	 -0.0178
+					-0.1518 	 0.0205 	 0.9882
+					26.8735 	 7.2165 	 5.184
+				}
+			}
+			{bone "transmission"
+				{parameters "id=body;"}
+				{Position 31.1489 	 0.2253 	 2.8461}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/transmission.ply"}
+			}
+			{bone "window4"
+				{parameters "id=window4;"}
+				{Position 37.151 	 6.7989 	 24.5055}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/window4.ply"}
+			}
+			{bone "wiper1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9474 	 -0.0872 	 0.3078
+					-0.3182 	 -0.1558 	 0.9351
+					-0.0335 	 -0.9839 	 -0.1754
+					36.1419 	 -6.4643 	 29.4071
+				}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/wiper1.ply"}
+			}
+			{bone "window5"
+				{parameters "id=window4;"}
+				{Position 18.8988 	 0 	 24.9519}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/window5.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 56.1247 	 11.4617 	 7.3847}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 55.4486 	 -12.8157 	 7.4254}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/detail2.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 15.323 	 -7.4102 	 13.2727}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/detail5.ply"}
+			}
+			{bone "cover"
+				{parameters "id=body;"}
+				{Position 55.5256 	 11.1285 	 13.1342}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/cover.ply"}
+			}
+			{bone "fuel1"
+				{Position -0.0791 	 -11.6812 	 3.0211}
+			}
+			{bone "fuel2"
+				{Position -0.0791 	 11.655 	 3.0211}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.6074 	 0 	 -0.7944
+					0 	 1 	 0
+					0.7944 	 0 	 -0.6074
+					37.7737 	 -7.4578 	 16.3401
+				}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/steer.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 45.9712 	 0 	 9.0525}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.9377 	 -0.1577
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						0.1541 	 -1.9577 	 8.951
+					}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -1.5092 	 -0.1157
+					}
+				}
+				{bone revolute "wheell1"
+					{parameters "id=wheelleft1;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 -2.3397 	 -0.1577
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/wheell1.ply"}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0.0359 	 -14.0543 	 -0.1577
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						0.125 	 1.7942 	 8.9748
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.0359 	 1.3926 	 -0.1157
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.8407 	 0.042
+						}
+						{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/wheelr1.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 15.447 	 -0.042}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.479;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -15.447 	 -0.042}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.479;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone "front_susp"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/front_susp.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -31.3008 	 0 	 9.0525}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 16.3563 	 0.1894}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -0.0789 	 -0.1894
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -0.0001 	 -16.3522 	 0.1894}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0.0001 	 0.0641 	 -0.1894
+					}
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/wheelr2.ply"}
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 -1 	 0
+					0.3256 	 0 	 0.9455
+					-4.5433 	 -15.9347 	 -8.1142
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 -1 	 0
+					0.3256 	 0 	 0.9455
+					-4.5165 	 15.9377 	 -8.1142
+				}
+			}
+			{bone "rear_susp"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/rear_susp.ply"}
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				22.6713 	 27.4203 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				22.684 	 -30.4331 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passangers;"}
+			{Position -71.8971 	 -11.9025 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passangers;"}
+			{Position -71.8971 	 10.8882 	 0}
+		}
+		{bone "dummy"
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				-23.7048 	 0 	 16.7872
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/body1.vol"}
+	{bone "body"}
+	{Position 44.4782 	 0.0034 	 11.2876}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/body2.vol"}
+	{bone "body"}
+	{Position 29.1396 	 0.0404 	 17.4274}
+}
+{volume "body3"
+	{box 17.5271 67.1907 5.28033}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-23.4703 	 0.004 	 3.7158
+	}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/body4.vol"}
+	{bone "body"}
+	{Position 13.4397 	 -6.8176 	 1.1068}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/body5.vol"}
+	{bone "body"}
+	{Position 13.4397 	 6.7234 	 1.1068}
+}
+{volume "bodyback1"
+	{box 41.857 69.8303 15.7913}
+	{bone "bodyback"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0.1448 	 0.0396 	 7.0243
+	}
+}
+{volume "bodyback2"
+	{box 41.7344 0.779373 15.1118}
+	{bone "backdoor"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0.4485 	 -17.8449 	 8.6267
+	}
+}
+{volume "bodyback3"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/bodyback3.vol"}
+	{bone "bodyback"}
+	{Position 33.9129 	 0.0914 	 -2.2318}
+}
+{volume "bodyback4"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/bodyback4.vol"}
+	{bone "bodyback"}
+	{Position 16.9921 	 0.0914 	 -2.2318}
+}
+{volume "bodyback5"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/bodyback5.vol"}
+	{bone "bodyback"}
+	{Position -0.1426 	 0.0914 	 -2.2318}
+}
+{volume "bodyback6"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/bodyback6.vol"}
+	{bone "bodyback"}
+	{Position -17.2692 	 0.0914 	 -2.2318}
+}
+{volume "bodyback7"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/bodyback7.vol"}
+	{bone "bodyback"}
+	{Position -34.2543 	 0.0914 	 -2.2318}
+}
+{volume "detail5"
+	{cylinder 9.05512 5.08946}
+	{bone "detail5"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-0.4146 	 0 	 0
+	}
+}
+{volume "engine"
+	{box 14.9924 11.7156 8.46835}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.6962 	 1.3063 	 1.2039
+	}
+}
+{volume "fuel1"
+	{box 6.32605 7.23679 20.1416}
+	{bone "fuel1"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "fuel2"
+	{box 6.32605 7.23679 20.1416}
+	{bone "fuel2"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/hole1.vol"}
+	{bone "body"}
+	{Position 28.4402 	 0.1594 	 24.0226}
+}
+{volume "hole2"
+	{box 11.738 6.88647 18.063}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		30.5449 	 6.769 	 24.483
+	}
+}
+{volume "hole3"
+	{box 11.738 6.88647 18.063}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		30.5449 	 -6.7987 	 24.483
+	}
+}
+{volume "hole4"
+	{box 38.9562 68.2271 35.6349}
+	{bone "bodyback"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-0.9891 	 -0.002 	 18.7664
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/ram.vol"}
+	{bone "body"}
+	{Position -0.58 	 0.0912 	 5.3914}
+}
+{volume "shield_cover"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/shield_cover.vol"}
+	{bone "shield_cover"}
+	{Position -0.1419 	 0.0792 	 5.9074}
+}
+{volume "transmission"
+	{cylinder 3.5843 8.47365}
+	{bone "transmission"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		2.141 	 -0.3066 	 0.0257
+	}
+}
+{volume "wheelleft1"
+	{cylinder 9.05512 5.09429}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.3951
+	}
+}
+{volume "wheelleft2"
+	{cylinder 9.05512 5.14154}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 -0.1209 	 -0.414
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.05512 5.08946}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.4235
+	}
+}
+{volume "wheelright2"
+	{cylinder 9.05512 5.14154}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0001 	 -0.1209 	 0.452
+	}
+}
+{volume "window1"
+	{box 11.8226 7.24469 0.464961}
+	{bone "window1"}
+	{matrix34
+		-0.1026 	 -0.9947 	 -0.0114
+		-0.3248 	 0.0227 	 0.9455
+		-0.9402 	 0.1007 	 -0.3254
+		0.0948 	 -0.0246 	 0.1407
+	}
+}
+{volume "window2"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/window2.vol"}
+	{bone "window2"}
+	{Position -0.0814 	 -0.001 	 0.0746}
+}
+{volume "window3"
+	{polyhedron "../../../../-vehicle/eng/car/bedford_oyd/window3.vol"}
+	{bone "window3"}
+	{Position -0.0814 	 -0.1289 	 0.0746}
+}
+{volume "window4"
+	{box 11.8226 7.24469 0.464961}
+	{bone "window4"}
+	{matrix34
+		0.12 	 -0.9927 	 0.0114
+		-0.3243 	 -0.0284 	 0.9455
+		-0.9383 	 -0.1171 	 -0.3254
+		0.0788 	 0.1206 	 0.0661
+	}
+}

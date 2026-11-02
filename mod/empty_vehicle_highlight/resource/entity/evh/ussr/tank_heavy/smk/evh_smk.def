@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for smk (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/smk/smk.mdl"}
+	{Extension "smk.mdl"}
 	{extender "stuff"
 		{item "evh_smk"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stug3g_fin_early (generated)
-	{Extension "../../../../-vehicle/finland/tank_medium/stug3g_fin_early/stug3g_fin_early.mdl"}
+	{Extension "stug3g_fin_early.mdl"}
 	{extender "stuff"
 		{item "evh_stug3g_fin_early"}
 	}

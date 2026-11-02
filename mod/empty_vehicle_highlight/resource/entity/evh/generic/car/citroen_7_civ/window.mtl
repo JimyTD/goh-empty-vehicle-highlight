@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/citroen_traction_avant_glass"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/citroen_traction_avant_glass_sp"}
+	{blend blend}
+}

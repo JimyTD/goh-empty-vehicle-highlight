@@ -1,0 +1,5 @@
+{material simple
+	{diffuse "$/_vehicle/eng/typhoon_propwork"}
+	;{color "230 230 230 60"}
+	{blend blend}
+}

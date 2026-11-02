@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "/entity/-vehicle/ussr/tank_heavy/kv1_39/fight_faschists_decal"}
+	{blend blend}
+}

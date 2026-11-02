@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for schwimmwagen (generated)
-	{Extension "../../../../-vehicle/germany/car/schwimmwagen/schwimmwagen.mdl"}
+	{Extension "schwimmwagen.mdl"}
 	{extender "stuff"
 		{item "evh_schwimmwagen"}
 	}

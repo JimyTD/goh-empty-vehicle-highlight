@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for flammpanzer_b2 (generated)
-	{Extension "../../../../-vehicle/germany/tank_heavy/flammpanzer_b2/flammpanzer_b2.mdl"}
+	{Extension "flammpanzer_b2.mdl"}
 	{extender "stuff"
 		{item "evh_flammpanzer_b2"}
 	}

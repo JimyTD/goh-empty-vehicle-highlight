@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdkfz10_pak38 (generated)
-	{Extension "../../../../-vehicle/germany/btr/sdkfz10_pak38/sdkfz10_pak38.mdl"}
+	{Extension "sdkfz10_pak38.mdl"}
 	{extender "stuff"
 		{item "evh_sdkfz10_pak38"}
 	}

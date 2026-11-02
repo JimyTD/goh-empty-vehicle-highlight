@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for tetrarch_mk7_littlejohn (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/tetrarch_mk7_littlejohn/tetrarch_mk7_littlejohn.mdl"}
+	{Extension "tetrarch_mk7_littlejohn.mdl"}
 	{extender "stuff"
 		{item "evh_tetrarch_mk7_littlejohn"}
 	}

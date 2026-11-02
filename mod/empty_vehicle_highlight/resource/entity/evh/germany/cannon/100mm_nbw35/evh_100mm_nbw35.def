@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 100mm_nbw35 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/100mm_nbw35/100mm_nbw35.mdl"}
+	{Extension "100mm_nbw35.mdl"}
 	{extender "stuff"
 		{item "evh_100mm_nbw35"}
 	}

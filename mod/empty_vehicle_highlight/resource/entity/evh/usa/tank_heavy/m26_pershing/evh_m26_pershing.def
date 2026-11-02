@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m26_pershing (generated)
-	{Extension "../../../../-vehicle/usa/tank_heavy/m26_pershing/m26_pershing.mdl"}
+	{Extension "m26_pershing.mdl"}
 	{extender "stuff"
 		{item "evh_m26_pershing"}
 	}

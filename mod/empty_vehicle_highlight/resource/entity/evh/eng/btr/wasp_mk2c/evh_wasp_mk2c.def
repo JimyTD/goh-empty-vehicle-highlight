@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wasp_mk2c (generated)
-	{Extension "../../../../-vehicle/eng/btr/wasp_mk2c/wasp_mk2c.mdl"}
+	{Extension "wasp_mk2c.mdl"}
 	{extender "stuff"
 		{item "evh_wasp_mk2c"}
 	}

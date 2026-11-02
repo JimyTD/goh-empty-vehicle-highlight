@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ba20 (generated)
-	{Extension "../../../../-vehicle/ussr/btr/ba20/ba20.mdl"}
+	{Extension "ba20.mdl"}
 	{extender "stuff"
 		{item "evh_ba20"}
 	}

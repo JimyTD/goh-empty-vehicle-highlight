@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for daimler_dingo_early (generated)
-	{Extension "../../../../-vehicle/eng/btr/daimler_dingo/daimler_dingo.mdl"}
+	{Extension "daimler_dingo.mdl"}
 	{extender "stuff"
 		{item "evh_daimler_dingo_early"}
 	}

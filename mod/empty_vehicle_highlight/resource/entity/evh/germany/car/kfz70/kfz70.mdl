@@ -1,0 +1,714 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: backdoor1_1 backdoor1_2 seat01 seat02 seat03 seat04 seat05 seat06 seat07 seat08
+;Exported by:	 TigerF
+;Date:			 20.06.2025 21:57:37
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\car\Krupp_protze_kfz70\kfz70.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/car/kfz70/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/car/kfz70/stop.anm"} {speed 0.6}}
+		{sequence "wipers" {file "../../../../-vehicle/germany/car/kfz70/wipers.anm"} {speed 0.4}{resume}}
+		{sequence "board" {file "../../../../-vehicle/germany/car/kfz70/board.anm"} {speed 1}{events {0 "board"}}}
+		{sequence "close_back" {file "../../../../-vehicle/germany/car/kfz70/close_back.anm"} {speed 0.7} {events {0 "open_rear"}}}
+		{sequence "open_back" {file "../../../../-vehicle/germany/car/kfz70/open_back.anm"} {speed 0.7} {events {0 "close_rear"}}}
+	}
+	{bone "basis"
+		{parameters "steermax=28;wheelradius=0.37;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_front"
+			{Position 34.2742 	 0 	 7.2094}
+			{bone "suspf"
+				{parameters "id=body;"}
+				{Position 1.1242 	 0 	 0.0484}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/suspf.ply"}
+			}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0.014 	 12.5591 	 -0.0037
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.014 	 -7.3622 	 -0.0037
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.37;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.014 	 -3.622 	 -0.0037
+						}
+						{VolumeView "../../../../-vehicle/germany/car/kfz70/wheell1.ply"}
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9848 	 0 	 0.1736
+							0 	 -1 	 0
+							0.1736 	 0 	 0.9848
+							-0.0025 	 -3.622 	 -7.1757
+						}
+					}
+				}
+				{bone "druml"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0009 	 -0.9897 	 -0.0521
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/druml.ply"}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0.014 	 -12.5591 	 -0.0037
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.014 	 7.3622 	 -0.0037
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.37;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0025 	 3.622 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/car/kfz70/wheelr1.ply"}
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9821 	 0 	 0.1885
+							-0.0001 	 -1 	 -0.0006
+							0.1885 	 -0.0007 	 0.9821
+							-0.0025 	 3.622 	 -7.1757
+						}
+					}
+				}
+				{bone "drumr"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0009 	 0.9896 	 -0.0521
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/drumr.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 13.0315 	 0}
+				{bone revolute "wheell4"
+					{parameters "id=wheelleft4;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 3.2677 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -13.0315 	 0}
+				{bone revolute "wheelr4"
+					{parameters "id=wheelright4;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -3.2677 	 0
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -22.6359 	 0 	 8.7862}
+			{bone "suspb"
+				{parameters "id=body;"}
+				{orientation
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+				}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/suspb.ply"}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 8.8564 	 19.918 	 -1.5769}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -3.6188 	 -0.0036
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wheell2.ply"}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-22.5818 	 -3.6188 	 -5.7327
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -8.683 	 19.918 	 -1.5769}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -3.6188 	 -0.0036
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -8.683 	 -19.9213 	 -1.5769}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 3.622 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 8.8564 	 -19.9213 	 -1.5769}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.37;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 3.622 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wheelr2.ply"}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-22.5818 	 3.622 	 -5.7327
+					}
+				}
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				9.7047 	 -35.6797 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				9.7047 	 35.0484 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passangers;"}
+			{Position -59.2508 	 0 	 0}
+		}
+		{bone "dummy"
+			{Position -30.4132 	 0 	 0}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/car/kfz70/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.8229 	 0.0305 	 22.6913}
+			{VolumeView "../../../../-vehicle/germany/car/kfz70/body.ply"}
+			{bone "fwheelr4"
+				{parameters "id=body;"}
+				{Position 9.2158 	 -16.3298 	 -9.7776}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/fwheelr4.ply"}
+			}
+			{bone "fwheell4"
+				{parameters "id=body;"}
+				{Position 9.2158 	 16.2687 	 -9.7776}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/fwheell4.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position 20.9211 	 -12.0412 	 -4.7971}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/detail9.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position 20.9211 	 11.9803 	 -4.7971}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/detail8.ply"}
+			}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{Position -22.5039 	 0 	 0.5826}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/bodyback.ply"}
+				{bone "backdoor1_1"
+					{parameters "id=bodyback;"}
+					{Position -24.483 	 8.7884 	 -4.8638}
+					
+				}
+				{bone "detail4"
+					{parameters "id=bodyback;"}
+					{Position 20.7383 	 18.4668 	 1.3464}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail4.ply"}
+				}
+				{bone "backdoor1_2"
+					{parameters "id=bodyback;"}
+					{Position -24.483 	 -8.8494 	 -4.8638}
+					
+					{bone "backdoor1_2_hinge"
+						{parameters "id=bodyback;"}
+						{Position 0.0039 	 5.5512 	 4.0945}
+						
+					}
+				}
+				{bone "detail1"
+					{parameters "id=bodyback;"}
+					{Position 20.7998 	 -18.523 	 2.3867}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail1.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=bodyback;"}
+					{Position 0.771 	 18.5771 	 1.4442}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail5.ply"}
+				}
+				{bone "detail7"
+					{parameters "id=bodyback;"}
+					{Position -19.8315 	 -18.5275 	 -1.0897}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail7.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=bodyback;"}
+					{matrix34
+						0 	 0 	 1
+						1 	 0 	 0
+						0 	 1 	 0
+						-24.9017 	 -14.0234 	 1.4269
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail2.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=bodyback;"}
+					{Position 0.7711 	 -18.5526 	 1.4441}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail3.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=bodyback;"}
+					{Position -20.0171 	 18.4355 	 1.3464}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail6.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=bodyback;"}
+					{Position 20.993 	 -0.0415 	 7.9073}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/detail10.ply"}
+				}
+				{bone revolute "seat01"
+					{matrix34
+						0.1165 	 0.9925 	 0.0381
+						-0.9931 	 0.116 	 0.0154
+						0.0109 	 -0.0396 	 0.9992
+						-17.5414 	 -11.0343 	 0.4315
+					}
+				}
+				{bone revolute "seat03"
+					{matrix34
+						0.0355 	 0.9993 	 -0.0143
+						-0.9991 	 0.0358 	 0.0212
+						0.0217 	 0.0135 	 0.9997
+						-5.0019 	 -11.0343 	 0.4315
+					}
+				}
+				{bone revolute "seat05"
+					{matrix34
+						0.2394 	 0.9699 	 0.0441
+						-0.9708 	 0.2398 	 -0.0046
+						-0.0151 	 -0.0417 	 0.999
+						7.3295 	 -11.0343 	 0.4315
+					}
+				}
+				{bone revolute "seat04"
+					{matrix34
+						0.1185 	 -0.9927 	 -0.0224
+						0.9924 	 0.1177 	 0.0353
+						-0.0324 	 -0.0264 	 0.9991
+						-7.3509 	 9.9064 	 0.4315
+					}
+				}
+				{bone revolute "seat06"
+					{matrix34
+						0.2166 	 -0.9755 	 -0.0389
+						0.976 	 0.2155 	 0.0307
+						-0.0215 	 -0.0446 	 0.9988
+						5.251 	 9.9064 	 0.4315
+					}
+				}
+				{bone revolute "seat08"
+					{matrix34
+						-0.1962 	 -0.9806 	 0
+						0.9806 	 -0.1962 	 0
+						0 	 0 	 1
+						18.5153 	 9.9064 	 0.4315
+					}
+				}
+				{bone revolute "seat02"
+					{matrix34
+						0.1342 	 -0.9905 	 0.0296
+						0.9887 	 0.1318 	 -0.0711
+						0.0666 	 0.0388 	 0.997
+						-19.2013 	 8.7007 	 0.4315
+					}
+				}
+				{bone revolute "seat07"
+					{matrix34
+						-0.3493 	 0.937 	 0
+						-0.937 	 -0.3493 	 0
+						0 	 0 	 1
+						19.5273 	 -9.2613 	 0.4315
+					}
+				}
+				{bone "shield_cover"
+					{parameters "id=shield_cover;"}
+					{Position 9.1236 	 -0.0305 	 11.6626}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/shield_cover.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/car/kfz70/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 37.9128 	 0.0359 	 -7.3887}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/engine.ply"}
+				{bone "hatch_engine"
+					{parameters "id=engine;"}
+					{Position -9.4324 	 -0.0861 	 8.0289}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/hatch_engine.ply"}
+				}
+				{bone "fxfire1"
+					{Position 0 	 0 	 0}
+				}
+			}
+			{bone "fuel"
+				{Position 9.2092 	 -8.5917 	 -10.7033}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-49.8904 	 -0.0305 	 -11.9015
+				}
+			}
+			{bone "headlightl"
+				{Position 47.4939 	 -9.9912 	 -6.6434}
+			}
+			{bone "headlightr"
+				{Position 47.4939 	 9.9301 	 -6.6434}
+			}
+			{bone "transmission"
+				{Position -8.1072 	 -0.0305 	 -11.6028}
+			}
+			{bone "visor1"
+				{Position 15.2325 	 -6.2707 	 8.2585}
+			}
+			{bone "visor2"
+				{Position 15.2325 	 6.5049 	 8.2585}
+			}
+			{bone "fxfire5"
+				{Position 14.245 	 0 	 0}
+			}
+			{bone "enumerator1"
+				{Position 50.6335 	 2.8489 	 -11.5529}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/enumerator1.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.2055 	 0 	 -0.9787
+					0 	 1 	 0
+					0.9787 	 0 	 -0.2055
+					17.3293 	 6.6498 	 2.3862
+				}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/steer.ply"}
+			}
+			{bone "windshield"
+				{parameters "id=body;"}
+				{Position 20.7674 	 -0.0305 	 6.843}
+				{VolumeView "../../../../-vehicle/germany/car/kfz70/windshield.ply"}
+				{bone "glass1"
+					{parameters "id=glass1;"}
+					{Position -0.1095 	 6.5354 	 1.4229}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/glass1.ply"}
+				}
+				{bone "glass2"
+					{parameters "id=glass2;"}
+					{Position -0.0282 	 -6.2424 	 1.4229}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/glass2.ply"}
+				}
+				{bone "wiper2"
+					{parameters "id=body;"}
+					{matrix34
+						0.9659 	 0 	 0.2588
+						0 	 1 	 0
+						-0.2588 	 0 	 0.9659
+						-0.5195 	 -6.3787 	 4.9671
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wiper2.ply"}
+				}
+				{bone "wiper1"
+					{parameters "id=body;"}
+					{matrix34
+						0.9659 	 0 	 0.2588
+						0 	 1 	 0
+						-0.2588 	 0 	 0.9659
+						-0.5195 	 6.7713 	 4.9734
+					}
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/wiper1.ply"}
+				}
+			}
+			{bone "driver"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					9.2236 	 6.8066 	 -5.9199
+				}
+			}
+			{bone "commander"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					9.2236 	 -6.5905 	 -5.9199
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-41.9013 	 15.0827 	 -12.439
+				}
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/body1.vol"}
+	{bone "body"}
+	{Position 25.5584 	 -0.0335 	 -5.2948}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/body2.vol"}
+	{bone "body"}
+	{Position 13.1171 	 -0.0305 	 -5.302}
+}
+{volume "bodyback1"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/bodyback1.vol"}
+	{bone "bodyback"}
+	{Position 0.5268 	 -0.0305 	 -6.2319}
+}
+{volume "bodyback2"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/bodyback2.vol"}
+	{bone "bodyback"}
+	{Position 0.4632 	 -0.0305 	 3.0359}
+}
+{volume "bodyback3"
+	{box 0.602893 8.80594 9.04615}
+	{bone "backdoor1_1"}
+	{Position -0.0195 	 -4.3898 	 0.016}
+}
+{volume "bodyback4"
+	{box 0.602893 8.80594 9.04615}
+	{bone "backdoor1_2"}
+	{Position -0.0195 	 4.3898 	 0.016}
+}
+{volume "engine"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/engine.vol"}
+	{bone "engine"}
+	{Position -0.3255 	 -0.0739 	 0.7655}
+}
+{volume "fuel"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/fuel.vol"}
+	{bone "fuel"}
+	{Position 0 	 0 	 0}
+}
+{volume "glass1"
+	{box 0.34099 11.9268 6.4625}
+	{bone "glass1"}
+	{matrix34
+		0.9621 	 0 	 0.2726
+		0 	 1 	 0
+		-0.2726 	 0 	 0.9621
+		0 	 0 	 0
+	}
+}
+{volume "glass2"
+	{box 0.534983 11.9268 6.4625}
+	{bone "glass2"}
+	{matrix34
+		0.9621 	 0 	 0.2726
+		0 	 1 	 0
+		-0.2726 	 0 	 0.9621
+		-0.0017 	 0 	 -0.0074
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/hole1.vol"}
+	{bone "bodyback"}
+	{Position -0.7384 	 -0.1102 	 3.7188}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/hole2.vol"}
+	{bone "bodyback"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		0.4895 	 12.7647 	 7.5009
+	}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/hole3.vol"}
+	{bone "bodyback"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		0.4895 	 -13.0774 	 7.5009
+	}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/hole4.vol"}
+	{bone "body"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		15.2325 	 -0.0305 	 -3.141
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/ram.vol"}
+	{bone "body"}
+	{Position 0.8229 	 -0.0297 	 -11.4911}
+}
+{volume "shield_cover"
+	{polyhedron "../../../../-vehicle/germany/car/kfz70/shield_cover.vol"}
+	{bone "shield_cover"}
+	{Position -0.0136 	 0 	 1.9273}
+}
+{volume "transmission"
+	{box 13.0001 3.57149 3.23947}
+	{bone "transmission"}
+	{Position 0 	 0 	 0}
+}
+{volume "wheelleft1"
+	{cylinder 7.28346 3.53858}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.104
+	}
+}
+{volume "wheelleft2"
+	{cylinder 7.28346 3.53858}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.104
+	}
+}
+{volume "wheelleft3"
+	{cylinder 7.28346 3.53858}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.104
+	}
+}
+{volume "wheelright1"
+	{cylinder 7.28346 3.53858}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0165 	 0.0037 	 -0.1
+	}
+}
+{volume "wheelright2"
+	{cylinder 7.28346 3.53858}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0.0036 	 -0.1
+	}
+}
+{volume "wheelright3"
+	{cylinder 7.28346 3.53858}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0.0036 	 -0.1
+	}
+}

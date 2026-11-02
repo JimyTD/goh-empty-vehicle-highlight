@@ -1,0 +1,130 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 guita
+;Date:			 07.06.2021 17:46:10
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_export\3d_vehicles\GENERIC\Train\wagon4_oiltank\wagon4_tanker.max
+{skeleton
+	{bone "basis"
+		{parameters "wheelradius=0.6;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "link1"
+			{Position 84.8811 	 0 	 19.6034}
+		}
+		{bone "link2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-85.3016 	 0 	 19.6034
+			}
+		}
+		{bone "pivot_front"
+			{Position 38.2345 	 0 	 12.6459}
+			{bone revolute "wheel_front"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					0 	 0 	 0
+				}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_tanker/wheel_front.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -38.5275 	 0 	 12.6459}
+			{bone revolute "wheel_back"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					0 	 0 	 0
+				}
+				{VolumeView "../../../../-vehicle/generic/train/wagon_tanker/wheel_back.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position -0.1479 	 0 	 24.1744}
+			{VolumeView "../../../../-vehicle/generic/train/wagon_tanker/body.ply"}
+			{bone "fxfire2"
+				{matrix34
+					-0.0125 	 0 	 0.9999
+					0 	 1 	 0
+					-0.9999 	 0 	 -0.0125
+					1.5467 	 0 	 12.5369
+				}
+			}
+		}
+	}
+}
+{volume "body1"
+	{box 153.439 6.08459 48.0851}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		2.7057 	 0.0072 	 0.1537
+	}
+}
+{volume "body2"
+	{cylinder 23.8809 133.108}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-0.0839 	 -0.1582 	 27.4241
+	}
+}
+{volume "body3"
+	{cylinder 12.9564 19.1627}
+	{bone "body"}
+	{Position 9.4878 	 -0.0074 	 53.6973}
+}
+{volume "wheelleft1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_front"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 15.6555
+	}
+}
+{volume "wheelleft2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_back"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 15.5183
+	}
+}
+{volume "wheelright1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_front"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -15.6014
+	}
+}
+{volume "wheelright2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheel_back"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -15.5542
+	}
+}

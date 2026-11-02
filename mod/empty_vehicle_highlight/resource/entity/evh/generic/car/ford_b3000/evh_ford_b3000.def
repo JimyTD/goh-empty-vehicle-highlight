@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ford_b3000 (generated)
-	{Extension "../../../../-vehicle/generic/car/ford_b3000/ford_b3000.mdl"}
+	{Extension "ford_b3000.mdl"}
 	{extender "stuff"
 		{item "evh_ford_b3000"}
 	}

@@ -1,0 +1,687 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorleft doorright turret
+;Exported by:	 nic21
+;Date:			 15.01.2026 18:34:57
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\humber_mk2\humber_mk2.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/btr/humber_mk2/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/btr/humber_mk2/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/eng/btr/humber_mk2/fire.anm"} {speed 1.5}}
+		{sequence "open_left" {file "../../../../-vehicle/eng/btr/humber_mk2/open_left.anm"} {speed 0.4}{events {2 "hatch_light"} {46 "hatch_light"}}}
+		{sequence "open_right" {file "../../../../-vehicle/eng/btr/humber_mk2/open_right.anm"} {speed 0.4}{events {2 "hatch_light"} {46 "hatch_light"}}}
+		{sequence "open" {file "../../../../-vehicle/eng/btr/humber_mk2/open.anm"} {speed 0.3}{resume}{events {152 "hatch_light"} {162 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.53;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_back"
+			{Position -24.7549 	 0 	 10.3543}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -0.0089 	 20.6974 	 0}
+				{bone "fxtracel2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-5.6944 	 -2.4887 	 -8.6662
+					}
+				}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -2.4887 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -0.0089 	 -20.698 	 0}
+				{bone "fxtracer2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-5.6944 	 2.4894 	 -8.6662
+					}
+				}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0.0089 	 2.4894 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/wheelr2.ply"}
+				}
+			}
+			{bone "suspb"
+				{parameters "id=engine;"}
+				{Position 0.0133 	 0 	 4.0058}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/suspb.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 26.2552 	 0 	 10.3543}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -16.2008 	 0}
+				{bone "wheelr3"
+					{parameters "id=wheelright3;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -2.0169 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 16.2008 	 0}
+				{bone "wheell3"
+					{parameters "id=wheelleft3;radius=0.53;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 2.0079 	 0
+					}
+				}
+			}
+			{bone revolute "steer_l1"
+				{parameters "id=body;"}
+				{limits -25 25}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-0.2315 	 14.6686 	 -0.0787
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/steer_l1.ply"}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.2316 	 -6.0288 	 -0.0787
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9848 	 0 	 0.1736
+							0 	 -1 	 0
+							0.1736 	 0 	 0.9848
+							0.0047 	 -2.4887 	 -10.3863
+						}
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.53;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0047 	 -2.4887 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/wheell1.ply"}
+					}
+				}
+			}
+			{bone revolute "steer_r1"
+				{parameters "id=body;"}
+				{limits -25 25}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-0.2315 	 -14.6686 	 -0.0787
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/steer_r1.ply"}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.2316 	 6.0294 	 -0.0787
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9821 	 0 	 0.1885
+							-0.0001 	 -1 	 -0.0006
+							0.1885 	 -0.0007 	 0.9821
+							0.0047 	 2.4894 	 -10.3823
+						}
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.53;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 2.4894 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/wheelr1.ply"}
+					}
+				}
+			}
+			{bone "suspf"
+				{parameters "id=body;"}
+				{Position -0.5285 	 -0.1409 	 5.0849}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/suspf.ply"}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				4.5669 	 -35.1969 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.5669 	 35.1969 	 0
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_mk2/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.0036 	 0 	 23.8511}
+			{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_mk2/engine_r.anm"}{speed 0.7}}
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/engine.ply"}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position -37.5228 	 17.9177 	 0.9401}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail4.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position -33.6107 	 16.5386 	 2.9779}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail5.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position -37.5228 	 -17.9177 	 0.9401}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail6.ply"}
+				}
+				{bone "hatch_engine"
+					{parameters "id=engine;"}
+					{Position -17.9206 	 -8.4765 	 12.857}
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/hatch_engine.ply"}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9936 	 0 	 -0.1132
+						0 	 -1 	 0
+						-0.1132 	 0 	 0.9936
+						-43.8401 	 3.1442 	 -9.9306
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9936 	 0 	 -0.1132
+						0 	 -1 	 0
+						-0.1132 	 0 	 0.9936
+						-43.8401 	 2.9528 	 -9.9306
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-25.9028 	 0.315 	 4.0194
+					}
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-39.1637 	 19.0354 	 -3.4968
+					}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-39.1637 	 -19.0354 	 -3.4968
+					}
+				}
+				{bone "fuel1"
+					{Position -18.2983 	 9.4169 	 0.599}
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 26.294 	 18.7048 	 5.0227}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 9.2814 	 14.2479 	 9.1439}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -7.4732 	 15.2704 	 7.2838}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail3.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position 8.3574 	 -13.8009 	 10.295}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position 8.6539 	 -14.3663 	 8.3966}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail8.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position 26.5567 	 -18.6715 	 5.0227}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail9.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{Position 20.8326 	 -18.6769 	 5.0227}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail10.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{Position 44.6329 	 0 	 0.8174}
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk2/detail11.ply"}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9659 	 -0.2588
+					0 	 0.2588 	 0.9659
+					12.4898 	 13.5102 	 2.6368
+				}
+				
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9659 	 0.2588
+					0 	 -0.2588 	 0.9659
+					12.4898 	 -13.5102 	 2.6368
+				}
+				
+			}
+			{bone "transmission"
+				{Position 25.9008 	 0.799 	 -13.4432}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					1.3815 	 -0.0042 	 11.8969
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_mk2/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 1.3789 	 0 	 13.2908}
+				
+				{bone "hatch_commander1_2"
+					{parameters "id=turret;"}
+					{Position -8.2945 	 -6.2058 	 9.5481}
+					
+				}
+				{bone "hatch_gunner1_2"
+					{parameters "id=turret;"}
+					{Position -4.5612 	 4.1355 	 8.6044}
+					
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_mk2/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						11.15 	 1.8791 	 4.3531
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.0731 	 0.2076 	 2.1524
+						}
+						
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.5824 	 0.1783 	 -2.1957
+						}
+					}
+					{bone "foresight1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							26.3687 	 0.2076 	 2.1524
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-2.31 	 0.8939 	 -7.4103
+						}
+					}
+				}
+				{bone "hatch_commander1_1"
+					{parameters "id=turret;"}
+					{Position 4.8255 	 -6.2015 	 9.551}
+					
+				}
+				{bone "hatch_gunner1_1"
+					{parameters "id=turret;"}
+					{Position 5.9368 	 4.0374 	 8.6044}
+					
+				}
+				{bone "fxsmoke_shot2"
+					{matrix34
+						0.8876 	 -0.0706 	 0.4551
+						0.1136 	 0.9912 	 -0.0678
+						-0.4463 	 0.1119 	 0.8878
+						14.2708 	 -7.3765 	 6.6123
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.8941 	 0.0161 	 0.4475
+						0.0358 	 0.9936 	 -0.1072
+						-0.4463 	 0.1119 	 0.8878
+						13.0194 	 -7.3393 	 8.9229
+					}
+				}
+				{bone "smoke_shot2"
+					{matrix34
+						-0.8544 	 0.2417 	 -0.46
+						-0.266 	 -0.9639 	 -0.0123
+						-0.4463 	 0.1119 	 0.8878
+						14.4204 	 -7.3765 	 6.6878
+					}
+				}
+				{bone "smoke_shot1"
+					{matrix34
+						-0.8729 	 -0.2727 	 -0.4045
+						0.1968 	 -0.9556 	 0.2194
+						-0.4463 	 0.1119 	 0.8878
+						13.2004 	 -7.2821 	 9.0419
+					}
+				}
+				{bone "smoke_shot1_cap"
+					{parameters "id=turret;"}
+					{Position 12.9152 	 -7.3431 	 8.8295}
+					
+				}
+				{bone "smoke_shot2_cap"
+					{parameters "id=body;"}
+					{Position 14.2308 	 -7.3431 	 6.5657}
+					
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.6996 	 -6.2015 	 3.2014
+					}
+				}
+				{bone "visor1"
+					{Position 3.8938 	 -6.2008 	 11.2833}
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -13.6391 	 -10.1426 	 12.4447}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position -0.1378 	 -0.0004 	 4.8425}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position -0.1968 	 0 	 3.4843}
+							
+						}
+					}
+				}
+				{bone "at2_1"
+					{parameters "id=turret;"}
+					{Position -10.1942 	 3.2628 	 9.8463}
+					
+					{bone "at2_2"
+						{parameters "id=turret;"}
+						{Position -0.1181 	 -0.0004 	 5.4134}
+						
+						{bone "at2_3"
+							{parameters "id=turret;"}
+							{Position -0.1772 	 -0.0002 	 7.0472}
+							
+							{bone "at2_4"
+								{parameters "id=turret;"}
+								{Position -0.1969 	 0 	 3.6417}
+								
+							}
+						}
+					}
+				}
+				{bone "ammo1"
+					{Position -11.7486 	 7.0552 	 4.2571}
+				}
+				{bone "ammo3"
+					{Position -6.5366 	 -10.8523 	 4.0593}
+				}
+			}
+			{bone "visor2"
+				{Position 30.123 	 -0.4528 	 10.6764}
+			}
+			{bone "ammo2"
+				{Position -7.3961 	 9.8935 	 0.8197}
+			}
+			{bone "dimlightr"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					36.6686 	 -13.832 	 4.7257
+				}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					36.6686 	 13.832 	 4.7257
+				}
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 4.61387 5.69966 5.00024}
+	{bone "ammo1"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo2"
+	{box 5.99803 3.62827 10.9505}
+	{bone "ammo2"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo3"
+	{box 4.61387 2.73584 5.00024}
+	{bone "ammo3"}
+	{Position 0 	 0 	 0}
+}
+{volume "barrel1"
+	{cylinder 0.547139 25.6496}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		13.5512 	 0.2076 	 2.1524
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/body1.vol"}
+	{bone "body"}
+	{Position 1.3027 	 0.0001 	 3.3684}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/body2.vol"}
+	{bone "body"}
+	{Position 29.787 	 0.0001 	 4.9612}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/body3.vol"}
+	{bone "body"}
+	{Position 25.4366 	 -0.5187 	 13.1709}
+}
+{volume "breech"
+	{box 7.77516 3.40393 4.10712}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-10.965 	 0.267 	 1.6365
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/engine1.vol"}
+	{bone "engine"}
+	{Position -27.7734 	 0 	 2.7526}
+}
+{volume "fuel1"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/fuel1.vol"}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0}
+}
+{volume "mantlet1"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/mantlet1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-0.5404 	 0.0151 	 -0.3577
+	}
+}
+{volume "mantlet2"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/mantlet2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		0.4126 	 2.1394 	 -0.3578
+	}
+}
+{volume "mantlet3"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/mantlet3.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-0.2394 	 -2.1837 	 -0.3578
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/ram.vol"}
+	{bone "body"}
+	{Position 0.0036 	 0 	 -23.8511}
+}
+{volume "transmission"
+	{box 6.86982 7.69374 7.71545}
+	{bone "transmission"}
+	{Position 0 	 0 	 0}
+}
+{volume "turret1"
+	{cylinder 13.513 1.80558}
+	{bone "turret"}
+	{Position 0.0026 	 0 	 -0.8749}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/turret2.vol"}
+	{bone "turret"}
+	{Position 9.8017 	 2.2108 	 4.3362}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/turret3.vol"}
+	{bone "turret"}
+	{Position -2.4718 	 -0.7049 	 4.8762}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/btr/humber_mk2/turret4.vol"}
+	{bone "turret"}
+	{Position -1.5133 	 0 	 0.6778}
+}
+{volume "wheelleft1"
+	{cylinder 10.4331 5.90551}
+	{bone "wheell1"}
+	{Position -0.0047 	 0 	 0}
+}
+{volume "wheelleft2"
+	{cylinder 10.4331 5.90551}
+	{bone "wheell2"}
+	{Position 0 	 0 	 0}
+}
+{volume "wheelright1"
+	{cylinder 10.4331 5.90551}
+	{bone "wheelr1"}
+	{Position 0.0047 	 0 	 0}
+}
+{volume "wheelright2"
+	{cylinder 10.4331 5.90551}
+	{bone "wheelr2"}
+	{Position -0.0089 	 0 	 0}
+}

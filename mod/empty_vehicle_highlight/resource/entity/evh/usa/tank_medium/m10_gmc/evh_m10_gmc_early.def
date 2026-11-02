@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m10_gmc_early (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m10_gmc/m10_gmc.mdl"}
+	{Extension "m10_gmc.mdl"}
 	{extender "stuff"
 		{item "evh_m10_gmc_early"}
 	}

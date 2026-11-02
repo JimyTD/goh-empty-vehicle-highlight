@@ -1,0 +1,1438 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: back_door1 back_door2 bino_holder detail5 detail6 driver_hatch front_hatch1 turret
+;Exported by:	 TigerF
+;Date:			 15.06.2024 13:28:18
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\Nashorn\nashorn.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_medium/nashorn/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_medium/nashorn/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_medium/nashorn/fire.anm"} {speed 0.5}}
+		{sequence "open1" {file "../../../../-vehicle/germany/tank_medium/nashorn/open1.anm"} {speed 0.7}{resume}}
+		{sequence "open_back" {file "../../../../-vehicle/germany/tank_medium/nashorn/open_back.anm"} {speed 0.7}{resume} {events {1 "hatch_light"}}}
+		{sequence "close_back" {file "../../../../-vehicle/germany/tank_medium/nashorn/close_back.anm"} {speed 0.7}{resume} {events {13 "hatch_light"}}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_medium/nashorn/hit.anm"} {speed 0.8}}
+		{sequence "shell_eject" {file "../../../../-vehicle/germany/tank_medium/nashorn/shell_eject.anm"} {speed 0.4}}
+		{sequence "aim_v" {file "../../../../-vehicle/germany/tank_medium/nashorn/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/germany/tank_medium/nashorn/aim_h.anm"} {speed 1}{resume}}
+		{sequence "open_driver" {file "../../../../-vehicle/germany/tank_medium/nashorn/open_driver.anm"} {speed 0.25} {events {1 "hatch_medium"} {78 "hatch_medium"}}}
+		{sequence "board" {file "../../../../-vehicle/germany/tank_medium/nashorn/board.anm"} {speed 1} {events {0 "board"}}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.24;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/nashorn/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.406 	 -0.0001 	 16.3074}
+			{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=gun;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/nashorn/gun_r.anm"}{speed 0.7}}
+				}
+				{limits -15 13}
+				{speed 0.007}
+				{matrix34
+					1 	 0 	 -0.0075
+					0 	 1 	 0.0045
+					0.0075 	 -0.0045 	 1
+					-5.5907 	 -0.0559 	 16.5451
+				}
+				
+				{bone "visor1"
+					{matrix34
+						1 	 0 	 0.0075
+						0 	 1 	 -0.0045
+						-0.0075 	 0.0045 	 1
+						-1.2078 	 9.5108 	 19.7464
+					}
+				}
+				{bone "gun_shield"
+					{parameters "id=gun;"}
+					{Position 11.6412 	 -0.0186 	 11.5136}
+					
+				}
+				{bone "aim_ver"
+					{parameters "id=gun;"}
+					{matrix34
+						1 	 0 	 0.0075
+						0 	 1 	 -0.0045
+						-0.0075 	 0.0045 	 1
+						-2.5292 	 -8.6349 	 5.0316
+					}
+					
+				}
+				{bone "aim_hor_helper"
+					{matrix34
+						0.8735 	 -0.4803 	 0.0789
+						0.4818 	 0.8763 	 0
+						-0.0691 	 0.038 	 0.9969
+						-6.5263 	 7.6746 	 4.4132
+					}
+					{bone "aim_hor"
+						{parameters "id=gun;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{limits -5 20}
+					{speed 0.007}
+					{matrix34
+						1 	 0 	 0.0075
+						-0.0075 	 0 	 1
+						0 	 -1 	 0
+						-0.1602 	 3.0503 	 12.0024
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 -0.0075 	 0
+							0 	 0 	 -1
+							0.0075 	 1 	 0
+							-7.1195 	 0.0516 	 3.208
+						}
+						
+						{bone "breech_block"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0.0075
+								0 	 1 	 -0.0045
+								-0.0075 	 0.0045 	 1
+								-9.1338 	 0.1498 	 -0.4211
+							}
+							
+						}
+						{bone "lever"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0.0075
+								0 	 1 	 -0.0045
+								-0.0075 	 0.0045 	 1
+								-10.8913 	 1.1249 	 3.275
+							}
+							
+						}
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0.0075
+								0 	 1 	 -0.0045
+								-0.0075 	 0.0045 	 1
+								113.971 	 0.2655 	 0.0067
+							}
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-12.5087 	 0.1513 	 -0.2851
+							}
+						}
+					}
+					{bone "barrel5"
+						{matrix34
+							1 	 0 	 0
+							0 	 -0.0045 	 -1
+							0 	 1 	 -0.0045
+							3.598 	 4.2788 	 3.0845
+						}
+					}
+				}
+				{bone "gunner"
+					{matrix34
+						1 	 0 	 0.0075
+						0 	 1 	 -0.0045
+						-0.0075 	 0.0045 	 1
+						-14.7136 	 9.4943 	 1.1097
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/nashorn/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -3.0872 	 0 	 -4.0323}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						1.3516 	 0.6263 	 12.5582
+					}
+				}
+			}
+			{bone "antenna1"
+				{parameters "id=body;"}
+				{Position 29.2206 	 -19.5256 	 12.9269}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/antenna1.ply"}
+				{bone "antenna2"
+					{parameters "id=body;"}
+					{Position -0.0602 	 0 	 12.6667}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/antenna2.ply"}
+				}
+			}
+			{bone "driver_hatch"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					33.2556 	 9.6163 	 16.9341
+				}
+				
+			}
+			{bone "front_hatch1"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					37.8053 	 10.6928 	 15.5589
+				}
+				
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 32.0832 	 22.0352 	 9.7836}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail1.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -57.5628 	 -0.0109 	 10.8815}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail4.ply"}
+			}
+			{bone revolute "detail5"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-59.454 	 10.0614 	 0.771
+				}
+				
+			}
+			{bone revolute "detail6"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-60.3849 	 -10.8001 	 0.1077
+				}
+				
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position 30.6764 	 -24.3261 	 9.9486}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail9.ply"}
+			}
+			{bone "shield1"
+				{parameters "id=body;"}
+				{Position 54.685 	 0.3905 	 -2.3498}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/shield1.ply"}
+			}
+			{bone "shield2"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					55.3314 	 25.2718 	 7.0737
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/shield2.ply"}
+			}
+			{bone "shield3"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					55.3314 	 -25.2754 	 7.0737
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/shield3.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					48.4817 	 20.4048 	 -2.2494
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell1.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					30.8504 	 23.3723 	 3.1147
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					11.4384 	 23.3723 	 2.4413
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell11.ply"}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.9614 	 23.3723 	 1.8021
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell12.ply"}
+			}
+			{bone revolute "wheell13"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-29.2309 	 23.3723 	 1.43
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell13.ply"}
+			}
+			{bone revolute "wheell14"
+				{parameters "id=trackleft;radius=0.35;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-47.7908 	 23.9816 	 -5.0642
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell14.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					48.4396 	 -20.3688 	 -2.2494
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr1.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					30.8504 	 -23.4137 	 3.1147
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					11.4384 	 -23.4137 	 2.4412
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr11.ply"}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.9614 	 -23.4137 	 1.802
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr12.ply"}
+			}
+			{bone revolute "wheelr13"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-29.2309 	 -23.4137 	 1.43
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr13.ply"}
+			}
+			{bone revolute "wheelr14"
+				{parameters "id=trackright;radius=0.35;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-47.7912 	 -23.9102 	 -5.0643
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr14.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.8997 	 -0.4015 	 -0.1716
+					0.4031 	 -0.9148 	 0.0269
+					-0.1677 	 -0.0449 	 0.9848
+					-60.3169 	 -21.7687 	 4.4789
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-33.3398 	 0.0001 	 5.4865
+				}
+			}
+			{bone "visor2"
+				{Position 40.7937 	 9.216 	 12.2068}
+			}
+			{bone "transmission"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					48.4313 	 -0.3236 	 -2.276
+				}
+			}
+			{bone "armorlightl"
+				{Position 47.4971 	 23.0834 	 11.7574}
+			}
+			{bone "fuel"
+				{Position -28.8591 	 0.1225 	 -5.0939}
+			}
+			{bone "ammo1"
+				{Position -37.925 	 0.1225 	 -1.7397}
+			}
+			{bone "ammo2"
+				{Position -31.9738 	 20.4611 	 16.5695}
+			}
+			{bone "ammo3"
+				{Position -31.9738 	 -20.3106 	 17.3583}
+			}
+			{bone "turret_shield"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/turret_shield.ply"}
+				{bone "enumerator"
+					{Position -25.3689 	 24.2702 	 25.9977}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/enumerator.ply"}
+				}
+				{bone "enumerator1"
+					{Position -25.4296 	 -23.8397 	 25.899}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/enumerator1.ply"}
+				}
+				{bone "antenna3"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-2.8938 	 -21.2739 	 33.9434
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/antenna3.ply"}
+					{bone "antenna4"
+						{parameters "id=body;"}
+						{Position -0.0602 	 0 	 12.6671}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/antenna4.ply"}
+					}
+				}
+				{bone "detail8"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-11.0314 	 -23.6012 	 18.5292
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail8.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-12.8434 	 19.8626 	 13.2373
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail3.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-54.2283 	 -17.0021 	 12.3102
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail2.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-11.0429 	 -22.5971 	 24.6526
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail10.ply"}
+				}
+				{bone "detail7"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 -0.0075
+						0 	 1 	 0.0045
+						0.0075 	 -0.0045 	 1
+						-12.4455 	 -19.666 	 13.0562
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail7.ply"}
+				}
+				{bone "bino_holder"
+					{parameters "id=body;"}
+					{Position -28.0175 	 20.9833 	 27.3719}
+					
+					{bone "bino"
+						{parameters "id=body;"}
+						{Position -3.5175 	 -6.7893 	 2.1106}
+						
+					}
+				}
+				{bone "door_helper1"
+					{matrix34
+						0.979 	 0 	 -0.2038
+						0 	 1 	 0
+						0.2038 	 0 	 0.979
+						-56.2396 	 12.3705 	 16.6368
+					}
+					{bone "back_door1"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 1
+							0 	 0 	 0
+						}
+						
+					}
+				}
+				{bone "door_helper2"
+					{matrix34
+						0.979 	 0 	 -0.2038
+						0 	 1 	 0
+						0.2038 	 0 	 0.979
+						-56.2396 	 -12.3464 	 16.6368
+					}
+					{bone "back_door2"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.9272 	 0.3467 	 -0.1421
+					-0.335 	 -0.9369 	 -0.0998
+					-0.1677 	 -0.0449 	 0.9848
+					-60.2216 	 21.8042 	 4.4065
+				}
+			}
+			{bone "gun_holder"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 -0.0075
+					0 	 1 	 0.0045
+					0.0075 	 -0.0045 	 1
+					53.5772 	 -0.0283 	 6.2992
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/gun_holder.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 -0.0075
+					0 	 1 	 0.0045
+					0.0075 	 -0.0045 	 1
+					-20.2529 	 -19.9417 	 18.433
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail11.ply"}
+			}
+			{bone "charger"
+				{matrix34
+					0.9159 	 0.4013 	 0
+					-0.4013 	 0.9159 	 0
+					0 	 0 	 1
+					-43.3889 	 -11.3089 	 15.6376
+				}
+			}
+			{bone "commander"
+				{Position -38.9547 	 14.0455 	 16.7814}
+			}
+		}
+		{bone "body_virt"
+			{Position -2.0979 	 0 	 14.969}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 3.2818 	 21.3576 	 -9.7773}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 2.132 	 -5.1914
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9809 	 0 	 0.1947
+						0.1947 	 0 	 0.9809
+						0 	 1 	 0
+						-49.037 	 2.1163 	 -1.6127
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 32.779 	 2.0773 	 0.6575}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 23.064 	 2.0773 	 0.6575}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 13.2816 	 2.0773 	 0.6575}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position 3.6167 	 2.0773 	 0.6575}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position -6.2401 	 2.0773 	 0.6575}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -15.9035 	 2.0773 	 0.6575}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l8"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position -25.6457 	 2.0773 	 0.6575}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6045 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -35.3229 	 2.0773 	 0.6575}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6044 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheell9.ply"}
+					}
+				}
+				{bone "suspl"
+					{parameters "id=id=tackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/suspl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position -0.8245 	 1.9884 	 6.0161}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 3.2817 	 -21.3578 	 -9.7773}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 -1.9823 	 -5.1753
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9809 	 0 	 0.1947
+						0.1947 	 0 	 0.9809
+						0 	 1 	 0
+						-49.037 	 -1.989 	 -1.6127
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 32.779 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 23.064 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 13.2816 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position 3.6166 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.14 0.14}
+					{speed 0.15}
+					{Position -6.2401 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -15.9035 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r8"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position -25.6457 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -35.3229 	 -2.7003 	 0.6575}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/wheelr9.ply"}
+					}
+				}
+				{bone "suspr"
+					{parameters "id=tackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position -0.8245 	 -1.9555 	 6.0161}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				69.4923 	 6.1487 	 0
+			}
+		}
+		{bone "dummy"
+			{matrix34
+				-1 	 0 	 0
+				0 	 0 	 1
+				0 	 1 	 0
+				-1.922 	 0 	 15.0849
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0.9994 	 -0.0349 	 0
+				0.0349 	 0.9994 	 0
+				0 	 0 	 1
+				-74.2548 	 5.8571 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0.9994 	 0.0349 	 0
+				-0.0349 	 0.9994 	 0
+				0 	 0 	 1
+				-74.2548 	 -6.7195 	 0
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/ram.vol"}
+	{bone "body"}
+	{Position -0.8681 	 0.014 	 -1.9348}
+}
+{volume "ammo1"
+	{box 29.376 3.9622 34.0157}
+	{bone "ammo1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo2"
+	{box 13.8532 4.82529 23.9154}
+	{bone "ammo2"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo3"
+	{box 16.4919 4.82529 23.9154}
+	{bone "ammo3"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/barrel1.vol"}
+	{bone "turret"}
+	{matrix34
+		1 	 0 	 0.0075
+		0 	 1 	 -0.0045
+		-0.0075 	 0.0045 	 1
+		0.704 	 0.0953 	 5.9723
+	}
+}
+{volume "barrel2"
+	{cylinder 1.09154 13.8573}
+	{bone "gun_rot"}
+	{matrix34
+		-0.8986 	 -0.4388 	 0.0032
+		0.0015 	 0.0042 	 1
+		-0.4388 	 0.8986 	 -0.0032
+		7.4279 	 -3.0235 	 -1.5055
+	}
+}
+{volume "barrel3"
+	{cylinder 1.09154 13.8573}
+	{bone "gun_rot"}
+	{matrix34
+		-0.8986 	 -0.4388 	 0.0032
+		0.0015 	 0.0042 	 1
+		-0.4388 	 0.8986 	 -0.0032
+		7.4279 	 -2.9825 	 7.6407
+	}
+}
+{volume "barrel4"
+	{box 54.2277 3.35387 3.84191}
+	{bone "gun_rot"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 -0.0045
+		0 	 -0.0045 	 -1
+		4.4208 	 -4.904 	 3.086
+	}
+}
+{volume "barrel6"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/barrel6.vol"}
+	{bone "gun"}
+	{matrix34
+		1 	 0 	 0.0075
+		0 	 1 	 -0.0045
+		-0.0075 	 0.0045 	 1
+		53.5385 	 0.171 	 -0.285
+	}
+}
+{volume "barrel7"
+	{box 10.0888 6.50103 6.66541}
+	{bone "gun"}
+	{matrix34
+		-1 	 0 	 -0.0075
+		-0.0075 	 0.0045 	 1
+		0 	 1 	 -0.0045
+		-7.2038 	 0.0027 	 -0.1227
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/body1.vol"}
+	{bone "body"}
+	{Position 33.8884 	 -0.0034 	 0.7147}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/body2.vol"}
+	{bone "body"}
+	{Position -38.8312 	 -0.0033 	 0.0552}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/body3.vol"}
+	{bone "body"}
+	{Position 27.3755 	 -0.0034 	 12.656}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/body4.vol"}
+	{bone "body"}
+	{Position 30.4188 	 9.0709 	 13.3116}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/engine1.vol"}
+	{bone "engine"}
+	{Position -0.6223 	 -0.0033 	 4.0875}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/engine2.vol"}
+	{bone "engine"}
+	{Position 2.5545 	 -0.0034 	 16.6883}
+}
+{volume "fuel"
+	{box 20.4 3.9622 34.0157}
+	{bone "fuel"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-1.9443 	 0 	 -1.0238
+	}
+}
+{volume "gun_shield1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/gun_shield1.vol"}
+	{bone "gun_shield"}
+	{matrix34
+		1 	 0 	 0.0075
+		0 	 1 	 -0.0045
+		-0.0075 	 0.0045 	 1
+		0.0025 	 12.5313 	 -3.0201
+	}
+}
+{volume "gun_shield2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/gun_shield2.vol"}
+	{bone "gun_shield"}
+	{matrix34
+		1 	 0 	 0.0075
+		0 	 1 	 -0.0045
+		-0.0075 	 0.0045 	 1
+		-0.1429 	 -12.5308 	 -2.9083
+	}
+}
+{volume "gun_shield3"
+	{box 12.1128 6.06619 0.295276}
+	{bone "gun_rot"}
+	{matrix34
+		0.3841 	 -0.9233 	 0.0041
+		0 	 -0.0045 	 -1
+		0.9233 	 0.3841 	 -0.0017
+		12.8692 	 5.4187 	 3.1563
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/hole1.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 0.7187 	 4.9345
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/hole2.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -3.3193 	 4.9345
+	}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/hole3.vol"}
+	{bone "turret"}
+	{matrix34
+		1 	 0 	 0.0075
+		0 	 1 	 -0.0045
+		-0.0075 	 0.0045 	 1
+		-0.4573 	 0.0935 	 7.1199
+	}
+}
+{volume "hole4"
+	{box 24.7142 12.4665 0.492126}
+	{bone "turret_shield"}
+	{matrix34
+		0 	 1 	 0
+		0.1774 	 0 	 0.9841
+		0.9841 	 0 	 -0.1774
+		-55.2314 	 -0.0312 	 19.9124
+	}
+}
+{volume "shield1"
+	{box 31.4475 7.66144 1.24187}
+	{bone "shield1"}
+	{matrix34
+		0 	 1 	 0
+		0.2174 	 0 	 0.9761
+		0.9761 	 0 	 -0.2174
+		0.1986 	 0.0626 	 -0.2112
+	}
+}
+{volume "shield2"
+	{box 9.73372 6.70287 0.466286}
+	{bone "shield2"}
+	{matrix34
+		0 	 1 	 0
+		-0.5299 	 0 	 0.848
+		0.848 	 0 	 0.5299
+		1.5527 	 -1.8282 	 -3.1852
+	}
+}
+{volume "shield3"
+	{box 9.73372 6.70287 0.466286}
+	{bone "shield3"}
+	{matrix34
+		0 	 1 	 0
+		-0.5299 	 0 	 0.848
+		0.848 	 0 	 0.5299
+		1.5527 	 1.8867 	 -3.1852
+	}
+}
+{volume "trackleft10"
+	{cylinder 6.76352 3.37671}
+	{bone "wheell14"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5259
+	}
+}
+{volume "trackleft1"
+	{cylinder 7.08661 5.79665}
+	{bone "wheell1"}
+	{Position 0 	 0 	 2.9153}
+}
+{volume "trackleft2"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft7"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft8"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft9"
+	{cylinder 4.72441 4.25395}
+	{bone "wheell9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.5943
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/trackleft.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 1.5102 	 5.9145
+	}
+}
+{volume "trackright10"
+	{cylinder 6.96467 3.26392}
+	{bone "wheelr14"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5166
+	}
+}
+{volume "trackright1"
+	{cylinder 7.08661 5.75801}
+	{bone "wheelr1"}
+	{Position 0 	 0 	 -3.0318}
+}
+{volume "trackright2"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5843
+	}
+}
+{volume "trackright3"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright4"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright5"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright6"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright7"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright8"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright9"
+	{cylinder 4.72441 4.25395}
+	{bone "wheelr9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5552
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/trackright.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -2.4331 	 5.9146
+	}
+}
+{volume "transmission"
+	{cylinder 4.42913 30.315}
+	{bone "transmission"}
+	{Position 0 	 0 	 -0.0686}
+}
+{volume "tshield1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield1.vol"}
+	{bone "turret_shield"}
+	{Position 10.0704 	 20.7997 	 20.7347}
+}
+{volume "tshield2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield2.vol"}
+	{bone "turret_shield"}
+	{Position 10.0704 	 -20.7863 	 20.7346}
+}
+{volume "tshield3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield3.vol"}
+	{bone "turret_shield"}
+	{Position -21.3165 	 24.9037 	 20.7001}
+}
+{volume "tshield4"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield4.vol"}
+	{bone "turret_shield"}
+	{Position -21.3165 	 -24.9057 	 20.7001}
+}
+{volume "tshield5"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield5.vol"}
+	{bone "turret_shield"}
+	{Position -55.6163 	 0.0003 	 17.7382}
+}
+{volume "tshield6"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield6.vol"}
+	{bone "turret_shield"}
+	{Position -19.2498 	 23.3512 	 8.4027}
+}
+{volume "tshield7"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/nashorn/tshield7.vol"}
+	{bone "turret_shield"}
+	{Position -19.2498 	 -23.3506 	 8.4026}
+}
+{volume "tshield8"
+	{box 12.362 12.4665 0.295276}
+	{bone "back_door1"}
+	{matrix34
+		0 	 1 	 0
+		-0.0269 	 0 	 0.9996
+		0.9996 	 0 	 0.0269
+		0.3252 	 -6.182 	 3.4083
+	}
+}
+{volume "tshield9"
+	{box 12.362 12.4665 0.295276}
+	{bone "back_door2"}
+	{matrix34
+		0 	 1 	 0
+		-0.0269 	 0 	 0.9996
+		0.9996 	 0 	 0.0269
+		0.3252 	 6.1852 	 3.4083
+	}
+}

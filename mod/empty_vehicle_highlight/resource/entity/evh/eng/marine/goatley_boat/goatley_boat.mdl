@@ -1,0 +1,229 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: driver place1 place2 place3 place4 place5 place6 place7 place8 place9
+;Exported by:	 guita
+;Date:			 27.09.2024 12:31:55
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\marine\GoatleyBoat\Goatley_Boat.max
+{skeleton
+	{animation
+		{sequence "drift" {file "../../../../-vehicle/eng/marine/goatley_boat/drift.anm"} {speed 0.6}{resume}}
+	}
+	{bone "basis"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position 0 	 0 	 -1.1126}
+			{VolumeView "../../../../-vehicle/eng/marine/goatley_boat/body.ply"}
+			{bone "scissor"
+				{Position -0.2175 	 0 	 -0.7228}
+				{VolumeView "../../../../-vehicle/eng/marine/goatley_boat/scissor.ply"
+					{Layer waterscissor}
+				}
+			}
+			{bone revolute "place8"
+				{matrix34
+					0.9563 	 0.2924 	 0
+					-0.2924 	 0.9563 	 0
+					0 	 0 	 1
+					-40.4883 	 4.4489 	 -3.0872
+				}
+			}
+			{bone revolute "place9"
+				{matrix34
+					0.9511 	 -0.3089 	 0
+					0.3089 	 0.9511 	 0
+					0 	 0 	 1
+					-37.9041 	 -6.9334 	 -3.0872
+				}
+			}
+			{bone revolute "place6"
+				{Position -26.0596 	 8.0923 	 -3.0872}
+			}
+			{bone revolute "place7"
+				{Position -20.503 	 -10.2756 	 -3.0872}
+			}
+			{bone revolute "place4"
+				{Position -7.7501 	 9.2614 	 -3.0872}
+			}
+			{bone revolute "place5"
+				{Position -1.3989 	 -10.855 	 -3.0872}
+			}
+			{bone revolute "place2"
+				{Position 9.4816 	 8.6811 	 -3.0872}
+			}
+			{bone revolute "place3"
+				{Position 16.4703 	 -10.2756 	 -3.0872}
+			}
+			{bone revolute "driver"
+				{matrix34
+					0.9848 	 -0.1736 	 0
+					0.1736 	 0.9848 	 0
+					0 	 0 	 1
+					25.85 	 8.0334 	 -3.0872
+				}
+			}
+			{bone revolute "place1"
+				{matrix34
+					0.9781 	 0.2079 	 0
+					-0.2079 	 0.9781 	 0
+					0 	 0 	 1
+					30.398 	 -8.1165 	 -3.0872
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -32.8001 	 0 	 0}
+		}
+		{bone "pivot_front"
+			{Position 38.1495 	 0 	 0}
+		}
+		{bone "fx_bulb_small_center1"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-0.1121 	 18.7459 	 0.2032
+			}
+		}
+		{bone "fx_bulb_small_center2"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-0.0916 	 -19.0696 	 0.2032
+			}
+		}
+		{bone "fx_bulb_small_front2"
+			{matrix34
+				0.6428 	 -0.766 	 0
+				0.766 	 0.6428 	 0
+				0 	 0 	 1
+				45.6692 	 -10.4341 	 0.2032
+			}
+		}
+		{bone "fx_bulb_small_front1"
+			{matrix34
+				0.6428 	 0.766 	 0
+				-0.766 	 0.6428 	 0
+				0 	 0 	 1
+				45.6574 	 10.7677 	 0.2032
+			}
+		}
+		{bone "emit9"
+			{matrix34
+				0.2924 	 -0.9563 	 0
+				0.9563 	 0.2924 	 0
+				0 	 0 	 1
+				-45.525 	 21.2863 	 0
+			}
+		}
+		{bone "emit10"
+			{matrix34
+				0.3089 	 0.9511 	 0
+				-0.9511 	 0.3089 	 0
+				0 	 0 	 1
+				-42.7457 	 -23.4923 	 0
+			}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-25.9525 	 25.6666 	 0
+			}
+		}
+		{bone "emit8"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-19.9921 	 -27.5203 	 0
+			}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-7.643 	 26.8357 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-0.888 	 -28.0997 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				9.5887 	 26.2554 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				16.9813 	 -27.5203 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				-0.1736 	 -0.9848 	 0
+				0.9848 	 -0.1736 	 0
+				0 	 0 	 1
+				29.0072 	 25.3221 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				-0.2079 	 0.9781 	 0
+				-0.9781 	 -0.2079 	 0
+				0 	 0 	 1
+				34.4831 	 -24.8781 	 0
+			}
+		}
+	}
+}
+{obstacle "obstacle"
+	{polygon2
+		{radius 0}
+		{vertex 59.3729 4.92126}
+		{vertex 36.65 20.922}
+		{vertex -36.8203 20.922}
+		{vertex -58.3316 7.87402}
+		{vertex -58.3316 -7.87402}
+		{vertex -36.8203 -20.922}
+		{vertex 36.65 -20.922}
+		{vertex 59.3729 -4.92126}
+	}
+	{rotate}
+}
+{volume "ballast0"
+	{box 9.84252 9.84252 0.984252}
+	{bone "body"}
+	{Position 0 	 0.0824 	 1.6047}
+}
+{volume "ballast1"
+	{box 118.11 44.2913 3.93701}
+	{bone "body"}
+	{Position 0 	 0 	 16.3502}
+}
+{volume "body"
+	{polyhedron "../../../../-vehicle/eng/marine/goatley_boat/body.vol"}
+	{bone "body"}
+}
+{volume "hole"
+	{polyhedron "../../../../-vehicle/eng/marine/goatley_boat/hole.vol"}
+	{bone "body"}
+	{Position 0.9789 	 0 	 8.6226}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for grille_k (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/grille_k/grille_k.mdl"}
+	{Extension "grille_k.mdl"}
 	{extender "stuff"
 		{item "evh_grille_k"}
 	}

@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/cckw353_fuel"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/cckw353_fuel_sp"}
+	{blend blend}
+}

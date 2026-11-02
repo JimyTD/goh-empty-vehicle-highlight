@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bedford_qlt_piat (generated)
-	{Extension "../../../../-vehicle/eng/car/bedford_qlt/bedford_qlt.mdl"}
+	{Extension "bedford_qlt.mdl"}
 	{extender "stuff"
 		{item "evh_bedford_qlt_piat"}
 	}

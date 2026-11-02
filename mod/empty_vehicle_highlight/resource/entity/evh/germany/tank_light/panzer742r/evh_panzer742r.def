@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzer742r (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/panzer742r/panzer742r.mdl"}
+	{Extension "panzer742r.mdl"}
 	{extender "stuff"
 		{item "evh_panzer742r"}
 	}

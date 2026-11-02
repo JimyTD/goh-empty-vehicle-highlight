@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 76mm_k36_mid (generated)
-	{Extension "../../../../-vehicle/finland/cannon/76mm_k36/76mm_f22.mdl"}
+	{Extension "76mm_f22.mdl"}
 	{extender "stuff"
 		{item "evh_76mm_k36_mid"}
 	}

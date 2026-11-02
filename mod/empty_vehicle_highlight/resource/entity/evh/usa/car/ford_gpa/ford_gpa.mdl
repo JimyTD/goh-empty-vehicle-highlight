@@ -1,0 +1,604 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: mgun_a_rot1
+;Exported by:	 nic21
+;Date:			 04.04.2025 14:30:09
+;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_usa\vehicles\car\Ford_GPA\Ford_GPA.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/usa/car/ford_gpa/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/usa/car/ford_gpa/stop.anm"} {speed 0.6}}
+		{sequence "hit" {file "../../../../-vehicle/usa/car/ford_gpa/hit.anm"} {speed 0.6}}
+		{sequence "wipers" {file "../../../../-vehicle/usa/car/ford_gpa/wipers.anm"} {speed 0.4}{resume}}
+		{sequence "move" {file "../../../../-vehicle/usa/car/ford_gpa/move.anm"} {speed 1}{resume}}
+		{sequence "water" {file "../../../../-vehicle/usa/car/ford_gpa/water.anm"} {speed 0.6}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.38;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/usa/car/ford_gpa/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.1054 	 0 	 7.7119}
+			{VolumeView "../../../../-vehicle/usa/car/ford_gpa/body.ply"}
+			{bone "windscreen"
+				{parameters "id=body;"}
+				{Position 9.6991 	 11.8121 	 14.8328}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/windscreen.ply"}
+				{bone "wiper2"
+					{parameters "id=body;"}
+					{matrix34
+						0.9386 	 0 	 0.3449
+						0 	 1 	 0
+						-0.3449 	 0 	 0.9386
+						-4.6413 	 -17.6389 	 11.9362
+					}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wiper2.ply"}
+				}
+				{bone "wiper1"
+					{parameters "id=body;"}
+					{matrix34
+						0.9386 	 0 	 0.3449
+						0 	 1 	 0
+						-0.3449 	 0 	 0.9386
+						-4.6413 	 -5.9854 	 11.9362
+					}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wiper1.ply"}
+				}
+				{bone "window1"
+					{parameters "id=window1;"}
+					{Position -3.7339 	 -6.0342 	 8.6703}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/window1.ply"}
+				}
+				{bone "window2"
+					{parameters "id=window2;"}
+					{Position -3.7339 	 -17.5901 	 8.6703}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/window2.ply"}
+				}
+			}
+			{bone "mgun_holder"
+				{parameters "id=body;"}
+				{Position -8.8708 	 -0.9507 	 14.434}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/mgun_holder.ply"}
+				{bone revolute "mgun_a_rot1"
+					{parameters "id=body;"}
+					{limits -40 35}
+					{Position -1.9439 	 0.0004 	 11.3513}
+					
+					{bone revolute "mgun_a_rot2"
+						{parameters "id=body;"}
+						{limits -10 45}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-1.2565 	 0.1041 	 3.9857
+						}
+						
+						{bone "mgun"
+							{Position -6.9852 	 -0.4131 	 0.0409}
+						}
+					}
+					{bone "gunner"
+						{Position -8.2417 	 0.0632 	 3.5727}
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/car/ford_gpa/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 15.5784 	 -0.9668 	 6.3624}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/engine.ply"}
+				{bone "engine_hood1"
+					{parameters "id=engine;"}
+					{Position 9.96 	 0.9668 	 7.869}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/engine_hood1.ply"}
+				}
+				{bone "engine_hood2"
+					{parameters "id=engine;"}
+					{Position 0.7518 	 0.9668 	 7.9354}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/engine_hood2.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						1.1195 	 0.9668 	 0.1545
+					}
+				}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.7398 	 0 	 -0.6728
+					0 	 1 	 0
+					0.6728 	 0 	 -0.7398
+					-0.9793 	 7.0113 	 12.0128
+				}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/steer.ply"}
+			}
+			{bone "shield_nose"
+				{parameters "id=body;"}
+				{Position 34.6946 	 14.3011 	 15.0078}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/shield_nose.ply"}
+			}
+			{bone "prop"
+				{parameters "id=body;"}
+				{Position -44.4361 	 0.4967 	 1.04}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/prop.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -36.7 	 -3.2413 	 16.3458}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/detail1.ply"}
+			}
+			{bone revolute "steer_back"
+				{parameters "id=body;"}
+				{Position -34.7139 	 0.4967 	 2.9113}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/steer_back.ply"}
+			}
+			{bone "fuel"
+				{Position -32.1759 	 7.7249 	 9.7339}
+			}
+			{bone "headlightl"
+				{Position 39.5027 	 7.628 	 16.1119}
+			}
+			{bone "headlightr"
+				{Position 39.5027 	 -7.6177 	 16.1119}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-45.6308 	 -0.0104 	 7.2607
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.0345 	 -0.7766 	 -0.629
+					0.9994 	 -0.0302 	 -0.0174
+					-0.0055 	 -0.6292 	 0.7772
+					30.2317 	 -16.5946 	 2.9824
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-42.8152 	 10.6453 	 15.9908
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-42.8152 	 -10.6003 	 15.9908
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-7.9366 	 0 	 6.2178
+				}
+			}
+			{bone "visor1"
+				{Position 11.7347 	 -5.2919 	 22.1399}
+			}
+			{bone "visor2"
+				{Position 11.7347 	 5.3397 	 22.1399}
+			}
+			{bone "scissor"
+				{Position 0.1413 	 0 	 8.8856}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/scissor.ply"
+					{Layer waterscissor}
+				}
+			}
+			{bone "rod"
+				{parameters "id=body;"}
+				{Position 20.0002 	 -0.0033 	 -0.2458}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/rod.ply"}
+			}
+			{bone "driver"
+				{Position -10.7266 	 8.167 	 9.0666}
+			}
+			{bone "commander"
+				{Position -10.7266 	 -8.6143 	 9.0666}
+			}
+			{bone "fx_bulb_small_engine1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-46.2761 	 -0.0104 	 10.779
+				}
+			}
+			{bone "fx_bulb_small_center1"
+				{matrix34
+					-0.9945 	 0 	 0.1045
+					0 	 -1 	 0
+					0.1045 	 0 	 0.9945
+					-40.4042 	 0 	 2.2841
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 20.1056 	 0 	 7.4661}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 10.9561 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -2.6666 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.38;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wheell1.ply"}
+					}
+					{bone "breakl1"
+						{parameters "id=body;"}
+						{Position -0.0085 	 -2.623 	 -0.0194}
+						{VolumeView "../../../../-vehicle/usa/car/ford_gpa/breakl1.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -11.024 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 2.5981 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.38;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wheelr1.ply"}
+					}
+					{bone "breakr1"
+						{parameters "id=body;"}
+						{Position -0.0085 	 2.6121 	 -0.0194}
+						{VolumeView "../../../../-vehicle/usa/car/ford_gpa/breakr1.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -13.622 	 -0.5834}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.38;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 13.6226 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.38;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					0.0063 	 13.2181 	 -7.4483
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-0.0228 	 -13.0296 	 -7.4721
+				}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{Position 0 	 -0.0033 	 0}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/susp_front.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -21.8111 	 0 	 7.4661}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -11.3122 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.38;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -2.31 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wheelr2.ply"}
+				}
+				{bone "breakr2"
+					{parameters "id=body;"}
+					{Position 0.0004 	 -0.8627 	 -0.0194}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/breakr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 11.2442 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.38;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 2.3784 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/wheell2.ply"}
+				}
+				{bone "breakl2"
+					{parameters "id=body;"}
+					{Position 0.0004 	 0.9311 	 -0.0194}
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/breakl2.ply"}
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-0.0191 	 13.0717 	 -7.4415
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-0.0459 	 -13.0614 	 -7.4415
+				}
+			}
+			{bone "susp_back"
+				{parameters "id=body;"}
+				{Position 0 	 0.0002 	 0}
+				{VolumeView "../../../../-vehicle/usa/car/ford_gpa/susp_back.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-4.2198 	 25.7122 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-4.6984 	 -26.6044 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passengers;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-21.6085 	 25.7686 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passengers;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-21.7514 	 -26.9656 	 0
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/body1.vol"}
+	{bone "body"}
+	{Position 0.5826 	 0 	 5.3951}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/body2.vol"}
+	{bone "body"}
+	{Position -9.3571 	 -0.0014 	 15.6874}
+}
+{volume "body3"
+	{box 24.6779 10.6139 0.668613}
+	{bone "windscreen"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3907 	 0 	 0.9205
+		-0.9205 	 0 	 -0.3907
+		-3.411 	 -11.8181 	 7.6084
+	}
+}
+{volume "detail1"
+	{cylinder 7.55672 3.45244}
+	{bone "detail1"}
+	{Position 0 	 0 	 -0.5244}
+}
+{volume "engine1"
+	{box 18.4589 12.5161 6.70825}
+	{bone "engine"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.1285 	 1.1224 	 0.2205
+	}
+}
+{volume "fuel"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/fuel.vol"}
+	{bone "fuel"}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/hole1.vol"}
+	{bone "body"}
+	{Position 19.62 	 11.4717 	 3.2962}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/hole2.vol"}
+	{bone "body"}
+	{Position 19.6199 	 -11.6577 	 3.2962}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/hole3.vol"}
+	{bone "body"}
+	{Position -21.8256 	 11.4717 	 3.2437}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/hole4.vol"}
+	{bone "body"}
+	{Position -21.8256 	 -11.6577 	 3.2437}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/hole5.vol"}
+	{bone "body"}
+	{Position -13.1454 	 0.0025 	 14.1487}
+}
+{volume "hole6"
+	{box 11.1435 6.3772 0.83574}
+	{bone "windscreen"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		-0.9272 	 0 	 -0.3746
+		-3.8146 	 -6.0245 	 8.5453
+	}
+}
+{volume "hole7"
+	{box 11.1435 6.3772 0.83574}
+	{bone "windscreen"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		-0.9272 	 0 	 -0.3746
+		-3.8146 	 -17.6167 	 8.5453
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/usa/car/ford_gpa/ram.vol"}
+	{bone "body"}
+	{Position -0.1887 	 0.0002 	 3.5318}
+}
+{volume "wheelleft1"
+	{cylinder 7.48032 3.07028}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.3932
+	}
+}
+{volume "wheelleft2"
+	{cylinder 7.48032 3.07026}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.3932
+	}
+}
+{volume "wheelright1"
+	{cylinder 7.48032 3.07026}
+	{bone "wheelr1"}
+	{matrix34
+		0 	 -1 	 0
+		-1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.4255
+	}
+}
+{volume "wheelright2"
+	{cylinder 7.48032 3.07026}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.4255
+	}
+}
+{volume "window1"
+	{box 11.1435 6.3772 0.17574}
+	{bone "window1"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		-0.9272 	 0 	 -0.3746
+		0.0182 	 0.0096 	 -0.002
+	}
+}
+{volume "window2"
+	{box 11.1435 6.3772 0.17574}
+	{bone "window2"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		-0.9272 	 0 	 -0.3746
+		0.0182 	 -0.0267 	 -0.002
+	}
+}

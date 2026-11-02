@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 88mm_pak4341 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/88mm_pak4341/88mm_pak4341.mdl"}
+	{Extension "88mm_pak4341.mdl"}
 	{extender "stuff"
 		{item "evh_88mm_pak4341"}
 	}

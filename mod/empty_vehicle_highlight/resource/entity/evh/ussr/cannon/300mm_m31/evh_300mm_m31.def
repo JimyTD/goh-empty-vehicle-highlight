@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 300mm_m31 (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/300mm_m31/300mm_m31.mdl"}
+	{Extension "300mm_m31.mdl"}
 	{extender "stuff"
 		{item "evh_300mm_m31"}
 	}

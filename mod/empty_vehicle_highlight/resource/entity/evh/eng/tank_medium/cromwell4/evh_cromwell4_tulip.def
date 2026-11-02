@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for cromwell4_tulip (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/cromwell4/cromwell4_tulip.mdl"}
+	{Extension "cromwell4_tulip.mdl"}
 	{extender "stuff"
 		{item "evh_cromwell4_tulip"}
 	}

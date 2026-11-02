@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kettenkrad (generated)
-	{Extension "../../../../-vehicle/germany/car/kettenkrad/kettenkrad.mdl"}
+	{Extension "kettenkrad.mdl"}
 	{extender "stuff"
 		{item "evh_kettenkrad"}
 	}

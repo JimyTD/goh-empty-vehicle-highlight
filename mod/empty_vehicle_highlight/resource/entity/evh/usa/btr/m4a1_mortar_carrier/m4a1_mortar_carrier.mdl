@@ -1,0 +1,1260 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 leveler mgun_1_rot1 rear_door ws_shield
+;Exported by:	 guita
+;Date:			 27.01.2025 15:48:23
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\btr\M4A1_halftrack\m4a1_halftrack.max
+{skeleton
+	{animation
+		{sequence "board" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/board.anm"} {speed 1} {events {0 "board"}}}
+		{sequence "start" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/start.anm"} {speed 0.65}}
+		{sequence "stop" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/stop.anm"} {speed 0.65}}
+		{sequence "hit" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hit.anm"} {speed 0.7}}
+		{sequence "doorleft" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/doorleft.anm"} {speed 0.6}{events {1 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/doorright.anm"} {speed 0.6}{events {1 "open_right"}}}
+		{sequence "open_back" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/open_back.anm"} {speed 0.8}{resume} {events {2 "hatch_light"}}}
+		{sequence "close_back" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/close_back.anm"} {speed 0.8}{resume} {events {18 "hatch_light"}}}
+		{sequence "open_shield" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/open_shield.anm"} {speed 0.3}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=26;wheelradius=0.49;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body_r.anm"}{speed 0.7}}
+			}
+			{Position -5.0861 	 0 	 12.511}
+			{LODView
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body.ply"}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body_lod1.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 39.9119 	 -0.2787 	 6.1834}
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/engine.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/engine_lod1.ply"}
+				}
+				{bone "hoodl1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9941 	 0 	 -0.1088
+						0 	 1 	 0
+						0.1088 	 0 	 0.9941
+						9.9202 	 3.333 	 9.5528
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hoodl1.ply"}
+					{bone "hoodl2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.9753 	 -0.2208 	 -0.0069
+							0.2208 	 0.9753 	 -0.0016
+							0.007 	 0 	 1
+							1.0257 	 5.7274 	 -0.4011
+						}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hoodl2.ply"}
+					}
+				}
+				{bone "hoodr1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.996 	 0 	 -0.0889
+						0 	 1 	 0
+						0.0889 	 0 	 0.996
+						9.9202 	 -2.7722 	 9.5528
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hoodr1.ply"}
+					{bone "hoodr2"
+						{parameters "id=engine;"}
+						{matrix34
+							0.9761 	 0.2155 	 -0.0271
+							-0.2161 	 0.9762 	 -0.0193
+							0.0223 	 0.0247 	 0.9994
+							0.6212 	 -5.8372 	 -0.4216
+						}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hoodr2.ply"}
+					}
+				}
+				{bone "fxfire1"
+					{Position 0.9067 	 -1.114 	 1.2384}
+				}
+			}
+			{bone "mgun_holder1"
+				{parameters "id=body;"}
+				{Position 16.7485 	 0.1028 	 26.4898}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/mgun_holder1.ply"}
+				{bone revolute "mgun_1_rot1"
+					{parameters "id=body;"}
+					{limits -10 10}
+					{speed 0.01}
+					{Position -1.5514 	 0.014 	 0.7556}
+					
+					{bone revolute "mgun_1_rot2"
+						{parameters "id=body;"}
+						{limits -10 20}
+						{speed 0.01}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-1.7371 	 -0.5689 	 2.3039
+						}
+						
+						{bone "mgun"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								-10.6876 	 0.7247 	 -0.5988
+							}
+						}
+					}
+					{bone "gunner2"
+						{Position -16.216 	 -0.1168 	 -5.1227}
+					}
+				}
+			}
+			{bone "doorl1"
+				{parameters "id=body;"}
+				{Position 21.5281 	 16.099 	 16.8148}
+				
+				{bone "doorl_ext"
+					{parameters "id=body;"}
+					{Position -1.4727 	 0.3449 	 1.8747}
+					
+				}
+			}
+			{bone "doorr1"
+				{parameters "id=body;"}
+				{Position 21.5281 	 -16.0992 	 16.8148}
+				
+				{bone "doorr_ext"
+					{parameters "id=body;"}
+					{Position -1.4727 	 -0.3449 	 1.8747}
+					
+				}
+			}
+			{bone "ws_shield"
+				{parameters "id=body;"}
+				{matrix34
+					0.4695 	 0 	 -0.8829
+					0 	 1 	 0
+					0.8829 	 0 	 0.4695
+					19.4999 	 14.5538 	 25.5067
+				}
+				
+			}
+			{bone "holder1"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 -0.9998
+					0 	 0.9998 	 -0.0175
+					25.7989 	 -13.763 	 18.7351
+				}
+				
+			}
+			{bone "holder2"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 -0.9998
+					0 	 0.9998 	 -0.0175
+					25.7989 	 -2.494 	 18.7351
+				}
+				
+			}
+			{bone "holder3"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.0175 	 0.9998
+					0 	 -0.9998 	 -0.0175
+					25.7989 	 13.6515 	 18.7351
+				}
+				
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position 20.3171 	 7.5935 	 21.8295}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/window1.ply"}
+			}
+			{bone "window2"
+				{parameters "id=window2;"}
+				{Position 20.3171 	 -7.6496 	 21.8295}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/window2.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.6354 	 -0.7716 	 -0.029
+					0.7717 	 -0.6335 	 -0.0559
+					0.0248 	 -0.0579 	 0.998
+					-18.5992 	 -21.2324 	 0.6575
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					56.4992 	 -10.7166 	 13.3685
+				}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					56.4992 	 10.7277 	 13.368
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-51.7734 	 17.4346 	 7.0447
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-51.7734 	 -17.4325 	 7.0448
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-48.1582 	 0 	 1.6602
+				}
+			}
+			{bone revolute "wheell2"
+				{parameters "id=trackleft;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0119 	 16.524 	 -0.0276
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell2.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.1;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.2394 	 16.5511 	 3.0899
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell8.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;radius=0.50;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.6191 	 16.5258 	 -0.475
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell7.ply"}
+			}
+			{bone revolute "wheelr2"
+				{parameters "id=trackright;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0119 	 -16.5036 	 -0.0276
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr2.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.1;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.2394 	 -16.5426 	 3.0899
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr8.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;radius=0.5;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.6191 	 -16.5638 	 -0.475
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr7.ply"}
+			}
+			{bone "seat01"
+				{matrix34
+					0.9819 	 0.0281 	 0.1876
+					-0.0282 	 0.9996 	 -0.002
+					-0.1875 	 -0.0034 	 0.9823
+					14.3336 	 -9.6185 	 1.3855
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9712 	 -0.0015 	 0.2382
+					-0.0001 	 1 	 0.0067
+					-0.2382 	 -0.0065 	 0.9712
+					14.7999 	 9.335 	 1.4021
+				}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 18.1076 	 17.1296 	 5.5296}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 21.2562 	 16.3595 	 2.0388}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 19.2942 	 -17.0543 	 4.1325}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 40.8396 	 14.945 	 7.2012}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail6.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.6691 	 0 	 -0.7431
+					0 	 1 	 0
+					0.7431 	 0 	 -0.6691
+					17.3434 	 10.4889 	 16.2814
+				}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/steer.ply"}
+			}
+			{bone "fuel2"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-34.6113 	 -17.2886 	 17.6602
+				}
+			}
+			{bone "fuel1"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-34.6113 	 16.971 	 17.6602
+				}
+			}
+			{bone "transmission"
+				{Position 23.1971 	 0 	 2.1272}
+			}
+			{bone "passengers_ver"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					1.7463 	 0.1427 	 6.9964
+				}
+			}
+			{bone "body_m4a1"
+				{parameters "id=body;"}
+				{Position 5.5163 	 0 	 2.0429}
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body_m4a1.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body_m4a1_lod1.ply"}
+				}
+				{bone "antenna1"
+					{parameters "id=body;"}
+					{Position -10.9263 	 -15.6437 	 26.9163}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/antenna1.ply"}
+					{bone "antenna2"
+						{parameters "id=body;"}
+						{Position -0.0264 	 0 	 10.7945}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/antenna2.ply"}
+					}
+				}
+			}
+			{bone "rear_door"
+				{parameters "id=body;"}
+				{Position -46.6079 	 -7.689 	 21.6666}
+				
+				{bone "handle"
+					{parameters "id=body;"}
+					{Position -0.6283 	 14.4806 	 -5.2757}
+					
+				}
+			}
+			{bone "winch"
+				{parameters "id=body;"}
+				{Position 60.5854 	 0 	 3.2633}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/winch.ply"}
+			}
+			{bone "gunner"
+				{matrix34
+					-0.0812 	 0.9967 	 0
+					-0.9967 	 -0.0812 	 0
+					0 	 0 	 1
+					-28.3046 	 -9.8275 	 11.3637
+				}
+			}
+			{bone "commander"
+				{matrix34
+					-1 	 -0.0034 	 0
+					0.0034 	 -1 	 0
+					0 	 0 	 1
+					-11.4861 	 -0.0596 	 11.7971
+				}
+			}
+			{bone "cylinder"
+				{parameters "id=gun;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/gun_r.anm"}{speed 0.7}}
+				}
+				{Position -21.779 	 0 	 13.1799}
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/cylinder.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/cylinder_lod1.ply"}
+				}
+				{bone "legs"
+					{parameters "id=gun;"}
+					{Position -14.2924 	 -0.0023 	 13.7002}
+					{LODView
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/legs.ply"}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/legs_lod1.ply"}
+					}
+				}
+				{bone revolute "leveler"
+					{limits -90 90}
+					{speed 0.01}
+					{matrix34
+						0 	 0 	 -1
+						0 	 -1 	 0
+						-1 	 0 	 0
+						-16.8346 	 -0.0008 	 19.2556
+					}
+					{bone revolute "turret"
+						{limits -10 10}
+						{matrix34
+							0 	 0 	 1
+							0 	 1 	 0
+							-1 	 0 	 0
+							0 	 0 	 -0.7552
+						}
+						{bone revolute "foresight"
+							{matrix34
+								0.6157 	 0 	 0.788
+								-0.788 	 0 	 0.6157
+								0 	 -1 	 0
+								0.0579 	 -0.0008 	 0.0079
+							}
+						}
+						{bone "visor"
+							{Position 1.3473 	 3.768 	 2.0078}
+						}
+					}
+				}
+			}
+			{bone "mortar_talp"
+				{parameters "id=body;"}
+				{Position -51.2097 	 -0.0137 	 6.6476}
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/mortar_talp.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/mortar_talp_lod1.ply"}
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 42.1722 	 -15.7864 	 8.1806}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -25.1316 	 -21.1285 	 12.8937}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail2.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -19.7466 	 11.0501 	 15.9111}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position -19.7466 	 -13.1085 	 15.9111}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail8.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position -37.3017 	 21.142 	 12.8937}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail9.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{Position -51.3459 	 -0.3435 	 25.4041}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail10.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{Position -55.5971 	 -14.2324 	 17.4388}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail11.ply"}
+			}
+			{bone "detail12"
+				{parameters "id=body;"}
+				{Position -24.6835 	 21.142 	 12.8937}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail12.ply"}
+			}
+			{bone "detail13"
+				{parameters "id=body;"}
+				{Position -37.7626 	 -21.1039 	 11.5897}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/detail13.ply"}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.0583 	 -0.9983 	 0
+					0.9983 	 -0.0583 	 0
+					0 	 0 	 1
+					-29.3593 	 9.3229 	 11.1051
+				}
+			}
+			{bone "visor2"
+				{Position 22.4143 	 9.5828 	 21.3722}
+			}
+			{bone "visor1"
+				{Position 22.4143 	 -9.5858 	 21.3722}
+			}
+			{bone "fxfire5"
+				{Position -8.9583 	 -1.3926 	 7.1371}
+			}
+		}
+		{bone "pivot_front"
+			{Position 43.6291 	 0 	 9.6374}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-0.0003 	 -15.7605 	 -9.5108
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.0003 	 15.7578 	 -9.5108
+				}
+			}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.6728 	 0
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.07}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.49;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 3.2135 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell1.ply"}
+					}
+					{bone "break_l"
+						{parameters "id=body;"}
+						{Position 0 	 1.2213 	 0}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/break_l.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -13.6416 	 0
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.07}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.49;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -3.2451 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr1.ply"}
+					}
+					{bone "break_r"
+						{parameters "id=body;"}
+						{Position 0 	 -1.2521 	 0}
+						{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/break_r.ply"}
+					}
+				}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/susp_front.ply"}
+			}
+			{bone "susp_rod"
+				{Position -4.4774 	 -2.5878 	 -0.8564}
+			}
+			{bone prizmatic "suspension_r9"
+				{limits -0.08 0.08}
+				{speed 0.07}
+				{Position 0 	 -13.6416 	 0}
+				{bone revolute "wheelr9"
+					{parameters "id=wheelright9;radius=0.49;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l9"
+				{limits -0.08 0.08}
+				{speed 0.07}
+				{Position 0 	 13.6728 	 0}
+				{bone revolute "wheell9"
+					{parameters "id=wheelleft9;radius=0.49;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -30.9296 	 0 	 9.6374}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.6033 	 30.0415 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				5.6754 	 -29.7885 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{Position -76.2462 	 2.4328 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{Position -76.2177 	 -4.4512 	 0}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-33.7706 	 30.0415 	 0
+			}
+		}
+		{bone "emit6"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-33.8792 	 -29.7885 	 0
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -25.356 	 16.7162 	 8.7161}
+			{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelsl.ply"}
+			{bone prizmatic "suspension_l3"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position 11.835 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position 4.4975 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position -4.4445 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position -11.8009 	 -0.0691 	 -4.3733}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.48;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheell6.ply"}
+				}
+			}
+			{bone "fxtracel3"
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					1.0878 	 0.0975 	 -8.6991
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 1 	 0
+					-0.3256 	 0 	 -0.9455
+					-13.5075 	 -0.0819 	 -8.5567
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 0.2114 	 -0.1253 	 -4.3841}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/trackl.ply"}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position -0.0089 	 0.1027 	 -3.2296}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/suspl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position -25.356 	 -16.6463 	 8.7161}
+			{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelsr.ply"}
+			{bone prizmatic "suspension_r3"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position 11.835 	 -0.0117 	 -4.3733}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position 4.4975 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.08 0.05}
+				{speed 0.18}
+				{Position -4.4445 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;radius=0.48;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.05 0.05}
+				{speed 0.18}
+				{Position -11.8009 	 -0.0118 	 -4.3733}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.48;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/wheelr6.ply"}
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9455 	 0 	 0.3256
+					0 	 1 	 0
+					-0.3256 	 0 	 -0.9455
+					-13.5087 	 0.0476 	 -8.5569
+				}
+			}
+			{bone "fxtracer3"
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					1.0866 	 0.1151 	 -8.6993
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0.2114 	 0.0552 	 -4.3841}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/trackr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position -0.0089 	 -0.1027 	 -3.2296}
+				{VolumeView "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/suspr.ply"}
+			}
+		}
+		{bone "dummy"
+		}
+	}
+}
+{volume "armor1"
+	{box 7.57826 0.327479 31.207}
+	{bone "ws_shield"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		3.6907 	 -14.5367 	 -0.3208
+	}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/armor2.vol"}
+	{bone "winch"}
+	{Position 5.3844 	 0.0218 	 0.4551}
+}
+{volume "armor3"
+	{box 7.6051 15.2647 10.561}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-50.2237 	 -14.1753 	 17.1241
+	}
+}
+{volume "armor4"
+	{box 7.6051 15.2647 10.561}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-50.2237 	 14.1774 	 17.1241
+	}
+}
+{volume "barrel1"
+	{cylinder 1.12844 24.3876}
+	{bone "cylinder"}
+	{matrix34
+		0.766 	 0 	 0.6428
+		0 	 1 	 0
+		-0.6428 	 0 	 0.766
+		-7.9547 	 0 	 9.4754
+	}
+}
+{volume "body10"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body10.vol"}
+	{bone "body"}
+	{Position -19.6173 	 0 	 17.4949}
+}
+{volume "body11"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body11.vol"}
+	{bone "body"}
+	{Position 5.9468 	 0 	 7.6754}
+}
+{volume "body12"
+	{box 54.7894 9.68572 23.1626}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-18.5776 	 -0.0344 	 4.5589
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body1.vol"}
+	{bone "body"}
+	{Position 56.0596 	 0 	 8.7593}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body2.vol"}
+	{bone "body"}
+	{Position 37.1726 	 0 	 10.5081}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body3.vol"}
+	{bone "body"}
+	{Position 29.9287 	 0 	 0.2543}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body4.vol"}
+	{bone "body"}
+	{Position 14.3201 	 0 	 2.0851}
+}
+{volume "body5"
+	{box 14.8833 12.874 0.341929}
+	{bone "doorl1"}
+	{matrix34
+		0.9733 	 -0.2294 	 0
+		0 	 0 	 1
+		-0.2294 	 -0.9733 	 0
+		-7.2472 	 1.2928 	 -4.5649
+	}
+}
+{volume "body6"
+	{box 14.8833 12.874 0.341839}
+	{bone "doorr1"}
+	{matrix34
+		0.9733 	 0.2297 	 0
+		0 	 0 	 1
+		0.2297 	 -0.9733 	 0
+		-7.2489 	 -1.2857 	 -4.5679
+	}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body7.vol"}
+	{bone "body"}
+	{Position 20.3306 	 -0.0329 	 22.7329}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body8.vol"}
+	{bone "doorl_ext"}
+	{Position -5.7745 	 0.9479 	 3.4591}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/body9.vol"}
+	{bone "doorr_ext"}
+	{Position -5.7762 	 -0.9408 	 3.4603}
+}
+{volume "engine"
+	{box 19.8298 11.61 14.0365}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.2279 	 0.2723 	 2.0676
+	}
+}
+{volume "fuel1"
+	{box 22.3927 4.63421 9.34165}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -2.6662
+	}
+}
+{volume "fuel2"
+	{box 22.3927 4.63421 9.34165}
+	{bone "fuel2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -2.6662
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 0.2945 	 0 	 0.9213}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 0.2945 	 0.0322 	 0.7719}
+}
+{volume "hole3"
+	{box 52.9878 15.7782 37.4618}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-19.1883 	 -0.0695 	 17.9536
+	}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hole4.vol"}
+	{bone "body"}
+	{Position 20.5377 	 -7.6333 	 21.7054}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/hole5.vol"}
+	{bone "body"}
+	{Position 20.5377 	 7.5674 	 21.7054}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/ram.vol"}
+	{bone "body"}
+	{Position 6.3361 	 0 	 2.9282}
+}
+{volume "trackleft1"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/trackleft1.vol"}
+	{bone "wheelsl"}
+	{Position 0.2169 	 -0.1239 	 0.7994}
+}
+{volume "trackleft2"
+	{cylinder 5.52307 5.93118}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0173
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.33071 5.75453}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0219
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.33071 5.75445}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.022
+	}
+}
+{volume "trackleft7"
+	{cylinder 4.9205 5.75445}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1791
+	}
+}
+{volume "trackright1"
+	{polyhedron "../../../../-vehicle/usa/btr/m4a1_mortar_carrier/trackright1.vol"}
+	{bone "wheelsr"}
+	{Position 0.2169 	 0.037 	 0.7994}
+}
+{volume "trackright2"
+	{cylinder 5.52307 5.93118}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1566
+	}
+}
+{volume "trackright3"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright4"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright5"
+	{cylinder 4.33071 5.75445}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright6"
+	{cylinder 4.33071 5.75453}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0816
+	}
+}
+{volume "trackright7"
+	{cylinder 4.9205 5.75445}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.291
+	}
+}
+{volume "transmission"
+	{cylinder 3.72999 15.3349}
+	{bone "transmission"}
+	{matrix34
+		0 	 0.309 	 -0.9511
+		0 	 0.9511 	 0.309
+		1 	 0 	 0
+		0.3596 	 -0.0737 	 0.0545
+	}
+}
+{volume "wheelleft1"
+	{cylinder 9.64567 4.8622}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.8299
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.64567 4.8622}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.8533
+	}
+}
+{volume "window1"
+	{box 0.368708 5.90296 14.3915}
+	{bone "window1"}
+	{matrix34
+		-0.8833 	 0 	 -0.4688
+		-0.4688 	 0 	 0.8833
+		0 	 1 	 0
+		-0.002 	 -0.0123 	 0.0211
+	}
+}
+{volume "window2"
+	{box 0.368708 5.90296 14.3915}
+	{bone "window2"}
+	{matrix34
+		-0.8833 	 0 	 -0.4688
+		-0.4688 	 0 	 0.8833
+		0 	 1 	 0
+		-0.002 	 0.0213 	 0.0211
+	}
+}

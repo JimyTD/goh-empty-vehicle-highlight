@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 50mm_rocket_projector (generated)
-	{Extension "../../../../-vehicle/usa/cannon/50mm_rocket_projector/50mm_rocket_projector.mdl"}
+	{Extension "50mm_rocket_projector.mdl"}
 	{extender "stuff"
 		{item "evh_50mm_rocket_projector"}
 	}

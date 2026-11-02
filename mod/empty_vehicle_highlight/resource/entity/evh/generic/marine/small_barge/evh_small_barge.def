@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for small_barge (generated)
-	{Extension "../../../../-vehicle/generic/marine/small_barge/small_barge.mdl"}
+	{Extension "small_barge.mdl"}
 	{extender "stuff"
 		{item "evh_small_barge"}
 	}

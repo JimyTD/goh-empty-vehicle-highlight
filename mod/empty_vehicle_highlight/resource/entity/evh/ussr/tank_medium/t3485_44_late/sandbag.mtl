@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/t34_85_berline_sandbags"}
+	{bump "$/_vehicle/t34_85_berline_sandbags_bp"}
+	{specular "$/_vehicle/t34_85_berline_sandbags_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kv1s (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/kv1s/kv1s.mdl"}
+	{Extension "kv1s.mdl"}
 	{extender "stuff"
 		{item "evh_kv1s"}
 	}

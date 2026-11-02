@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/bofors_british"}
+	{bump "$/_vehicle/eng/bofors_british_bp"}
+	{specular "$/_vehicle/eng/bofors_british_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

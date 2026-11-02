@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 88mm_qf25_mk2_late (generated)
-	{Extension "../../../../-vehicle/eng/cannon/88mm_qf25_mk2_late/88mm_qf25_mk2_late.mdl"}
+	{Extension "88mm_qf25_mk2_late.mdl"}
 	{extender "stuff"
 		{item "evh_88mm_qf25_mk2_late"}
 	}

@@ -1,0 +1,883 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aim_hor aim_ver detail1 detail2 detail3 foot_b foot_l foot_r gun_rot lever_b lever_r magazine01 magazine02 magazine03 magazine04 saetbase_l seatbase_r shield4 shield5 shield6 shield7 susp_l susp_r trailer_body
+;Exported by:	 guita
+;Date:			 25.08.2024 10:52:17
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\cannon\20mm_flakvierling38\20mm_flakvierling38.max
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/close.anm"} {speed 0.6}}
+		{sequence "aim_v" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/aim_h.anm"} {speed 1}{resume}}
+		{sequence "fire00" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/fire00.anm"} {speed 1.5}}
+		{sequence "fire01" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/fire01.anm"} {speed 1.5}}
+		{sequence "fire02" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/fire02.anm"} {speed 1.5}}
+		{sequence "fire03" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/fire03.anm"} {speed 1.5}}
+		{sequence "reload" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/reload.anm"} {speed 0.5}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.44;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0.0087 	 3.521}
+			{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{speed 0.005}
+				{Position 1.1553 	 -0.0087 	 5.7332}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/turret.ply"}
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/turret_lod1.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -10 100}
+					{speed 0.005}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.2472 	 0 	 11.2698
+					}
+					
+					{bone "foresight1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							32.8231 	 0.7313 	 0
+						}
+					}
+					{bone "gun1"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.1036 	 4.2516 	 -6.9492
+						}
+						
+						{bone "shooter00"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								21.714 	 -0.4918 	 -0.9327
+							}
+						}
+						{bone "magazine01"
+							{parameters "id=gun;"}
+							{Position -9.7859 	 1.993 	 -0.9327}
+							
+						}
+					}
+					{bone "gun2"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.1036 	 -2.6449 	 6.9524
+						}
+						
+						{bone "shooter01"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								21.7099 	 0.4958 	 0.8015
+							}
+						}
+						{bone "magazine02"
+							{parameters "id=gun;"}
+							{Position -9.7859 	 -2.0108 	 0.7849}
+							
+						}
+					}
+					{bone "gun3"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.1036 	 -2.6722 	 -6.9492
+						}
+						
+						{bone "shooter02"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								21.6978 	 -0.4908 	 0.822
+							}
+						}
+						{bone "magazine03"
+							{parameters "id=gun;"}
+							{Position -9.7859 	 1.993 	 0.8704}
+							
+						}
+					}
+					{bone "gun4"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							11.1036 	 4.2788 	 6.9524
+						}
+						
+						{bone "shooter03"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								21.6969 	 0.4973 	 -0.9565
+							}
+						}
+						{bone "magazine04"
+							{parameters "id=gun;"}
+							{Position -9.7859 	 -2.0108 	 -0.96}
+							
+						}
+					}
+					{bone "shield2"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.1015 	 -0.7126 	 5.803
+						}
+						
+					}
+					{bone "shield3"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.1015 	 -0.7126 	 -5.8048
+						}
+						
+					}
+				}
+				{bone "rod"
+					{parameters "id=body;"}
+					{Position -2.744 	 6.1967 	 21.845}
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/rod.ply"}
+				}
+				{bone "shield1"
+					{parameters "id=shield;"}
+					{Position 16.0584 	 0 	 5.7722}
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield1.ply"}
+				}
+				{bone "seatbase_r"
+					{parameters "id=body;"}
+					{Position -14.5766 	 -12.0716 	 -1.2387}
+					
+					{bone "seat_r"
+						{parameters "id=body;"}
+						{matrix34
+							0.866 	 -0.5 	 0
+							0.5 	 0.866 	 0
+							0 	 0 	 1
+							8.6036 	 -7.8121 	 0.29
+						}
+						
+					}
+				}
+				{bone "saetbase_l"
+					{parameters "id=body;"}
+					{Position -14.5766 	 12.0716 	 -1.2387}
+					
+					{bone "seat_l"
+						{parameters "id=body;"}
+						{matrix34
+							0.848 	 0.5299 	 0
+							-0.5299 	 0.848 	 0
+							0 	 0 	 1
+							8.5552 	 7.8943 	 0.29
+						}
+						
+					}
+				}
+				{bone "aim_ver"
+					{parameters "id=body;"}
+					{Position -12.7425 	 -1.9625 	 13.7363}
+					
+				}
+				{bone "detail1"
+					{parameters "id=body;"}
+					{Position -3.0468 	 -9.6574 	 0.9524}
+					
+				}
+				{bone "detail2"
+					{parameters "id=body;"}
+					{Position -0.5402 	 -9.6574 	 0.9524}
+					
+				}
+				{bone "detail3"
+					{parameters "id=body;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						3.2847 	 -9.7309 	 0.9524
+					}
+					
+				}
+				{bone "shield4"
+					{parameters "id=shield1;"}
+					{Position 8.4284 	 8.4715 	 -1.8152}
+					
+					{bone "shield5"
+						{parameters "id=shield1;"}
+						{matrix34
+							0.9205 	 0 	 0.3907
+							0 	 1 	 0
+							-0.3907 	 0 	 0.9205
+							-1.8965 	 0.1657 	 25.6703
+						}
+						
+					}
+				}
+				{bone "shield6"
+					{parameters "id=shield6;"}
+					{Position 8.4284 	 -8.4715 	 -1.8152}
+					
+					{bone "shield7"
+						{parameters "id=shield6;"}
+						{matrix34
+							0.9205 	 0 	 0.3907
+							0 	 1 	 0
+							-0.3907 	 0 	 0.9205
+							-1.8965 	 -0.1657 	 25.6703
+						}
+						
+					}
+				}
+				{bone "aim_h_helper"
+					{matrix34
+						0.7986 	 0 	 0.6018
+						0 	 1 	 0
+						-0.6018 	 0 	 0.7986
+						-13.9223 	 2.9236 	 15.1631
+					}
+					{bone "aim_hor"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "charger"
+					{matrix34
+						0.0787 	 0.9969 	 0
+						-0.9969 	 0.0787 	 0
+						0 	 0 	 1
+						-5.5044 	 -20.6461 	 7.5463
+					}
+				}
+				{bone "commander"
+					{matrix34
+						0.4747 	 -0.8801 	 0
+						0.8801 	 0.4747 	 0
+						0 	 0 	 1
+						-6.5473 	 20.4181 	 7.5463
+					}
+				}
+				{bone "gunner"
+					{Position -20.3432 	 0 	 6.6272}
+				}
+				{bone "seat1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-17.8295 	 0 	 7.1791
+					}
+				}
+				{bone "visor"
+					{Position -0.3669 	 -0.7632 	 23.0615}
+				}
+			}
+			{bone "lever_l"
+				{parameters "id=body;"}
+				{Position 14.7236 	 19.6286 	 1.9188}
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/lever_l.ply"}
+			}
+			{bone "lever_r"
+				{parameters "id=body;"}
+				{Position 14.7236 	 -19.6459 	 1.9188}
+				
+			}
+			{bone "lever_b"
+				{parameters "id=body;"}
+				{Position -28.4748 	 -0.0046 	 1.9271}
+				
+			}
+			{bone "foot_r"
+				{parameters "id=body;"}
+				{Position 14.7236 	 -19.6459 	 -1.7148}
+				
+			}
+			{bone "foot_l"
+				{parameters "id=body;"}
+				{Position 14.7236 	 19.6286 	 -1.7148}
+				
+			}
+			{bone "foot_b"
+				{parameters "id=body;"}
+				{Position -28.4748 	 -0.0046 	 -1.7148}
+				
+			}
+			{bone "seat3"
+				{matrix34
+					-0.6803 	 -0.7329 	 0
+					0.7329 	 -0.6803 	 0
+					0 	 0 	 1
+					-6.402 	 18.2723 	 11.8967
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					-0.6608 	 0.7505 	 0
+					-0.7505 	 -0.6608 	 0
+					0 	 0 	 1
+					-5.9838 	 -19.0912 	 11.8967
+				}
+			}
+			{bone "visor2"
+				{Position -2.3874 	 15.5766 	 25.5626}
+			}
+		}
+		{bone "trailer_body"
+			{parameters "id=body;"}
+			{matrix34
+				0.9613 	 0 	 0.2756
+				0 	 1 	 0
+				-0.2756 	 0 	 0.9613
+				-58.5175 	 0.0087 	 8.6238
+			}
+			{visibility 0}
+			
+			{bone "trailer_leverr"
+				{parameters "id=body;"}
+				{Position 17.0353 	 -16.6059 	 7.1058}
+				{visibility 0}
+				
+			}
+			{bone "trailer_leverl"
+				{parameters "id=body;"}
+				{Position 17.0353 	 16.5886 	 7.1058}
+				{visibility 0}
+				
+			}
+		}
+		{bone "driver3"
+			{Position -51.6387 	 -0.0409 	 0}
+		}
+		{bone "driver2"
+			{parameters "group=commander;"}
+			{Position -21.176 	 20.8183 	 0}
+		}
+		{bone "driver1"
+			{parameters "group=commander;"}
+			{Position -21.176 	 -21.3577 	 0}
+		}
+		{bone "emit1"
+			{matrix34
+				0.9945 	 0.1045 	 0
+				-0.1045 	 0.9945 	 0
+				0 	 0 	 1
+				-46.3779 	 -9.7356 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0.7107 	 -0.7035 	 0
+				0.7035 	 0.7107 	 0
+				0 	 0 	 1
+				-10.5562 	 26.1788 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0.7739 	 0.6333 	 0
+				-0.6333 	 0.7739 	 0
+				0 	 0 	 1
+				-11.6796 	 -24.8014 	 0
+			}
+		}
+		{bone "pivot_front"
+			{Position -58.5175 	 0 	 8.6238}
+			{bone prizmatic "suspension_l1"
+				{limits -0.02 0.02}
+				{speed 0.1}
+				{Position 0 	 19.685 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.44;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/wheell.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0.02 0.02}
+				{speed 0.1}
+				{Position 0 	 -19.685 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.44;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/wheelr.ply"}
+				}
+			}
+			{bone "susp_l"
+				{parameters "id=body;"}
+				{matrix34
+					0.9613 	 0 	 0.2756
+					0 	 1 	 0
+					-0.2756 	 0 	 0.9613
+					0 	 15.64 	 0
+				}
+				{visibility 0}
+				
+			}
+			{bone "susp_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.9613 	 0 	 0.2756
+					0 	 1 	 0
+					-0.2756 	 0 	 0.9613
+					0 	 -15.64 	 0
+				}
+				{visibility 0}
+				
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					0 	 -19.6778 	 -8.6201
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					0 	 19.7097 	 -8.6201
+				}
+			}
+		}
+		{bone "sandbag"
+			{Position 16.316 	 -0.0215 	 0}
+		}
+		{bone "link1"
+			{Position -48.9575 	 0.0001 	 14.6193}
+		}
+	}
+}
+{obstacle "close"
+	{polygon2
+		{radius 0}
+		{vertex -44.3655 -0.91897}
+		{vertex -10.7135 -21.7088}
+		{vertex 16.8842 -21.7088}
+		{vertex 16.8842 21.7451}
+		{vertex -10.7135 21.7451}
+		{vertex -44.3655 1.16176}
+	}
+	{Tags "close"}
+	{rotate}
+}
+{obstacle "open1"
+	{polygon2
+		{radius 0}
+		{vertex -31.6864 -2.90061}
+		{vertex -16.6691 -3.75292}
+		{vertex -16.6691 3.6795}
+		{vertex -31.6864 2.82719}
+	}
+	{Tags "open"}
+	{rotate}
+}
+{obstacle "open2"
+	{polygon2
+		{radius 0}
+		{vertex -16.6691 -3.75292}
+		{vertex -11.6653 -9.91777}
+		{vertex 13.2014 -21.3836}
+		{vertex 14.736 -21.3836}
+		{vertex 14.736 21.4047}
+		{vertex 13.2014 21.4047}
+		{vertex -11.6653 9.9192}
+		{vertex -16.6691 3.6795}
+	}
+	{Tags "open"}
+	{rotate}
+}
+{volume "barrel10"
+	{cylinder 0.602103 25.2874}
+	{bone "gun3"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.4557 	 -0.5123 	 0.825
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/barrel1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.6851 	 -1.255 	 4.5713
+	}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/barrel2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.6851 	 -1.255 	 -4.5601
+	}
+}
+{volume "barrel3"
+	{box 15.0157 3.1632 1.29577}
+	{bone "gun1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-11.6258 	 -0.5096 	 -0.7421
+	}
+}
+{volume "barrel4"
+	{cylinder 0.602103 25.2874}
+	{bone "gun1"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.4557 	 -0.5043 	 -0.9464
+	}
+}
+{volume "barrel5"
+	{box 15.0157 3.1632 1.29577}
+	{bone "gun4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-11.6258 	 0.4794 	 -0.7693
+	}
+}
+{volume "barrel6"
+	{cylinder 0.602103 25.2874}
+	{bone "gun4"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.4557 	 0.4847 	 -0.9736
+	}
+}
+{volume "barrel7"
+	{cylinder 0.602103 25.2874}
+	{bone "gun2"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.4557 	 0.4847 	 0.7977
+	}
+}
+{volume "barrel8"
+	{box 15.0157 3.1632 1.29577}
+	{bone "gun2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-11.6258 	 0.4794 	 1.002
+	}
+}
+{volume "barrel9"
+	{box 15.0157 3.1632 1.29577}
+	{bone "gun3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-11.6258 	 -0.5175 	 1.0292
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body1.vol"}
+	{bone "body"}
+	{Position 11.2947 	 -0.0192 	 1.3438}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body2.vol"}
+	{bone "body"}
+	{Position -4.4078 	 -0.4098 	 1.3438}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body3.vol"}
+	{bone "body"}
+	{Position -24.1778 	 0.0281 	 1.3438}
+}
+{volume "body4"
+	{cylinder 6.79435 1.24155}
+	{bone "body"}
+	{Position 1.1553 	 -0.0087 	 2.9918}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body5.vol"}
+	{bone "turret"}
+	{Position -0.4708 	 0.0639 	 8.9736}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body6.vol"}
+	{bone "turret"}
+	{Position 11.6267 	 0.0639 	 4.3239}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body7.vol"}
+	{bone "turret"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-13.6899 	 5.2105 	 19.7573
+	}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/body8.vol"}
+	{bone "trailer_body"}
+	{Position -13.7407 	 -0.13 	 4.7256}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/hole1.vol"}
+	{bone "shield1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-3.3994 	 -0.0087 	 -1.1553
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/hole2.vol"}
+	{bone "shield2"}
+	{Position -0.4983 	 -0.008 	 0.2146}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/hole3.vol"}
+	{bone "shield3"}
+	{Position -0.4983 	 -0.0286 	 0.2146}
+}
+{volume "magazine01"
+	{box 4.47526 6.26233 1.16818}
+	{bone "magazine01"}
+	{matrix34
+		0.9744 	 -0.225 	 0
+		0.225 	 0.9744 	 0
+		0 	 0 	 1
+		0.1634 	 0.5697 	 -0.0055
+	}
+}
+{volume "magazine02"
+	{box 4.47526 6.26233 1.16818}
+	{bone "magazine02"}
+	{matrix34
+		0.9659 	 0.2588 	 0
+		-0.2588 	 0.9659 	 0
+		0 	 0 	 1
+		0.1634 	 -0.611 	 0.0067
+	}
+}
+{volume "magazine03"
+	{box 4.47526 6.26233 1.16818}
+	{bone "magazine03"}
+	{matrix34
+		0.9744 	 -0.225 	 0
+		0.225 	 0.9744 	 0
+		0 	 0 	 1
+		0.1634 	 0.5697 	 -0.0011
+	}
+}
+{volume "magazine04"
+	{box 4.47526 6.26233 1.16818}
+	{bone "magazine04"}
+	{matrix34
+		0.9659 	 0.2588 	 0
+		-0.2588 	 0.9659 	 0
+		0 	 0 	 1
+		0.1634 	 -0.611 	 -0.017
+	}
+}
+{volume "select"
+	{box 38.0133 46.7879 33.915}
+	{bone "basis"}
+	{Position -1.3832 	 -0.4349 	 16.9575}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield1.vol"}
+	{bone "shield1"}
+	{Position -3.0607 	 -0.0437 	 -1.1472}
+}
+{volume "shield2"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield2.vol"}
+	{bone "shield2"}
+	{Position 0.3572 	 -0.0084 	 -0.0503}
+}
+{volume "shield3"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield3.vol"}
+	{bone "shield3"}
+	{Position 0.3572 	 -0.0108 	 -0.0503}
+}
+{volume "shield41"
+	{box 0.313407 15.2386 7.89049}
+	{bone "shield4"}
+	{matrix34
+		0.9455 	 0.3256 	 0
+		-0.3256 	 0.9455 	 0
+		0 	 0 	 1
+		1.623 	 3.8131 	 3.9476
+	}
+}
+{volume "shield42"
+	{box 0.322669 15.2783 7.75847}
+	{bone "shield4"}
+	{matrix34
+		0.9455 	 0.3256 	 0
+		-0.3256 	 0.9455 	 0
+		0 	 0 	 1
+		0.4909 	 7.1326 	 11.7713
+	}
+}
+{volume "shield43"
+	{box 0.322669 15.2783 12.8252}
+	{bone "shield4"}
+	{matrix34
+		0.8779 	 0.3023 	 0.3714
+		-0.3256 	 0.9455 	 0
+		-0.3511 	 -0.1209 	 0.9285
+		-1.7485 	 6.3573 	 21.5504
+	}
+}
+{volume "shield4"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield4.vol"}
+	{bone "shield4"}
+	{matrix34
+		0.9455 	 0.3256 	 0
+		0 	 0 	 1
+		0.3256 	 -0.9455 	 0
+		1.4397 	 -0.1418 	 9.1927
+	}
+}
+{volume "shield5"
+	{box 5.96456 9.59671 0.400605}
+	{bone "shield5"}
+	{matrix34
+		0.9998 	 0.0175 	 0
+		0 	 0 	 1
+		0.0175 	 -0.9998 	 0
+		-2.5848 	 -0.2634 	 -3.3289
+	}
+}
+{volume "shield61"
+	{box 0.313407 15.2386 7.89049}
+	{bone "shield6"}
+	{matrix34
+		0.9455 	 -0.3256 	 0
+		0.3256 	 0.9455 	 0
+		0 	 0 	 1
+		1.6644 	 -3.7904 	 3.9476
+	}
+}
+{volume "shield62"
+	{box 0.322669 15.2783 7.75847}
+	{bone "shield6"}
+	{matrix34
+		0.9455 	 -0.3256 	 0
+		0.3256 	 0.9455 	 0
+		0 	 0 	 1
+		0.4554 	 -7.22 	 11.7713
+	}
+}
+{volume "shield63"
+	{box 0.322669 15.2783 12.8252}
+	{bone "shield6"}
+	{matrix34
+		0.8779 	 -0.3023 	 0.3714
+		0.3256 	 0.9455 	 0
+		-0.3511 	 0.1209 	 0.9285
+		-1.7866 	 -6.4522 	 21.5504
+	}
+}
+{volume "shield6"
+	{polyhedron "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield6.vol"}
+	{bone "shield6"}
+	{matrix34
+		0.9455 	 -0.3256 	 0
+		0 	 0 	 1
+		-0.3256 	 -0.9455 	 0
+		1.4253 	 0.1396 	 9.1927
+	}
+}
+{volume "shield7"
+	{box 5.96456 9.59671 0.400605}
+	{bone "shield7"}
+	{matrix34
+		0.9998 	 0.0175 	 0
+		0 	 0 	 1
+		0.0175 	 -0.9998 	 0
+		-2.5848 	 0.2998 	 -3.3289
+	}
+}
+{volume "wheelleft"
+	{cylinder 8.66847 4.05824}
+	{bone "wheell"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0053
+	}
+}
+{volume "wheelright"
+	{cylinder 8.66847 4.05824}
+	{bone "wheelr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.031
+	}
+}

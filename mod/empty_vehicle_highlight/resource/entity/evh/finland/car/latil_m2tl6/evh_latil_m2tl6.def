@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for latil_m2tl6 (generated)
-	{Extension "../../../../-vehicle/finland/car/latil_m2tl6/latil_m2tl6.mdl"}
+	{Extension "latil_m2tl6.mdl"}
 	{extender "stuff"
 		{item "evh_latil_m2tl6"}
 	}

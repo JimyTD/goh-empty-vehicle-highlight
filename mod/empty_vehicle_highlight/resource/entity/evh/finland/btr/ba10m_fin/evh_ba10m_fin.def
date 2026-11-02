@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ba10m_fin (generated)
-	{Extension "../../../../-vehicle/finland/btr/ba10m_fin/ba10m_fin.mdl"}
+	{Extension "ba10m_fin.mdl"}
 	{extender "stuff"
 		{item "evh_ba10m_fin"}
 	}

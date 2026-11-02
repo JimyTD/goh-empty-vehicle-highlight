@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bm13_studebaker (generated)
-	{Extension "../../../../-vehicle/ussr/car/bm13_studebaker/bm13_studebaker.mdl"}
+	{Extension "bm13_studebaker.mdl"}
 	{extender "stuff"
 		{item "evh_bm13_studebaker"}
 	}

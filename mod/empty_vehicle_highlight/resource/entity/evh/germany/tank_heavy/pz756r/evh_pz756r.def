@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for pz756r (generated)
-	{Extension "../../../../-vehicle/germany/tank_heavy/pz756r/pz756r.mdl"}
+	{Extension "pz756r.mdl"}
 	{extender "stuff"
 		{item "evh_pz756r"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 300mm_krh42 (generated)
-	{Extension "../../../../-vehicle/finland/cannon/300mm_krh42/300mm_krh42.mdl"}
+	{Extension "300mm_krh42.mdl"}
 	{extender "stuff"
 		{item "evh_300mm_krh42"}
 	}

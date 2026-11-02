@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for gaz_aaa_supply (generated)
-	{Extension "../../../../-vehicle/ussr/car/gaz_aaa_supply/gaz_aaa_supply.mdl"}
+	{Extension "gaz_aaa_supply.mdl"}
 	{extender "stuff"
 		{item "evh_gaz_aaa_supply"}
 	}

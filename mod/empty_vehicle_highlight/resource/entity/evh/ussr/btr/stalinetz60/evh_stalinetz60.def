@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stalinetz60 (generated)
-	{Extension "../../../../-vehicle/ussr/btr/stalinetz60/stalinetz60.mdl"}
+	{Extension "stalinetz60.mdl"}
 	{extender "stuff"
 		{item "evh_stalinetz60"}
 	}

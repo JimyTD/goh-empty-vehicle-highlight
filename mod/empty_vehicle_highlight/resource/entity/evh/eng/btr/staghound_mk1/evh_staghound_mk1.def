@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for staghound_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/btr/staghound_mk1/staghound_mk1.mdl"}
+	{Extension "staghound_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_staghound_mk1"}
 	}

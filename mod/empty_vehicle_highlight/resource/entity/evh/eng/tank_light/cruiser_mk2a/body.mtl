@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/cruiser_mk2_a10_cs"}
+	{bump "$/_vehicle/eng/cruiser_mk2_a10_cs_bp"}
+	{specular "$/_vehicle/eng/cruiser_mk2_a10_cs_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

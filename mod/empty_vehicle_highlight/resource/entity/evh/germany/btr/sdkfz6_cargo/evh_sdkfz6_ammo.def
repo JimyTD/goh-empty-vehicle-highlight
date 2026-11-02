@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdkfz6_ammo (generated)
-	{Extension "../../../../-vehicle/germany/btr/sdkfz6_cargo/sdkfz6_cargo.mdl"}
+	{Extension "sdkfz6_cargo.mdl"}
 	{extender "stuff"
 		{item "evh_sdkfz6_ammo"}
 	}

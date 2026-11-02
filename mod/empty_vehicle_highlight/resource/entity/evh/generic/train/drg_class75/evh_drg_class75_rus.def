@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for drg_class75_rus (generated)
-	{Extension "../../../../-vehicle/generic/train/drg_class75/drg_class75_rus.mdl"}
+	{Extension "drg_class75_rus.mdl"}
 	{texmod "rus"}
 	{extender "stuff"
 		{item "evh_drg_class75_rus"}

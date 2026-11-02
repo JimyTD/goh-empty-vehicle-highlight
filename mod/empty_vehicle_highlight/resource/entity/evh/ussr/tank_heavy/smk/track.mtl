@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/tracks/track_smk"}
+	{bump "$/_vehicle/tracks/track_smk_bp"}
+	{specular "$/_vehicle/tracks/track_smk_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for zis30 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/zis30/zis30.mdl"}
+	{Extension "zis30.mdl"}
 	{extender "stuff"
 		{item "evh_zis30"}
 	}

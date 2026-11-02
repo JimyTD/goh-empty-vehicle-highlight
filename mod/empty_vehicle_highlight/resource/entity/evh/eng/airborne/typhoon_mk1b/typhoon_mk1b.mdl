@@ -1,0 +1,1057 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 retract_step rudder
+{skeleton
+	{animation
+		{sequence "engine_start" {file "../../../../-vehicle/eng/airborne/typhoon_mk1b/engine_start.anm"} {speed 0.7}}
+		{sequence "engine_work" {file "../../../../-vehicle/eng/airborne/typhoon_mk1b/engine_work.anm"} {speed 0.2}}
+		{sequence "engine_stop" {file "../../../../-vehicle/eng/airborne/typhoon_mk1b/engine_stop.anm"} {speed 0.6}}
+		{sequence "open1" {file "../../../../-vehicle/eng/airborne/typhoon_mk1b/open1.anm"} {speed 0.5}{resume}}
+		{sequence "wheels" {file "../../../../-vehicle/eng/airborne/typhoon_mk1b/wheels.anm"} {speed 9}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=20;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				10.8959 	 0 	 35.6183
+			}
+			{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/body.ply"}
+			{bone "glass_fus"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass_fus.ply"}
+			}
+			{bone "glass_lightrear"
+				{parameters "id=body;"}
+				{Position 104.146 	 0 	 4.453}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass_lightrear.ply"}
+			}
+			{bone revolute "rudder"
+				{parameters "id=body;"}
+				{limits -30 30}
+				{speed 0.1}
+				{Position 106.822 	 0 	 8.4561}
+				
+			}
+			{bone revolute "elevator1"
+				{parameters "id=elevator1;"}
+				{limits -30 30}
+				{speed 0.1}
+				{matrix34
+					-0.9999 	 0.0152 	 0
+					0 	 0 	 1
+					0.0152 	 0.9999 	 0
+					93.8179 	 -19.2418 	 4.453
+				}
+				
+			}
+			{bone revolute "elevator2"
+				{parameters "id=elevator2;"}
+				{limits -30 30}
+				{speed 0.1}
+				{matrix34
+					-0.9999 	 -0.0152 	 0
+					0 	 0 	 1
+					-0.0152 	 0.9999 	 0
+					93.8008 	 20.3675 	 4.453
+				}
+				
+			}
+			{bone "engine1"
+				{parameters "id=engine1;"}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/engine1.ply"}
+				{bone "propeller1_work"
+					{parameters "commonmesh;id=engine1;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-61.0441 	 -0.0025 	 1.3178
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/propeller1_work.ply"}
+					{bone "hub"
+						{parameters "id=engine1;"}
+						{matrix34
+							0 	 0.5 	 0.866
+							0 	 -0.866 	 0.5
+							1 	 0 	 0
+							-2.5184 	 -0.0025 	 0.002
+						}
+						{visibility 0}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/hub.ply"}
+					}
+				}
+				{bone "fxsmoke3"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-36.3807 	 11.5268 	 1.4144
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-33.1139 	 11.4508 	 1.4144
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-29.8086 	 11.5313 	 1.4144
+					}
+				}
+				{bone "fxsmoke6"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-30.2903 	 -11.6132 	 1.401
+					}
+				}
+				{bone "fxsmoke5"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-33.304 	 -11.4647 	 1.401
+					}
+				}
+				{bone "fxsmoke4"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-36.4546 	 -11.569 	 1.401
+					}
+				}
+				{bone "fxsmoke7"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-46.4228 	 11.4885 	 1.4144
+					}
+				}
+				{bone "fxsmoke8"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-43.156 	 11.4125 	 1.4144
+					}
+				}
+				{bone "fxsmoke9"
+					{matrix34
+						0.9756 	 0.2163 	 -0.0375
+						0.0341 	 0.0195 	 0.9992
+						0.2168 	 -0.9761 	 0.0116
+						-39.8507 	 11.493 	 1.4144
+					}
+				}
+				{bone "fxsmoke10"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-46.1577 	 -11.5036 	 1.401
+					}
+				}
+				{bone "fxsmoke11"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-43.0071 	 -11.3993 	 1.401
+					}
+				}
+				{bone "fxsmoke12"
+					{matrix34
+						0.9777 	 -0.2078 	 -0.03
+						0.0317 	 0.0044 	 0.9995
+						-0.2076 	 -0.9782 	 0.0109
+						-39.9935 	 -11.5479 	 1.401
+					}
+				}
+				{bone "propeller1"
+					{parameters "id=engine1;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-58.5333 	 0 	 1.3109
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/propeller1.ply"}
+				}
+			}
+			{bone "glass1"
+				{parameters "id=body;"}
+				{Position -10.214 	 2.9609 	 14.699}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass1.ply"}
+			}
+			{bone "geardoor_l"
+				{parameters "id=body;"}
+				{matrix34
+					-0.062 	 0.1392 	 0.9883
+					-0.998 	 0 	 -0.0626
+					-0.0087 	 -0.9903 	 0.1389
+					-9.4622 	 -9.9236 	 -14.4696
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/geardoor_l.ply"}
+			}
+			{bone "geardoor_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.062 	 0.1392 	 -0.9883
+					-0.998 	 0 	 -0.0626
+					-0.0087 	 0.9903 	 0.1389
+					-9.4622 	 9.9236 	 -14.4696
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/geardoor_r.ply"}
+			}
+			{bone "canopy"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 -1 	 0
+					0.9997 	 0 	 -0.0238
+					0.0238 	 0 	 0.9997
+					7.8047 	 0 	 14.5518
+				}
+				
+				{bone "glass2"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					
+				}
+			}
+			{bone "gear_r"
+				{parameters "id=body;"}
+				{matrix34
+					-0.3259 	 0.9454 	 0
+					-0.9113 	 -0.3141 	 0.2661
+					0.2516 	 0.0867 	 0.9639
+					-27.4298 	 44.2804 	 -13.4613
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_r.ply"}
+				{bone "gearleg2_r"
+					{parameters "id=body;"}
+					{matrix34
+						-0.3111 	 -0.9492 	 -0.047
+						0.9454 	 -0.3141 	 0.0867
+						-0.0971 	 -0.0174 	 0.9951
+						2.4491 	 0.4401 	 -25.1005
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gearleg2_r.ply"}
+					{bone revolute "wheel_r"
+						{parameters "id=wheelr;radius=0.44;"}
+						{matrix34
+							0.9546 	 0 	 0.2979
+							-0.2972 	 -0.0698 	 0.9523
+							0.0208 	 -0.9976 	 -0.0666
+							0.0289 	 -1.3847 	 1.0169
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wheel_r.ply"}
+					}
+				}
+				{bone "geardoor_main_r"
+					{parameters "id=body;"}
+					{matrix34
+						-0.3259 	 -0.9113 	 0.2516
+						0.9454 	 -0.3141 	 0.0867
+						0 	 0.2661 	 0.9639
+						2.0921 	 -0.6531 	 -16.7296
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/geardoor_main_r.ply"}
+				}
+				{bone "joint3_r"
+					{parameters "id=body;"}
+					{matrix34
+						0.9066 	 -0.4068 	 0.1123
+						0.4031 	 0.9135 	 0.0553
+						-0.1251 	 -0.0049 	 0.9921
+						-0.6742 	 0.639 	 -6.1469
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint3_r.ply"}
+					{bone "gear_strut5_r"
+						{parameters "id=body;"}
+						{matrix34
+							0.097 	 -0.9935 	 -0.0592
+							0.5207 	 0 	 0.8538
+							-0.8482 	 -0.1136 	 0.5173
+							-0.5575 	 0.0045 	 0.3385
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut5_r.ply"}
+						{bone "gear_strut4_r"
+							{parameters "id=body;"}
+							{matrix34
+								-0.9363 	 -0.3114 	 -0.1625
+								-0.171 	 0 	 0.9853
+								-0.3068 	 0.9503 	 -0.0532
+								-0.5168 	 0.0012 	 3.0042
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut4_r.ply"}
+						}
+						{bone "gear_strut2_r"
+							{parameters "id=body;"}
+							{matrix34
+								0.9597 	 0.2557 	 0.1169
+								-0.0576 	 0.5858 	 -0.8084
+								-0.2751 	 0.769 	 0.577
+								-0.5829 	 0.705 	 2.7707
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut2_r.ply"}
+						}
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.3259 	 -0.9113 	 0.2516
+						0.9454 	 -0.3141 	 0.0867
+						0 	 0.2661 	 0.9639
+						1.202 	 -1.4416 	 -32.3786
+					}
+				}
+			}
+			{bone "joint2_r"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 0.8615 	 -0.5077
+					-1 	 0 	 0
+					0 	 0.5077 	 0.8615
+					-28.7694 	 31.6092 	 -12.5357
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint2_r.ply"}
+				{bone "joint1_r"
+					{parameters "id=body;"}
+					{matrix34
+						0 	 -1 	 0
+						0.8615 	 0 	 0.5077
+						-0.5077 	 0 	 0.8615
+						0.9285 	 0.4315 	 1.5535
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint1_r.ply"}
+				}
+				{bone "gear_strut_tr_r"
+					{parameters "id=body;"}
+					{matrix34
+						0.9999 	 0.0116 	 -0.0089
+						0.009 	 -0.0058 	 0.9999
+						0.0115 	 -0.9999 	 -0.0059
+						1.0498 	 0.4134 	 0.0016
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut_tr_r.ply"}
+				}
+			}
+			{bone "hydraulic_jack_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.0747 	 0.9969 	 -0.0238
+					0.0018 	 0.0237 	 0.9997
+					0.9972 	 -0.0747 	 0
+					-30.163 	 20.724 	 -10.5946
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/hydraulic_jack_r.ply"}
+				{bone "gear_strut1_r"
+					{parameters "id=body;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						12.298 	 -0.0421 	 0.1351
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut1_r.ply"}
+				}
+			}
+			{bone "gear_l"
+				{parameters "id=body;"}
+				{matrix34
+					0.3259 	 0.9454 	 0
+					-0.9113 	 0.3141 	 0.2661
+					0.2516 	 -0.0867 	 0.9639
+					-27.434 	 -44.2783 	 -13.4613
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_l.ply"}
+				{bone "gearleg2_l"
+					{parameters "id=body;"}
+					{matrix34
+						0.3111 	 -0.9492 	 -0.047
+						0.9454 	 0.3141 	 -0.0867
+						0.0971 	 -0.0174 	 0.9951
+						-2.4497 	 0.4357 	 -25.0992
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gearleg2_l.ply"}
+					{bone revolute "wheel_l"
+						{parameters "id=wheell;radius=0.44;"}
+						{matrix34
+							0.9546 	 0 	 0.2979
+							-0.2972 	 0.0698 	 0.9523
+							-0.0208 	 -0.9976 	 0.0666
+							0.0289 	 1.3847 	 1.0169
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wheel_l.ply"}
+					}
+				}
+				{bone "geardoor_main_l"
+					{parameters "id=body;"}
+					{matrix34
+						0.3259 	 -0.9113 	 0.2516
+						0.9454 	 0.3141 	 -0.0867
+						0 	 0.2661 	 0.9639
+						-2.0921 	 -0.6576 	 -16.7287
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/geardoor_main_l.ply"}
+				}
+				{bone "joint3_l"
+					{parameters "id=body;"}
+					{matrix34
+						0.9066 	 0.4068 	 -0.1123
+						-0.4031 	 0.9135 	 0.0553
+						0.1251 	 -0.0049 	 0.9921
+						0.6736 	 0.6346 	 -6.1457
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint3_l.ply"}
+					{bone "gear_strut5_l"
+						{parameters "id=body;"}
+						{matrix34
+							-0.4543 	 0.8444 	 -0.2839
+							-0.5384 	 -0.0064 	 0.8427
+							0.7098 	 0.5357 	 0.4575
+							0.5575 	 0.0044 	 0.3385
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut5_l.ply"}
+						{bone "gear_strut4_l"
+							{parameters "id=body;"}
+							{matrix34
+								-0.8431 	 0.3114 	 -0.4385
+								-0.4615 	 0 	 0.8872
+								0.2762 	 0.9503 	 0.1437
+								-1.4106 	 0.0012 	 2.7023
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut4_l.ply"}
+						}
+						{bone "gear_strut2_l"
+							{parameters "id=body;"}
+							{matrix34
+								-0.8388 	 0.3103 	 -0.4474
+								-0.5441 	 -0.509 	 0.667
+								-0.0208 	 0.8029 	 0.5957
+								-1.2164 	 0.705 	 2.5567
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut2_l.ply"}
+						}
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						0.3259 	 -0.9113 	 0.2516
+						0.9454 	 0.3141 	 -0.0867
+						0 	 0.2661 	 0.9639
+						1.0464 	 -0.7046 	 -32.5791
+					}
+				}
+			}
+			{bone "joint2_l"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 -0.8615 	 -0.5077
+					-1 	 0 	 0
+					0 	 0.5077 	 -0.8615
+					-28.7694 	 -31.6092 	 -12.5357
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint2_l.ply"}
+				{bone "gear_strut_tr_l"
+					{parameters "id=body;"}
+					{matrix34
+						0.9998 	 0.0202 	 0.0089
+						0.009 	 -0.0057 	 -0.9999
+						-0.0201 	 0.9998 	 -0.0059
+						1.0498 	 0.4134 	 -0.0016
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut_tr_l.ply"}
+				}
+				{bone "joint1_l"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0.01 	 0
+						0 	 0 	 -1
+						-0.01 	 1 	 0
+						1.0498 	 0.4134 	 -0.0016
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/joint1_l.ply"}
+				}
+			}
+			{bone "retract_step"
+				{parameters "id=body;"}
+				{matrix34
+					0.9494 	 0 	 0.314
+					-0.0828 	 0.9646 	 0.2504
+					-0.3029 	 -0.2637 	 0.9158
+					10.6451 	 3.1144 	 -0.2188
+				}
+				
+			}
+			{bone "emit1"
+				{matrix34
+					-0.3043 	 -0.952 	 -0.032
+					0.9132 	 -0.3011 	 0.2745
+					-0.271 	 0.0543 	 0.9611
+					18.8606 	 17.2108 	 -31.7157
+				}
+			}
+			{bone "driver"
+				{matrix34
+					-0.9978 	 0 	 0.0656
+					0 	 -1 	 0
+					0.0656 	 0 	 0.9978
+					-3.2766 	 0.131 	 -7.8543
+				}
+			}
+			{bone "fxtracem1"
+				{matrix34
+					0.9848 	 0 	 0.1736
+					-0.1736 	 0 	 0.9848
+					0 	 -1 	 0
+					6.2757 	 -1.7956 	 -29.861
+				}
+			}
+			{bone "visor"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-12.2853 	 0 	 15.0947
+				}
+			}
+			{bone revolute "gun_rot1"
+				{limits -7.5 7.5}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-16.1117 	 0 	 1.5265
+				}
+				{bone revolute "gun_rot2"
+					{limits -25 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone "foresight1"
+						{Position 55.7679 	 -11.9567 	 0}
+					}
+				}
+			}
+			{bone "wingr1"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-21.3982 	 42.1249 	 -9.0344
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingr1.ply"}
+				{bone "wingr2"
+					{parameters "id=wingright;"}
+					{Position -1.3551 	 -56.9904 	 2.6034}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingr2.ply"}
+					{bone revolute "aileron2"
+						{parameters "id=wingright;"}
+						{limits -20 20}
+						{speed 0.1}
+						{matrix34
+							0.9945 	 0.1045 	 0
+							0.0091 	 -0.0867 	 -0.9962
+							-0.1041 	 0.9907 	 -0.0872
+							-12.6366 	 3.3721 	 -0.536
+						}
+						
+						{bone "glass_wingr"
+							{parameters "id=wingright;"}
+							{matrix34
+								-0.9945 	 -0.0091 	 0.1041
+								-0.1045 	 0.0867 	 -0.9907
+								0 	 -0.9962 	 -0.0872
+								9.2202 	 -0.1283 	 28.4913
+							}
+							
+						}
+					}
+				}
+				{bone "flap4"
+					{parameters "id=body;"}
+					{matrix34
+						-0.988 	 -0.1544 	 0
+						0.1537 	 -0.9835 	 0.0957
+						-0.0148 	 0.0945 	 0.9954
+						-19.1944 	 -3.1536 	 -4.0224
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/flap4.ply"}
+				}
+				{bone "flap3"
+					{parameters "id=body;"}
+					{matrix34
+						-0.9882 	 -0.1532 	 0
+						0.1532 	 -0.988 	 -0.0207
+						0.0032 	 -0.0205 	 0.9998
+						-24.8348 	 33.237 	 -3.1921
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/flap3.ply"}
+				}
+				{bone "shooter_bb01"
+					{Position -3.3359 	 -10.7076 	 -9.4174}
+					{bone "bomb_01"
+						{parameters "id=body;"}
+						{Position 2.1888 	 0.2058 	 -0.2728}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/bomb_01.ply"}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/bomb_01_lod1.ply"}
+						}
+					}
+				}
+				{bone "shooter01"
+					{Position 35.4151 	 -8.3229 	 -2.4578}
+				}
+				{bone "shooter03"
+					{Position 35.297 	 -23.9542 	 -0.9227}
+				}
+				{bone "fxshell4"
+					{matrix34
+						0 	 0 	 -1
+						0 	 -1 	 0
+						-1 	 0 	 0
+						-0.7599 	 -24.3089 	 -3.6293
+					}
+				}
+				{bone "fxshell2"
+					{matrix34
+						0 	 0 	 -1
+						0 	 -1 	 0
+						-1 	 0 	 0
+						-1.7734 	 -6.9408 	 -6.7375
+					}
+				}
+				{bone "barrel03"
+					{Position 35.297 	 -23.9542 	 -0.9227}
+				}
+				{bone "barrel01"
+					{Position 35.4151 	 -8.3229 	 -2.4578}
+				}
+			}
+			{bone "wingl1"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-21.4849 	 -42.2447 	 -10.1161
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingl1.ply"}
+				{bone "wingl2"
+					{parameters "id=wingleft;"}
+					{Position -1.5076 	 56.7554 	 0.2591}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingl2.ply"}
+					{bone "glass_wingl"
+						{parameters "id=wingleft;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							-6.3691 	 -32.4591 	 0.5347
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass_wingl.ply"}
+					}
+					{bone revolute "aileron1"
+						{parameters "id=wingleft;"}
+						{limits -20 20}
+						{speed 0.1}
+						{matrix34
+							0.9945 	 -0.1045 	 0
+							-0.0091 	 -0.0867 	 0.9962
+							-0.1041 	 -0.9907 	 -0.0872
+							-12.5708 	 -3.2569 	 2.89
+						}
+						
+					}
+				}
+				{bone "flap1"
+					{parameters "id=body;"}
+					{matrix34
+						-0.988 	 0.1544 	 0
+						-0.1537 	 -0.9835 	 -0.0957
+						-0.0148 	 -0.0945 	 0.9954
+						-19.2811 	 3.0338 	 -2.9407
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/flap1.ply"}
+				}
+				{bone "flap2"
+					{parameters "id=body;"}
+					{matrix34
+						-0.9882 	 0.1532 	 0
+						-0.1532 	 -0.988 	 0.0207
+						0.0032 	 0.0205 	 0.9998
+						-24.9215 	 -33.3568 	 -2.1104
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/flap2.ply"}
+				}
+				{bone "shooter_bb00"
+					{Position -3.3982 	 10.4986 	 -8.3122}
+					{bone "bomb_00"
+						{parameters "id=body;"}
+						{Position 2.1643 	 0.1537 	 -0.2963}
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/bomb_00.ply"}
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/bomb_00_lod1.ply"}
+						}
+					}
+				}
+				{bone "shooter00"
+					{Position 34.5156 	 8.2367 	 -1.4055}
+				}
+				{bone "shooter02"
+					{Position 35.0281 	 23.8392 	 0.1741}
+				}
+				{bone "fxshell1"
+					{matrix34
+						0 	 0 	 -1
+						0 	 -1 	 0
+						-1 	 0 	 0
+						-1.738 	 6.807 	 -5.4895
+					}
+				}
+				{bone "fxshell3"
+					{matrix34
+						0 	 0 	 -1
+						0 	 -1 	 0
+						-1 	 0 	 0
+						-1.0155 	 23.9767 	 -3.1372
+					}
+				}
+				{bone "barrel02"
+					{Position 35.0281 	 23.8392 	 0.1741}
+				}
+				{bone "barrel00"
+					{Position 34.5156 	 8.2367 	 -1.4055}
+				}
+			}
+		}
+		{bone "hydraulic_jack_l"
+			{parameters "id=body;"}
+			{Position 41.0589 	 20.724 	 25.0237}
+			{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/hydraulic_jack_l.ply"}
+		}
+		{bone "gear_strut3_l"
+			{parameters "id=body;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				38.4013 	 44.7289 	 27.9068
+			}
+			{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut3_l.ply"}
+		}
+		{bone "gear_strut3_r"
+			{parameters "id=body;"}
+			{matrix34
+				0.9527 	 -0.2569 	 0.1625
+				-0.0063 	 0.5178 	 0.8555
+				-0.3039 	 -0.816 	 0.4917
+				38.4013 	 -44.7289 	 27.9068
+			}
+			{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/gear_strut3_r.ply"}
+		}
+		{bone "pivot_back"
+			{Position -83.8391 	 0 	 28.5845}
+			{bone "tailgear_main"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-1.5474 	 0 	 1.4818
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/tailgear_main.ply"}
+				{bone revolute "tailwheel"
+					{parameters "id=body;radius=0.17;support;"}
+					{matrix34
+						0.9844 	 -0.0213 	 -0.1745
+						0.1744 	 -0.0072 	 0.9846
+						-0.0222 	 -0.9997 	 -0.0034
+						1.5072 	 -0.0315 	 -8.6007
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/tailwheel.ply"}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{parameters "main;"}
+			{Position 45.5415 	 0 	 -5.8181}
+			{bone "support2"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					0.0523 	 40.5218 	 -3.6069
+				}
+			}
+			{bone "support1"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					0.0524 	 -40.522 	 -3.6069
+				}
+			}
+		}
+	}
+}
+{obstacle "rectangle1"
+	{obb2
+		{center -80.2622 -0}
+		{extent 11.1829 38.3674}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{obstacle "rectangle2"
+	{obb2
+		{center -4.01411 -0}
+		{extent 77.9278 10.5407}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{obstacle "rectangle3"
+	{obb2
+		{center 25.3098 0}
+		{extent 18.9287 118.853}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{volume "1blade1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/1blade1.vol"}
+	{bone "propeller1"}
+	{matrix34
+		0 	 -0.8192 	 0.5736
+		0 	 -0.5736 	 -0.8192
+		1 	 0 	 0
+		3.6364 	 2.8681 	 -0.5796
+	}
+}
+{volume "1blade2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/1blade2.vol"}
+	{bone "propeller1"}
+	{matrix34
+		0 	 -0.4226 	 0.9063
+		0 	 -0.9063 	 -0.4226
+		1 	 0 	 0
+		3.6364 	 1.0155 	 3.9542
+	}
+}
+{volume "1blade3"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/1blade3.vol"}
+	{bone "propeller1"}
+	{matrix34
+		0 	 0.0872 	 0.9962
+		0 	 -0.9962 	 0.0872
+		1 	 0 	 0
+		3.6364 	 -5.0928 	 1.1439
+	}
+}
+{volume "1blade4"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/1blade4.vol"}
+	{bone "propeller1"}
+	{matrix34
+		0 	 0.5736 	 0.8192
+		0 	 -0.8192 	 0.5736
+		1 	 0 	 0
+		3.6364 	 -0.3758 	 -3.308
+	}
+}
+{volume "aileron1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/aileron1.vol"}
+	{bone "aileron1"}
+	{matrix34
+		-0.9999 	 0.0104 	 -0.0128
+		-0.0128 	 -0.0012 	 0.9999
+		0.0104 	 0.9999 	 0.0014
+		-3.1825 	 -0.2782 	 -0.8178
+	}
+}
+{volume "aileron2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/aileron2.vol"}
+	{bone "aileron2"}
+	{matrix34
+		-0.982 	 -0.0131 	 -0.1886
+		-0.1891 	 0.0853 	 0.9783
+		0.0033 	 0.9963 	 -0.0862
+		-3.079 	 0.3545 	 0.0993
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/body1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		44.8847 	 0 	 -0.6492
+	}
+}
+{volume "canopy1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/canopy1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-9.5466 	 -0.3081 	 10.3174
+	}
+}
+{volume "canopy2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/canopy2.vol"}
+	{bone "canopy"}
+	{Position 0 	 0 	 0}
+}
+{volume "elevator1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/elevator1.vol"}
+	{bone "elevator1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-8.3069 	 -1.2094 	 -6.2505
+	}
+}
+{volume "elevator2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/elevator2.vol"}
+	{bone "elevator2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-9.0929 	 -1.2094 	 4.6986
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/engine1.vol"}
+	{bone "engine1"}
+	{Position 0 	 0 	 0}
+}
+{volume "gear_l"
+	{cylinder 1.40629 22.0739}
+	{bone "gear_l"}
+	{Position 0.333 	 -0.0903 	 -9.2618}
+}
+{volume "gear_r"
+	{cylinder 1.40629 22.0739}
+	{bone "gear_r"}
+	{Position 0.333 	 -0.1113 	 -9.2618}
+}
+{volume "rudder"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/rudder.vol"}
+	{bone "rudder"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		6.2491 	 0.4274 	 3.0703
+	}
+}
+{volume "spin1"
+	{cylinder 41.6319 2.80765}
+	{bone "propeller1_work"}
+	{matrix34
+		-0.0041 	 -0.436 	 -0.8999
+		0.005 	 0.8999 	 -0.436
+		1 	 -0.0063 	 -0.0016
+		0.118 	 -0.2273 	 0.364
+	}
+}
+{volume "stabilizer1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/stabilizer1.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		78.9388 	 -0.0145 	 3.3431
+	}
+}
+{volume "stabilizer2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/stabilizer2.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		97.6871 	 0.8514 	 25.7706
+	}
+}
+{volume "wheelback"
+	{cylinder 3.24803 3.09232}
+	{bone "tailwheel"}
+	{matrix34
+		0.9844 	 0.1744 	 -0.0222
+		-0.1745 	 0.9846 	 -0.0034
+		0.0213 	 0.0072 	 0.9997
+		-0.0793 	 -0.1286 	 0.0088
+	}
+}
+{volume "wheell"
+	{cylinder 8.63386 4.40644}
+	{bone "wheel_l"}
+	{Position 0 	 0 	 -2.2446}
+}
+{volume "wheelr"
+	{cylinder 8.76772 4.0359}
+	{bone "wheel_r"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.9997 	 -0.0262
+		0 	 0.0262 	 0.9997
+		0 	 0.0617 	 2.3555
+	}
+}
+{volume "wingl1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingl1.vol"}
+	{bone "wingl1"}
+	{Position -6.8803 	 -8.4996 	 -1.2256}
+}
+{volume "wingl2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingl2.vol"}
+	{bone "wingl2"}
+	{matrix34
+		-0.9962 	 0 	 -0.0872
+		0 	 -1 	 0
+		-0.0872 	 0 	 0.9962
+		-6.1301 	 -17.9126 	 0.9097
+	}
+}
+{volume "wingr1"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingr1.vol"}
+	{bone "wingr1"}
+	{Position -6.7936 	 6.6567 	 -1.7418}
+}
+{volume "wingr2"
+	{polyhedron "../../../../-vehicle/eng/airborne/typhoon_mk1b/wingr2.vol"}
+	{bone "wingr2"}
+	{Position -6.1959 	 17.552 	 -2.4073}
+}

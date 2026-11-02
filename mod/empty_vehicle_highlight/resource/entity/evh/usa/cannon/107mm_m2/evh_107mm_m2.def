@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 107mm_m2 (generated)
-	{Extension "../../../../-vehicle/usa/cannon/107mm_m2/107mm_m2.mdl"}
+	{Extension "107mm_m2.mdl"}
 	{extender "stuff"
 		{item "evh_107mm_m2"}
 	}

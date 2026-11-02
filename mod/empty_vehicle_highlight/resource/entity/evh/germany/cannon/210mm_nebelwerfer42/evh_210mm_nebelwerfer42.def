@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 210mm_nebelwerfer42 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/210mm_nebelwerfer42/210mm_nebelwerfer42.mdl"}
+	{Extension "210mm_nebelwerfer42.mdl"}
 	{extender "stuff"
 		{item "evh_210mm_nebelwerfer42"}
 	}

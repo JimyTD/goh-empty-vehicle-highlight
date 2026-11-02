@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzer3_flamm (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/panzer3_flamm/panzer3_flamm.mdl"}
+	{Extension "panzer3_flamm.mdl"}
 	{extender "stuff"
 		{item "evh_panzer3_flamm"}
 	}

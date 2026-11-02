@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sexton_mk2 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/sexton_mk2/sexton_mk2.mdl"}
+	{Extension "sexton_mk2.mdl"}
 	{extender "stuff"
 		{item "evh_sexton_mk2"}
 	}

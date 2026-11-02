@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/jagdpanzer_iv_zimmerit"}
+	{bump "$/_vehicle/jagdpanzer_iv_zimmerit_bp"}
+	{specular "$/_vehicle/jagdpanzer_iv_zimmerit_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

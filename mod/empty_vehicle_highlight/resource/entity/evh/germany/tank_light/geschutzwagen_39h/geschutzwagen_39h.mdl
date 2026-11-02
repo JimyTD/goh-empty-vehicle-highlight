@@ -1,0 +1,1058 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_driver hatch_rear1_1 hatch_rear1_2 turret
+;Exported by:	 nic21
+;Date:			 09.12.2025 17:13:34
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_light\75mm_Geschutzwagen_39H(f)\geschutzwagen_39h.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/fire.anm"} {speed 0.7}}
+		{sequence "shell_eject" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shell_eject.anm"} {speed 0.4}}
+		{sequence "board" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/board.anm"} {speed 1} {events {0 "board"}}}
+		{sequence "open_back" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/open_back.anm"} {speed 0.7}{resume} {events {2 "hatch_light"}}}
+		{sequence "close_back" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/close_back.anm"} {speed 0.7}{resume} {events {18 "hatch_light"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/open_driver.anm"} {speed 0.45}{resume} {events {2 "hatch_medium"}}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.212;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position -0.3616 	 -15.1875 	 8.4037}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/trackr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position 0.7119 	 -0.007 	 -0.5673}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/suspr.ply"}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position -23.2687 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position -13.4854 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr6"
+					{parameters "id=body;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.05 0.06}
+				{speed 0.18}
+				{Position -3.8594 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position 24.716 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.05 0.06}
+				{speed 0.18}
+				{Position 5.924 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position 14.9327 	 -0.0192 	 -3.439}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr3.ply"}
+				}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -0.3616 	 15.2559 	 8.4037}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position 0.7119 	 -0.0615 	 -0.5673}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/suspl.ply"}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/trackl.ply"}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position 24.6732 	 -0.0559 	 -3.439}
+				{bone revolute "wheell2"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position 14.8899 	 -0.0559 	 -3.439}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.05 0.06}
+				{speed 0.18}
+				{Position 5.8794 	 -0.0559 	 -3.439}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.05 0.06}
+				{speed 0.18}
+				{Position -3.9039 	 -0.0559 	 -3.439}
+				{bone revolute "wheell5"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position -13.509 	 -0.0559 	 -3.439}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.03 0.04}
+				{speed 0.18}
+				{Position -23.2923 	 -0.0559 	 -3.439}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell7.ply"}
+				}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0.9848 	 -0.1736 	 0
+				0.1736 	 0.9848 	 0
+				0 	 0 	 1
+				-57.8015 	 10.8268 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{matrix34
+				0.9848 	 0.1736 	 0
+				-0.1736 	 0.9848 	 0
+				0 	 0 	 1
+				-57.8015 	 -10.8268 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				50.369 	 -3.4114 	 0
+			}
+			{visibility 0}
+		}
+		{bone "dummy"
+			{Position 0 	 0 	 9.9082}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 19.7507}
+			{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body.ply"}
+			{bone "ammo1"
+				{Position -23.5557 	 -16.1545 	 7.8018}
+			}
+			{bone "ammo2"
+				{Position -23.5557 	 16.1545 	 7.815}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 31.4352 	 -16.0892 	 -0.2199}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -36.2455 	 17.6915 	 10.1075}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -36.2455 	 -17.6916 	 10.1075}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 3.231 	 20.5257 	 -0.4259}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 19.8446 	 16.5755 	 1.5736}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 5.9144 	 21.4994 	 0.6638}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -24.6703 	 21.1692 	 0.4887}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/detail7.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{Position -20.5366 	 0.0009 	 -2.5784}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/engine.ply"}
+				{bone "fuel1"
+					{Position -3.7981 	 17.3618 	 3.3887}
+				}
+				{bone "fuel2"
+					{Position -6.0568 	 -17.3091 	 3.3931}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.866 	 -0.5 	 0
+						0.5 	 -0.866 	 0
+						0 	 0 	 1
+						-20.1054 	 -10.6786 	 -0.8161
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-6.257 	 6.073 	 2.9639
+					}
+				}
+			}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{Position 24.1511 	 -3.4116 	 0.2288}
+				
+			}
+			{bone "hatch_rear1_1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9036 	 0 	 -0.4283
+					0 	 1 	 0
+					0.4283 	 0 	 0.9036
+					-35.9652 	 12.0264 	 9.921
+				}
+				
+			}
+			{bone "hatch_rear1_2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9036 	 0 	 -0.4283
+					0 	 1 	 0
+					0.4283 	 0 	 0.9036
+					-35.9651 	 -12.0264 	 9.921
+				}
+				
+			}
+			{bone "mgun_holders"
+				{parameters "id=body;"}
+				{Position -9.1196 	 0 	 18.3069}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/mgun_holders.ply"}
+			}
+			{bone "shieldl1"
+				{parameters "id=body;"}
+				{Position 29.3909 	 15.0225 	 -4.03}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shieldl1.ply"}
+			}
+			{bone "shieldl2"
+				{parameters "id=body;"}
+				{Position -38.3195 	 14.9365 	 -4.0541}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shieldl2.ply"}
+			}
+			{bone "shieldr1"
+				{parameters "id=body;"}
+				{Position 29.3909 	 -15.0224 	 -4.03}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shieldr1.ply"}
+			}
+			{bone "shieldr2"
+				{parameters "id=body;"}
+				{Position -38.3195 	 -14.9364 	 -4.0541}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shieldr2.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.289;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					34.6235 	 15.2559 	 -9.833
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.308;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-34.8299 	 15.1969 	 -9.9875
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-26.4456 	 15.1969 	 -5.9235
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.0562 	 15.1969 	 -5.9235
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					11.7455 	 15.1969 	 -5.9236
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.289;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					34.6241 	 -15.2559 	 -9.833
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.308;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-34.8305 	 -15.1968 	 -9.9875
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-26.4456 	 -15.1968 	 -5.9236
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-7.0563 	 -15.1968 	 -5.9236
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.106;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					11.7412 	 -15.1968 	 -5.9236
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/wheelr11.ply"}
+			}
+			{bone "at2_1"
+				{parameters "id=body;"}
+				{Position -31.7557 	 -17.9403 	 15.8268}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at2_1.ply"}
+				{bone "at2_2"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 9.8425}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at2_2.ply"}
+					{bone "at2_3"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 9.8425}
+						{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at2_3.ply"}
+						{bone "at2_4"
+							{parameters "id=body;"}
+							{Position 0 	 0 	 9.8425}
+							{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at2_4.ply"}
+						}
+					}
+				}
+			}
+			{bone "at1_1"
+				{parameters "id=body;"}
+				{Position -31.7557 	 17.9403 	 15.8268}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at1_1.ply"}
+				{bone "at1_2"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 9.8425}
+					{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at1_2.ply"}
+					{bone "at1_3"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 9.8425}
+						{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at1_3.ply"}
+						{bone "at1_4"
+							{parameters "id=body;"}
+							{Position 0 	 0 	 9.8425}
+							{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/at1_4.ply"}
+						}
+					}
+				}
+			}
+			{bone "enumerator2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -0.9689 	 -0.2474
+					0 	 -0.2474 	 0.9689
+					5.9137 	 22.7559 	 5.3478
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/enumerator2.ply"}
+			}
+			{bone "charger"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-12.3306 	 -10.6088 	 -9.3673
+				}
+			}
+			{bone "commander"
+				{matrix34
+					0.9848 	 -0.1736 	 0
+					0.1736 	 0.9848 	 0
+					0 	 0 	 1
+					1.6476 	 -8.415 	 -9.3673
+				}
+			}
+			{bone "driver"
+				{Position 23.7458 	 -6.2205 	 -9.1472}
+			}
+			{bone "gunner"
+				{matrix34
+					0.9848 	 0.1736 	 0
+					-0.1736 	 0.9848 	 0
+					0 	 0 	 1
+					1.3009 	 8.6792 	 -8.8892
+				}
+			}
+			{bone "transmission"
+				{Position 25.6393 	 3.6735 	 -5.427}
+			}
+			{bone "enumerator1"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9689 	 -0.2474
+					0 	 0.2474 	 0.9689
+					5.9137 	 -22.7523 	 5.3478
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/enumerator1.ply"}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 -0.7904
+				}
+			}
+			{bone "dimlightr"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					29.15 	 -10.4134 	 0.9854
+				}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					30.4952 	 10.6064 	 1.6975
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-38.5844 	 14.3278 	 0.6627
+				}
+			}
+			{bone "visor2"
+				{Position 27.0989 	 -4.9016 	 2.4501}
+			}
+			{bone "visor1"
+				{Position 13.4315 	 -10.7746 	 23.9173}
+			}
+			{bone revolute "turret"
+				{parameters "id=gun;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/gun_r.anm"}{speed 0.7}}
+				}
+				{Position 12.4016 	 0 	 5.2362}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						2.1457 	 0 	 9.3307
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							22.3206 	 -0.0197 	 0
+						}
+						
+						{bone "breech"
+							{parameters "id=gun;"}
+							{Position -32.4625 	 0.3115 	 -0.12}
+							
+						}
+						{bone "breech_handle"
+							{parameters "id=gun;"}
+							{Position -34.2994 	 0.9449 	 3.5761}
+							
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-31.7517 	 0 	 0
+							}
+						}
+						{bone "foresight1"
+							{Position 36.3933 	 0 	 0}
+						}
+					}
+					{bone "detail8"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							2.5535 	 7.9484 	 0.0487
+						}
+						
+					}
+					{bone "gun_shield"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							14.1414 	 -1.0943 	 0.0005
+						}
+						
+					}
+				}
+				{bone "shield"
+					{parameters "id=gun;"}
+					{Position 11.7172 	 0 	 8.2719}
+					
+				}
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 21.5251 7.40026 8.73814}
+	{bone "ammo1"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo2"
+	{box 21.5252 7.40025 8.73814}
+	{bone "ammo2"}
+	{Position 0 	 0 	 0}
+}
+{volume "barrel1"
+	{box 40.7674 4.18034 3.26108}
+	{bone "turret"}
+	{Position -2.0665 	 -0.0003 	 5.0683}
+}
+{volume "barrel2"
+	{box 8.66381 5.28058 5.08829}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-8.9873 	 0.0195 	 0
+	}
+}
+{volume "barrel3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/barrel3.vol"}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		2.3059 	 0 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body1.vol"}
+	{bone "body"}
+	{Position 34.4174 	 -0.1065 	 -8.2461}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body2.vol"}
+	{bone "body"}
+	{Position 33.9116 	 12.0638 	 -9.7661}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body3.vol"}
+	{bone "body"}
+	{Position 33.9117 	 -12.0638 	 -9.7661}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body4.vol"}
+	{bone "body"}
+	{Position 31.6049 	 0.0004 	 -3.8958}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body5.vol"}
+	{bone "body"}
+	{Position 12.5352 	 -0.0003 	 -7.2502}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body6.vol"}
+	{bone "body"}
+	{Position 23.304 	 -0.0254 	 2.2993}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body7.vol"}
+	{bone "body"}
+	{Position -5.1944 	 15.4609 	 -1.4885}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/body8.vol"}
+	{bone "body"}
+	{Position -5.1926 	 -15.6049 	 -1.5141}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/engine1.vol"}
+	{bone "engine"}
+	{Position -2.8084 	 0.0251 	 3.3675}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/engine2.vol"}
+	{bone "engine"}
+	{Position -2.652 	 -0.001 	 -4.6716}
+}
+{volume "fuel1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/fuel1.vol"}
+	{bone "fuel1"}
+}
+{volume "fuel2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/fuel2.vol"}
+	{bone "fuel2"}
+}
+{volume "gun_shield1"
+	{box 0.507512 12.0276 16.9488}
+	{bone "gun_shield"}
+	{matrix34
+		0.8919 	 0 	 0.4523
+		0 	 1 	 0
+		-0.4523 	 0 	 0.8919
+		-2.2415 	 0.0005 	 1.4911
+	}
+}
+{volume "gun_shield2"
+	{box 0.510732 11.99 3.53974}
+	{bone "gun_shield"}
+	{matrix34
+		0.891 	 0 	 -0.454
+		0 	 1 	 0
+		0.454 	 0 	 0.891
+		0.7388 	 0.0005 	 -7.4506
+	}
+}
+{volume "gun_shield3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/gun_shield3.vol"}
+	{bone "gun_shield"}
+	{Position 1.8112 	 0.0002 	 -1.4657}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/hole1.vol"}
+	{bone "wheelsr"}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/hole2.vol"}
+	{bone "wheelsl"}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/hole3.vol"}
+	{bone "shield"}
+	{Position 0.6446 	 8.1502 	 0.6337}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/hole4.vol"}
+	{bone "gun_shield"}
+	{Position 1.0765 	 0.0005 	 0.9201}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/ram.vol"}
+	{bone "body"}
+	{Position 0 	 0 	 -19.685}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shield1.vol"}
+	{bone "shield"}
+	{Position -0.5817 	 13.0856 	 -0.0502}
+}
+{volume "shield2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/shield2.vol"}
+	{bone "shield"}
+	{Position -0.5819 	 -13.0865 	 -0.0496}
+}
+{volume "trackleft1"
+	{cylinder 5.68197 2.77559}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft2"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell3"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell4"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell6"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft7"
+	{cylinder 4.17792 2.81496}
+	{bone "wheell7"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft8"
+	{cylinder 6.05798 2.78681}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright1"
+	{cylinder 5.68197 2.77559}
+	{bone "wheelr1"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright2"
+	{cylinder 4.17792 2.81496}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 4.17792 2.81496}
+	{bone "wheelr3"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright4"
+	{cylinder 4.17792 2.81496}
+	{bone "wheelr4"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright5"
+	{cylinder 4.17792 2.81496}
+	{bone "wheelr5"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright6"
+	{cylinder 4.17323 2.81496}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 4.17792 2.81496}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright8"
+	{cylinder 6.05798 2.78681}
+	{bone "wheelr8"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/trackright.vol"}
+	{bone "wheelsr"}
+}
+{volume "transmission"
+	{box 15.547 13.4726 6.86235}
+	{bone "transmission"}
+	{Position -0.4179 	 0.0076 	 -0.1684}
+}
+{volume "tshield10"
+	{box 0.494743 11.9825 13.5827}
+	{bone "hatch_rear1_1"}
+	{Position 0.348 	 -6.0351 	 -0.0369}
+}
+{volume "tshield11"
+	{box 0.494743 11.9825 13.5827}
+	{bone "hatch_rear1_2"}
+	{Position 0.348 	 6.0351 	 -0.0369}
+}
+{volume "tshield1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield1.vol"}
+	{bone "body"}
+	{Position -36.8823 	 0.0014 	 1.0054}
+}
+{volume "tshield2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield2.vol"}
+	{bone "body"}
+	{Position -35.7119 	 17.6144 	 9.8381}
+}
+{volume "tshield3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield3.vol"}
+	{bone "body"}
+	{Position -35.7279 	 -17.6115 	 9.8217}
+}
+{volume "tshield4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield4.vol"}
+	{bone "body"}
+	{Position -10.456 	 20.9485 	 8.9203}
+}
+{volume "tshield5"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield5.vol"}
+	{bone "body"}
+	{Position 15.6959 	 16.7262 	 9.9525}
+}
+{volume "tshield6"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield6.vol"}
+	{bone "body"}
+	{Position 20.5157 	 11.3323 	 9.9919}
+}
+{volume "tshield7"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield7.vol"}
+	{bone "body"}
+	{Position -10.4739 	 -20.9472 	 8.9208}
+}
+{volume "tshield8"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield8.vol"}
+	{bone "body"}
+	{Position 15.7952 	 -16.7262 	 9.9525}
+}
+{volume "tshield9"
+	{polyhedron "../../../../-vehicle/germany/tank_light/geschutzwagen_39h/tshield9.vol"}
+	{bone "body"}
+	{Position 20.5157 	 -11.3323 	 9.9919}
+}

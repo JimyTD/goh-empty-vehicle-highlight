@@ -1,0 +1,1224 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aim_hor driver_front_hatch driver_hatch hatch turret
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hit.anm"} {speed 0.6}}
+		{sequence "open_driver" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/open_driver.anm"} {speed 0.3} {events {2 "hatch_light"} {48 "hatch_light"}}}
+		{sequence "open1" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/open1.anm"} {speed 0.6}{resume} {events {2 "hatch_light"}}}
+		{sequence "aim_h" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/aim_h.anm"} {speed 1}{resume}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.27;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.4499 	 0 	 16.1535}
+			{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=gun;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/gun_r.anm"}{speed 0.7}}
+				}
+				{Position -13.5784 	 0.0091 	 15.8341}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-2.0499 	 -0.0108 	 2.7515
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-1.0075 	 7.4301 	 0
+						}
+						
+						{bone "foresight"
+							{parameters "id=turret;"}
+							{Position 36.7705 	 3.3397 	 0.005}
+						}
+						{bone "shooter00"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 20.8195 	 2.3016
+							}
+							{bone "rocket00"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter01"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 17.2704 	 2.3016
+							}
+							{bone "rocket01"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter02"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 13.7136 	 2.3016
+							}
+							{bone "rocket02"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter03"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 8.9111 	 2.3016
+							}
+							{bone "rocket03"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter04"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 5.3604 	 2.3016
+							}
+							{bone "rocket04"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter05"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 1.8036 	 2.3016
+							}
+							{bone "rocket05"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter06"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 -1.7469 	 2.3016
+							}
+							{bone "rocket06"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter07"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 -5.301 	 2.3016
+							}
+							{bone "rocket07"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter08"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 -8.8522 	 2.3016
+							}
+							{bone "rocket08"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter09"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 -13.7147 	 2.3016
+							}
+							{bone "rocket09"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter10"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0391 	 -17.2659 	 2.3016
+							}
+							{bone "rocket10"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter11"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0392 	 -20.8205 	 2.3016
+							}
+							{bone "rocket11"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter12"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 20.8195 	 -2.2025
+							}
+							{bone "rocket12"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter13"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 17.2704 	 -2.2025
+							}
+							{bone "rocket13"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter14"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 13.7136 	 -2.2025
+							}
+							{bone "rocket14"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter15"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 8.9111 	 -2.2025
+							}
+							{bone "rocket15"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter16"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 5.3604 	 -2.2025
+							}
+							{bone "rocket16"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter17"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 1.8036 	 -2.2025
+							}
+							{bone "rocket17"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter18"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0066 	 -1.7469 	 -2.2025
+							}
+							{bone "rocket18"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter19"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0067 	 -5.301 	 -2.2025
+							}
+							{bone "rocket19"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter20"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0067 	 -8.8522 	 -2.2025
+							}
+							{bone "rocket20"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter21"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0067 	 -13.7147 	 -2.2025
+							}
+							{bone "rocket21"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter22"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0067 	 -17.2659 	 -2.2025
+							}
+							{bone "rocket22"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+						{bone "shooter23"
+							{matrix34
+								1 	 0 	 0.0087
+								0 	 1 	 0
+								-0.0087 	 0 	 1
+								-9.0067 	 -20.8205 	 -2.2025
+							}
+							{bone "rocket23"
+								{matrix34
+									1 	 0 	 -0.0087
+									0 	 1 	 0
+									0.0087 	 0 	 1
+									7.5424 	 -0.0181 	 -0.1219
+								}
+								
+							}
+						}
+					}
+					{bone "vertical_rod"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							16.782 	 -5.7263 	 -0.0017
+						}
+						
+					}
+				}
+				{bone "aim_sight"
+					{parameters "id=gun;"}
+					{Position -2.0682 	 12.9399 	 2.7527}
+					
+				}
+				{bone "horizontal_rod"
+					{parameters "id=gun;"}
+					{Position 19.1721 	 0.0541 	 -2.1082}
+					
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t60_bm8_24/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -2.4341 	 3.1311 	 2.2685}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/engine.ply"}
+				{bone "engine_hatch"
+					{parameters "id=engine;"}
+					{Position -1.6438 	 -20.6362 	 5.7388}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/engine_hatch.ply"}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.766 	 0.6428 	 0
+						-0.6428 	 -0.766 	 0
+						0 	 0 	 1
+						-23.3442 	 -1.3348 	 8.7631
+					}
+				}
+				{bone "fxfire1"
+					{Position -2.4672 	 -16.8394 	 1.0891}
+				}
+			}
+			{bone "driver_front_hatch"
+				{parameters "id=body;"}
+				{Position 18.1598 	 1.6599 	 9.8123}
+				
+			}
+			{bone "driver_hatch"
+				{parameters "id=body;"}
+				{Position 7.1462 	 -0.0744 	 10.3452}
+				
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 1.9126 	 19.7505 	 4.8609}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -9.2371 	 -18.9612 	 4.3217}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -34.9279 	 22.931 	 2.7025}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/detail3.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					33.1244 	 -20.1729 	 -2.8774
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr1.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					33.1244 	 20.1905 	 -2.8774
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell1.ply"}
+			}
+			{bone revolute "wheell6"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					15.5819 	 20.1084 	 -0.2554
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell6.ply"}
+			}
+			{bone revolute "wheelr6"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					15.5716 	 -20.0739 	 -0.2552
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr6.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.4362 	 -20.0739 	 -1.1396
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr7.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.4362 	 20.1084 	 -1.1396
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell7.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-16.2452 	 20.1084 	 -2.2466
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell8.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.12;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-16.2379 	 -20.0739 	 -2.2451
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-33.2407 	 -20.4006 	 -6.5496
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr9.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-34.031 	 20.402 	 -6.5147
+				}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell9.ply"}
+			}
+			{bone "camera"
+				{Position 9.0979 	 0.2593 	 13.7064}
+			}
+			{bone "fxfire3"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-5.7333 	 12.4367 	 7.5089
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-3.0469 	 -0.4081 	 5.0621
+				}
+			}
+			{bone "transmission"
+				{Position 29.171 	 15.9194 	 -2.9566}
+			}
+			{bone "fuel"
+				{Position -27.2989 	 9.1661 	 -1.9202}
+			}
+			{bone "armorlightl"
+				{Position 16.4179 	 10.8931 	 10.2069}
+			}
+			{bone "box1"
+				{parameters "id=body;"}
+				{Position -23.9152 	 19.9491 	 5.6419}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/box1.ply"}
+			}
+			{bone "box2"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/box2.ply"}
+			}
+			{bone "seat00"
+				{matrix34
+					0.0872 	 0.9811 	 0.173
+					-0.9962 	 0.0858 	 0.0151
+					0 	 -0.1736 	 0.9848
+					26.653 	 21.7372 	 -0.3793
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 -0.9848 	 0.1736
+					1 	 0 	 0
+					0 	 0.1736 	 0.9848
+					24.8891 	 -22.0283 	 -0.2409
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.9623 	 0.0872 	 0.2578
+					-0.0842 	 -0.9962 	 0.0226
+					0.2588 	 0 	 0.9659
+					-34.554 	 -9.4977 	 2.7315
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.9623 	 0.0872 	 0.2578
+					-0.0842 	 -0.9962 	 0.0226
+					0.2588 	 0 	 0.9659
+					-34.554 	 10.7116 	 2.7315
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-35.4509 	 -0.0366 	 -3.9528
+				}
+			}
+			{bone "visor2"
+				{Position 18.9251 	 1.611 	 8.1852}
+			}
+			{bone "aim_hor"
+				{parameters "id=body;"}
+				{Position 5.5937 	 7.2207 	 13.7259}
+				
+			}
+			{bone "hatch"
+				{parameters "id=body;"}
+				{Position -10.7982 	 10.1039 	 12.0219}
+				
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0.0224 	 -0.9997 	 0
+				0.9997 	 0.0224 	 0
+				0 	 0 	 1
+				-9.1082 	 30.5155 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				46.1064 	 0 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				18.9696 	 34.4446 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0.1736 	 0.9848 	 0
+				-0.9848 	 0.1736 	 0
+				0 	 0 	 1
+				25.4786 	 -32.677 	 0
+			}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-31.8954 	 -32.6077 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-31.5622 	 34.4446 	 0
+			}
+		}
+		{bone "wheelsl"
+			{Position 2.166 	 18.127 	 6.6875}
+			{bone prizmatic "suspension_l1"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position 19.3279 	 2.275 	 -0.9486}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.12 0.12}
+				{speed 0.16}
+				{Position 4.3755 	 2.275 	 -0.9486}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.13 0.13}
+				{speed 0.16}
+				{Position -10.9285 	 2.275 	 -0.9486}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position -24.5175 	 2.275 	 -0.9486}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheell5.ply"}
+				}
+			}
+			{bone "susp_l"
+				{parameters "id=trackleft;"}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/susp_l.ply"}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position -2.2874 	 1.9124 	 2.7743}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/trackl.ply"}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -0.0175 	 -0.9998
+					0 	 0.9998 	 -0.0175
+					-0.7586 	 1.9892 	 -6.5335
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9659 	 -0.0045 	 0.2589
+					-0.2587 	 -0.0169 	 -0.9658
+					-0.0087 	 0.9998 	 -0.0151
+					-30.3953 	 1.9463 	 -5.642
+				}
+			}
+		}
+		{bone "wheelsr"
+			{Position 2.8868 	 -18.1326 	 6.7472}
+			{bone prizmatic "suspension_r1"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position 19.3949 	 -2.2679 	 -1.0083}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.12 0.12}
+				{speed 0.16}
+				{Position 4.4465 	 -2.2679 	 -1.0083}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.13 0.13}
+				{speed 0.16}
+				{Position -10.8547 	 -2.2679 	 -1.0083}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.08 0.08}
+				{speed 0.16}
+				{Position -24.4603 	 -2.2679 	 -1.0083}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/wheelr5.ply"}
+				}
+			}
+			{bone "susp_r"
+				{parameters "id=trackright;"}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/susp_r.ply"}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position -2.6262 	 -1.9067 	 2.7147}
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t60_bm8_24/trackr.ply"}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0.0175 	 -0.9998
+					0 	 -0.9998 	 -0.0175
+					-1.4794 	 -1.8323 	 -6.4975
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9659 	 0.0045 	 0.2589
+					-0.2587 	 0.0169 	 -0.9658
+					-0.0087 	 -0.9998 	 -0.0151
+					-31.0228 	 -1.8652 	 -5.7807
+				}
+			}
+		}
+	}
+}
+{volume "armor1"
+	{box 23.7965 2.13901 11.2964}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-5.2565 	 0.0047 	 11.0748
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/barrel1.vol"}
+	{bone "turret"}
+	{Position 8.1536 	 -0.035 	 -2.2198}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/barrel2.vol"}
+	{bone "turret"}
+	{Position -0.3075 	 6.6338 	 1.7075}
+}
+{volume "barrel3"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/barrel3.vol"}
+	{bone "turret"}
+	{Position -0.3075 	 -6.627 	 1.7075}
+}
+{volume "barrel4"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/barrel4.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		13.6255 	 2.8076 	 0.0065
+	}
+}
+{volume "barrel5"
+	{box 42.533 3.11718 42.7045}
+	{bone "gun"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		12.8226 	 -0.0381 	 0.0284
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body1.vol"}
+	{bone "body"}
+	{Position 21.5386 	 0.002 	 -0.0005}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body2.vol"}
+	{bone "body"}
+	{Position -4.0715 	 0.002 	 -0.0005}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body3.vol"}
+	{bone "body"}
+	{Position 15.467 	 0 	 8.6141}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body4.vol"}
+	{bone "body"}
+	{Position 0.5255 	 13.2744 	 11.965}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/body5.vol"}
+	{bone "hatch"}
+	{Position 5.6643 	 3.1705 	 -0.0569}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/engine1.vol"}
+	{bone "engine"}
+	{Position -1.6375 	 -3.1291 	 -2.269}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/engine2.vol"}
+	{bone "engine"}
+	{Position -23.7464 	 -3.1291 	 -2.269}
+}
+{volume "fuel"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/fuel.vol"}
+	{bone "fuel"}
+	{Position 0 	 5.2417 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -1.8511 	 1.8823 	 2.7136}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -2.5719 	 -1.9664 	 2.6539}
+}
+{volume "hole3"
+	{box 21.1012 5.91331 30.9272}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		13.5575 	 3.694 	 0.0087
+	}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hole4.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		19.6864 	 3.0845 	 0.0246
+	}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hole5.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.2583 	 3.6472 	 -0.0325
+	}
+}
+{volume "hole6"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/hole6.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		9.4118 	 2.8589 	 0.0233
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/ram.vol"}
+	{bone "body"}
+	{Position -0.5331 	 0.0631 	 -2.8951}
+}
+{volume "trackleft1"
+	{cylinder 5.51181 1.77559}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0465
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.27138 1.77563}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4062
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.27138 1.77563}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.3977
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.27138 1.77563}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.3999
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.27138 1.77563}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.377
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.27138 1.77563}
+	{bone "wheell9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4325
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -2.0144 	 1.7746 	 1.5342}
+}
+{volume "trackright1"
+	{cylinder 5.51181 1.77559}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0115
+	}
+}
+{volume "trackright2"
+	{cylinder 5.27138 1.77563}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4631
+	}
+}
+{volume "trackright3"
+	{cylinder 5.27138 1.77563}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4819
+	}
+}
+{volume "trackright4"
+	{cylinder 5.27138 1.77563}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.3756
+	}
+}
+{volume "trackright5"
+	{cylinder 5.27138 1.77563}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4157
+	}
+}
+{volume "trackright6"
+	{cylinder 5.27138 1.77563}
+	{bone "wheelr9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1279
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/ussr/tank_light/t60_bm8_24/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -2.7353 	 -1.9904 	 1.4746}
+}
+{volume "transmission"
+	{cylinder 4.38151 31.7704}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -15.8852 	 0
+	}
+}

@@ -1,0 +1,561 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: trailer_back trailer_front turret turret_1
+;Exported by:	 guita
+;Date:			 23.04.2022 13:33:01
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\special\150cm_sw34\150cm_sw34.max
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/germany/special/150mm_sw34/close.anm"} {speed 0.2} {events {1 "close"}}}
+		{sequence "aim_v" {file "../../../../-vehicle/germany/special/150mm_sw34/aim_v.anm"} {speed 0.9}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/germany/special/150mm_sw34/aim_h.anm"} {speed 0.9}{resume}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.49;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/special/150mm_sw34/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.184 	 0.013 	 4.6454}
+			{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/body.ply"}
+			{bone revolute "turret"
+				{speed 0.05}
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					0.0066 	 -0.0045 	 4.2126
+				}
+				{bone "turret_1"
+					{parameters "id=body;"}
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						-0.0112 	 -0.0109 	 0.8071
+					}
+					
+					{bone "aim_hor"
+						{parameters "id=turret;"}
+						{matrix34
+							0 	 1 	 0
+							-1 	 0 	 0
+							0 	 0 	 1
+							-8.3273 	 -24.1505 	 12.984
+						}
+						
+					}
+					{bone "aim_ver"
+						{parameters "id=turret;"}
+						{matrix34
+							0 	 1 	 0
+							-1 	 0 	 0
+							0 	 0 	 1
+							-8.3273 	 21.4905 	 12.984
+						}
+						
+					}
+					{bone revolute "gun"
+						{parameters "id=gun;"}
+						{animation
+							{sequence "repair" {file "../../../../-vehicle/germany/special/150mm_sw34/gun_r.anm"}{speed 0.7}}
+						}
+						{limits -30 88}
+						{speed 0.05}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0 	 0.0065 	 28.2935
+						}
+						
+						{bone "lamp_glass1"
+							{parameters "id=lamp;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								12.9794 	 -0.198 	 0.0022
+							}
+							
+						}
+						{bone "foresight3"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								17.0911 	 -0.1778 	 0.0016
+							}
+						}
+						{bone "lamp_light_spot1"
+							{parameters "id=lamp;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								6.8885 	 -0.2837 	 0.0022
+							}
+							
+						}
+						{bone "visor"
+							{matrix34
+								1 	 0 	 0
+								0 	 -0.0231 	 -0.9997
+								0 	 0.9997 	 -0.0231
+								13.1488 	 -0.1778 	 0.0016
+							}
+						}
+					}
+					{bone "gunner"
+						{matrix34
+							0.5736 	 0.8192 	 0
+							-0.8192 	 0.5736 	 0
+							0 	 0 	 1
+							-3.9014 	 -27.7943 	 -9.4895
+						}
+					}
+					{bone "commander"
+						{matrix34
+							0.6018 	 -0.7986 	 0
+							0.7986 	 0.6018 	 0
+							0 	 0 	 1
+							-13.0562 	 36.2232 	 -3.0815
+						}
+					}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				33.1874 	 0.0085 	 9.529
+			}
+			{bone "fxtracer2"
+				{matrix34
+					0.9531 	 0 	 0.3025
+					0 	 1 	 0
+					-0.3025 	 0 	 0.9531
+					4.4345 	 -16.8076 	 -8.1606
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					0.9531 	 0 	 0.3025
+					0 	 1 	 0
+					-0.3025 	 0 	 0.9531
+					4.4346 	 16.8987 	 -8.1606
+				}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0 0.06}
+				{speed 0.1}
+				{Position 0 	 17.5126 	 0}
+				{bone revolute "wheell1"
+					{parameters "id=wheelleft1;"}
+					{matrix34
+						0.9397 	 0 	 -0.342
+						-0.342 	 0 	 -0.9397
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/wheell1.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0 0.06}
+				{speed 0.1}
+				{Position 0 	 -17.481 	 0}
+				{bone revolute "wheelr1"
+					{parameters "id=wheelright1;"}
+					{matrix34
+						0.9397 	 0 	 -0.342
+						-0.342 	 0 	 -0.9397
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/wheelr1.ply"}
+				}
+			}
+			{bone "trailer_front"
+				{parameters "id=body;"}
+				{matrix34
+					-0.9336 	 0 	 -0.3584
+					0 	 -1 	 0
+					-0.3584 	 0 	 0.9336
+					0 	 0 	 0
+				}
+				{visibility 0}
+				
+				{bone "susp_front"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{visibility 0}
+					
+				}
+				{bone "kurbli1"
+					{parameters "id=body;"}
+					{matrix34
+						-0.9998 	 0 	 -0.0175
+						0 	 -1 	 0
+						-0.0175 	 0 	 0.9998
+						-9.3852 	 -5.3426 	 8.8963
+					}
+					{visibility 0}
+					
+					{bone "1"
+						{parameters "id=body;"}
+						{Position 6.8274 	 0.0448 	 -5.0505}
+						{visibility 0}
+						
+					}
+				}
+				{bone "seat2"
+					{matrix34
+						-0.012 	 -0.9945 	 0.1043
+						0.9998 	 -0.0101 	 0.0185
+						-0.0174 	 0.1045 	 0.9944
+						-1.2589 	 10.7507 	 0.2138
+					}
+					{visibility 0}
+				}
+			}
+		}
+		{bone "pivot_back"
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				-33.6136 	 0.0084 	 9.3999
+			}
+			{bone "fxtracel1"
+				{matrix34
+					1 	 0 	 0.0045
+					0 	 1 	 0
+					-0.0045 	 0 	 1
+					-0.0248 	 16.861 	 -9.0577
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					1 	 0 	 0.0045
+					0 	 1 	 0
+					-0.0045 	 0 	 1
+					-0.0249 	 -17.0662 	 -9.0577
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0 0.06}
+				{speed 0.1}
+				{Position -0.0011 	 17.5028 	 -0.0004}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;"}
+					{matrix34
+						0.9397 	 0 	 0.342
+						0.342 	 0 	 -0.9397
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0 0.06}
+				{speed 0.1}
+				{Position 0 	 -17.483 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;"}
+					{matrix34
+						0.9397 	 0 	 0.342
+						0.342 	 0 	 -0.9397
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/wheelr2.ply"}
+				}
+			}
+			{bone "trailer_back"
+				{parameters "id=body;"}
+				{matrix34
+					0.9336 	 0 	 -0.3584
+					0 	 1 	 0
+					0.3584 	 0 	 0.9336
+					0 	 0 	 0
+				}
+				{visibility 0}
+				
+				{bone "vonorud"
+					{parameters "id=body;"}
+					{matrix34
+						0.4695 	 0 	 0.8829
+						0 	 1 	 0
+						-0.8829 	 0 	 0.4695
+						-17.3533 	 -0.067 	 1.8524
+					}
+					{visibility 0}
+					
+				}
+				{bone "susp_back"
+					{parameters "id=body;"}
+					{visibility 0}
+					
+				}
+				{bone "kurbli2"
+					{parameters "id=body;"}
+					{matrix34
+						0.9998 	 0 	 0.0175
+						0 	 1 	 0
+						-0.0175 	 0 	 0.9998
+						-9.4199 	 -5.3299 	 9.0212
+					}
+					{visibility 0}
+					
+					{bone "2"
+						{parameters "id=body;"}
+						{Position -6.852 	 -0.0782 	 -4.9133}
+						{visibility 0}
+						
+					}
+				}
+				{bone "seat1"
+					{matrix34
+						0.0775 	 0.9871 	 0.1401
+						-0.9968 	 0.0791 	 -0.0063
+						-0.0173 	 -0.1392 	 0.9901
+						-0.0501 	 -10.8773 	 0.2998
+					}
+					{visibility 0}
+				}
+			}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-86.4027 	 0.0071 	 12.7465
+			}
+		}
+		{bone "emit1"
+			{Position -20.7022 	 -30.6251 	 -0.0199}
+		}
+		{bone "emit2"
+			{Position -21.1081 	 30.1717 	 -0.0199}
+		}
+		{bone "driver2"
+			{matrix34
+				0.9825 	 -0.1862 	 0
+				0.1862 	 0.9825 	 0
+				0 	 0 	 1
+				-56.1657 	 13.0762 	 -0.0199
+			}
+		}
+		{bone "driver1"
+			{matrix34
+				0.98 	 0.1992 	 0
+				-0.1992 	 0.98 	 0
+				0 	 0 	 1
+				-55.8677 	 -18.0076 	 -0.0199
+			}
+		}
+	}
+}
+{obstacle "close1"
+	{obb2
+		{center 33.0031 -0.0318537}
+		{extent 12.4255 21.3582}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "close"}
+}
+{obstacle "close2"
+	{obb2
+		{center -33.4547 0.00551605}
+		{extent 12.3016 21.5421}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "close"}
+}
+{obstacle "obstacle"
+	{obb2
+		{center -0.163199 -0.108358}
+		{extent 14.7209 13.4397}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "open1"
+	{obb2
+		{center 24.8709 -0.108372}
+		{extent 10.3132 5.67932}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{obstacle "open2"
+	{obb2
+		{center -25.1952 0.0962651}
+		{extent 10.3132 5.67932}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/barrel1.vol"}
+	{bone "gun"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		0.5073 	 0 	 0
+	}
+}
+{volume "barrel2"
+	{box 11.9364 4.43392 11.4691}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0.104 	 -16.551 	 -0.1845
+	}
+}
+{volume "body1"
+	{cylinder 12.17 3.82693}
+	{bone "body"}
+	{Position 0 	 0 	 2.3486}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/body2.vol"}
+	{bone "body"}
+	{Position -0.1346 	 0.0979 	 -1.4935}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/body3.vol"}
+	{bone "body"}
+	{Position -17.8193 	 0 	 -1.0975}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/body4.vol"}
+	{bone "body"}
+	{Position 17.5571 	 -0.05 	 -1.0975}
+}
+{volume "body5"
+	{box 14.3287 1.44387 3.93626}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		28.2907 	 -0.0117 	 -0.283
+	}
+}
+{volume "body6"
+	{box 14.3287 1.44387 3.93626}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-28.5209 	 -0.0117 	 -0.283
+	}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/body7.vol"}
+	{bone "turret_1"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0.0138 	 0.0304 	 4.0024
+	}
+}
+{volume "body8"
+	{box 29.6474 2.82688 20.9105}
+	{bone "trailer_back"}
+	{matrix34
+		0.9998 	 0 	 0.0175
+		-0.0175 	 0 	 0.9998
+		0 	 -1 	 0
+		1.3141 	 0.0854 	 4.7012
+	}
+}
+{volume "body9"
+	{box 29.6474 2.82688 20.9105}
+	{bone "trailer_front"}
+	{matrix34
+		-0.9998 	 0 	 -0.0175
+		-0.0175 	 0 	 0.9998
+		0 	 1 	 0
+		1.1735 	 -0.0853 	 4.5696
+	}
+}
+{volume "hole1"
+	{box 34.5767 22.9426 11.6838}
+	{bone "turret_1"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-0.0516 	 0.051 	 19.8307
+	}
+}
+{volume "lamp"
+	{polyhedron "../../../../-vehicle/germany/special/150mm_sw34/lamp.vol"}
+	{bone "lamp_glass1"}
+	{Position 0.1203 	 0.2001 	 -0.1114}
+}
+{volume "wheelleft1"
+	{cylinder 9.74409 4.858}
+	{bone "wheell1"}
+	{matrix34
+		0.9744 	 0.2249 	 0
+		0.2249 	 -0.9744 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0298
+	}
+}
+{volume "wheelleft2"
+	{cylinder 9.64567 4.85063}
+	{bone "wheell2"}
+	{matrix34
+		-0.9272 	 0.3746 	 0
+		0.3746 	 0.9272 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0383
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.74409 4.80267}
+	{bone "wheelr1"}
+	{matrix34
+		0.4695 	 -0.8829 	 0
+		-0.8829 	 -0.4695 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.019
+	}
+}
+{volume "wheelright2"
+	{cylinder 9.74409 4.83237}
+	{bone "wheelr2"}
+	{matrix34
+		-0.6691 	 -0.7431 	 0
+		-0.7431 	 0.6691 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0175
+	}
+}

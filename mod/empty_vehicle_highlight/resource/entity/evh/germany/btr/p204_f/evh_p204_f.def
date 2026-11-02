@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for p204_f (generated)
-	{Extension "../../../../-vehicle/germany/btr/p204_f/p204_f.mdl"}
+	{Extension "p204_f.mdl"}
 	{extender "stuff"
 		{item "evh_p204_f"}
 	}

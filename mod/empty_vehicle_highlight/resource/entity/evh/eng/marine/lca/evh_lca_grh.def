@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for lca_grh (generated)
-	{Extension "../../../../-vehicle/eng/marine/lca/lca_grh.mdl"}
+	{Extension "lca_grh.mdl"}
 	{extender "stuff"
 		{item "evh_lca_grh"}
 	}

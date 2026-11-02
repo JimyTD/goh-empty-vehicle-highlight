@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sg43_stand (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/sg43_stand/sg43_stand.mdl"}
+	{Extension "sg43_stand.mdl"}
 	{extender "stuff"
 		{item "evh_sg43_stand"}
 	}

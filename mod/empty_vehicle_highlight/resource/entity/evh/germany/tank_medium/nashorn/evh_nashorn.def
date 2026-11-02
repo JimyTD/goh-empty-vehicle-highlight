@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for nashorn (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/nashorn/nashorn.mdl"}
+	{Extension "nashorn.mdl"}
 	{extender "stuff"
 		{item "evh_nashorn"}
 	}

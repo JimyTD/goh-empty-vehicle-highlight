@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 75mm_legebig18 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/75mm_legebig18/75mm_legebig18.mdl"}
+	{Extension "75mm_legebig18.mdl"}
 	{extender "stuff"
 		{item "evh_75mm_legebig18"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 25mm_pstk37 (generated)
-	{Extension "../../../../-vehicle/finland/cannon/25mm_pstk37/25mm_pstk37.mdl"}
+	{Extension "25mm_pstk37.mdl"}
 	{extender "stuff"
 		{item "evh_25mm_pstk37"}
 	}

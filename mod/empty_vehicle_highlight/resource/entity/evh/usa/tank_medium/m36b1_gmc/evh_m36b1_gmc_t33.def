@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m36b1_gmc_t33 (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m36b1_gmc/m36b1_gmc.mdl"}
+	{Extension "m36b1_gmc.mdl"}
 	{extender "stuff"
 		{item "evh_m36b1_gmc_t33"}
 	}

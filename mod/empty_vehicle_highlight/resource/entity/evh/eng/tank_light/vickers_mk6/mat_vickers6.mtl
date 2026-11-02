@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/vickers_mkvi"}
+	{bump "$/_vehicle/eng/vickers_mkvi_bp"}
+	{specular "$/_vehicle/eng/vickers_mkvi_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

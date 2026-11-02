@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for dshk_stan (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_stan.mdl"}
+	{Extension "dshk_stan.mdl"}
 	{extender "stuff"
 		{item "evh_dshk_stan"}
 	}

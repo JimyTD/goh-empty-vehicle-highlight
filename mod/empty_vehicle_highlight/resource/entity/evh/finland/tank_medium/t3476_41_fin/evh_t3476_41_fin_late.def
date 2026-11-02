@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t3476_41_fin_late (generated)
-	{Extension "../../../../-vehicle/finland/tank_medium/t3476_41_fin/t3476_41.mdl"}
+	{Extension "t3476_41.mdl"}
 	{extender "stuff"
 		{item "evh_t3476_41_fin_late"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ap_2 (generated)
-	{Extension "../../../../-vehicle/ussr/trailer/ap_2/ap_2.mdl"}
+	{Extension "ap_2.mdl"}
 	{extender "stuff"
 		{item "evh_ap_2"}
 	}

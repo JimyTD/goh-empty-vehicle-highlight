@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzer4j_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_medium/panzer4j_fin/panzer4j_fin.mdl"}
+	{Extension "panzer4j_fin.mdl"}
 	{extender "stuff"
 		{item "evh_panzer4j_fin"}
 	}

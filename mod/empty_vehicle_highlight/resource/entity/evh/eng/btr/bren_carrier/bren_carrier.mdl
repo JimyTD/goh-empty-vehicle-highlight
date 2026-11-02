@@ -1,0 +1,768 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: mgun_h_rot1
+;Exported by:	 TigerF
+;Date:			 05.04.2025 21:28:11
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\btr\bren_carrier\bren_carrier.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/btr/bren_carrier/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/btr/bren_carrier/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/eng/btr/bren_carrier/hit.anm"} {speed 0.8}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.29;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/btr/bren_carrier/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.167 	 -0.3847 	 13.0921}
+			{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/body.ply"}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					30.9946 	 18.0951 	 -1.6384
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell1.ply"}
+			}
+			{bone revolute "wheell5"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.7483 	 18.1854 	 -2.7542
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell5.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					30.9946 	 -16.9991 	 -1.6384
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr1.ply"}
+			}
+			{bone revolute "wheelr5"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.7483 	 -17.9147 	 -2.7542
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr5.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/bren_carrier/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -9.4439 	 0.3044 	 8.6964}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						-1 	 0 	 0
+						0 	 -1 	 0
+						-0.9197 	 0.0803 	 -0.2332
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.0175 	 0 	 -0.9998
+						0 	 -1 	 0
+						-0.9998 	 0 	 0.0175
+						-24.3051 	 10.1879 	 -15.2679
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.0175 	 0 	 -0.9998
+						0 	 -1 	 0
+						-0.9998 	 0 	 0.0175
+						-24.3051 	 -10.4636 	 -15.2679
+					}
+				}
+				{bone "e1"
+					{parameters "id=engine;"}
+					{Position 14.7389 	 -0.4202 	 7.5468}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/e1.ply"}
+					{bone "detail2"
+						{parameters "id=body;"}
+						{Position -3.2358 	 -4.5605 	 0.3268}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail2.ply"}
+					}
+					{bone "detail1"
+						{parameters "id=engine;"}
+						{Position -3.2358 	 4.6937 	 0.3268}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail1.ply"}
+					}
+				}
+				{bone "e3"
+					{parameters "id=engine;"}
+					{Position 6.2889 	 -5.5047 	 6.3901}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/e3.ply"}
+				}
+				{bone "e2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9925 	 0 	 0.1219
+						0 	 1 	 0
+						-0.1219 	 0 	 0.9925
+						6.2889 	 4.5275 	 6.3901
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/e2.ply"}
+				}
+			}
+			{bone revolute "wheell6"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					4.7081 	 17.2426 	 0.4491
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell6.ply"}
+			}
+			{bone revolute "wheelr6"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					4.7081 	 -16.9814 	 0.4491
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr6.ply"}
+			}
+			{bone "fxfire5"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					2.7906 	 0.3847 	 4.6717
+				}
+			}
+			{bone "headlightr"
+				{Position 29.1083 	 -16.848 	 8.4523}
+			}
+			{bone "driver"
+				{Position 11.9724 	 -6.8343 	 -6.8151}
+			}
+			{bone "gunner"
+				{Position 11.9724 	 7.4849 	 -6.8151}
+			}
+			{bone "seat01"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-1.6631 	 12.4117 	 -3.0202
+				}
+			}
+			{bone "weapon1"
+				{matrix34
+					0.0349 	 0 	 0.9994
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					3.6169 	 -9.2728 	 4.398
+				}
+				{bone "enfield_m1917_1"
+					{Position -0.0025 	 -0.0717 	 0.1218}
+				}
+			}
+			{bone "weapon2"
+				{matrix34
+					0.0349 	 0 	 0.9994
+					0.9994 	 0 	 -0.0349
+					0 	 1 	 0
+					3.5111 	 -10.7753 	 4.4342
+				}
+				{bone "enfield_m1917_2"
+					{Position 0 	 0 	 0}
+				}
+			}
+			{bone "enumerator1"
+				{matrix34
+					0 	 0.9397 	 0.342
+					-1 	 0 	 0
+					0 	 -0.342 	 0.9397
+					10.8739 	 20.2104 	 9.5746
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/enumerator1.ply"}
+			}
+			{bone "fuel"
+				{Position -18.6408 	 -9.7213 	 -0.1984}
+			}
+			{bone "transmission"
+				{Position -30.809 	 0.3354 	 -2.7193}
+			}
+			{bone "seat04"
+				{Position -17.3884 	 -9.6828 	 -3.0202}
+			}
+			{bone revolute "steer_wheel"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 0 	 -1
+					0 	 1 	 0
+					1 	 0 	 0
+					20.5349 	 -5.946 	 7.7594
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/steer_wheel.ply"}
+			}
+			{bone "shield1"
+				{parameters "id=shield1;"}
+				{Position 24.0584 	 20.7529 	 1.9976}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/shield1.ply"}
+			}
+			{bone "shield2"
+				{parameters "id=shield2;"}
+				{Position 24.0584 	 -20.7529 	 1.9976}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/shield2.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -36.8238 	 0.8736 	 1.1041}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail7.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position -36.6413 	 0.1142 	 1.4195}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail6.ply"}
+			}
+			{bone "glass"
+				{parameters "id=body;"}
+				{Position 23.9159 	 4.4048 	 11.5347}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/glass.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -5.4179 	 -16.6834 	 6.9785}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail5.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -28.8833 	 -17.0619 	 7.4735}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail4.ply"}
+			}
+			{bone "headlightl"
+				{Position 29.1089 	 16.9247 	 8.4393}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position -32.0939 	 -1.707 	 9.5979}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail8.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -26.7833 	 0.1336 	 5.1473}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail3.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=engine;"}
+				{Position -32.097 	 2.9554 	 9.5979}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail10.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=engine;"}
+				{Position -22.7192 	 -6.262 	 12.9588}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail9.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=engine;"}
+				{matrix34
+					-0.342 	 -0.9397 	 0
+					0.9397 	 -0.342 	 0
+					0 	 0 	 1
+					21.7962 	 18.6148 	 8.545
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/detail11.ply"}
+			}
+			{bone revolute "mgun_h_rot1"
+				{parameters "id=body;"}
+				{limits -20 20}
+				{Position 27.5699 	 6.3296 	 7.013}
+				
+				{bone revolute "mgun_h_rot2"
+					{parameters "id=body;"}
+					{limits -27 27}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+					}
+					
+					{bone "mgun"
+						{Position -5.3629 	 0.0488 	 0.0089}
+					}
+				}
+			}
+			{bone "e4"
+				{parameters "id=body;"}
+				{Position -25.8849 	 15.5039 	 5.2494}
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/e4.ply"}
+				{bone "e5"
+					{parameters "id=body;"}
+					{Position 6.6617 	 0.0706 	 4.4214}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/e5.ply"}
+				}
+			}
+		}
+		{bone "body_virt"
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				0 	 0 	 9.9805
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					0.2126 	 -1.0507 	 -16.7788
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.08}
+					{speed 0.18}
+					{Position 13.1857 	 0.9316 	 -2.6187}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position -0.2167 	 0.9316 	 -2.6187}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.08 0.08}
+					{speed 0.18}
+					{Position -17.556 	 0.9316 	 -2.6187}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheell4.ply"}
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9707 	 0.1685 	 0.171
+						-0.1761 	 -0.9839 	 -0.0302
+						0.1632 	 -0.0594 	 0.9848
+						0.4363 	 0.0648 	 -8.5136
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-27.2236 	 0.0648 	 -7.3247
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0 	 -0.0314 	 0}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/trackl.ply"}
+				}
+				{bone "suspl"
+					{parameters "id=body;"}
+					{Position -2.9733 	 0.0847 	 1.3848}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/suspl.ply"}
+				}
+				{bone "springl"
+					{parameters "id=body;"}
+					{Position -2.9476 	 0.1286 	 1.1431}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/springl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					0.2126 	 -1.0507 	 17.5247
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.08}
+					{speed 0.18}
+					{Position 13.1857 	 -0.7107 	 -2.6187}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position -0.2167 	 -0.7107 	 -2.6187}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.08 0.08}
+					{speed 0.18}
+					{Position -17.556 	 -0.7107 	 -2.6187}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/wheelr4.ply"}
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9698 	 -0.1736 	 0.171
+						0.171 	 -0.9848 	 -0.0302
+						0.1736 	 0 	 0.9848
+						0.4363 	 -0.0039 	 -8.5136
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-27.2237 	 -0.0039 	 -7.3247
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0 	 0.0682 	 0}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/trackr.ply"}
+				}
+				{bone "suspr"
+					{parameters "id=body;"}
+					{Position -2.9733 	 -0.1081 	 1.3848}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/suspr.ply"}
+				}
+				{bone "springr"
+					{parameters "id=body;"}
+					{Position -2.9476 	 0.1071 	 1.1431}
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/springr.ply"}
+				}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				15.7195 	 -31.6508 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				15.7195 	 34.835 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-1.9298 	 34.835 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-1.9298 	 -31.6508 	 0
+			}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-16.3832 	 34.835 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-16.3832 	 -31.6508 	 0
+			}
+		}
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/armor1.vol"}
+	{bone "engine"}
+	{Position -20.4483 	 -0.4836 	 0.5447}
+}
+{volume "armor2"
+	{box 0.238258 6.74564 26.4089}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-35.9287 	 0.0673 	 2.1303
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/body1.vol"}
+	{bone "body"}
+	{Position 30.0225 	 0.1631 	 -0.1532}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/body2.vol"}
+	{bone "body"}
+	{Position 15.173 	 -0.0419 	 9.3647}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/body3.vol"}
+	{bone "body"}
+	{Position -8.8144 	 -0.0419 	 11.3607}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/body4.vol"}
+	{bone "body"}
+	{Position -2.1238 	 0.1631 	 -0.9423}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/body5.vol"}
+	{bone "body"}
+	{Position 24.013 	 9.4272 	 10.5021}
+}
+{volume "detail5"
+	{box 25.5233 4.58644 7.29661}
+	{bone "detail5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.0526 	 0.0881 	 -0.0522
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/engine1.vol"}
+	{bone "engine"}
+	{Position 7.1425 	 -0.2949 	 -1.1358}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/engine2.vol"}
+	{bone "engine"}
+	{Position -9.7855 	 -5.219 	 0.4804}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/engine3.vol"}
+	{bone "engine"}
+	{Position -9.7253 	 -0.2032 	 -1.6711}
+}
+{volume "fuel"
+	{box 12.0742 6.16641 10.4329}
+	{bone "fuel"}
+	{Position 0 	 0 	 -0.7124}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.0875 	 0.0896 	 -0.4293}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.0875 	 -0.0043 	 -0.4293}
+}
+{volume "hole3"
+	{box 20.0644 14.1901 12.114}
+	{bone "body"}
+	{Position -2.2494 	 12.2712 	 11.0542}
+}
+{volume "hole4"
+	{box 10.8663 38.0211 9.66396}
+	{bone "body"}
+	{Position 14.1912 	 -0.1268 	 10.0137}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/ram.vol"}
+	{bone "body"}
+	{Position -2.7586 	 0.3846 	 -1.1074}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/shield1.vol"}
+	{bone "shield1"}
+	{Position 0.0011 	 -0.2933 	 0.0549}
+}
+{volume "shield2"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/shield2.vol"}
+	{bone "shield2"}
+	{Position 0.0011 	 0.2853 	 0.0549}
+}
+{volume "trackleft1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/trackleft1.vol"}
+	{bone "wheelsl"}
+	{Position -0.2743 	 0.0092 	 -0.7395}
+}
+{volume "trackleft2"
+	{cylinder 6.41047 1.5779}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		30.9309 	 17.234 	 -1.5718
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_l2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.012 	 0
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_l3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.0177 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_l4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.0177 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.47903 1.5779}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-30.7483 	 17.2308 	 -2.7542
+	}
+}
+{volume "trackright1"
+	{polyhedron "../../../../-vehicle/eng/btr/bren_carrier/trackright1.vol"}
+	{bone "wheelsr"}
+	{Position -0.2743 	 0.0048 	 -0.7395}
+}
+{volume "trackright2"
+	{cylinder 6.41047 1.5779}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		30.9309 	 -17.2367 	 -1.5718
+	}
+}
+{volume "trackright3"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_r2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0.0057 	 0
+	}
+}
+{volume "trackright4"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_r3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 5.47903 1.5779}
+	{bone "suspension_r4"}
+	{orientation
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 5.47903 1.5779}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-30.7483 	 -17.2399 	 -2.7542
+	}
+}
+{volume "transmission"
+	{cylinder 1.70617 26.8066}
+	{bone "transmission"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}

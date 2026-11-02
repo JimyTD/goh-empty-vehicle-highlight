@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzer4_70_v (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/panzer4_70_v/panzer4_70_v.mdl"}
+	{Extension "panzer4_70_v.mdl"}
 	{texmod "camo"}
 	{extender "stuff"
 		{item "evh_panzer4_70_v"}

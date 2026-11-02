@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for drifter_eng (generated)
-	{Extension "../../../../-vehicle/eng/marine/drifter_eng/drifter_eng.mdl"}
+	{Extension "drifter_eng.mdl"}
 	{extender "stuff"
 		{item "evh_drifter_eng"}
 	}

@@ -1,0 +1,744 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aileron1 aileron2 bodyback door ramp ramp2
+;Exported by:	 guita
+;Date:			 15.10.2025 16:30:00
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\airborne\Airspeed_AS.51_Horsa\horsa_glider_mk1.max
+{skeleton
+	{animation
+		{sequence "open_front" {file "../../../../-vehicle/eng/airborne/horsa_mk1/open_front.anm"} {speed 0.7}}
+		{sequence "close_front" {file "../../../../-vehicle/eng/airborne/horsa_mk1/close_front.anm"} {speed 0.7}}
+		{sequence "open_back" {file "../../../../-vehicle/eng/airborne/horsa_mk1/open_back.anm"} {speed 0.7}}
+		{sequence "close_back" {file "../../../../-vehicle/eng/airborne/horsa_mk1/close_back.anm"} {speed 0.7}}
+		{sequence "board" {file "../../../../-vehicle/eng/airborne/horsa_mk1/board.anm"} {speed 1}}
+	}
+	{bone "basis"
+		{parameters "steermax=49;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position -0.0797 	 0 	 33.1083}
+			{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/body.ply"}
+			{bone "door"
+				{parameters "id=body;"}
+				{Position 106.697 	 16.3646 	 -7.3828}
+				
+				{bone "door_glass"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -0.309 	 0.9511
+						0 	 -0.9511 	 -0.309
+						-10.8469 	 2.9593 	 23.4233
+					}
+					
+				}
+			}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{Position -71.8118 	 0 	 -14.6166}
+				
+				{bone "stabilizer"
+					{parameters "id=bodyback;"}
+					{Position -106.212 	 0 	 42.6904}
+					
+					{bone revolute "elavator1"
+						{parameters "id=body;"}
+						{limits -30 30}
+						{speed 0.01}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-11.5681 	 39.0093 	 10.4646
+						}
+						
+					}
+					{bone revolute "elevator2"
+						{parameters "id=body;"}
+						{limits -30 30}
+						{speed 0.01}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-11.5681 	 -38.7848 	 10.4646
+						}
+						
+					}
+					{bone revolute "rudder"
+						{parameters "id=body;"}
+						{limits -35 35}
+						{speed 0.01}
+						{Position -16.2155 	 0.003 	 18.3873}
+						
+					}
+				}
+			}
+			{bone "glass"
+				{parameters "id=body;"}
+				{Position 51.2358 	 0 	 18.201}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/glass.ply"}
+			}
+			{bone "flap1_l"
+				{parameters "id=wingleft;"}
+				{matrix34
+					0.9397 	 0 	 0.342
+					0 	 1 	 0
+					-0.342 	 0 	 0.9397
+					-23.6671 	 44.8677 	 21.7588
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/flap1_l.ply"}
+			}
+			{bone "wingl2"
+				{parameters "id=wingleft;"}
+				{Position 0 	 85.8551 	 28.9106}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingl2.ply"}
+				{bone revolute "aileron1"
+					{parameters "id=wingleft;"}
+					{limits -30 30}
+					{speed 0.01}
+					{matrix34
+						0.9972 	 0.0754 	 0
+						0.0026 	 -0.0348 	 0.9994
+						0.0754 	 -0.9965 	 -0.0349
+						-32.5865 	 94.2382 	 -0.9235
+					}
+					
+				}
+				{bone "flap2_l"
+					{parameters "id=wingleft;"}
+					{matrix34
+						0.9382 	 0.0536 	 0.3418
+						-0.0697 	 0.997 	 0.0349
+						-0.3389 	 -0.0566 	 0.9391
+						-25.1888 	 7.7095 	 -4.7739
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/flap2_l.ply"}
+				}
+				{bone "wingl_rib"
+					{parameters "id=wingleft;"}
+					{Position -0.4579 	 -1.3424 	 -0.7546}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingl_rib.ply"}
+				}
+			}
+			{bone "wingr2"
+				{parameters "id=wingright;"}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingr2.ply"}
+				{bone "flap2_r"
+					{parameters "id=wingright;"}
+					{matrix34
+						0.9382 	 -0.0536 	 0.3418
+						0.0697 	 0.997 	 -0.0349
+						-0.3389 	 0.0566 	 0.9391
+						-25.1888 	 -93.5645 	 24.1367
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/flap2_r.ply"}
+				}
+				{bone revolute "aileron2"
+					{parameters "id=wingright;"}
+					{limits -30 30}
+					{speed 0.01}
+					{matrix34
+						0.9991 	 -0.0426 	 0
+						-0.0015 	 -0.0349 	 -0.9994
+						0.0426 	 0.9985 	 -0.0349
+						-32.5866 	 -180.093 	 27.9871
+					}
+					
+				}
+				{bone "wingl2_rib"
+					{parameters "id=wingight;"}
+					{Position -0.4579 	 -84.5127 	 28.1559}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingl2_rib.ply"}
+				}
+			}
+			{bone "flap1_r"
+				{parameters "id=wingright;"}
+				{matrix34
+					0.9397 	 0 	 0.342
+					0 	 1 	 0
+					-0.342 	 0 	 0.9397
+					-23.6671 	 -44.8675 	 21.7588
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/flap1_r.ply"}
+			}
+			{bone "engine1"
+				{parameters "id=engine1;"}
+				{Position 0.7158 	 0 	 22.766}
+			}
+			{bone "visor"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9999 	 0.0119
+					0 	 -0.0119 	 0.9999
+					162.595 	 5.3683 	 14.3592
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0.0873 	 0.9962 	 0
+					-0.9962 	 0.0873 	 0
+					0 	 0 	 1
+					97.7152 	 1.8486 	 10.44
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.0872 	 0.9907 	 0.1041
+					-0.9962 	 -0.0867 	 -0.0091
+					0 	 -0.1045 	 0.9945
+					78.4488 	 -10.7183 	 -7.8612
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					0.2152 	 -0.9551 	 0.2037
+					0.9766 	 0.2112 	 -0.0416
+					-0.0033 	 0.2079 	 0.9781
+					65.8147 	 10.5944 	 -7.6913
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0.1075 	 0.9869 	 0.12
+					-0.9942 	 0.1056 	 0.0216
+					0.0086 	 -0.1216 	 0.9925
+					55.2735 	 -11.6426 	 -7.8669
+				}
+			}
+			{bone "seat05"
+				{matrix34
+					-0.0137 	 0.9944 	 0.1045
+					-0.9999 	 -0.0136 	 -0.0014
+					0 	 -0.1045 	 0.9945
+					38.6577 	 -10.9904 	 -7.9352
+				}
+			}
+			{bone "seat06"
+				{matrix34
+					-0.1835 	 -0.9646 	 0.1894
+					0.9829 	 -0.1824 	 0.0236
+					0.0118 	 0.1905 	 0.9816
+					-28.3011 	 9.9055 	 -7.6891
+				}
+			}
+			{bone "seat07"
+				{matrix34
+					0.2706 	 0.9436 	 0.1908
+					-0.9613 	 0.2756 	 0
+					-0.0526 	 -0.1834 	 0.9816
+					66.3523 	 -11.0435 	 -7.8501
+				}
+			}
+			{bone "seat08"
+				{matrix34
+					0.175 	 -0.9663 	 0.1888
+					0.9845 	 0.1729 	 -0.0278
+					-0.0058 	 0.1907 	 0.9816
+					76.941 	 9.7274 	 -7.6952
+				}
+			}
+			{bone "seat09"
+				{matrix34
+					-0.0483 	 0.9933 	 0.1045
+					-0.9988 	 -0.0485 	 -0.0014
+					0.0036 	 -0.1045 	 0.9945
+					28.0137 	 -10.1581 	 -7.9352
+				}
+			}
+			{bone "seat10"
+				{matrix34
+					0.1817 	 -0.962 	 0.2037
+					0.9833 	 0.177 	 -0.0416
+					0.0039 	 0.2079 	 0.9781
+					38.0803 	 9.934 	 -7.6913
+				}
+			}
+			{bone "seat11"
+				{matrix34
+					-0.1771 	 -0.9806 	 0.0837
+					0.9841 	 -0.1757 	 0.0243
+					-0.0091 	 0.0867 	 0.9962
+					55.0094 	 10.6667 	 -7.7245
+				}
+			}
+			{bone "seat12"
+				{matrix34
+					-0.0352 	 0.9939 	 0.1041
+					-0.9994 	 -0.0344 	 -0.0091
+					-0.0055 	 -0.1044 	 0.9945
+					-38.2329 	 -10.7183 	 -7.8612
+				}
+			}
+			{bone "seat13"
+				{matrix34
+					-0.1835 	 -0.9646 	 0.1894
+					0.9829 	 -0.1824 	 0.0236
+					0.0118 	 0.1905 	 0.9816
+					-1.4667 	 9.9055 	 -7.6891
+				}
+			}
+			{bone "seat14"
+				{matrix34
+					-0.0137 	 0.9944 	 0.1045
+					-0.9999 	 -0.0136 	 -0.0014
+					0 	 -0.1045 	 0.9945
+					-17.0217 	 -10.9904 	 -7.9352
+				}
+			}
+			{bone "seat15"
+				{matrix34
+					0.1075 	 0.9869 	 0.12
+					-0.9942 	 0.1056 	 0.0216
+					0.0086 	 -0.1216 	 0.9925
+					9.1036 	 -11.6426 	 -7.8669
+				}
+			}
+			{bone "seat16"
+				{matrix34
+					-0.1771 	 -0.9806 	 0.0837
+					0.9841 	 -0.1757 	 0.0243
+					-0.0091 	 0.0867 	 0.9962
+					8.4813 	 10.6667 	 -7.7245
+				}
+			}
+			{bone "seat17"
+				{matrix34
+					0.1817 	 -0.962 	 0.2037
+					0.9833 	 0.177 	 -0.0416
+					0.0039 	 0.2079 	 0.9781
+					-17.7437 	 9.934 	 -7.6913
+				}
+			}
+			{bone "seat18"
+				{matrix34
+					-0.0483 	 0.9933 	 0.1045
+					-0.9988 	 -0.0485 	 -0.0014
+					0.0036 	 -0.1045 	 0.9945
+					-27.2816 	 -10.1581 	 -7.9352
+				}
+			}
+			{bone "seat19"
+				{matrix34
+					-0.0352 	 0.9939 	 0.1041
+					-0.9994 	 -0.0344 	 -0.0091
+					-0.0055 	 -0.1044 	 0.9945
+					-1.137 	 -10.7183 	 -7.8612
+				}
+			}
+			{bone "seat20"
+				{matrix34
+					0.2152 	 -0.9551 	 0.2037
+					0.9766 	 0.2112 	 -0.0416
+					-0.0033 	 0.2079 	 0.9781
+					26.5298 	 10.5944 	 -7.6913
+				}
+			}
+			{bone "seat21"
+				{matrix34
+					-0.1835 	 -0.9646 	 0.1894
+					0.9829 	 -0.1824 	 0.0236
+					0.0118 	 0.1905 	 0.9816
+					-39.5393 	 9.9055 	 -7.6891
+				}
+			}
+			{bone "driver"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					139.636 	 9.8734 	 4.6384
+				}
+			}
+			{bone "commander"
+				{matrix34
+					1 	 0.0001 	 0
+					-0.0001 	 1 	 0
+					0 	 0 	 1
+					139.636 	 -10.2307 	 4.6384
+				}
+			}
+			{bone "wingl1"
+				{parameters "id=wingleft;"}
+				{Position 0.3454 	 52.2835 	 26.8796}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingl1.ply"}
+				{bone "rib_l"
+					{parameters "id=wingleft;"}
+					{Position -0.3454 	 -52.2835 	 -26.8796}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/rib_l.ply"}
+				}
+			}
+			{bone "wingr1"
+				{parameters "id=wingright;"}
+				{Position 0.3454 	 -52.2835 	 26.8796}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wingr1.ply"}
+				{bone "rib_r"
+					{parameters "id=wingright;"}
+					{Position -0.3454 	 52.2834 	 -26.8796}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/rib_r.ply"}
+				}
+			}
+		}
+		{bone "ramp"
+			{parameters "id=body;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				107.084 	 -0.0493 	 43.1862
+			}
+			{visibility 0}
+			
+		}
+		{bone "pivot_back"
+			{parameters "main;"}
+			{Position 128.663 	 -0.0015 	 0}
+			{bone revolute "steer_front"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					2.2533 	 -0.0017 	 19.0674
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/steer_front.ply"}
+				{bone revolute "wheel1"
+					{parameters "id=body;radius=0.33;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						2.2533 	 0.0017 	 12.6169
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wheel1.ply"}
+				}
+			}
+			{bone "support3"
+				{Position 0 	 0 	 0}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0.4848 	 -0.8746 	 0
+				0.8746 	 0.4848 	 0
+				0 	 0 	 1
+				86.041 	 32.0129 	 2.1714
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				-0.6157 	 -0.788 	 0
+				0.788 	 -0.6157 	 0
+				0 	 0 	 1
+				124.42 	 29.2547 	 0
+			}
+		}
+		{bone "dummy"
+			{Position 20.758 	 0 	 0}
+		}
+		{bone "fxtracer1"
+			{matrix34
+				-0.9848 	 0 	 0.1736
+				0 	 -1 	 0
+				0.1736 	 0 	 0.9848
+				-5.4195 	 -51.3552 	 0.0312
+			}
+		}
+		{bone "fxtracel1"
+			{matrix34
+				-0.9848 	 0 	 0.1736
+				0 	 -1 	 0
+				0.1736 	 0 	 0.9848
+				-5.4193 	 51.1939 	 0.0209
+			}
+		}
+		{bone "pivot_front"
+			{Position -76.4639 	 0 	 9.5397}
+			{bone "retract_wheelr"
+				{parameters "id=body;"}
+				{matrix34
+					0.9999 	 0 	 -0.014
+					0 	 1 	 0
+					0.014 	 0 	 0.9999
+					76.5842 	 -47.9894 	 0.0507
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/retract_wheelr.ply"}
+				{bone "support2"
+					{matrix34
+						0.9999 	 0 	 0.014
+						0 	 1 	 0
+						-0.014 	 0 	 0.9999
+						-0.0428 	 -3.2305 	 -9.5919
+					}
+				}
+				{bone revolute "wheelr"
+					{parameters "id=body;radius=0.49;"}
+					{matrix34
+						0.9999 	 0 	 0.014
+						0.0139 	 0.0698 	 -0.9975
+						-0.001 	 0.9976 	 0.0697
+						-0.1216 	 -3.8961 	 0.0257
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wheelr.ply"}
+				}
+			}
+			{bone "retract_wheell"
+				{parameters "id=body;"}
+				{matrix34
+					0.9999 	 0 	 -0.014
+					0 	 1 	 0
+					0.014 	 0 	 0.9999
+					76.5842 	 48.1756 	 0.0507
+				}
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/retract_wheell.ply"}
+				{bone "support1"
+					{matrix34
+						0.9999 	 0 	 0.014
+						0 	 1 	 0
+						-0.014 	 0 	 0.9999
+						-0.0428 	 2.9682 	 -9.5919
+					}
+				}
+				{bone revolute "wheell"
+					{parameters "id=body;radius=0.49;"}
+					{matrix34
+						0.9999 	 0 	 0.014
+						0.0139 	 -0.0698 	 -0.9975
+						0.001 	 0.9976 	 -0.0697
+						-0.1216 	 3.7102 	 0.0257
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/wheell.ply"}
+				}
+			}
+		}
+		{bone "ramp2"
+			{parameters "id=body;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-46.5316 	 -0.0493 	 41.6847
+			}
+			{visibility 0}
+			
+		}
+	}
+}
+{obstacle "line1"
+	{polygon2
+		{radius 0}
+		{vertex -2.45032 -255.99}
+		{vertex 46.5652 -67.0923}
+		{vertex 46.5652 67.0923}
+		{vertex -2.45033 255.989}
+		{vertex -48.1285 255.989}
+		{vertex -48.1285 -255.99}
+	}
+	{rotate}
+}
+{obstacle "rectangle01"
+	{polygon2
+		{radius 0}
+		{vertex -65.672 -21.4874}
+		{vertex 175.897 -21.4874}
+		{vertex 175.897 22.1984}
+		{vertex -65.672 22.1984}
+		{vertex -195.205 5.11138}
+		{vertex -195.205 -4.49469}
+	}
+	{rotate}
+}
+{volume "aileron1"
+	{box 16.1548 122.507 3.36558}
+	{bone "aileron1"}
+	{matrix34
+		0.9972 	 0.0026 	 0.0754
+		0.0754 	 -0.0069 	 -0.9971
+		-0.0021 	 1 	 -0.0071
+		-5.5493 	 0.6754 	 0.1154
+	}
+}
+{volume "aileron2"
+	{box 16.1548 122.507 3.36558}
+	{bone "aileron2"}
+	{matrix34
+		0.9991 	 -0.0015 	 0.0426
+		-0.0426 	 -0.0143 	 0.999
+		-0.0009 	 -0.9999 	 -0.0144
+		-5.5137 	 -0.6502 	 -0.3588
+	}
+}
+{volume "body1"
+	{cylinder 21.839 205.461}
+	{bone "body"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		31.0191 	 0 	 6.8332
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/body2.vol"}
+	{bone "body"}
+	{Position 151.848 	 0 	 6.8331}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/body3.vol"}
+	{bone "bodyback"}
+	{Position -62.0762 	 -0.0001 	 21.6283}
+}
+{volume "canopy"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/canopy.vol"}
+	{bone "body"}
+	{Position 151.848 	 0 	 6.8331}
+}
+{volume "door"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/door.vol"}
+	{bone "door"}
+	{Position -0.0003 	 2.6106 	 13.9963}
+}
+{volume "elevator1"
+	{box 23.4215 2.55508 87.9583}
+	{bone "elavator1"}
+	{Position -10.4308 	 0.6425 	 -9.4761}
+}
+{volume "elevator2"
+	{box 23.4215 2.55508 87.9583}
+	{bone "elevator2"}
+	{Position -10.4307 	 0.6425 	 9.5367}
+}
+{volume "engine1"
+	{box 3.93701 3.93701 3.93701}
+	{bone "engine1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.1632 	 0.5199 	 -0.0958
+	}
+}
+{volume "gear_l"
+	{cylinder 1.55223 51.0524}
+	{bone "retract_wheell"}
+	{matrix34
+		0.0007 	 0.9986 	 -0.0523
+		0.8894 	 -0.0246 	 -0.4565
+		-0.4571 	 -0.0462 	 -0.8882
+		10.3012 	 1.0081 	 21.6687
+	}
+}
+{volume "gear_r"
+	{cylinder 1.55223 51.0524}
+	{bone "retract_wheelr"}
+	{matrix34
+		-0.0007 	 0.9986 	 0.0523
+		0.8894 	 0.0246 	 -0.4565
+		-0.4571 	 0.0462 	 -0.8882
+		10.2721 	 -0.8445 	 21.7215
+	}
+}
+{volume "hole1"
+	{box 39.429 27.7695 15.9309}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		106.642 	 14.7467 	 6.712
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/hole2.vol"}
+	{bone "body"}
+	{Position 31.0191 	 0 	 6.8332}
+}
+{volume "hole3"
+	{box 18.477 120.597 7.67677}
+	{bone "wingl2"}
+	{matrix34
+		0.9785 	 -0.0119 	 0.2061
+		0.0041 	 0.9993 	 0.0379
+		-0.2064 	 -0.0363 	 0.9778
+		-38.4661 	 94.1347 	 -2.1398
+	}
+}
+{volume "hole4"
+	{box 18.477 120.597 8.29091}
+	{bone "wingr2"}
+	{matrix34
+		0.9904 	 -0.0142 	 0.1374
+		0.0186 	 0.9994 	 -0.0306
+		-0.1368 	 0.0329 	 0.99
+		-38.2411 	 -182.123 	 27.279
+	}
+}
+{volume "rudder"
+	{box 22.4835 83.4699 2.45712}
+	{bone "rudder"}
+	{matrix34
+		0.9877 	 0 	 -0.1564
+		0.1564 	 0 	 0.9877
+		0 	 -1 	 0
+		-11.6421 	 -0.0031 	 1.5715
+	}
+}
+{volume "stabilizer1"
+	{box 22.002 4.11651 192.244}
+	{bone "stabilizer"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-1.5583 	 -0.9514 	 10.8942
+	}
+}
+{volume "stabilizer2"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/stabilizer2.vol"}
+	{bone "stabilizer"}
+	{Position 2.1464 	 -0.0001 	 9.5453}
+}
+{volume "wheel1"
+	{cylinder 6.45669 3.27679}
+	{bone "wheel1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheell"
+	{cylinder 9.72412 4.39262}
+	{bone "wheell"}
+	{Position 0 	 0 	 0.0909}
+}
+{volume "wheelr"
+	{cylinder 9.72412 4.39262}
+	{bone "wheelr"}
+	{Position 0 	 0 	 -0.0736}
+}
+{volume "wingl2"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/wingl2.vol"}
+	{bone "wingl2"}
+	{Position 0.1208 	 75.6824 	 -0.9253}
+}
+{volume "wingl1"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/wingl1.vol"}
+	{bone "wingl1"}
+	{Position -0.2254 	 -18.7388 	 1.1058}
+}
+{volume "wingr1"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/wingr1.vol"}
+	{bone "wingr1"}
+	{Position -0.2254 	 18.7386 	 1.1058}
+}
+{volume "wingr2"
+	{polyhedron "../../../../-vehicle/eng/airborne/horsa_mk1/wingr2.vol"}
+	{bone "wingr2"}
+	{Position 0.1208 	 -161.537 	 27.9854}
+}

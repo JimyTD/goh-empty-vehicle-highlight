@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m2_30cal_tripod (generated)
-	{Extension "../../../../-vehicle/usa/cannon/m2_30cal_tripod/m2_30cal_tripod.mdl"}
+	{Extension "m2_30cal_tripod.mdl"}
 	{extender "stuff"
 		{item "evh_m2_30cal_tripod"}
 	}

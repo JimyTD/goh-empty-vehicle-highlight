@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for blitz3_6_radio (generated)
-	{Extension "../../../../-vehicle/germany/car/blitz3_6_radio/blitz3_6_radio.mdl"}
+	{Extension "blitz3_6_radio.mdl"}
 	{extender "stuff"
 		{item "evh_blitz3_6_radio"}
 	}

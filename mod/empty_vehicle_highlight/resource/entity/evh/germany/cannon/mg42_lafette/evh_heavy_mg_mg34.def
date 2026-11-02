@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for heavy_mg_mg34 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/mg42_lafette/mg42_lafette.mdl"}
+	{Extension "mg42_lafette.mdl"}
 	{extender "stuff"
 		{item "evh_heavy_mg_mg34"}
 	}

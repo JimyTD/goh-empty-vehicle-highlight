@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for universal (generated)
-	{Extension "../../../../-vehicle/generic/car/universal/universal.mdl"}
+	{Extension "universal.mdl"}
 	{extender "stuff"
 		{item "evh_universal"}
 	}

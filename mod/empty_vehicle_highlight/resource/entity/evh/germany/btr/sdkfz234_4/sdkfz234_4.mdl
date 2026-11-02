@@ -1,0 +1,776 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: turret
+;Exported by:	 guita
+;Date:			 20.08.2022 23:55:32
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\btr\sdkfz 234_4\SdKfz234_4.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/btr/sdkfz234_4/start.anm"} {speed 0.5}}
+		{sequence "stop" {file "../../../../-vehicle/germany/btr/sdkfz234_4/stop.anm"} {speed 0.5}}
+		{sequence "fire" {file "../../../../-vehicle/germany/btr/sdkfz234_4/fire.anm"} {speed 0.5}}
+		{sequence "hit" {file "../../../../-vehicle/germany/btr/sdkfz234_4/hit.anm"} {speed 0.5}}
+	}
+	{bone "basis"
+		{parameters "steermax=22;wheelradius=0.54;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz234_4/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.0125 	 0.0006 	 16.4427}
+			{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz234_4/turret_r.anm"}{speed 0.7}}
+				}
+				{limits -20 20}
+				{speed 0.008}
+				{Position 10.9006 	 -0.2467 	 13.6191}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz234_4/gun_r.anm"}}
+					}
+					{limits -5 22}
+					{speed 0.008}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.7768 	 0.452 	 7.9118
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-4.7219 	 1.3658 	 -0.2155
+						}
+						
+						{bone "foresight1"
+							{Position 66.9161 	 -0.3189 	 -0.2444}
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-7.5738 	 -0.4118 	 -0.2091
+							}
+						}
+					}
+				}
+				{bone "visor1"
+					{Position -23.4593 	 9.4788 	 8.6035}
+				}
+				{bone "shield"
+					{parameters "id=shield;"}
+					{Position 3.5532 	 0.2311 	 6.3361}
+					
+				}
+				{bone "mg_support"
+					{Position -3.6779 	 -3.9083 	 3.3345}
+					
+					{bone revolute "mgun_a_rot1"
+						{limits -25 20}
+						{terminator}
+						{Position -0.0255 	 -8.2117 	 11.2402}
+						{bone revolute "mgun_a_rot2"
+							{limits -10 55}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								0 	 0 	 0
+							}
+							{bone "mgun"
+								{Position -4.6987 	 -0.9451 	 -0.0283}
+							}
+						}
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz234_4/engine_r.anm"}{speed 0.5}}
+				}
+				{Position -37.3859 	 0 	 10.5312}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/engine.ply"}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9996 	 0 	 0.0279
+						0 	 1 	 0
+						-0.0279 	 0 	 0.9996
+						0 	 4.9824 	 3.0482
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/engine_hatch1.ply"}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9996 	 0 	 0.0279
+						0 	 1 	 0
+						-0.0279 	 0 	 0.9996
+						0 	 -4.8363 	 3.0482
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/engine_hatch2.ply"}
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -58.1072 	 -0.0005 	 0.0211}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 30.6505 	 18.7667 	 10.9656}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 2.75 	 16.3689 	 14.5658}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position 8.2155 	 -20.1333 	 18.0989}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 33.3552 	 -18.5714 	 10.6734}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position -34.162 	 0 	 10.5738}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -29.1816 	 18.6781 	 11.1235}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/detail7.ply"}
+			}
+			{bone "fxfire1"
+				{matrix34
+					-0.0073 	 0 	 1
+					1 	 0 	 0.0073
+					0 	 1 	 0
+					-35.5754 	 -1.4681 	 9.3739
+				}
+			}
+			{bone "ammo1"
+				{Position 12.899 	 -0.0764 	 -0.5365}
+			}
+			{bone "ammo2"
+				{Position 12.8364 	 -11.1988 	 10.2165}
+			}
+			{bone "ammo3"
+				{Position 14.3168 	 8.7462 	 10.1603}
+			}
+			{bone "transmission"
+				{Position 42.3932 	 -0.0014 	 -4.1557}
+			}
+			{bone "fuel"
+				{Position -18.2881 	 0.0137 	 10.395}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.8971 	 -0.4389 	 0.0514
+					0.438 	 -0.8985 	 -0.0286
+					0.0588 	 -0.0031 	 0.9983
+					-54.7897 	 -20.6303 	 7.5832
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9109 	 0.4106 	 -0.0415
+					-0.409 	 -0.9116 	 -0.0411
+					-0.0547 	 -0.0205 	 0.9983
+					-54.7444 	 20.6357 	 7.4918
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					39.4096 	 1.485 	 15.5478
+				}
+			}
+			{bone "armorlightr"
+				{Position 53.5488 	 -15.8965 	 4.0764}
+			}
+			{bone "armorlightl"
+				{Position 53.5488 	 15.8863 	 4.0771}
+			}
+			{bone revolute "steer1"
+				{parameters "id=body;"}
+				{matrix34
+					-0.8528 	 0 	 -0.5223
+					0 	 1 	 0
+					0.5223 	 0 	 -0.8528
+					40.9488 	 -0.358 	 6.1857
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/steer1.ply"}
+			}
+			{bone revolute "steer2"
+				{parameters "id=body;"}
+				{matrix34
+					0.8674 	 0 	 -0.4976
+					0 	 1 	 0
+					0.4976 	 0 	 0.8674
+					-9.0717 	 -5.3745 	 5.2939
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/steer2.ply"}
+			}
+			{bone "antena"
+				{parameters "id=body;"}
+				{Position 8.1535 	 16.3625 	 21.9808}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/antena.ply"}
+				{bone "antena1"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 11.5838}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/antena1.ply"}
+				}
+			}
+			{bone "charger"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-11.8317 	 6.5381 	 -1.2466
+				}
+			}
+			{bone "commander"
+				{Position -1.8176 	 -5.7905 	 -0.9544}
+			}
+			{bone "driver"
+				{Position 34.2344 	 -0.0006 	 -0.9544}
+			}
+			{bone "gunner"
+				{Position 7.593 	 6.5381 	 -1.2466}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					4.91 	 0.3763 	 10.408
+				}
+			}
+		}
+		{bone "body_virt"
+			{Position 0 	 0 	 13.6912}
+			{bone "pivot_front"
+				{Position 25.2157 	 0 	 -3.0936}
+				{bone revolute "steerr1"
+					{limits -25 25}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						12.0897 	 -15.4289 	 0.0055
+					}
+					{bone prizmatic "suspension_r1"
+						{limits -0.1 0.1}
+						{speed 0.08}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							0.0127 	 2.0481 	 0.0257
+						}
+						{bone "fxtracer1"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-0.2301 	 -1.0182 	 -10.5443
+							}
+						}
+						{bone revolute "wheelr1"
+							{parameters "id=wheelright1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								-0.0127 	 -1.3155 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheelr1.ply"}
+						}
+					}
+				}
+				{bone revolute "steerr2"
+					{limits -15 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-12.6598 	 -15.4289 	 0.0055
+					}
+					{bone prizmatic "suspension_r2"
+						{limits -0.12 0.12}
+						{speed 0.08}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							-0.0018 	 2.0481 	 0.0257
+						}
+						{bone revolute "wheelr2"
+							{parameters "id=wheelright2;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.0018 	 -1.3154 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheelr2.ply"}
+						}
+					}
+				}
+				{bone revolute "steerl1"
+					{limits -25 25}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						12.0897 	 15.43 	 0.0055
+					}
+					{bone prizmatic "suspension_l1"
+						{limits -0.1 0.1}
+						{speed 0.08}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							0.0127 	 -2.0591 	 0.0257
+						}
+						{bone "fxtracel1"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-0.2301 	 0.8973 	 -10.5485
+							}
+						}
+						{bone revolute "wheell1"
+							{parameters "id=wheelleft1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								-0.0127 	 1.3001 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheell1.ply"}
+						}
+					}
+				}
+				{bone revolute "steerl2"
+					{limits -15 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-12.6598 	 15.43 	 0.0055
+					}
+					{bone prizmatic "suspension_l2"
+						{limits -0.12 0.12}
+						{speed 0.08}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							-0.0018 	 -2.0591 	 0.0257
+						}
+						{bone revolute "wheell2"
+							{parameters "id=wheelleft2;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.0018 	 1.3001 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheell2.ply"}
+						}
+					}
+				}
+			}
+			{bone "pivot_back"
+				{Position -0.6339 	 0 	 -3.0992}
+				{bone revolute "steerr3"
+					{limits -15 15}
+					{Position -14.3255 	 -15.4288 	 0.0111}
+					{bone prizmatic "suspension_r3"
+						{limits -0.12 0.12}
+						{speed 0.08}
+						{Position 0.1362 	 -2.0481 	 -0.0257}
+						{bone revolute "wheelr3"
+							{parameters "id=wheelright3;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								-0.1362 	 -1.3154 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheelr3.ply"}
+						}
+					}
+				}
+				{bone revolute "steerr4"
+					{limits -25 25}
+					{Position -39.4879 	 -15.4288 	 0.0111}
+					{bone prizmatic "suspension_r4"
+						{limits -0.1 0.1}
+						{speed 0.08}
+						{Position -0.0021 	 -2.0481 	 -0.0257}
+						{bone "fxtracer2"
+							{matrix34
+								-0.9272 	 0 	 0.3746
+								0 	 -1 	 0
+								0.3746 	 0 	 0.9272
+								-6.3844 	 -1.0181 	 -8.7376
+							}
+						}
+						{bone revolute "wheelr4"
+							{parameters "id=wheelright4;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.0021 	 -1.3154 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheelr4.ply"}
+						}
+					}
+				}
+				{bone revolute "steerl3"
+					{limits -15 15}
+					{Position -14.3255 	 15.43 	 0.0111}
+					{bone prizmatic "suspension_l3"
+						{limits -0.12 0.12}
+						{speed 0.08}
+						{Position 0.1362 	 2.0591 	 -0.0257}
+						{bone revolute "wheell3"
+							{parameters "id=wheelleft3;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								-0.1362 	 1.3001 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheell3.ply"}
+						}
+					}
+				}
+				{bone revolute "steerl4"
+					{limits -25 25}
+					{Position -39.4879 	 15.43 	 0.0111}
+					{bone prizmatic "suspension_l4"
+						{limits -0.1 0.1}
+						{speed 0.08}
+						{Position -0.0021 	 2.0591 	 -0.0257}
+						{bone "fxtracel2"
+							{matrix34
+								-0.9272 	 0 	 0.3746
+								0 	 -1 	 0
+								0.3746 	 0 	 0.9272
+								-6.3844 	 0.8974 	 -8.7418
+							}
+						}
+						{bone revolute "wheell4"
+							{parameters "id=wheelleft4;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.0021 	 1.3001 	 0.0257
+							}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/wheell4.ply"}
+						}
+					}
+				}
+			}
+			{bone "suspsys"
+				{parameters "id=body;"}
+				{Position 7.802 	 0.978 	 17.4415}
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/suspsys.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-1.1613 	 32.6224 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-1.0609 	 -32.8255 	 0
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 18.487 11.0091 6.75392}
+	{bone "ammo1"}
+	{Position 0 	 0 	 7.4991}
+}
+{volume "ammo2"
+	{box 18.1245 10.7932 3.36016}
+	{bone "ammo2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.2419 	 -0.9703
+		0 	 0.9703 	 0.2419
+		0 	 1.6302 	 0.4064
+	}
+}
+{volume "ammo3"
+	{box 18.1245 10.7932 3.36016}
+	{bone "ammo3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -0.1564 	 -0.9877
+		0 	 0.9877 	 -0.1564
+		0 	 1.6594 	 -0.2628
+	}
+}
+{volume "barrel1"
+	{box 4.03659 3.05083 41.3885}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		-1.5636 	 -2.3266 	 0.1214
+	}
+}
+{volume "barrel2"
+	{box 5.74328 4.64818 8.80741}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-3.6143 	 -0.3359 	 0.1685
+	}
+}
+{volume "barrel3"
+	{cylinder 1.44471 57.9904}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		29.5907 	 -0.4584 	 -0.3622
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/body1.vol"}
+	{bone "body"}
+	{Position 18.2684 	 0 	 8.8912}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/body2.vol"}
+	{bone "body"}
+	{Position 16.667 	 0 	 -4.3328}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/body3.vol"}
+	{bone "body"}
+	{Position 25.8896 	 0 	 16.4295}
+}
+{volume "detail1"
+	{cylinder 10.7385 5.57449}
+	{bone "detail1"}
+	{matrix34
+		0 	 1 	 0
+		-0.6293 	 0 	 0.7771
+		0.7771 	 0 	 0.6293
+		0 	 0 	 0
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/engine1.vol"}
+	{bone "engine"}
+	{Position -0.388 	 0 	 -3.836}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/engine2.vol"}
+	{bone "engine"}
+	{Position 2.0119 	 0 	 -14.8645}
+}
+{volume "fuel"
+	{box 4.68467 25.358 7.82373}
+	{bone "fuel"}
+	{Position -5.4362 	 0 	 -0.5413}
+}
+{volume "gun_shield1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/gun_shield1.vol"}
+	{bone "shield"}
+	{Position 4.9024 	 0.062 	 1.7038}
+}
+{volume "gun_shield2"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/gun_shield2.vol"}
+	{bone "shield"}
+	{Position -0.5315 	 9.3034 	 1.704}
+}
+{volume "gun_shield3"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/gun_shield3.vol"}
+	{bone "shield"}
+	{Position -0.5315 	 -9.0533 	 1.704}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/hole1.vol"}
+	{bone "body"}
+	{Position 21.6554 	 0.0414 	 12.7136}
+}
+{volume "hole2"
+	{box 28.5682 25.6844 13.3045}
+	{bone "body"}
+	{Position -2.0064 	 0.0322 	 12.7247}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/ram.vol"}
+	{bone "body"}
+	{Position -2.6197 	 -0.0373 	 -16.8893}
+}
+{volume "transmission"
+	{cylinder 3.59613 83.6069}
+	{bone "transmission"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-41.8034 	 0 	 0
+	}
+}
+{volume "tshield1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/tshield1.vol"}
+	{bone "body"}
+	{Position -17.9806 	 0 	 16.7422}
+}
+{volume "tshield2"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/tshield2.vol"}
+	{bone "body"}
+	{Position -2.9134 	 14.0389 	 17.9928}
+}
+{volume "tshield3"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/tshield3.vol"}
+	{bone "body"}
+	{Position -2.9134 	 -14.0493 	 17.9928}
+}
+{volume "tshield4"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/tshield4.vol"}
+	{bone "body"}
+	{Position 13.8396 	 12.1125 	 20.1277}
+}
+{volume "tshield5"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/tshield5.vol"}
+	{bone "body"}
+	{Position 13.8396 	 -12.1127 	 20.1277}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/germany/btr/sdkfz234_4/turret1.vol"}
+	{bone "turret"}
+	{Position 0.311 	 0.2265 	 4.6971}
+}
+{volume "wheelleft1"
+	{cylinder 10.7385 5.57449}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4072
+	}
+}
+{volume "wheelleft2"
+	{cylinder 10.7385 5.57449}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4071
+	}
+}
+{volume "wheelleft3"
+	{cylinder 10.7385 5.57449}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4071
+	}
+}
+{volume "wheelleft4"
+	{cylinder 10.7385 5.57449}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.4071
+	}
+}
+{volume "wheelright1"
+	{cylinder 10.7385 5.57449}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1327
+	}
+}
+{volume "wheelright2"
+	{cylinder 10.7385 5.57449}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1327
+	}
+}
+{volume "wheelright3"
+	{cylinder 10.7385 5.57449}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1327
+	}
+}
+{volume "wheelright4"
+	{cylinder 10.7385 5.57449}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.1327
+	}
+}

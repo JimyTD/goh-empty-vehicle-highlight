@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 600mm_thor (generated)
-	{Extension "../../../../-vehicle/germany/cannon/600mm_thor/600mm_thor.mdl"}
+	{Extension "600mm_thor.mdl"}
 	{extender "stuff"
 		{item "evh_600mm_thor"}
 	}

@@ -1,0 +1,672 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: bodyback_doorcenter dooright doorleft
+;Exported by:	 nic21
+;Date:			 15.01.2026 18:52:30
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\car\Volvo_LV_127D\volvo_127d.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/finland/car/volvo_127d/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/finland/car/volvo_127d/stop.anm"} {speed 0.6}}
+		{sequence "close_back" {file "../../../../-vehicle/finland/car/volvo_127d/close_back.anm"} {speed 0.6} {events {0 "close_rear"}}}
+		{sequence "open_back" {file "../../../../-vehicle/finland/car/volvo_127d/open_back.anm"} {speed 0.6} {events {0 "open_rear"}}}
+		{sequence "doorleft" {file "../../../../-vehicle/finland/car/volvo_127d/doorleft.anm"} {speed 0.5} {events {0 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/finland/car/volvo_127d/doorright.anm"} {speed 0.5} {events {0 "open_right"}}}
+		{sequence "board" {file "../../../../-vehicle/finland/car/volvo_127d/board.anm"} {speed 1} {events {0 "board"}}}
+		{sequence "wipers" {file "../../../../-vehicle/finland/car/volvo_127d/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=30;wheelradius=0.5;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/car/volvo_127d/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.2056 	 0 	 9.7731}
+			{VolumeView "../../../../-vehicle/finland/car/volvo_127d/body.ply"}
+			{bone "dooright"
+				{parameters "id=body;"}
+				{Position 29.2017 	 -14.4882 	 20.6918}
+				
+				{bone "glass3"
+					{parameters "id=glass3;"}
+					{Position -8.3892 	 -0.802 	 6.2373}
+					
+				}
+			}
+			{bone "emblem"
+				{parameters "id=body;"}
+				{Position 58.5138 	 3.5388 	 16.7008}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/emblem.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/car/volvo_127d/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 23.0327 	 -0.4121 	 11.3374}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/engine.ply"}
+				{bone "engine_hood1_1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9987 	 0 	 -0.0508
+						0 	 1 	 0
+						0.0508 	 0 	 0.9987
+						21.3659 	 0.4121 	 11.4214
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/engine_hood1_1.ply"}
+				}
+				{bone "engine_hood1_2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9987 	 0 	 -0.0508
+						0 	 1 	 0
+						0.0508 	 0 	 0.9987
+						21.3659 	 0.4121 	 11.4214
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/engine_hood1_2.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						21.3659 	 0.4121 	 2.5784
+					}
+				}
+			}
+			{bone "glass4"
+				{parameters "id=glass4;"}
+				{Position 9.1765 	 0 	 27.3904}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/glass4.ply"}
+			}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/car/volvo_127d/bodyback_r.anm"}{speed 0.7}}
+				}
+				{Position -31.1265 	 0 	 13.7391}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/bodyback.ply"}
+				{bone "bodyback_doorleft"
+					{parameters "id=bodyback;"}
+					{Position -27.7096 	 22.2134 	 -1.6524}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/bodyback_doorleft.ply"}
+				}
+				{bone "bodyback_doorcenter"
+					{parameters "id=bodyback;"}
+					{Position -37.0161 	 11.8546 	 -1.6524}
+					
+				}
+				{bone "bodyback_doorright"
+					{parameters "id=bodyback;"}
+					{Position 29.6862 	 -22.2134 	 -1.6524}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/bodyback_doorright.ply"}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{Position 29.2017 	 14.4882 	 20.6918}
+				
+				{bone "glass2"
+					{parameters "id=glass2;"}
+					{Position -8.3892 	 0.802 	 6.2373}
+					
+				}
+			}
+			{bone "glass1"
+				{parameters "id=glass1;"}
+				{Position 28.3798 	 0 	 27.4348}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/glass1.ply"}
+			}
+			{bone "wiperr"
+				{parameters "id=body;"}
+				{matrix34
+					0.9613 	 0 	 0.2756
+					0 	 1 	 0
+					-0.2756 	 0 	 0.9613
+					30.0482 	 -4.4094 	 23.5537
+				}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wiperr.ply"}
+			}
+			{bone "wiperl"
+				{parameters "id=body;"}
+				{matrix34
+					0.9613 	 0 	 0.2756
+					0 	 1 	 0
+					-0.2756 	 0 	 0.9613
+					30.0482 	 7.8937 	 23.5537
+				}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wiperl.ply"}
+			}
+			{bone "visor1"
+				{matrix34
+					1 	 0 	 -0.0042
+					0 	 1 	 0
+					0.0042 	 0 	 1
+					29.9476 	 -7.874 	 27.4159
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 -0.0042
+					0 	 1 	 0
+					0.0042 	 0 	 1
+					29.9476 	 7.874 	 27.4159
+				}
+			}
+			{bone "driver"
+				{Position 16.3555 	 7.8937 	 -2.3438}
+			}
+			{bone "commander"
+				{Position 16.3555 	 -7.8937 	 -2.3438}
+			}
+			{bone "transmission"
+				{Position 33.2686 	 -0.14 	 7.4572}
+			}
+			{bone "fxfire5"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					20.5053 	 0 	 14.66
+				}
+			}
+			{bone "fuel"
+				{parameters "id=fuel;"}
+				{Position 6.9487 	 13.9826 	 4.735}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/fuel.ply"}
+			}
+			{bone "headlightr"
+				{Position 53.5609 	 -14.1168 	 15.248}
+			}
+			{bone "headlightl"
+				{Position 53.5609 	 14.1099 	 15.248}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-64.6989 	 0.0037 	 6.6389
+				}
+			}
+			{bone "seat1"
+				{matrix34
+					-0.0247 	 -0.9997 	 0
+					0.9997 	 -0.0247 	 0
+					0 	 0 	 1
+					-2.4123 	 15.8534 	 1.1998
+				}
+			}
+			{bone "seat3"
+				{matrix34
+					-0.1001 	 -0.995 	 0
+					0.995 	 -0.1001 	 0
+					0 	 0 	 1
+					-14.9377 	 14.6499 	 1.1998
+				}
+			}
+			{bone "seat5"
+				{matrix34
+					0.0395 	 -0.9992 	 0
+					0.9992 	 0.0395 	 0
+					0 	 0 	 1
+					-25.9631 	 15.1085 	 1.1998
+				}
+			}
+			{bone "seat7"
+				{matrix34
+					-0.0341 	 -0.9977 	 -0.0585
+					0.9994 	 -0.0335 	 -0.0117
+					0.0098 	 -0.0589 	 0.9982
+					-36.8407 	 15.2707 	 1.1998
+				}
+			}
+			{bone "seat9"
+				{matrix34
+					-0.0579 	 -0.9983 	 0
+					0.9983 	 -0.0579 	 0
+					0 	 0 	 1
+					-47.8277 	 14.1002 	 1.1998
+				}
+			}
+			{bone "seat11"
+				{matrix34
+					0.2247 	 -0.9743 	 -0.0161
+					0.9741 	 0.2242 	 0.0283
+					-0.024 	 -0.0221 	 0.9995
+					-59.8228 	 15.2707 	 1.1998
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-5.6826 	 -16.6816 	 1.1998
+				}
+			}
+			{bone "seat4"
+				{matrix34
+					0.1898 	 0.9818 	 0
+					-0.9818 	 0.1898 	 0
+					0 	 0 	 1
+					-17.5461 	 -15.3792 	 1.1998
+				}
+			}
+			{bone "seat6"
+				{matrix34
+					-0.2247 	 0.9743 	 0.0161
+					-0.9741 	 -0.2242 	 -0.0283
+					-0.024 	 -0.0221 	 0.9995
+					-26.8491 	 -15.819 	 1.1998
+				}
+			}
+			{bone "seat8"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-38.8101 	 -16.6816 	 1.1998
+				}
+			}
+			{bone "seat10"
+				{matrix34
+					0.2101 	 0.9777 	 0
+					-0.9777 	 0.2101 	 0
+					0 	 0 	 1
+					-49.8135 	 -15.2802 	 1.1998
+				}
+			}
+			{bone "seat12"
+				{matrix34
+					-0.1184 	 0.9912 	 0.0593
+					-0.993 	 -0.1182 	 -0.0071
+					0 	 -0.0597 	 0.9982
+					-60.2453 	 -15.0605 	 1.1998
+				}
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				12.6791 	 31.106 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				12.6791 	 -31.1974 	 0
+			}
+		}
+		{bone "emit4"
+			{Position -86.4301 	 10.8268 	 0}
+		}
+		{bone "emit3"
+			{Position -86.4301 	 -10.8268 	 0}
+		}
+		{bone "pivot_back"
+			{Position -37.1878 	 0 	 9.9038}
+			{bone "suspb"
+				{parameters "id=body;"}
+				{Position -0.2138 	 0 	 1.1568}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/suspb.ply"}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 16.415 	 -0.0022}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -16.415 	 -0.0022}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wheelr2.ply"}
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0 	 16.415 	 -9.9038
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0 	 -16.415 	 -9.9038
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 41.5865 	 0 	 9.7942}
+			{bone "suspf"
+				{parameters "id=body;"}
+				{Position 0.0012 	 0 	 -0.0202}
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/suspf.ply"}
+			}
+			{bone revolute "steer_l"
+				{limits -30 30}
+				{speed 0.006}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 14.2126 	 0
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 -1
+						0 	 -2.4087 	 9.7942
+					}
+				}
+				{bone "druml"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.32 	 0.4524 	 0.0202
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/druml.ply"}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -3.1452 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.5;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wheell1.ply"}
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.8984 	 -0.3549 	 0.2587
+						-0.3657 	 0.9307 	 0.0068
+						-0.2432 	 -0.0885 	 -0.9659
+						-51.9696 	 7.9725 	 -2.0963
+					}
+				}
+			}
+			{bone revolute "steer_r"
+				{limits -30 30}
+				{speed 0.006}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -14.2126 	 0
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 -1
+						0 	 2.4087 	 9.7942
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 3.1452 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.5;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/finland/car/volvo_127d/wheelr1.ply"}
+					}
+				}
+				{bone "drumr"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						-0.32 	 -0.4524 	 0.0202
+					}
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/drumr.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -17.3578 	 0}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 17.3578 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.5;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+		}
+		{bone "dummy"
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/body1.vol"}
+	{bone "body"}
+	{Position 19.2344 	 0 	 20.488}
+}
+{volume "body2"
+	{box 87.6181 1.37312 6.53976}
+	{bone "body"}
+	{Position -13.8101 	 7.9331 	 5.7867}
+}
+{volume "body3"
+	{box 87.6181 1.37312 6.53976}
+	{bone "body"}
+	{Position -13.8101 	 -7.9331 	 5.7867}
+}
+{volume "bodyback1"
+	{box 72.509 43.6927 1.45185}
+	{bone "bodyback"}
+	{Position -0.3439 	 0 	 -1.5808}
+}
+{volume "bodyback2"
+	{box 0.589685 43.8635 11.9299}
+	{bone "bodyback"}
+	{Position 35.7106 	 0 	 5.1098}
+}
+{volume "bodyback3"
+	{box 0.590546 43.7598 9.00537}
+	{bone "bodyback_doorcenter"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0.6608 	 -11.8546 	 5.2314
+	}
+}
+{volume "bodyback4"
+	{box 71.3735 0.495955 9.05212}
+	{bone "bodyback_doorleft"}
+	{matrix34
+		1 	 0 	 0.0008
+		0 	 1 	 0
+		-0.0008 	 0 	 1
+		27.3325 	 -0.5795 	 5.2383
+	}
+}
+{volume "bodyback5"
+	{box 71.3735 0.495955 9.05212}
+	{bone "bodyback_doorright"}
+	{matrix34
+		1 	 0 	 0.0008
+		0 	 1 	 0
+		-0.0008 	 0 	 1
+		-30.0634 	 0.5814 	 5.2383
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/engine1.vol"}
+	{bone "engine"}
+	{Position 19.2461 	 0.4122 	 3.0863}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/engine2.vol"}
+	{bone "engine"}
+	{Position 34.0463 	 0.4121 	 1.883}
+}
+{volume "fuel"
+	{box 17.0291 9.73922 5.75396}
+	{bone "fuel"}
+	{Position 0 	 -0.4196 	 -0.6949}
+}
+{volume "glass1"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/glass1.vol"}
+	{bone "glass1"}
+	{Position 0 	 0 	 -0.0002}
+}
+{volume "glass2"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/glass2.vol"}
+	{bone "glass2"}
+	{Position 0.0002 	 0 	 -0.0001}
+}
+{volume "glass3"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/glass3.vol"}
+	{bone "glass3"}
+	{Position 0.0002 	 0 	 -0.0001}
+}
+{volume "glass4"
+	{box 0.10296 10.643 3.81315}
+	{bone "glass4"}
+	{orientation
+		0.9953 	 0 	 -0.0971
+		0 	 1 	 0
+		0.0971 	 0 	 0.9953
+	}
+}
+{volume "hole2"
+	{box 14.5733 10.6496 3.81315}
+	{bone "body"}
+	{Position 15.5896 	 0 	 27.3904}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/hole3.vol"}
+	{bone "body"}
+	{Position 21.1401 	 -0.0004 	 27.3745}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/hole4.vol"}
+	{bone "body"}
+	{Position 20.8208 	 0 	 26.9153}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/finland/car/volvo_127d/ram.vol"}
+	{bone "body"}
+	{Position -3.593 	 0 	 6.7747}
+}
+{volume "transmission"
+	{box 4.3649 7.63268 7.79351}
+	{bone "transmission"}
+	{Position 0 	 0 	 0.4386}
+}
+{volume "wheelleft1"
+	{cylinder 9.84252 4.79965}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.7437
+	}
+}
+{volume "wheelleft2"
+	{cylinder 9.84252 11.3189}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0023
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.84252 4.79965}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.7437
+	}
+}
+{volume "wheelright2"
+	{cylinder 9.84252 11.3189}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0065
+	}
+}

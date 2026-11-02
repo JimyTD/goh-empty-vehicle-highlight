@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sherman5_late_tulip (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/sherman5_late/sherman5_late_tulip.mdl"}
+	{Extension "sherman5_late_tulip.mdl"}
 	{extender "stuff"
 		{item "evh_sherman5_late_tulip"}
 	}

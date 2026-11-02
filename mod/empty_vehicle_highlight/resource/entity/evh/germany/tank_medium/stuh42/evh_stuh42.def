@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stuh42 (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/stuh42/stuh42.mdl"}
+	{Extension "stuh42.mdl"}
 	{extender "stuff"
 		{item "evh_stuh42"}
 	}

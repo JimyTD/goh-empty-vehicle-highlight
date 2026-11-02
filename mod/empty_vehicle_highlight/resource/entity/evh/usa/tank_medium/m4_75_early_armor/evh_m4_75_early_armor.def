@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m4_75_early_armor (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/m4_75_early_armor.mdl"}
+	{Extension "m4_75_early_armor.mdl"}
 	{extender "stuff"
 		{item "evh_m4_75_early_armor"}
 	}

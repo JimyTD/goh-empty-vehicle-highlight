@@ -1,0 +1,1347 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_co_driver hatch_driver mgun_h_rot1 seat01 seat02 seat03 seat04 turret turret_flame
+;Exported by:	 Robin
+;Date:			 09.11.2025 18:06:36
+;File:			 E:\SVN GoH UK 3D models\vehicles\tank_medium\M4A4_crocodile\m4a4_croc.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/open.anm"} {speed 0.3}{resume} {events {12 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/open_driver.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"} {102 "hatch_medium"}}}
+		{sequence "open_co_driver" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/open_co_driver.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"} {102 "hatch_medium"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.265;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-51.3615 	 41.652 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0.9048 	 0.4259 	 0
+				-0.4259 	 0.9048 	 0
+				0 	 0 	 1
+				-76.8028 	 -27.4202 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-23.271 	 41.652 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0.64 	 0.7684 	 0
+				-0.7684 	 0.64 	 0
+				0 	 0 	 1
+				-54.8457 	 -44.3272 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-3.6843 	 -41.8716 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-1.7877 	 41.652 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				26.9259 	 -41.8716 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				69.9839 	 9.5063 	 0
+			}
+		}
+		{bone "body_virt"
+			{Position 0.193 	 -0.2474 	 9.01}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 2.2991 	 20.9876 	 0.3562}
+				{bone "suspl"
+					{parameters "id=body;"}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/suspl.ply"}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9707 	 0.1685 	 0.171
+						-0.1761 	 -0.9839 	 -0.0302
+						0.1632 	 -0.0594 	 0.9848
+						-2.433 	 0.0669 	 -9.3662
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-46.4409 	 0.0669 	 -7.4908
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 39.8287 	 0.0063 	 -2.6551}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 23.3119 	 -0.0034 	 -2.6551}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0.0097 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position 8.3222 	 0.0143 	 -2.6552}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0122 	 -0.0084 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -8.1903 	 0.0063 	 -2.6551}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 -0.0005 	 0.0061
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -23.3113 	 0.0063 	 -2.6551}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -39.828 	 0.0063 	 -2.6551}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0061
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell7.ply"}
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position -2.433 	 0.0669 	 1.9473}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 2.303 	 -21.0061 	 0.3562}
+				{bone "suspr"
+					{parameters "id=body;"}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/suspr.ply"}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9698 	 -0.1736 	 0.171
+						0.171 	 -0.9848 	 -0.0302
+						0.1736 	 0 	 0.9848
+						-2.4369 	 -0.0063 	 -9.3662
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-46.4447 	 -0.0067 	 -7.4907
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 39.8249 	 -0.0067 	 -2.6551}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 23.3081 	 -0.0067 	 -2.6551}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position 8.3183 	 -0.0146 	 -2.655}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0121 	 0.0084 	 0.0061
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -8.1942 	 -0.0067 	 -2.655}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -23.3151 	 -0.0067 	 -2.655}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0062
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -39.8319 	 -0.0067 	 -2.655}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0079 	 0 	 0.0061
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr7.ply"}
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position -2.4369 	 0.0017 	 1.9474}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/trackr.ply"}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.8221 	 -0.2574 	 23.4501}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 3.8493 	 0 	 13.6816}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						14.0838 	 0 	 6.4571
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.0965 	 -0.0197 	 0.0097
+						}
+						
+						{bone "foresight1"
+							{Position 33.5504 	 0 	 -0.0061}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.0295 	 0.1514 	 -7.965
+						}
+					}
+				}
+				{bone "hatch_commander1_1"
+					{parameters "id=turret;"}
+					{Position -6.5744 	 -16.7026 	 15.6959}
+					
+				}
+				{bone "hatch_commander1_2"
+					{parameters "id=turret;"}
+					{Position -6.5744 	 -1.5451 	 15.6959}
+					
+				}
+				{bone "fxfire3"
+					{matrix34
+						0.0059 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 -0.0059
+						-6.7028 	 -9.3214 	 10.7086
+					}
+				}
+				{bone "visor1"
+					{Position -5.4597 	 -12.6953 	 16.9628}
+				}
+				{bone "sight"
+					{Position 19.6555 	 -7.2299 	 9.624}
+				}
+				{bone "smoke_shot1"
+					{matrix34
+						0.866 	 -0.0015 	 0.5
+						0.0022 	 1 	 -0.0007
+						-0.5 	 0.0017 	 0.866
+						9.0065 	 15.7968 	 16.1974
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.777 	 -0.0127 	 0.6293
+						0.0163 	 0.9999 	 0
+						-0.6292 	 0.0103 	 0.7771
+						6.3184 	 15.8407 	 14.0203
+					}
+				}
+				{bone "at2_1"
+					{parameters "id=turret;"}
+					{Position -20.0785 	 -4.9461 	 15.5258}
+					
+					{bone "at2_2"
+						{parameters "id=turret;"}
+						{Position -0.0153 	 0 	 4.311}
+						
+						{bone "at2_3"
+							{parameters "id=turret;"}
+							{Position -0.0153 	 0 	 4.311}
+							
+							{bone "at2_4"
+								{parameters "id=turret;"}
+								{Position -0.0153 	 0 	 4.311}
+								
+							}
+						}
+					}
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -19.8343 	 7.9492 	 17.5533}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position -0.0153 	 0 	 4.311}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position -0.0153 	 0 	 4.3307}
+							
+							{bone "at1_4"
+								{parameters "id=turret;"}
+								{Position -0.0153 	 0 	 4.311}
+								
+							}
+						}
+					}
+				}
+				{bone "ammo5"
+					{Position -14.3026 	 0.0084 	 -7.2391}
+				}
+				{bone "ammo3"
+					{Position -0.9614 	 -9.937 	 -11.9499}
+				}
+			}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{matrix34
+					0.9925 	 0 	 -0.1219
+					0 	 1 	 0
+					0.1219 	 0 	 0.9925
+					24.7953 	 14.0343 	 14.9121
+				}
+				
+			}
+			{bone "hatch_co_driver"
+				{parameters "id=body;"}
+				{matrix34
+					0.9925 	 0 	 -0.1219
+					0 	 1 	 0
+					0.1219 	 0 	 0.9925
+					24.7965 	 -14.0295 	 14.9225
+				}
+				
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman5_croc/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -41.934 	 -1.5347 	 -0.0079}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/engine.ply"}
+				{bone "detail9"
+					{parameters "id=engine;"}
+					{Position -3.8298 	 25.6483 	 7.6858}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail9.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position 8.427 	 -16.1858 	 11.2406}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail4.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position -8.4433 	 3.749 	 9.478}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail6.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position -9.9367 	 -1.4008 	 9.6315}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail5.ply"}
+				}
+				{bone "detail8"
+					{parameters "id=engine;"}
+					{Position 11.4208 	 26.0813 	 9.2623}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail8.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=engine;"}
+					{Position 10.3379 	 -21.2155 	 9.553}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail3.ply"}
+				}
+				{bone "hatch_engine"
+					{parameters "id=engine;"}
+					{Position 10.5954 	 1.5311 	 11.9577}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/hatch_engine.ply"}
+					{bone "detail11"
+						{parameters "id=engine;"}
+						{Position -5.0555 	 0.6556 	 0.702}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail11.ply"}
+					}
+					{bone "detail1"
+						{parameters "id=engine;"}
+						{Position -12.4975 	 5.2144 	 1.3137}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail1.ply"}
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0.0059 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 -0.0059
+						3.5527 	 1.733 	 4.3029
+					}
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0.0059
+						0 	 -1 	 0
+						0.0059 	 0 	 1
+						-12.6229 	 24.9811 	 6.9122
+					}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0.0059
+						0 	 -1 	 0
+						0.0059 	 0 	 1
+						-12.623 	 -21.9086 	 6.9122
+					}
+				}
+				{bone "fuel4"
+					{matrix34
+						1 	 0 	 -0.0059
+						0 	 1 	 0
+						0.0059 	 0 	 1
+						5.664 	 -18.9686 	 6.1303
+					}
+				}
+				{bone "fuel3"
+					{matrix34
+						1 	 0 	 -0.0059
+						0 	 1 	 0
+						0.0059 	 0 	 1
+						5.664 	 22.0928 	 6.1303
+					}
+				}
+				{bone "fuel2"
+					{matrix34
+						1 	 0 	 -0.0059
+						0 	 1 	 0
+						0.0059 	 0 	 1
+						11.1481 	 -10.9288 	 -7.6911
+					}
+				}
+				{bone "fuel1"
+					{matrix34
+						1 	 0 	 -0.0059
+						0 	 1 	 0
+						0.0059 	 0 	 1
+						11.1481 	 13.8827 	 -7.6889
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.216 	 0 	 -0.9764
+						0 	 1 	 0
+						0.9764 	 0 	 -0.216
+						-12.3531 	 -4.763 	 -2.322
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.216 	 0 	 -0.9764
+						0 	 1 	 0
+						0.9764 	 0 	 -0.216
+						-12.3531 	 8.3524 	 -2.322
+					}
+				}
+				{bone revolute "seat01"
+					{matrix34
+						-0.64 	 -0.7684 	 0
+						0.7684 	 -0.64 	 0
+						0 	 0 	 1
+						10.5798 	 -10.7013 	 13.0051
+					}
+				}
+				{bone revolute "seat02"
+					{matrix34
+						0 	 1 	 0
+						-0.9975 	 0 	 -0.0701
+						-0.0701 	 0 	 0.9975
+						9.2781 	 14.6905 	 12.2929
+					}
+				}
+				{bone revolute "seat03"
+					{matrix34
+						-0.9019 	 -0.4246 	 -0.0789
+						0.423 	 -0.9054 	 0.037
+						-0.0872 	 0 	 0.9962
+						-8.6122 	 -13.6542 	 9.096
+					}
+				}
+				{bone revolute "seat04"
+					{matrix34
+						0 	 1 	 0
+						-0.9962 	 0 	 -0.0872
+						-0.0872 	 0 	 0.9962
+						-8.6054 	 13.9065 	 9.096
+					}
+				}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{Position 55.266 	 0 	 -12.2888}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail10.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position 5.3136 	 15.4946 	 5.0283}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail7.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -19.2368 	 -21.3865 	 11.8111}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/detail2.ply"}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0.0059 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 -0.0059
+					4.6086 	 0.1977 	 9.7535
+				}
+			}
+			{bone "trackleft9"
+				{Position 34.8543 	 20.9449 	 -11.0419}
+			}
+			{bone "trackleft10"
+				{Position 3.3779 	 20.9449 	 -11.0419}
+			}
+			{bone "trackleft11"
+				{Position -28.2559 	 20.9449 	 -11.0419}
+			}
+			{bone "trackright9"
+				{Position 34.8543 	 -20.9449 	 -11.0419}
+			}
+			{bone "trackright10"
+				{Position 3.3779 	 -20.9449 	 -11.0419}
+			}
+			{bone "trackright11"
+				{Position -28.2559 	 -20.9449 	 -11.0419}
+			}
+			{bone "enumerator1"
+				{matrix34
+					0.9996 	 -0.0231 	 -0.0175
+					0.0231 	 0.9997 	 0
+					0.0174 	 -0.0004 	 0.9998
+					23.7268 	 -25.7309 	 9.8313
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{matrix34
+					-0.9996 	 0.0234 	 -0.0175
+					-0.0234 	 -0.9997 	 0
+					-0.0174 	 0.0004 	 0.9998
+					20.1209 	 25.712 	 9.3775
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/enumerator2.ply"}
+			}
+			{bone "transmission"
+				{matrix34
+					1 	 0 	 -0.0059
+					0 	 1 	 0
+					0.0059 	 0 	 1
+					48.9095 	 0.0216 	 -7.3853
+				}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 -0.0059
+					0 	 1 	 0
+					0.0059 	 0 	 1
+					45.9397 	 17.9593 	 6.3565
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 -0.0059
+					0 	 1 	 0
+					0.0059 	 0 	 1
+					45.9397 	 -17.9593 	 6.3565
+				}
+			}
+			{bone "visor2"
+				{matrix34
+					1 	 0 	 -0.0059
+					0 	 1 	 0
+					0.0059 	 0 	 1
+					38.0355 	 10.1658 	 14.0489
+				}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -10 10}
+				{Position 41.5486 	 -9.9725 	 4.8559}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.0491 	 -0.0004 	 0.0006
+						}
+					}
+					{bone "mgun_hull"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.4107 	 -0.2652 	 0.3502
+						}
+						
+					}
+					{bone "hull_mg_shield"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							2.8001 	 -0.0126 	 0
+						}
+						
+					}
+				}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-51.3706 	 -21.503 	 -8.8851
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-36.9003 	 -20.9895 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-5.2626 	 -20.989 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					26.2396 	 -20.9895 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					52.9481 	 -21.0061 	 -8.1723
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheelr1.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					52.9481 	 21.0073 	 -8.1723
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell1.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					26.2396 	 20.9907 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell11.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-5.2626 	 20.9902 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell10.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-36.9003 	 20.9906 	 -5.6117
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell9.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-51.3706 	 21.5042 	 -8.8851
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_croc/wheell8.ply"}
+			}
+			{bone revolute "turret_flame"
+				{parameters "id=body;"}
+				{Position 35.6608 	 -20.4625 	 11.0113}
+				
+				{bone revolute "gun_rot_flame"
+					{parameters "id=body;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						1.811 	 -0.009 	 4.311
+					}
+					
+					{bone "foresight3"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							9.8712 	 -0.052 	 0
+						}
+					}
+				}
+			}
+			{bone "ammo1"
+				{Position 15.479 	 20.6858 	 5.4262}
+			}
+			{bone "ammo2"
+				{Position 21.4554 	 -20.4982 	 5.3886}
+			}
+			{bone "ammo4"
+				{Position -8.7788 	 -20.4982 	 5.8025}
+			}
+			{bone "ammo6"
+				{Position 20.6206 	 -10.0619 	 -5.6881}
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 14.4449 7.99213 7.99457}
+	{bone "ammo1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo2"
+	{box 12.8038 7.98937 7.99457}
+	{bone "ammo2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo3"
+	{box 7.64702 3.8698 9.94102}
+	{bone "ammo3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0.9732 	 0
+	}
+}
+{volume "ammo4"
+	{box 14.4449 8.8217 7.99457}
+	{bone "ammo4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "ammo5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/ammo5.vol"}
+	{bone "ammo5"}
+}
+{volume "ammo6"
+	{box 7.90285 8.90992 10.151}
+	{bone "ammo6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 1.0782 	 0
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/armor1.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0059
+		0 	 1 	 0
+		0.0059 	 0 	 1
+		4.4772 	 0 	 13.6972
+	}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/armor2.vol"}
+	{bone "body"}
+	{Position -12.5746 	 -27.2636 	 4.2522}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/armor3.vol"}
+	{bone "body"}
+	{Position -57.8579 	 -21.2433 	 3.1897}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/armor4.vol"}
+	{bone "body"}
+	{Position -57.4926 	 -9.2741 	 4.1944}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/barrel1.vol"}
+	{bone "gun"}
+	{Position 12.3009 	 0.0097 	 -0.0061}
+}
+{volume "body10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body10.vol"}
+	{bone "body"}
+	{Position 41.1786 	 -9.9721 	 5.276}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body1.vol"}
+	{bone "body"}
+	{Position 47.9037 	 0.0158 	 -6.8065}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body2.vol"}
+	{bone "body"}
+	{Position 16.3988 	 0.0017 	 7.044}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body3.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0059
+		0 	 1 	 0
+		0.0059 	 0 	 1
+		53.5759 	 -12.9317 	 -8.1158
+	}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body4.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0059
+		0 	 1 	 0
+		0.0059 	 0 	 1
+		53.5749 	 12.9562 	 -8.1155
+	}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body5.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0059
+		0 	 1 	 0
+		0.0059 	 0 	 1
+		28.0827 	 -9.6605 	 11.5452
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body6.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0059
+		0 	 1 	 0
+		0.0059 	 0 	 1
+		28.0827 	 10.0832 	 11.5452
+	}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body7.vol"}
+	{bone "body"}
+	{Position 12.0779 	 0.0017 	 -6.6668}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body8.vol"}
+	{bone "body"}
+	{Position 16.3988 	 20.6425 	 7.044}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/body9.vol"}
+	{bone "body"}
+	{Position 16.3988 	 -20.6389 	 7.044}
+}
+{volume "breech"
+	{box 15.5787 5.97478 7.43971}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0.0059 	 0
+		-0.0059 	 1 	 0
+		0 	 0 	 1
+		-9.7102 	 -0.0999 	 0.1821
+	}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/cupola.vol"}
+	{bone "turret"}
+	{Position -6.7115 	 -9.5191 	 16.5245}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/engine1.vol"}
+	{bone "engine"}
+	{Position 9.3751 	 1.5365 	 -6.6588}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/engine2.vol"}
+	{bone "engine"}
+	{Position 4.8242 	 1.5366 	 7.052}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/engine3.vol"}
+	{bone "engine"}
+	{Position -11.317 	 1.5365 	 -3.2694}
+}
+{volume "fuel1"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "fuel2"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel2"}
+	{orientation
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+	}
+}
+{volume "fuel3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/fuel3.vol"}
+	{bone "fuel3"}
+	{matrix34
+		1 	 0 	 0.0045
+		0 	 1 	 0
+		-0.0045 	 0 	 1
+		0.9662 	 0 	 0.0057
+	}
+}
+{volume "fuel4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/fuel4.vol"}
+	{bone "fuel4"}
+	{matrix34
+		1 	 0 	 0.0045
+		0 	 1 	 0
+		-0.0045 	 0 	 1
+		0.9662 	 0 	 0.0057
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -2.433 	 0.0669 	 1.9473}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -2.4369 	 0.0017 	 1.9474}
+}
+{volume "hole3"
+	{box 9.92704 5.60496 29.7692}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-11.2899 	 1.6464 	 -4.3262
+	}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/mantlet.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		3.749 	 1.4591 	 -0.0899
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/ram.vol"}
+	{bone "body"}
+	{Position 0.7885 	 0 	 -4.6332}
+}
+{volume "trackleft10"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackleft10"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft11"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackleft11"}
+}
+{volume "trackleft1"
+	{cylinder 6.88471 8.27744}
+	{bone "wheell1"}
+	{Position 0.0164 	 0.081 	 -0.2381}
+}
+{volume "trackleft2"
+	{cylinder 5.21569 4.37911}
+	{bone "wheell2"}
+	{Position -0.0079 	 0.0062 	 0}
+}
+{volume "trackleft3"
+	{cylinder 5.21654 4.37911}
+	{bone "wheell3"}
+	{Position -0.0079 	 0.0062 	 -0.0097}
+}
+{volume "trackleft4"
+	{cylinder 5.21654 4.37911}
+	{bone "wheell4"}
+	{Position -0.0122 	 0.0062 	 0.0084}
+}
+{volume "trackleft5"
+	{cylinder 5.21654 4.37911}
+	{bone "wheell5"}
+	{Position -0.0079 	 0.0061 	 0.0005}
+}
+{volume "trackleft6"
+	{cylinder 5.21654 4.37911}
+	{bone "wheell6"}
+	{Position -0.0079 	 0.0061 	 0}
+}
+{volume "trackleft7"
+	{cylinder 5.21654 4.37911}
+	{bone "wheell7"}
+	{Position -0.0079 	 0.0061 	 0}
+}
+{volume "trackleft8"
+	{cylinder 5.78315 4.38704}
+	{bone "wheell8"}
+	{Position -0.0079 	 0.0064 	 -0.479}
+}
+{volume "trackleft9"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackleft9"}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -2.433 	 0.0669 	 1.9473}
+}
+{volume "trackright10"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackright10"}
+}
+{volume "trackright11"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackright11"}
+}
+{volume "trackright1"
+	{cylinder 6.88471 8.27744}
+	{bone "wheelr1"}
+	{Position 0.0164 	 0.0809 	 0.2399}
+}
+{volume "trackright2"
+	{cylinder 5.21569 4.37911}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0079 	 0.0062 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 5.21654 4.37911}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0079 	 0.0062 	 0
+	}
+}
+{volume "trackright4"
+	{cylinder 5.21654 4.37911}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0121 	 0.0061 	 -0.0084
+	}
+}
+{volume "trackright5"
+	{cylinder 5.21654 4.37911}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0079 	 0.0062 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 5.21654 4.37911}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0079 	 0.0062 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 5.21654 4.37911}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-0.0079 	 0.0061 	 0
+	}
+}
+{volume "trackright8"
+	{cylinder 5.78315 4.38704}
+	{bone "wheelr8"}
+	{Position -0.0079 	 0.0061 	 0.4809}
+}
+{volume "trackright9"
+	{box 9.1395 8.0475 9.26468}
+	{bone "trackright9"}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -2.4369 	 0.0017 	 1.9474}
+}
+{volume "transmission"
+	{cylinder 5.04519 27.4814}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/turret1.vol"}
+	{bone "turret"}
+	{Position -0.479 	 0.082 	 7.467}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/turret2.vol"}
+	{bone "turret"}
+	{Position -18.2983 	 -0.0024 	 7.9647}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/turret3.vol"}
+	{bone "turret"}
+	{Position 16.0408 	 0.1414 	 7.2981}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman5_croc/turret4.vol"}
+	{bone "turret"}
+	{Position 18.171 	 1.1328 	 8.1126}
+}

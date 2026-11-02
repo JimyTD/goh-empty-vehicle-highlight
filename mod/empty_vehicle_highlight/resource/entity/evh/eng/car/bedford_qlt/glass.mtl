@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/eng/bedford_qld_glass"}
+	{envmap "$/_vehicle/general/envmap_gold01"}
+	{mask "$/_vehicle/eng/bedford_qld_glass_sp"}
+	{blend blend}
+}

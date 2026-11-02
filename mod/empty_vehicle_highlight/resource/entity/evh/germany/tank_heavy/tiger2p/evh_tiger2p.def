@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for tiger2p (generated)
-	{Extension "../../../../-vehicle/germany/tank_heavy/tiger2p/tiger2p.mdl"}
+	{Extension "tiger2p.mdl"}
 	{extender "stuff"
 		{item "evh_tiger2p"}
 	}

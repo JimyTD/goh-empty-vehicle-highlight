@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for grant (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/grant/grant.mdl"}
+	{Extension "grant.mdl"}
 	{extender "stuff"
 		{item "evh_grant"}
 	}

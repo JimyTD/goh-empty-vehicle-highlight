@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for l62 (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/l62/l62.mdl"}
+	{Extension "l62.mdl"}
 	{extender "stuff"
 		{item "evh_l62"}
 	}

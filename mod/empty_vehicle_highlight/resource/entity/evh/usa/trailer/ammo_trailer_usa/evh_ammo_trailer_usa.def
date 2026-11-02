@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ammo_trailer_usa (generated)
-	{Extension "../../../../-vehicle/usa/trailer/ammo_trailer_usa/ammo_trailer_usa.mdl"}
+	{Extension "ammo_trailer_usa.mdl"}
 	{extender "stuff"
 		{item "evh_ammo_trailer_usa"}
 	}

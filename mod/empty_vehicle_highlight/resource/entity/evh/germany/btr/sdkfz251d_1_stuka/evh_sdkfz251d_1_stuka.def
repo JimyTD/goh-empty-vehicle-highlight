@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdkfz251d_1_stuka (generated)
-	{Extension "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/sdkfz251d_1_stuka.mdl"}
+	{Extension "sdkfz251d_1_stuka.mdl"}
 	{extender "stuff"
 		{item "evh_sdkfz251d_1_stuka"}
 	}

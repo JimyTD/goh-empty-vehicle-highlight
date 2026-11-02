@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t26e4 (generated)
-	{Extension "../../../../-vehicle/usa/tank_heavy/t26e4/t26e4.mdl"}
+	{Extension "t26e4.mdl"}
 	{extender "stuff"
 		{item "evh_t26e4"}
 	}

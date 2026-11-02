@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for inf_crate_fin (generated)
-	{Extension "../../../../-vehicle/generic/special/inf_crate_fin/inf_crate.mdl"}
+	{Extension "inf_crate.mdl"}
 	{extender "stuff"
 		{item "evh_inf_crate_fin"}
 	}

@@ -1,0 +1,373 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aim_h aim_v gun_rot
+;Exported by:	 nic21
+;Date:			 29.08.2025 21:38:08
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\Cannon\76mm_K00_M1900\76mm_k00.max
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/76mm_k00/recoil.anm"} {speed 0.85}}
+		{sequence "shell_eject" {file "../../../../-vehicle/finland/cannon/76mm_k00/shell_eject.anm"} {speed 0.6}}
+		{sequence "close" {file "../../../../-vehicle/finland/cannon/76mm_k00/close.anm"} {speed 0.8}}
+		{sequence "aim_v" {file "../../../../-vehicle/finland/cannon/76mm_k00/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/finland/cannon/76mm_k00/aim_h.anm"} {speed 1}{resume}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.738;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/cannon/76mm_k00/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 13.878}
+			{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/body.ply"}
+			{bone "recoil_spring"
+				{parameters "id=body;"}
+				{Position -21.5674 	 0 	 -7.9581}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/recoil_spring.ply"}
+			}
+			{bone "rod"
+				{parameters "id=body;"}
+				{Position -33.3984 	 -1.8161 	 -7.1447}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/rod.ply"}
+			}
+			{bone "aim_h"
+				{parameters "id=body;"}
+				{Position -14.6457 	 4.7244 	 -4.626}
+				
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -30.2387 	 -3.0253 	 -8.9434}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -24.2108 	 3.4251 	 -8.6707}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/detail2.ply"}
+			}
+			{bone "recoil_mechanism"
+				{parameters "id=gun;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/cannon/76mm_k00/gun_r.anm"}{speed 0.7}}
+				}
+				{matrix34
+					0.9744 	 0 	 0.225
+					0 	 1 	 0
+					-0.225 	 0 	 0.9744
+					-2.507 	 0 	 2.7936
+				}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/recoil_mechanism.ply"}
+				{bone "gun_rot_bar"
+					{parameters "id=gun;"}
+					{matrix34
+						0.9744 	 0 	 -0.225
+						0 	 1 	 0
+						0.225 	 0 	 0.9744
+						-2.3549 	 -4.3903 	 1.8944
+					}
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/gun_rot_bar.ply"}
+				}
+				{bone "rotating_fake"
+					{parameters "id=gun;"}
+					{matrix34
+						0.9744 	 0 	 -0.225
+						0 	 1 	 0
+						0.225 	 0 	 0.9744
+						8.5739 	 0 	 2.1032
+					}
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/rotating_fake.ply"}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{matrix34
+						0.9744 	 0 	 -0.225
+						0.225 	 0 	 0.9744
+						0 	 -1 	 0
+						8.5739 	 0 	 2.1032
+					}
+					{bone "gun"
+						{parameters "id=gun;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						
+						{bone "foresight1"
+							{Position 30.1432 	 0 	 0}
+						}
+						{bone "breech"
+							{parameters "id=gun;"}
+							{Position -16.2598 	 -2.5197 	 0.1642}
+							
+							{bone "hinge1_1"
+								{parameters "id=gun;"}
+								{Position -2.4016 	 2.5198 	 -1.2468}
+								
+							}
+							{bone "hinge1_2"
+								{parameters "id=gun;"}
+								{Position -2.4016 	 2.5198 	 -1.2468}
+								
+							}
+						}
+						{bone "visor"
+							{Position 6.624 	 3.5398 	 3.462}
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 -1 	 0
+								0 	 0 	 1
+								-17.1673 	 0 	 -0.0222
+							}
+						}
+					}
+				}
+				{bone "aim_v"
+					{parameters "id=gun;"}
+					{matrix34
+						0.9744 	 0 	 -0.225
+						0 	 1 	 0
+						0.225 	 0 	 0.9744
+						-3.3551 	 3.9173 	 -1.1834
+					}
+					
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					0 	 -1 	 0
+					0.9744 	 0 	 0.225
+					-0.225 	 0 	 0.9744
+					-22.3796 	 -2.7174 	 -19.8576
+				}
+			}
+			{bone "seat3"
+				{matrix34
+					0 	 1 	 0
+					-0.9644 	 0 	 -0.2646
+					-0.2646 	 0 	 0.9644
+					-34.3159 	 2.6829 	 -23.0565
+				}
+			}
+			{bone "seat1"
+				{Position 1.1209 	 -8.9479 	 3.3569}
+			}
+			{bone "seat4"
+				{matrix34
+					0.9962 	 0 	 0.0872
+					0 	 1 	 0
+					-0.0872 	 0 	 0.9962
+					1.1238 	 8.974 	 3.3536
+				}
+			}
+		}
+		{bone "link1"
+			{Position -53.0887 	 0.2756 	 15.0883}
+		}
+		{bone "sandbag"
+			{Position 15 	 0 	 0}
+		}
+		{bone "emit4"
+			{Position -55.1181 	 29.5276 	 0}
+		}
+		{bone "emit2"
+			{Position -23.622 	 -29.5276 	 0}
+		}
+		{bone "emit3"
+			{Position -55.1181 	 -29.5276 	 0}
+		}
+		{bone "emit1"
+			{Position -23.622 	 29.5276 	 0}
+		}
+		{bone "charger2"
+			{Position -52.1571 	 -19.685 	 0}
+		}
+		{bone "driver2"
+			{Position -27.5197 	 -15 	 0}
+		}
+		{bone "driver1"
+			{Position -27.5197 	 15 	 0}
+		}
+		{bone "driver3"
+			{Position -50.1772 	 -11.811 	 0}
+		}
+		{bone "driver4"
+			{Position -50.1772 	 11.811 	 0}
+		}
+		{bone "charger"
+			{matrix34
+				0.9063 	 0.4226 	 0
+				-0.4226 	 0.9063 	 0
+				0 	 0 	 1
+				-27.9662 	 -12.1427 	 0
+			}
+		}
+		{bone "pivot_front"
+			{Position 0.0984 	 0 	 13.878}
+			{bone revolute "wheelr"
+				{parameters "id=wheelright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0984 	 -13.4252 	 0
+				}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/wheelr.ply"}
+			}
+			{bone revolute "wheell"
+				{parameters "id=wheelleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0984 	 13.4252 	 0
+				}
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/wheell.ply"}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-0.0053 	 16.5424 	 -13.878
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-0.0053 	 -16.458 	 -13.878
+				}
+			}
+		}
+		{bone "gunner"
+			{Position -25.8647 	 11.009 	 0}
+		}
+		{bone "commander"
+			{Position -49.0748 	 19.685 	 0}
+		}
+	}
+}
+{obstacle "obstacle1"
+	{obb2
+		{center -31.9683 0.0231338}
+		{extent 17.6473 3.32242}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 0.206537 -3.62396e-005}
+		{extent 14.5276 17.3458}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{volume "armor1"
+	{box 8.96074 7.95823 1.36142}
+	{bone "body"}
+	{matrix34
+		-0.9272 	 0 	 -0.3746
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		3.7539 	 9.0159 	 5.0181
+	}
+}
+{volume "armor2"
+	{box 8.96074 7.95823 1.36142}
+	{bone "body"}
+	{matrix34
+		-0.9272 	 0 	 -0.3746
+		0 	 -1 	 0
+		-0.3746 	 0 	 0.9272
+		3.7539 	 -9.0903 	 5.0181
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/barrel1.vol"}
+	{bone "recoil_mechanism"}
+	{matrix34
+		0.9744 	 0 	 -0.225
+		0 	 1 	 0
+		0.225 	 0 	 0.9744
+		-0.0973 	 0 	 -0.3193
+	}
+}
+{volume "barrel2"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/barrel2.vol"}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		6.4749 	 0 	 -0.0197
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/body1.vol"}
+	{bone "body"}
+	{Position -0.315 	 0 	 -0.7283}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/body2.vol"}
+	{bone "body"}
+}
+{volume "body3"
+	{cylinder 1.57738 1.33869}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		0.1575 	 12.7362 	 0.0394
+	}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/body4.vol"}
+	{bone "body"}
+	{Position 0.277 	 0 	 -2.2985}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/body5.vol"}
+	{bone "body"}
+	{Position 0.0777 	 -9.4411 	 -0.726}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/finland/cannon/76mm_k00/body6.vol"}
+	{bone "body"}
+	{Position 0.0777 	 9.4488 	 -0.726}
+}
+{volume "body7"
+	{cylinder 1.57738 1.33869}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		0.1575 	 -12.7362 	 0.0394
+	}
+}
+{volume "select"
+	{box 37.4084 39.5515 25.2401}
+	{bone "basis"}
+	{Position -1.8409 	 -0.0185 	 12.6201}
+}
+{volume "wheelleft"
+	{cylinder 14.5276 1.65999}
+	{bone "wheell"}
+	{Position 0.2065 	 0 	 3.0907}
+}
+{volume "wheelright"
+	{cylinder 14.5276 1.65999}
+	{bone "wheelr"}
+	{Position 0.2065 	 0 	 -3.0906}
+}

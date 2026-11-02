@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 155mm_gpf_ger (generated)
-	{Extension "../../../../-vehicle/germany/cannon/155mm_gpf_ger/155mm_gpf_ger.mdl"}
+	{Extension "155mm_gpf_ger.mdl"}
 	{extender "stuff"
 		{item "evh_155mm_gpf_ger"}
 	}

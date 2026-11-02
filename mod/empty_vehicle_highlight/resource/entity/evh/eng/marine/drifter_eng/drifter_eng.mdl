@@ -1,0 +1,1462 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: cabin_door gun_2_rot1 rear_door1 seat1 seat10 seat11 seat12 seat13 seat14 seat15 seat2 seat3 seat4 seat5 seat6 seat7 seat8 seat9 turret
+;Exported by:	 nic21
+;Date:			 09.10.2025 02:11:08
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\marine\drifter_CD_class\Drifter_CD_class.max
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/eng/marine/drifter_eng/recoil.anm"} {speed 0.6}}
+		{sequence "drift" {file "../../../../-vehicle/eng/marine/drifter_eng/drift.anm"} {speed 0.35}{resume}}
+		{sequence "open" {file "../../../../-vehicle/eng/marine/drifter_eng/open.anm"} {speed 0.3}{resume}}
+		{sequence "open_rear" {file "../../../../-vehicle/eng/marine/drifter_eng/open_rear.anm"} {speed 0.3}{resume}}
+		{sequence "move" {file "../../../../-vehicle/eng/marine/drifter_eng/move.anm"} {speed 1.2}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=30;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/marine/drifter_eng/body_r.anm"}{speed 0.7}}
+			}
+			{matrix34
+				0.9987 	 0 	 0.0515
+				0 	 1 	 0
+				-0.0515 	 0 	 0.9987
+				0 	 0 	 -0.1395
+			}
+			{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/body.ply"}
+			{bone "body_wood_hatch1_1"
+				{parameters "id=body;"}
+				{Position 83.6944 	 11.3958 	 34.0335}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/body_wood_hatch1_1.ply"}
+			}
+			{bone "body_wood_hatch1_2"
+				{parameters "id=body;"}
+				{Position 83.693 	 -11.4045 	 34.0335}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/body_wood_hatch1_2.ply"}
+			}
+			{bone "body_wood_hatch2_1"
+				{parameters "id=body;"}
+				{Position 80.2977 	 9.5669 	 22.0427}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/body_wood_hatch2_1.ply"}
+			}
+			{bone "body_wood_hatch2_2"
+				{parameters "id=body;"}
+				{Position 80.276 	 -10.5543 	 22.099}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/body_wood_hatch2_2.ply"}
+			}
+			{bone "cabin"
+				{parameters "id=cabin;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/marine/drifter_eng/cabin_r.anm"}{speed 0.7}}
+				}
+				{Position -63.582 	 0.0056 	 72.4349}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/cabin.ply"}
+				{bone "detail6"
+					{parameters "id=cabin;"}
+					{Position 51.0616 	 24.3814 	 22.9497}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail6.ply"}
+				}
+				{bone "map"
+					{parameters "id=cabin;"}
+					{Position 52.2536 	 -0.0055 	 -0.1778}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/map.ply"}
+				}
+				{bone "cabin_door"
+					{parameters "id=cabin;"}
+					{Position 50.9346 	 14.8305 	 -25.8846}
+					
+					{bone "window17"
+						{parameters "id=window17;"}
+						{Position -0.7773 	 5.1837 	 25.8357}
+						
+					}
+				}
+				{bone "detail9"
+					{parameters "id=cabin;"}
+					{Position 77.2935 	 -12.2436 	 -8.5697}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail9.ply"}
+				}
+				{bone "detail10"
+					{parameters "id=cabin;"}
+					{Position 78.1974 	 -18.5633 	 -7.3815}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail10.ply"}
+				}
+				{bone "detail11"
+					{parameters "id=cabin;"}
+					{Position 59.881 	 -22.9141 	 -6.3742}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail11.ply"}
+				}
+				{bone revolute "steer"
+					{parameters "id=cabin;"}
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						71.4558 	 -0.2324 	 -15.5951
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/steer.ply"}
+				}
+				{bone "window6"
+					{parameters "id=window6;"}
+					{Position 64.1642 	 27.3726 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window6.ply"}
+				}
+				{bone "window7"
+					{parameters "id=window7;"}
+					{Position 72.1757 	 27.3726 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window7.ply"}
+				}
+				{bone "window9"
+					{parameters "id=window9;"}
+					{Position 81.4145 	 13.1475 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window9.ply"}
+				}
+				{bone "window5"
+					{parameters "id=window5;"}
+					{Position 56.1527 	 27.3726 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window5.ply"}
+				}
+				{bone "window12"
+					{parameters "id=window12;"}
+					{Position 79.2776 	 -24.7878 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window12.ply"}
+				}
+				{bone "window13"
+					{parameters "id=window13;"}
+					{Position 72.1756 	 -27.2958 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window13.ply"}
+				}
+				{bone "window14"
+					{parameters "id=window14;"}
+					{Position 64.1641 	 -27.2958 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window14.ply"}
+				}
+				{bone "window8"
+					{parameters "id=window8;"}
+					{Position 79.2776 	 24.8646 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window8.ply"}
+				}
+				{bone "window10"
+					{parameters "id=window10;"}
+					{Position 81.4145 	 0 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window10.ply"}
+				}
+				{bone "window11"
+					{parameters "id=window11;"}
+					{Position 81.4145 	 -13.1476 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window11.ply"}
+				}
+				{bone "window15"
+					{parameters "id=window15;"}
+					{Position 56.1527 	 -27.2958 	 0.0558}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window15.ply"}
+				}
+				{bone "window16"
+					{parameters "id=window16;"}
+					{Position 50.9357 	 -20.6952 	 -0.0489}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window16.ply"}
+				}
+				{bone revolute "gun_2_rot1"
+					{Position 66.8843 	 0 	 26.899}
+					{bone revolute "gun_2_rot2"
+						{parameters "id=cabin;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+						}
+						
+						{bone "lamp_light_spot1"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								2.8088 	 2.7229 	 0
+							}
+						}
+						{bone "lamp_glass1"
+							{parameters "id=cabin;"}
+							{Position 2.446 	 2.7229 	 0}
+							
+						}
+						{bone "visor2"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								3.9967 	 2.7229 	 0
+							}
+						}
+						{bone "foresight6"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								3.0618 	 2.7229 	 0
+							}
+						}
+					}
+					{bone "gunner2"
+						{parameters "group=crew;"}
+						{Position -8.4504 	 0 	 -16.9718}
+					}
+				}
+				{bone "lifering6"
+					{parameters "id=cabin;"}
+					{Position 83.5408 	 -10.1211 	 -20.8094}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering6.ply"}
+				}
+				{bone "lifering7"
+					{parameters "id=cabin;"}
+					{Position 83.5408 	 10.1392 	 -20.8094}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering7.ply"}
+				}
+				{bone "lifering8"
+					{parameters "id=cabin;"}
+					{Position 65.2288 	 29.6631 	 -20.8094}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering8.ply"}
+				}
+				{bone "detail7"
+					{parameters "id=cabin;"}
+					{Position 77.4844 	 15.9355 	 -9.2907}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail7.ply"}
+				}
+				{bone "detail8"
+					{parameters "id=cabin;"}
+					{Position 78.2799 	 11.5273 	 -8.5697}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail8.ply"}
+				}
+				{bone "lifering5"
+					{parameters "id=cabin;"}
+					{Position 65.2288 	 -29.5863 	 -20.8094}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering5.ply"}
+				}
+				{bone "window4"
+					{parameters "id=window4;"}
+					{Position -74.2088 	 -27.6237 	 -18.7223}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window4.ply"}
+				}
+				{bone "window3"
+					{parameters "id=window3;"}
+					{Position -64.2397 	 -27.6237 	 -18.7223}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window3.ply"}
+				}
+				{bone "window2"
+					{parameters "id=window2;"}
+					{Position -74.2053 	 27.6126 	 -18.7223}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window2.ply"}
+				}
+				{bone "window1"
+					{parameters "id=window1;"}
+					{Position -64.2361 	 27.6126 	 -18.7223}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window1.ply"}
+				}
+				{bone "visor1"
+					{Position 74.7795 	 0 	 0.0558}
+				}
+				{bone "driver"
+					{parameters "group=crew;"}
+					{Position 61.1867 	 0 	 -28.0058}
+				}
+				{bone "commander"
+					{parameters "group=crew;"}
+					{matrix34
+						0.866 	 -0.5 	 0
+						0.5 	 0.866 	 0
+						0 	 0 	 1
+						61.1867 	 -11.315 	 -28.0058
+					}
+				}
+				{bone "rear_mast1_1"
+					{parameters "id=cabin;"}
+					{Position -74.6572 	 0.0055 	 -5.7616}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/rear_mast1_1.ply"}
+					{bone "rear_mast1_2"
+						{parameters "id=cabin;"}
+						{Position 0 	 2.5628 	 2.021}
+						{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/rear_mast1_2.ply"}
+					}
+					{bone "rear_mast_cable"
+						{parameters "id=cabin;"}
+						{Position 39.5564 	 0.0384 	 63.1614}
+						{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/rear_mast_cable.ply"}
+					}
+				}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 42.3836 	 -0.0017 	 40.6385}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -72.7479 	 29.2857 	 31.725}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -72.7517 	 -29.1976 	 31.7251}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -204.341 	 0.014 	 47.71}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail5.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/marine/drifter_eng/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -110.764 	 0.0465 	 57.3025}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/engine.ply"}
+				{bone "hatch_skylight3"
+					{parameters "id=engine;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.8832 	 0.4689
+						0 	 -0.4689 	 0.8832
+						18.6565 	 -13.9043 	 -6.1537
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_skylight3.ply"}
+				}
+				{bone "hatch_skylight4"
+					{parameters "id=engine;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.8832 	 0.4689
+						0 	 -0.4689 	 0.8832
+						37.0831 	 -13.9043 	 -6.1537
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_skylight4.ply"}
+				}
+				{bone "hatch_skylight1"
+					{parameters "id=engine;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.8832 	 -0.4689
+						0 	 0.4689 	 0.8832
+						37.0831 	 13.8275 	 -6.1537
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_skylight1.ply"}
+				}
+				{bone "hatch_skylight2"
+					{parameters "id=engine;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.8832 	 -0.4689
+						0 	 0.4689 	 0.8832
+						18.6565 	 13.8275 	 -6.1537
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_skylight2.ply"}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.0478 	 0 	 0.9989
+						0 	 1 	 0
+						-0.9989 	 0 	 -0.0478
+						67.1209 	 -0.2708 	 77.223
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.0478 	 0 	 0.9989
+						0 	 1 	 0
+						-0.9989 	 0 	 -0.0478
+						65.3014 	 -0.2708 	 76.8559
+					}
+				}
+			}
+			{bone "gun_base"
+				{parameters "id=body;"}
+				{Position 197.677 	 -0.0116 	 54.4823}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/gun_base.ply"}
+				{bone revolute "turret"
+					{parameters "id=gun;"}
+					{Position -0.0002 	 0 	 6.8889}
+					
+					{bone revolute "gun_rot"
+						{parameters "id=gun;"}
+						{animation
+							{sequence "repair" {file "../../../../-vehicle/eng/marine/drifter_eng/gun_r.anm"}{speed 0.7}}
+						}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0.0113 	 0 	 6.5588
+						}
+						
+						{bone "gun"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								15.7388 	 0.0437 	 0
+							}
+							
+							{bone "foresight1"
+								{Position 9.6515 	 0 	 0}
+							}
+						}
+					}
+					{bone "gunner"
+						{parameters "group=crew;"}
+						{matrix34
+							0.9066 	 0.4221 	 0.0048
+							-0.4221 	 0.9063 	 0.0218
+							0.0048 	 -0.0217 	 0.9998
+							-16.6138 	 -9.9922 	 -13.2413
+						}
+					}
+					{bone "charger"
+						{parameters "group=crew;"}
+						{matrix34
+							0 	 -1 	 0
+							1 	 0 	 0
+							0 	 0 	 1
+							-14.5593 	 14.3944 	 -13.2127
+						}
+					}
+				}
+			}
+			{bone "hatch_body1"
+				{parameters "id=body;"}
+				{Position 1.0737 	 59.7973 	 28.4714}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_body1.ply"}
+			}
+			{bone "hatch_body2"
+				{parameters "id=body;"}
+				{Position 1.066 	 -59.7954 	 28.4716}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/hatch_body2.ply"}
+			}
+			{bone "lifering1"
+				{parameters "id=body;"}
+				{Position 72.6711 	 -61.2087 	 34.1239}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering1.ply"}
+			}
+			{bone "lifering2"
+				{parameters "id=body;"}
+				{Position -107.042 	 -58.8442 	 36.9943}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering2.ply"}
+			}
+			{bone "lifering3"
+				{parameters "id=body;"}
+				{Position -107.035 	 58.9367 	 36.9942}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering3.ply"}
+			}
+			{bone "lifering4"
+				{parameters "id=body;"}
+				{Position 72.6789 	 61.2782 	 34.1224}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lifering4.ply"}
+			}
+			{bone "prop"
+				{parameters "id=body;"}
+				{Position -203.681 	 -0.5906 	 -16.4272}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/prop.ply"}
+			}
+			{bone "rear_door1"
+				{parameters "id=body;"}
+				{Position -146.564 	 -7.0866 	 35.2936}
+				
+			}
+			{bone "rear_door2"
+				{parameters "id=body;"}
+				{Position -146.575 	 6.7596 	 35.2936}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/rear_door2.ply"}
+			}
+			{bone revolute "steer_c"
+				{parameters "id=body;"}
+				{Position -226.378 	 -0.2165 	 -15.7351}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/steer_c.ply"}
+			}
+			{bone "windows"
+				{parameters "id=window;"}
+				{Position -175.86 	 -6.6759 	 34.6193}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/windows.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 235.195 	 -0.004 	 29.2616}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/detail1.ply"}
+			}
+			{bone revolute "seat1"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					55.0859 	 -30.7279 	 21.8249
+				}
+			}
+			{bone revolute "seat2"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					72.7342 	 -30.7279 	 21.8249
+				}
+			}
+			{bone revolute "seat3"
+				{matrix34
+					0.7071 	 0.7071 	 0
+					-0.7071 	 0.7071 	 0
+					0 	 0 	 1
+					58.6488 	 -46.9308 	 21.8249
+				}
+			}
+			{bone revolute "seat4"
+				{matrix34
+					0.0872 	 -0.9962 	 0
+					0.9962 	 0.0872 	 0
+					0 	 0 	 1
+					89.6671 	 -26.6937 	 21.8249
+				}
+			}
+			{bone revolute "seat5"
+				{matrix34
+					0.0872 	 -0.9962 	 0
+					0.9962 	 0.0872 	 0
+					0 	 0 	 1
+					113.265 	 -26.6937 	 21.8249
+				}
+			}
+			{bone revolute "seat6"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					58.8857 	 27.5811 	 21.8249
+				}
+			}
+			{bone revolute "seat7"
+				{matrix34
+					-0.1392 	 -0.9903 	 0
+					0.9903 	 -0.1392 	 0
+					0 	 0 	 1
+					76.3085 	 43.5812 	 21.8249
+				}
+			}
+			{bone revolute "seat8"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					92.0393 	 31.9869 	 21.8249
+				}
+			}
+			{bone revolute "seat9"
+				{matrix34
+					-0.9061 	 -0.4152 	 0.0809
+					0.4199 	 -0.906 	 0.0532
+					0.0512 	 0.0822 	 0.9953
+					107.029 	 44.5021 	 22.0965
+				}
+			}
+			{bone revolute "seat10"
+				{matrix34
+					0.9963 	 0 	 0.0856
+					0 	 1 	 0
+					-0.0856 	 0 	 0.9963
+					131.513 	 -13.7771 	 23.2166
+				}
+			}
+			{bone revolute "seat11"
+				{matrix34
+					0 	 1 	 0
+					-0.9963 	 0 	 -0.0856
+					-0.0856 	 0 	 0.9963
+					135.029 	 -35.3549 	 23.519
+				}
+			}
+			{bone revolute "seat12"
+				{matrix34
+					-0.1736 	 -0.9848 	 0
+					0.9848 	 -0.1736 	 0
+					0 	 0 	 1
+					-84.73 	 -46.6331 	 21.6786
+				}
+			}
+			{bone revolute "seat13"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-1.2544 	 52.237 	 21.683
+				}
+			}
+			{bone revolute "seat14"
+				{matrix34
+					0.524 	 0.8517 	 0
+					-0.8517 	 0.524 	 0
+					0 	 0 	 1
+					-14.1265 	 51.8259 	 21.6822
+				}
+			}
+			{bone revolute "seat15"
+				{matrix34
+					0 	 1 	 0
+					-0.9963 	 0 	 -0.0856
+					-0.0856 	 0 	 0.9963
+					138.364 	 23.1428 	 23.8049
+				}
+			}
+			{bone "front_mast_cable"
+				{parameters "id=body;"}
+				{Position 190.094 	 0.0274 	 116.563}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/front_mast_cable.ply"}
+			}
+			{bone "fx_fire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-19.4638 	 0 	 43.7343
+				}
+			}
+			{bone "fx_fire1"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-84.6608 	 0 	 19.6896
+				}
+			}
+			{bone "front_mast1_1"
+				{parameters "id=body;"}
+				{Position 155.216 	 -0.0197 	 48.0118}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/front_mast1_1.ply"}
+				{bone "front_mast1_2"
+					{parameters "id=body;"}
+					{Position -3.2267 	 0.0085 	 9.7495}
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/front_mast1_2.ply"}
+				}
+			}
+			{bone "enumerator1"
+				{matrix34
+					0.8146 	 0.5649 	 0.1319
+					-0.5728 	 0.8192 	 0.0295
+					-0.0914 	 -0.0996 	 0.9908
+					213.988 	 -23.248 	 39.6409
+				}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{matrix34
+					-0.7616 	 0.6341 	 -0.134
+					-0.6416 	 -0.7668 	 0.0179
+					-0.0914 	 0.0996 	 0.9908
+					214.019 	 23.2756 	 39.6419
+				}
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/enumerator2.ply"}
+			}
+			{bone "fire_center1"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					82.5703 	 0 	 12.2472
+				}
+			}
+			{bone "fire_center2"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-93.2418 	 -11.9256 	 29.1402
+				}
+			}
+		}
+		{bone "fx_bulb_norm_engine1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-251.596 	 0 	 0
+			}
+		}
+		{bone "fx_bulb_norm_front1"
+			{matrix34
+				0.2535 	 0.9673 	 0
+				-0.9673 	 0.2535 	 0
+				0 	 0 	 1
+				230.76 	 4.9213 	 0
+			}
+		}
+		{bone "fx_bulb_norm_front2"
+			{matrix34
+				0.3617 	 -0.9323 	 0
+				0.9323 	 0.3617 	 0
+				0 	 0 	 1
+				230.777 	 -4.9213 	 0
+			}
+		}
+		{bone "fx_bulb_small_center1"
+			{matrix34
+				-0.0847 	 -0.9964 	 0
+				0.9964 	 -0.0847 	 0
+				0 	 0 	 1
+				9.425 	 -53.1496 	 0
+			}
+		}
+		{bone "fx_bulb_small_center2"
+			{matrix34
+				0.2056 	 -0.9786 	 0
+				0.9786 	 0.2056 	 0
+				0 	 0 	 1
+				118.97 	 -46.2598 	 0
+			}
+		}
+		{bone "fx_bulb_small_center3"
+			{matrix34
+				-0.04 	 0.9992 	 0
+				-0.9992 	 -0.04 	 0
+				0 	 0 	 1
+				9.6212 	 53.1496 	 0
+			}
+		}
+		{bone "fx_bulb_small_center4"
+			{matrix34
+				0.1427 	 0.9898 	 0
+				-0.9898 	 0.1427 	 0
+				0 	 0 	 1
+				118.983 	 46.2598 	 0
+			}
+		}
+		{bone "fx_bulb_small_center5"
+			{matrix34
+				-0.154 	 -0.9881 	 0
+				0.9881 	 -0.154 	 0
+				0 	 0 	 1
+				-161.801 	 -26.5748 	 0
+			}
+		}
+		{bone "fx_bulb_small_center6"
+			{matrix34
+				-0.1269 	 0.9919 	 0
+				-0.9919 	 -0.1269 	 0
+				0 	 0 	 1
+				-161.798 	 26.5748 	 0
+			}
+		}
+		{bone "fx_bulb_small_engine1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-251.596 	 -15.748 	 0
+			}
+		}
+		{bone "fx_bulb_small_engine2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-251.596 	 15.748 	 0
+			}
+		}
+		{bone "fx_exp1"
+			{Position 241.048 	 -32.8774 	 2.1231}
+		}
+		{bone "fx_exp2"
+			{Position 241.048 	 31.6721 	 2.1231}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.0175 	 -0.9998 	 0
+				0.9998 	 -0.0175 	 0
+				0 	 0 	 1
+				114.085 	 78.7402 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.0175 	 0.9998 	 0
+				-0.9998 	 -0.0175 	 0
+				0 	 0 	 1
+				114.834 	 -78.7402 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-15.6235 	 -88.5827 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-15.6235 	 88.5827 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-121.845 	 -78.7402 	 0.0507
+			}
+		}
+		{bone "emit6"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-121.845 	 78.7402 	 0
+			}
+		}
+		{bone "emit7"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-189.153 	 68.8976 	 0
+			}
+		}
+		{bone "emit8"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-189.153 	 -68.8976 	 0
+			}
+		}
+		{bone "pivot_front"
+			{Position 98.4252 	 0 	 0}
+		}
+		{bone "pivot_back"
+			{Position -98.4252 	 0 	 0}
+		}
+	}
+}
+{volume "armor10"
+	{box 10.9929 16.0696 13.341}
+	{bone "cabin"}
+	{matrix34
+		0.7053 	 0.7089 	 0
+		-0.7089 	 0.7053 	 0
+		0 	 0 	 1
+		14.915 	 -17.6144 	 26.3813
+	}
+}
+{volume "armor11"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor11.vol"}
+	{bone "gun_base"}
+	{Position 0 	 0 	 0}
+}
+{volume "armor12"
+	{cylinder 3.92638 4.33804}
+	{bone "gun_2_rot2"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		0.0085 	 2.7229 	 0
+	}
+}
+{volume "armor13"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor13.vol"}
+	{bone "front_mast1_1"}
+	{Position 0.1181 	 0 	 -5.4134}
+}
+{volume "armor14"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor14.vol"}
+	{bone "front_mast1_2"}
+	{Position 3.3449 	 -0.0085 	 74.3834}
+}
+{volume "armor15"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor15.vol"}
+	{bone "rear_mast1_1"}
+	{Position 0 	 0 	 -21.2992}
+}
+{volume "armor16"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor16.vol"}
+	{bone "rear_mast1_2"}
+	{Position 0 	 -2.5628 	 70.6337}
+}
+{volume "armor17"
+	{cylinder 1.9685 125.059}
+	{bone "rear_mast1_2"}
+	{matrix34
+		0.065 	 0.0006 	 0.9979
+		-0.0004 	 1 	 -0.0005
+		-0.9979 	 -0.0004 	 0.065
+		-63.4346 	 -2.5629 	 9.9775
+	}
+}
+{volume "armor18"
+	{cylinder 2.01528 126.024}
+	{bone "rear_mast1_2"}
+	{matrix34
+		0.6074 	 0 	 0.7944
+		0 	 1 	 0
+		-0.7944 	 0 	 0.6074
+		-49.8533 	 -2.5627 	 105.059
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/armor1.vol"}
+	{bone "body"}
+	{Position 203.021 	 -0.012 	 47.7812}
+}
+{volume "armor2"
+	{box 29.463 29.4666 18.5445}
+	{bone "body"}
+	{Position 198.15 	 -0.0117 	 38.3843}
+}
+{volume "armor3"
+	{box 71.4566 42.3777 11.7647}
+	{bone "body"}
+	{Position 89.1504 	 -0.0047 	 27.2742}
+}
+{volume "armor4"
+	{box 20.1865 45.7735 9.35397}
+	{bone "body"}
+	{Position 42.518 	 -0.0019 	 26.2847}
+}
+{volume "armor5"
+	{box 13.7925 45.7726 6.43473}
+	{bone "body"}
+	{Position 25.5285 	 -0.0015 	 24.8251}
+}
+{volume "armor6"
+	{box 8.12352 4.8939 81.5583}
+	{bone "cabin"}
+	{matrix34
+		0.9989 	 0 	 0.0472
+		0 	 1 	 0
+		-0.0472 	 0 	 0.9989
+		36.57 	 -0.2324 	 11.5709
+	}
+}
+{volume "armor7"
+	{cylinder 6.39552 48.7224}
+	{bone "cabin"}
+	{matrix34
+		0.9996 	 0.0295 	 0
+		-0.0295 	 0.9996 	 0
+		0 	 0 	 1
+		12.1303 	 14.8173 	 -4.6485
+	}
+}
+{volume "armor8"
+	{box 10.9929 16.0696 13.341}
+	{bone "cabin"}
+	{matrix34
+		0.726 	 -0.6877 	 0
+		0.6877 	 0.726 	 0
+		0 	 0 	 1
+		14.915 	 17.6126 	 26.3813
+	}
+}
+{volume "armor9"
+	{cylinder 6.39552 48.7224}
+	{bone "cabin"}
+	{matrix34
+		0.9996 	 0.0295 	 0
+		-0.0295 	 0.9996 	 0
+		0 	 0 	 1
+		12.1303 	 -14.8379 	 -4.6485
+	}
+}
+{volume "ballast1"
+	{box 127.953 39.3701 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		191.91 	 39.3779 	 -6.2278
+	}
+}
+{volume "ballast2"
+	{box 127.953 39.3701 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		191.91 	 -39.3623 	 -6.2278
+	}
+}
+{volume "ballast3"
+	{box 127.953 39.3701 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		63.9554 	 39.3701 	 -11.0934
+	}
+}
+{volume "ballast4"
+	{box 127.953 39.3701 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		63.9554 	 -39.3701 	 -11.0934
+	}
+}
+{volume "ballast5"
+	{box 127.953 39.3701 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-63.9973 	 39.3701 	 -11.0378
+	}
+}
+{volume "ballast6"
+	{box 127.953 39.3701 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-63.9974 	 -39.37 	 -11.0378
+	}
+}
+{volume "ballast7"
+	{box 127.953 39.3701 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-191.948 	 39.3781 	 -6.0609
+	}
+}
+{volume "ballast8"
+	{box 127.953 39.3701 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-191.948 	 -39.3621 	 -6.0609
+	}
+}
+{volume "barrel1"
+	{cylinder 3.00994 3.42637}
+	{bone "turret"}
+	{Position 0 	 0 	 1.3656}
+}
+{volume "barrel2"
+	{cylinder 1.91453 15.2362}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		-0.9759 	 0 	 0
+	}
+}
+{volume "barrel3"
+	{cylinder 1.09128 19.1976}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-0.0096 	 0 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body1.vol"}
+	{bone "body"}
+	{Position 15.6848 	 0 	 -21.2425}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body2.vol"}
+	{bone "body"}
+	{Position 199.981 	 -0.0093 	 27.654}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body3.vol"}
+	{bone "body"}
+	{Position 80.3667 	 0.001 	 21.5128}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body4.vol"}
+	{bone "body"}
+	{Position -75.6222 	 0.002 	 21.4754}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body5.vol"}
+	{bone "body"}
+	{Position -179.178 	 0.01 	 23.435}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/body6.vol"}
+	{bone "body"}
+	{Position -234.152 	 0.0138 	 32.3997}
+}
+{volume "breech"
+	{box 3.88699 3.96321 3.87777}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-10.5468 	 0.0183 	 0
+	}
+}
+{volume "cabin1"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/cabin1.vol"}
+	{bone "cabin"}
+	{Position 66.1801 	 -0.0031 	 -40.2598}
+}
+{volume "cabin2"
+	{box 132.928 55.2821 22.815}
+	{bone "cabin"}
+	{Position -15.7708 	 -0.0031 	 -40.2597}
+}
+{volume "cabin3"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/cabin3.vol"}
+	{bone "cabin"}
+	{Position -59.7339 	 -0.0031 	 -17.1707}
+}
+{volume "cabin4"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/cabin4.vol"}
+	{bone "cabin"}
+	{Position -19.3124 	 -0.0031 	 -21.7739}
+}
+{volume "cabin5"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/cabin5.vol"}
+	{bone "cabin"}
+	{Position 66.1803 	 -0.0031 	 -9.6209}
+}
+{volume "detail5"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/detail5.vol"}
+	{bone "detail5"}
+	{Position -0.9675 	 -0.014 	 -1.2746}
+}
+{volume "engine1"
+	{box 90.475 55.1013 55.4282}
+	{bone "engine"}
+	{Position 48.3266 	 -0.0465 	 -48.9288}
+}
+{volume "engine2"
+	{cylinder 9.91196 94.1957}
+	{bone "engine"}
+	{matrix34
+		0.9989 	 0 	 0.0472
+		0 	 1 	 0
+		-0.0472 	 0 	 0.9989
+		68.569 	 -0.2708 	 30.6417
+	}
+}
+{volume "hole10"
+	{box 28.937 10.0616 13.9634}
+	{bone "cabin"}
+	{Position 67.3025 	 13.1475 	 0.0558}
+}
+{volume "hole11"
+	{box 3.56386 5.47037 13.9634}
+	{bone "cabin"}
+	{matrix34
+		0.766 	 -0.6428 	 0
+		0.6428 	 0.766 	 0
+		0 	 0 	 1
+		79.2776 	 -24.7878 	 0.0558
+	}
+}
+{volume "hole12"
+	{box 3.56386 5.47037 13.9634}
+	{bone "cabin"}
+	{matrix34
+		0.766 	 0.6428 	 0
+		-0.6428 	 0.766 	 0
+		0 	 0 	 1
+		79.2776 	 24.7779 	 0.0558
+	}
+}
+{volume "hole13"
+	{cylinder 3.14053 56.1214}
+	{bone "cabin"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-64.2361 	 -0.0056 	 -18.7223
+	}
+}
+{volume "hole14"
+	{cylinder 3.14053 56.1214}
+	{bone "cabin"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-74.2133 	 -0.0056 	 -18.7223
+	}
+}
+{volume "hole15"
+	{box 1.5748 10.0601 12.6582}
+	{bone "cabin"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		50.8968 	 20.0142 	 -0.0489
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/hole1.vol"}
+	{bone "body"}
+	{Position 169.075 	 0.1231 	 40.673}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/hole2.vol"}
+	{bone "body"}
+	{Position 24.3604 	 0 	 31.9998}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/hole3.vol"}
+	{bone "body"}
+	{Position -155.385 	 -0.0189 	 35.9347}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/hole4.vol"}
+	{bone "cabin"}
+	{Position 66.2635 	 -0.0056 	 -9.8039}
+}
+{volume "hole5"
+	{box 6.43306 55.5118 13.9634}
+	{bone "cabin"}
+	{Position 56.1527 	 0.0384 	 0.0558}
+}
+{volume "hole6"
+	{box 6.43306 55.5118 13.9634}
+	{bone "cabin"}
+	{Position 64.1642 	 0.0384 	 0.0558}
+}
+{volume "hole7"
+	{box 6.43307 55.5118 13.9634}
+	{bone "cabin"}
+	{Position 72.1756 	 0.0384 	 0.0558}
+}
+{volume "hole8"
+	{box 28.937 10.0716 13.9634}
+	{bone "cabin"}
+	{Position 67.3025 	 -13.1476 	 0.0558}
+}
+{volume "hole9"
+	{box 28.937 10.077 13.9634}
+	{bone "cabin"}
+	{Position 67.3025 	 0 	 0.0558}
+}
+{volume "lamp"
+	{cylinder 3.54331 0.76002}
+	{bone "lamp_glass1"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		0.0451 	 0 	 0
+	}
+}
+{volume "lifering1"
+	{cylinder 10.3689 5.05984}
+	{bone "lifering1"}
+	{matrix34
+		0 	 0 	 -1
+		-0.9848 	 -0.1736 	 0
+		-0.1736 	 0.9848 	 0
+		0 	 -1.1161 	 -4.1802
+	}
+}
+{volume "lifering2"
+	{cylinder 10.3689 5.05984}
+	{bone "lifering2"}
+	{matrix34
+		0 	 0 	 -1
+		-1 	 0 	 0
+		0 	 1 	 0
+		0.0075 	 -1.2346 	 -4.2078
+	}
+}
+{volume "lifering3"
+	{cylinder 10.3689 5.05984}
+	{bone "lifering3"}
+	{matrix34
+		0 	 0 	 -1
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 1.1407 	 -4.2076
+	}
+}
+{volume "lifering4"
+	{cylinder 10.3689 5.05984}
+	{bone "lifering4"}
+	{matrix34
+		0 	 0 	 -1
+		-0.9848 	 0.1736 	 0
+		0.1736 	 0.9848 	 0
+		-0.0078 	 1.0446 	 -4.1787
+	}
+}
+{volume "lifering5"
+	{cylinder 6.86679 2.75591}
+	{bone "lifering5"}
+	{matrix34
+		0 	 0 	 -1
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "lifering6"
+	{cylinder 6.86679 2.75591}
+	{bone "lifering6"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "lifering7"
+	{cylinder 6.86679 2.75591}
+	{bone "lifering7"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 0
+	}
+}
+{volume "lifering8"
+	{cylinder 6.86679 2.75591}
+	{bone "lifering8"}
+	{matrix34
+		0 	 0 	 -1
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "window10"
+	{box 0.19685 10.077 13.9634}
+	{bone "window10"}
+	{Position 0 	 0 	 0}
+}
+{volume "window11"
+	{box 0.19685 10.0716 13.9634}
+	{bone "window11"}
+	{Position 0 	 0 	 0}
+}
+{volume "window12"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/window12.vol"}
+	{bone "window12"}
+	{Position 0.0031 	 -0.0173 	 0}
+}
+{volume "window13"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window13"}
+	{Position 0 	 0 	 0}
+}
+{volume "window14"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window14"}
+	{Position 0 	 0 	 0}
+}
+{volume "window15"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window15"}
+	{Position 0 	 0 	 0}
+}
+{volume "window16"
+	{box 0.19685 10.7283 14.3408}
+	{bone "window16"}
+	{Position 0 	 0 	 0}
+}
+{volume "window17"
+	{box 0.19685 10.0601 12.6581}
+	{bone "window17"}
+	{Position 0 	 0 	 0}
+}
+{volume "window1"
+	{cylinder 3.19493 0.19685}
+	{bone "window1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "window2"
+	{cylinder 3.19493 0.19685}
+	{bone "window2"}
+	{orientation
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+	}
+}
+{volume "window3"
+	{cylinder 3.19493 0.19685}
+	{bone "window3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "window4"
+	{cylinder 3.19493 0.19685}
+	{bone "window4"}
+	{orientation
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+	}
+}
+{volume "window5"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window5"}
+	{Position 0 	 0 	 0}
+}
+{volume "window6"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window6"}
+	{Position 0 	 0 	 0}
+}
+{volume "window7"
+	{box 6.43309 0.19685 13.9634}
+	{bone "window7"}
+	{Position 0 	 0 	 0}
+}
+{volume "window8"
+	{polyhedron "../../../../-vehicle/eng/marine/drifter_eng/window8.vol"}
+	{bone "window8"}
+	{Position 0 	 0 	 0}
+}
+{volume "window9"
+	{box 0.19685 10.0616 13.9634}
+	{bone "window9"}
+	{Position 0 	 0 	 0}
+}

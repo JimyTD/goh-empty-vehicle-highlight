@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wagon_plato (generated)
-	{Extension "../../../../-vehicle/generic/train/wagon_plato/wagon_plato.mdl"}
+	{Extension "wagon_plato.mdl"}
 	{extender "stuff"
 		{item "evh_wagon_plato"}
 	}

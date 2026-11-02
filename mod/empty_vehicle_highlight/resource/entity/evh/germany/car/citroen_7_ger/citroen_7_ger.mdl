@@ -1,0 +1,618 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorleft1 doorleft2 doorright1 doorright2
+;Exported by:	 nic21
+;Date:			 04.04.2025 14:27:21
+;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\car\Citroen_7_ger\citroen_7_ger.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/car/citroen_7_ger/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/car/citroen_7_ger/stop.anm"} {speed 0.6}}
+		{sequence "hit" {file "../../../../-vehicle/germany/car/citroen_7_ger/hit.anm"} {speed 0.6}}
+		{sequence "doorleft1" {file "../../../../-vehicle/germany/car/citroen_7_ger/doorleft1.anm"} {speed 0.3}{events {1 "open_left"}}}
+		{sequence "doorright1" {file "../../../../-vehicle/germany/car/citroen_7_ger/doorright1.anm"} {speed 0.3}{events {1 "open_right"}}}
+		{sequence "doorleft2" {file "../../../../-vehicle/germany/car/citroen_7_ger/doorleft2.anm"} {speed 0.3}{events {1 "open_left"}}}
+		{sequence "doorright2" {file "../../../../-vehicle/germany/car/citroen_7_ger/doorright2.anm"} {speed 0.3}{events {1 "open_right"}}}
+		{sequence "wipers" {file "../../../../-vehicle/germany/car/citroen_7_ger/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=32;wheelradius=0.365;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/car/citroen_7_ger/body_r.anm"}{speed 0.7}}
+			}
+			{Position 1.3915 	 1.5483 	 23.8416}
+			{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/car/citroen_7_ger/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 24.5856 	 0.6681 	 -8.3964}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/engine.ply"}
+				{bone "engine_hood1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9986 	 0 	 -0.0523
+						0 	 1 	 0
+						0.0523 	 0 	 0.9986
+						-10.241 	 -2.2145 	 7.0487
+					}
+					{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/engine_hood1.ply"}
+				}
+				{bone "engine_hood2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9986 	 0 	 -0.0523
+						0 	 1 	 0
+						0.0523 	 0 	 0.9986
+						-10.241 	 -2.2537 	 7.0487
+					}
+					{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/engine_hood2.ply"}
+				}
+			}
+			{bone "backdoor"
+				{parameters "id=body;"}
+				{Position -43.2452 	 -1.5483 	 -15.4942}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/backdoor.ply"}
+				{bone "detail1"
+					{parameters "id=body;"}
+					{Position 3.8496 	 0 	 6.7708}
+					{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/detail1.ply"}
+				}
+			}
+			{bone "window6"
+				{parameters "id=window6;"}
+				{Position -30.0595 	 -1.5483 	 1.6552}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/window6.ply"}
+			}
+			{bone "doorright1"
+				{parameters "id=body;"}
+				{Position -6.6521 	 -15.8765 	 -5.0589}
+				
+				{bone "window3"
+					{parameters "id=window3;"}
+					{Position 7.3653 	 1.6682 	 5.9095}
+					
+				}
+			}
+			{bone "doorright2"
+				{parameters "id=body;"}
+				{Position -7.161 	 -15.7413 	 -5.0172}
+				
+				{bone "window5"
+					{parameters "id=window5;"}
+					{Position -8.1134 	 0.5376 	 5.7799}
+					
+				}
+			}
+			{bone "doorleft1"
+				{parameters "id=body;"}
+				{Position -6.6521 	 12.662 	 -5.0589}
+				
+				{bone "window2"
+					{parameters "id=window2;"}
+					{Position 7.3653 	 -1.5504 	 5.9095}
+					
+				}
+			}
+			{bone "doorleft2"
+				{parameters "id=body;"}
+				{Position -7.161 	 12.6699 	 -5.0172}
+				
+				{bone "window4"
+					{parameters "id=window4;"}
+					{Position -8.1134 	 -0.5629 	 5.7799}
+					
+				}
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position 8.8385 	 -1.5483 	 1.6921}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/window1.ply"}
+			}
+			{bone "visor1"
+				{Position 11.1325 	 -7.3459 	 1.9624}
+			}
+			{bone "visor2"
+				{Position 11.1325 	 5.1008 	 1.9624}
+			}
+			{bone "headlightl"
+				{Position 38.4765 	 7.9578 	 -6.1184}
+			}
+			{bone "headlightr"
+				{Position 38.4765 	 -11.0167 	 -6.1184}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-40.1972 	 -15.4753 	 -11.6669
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-40.1972 	 12.3658 	 -11.6669
+				}
+			}
+			{bone "fxfire1"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					24.1358 	 -1.5484 	 -6.7684
+				}
+			}
+			{bone "transmission"
+				{Position 15.319 	 -1.6618 	 -14.4069}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-44.1921 	 6.865 	 -18.9813
+				}
+			}
+			{bone "fuel"
+				{Position -34.9947 	 -2.8243 	 -14.294}
+			}
+			{bone "driver"
+				{matrix34
+					0.9272 	 0 	 0.3746
+					0 	 1 	 0
+					-0.3746 	 0 	 0.9272
+					6.458 	 3.0388 	 -19.5354
+				}
+			}
+			{bone "commander"
+				{matrix34
+					0.9272 	 0 	 0.3746
+					0 	 1 	 0
+					-0.3746 	 0 	 0.9272
+					6.4696 	 -6.4231 	 -19.5151
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0.9272 	 0 	 0.3746
+					0 	 1 	 0
+					-0.3746 	 0 	 0.9272
+					-9.7773 	 4.1277 	 -19.7179
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0.9272 	 0 	 0.3746
+					0 	 1 	 0
+					-0.3746 	 0 	 0.9272
+					-9.7773 	 -7.5849 	 -19.724
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					-5.7785 	 -1.5484 	 -16.0392
+				}
+			}
+			{bone "enumerator1"
+				{matrix34
+					-0.0265 	 0.9996 	 0.0135
+					-0.0047 	 -0.0137 	 0.9999
+					0.9996 	 0.0264 	 0.0051
+					-1.4863 	 -0.5239 	 -16.8109
+				}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/enumerator1.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.4888 	 0 	 -0.8724
+					0 	 1 	 0
+					0.8724 	 0 	 -0.4888
+					9.9371 	 5.6209 	 -5.7351
+				}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/steer.ply"}
+			}
+			{bone "wiperl"
+				{parameters "id=body;"}
+				{matrix34
+					0.9324 	 0.0349 	 0.3599
+					-0.0196 	 0.9987 	 -0.0462
+					-0.361 	 0.036 	 0.9319
+					7.5148 	 3.4668 	 5.3799
+				}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wiperl.ply"}
+			}
+			{bone "wiperr"
+				{parameters "id=body;"}
+				{matrix34
+					0.9315 	 -0.0348 	 0.3622
+					0.0455 	 0.9987 	 -0.0209
+					-0.361 	 0.036 	 0.9319
+					7.5148 	 -6.568 	 5.3799
+				}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wiperr.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 33.8382 	 0 	 7.04}
+			{bone revolute "steerl1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 13.522 	 -0.0109
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						0.0063 	 -2.0461 	 7.0042
+					}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.365;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 1.9483 	 0.0109
+						}
+						{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wheell1.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr1"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -13.4479 	 -0.0109
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9962 	 0 	 -0.0872
+						0 	 1 	 0
+						0.0872 	 0 	 -0.9962
+						-0.0228 	 2.0059 	 7.028
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.08 0.08}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 0 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.365;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0001 	 -1.9479 	 0.0109
+						}
+						{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wheelr1.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -13.4479 	 -0.0109}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.39;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 13.522 	 -0.0109}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.39;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+			{bone "susp_front"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/susp_front.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -27.5615 	 0 	 7.04}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 -15.3958 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.365;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.05}
+				{Position 0 	 15.4703 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.365;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/wheell2.ply"}
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-5.3181 	 16.4891 	 -5.2686
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-5.3449 	 -16.4185 	 -5.2686
+				}
+			}
+			{bone "susp_back"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/car/citroen_7_ger/susp_back.ply"}
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				13.8868 	 25.3994 	 -0.601
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				13.8868 	 -26.0939 	 -0.601
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-13.4236 	 25.3994 	 -0.601
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-13.4951 	 -26.0939 	 -0.601
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body1.vol"}
+	{bone "body"}
+	{Position 26.0257 	 -1.5521 	 -9.6695}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body2.vol"}
+	{bone "body"}
+	{Position -16.107 	 -1.5454 	 -4.8655}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body3.vol"}
+	{bone "doorleft1"}
+	{Position 9.4837 	 -1.2506 	 -4.1108}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body4.vol"}
+	{bone "doorleft2"}
+	{Position -8.4626 	 -0.1619 	 -4.3717}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body5.vol"}
+	{bone "doorright1"}
+	{Position 9.4837 	 1.3114 	 -4.1108}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/body6.vol"}
+	{bone "doorright2"}
+	{Position -8.4626 	 0.3373 	 0.0106}
+}
+{volume "detail1"
+	{cylinder 7.18504 3.43202}
+	{bone "detail1"}
+	{matrix34
+		0 	 -1 	 0
+		-0.5948 	 0 	 -0.8039
+		0.8039 	 0 	 -0.5948
+		-0.6736 	 0 	 0.4377
+	}
+}
+{volume "engine"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/engine.vol"}
+	{bone "engine"}
+	{Position -1.7745 	 -7.3961 	 -2.8876}
+}
+{volume "fuel"
+	{box 9.97713 2.93836 14.8691}
+	{bone "fuel"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 1.3297 	 0
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/hole1.vol"}
+	{bone "body"}
+	{Position 2.7317 	 -1.5673 	 -5.107}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/hole2.vol"}
+	{bone "body"}
+	{Position -15.6195 	 -1.5294 	 -4.9838}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/hole3.vol"}
+	{bone "body"}
+	{Position 8.1173 	 -1.5728 	 2.0039}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/hole4.vol"}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-31.9131 	 -1.5313 	 1.6544
+	}
+}
+{volume "hole5"
+	{box 25.6278 6.76135 8.73934}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		-7.2984 	 -1.5371 	 1.4631
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/ram.vol"}
+	{bone "body"}
+	{Position -1.3973 	 -1.5425 	 -12.9609}
+}
+{volume "transmission"
+	{cylinder 2.53122 4.97641}
+	{bone "transmission"}
+	{matrix34
+		0 	 1 	 0
+		0.0175 	 0 	 0.9998
+		0.9998 	 0 	 -0.0175
+		0 	 0 	 0
+	}
+}
+{volume "wheelleft1"
+	{cylinder 7.18504 3.45354}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0073
+	}
+}
+{volume "wheelleft2"
+	{cylinder 7.18504 3.45992}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0122
+	}
+}
+{volume "wheelright1"
+	{cylinder 7.18504 3.45827}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0086
+	}
+}
+{volume "wheelright2"
+	{cylinder 7.18504 3.43202}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0042
+	}
+}
+{volume "window1"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window1.vol"}
+	{bone "window1"}
+	{Position -0.1327 	 -0.0244 	 0.2293}
+}
+{volume "window2"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window2.vol"}
+	{bone "window2"}
+	{Position 0.4354 	 -0.0323 	 0.4472}
+}
+{volume "window3"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window3.vol"}
+	{bone "window3"}
+	{Position 0.4354 	 0.0178 	 0.4472}
+}
+{volume "window4"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window4.vol"}
+	{bone "window4"}
+	{Position -0.1227 	 0.0679 	 0.4752}
+}
+{volume "window5"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window5.vol"}
+	{bone "window5"}
+	{Position -0.1227 	 0.0043 	 0.4752}
+}
+{volume "window6"
+	{polyhedron "../../../../-vehicle/germany/car/citroen_7_ger/window6.vol"}
+	{bone "window6"}
+	{Position 0.0018 	 0.0834 	 -0.1191}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for humber_scout (generated)
-	{Extension "../../../../-vehicle/eng/btr/humber_scout/humber_scout.mdl"}
+	{Extension "humber_scout.mdl"}
 	{extender "stuff"
 		{item "evh_humber_scout"}
 	}

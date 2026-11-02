@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for valentine_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/valentine_mk1/valentine_mk1.mdl"}
+	{Extension "valentine_mk1.mdl"}
 	{texmod "early"}
 	{extender "stuff"
 		{item "evh_valentine_mk1"}

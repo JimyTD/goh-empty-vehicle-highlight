@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bison (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/bison/bison.mdl"}
+	{Extension "bison.mdl"}
 	{extender "stuff"
 		{item "evh_bison"}
 	}

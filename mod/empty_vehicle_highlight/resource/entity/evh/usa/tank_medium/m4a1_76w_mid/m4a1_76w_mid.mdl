@@ -1,0 +1,1303 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_driver hatch_r mgun_h_rot1 turret
+;Exported by:	 Robin
+;Date:			 20.05.2024 16:51:03
+;File:			 E:\SVN GoH USA 3D models\vehicles\tank_medium\M4A1_76w_mid\M4A1_76w_mid.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/stop.anm"} {speed 0.7}}
+		{sequence "hit" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/hit.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/open.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/open_driver.anm"} {speed 0.45}{resume} {events {2 "hatch_medium"} {100 "hatch_medium"}}}
+		{sequence "open_co_driver" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/open_co_driver.anm"} {speed 0.55}{resume} {events {2 "hatch_medium"} {100 "hatch_medium"}}}
+		{sequence "mgun_aa" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/mgun_aa.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.26;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.1778 	 -0.0008 	 23.723}
+			{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.006}
+				{Position 2.1333 	 0.0008 	 14.9221}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=turret;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -10 25}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						17.9495 	 0 	 6.6258
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							5.709 	 -0.0162 	 0
+						}
+						
+						{bone "foresight1"
+							{Position 56.6935 	 0.0325 	 0.005}
+						}
+					}
+					{bone "mgun_turrret"
+						{parameters "id=turret;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-5.2209 	 0.5608 	 -6.762
+						}
+						
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							5.3213 	 0.827 	 -7.1134
+						}
+					}
+				}
+				{bone revolute "cupola_ring"
+					{parameters "id=turret;"}
+					{speed 0.007}
+					{Position -7.598 	 9.5463 	 15.1812}
+					
+					{bone "hatch_turret1"
+						{parameters "id=turret;"}
+						{Position -1.1496 	 7.1585 	 1.2658}
+						
+					}
+					{bone "hatch_turret2"
+						{parameters "id=turret;"}
+						{Position 1.2441 	 -7.1585 	 1.2657}
+						
+					}
+					{bone "mg_holder"
+						{parameters "id=turret;"}
+						{Position -7.3581 	 0 	 2.1283}
+						
+					}
+					{bone "gunner2"
+						{Position -4.7333 	 0.0663 	 -19.2245}
+					}
+					{bone revolute "mgun_a_rot1"
+						{parameters "id=turret;"}
+						{limits -10 10}
+						{speed 0.01}
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							7.8543 	 -0.0065 	 2.6532
+						}
+						
+						{bone revolute "mgun_a_rot2"
+							{parameters "id=turret;"}
+							{limits -10 40}
+							{speed 0.01}
+							{matrix34
+								0.9976 	 0 	 -0.0698
+								0.0698 	 0 	 0.9976
+								0 	 -1 	 0
+								-2.5634 	 -0.9953 	 4.8315
+							}
+							
+							{bone "mgun"
+								{matrix34
+									1 	 -0.0015 	 0
+									0.0015 	 1 	 0
+									0 	 0 	 1
+									-8.0701 	 0.1396 	 -0.9949
+								}
+							}
+						}
+					}
+				}
+				{bone "antenna1"
+					{parameters "id=turret;"}
+					{Position -21.4102 	 -10.1226 	 19.9361}
+					
+					{bone "antenna2"
+						{parameters "id=turret;"}
+						{Position -0.0306 	 0 	 8.4227}
+						
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						-7.3103 	 -9.458 	 10.2458
+					}
+				}
+				{bone "ammo3"
+					{Position -8.6486 	 0 	 -13.7067}
+				}
+				{bone "visor1"
+					{Position -3.3963 	 -9.4408 	 18.6586}
+				}
+				{bone "hatch_turret3"
+					{parameters "id=turret;"}
+					{matrix34
+						0.9406 	 -0.3395 	 0
+						0.3395 	 0.9406 	 0
+						0 	 0 	 1
+						-11.9944 	 -14.7574 	 17.6013
+					}
+					
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.7431 	 0 	 0.6691
+						0 	 1 	 0
+						-0.6691 	 0 	 0.7431
+						14.1676 	 10.4604 	 14.1881
+					}
+					{bone "smoke_shot1"
+						{Position 1.7292 	 0.0085 	 -0.0007}
+					}
+				}
+				{bone "sight"
+					{Position 24.0399 	 -7.1099 	 8.9003}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -37.771 	 -0.0013 	 -0.2963}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine.ply"}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{Position 6.8735 	 4.2066 	 13.7325}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/hatch_engine1.ply"}
+				}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position 3.276 	 -8.4847 	 12.1855}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/hatch_engine2.ply"}
+				}
+				{bone "engine_door1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9749 	 0 	 0.2226
+						0 	 1 	 0
+						-0.2226 	 0 	 0.9749
+						-8.6178 	 8.0752 	 0.2858
+					}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine_door1.ply"}
+				}
+				{bone "engine_door2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9831 	 0 	 0.1832
+						0 	 1 	 0
+						-0.1832 	 0 	 0.9831
+						-8.6037 	 -8.1098 	 0.1583
+					}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine_door2.ply"}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-14.2362 	 -23.4467 	 7.8873
+					}
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-14.2361 	 23.4227 	 7.8837
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.3768 	 0 	 -0.9263
+						0 	 1 	 0
+						0.9263 	 0 	 -0.3768
+						-16.0492 	 3.0036 	 0.6259
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.3768 	 0 	 -0.9263
+						0 	 1 	 0
+						0.9263 	 0 	 -0.3768
+						-16.0492 	 -3.3073 	 0.6259
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						8.3598 	 0.0027 	 6.7538
+					}
+				}
+				{bone "bench1"
+					{parameters "id=engine;"}
+					{Position -16.3931 	 -0.0012 	 5.9239}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/bench1.ply"}
+				}
+				{bone "bench2"
+					{parameters "id=engine;"}
+					{Position -16.3931 	 -0.0012 	 5.9239}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/bench2.ply"}
+				}
+				{bone "grill"
+					{parameters "id=engine;"}
+					{Position -16.8289 	 -5.8893 	 0.2541}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/grill.ply"}
+				}
+			}
+			{bone "hatch_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.8323 	 0 	 -0.5543
+					0 	 1 	 0
+					0.5543 	 0 	 0.8323
+					27.1938 	 -17.1674 	 13.7517
+				}
+				
+			}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{matrix34
+					0.8323 	 0 	 -0.5543
+					0 	 1 	 0
+					0.5543 	 0 	 0.8323
+					27.1938 	 17.1904 	 13.7517
+				}
+				
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -25 20}
+				{Position 40.9107 	 -9.9717 	 4.7586}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.0501 	 0.0712 	 -0.0155
+						}
+					}
+					{bone "mgun_hull"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.4107 	 -0.2652 	 0.3502
+						}
+						
+					}
+					{bone "hull_mg_shield"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.4338 	 0 	 0
+						}
+						
+					}
+				}
+			}
+			{bone "visor2"
+				{Position 36.8318 	 8.1928 	 13.349}
+			}
+			{bone "transmission"
+				{Position 40.7964 	 0.4128 	 -6.6442}
+			}
+			{bone "fuel4"
+				{Position -36.9451 	 -20.5025 	 6.2054}
+			}
+			{bone "fuel3"
+				{Position -36.9451 	 20.5589 	 6.2054}
+			}
+			{bone "fuel2"
+				{Position -30.2738 	 -12.4627 	 -8.1692}
+			}
+			{bone "fuel1"
+				{Position -30.2739 	 12.3488 	 -8.1691}
+			}
+			{bone "sus_l1"
+				{Position 32.3002 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l2"
+				{Position 3.7624 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l3"
+				{Position -24.3147 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_r1"
+				{Position 32.3002 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r2"
+				{Position 3.7624 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r3"
+				{Position -24.3147 	 -20.45 	 -11.0801}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					43.8697 	 15.8318 	 5.8175
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					43.8591 	 -15.8264 	 5.8152
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					1.3199 	 0.0009 	 10.7562
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-23.9841 	 24.7742 	 4.3406
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-22.4374 	 -24.8594 	 4.4285
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.1212 	 -0.9871 	 0.1045
+					0.9925 	 -0.1219 	 0
+					0.0127 	 0.1037 	 0.9945
+					-43.1396 	 -24.4591 	 3.81
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0.1204 	 0.9743 	 0.1906
+					-0.9925 	 0.1218 	 0.0043
+					-0.0191 	 -0.1896 	 0.9817
+					-42.9522 	 24.687 	 3.5787
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.4762 	 21.0084 	 -8.257
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.772 	 21.0203 	 -5.6957
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-4.5968 	 21.0203 	 -5.6963
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-32.9685 	 21.0203 	 -5.6964
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.7607 	 21.3723 	 -9.6197
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.4762 	 -21.006 	 -8.257
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.772 	 -21.0393 	 -5.6957
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-4.5968 	 -21.0393 	 -5.6963
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-32.9685 	 -21.0393 	 -5.6964
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.7607 	 -21.3744 	 -9.6197
+				}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr11.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -2.9474 	 15.5413 	 5.4338}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail1.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=engine;"}
+				{Position -28.6627 	 22.6764 	 10.2163}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=engine;"}
+				{Position -54.386 	 2.2804 	 3.0648}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=engine;"}
+				{Position -49.8167 	 3.098 	 9.8387}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=engine;"}
+				{Position -50.492 	 -6.0058 	 10.045}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=engine;"}
+				{Position -36.6168 	 -18.353 	 10.861}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=engine;"}
+				{Position -33.9061 	 -20.8571 	 9.6883}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail8.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=engine;"}
+				{Position -55.7754 	 18.8193 	 3.6447}
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/detail2.ply"}
+			}
+			{bone "ammo2"
+				{Position 8.2832 	 -8.7922 	 2.1187}
+			}
+			{bone "ammo1"
+				{Position 8.2832 	 8.8457 	 2.1187}
+			}
+		}
+		{bone "body_virt"
+			{Position -0.1147 	 0.0019 	 22.4011}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 1.7445 	 20.7871 	 -11.1458}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.9736 	 0.1197 	 -11.2758
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-43.027 	 0.0902 	 -7.9989
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 38.8735 	 0.2187 	 -4.2908}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 22.3564 	 0.2187 	 -4.4579}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 10.4998 	 0.2187 	 -4.3751}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -6.0207 	 0.2187 	 -4.3875}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -17.8887 	 0.2187 	 -4.3615}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -34.3899 	 0.2187 	 -4.3248}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheell7.ply"}
+					}
+				}
+				{bone "suspl"
+					{parameters "id=body;"}
+					{Position 2.2267 	 0.2086 	 -1.7009}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/suspl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.0002 	 0.1 	 0}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 1.7445 	 -20.6388 	 -11.1458}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.9736 	 -0.0447 	 -11.2758
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-43.027 	 -0.068 	 -7.9989
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 38.8735 	 -0.3669 	 -4.2908}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 22.3564 	 -0.3669 	 -4.4579}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position 10.4999 	 -0.3669 	 -4.3751}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -6.0207 	 -0.3669 	 -4.3875}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -17.8887 	 -0.3669 	 -4.3615}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -34.3899 	 -0.3669 	 -4.3248}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/wheelr7.ply"}
+					}
+				}
+				{bone "suspr"
+					{parameters "id=body;"}
+					{Position 2.2267 	 -0.3608 	 -1.7009}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position -0.0348 	 -0.3294 	 0.0026}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-5.3529 	 -41.8041 	 0.6718
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-24.1618 	 47.9586 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-22.6151 	 -48.4913 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-43.3173 	 -48.4863 	 0
+			}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-43.1299 	 48.1586 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				68.7913 	 8.5822 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-5.6425 	 41.711 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				27.0963 	 -41.8041 	 0.6718
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/ram.vol"}
+	{bone "body"}
+	{Position -0.0236 	 0.0148 	 -4.9297}
+}
+{volume "ammo1"
+	{box 18.0544 11.0077 11.811}
+	{bone "ammo1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 -9.9142
+	}
+}
+{volume "ammo2"
+	{box 18.0562 11.0039 11.811}
+	{bone "ammo2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 -9.9142
+	}
+}
+{volume "ammo3"
+	{box 10.7609 3.93701 3.93701}
+	{bone "ammo3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0059 	 -0.0139 	 -0.0143
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/armor1.vol"}
+	{bone "body"}
+	{Position 3.3649 	 0.0008 	 13.4871}
+}
+{volume "armor2"
+	{box 15.4715 9.34296 0.3605}
+	{bone "grill"}
+	{matrix34
+		0 	 1 	 0
+		-0.809 	 0 	 0.5878
+		0.5878 	 0 	 0.809
+		4.3256 	 5.9188 	 -3.1411
+	}
+}
+{volume "barrel1"
+	{cylinder 2.58437 10.2011}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		3.1785 	 -0.0162 	 -0.026
+	}
+}
+{volume "barrel2"
+	{cylinder 1.8349 53.4311}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		29.0719 	 0.0003 	 0
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body1.vol"}
+	{bone "body"}
+	{Position 18.3804 	 0.0087 	 -6.7485}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body2.vol"}
+	{bone "body"}
+	{Position 14.0513 	 -0.0376 	 7.6636}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body3.vol"}
+	{bone "body"}
+	{Position 50.8119 	 -12.1316 	 -10.4559}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body4.vol"}
+	{bone "body"}
+	{Position 50.8119 	 15.6007 	 -10.4559}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body5.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		28.7282 	 -10.6532 	 9.7343
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body6.vol"}
+	{bone "body"}
+	{Position 28.7282 	 10.9495 	 9.7343}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body7.vol"}
+	{bone "body"}
+	{Position 18.2468 	 0.0044 	 -6.7486}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/body8.vol"}
+	{bone "body"}
+	{Position 38.0801 	 -9.9812 	 6.8233}
+}
+{volume "breech"
+	{box 18.4027 7.33341 7.54096}
+	{bone "gun_rot"}
+	{Position -10.9632 	 -0.2095 	 -0.024}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/cupola.vol"}
+	{bone "turret"}
+	{Position -7.3663 	 -9.4877 	 16.1204}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine1.vol"}
+	{bone "engine"}
+	{Position 5.2011 	 0.0057 	 -6.4522}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/engine2.vol"}
+	{bone "engine"}
+	{Position 1.3572 	 -0.0003 	 7.2548}
+}
+{volume "fuel1"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "fuel2"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel2"}
+	{orientation
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+	}
+}
+{volume "fuel3"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/fuel3.vol"}
+	{bone "fuel3"}
+}
+{volume "fuel4"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/fuel4.vol"}
+	{bone "fuel4"}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.998 	 0.0645 	 -1.0176}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.998 	 -0.0119 	 -1.0176}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/mantlet.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		2.9294 	 0.122 	 -0.0178
+	}
+}
+{volume "trackleft10"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackleft10.vol"}
+	{bone "sus_l3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheell11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0861
+	}
+}
+{volume "trackleft1"
+	{cylinder 6.79356 7.7732}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1786
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0436
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0481
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft8"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackleft8.vol"}
+	{bone "sus_l1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft9"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackleft9.vol"}
+	{bone "sus_l2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.1999 	 0.077 	 0.0835}
+}
+{volume "trackright10"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackright10.vol"}
+	{bone "sus_r3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheelr11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.226
+	}
+}
+{volume "trackright1"
+	{cylinder 6.79356 7.93326}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4221
+	}
+}
+{volume "trackright2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright8"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackright8.vol"}
+	{bone "sus_r1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright9"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackright9.vol"}
+	{bone "sus_r2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.1999 	 0.0005 	 0.0835}
+}
+{volume "transmission"
+	{cylinder 5.04519 27.4814}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		5.3818 	 -0.3904 	 -0.7328
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/turret1.vol"}
+	{bone "turret"}
+	{Position -0.0454 	 0.024 	 1.9439}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/turret2.vol"}
+	{bone "turret"}
+	{Position -0.32 	 0.024 	 -0.5013}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/usa/tank_medium/m4a1_76w_mid/turret3.vol"}
+	{bone "turret"}
+	{Position 19.1 	 0.1034 	 5.9792}
+}

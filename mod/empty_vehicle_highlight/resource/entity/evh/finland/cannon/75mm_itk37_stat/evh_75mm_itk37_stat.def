@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 75mm_itk37_stat (generated)
-	{Extension "../../../../-vehicle/finland/cannon/75mm_itk37_stat/75mm_itk37_stat.mdl"}
+	{Extension "75mm_itk37_stat.mdl"}
 	{extender "stuff"
 		{item "evh_75mm_itk37_stat"}
 	}

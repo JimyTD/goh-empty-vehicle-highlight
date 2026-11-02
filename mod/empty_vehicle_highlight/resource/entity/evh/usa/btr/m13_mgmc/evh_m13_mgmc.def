@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m13_mgmc (generated)
-	{Extension "../../../../-vehicle/usa/btr/m13_mgmc/m13_mgmc.mdl"}
+	{Extension "m13_mgmc.mdl"}
 	{extender "stuff"
 		{item "evh_m13_mgmc"}
 	}

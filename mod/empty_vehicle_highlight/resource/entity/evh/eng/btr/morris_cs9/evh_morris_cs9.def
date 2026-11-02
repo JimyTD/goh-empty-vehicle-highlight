@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for morris_cs9 (generated)
-	{Extension "../../../../-vehicle/eng/btr/morris_cs9/morris_cs9.mdl"}
+	{Extension "morris_cs9.mdl"}
 	{extender "stuff"
 		{item "evh_morris_cs9"}
 	}

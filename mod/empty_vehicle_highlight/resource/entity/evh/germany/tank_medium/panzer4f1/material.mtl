@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/model/panzerivg"}
+	{bump "$/model/panzerivg_bp"}
+	{specular "$/model/panzerivg_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

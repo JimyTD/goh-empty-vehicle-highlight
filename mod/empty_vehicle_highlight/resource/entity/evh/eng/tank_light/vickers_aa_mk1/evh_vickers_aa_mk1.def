@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for vickers_aa_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/vickers_aa_mk1.mdl"}
+	{Extension "vickers_aa_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_vickers_aa_mk1"}
 	}

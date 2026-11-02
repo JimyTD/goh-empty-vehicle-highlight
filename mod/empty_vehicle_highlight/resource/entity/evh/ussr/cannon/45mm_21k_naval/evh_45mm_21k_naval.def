@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 45mm_21k_naval (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/45mm_21k_naval/45mm_21k_naval.mdl"}
+	{Extension "45mm_21k_naval.mdl"}
 	{extender "stuff"
 		{item "evh_45mm_21k_naval"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for vickers_6t_altb (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/vickers_6t_altb/vickers_6t_altb.mdl"}
+	{Extension "vickers_6t_altb.mdl"}
 	{extender "stuff"
 		{item "evh_vickers_6t_altb"}
 	}

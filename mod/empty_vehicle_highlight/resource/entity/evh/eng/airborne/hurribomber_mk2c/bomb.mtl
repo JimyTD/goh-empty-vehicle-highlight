@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_ammo/250lb_gp_bomb"}
+	{bump "$/_ammo/500lb_mc_bomb_bp"}
+	{specular "$/_ammo/500lb_mc_bomb_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

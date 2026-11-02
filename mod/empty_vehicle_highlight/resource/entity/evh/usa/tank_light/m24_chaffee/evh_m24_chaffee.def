@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m24_chaffee (generated)
-	{Extension "../../../../-vehicle/usa/tank_light/m24_chaffee/m24_chaffee.mdl"}
+	{Extension "m24_chaffee.mdl"}
 	{extender "stuff"
 		{item "evh_m24_chaffee"}
 	}

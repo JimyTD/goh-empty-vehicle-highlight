@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 210mm_morser18 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/210mm_morser18/210mm_morser18.mdl"}
+	{Extension "210mm_morser18.mdl"}
 	{extender "stuff"
 		{item "evh_210mm_morser18"}
 	}

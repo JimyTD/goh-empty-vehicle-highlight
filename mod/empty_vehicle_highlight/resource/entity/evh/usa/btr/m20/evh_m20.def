@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m20 (generated)
-	{Extension "../../../../-vehicle/usa/btr/m20/m20.mdl"}
+	{Extension "m20.mdl"}
 	{extender "stuff"
 		{item "evh_m20"}
 	}

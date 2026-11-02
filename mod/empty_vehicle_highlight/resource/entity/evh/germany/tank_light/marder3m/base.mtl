@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/marder3m"}
+	{bump "$/_vehicle/marder3m_bp"}
+	{specular "$/_vehicle/marder3m_sp"}
+	{color "230 230 230 152"}
+	{blend none}
+}

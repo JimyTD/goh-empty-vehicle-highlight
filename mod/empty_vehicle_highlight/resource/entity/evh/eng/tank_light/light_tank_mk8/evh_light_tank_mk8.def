@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for light_tank_mk8 (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/light_tank_mk8/light_tank_mk8.mdl"}
+	{Extension "light_tank_mk8.mdl"}
 	{extender "stuff"
 		{item "evh_light_tank_mk8"}
 	}

@@ -1,0 +1,5 @@
+{material simple
+	{diffuse "/entity/-vehicle/placeholder/generic/marine/ya5_k/ya5"}
+	{blend none}
+	{tile}
+}

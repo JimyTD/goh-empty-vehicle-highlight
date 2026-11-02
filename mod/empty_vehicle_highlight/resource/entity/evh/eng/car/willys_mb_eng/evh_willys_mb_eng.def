@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for willys_mb_eng (generated)
-	{Extension "../../../../-vehicle/eng/car/willys_mb_eng/willys_mb_eng.mdl"}
+	{Extension "willys_mb_eng.mdl"}
 	{extender "stuff"
 		{item "evh_willys_mb_eng"}
 	}

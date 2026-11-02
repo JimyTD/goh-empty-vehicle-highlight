@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/hurri1a_wings"}
+	{bump "$/_vehicle/eng/hurri1a_wings_bp"}
+	{specular "$/_vehicle/eng/hurri1a_wings_sp"}
+	{full_specular}
+	{blend none}
+}

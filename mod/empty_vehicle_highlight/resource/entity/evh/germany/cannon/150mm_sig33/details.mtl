@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "/entity/-vehicle/germany/cannon/150mm_sig33/details"}
+	{bump "/entity/-vehicle/germany/cannon/150mm_sig33/details_bp"}
+	{specular "/entity/-vehicle/germany/cannon/150mm_sig33/details_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m5a1_stuart_late (generated)
-	{Extension "../../../../-vehicle/usa/tank_light/m5a1_stuart_late/m5a1_stuart_late.mdl"}
+	{Extension "m5a1_stuart_late.mdl"}
 	{extender "stuff"
 		{item "evh_m5a1_stuart_late"}
 	}

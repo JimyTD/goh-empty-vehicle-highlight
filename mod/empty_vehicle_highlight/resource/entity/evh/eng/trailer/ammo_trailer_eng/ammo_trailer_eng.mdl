@@ -1,0 +1,328 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: 1 fixer hand_breakl hand_breakr holder1
+;Exported by:	 guita
+;Date:			 08.10.2025 15:50:41
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\trailer\M10_trailer\ammo_trailer_eng.max
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/eng/trailer/ammo_trailer_eng/close.anm"} {speed 0.7}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.495;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/trailer/ammo_trailer_eng/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 9.7751}
+			{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/body.ply"}
+			{bone "1"
+				{matrix34
+					0.9962 	 0 	 0.0872
+					0 	 1 	 0
+					-0.0872 	 0 	 0.9962
+					-44.9004 	 0.5904 	 5.2982
+				}
+				
+			}
+			{bone "seat1"
+				{matrix34
+					-0.9986 	 0 	 -0.0523
+					0 	 -1 	 0
+					-0.0523 	 0 	 0.9986
+					-18.2602 	 8.9754 	 8.6141
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					-0.9962 	 0 	 -0.0872
+					0 	 -1 	 0
+					-0.0872 	 0 	 0.9962
+					-18.9211 	 -10.4062 	 8.3931
+				}
+			}
+			{bone "fxstop2"
+				{Position 14.6558 	 17.0272 	 6.3705}
+			}
+			{bone "fxstop1"
+				{Position 14.6558 	 -16.9327 	 6.3705}
+			}
+			{bone "holder1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					-35.2156 	 -4.4551 	 4.6131
+				}
+				
+				{bone "holder2"
+					{parameters "id=body;"}
+					{Position -4.6282 	 4.4593 	 -5.3183}
+					
+				}
+			}
+			{bone "fixer"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					-35.2069 	 -0.2314 	 4.6208
+				}
+				
+			}
+			{bone "hand_breakl"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					-20.7517 	 -10.8084 	 0.9571
+				}
+				
+			}
+			{bone "hand_breakr"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					-20.7517 	 10.8085 	 0.9571
+				}
+				
+			}
+			{bone "tarp"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					-2.0334 	 0 	 16.8926
+				}
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/tarp.ply"}
+			}
+			{bone "back_door"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					15.5656 	 0.0042 	 4.1845
+				}
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/back_door.ply"}
+			}
+			{bone "ammo_box"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					9.4165 	 -0.1425 	 8.5715
+				}
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/ammo_box.ply"}
+			}
+			{bone "holder3"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					12.8747 	 -16.0434 	 15.5789
+				}
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/holder3.ply"}
+			}
+			{bone "holder4"
+				{parameters "id=body;"}
+				{matrix34
+					0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 0.9994
+					12.8747 	 16.0434 	 15.5789
+				}
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/holder4.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 0 	 0 	 9.7751}
+			{bone prizmatic "suspension_r1"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position 0 	 -20.039 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.495;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/wheelr.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position 0 	 20.0361 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.495;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/wheell.ply"}
+				}
+			}
+			{bone "fxtracel1"
+				{Position -0.0491 	 19.2971 	 -9.74}
+			}
+			{bone "fxtracer1"
+				{Position -0.0491 	 -19.1931 	 -9.74}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					0.9659 	 0 	 0.2588
+					0 	 1 	 0
+					-0.2588 	 0 	 0.9659
+					7.1246 	 19.0687 	 -7.1393
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					0.9659 	 0 	 0.2588
+					0 	 1 	 0
+					-0.2588 	 0 	 0.9659
+					7.1246 	 -19.0814 	 -7.1393
+				}
+			}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 0 	 1
+				0 	 1 	 0
+				-57.2373 	 0 	 16.8335
+			}
+		}
+		{bone "commander"
+			{matrix34
+				0.9613 	 0.2756 	 0
+				-0.2756 	 0.9613 	 0
+				0 	 0 	 1
+				-32.3663 	 -17.1848 	 0
+			}
+		}
+		{bone "gunner"
+			{matrix34
+				0.9945 	 -0.1045 	 0
+				0.1045 	 0.9945 	 0
+				0 	 0 	 1
+				-32.2729 	 15.8181 	 0
+			}
+		}
+		{bone "driver1"
+			{matrix34
+				0.9945 	 -0.1045 	 0
+				0.1045 	 0.9945 	 0
+				0 	 0 	 1
+				-32.2729 	 15.8181 	 0
+			}
+		}
+		{bone "driver2"
+			{matrix34
+				0.9613 	 0.2756 	 0
+				-0.2756 	 0.9613 	 0
+				0 	 0 	 1
+				-32.3692 	 -17.1747 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-21.3486 	 21.6405 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-21.3486 	 -21.6302 	 0
+			}
+		}
+		{bone "visor"
+			{Position 16.764 	 0.5892 	 25.8497}
+		}
+	}
+}
+{obstacle "obstacle"
+	{polygon2
+		{radius 0}
+		{vertex 9.7441 -21.0921}
+		{vertex 15.1855 -16.5688}
+		{vertex 15.1855 16.764}
+		{vertex 9.7441 21.367}
+		{vertex -9.74409 21.367}
+		{vertex -50.8894 3.12614}
+		{vertex -50.8894 -3.10126}
+		{vertex -9.74409 -21.0921}
+	}
+	{rotate}
+}
+{volume "body1"
+	{box 31.3908 13.5996 33.2538}
+	{bone "body"}
+	{matrix34
+		0.9994 	 0 	 0.0349
+		-0.0349 	 0 	 0.9994
+		0 	 -1 	 0
+		-1.036 	 -0.058 	 7.8032
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/trailer/ammo_trailer_eng/body2.vol"}
+	{bone "body"}
+	{Position -23.7085 	 -0.0124 	 1.3635}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/trailer/ammo_trailer_eng/body3.vol"}
+	{bone "body"}
+	{Position -40.8563 	 -0.0124 	 3.941}
+}
+{volume "body4"
+	{box 9.84689 5.56563 15.5772}
+	{bone "body"}
+	{matrix34
+		0.9994 	 0 	 0.0349
+		-0.0349 	 0 	 0.9994
+		0 	 -1 	 0
+		-22.4287 	 -0.0118 	 4.8857
+	}
+}
+{volume "wheelleft"
+	{cylinder 9.74409 3.44114}
+	{bone "wheell"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.6646
+	}
+}
+{volume "wheelright"
+	{cylinder 9.74409 3.48366}
+	{bone "wheelr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.4139
+	}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 105mm_lefh18_40 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/105mm_lefh18_40/105mm_lefh18_40.mdl"}
+	{Extension "105mm_lefh18_40.mdl"}
 	{extender "stuff"
 		{item "evh_105mm_lefh18_40"}
 	}

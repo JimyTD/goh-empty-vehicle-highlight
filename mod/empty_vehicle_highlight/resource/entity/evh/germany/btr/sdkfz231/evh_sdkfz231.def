@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sdkfz231 (generated)
-	{Extension "../../../../-vehicle/germany/btr/sdkfz231/sdkfz231.mdl"}
+	{Extension "sdkfz231.mdl"}
 	{extender "stuff"
 		{item "evh_sdkfz231"}
 	}

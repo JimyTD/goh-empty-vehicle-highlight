@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for challenger_a30 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/challenger_a30/challenger_a30.mdl"}
+	{Extension "challenger_a30.mdl"}
 	{extender "stuff"
 		{item "evh_challenger_a30"}
 	}

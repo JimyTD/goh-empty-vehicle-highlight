@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for infantry_cart_if8 (generated)
-	{Extension "../../../../-vehicle/germany/trailer/infantry_cart_if8/infantry_cart_if8.mdl"}
+	{Extension "infantry_cart_if8.mdl"}
 	{extender "stuff"
 		{item "evh_infantry_cart_if8"}
 	}

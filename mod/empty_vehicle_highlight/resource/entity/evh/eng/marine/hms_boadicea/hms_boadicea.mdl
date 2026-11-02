@@ -1,0 +1,1799 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aux_turret1 aux_turret2 aux_turret3 gun gun1 gun2 gun3 mgun_1_rot1 mgun_2_rot1 turret
+;Exported by:	 guita
+;Date:			 01.12.2025 00:33:28
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\marine\bclass destroyer\blcass_destroyer_fh_export.max
+{skeleton
+	{animation
+		{sequence "move" {file "../../../../-vehicle/eng/marine/hms_boadicea/move.anm"} {speed 1.2}{resume}}
+		{sequence "drift" {file "../../../../-vehicle/eng/marine/hms_boadicea/drift.anm"} {speed 0.1}{resume}}
+		{sequence "recoil1" {file "../../../../-vehicle/eng/marine/hms_boadicea/recoil1.anm"} {speed 0.6}}
+		{sequence "recoil2" {file "../../../../-vehicle/eng/marine/hms_boadicea/recoil2.anm"} {speed 0.6}}
+		{sequence "recoil3" {file "../../../../-vehicle/eng/marine/hms_boadicea/recoil3.anm"} {speed 0.6}}
+		{sequence "recoil4" {file "../../../../-vehicle/eng/marine/hms_boadicea/recoil4.anm"} {speed 0.6}}
+		{sequence "shell_eject1" {file "../../../../-vehicle/eng/marine/hms_boadicea/shell_eject1.anm"} {speed 0.6}}
+		{sequence "shell_eject2" {file "../../../../-vehicle/eng/marine/hms_boadicea/shell_eject2.anm"} {speed 0.6}}
+		{sequence "shell_eject3" {file "../../../../-vehicle/eng/marine/hms_boadicea/shell_eject3.anm"} {speed 0.6}}
+		{sequence "shell_eject4" {file "../../../../-vehicle/eng/marine/hms_boadicea/shell_eject4.anm"} {speed 0.6}}
+		{sequence "aim_v" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_v1" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_v1.anm"} {speed 1}{resume}}
+		{sequence "aim_v2" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_v2.anm"} {speed 1}{resume}}
+		{sequence "aim_v3" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_v3.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_h.anm"} {speed 1}{resume}}
+		{sequence "aim_h1" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_h1.anm"} {speed 1}{resume}}
+		{sequence "aim_h2" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_h2.anm"} {speed 1}{resume}}
+		{sequence "aim_h3" {file "../../../../-vehicle/eng/marine/hms_boadicea/aim_h3.anm"} {speed 1}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=30;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body_center;"}
+			{matrix34
+				1 	 0 	 -0.0044
+				0 	 1 	 0
+				0.0044 	 0 	 1
+				0 	 6.5851 	 0.275
+			}
+			{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body.ply"}
+			{bone "body_center1_sp"
+				{parameters "id=body_center;"}
+				{Position -232.314 	 -0.3572 	 41.1017}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_center1_sp.ply"}
+			}
+			{bone "goatley1"
+				{parameters "id=body_center;"}
+				{Position -51.1358 	 -95.7902 	 78.6756}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/goatley1.ply"}
+			}
+			{bone "goatley2"
+				{parameters "id=body_center;"}
+				{Position -51.1358 	 94.9077 	 78.6756}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/goatley2.ply"}
+			}
+			{bone "body_front"
+				{parameters "id=body_front;"}
+				{Position 444.368 	 1.4079 	 8.8844}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_front.ply"}
+				{bone "body_center_sp"
+					{parameters "id=body_front;"}
+					{Position -8.7808 	 0.0159 	 58.7185}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_center_sp.ply"}
+				}
+				{bone "mast_front"
+					{parameters "id=body;"}
+					{Position -170.531 	 1.7962 	 208.769}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mast_front.ply"}
+				}
+				{bone "goatley3"
+					{parameters "id=body;"}
+					{Position -253.74 	 -95.2873 	 69.7912}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/goatley3.ply"}
+				}
+				{bone "goatley4"
+					{parameters "id=body;"}
+					{Position -253.74 	 94.6529 	 69.7912}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/goatley4.ply"}
+				}
+				{bone "body_front_mesh"
+					{parameters "id=body_front;"}
+					{Position 417.765 	 4.4154 	 2.318}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_front_mesh.ply"}
+				}
+				{bone "gunbase1"
+					{parameters "id=gun1;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/marine/hms_boadicea/gun1_r.anm"}{speed 0.7}}
+					}
+					{Position 219.002 	 2.1119 	 77.0921}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase1.ply"}
+					{bone revolute "turret"
+						{parameters "id=gun1;"}
+						{Position 0 	 0 	 3.4743}
+						
+						{bone revolute "gun_rot"
+							{parameters "id=gun1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								2.4396 	 -0.001 	 29.8031
+							}
+							
+							{bone "gun"
+								{parameters "id=gun1;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									69.2176 	 -0.0563 	 -0.001
+								}
+								
+								{bone "breech_block"
+									{parameters "id=gun1;"}
+									{Position -95.9597 	 0.9049 	 0.0634}
+									
+								}
+								{bone "breech_handle"
+									{parameters "id=gun1;"}
+									{Position -93.3124 	 -4.2261 	 6.1867}
+									
+								}
+								{bone "foresight1"
+									{parameters "group=crew;"}
+									{Position 22.441 	 0 	 0.0213}
+								}
+								{bone "fx_invers1"
+									{parameters "group=crew;"}
+									{matrix34
+										-1 	 0 	 0
+										0 	 -1 	 0
+										0 	 0 	 1
+										-95.9597 	 -0.0457 	 0.0634
+									}
+								}
+							}
+							{bone "loader_pivot"
+								{parameters "id=gun1;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-45.1814 	 -5.8956 	 -4.6221
+								}
+								
+								{bone "shell_bed"
+									{parameters "id=gun1;"}
+									{Position 11.8837 	 4.772 	 3.8498}
+									
+								}
+							}
+							{bone "loader_slide"
+								{parameters "id=gun1;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-56.38 	 -3.0668 	 -9.0006
+								}
+								
+							}
+						}
+						{bone "shield1"
+							{parameters "id=shield1;"}
+							{Position 3.5552 	 0.06 	 24.5756}
+							
+							{bone "crew_shiedl1_1"
+								{parameters "id=shield1;"}
+								{matrix34
+									-0.4924 	 0.866 	 -0.0868
+									-0.8529 	 -0.5 	 -0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 23.8805 	 14.9078
+								}
+								
+								{bone "crew_shiedl1_2"
+									{parameters "id=shield1;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 -4.4009 	 3.1643
+									}
+									
+								}
+							}
+							{bone "crew_shiedr1_1"
+								{parameters "id=shield1;"}
+								{matrix34
+									-0.4924 	 -0.866 	 -0.0868
+									0.8529 	 -0.5 	 0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 -23.8355 	 14.9078
+								}
+								
+								{bone "crew_shiedr1_2"
+									{parameters "id=shield1;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 4.3712 	 3.1643
+									}
+									
+								}
+							}
+						}
+						{bone "aim_hor"
+							{parameters "id=gun1;"}
+							{Position 2.1028 	 -14.4384 	 25.6238}
+							
+						}
+						{bone "aim_ver"
+							{parameters "id=gun1;"}
+							{Position 2.1028 	 15.5966 	 25.6238}
+							
+						}
+						{bone "charger"
+							{parameters "group=crew;"}
+							{matrix34
+								0.6428 	 -0.766 	 0
+								0.766 	 0.6428 	 0
+								0 	 0 	 1
+								-53.2664 	 15.5042 	 -5.0399
+							}
+						}
+						{bone "charger2"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -1 	 0
+								1 	 0 	 0
+								0 	 0 	 1
+								-30.0449 	 17.3545 	 -5.0399
+							}
+						}
+						{bone "gunner"
+							{parameters "group=crew;"}
+							{Position -9.3809 	 21.0453 	 16.0498}
+						}
+						{bone "gunner2"
+							{parameters "group=crew;"}
+							{Position -8.9955 	 -20.405 	 11.1662}
+						}
+					}
+				}
+				{bone "cabin"
+					{parameters "id=cabin;"}
+					{Position 73.6241 	 1.1519 	 127.089}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/cabin.ply"}
+					{bone "commander"
+						{parameters "group=crew;"}
+						{Position -135.961 	 -9.1611 	 -0.8708}
+					}
+					{bone "driver"
+						{parameters "group=crew;"}
+						{Position -112.91 	 0.1782 	 -0.8708}
+					}
+					{bone "static_searchlight2"
+						{parameters "id=cabin;"}
+						{Position -96.0727 	 0.6931 	 41.5922}
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/static_searchlight2.ply"}
+						{bone "static_searchlight_glass2"
+							{parameters "id=cabin;"}
+							{Position 11.2728 	 0.0038 	 24.4015}
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/static_searchlight_glass2.ply"}
+						}
+					}
+				}
+				{bone "body_front_sp"
+					{parameters "id=body_front;"}
+					{Position 422.321 	 4.4155 	 50.552}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_front_sp.ply"}
+				}
+				{bone "gunbase2"
+					{parameters "id=gun2;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/marine/hms_boadicea/gun2_r.anm"}{speed 0.7}}
+					}
+					{Position 59.6144 	 2.1118 	 120.753}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase2.ply"}
+					{bone revolute "aux_turret1"
+						{parameters "id=gun2;"}
+						{Position 0 	 0 	 3.4743}
+						
+						{bone "aim_hor1"
+							{parameters "id=gun2;"}
+							{Position 2.103 	 -14.4384 	 25.6238}
+							
+						}
+						{bone "aim_ver1"
+							{parameters "id=gun2;"}
+							{Position 2.103 	 15.5966 	 25.6238}
+							
+						}
+						{bone "charger3"
+							{parameters "group=crew;"}
+							{matrix34
+								0.6428 	 -0.766 	 0
+								0.766 	 0.6428 	 0
+								0 	 0 	 1
+								-53.2663 	 15.5042 	 -5.0399
+							}
+						}
+						{bone "charger4"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -1 	 0
+								1 	 0 	 0
+								0 	 0 	 1
+								-30.0448 	 17.3545 	 -5.0399
+							}
+						}
+						{bone revolute "gun_rot1"
+							{parameters "id=gun2;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								2.4397 	 -0.001 	 29.8031
+							}
+							
+							{bone "gun1"
+								{parameters "id=gun2;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									69.2176 	 -0.0562 	 -0.001
+								}
+								
+								{bone "breech_block1"
+									{parameters "id=gun2;"}
+									{Position -95.9596 	 0.9049 	 0.0634}
+									
+								}
+								{bone "breech_handle1"
+									{parameters "id=gun2;"}
+									{Position -93.3124 	 -4.2261 	 6.1867}
+									
+								}
+								{bone "foresight1a"
+									{parameters "group=crew;"}
+									{Position 22.4411 	 0 	 0.0213}
+								}
+								{bone "fx_invers2"
+									{parameters "group=crew;"}
+									{matrix34
+										-1 	 0 	 0
+										0 	 -1 	 0
+										0 	 0 	 1
+										-95.9596 	 -0.0457 	 0.0634
+									}
+								}
+							}
+							{bone "loader_pivot1"
+								{parameters "id=gun2;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-45.1815 	 -5.8956 	 -4.6221
+								}
+								
+								{bone "shell_bed1"
+									{parameters "id=gun2;"}
+									{Position 11.8837 	 4.772 	 3.8498}
+									
+								}
+							}
+							{bone "loader_slide1"
+								{parameters "id=gun2;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-56.38 	 -3.0668 	 -9.0006
+								}
+								
+							}
+						}
+						{bone "gunner3"
+							{parameters "group=crew;"}
+							{Position -9.3808 	 21.0453 	 16.0498}
+						}
+						{bone "gunner4"
+							{parameters "group=crew;"}
+							{Position -8.9955 	 -20.405 	 11.1662}
+						}
+						{bone "shield2"
+							{parameters "id=shield2;"}
+							{Position 3.5553 	 0.06 	 24.5756}
+							
+							{bone "crew_shiedl2_1"
+								{parameters "id=shield2;"}
+								{matrix34
+									-0.4924 	 0.866 	 -0.0868
+									-0.8529 	 -0.5 	 -0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 23.8805 	 14.9078
+								}
+								
+								{bone "crew_shiedl2_2"
+									{parameters "id=shield2;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 -4.4008 	 3.1643
+									}
+									
+								}
+							}
+							{bone "crew_shiedr2_1"
+								{parameters "id=shield2;"}
+								{matrix34
+									-0.4924 	 -0.866 	 -0.0868
+									0.8529 	 -0.5 	 0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 -23.8355 	 14.9078
+								}
+								
+								{bone "crew_shiedr2_2"
+									{parameters "id=shield2;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 4.3713 	 3.1643
+									}
+									
+								}
+							}
+						}
+					}
+				}
+				{bone "mast_front_cables"
+					{parameters "id=body;"}
+					{Position -530.022 	 0.8233 	 211.69}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mast_front_cables.ply"}
+				}
+				{bone "fire_front5"
+					{Position 5.6236 	 -44.8115 	 103.399}
+				}
+				{bone "fire_front6"
+					{Position -245.953 	 57.2774 	 28.4743}
+				}
+				{bone "fire_front4"
+					{Position -124.518 	 -74.0294 	 54.908}
+				}
+				{bone "fire_front3"
+					{Position -3.7529 	 75.8869 	 56.6546}
+				}
+				{bone "fire_front2"
+					{Position 205.934 	 -51.399 	 59.9034}
+				}
+				{bone "fire_front1"
+					{Position 361.772 	 32.8524 	 59.0399}
+				}
+			}
+			{bone "body_rear"
+				{parameters "id=body_rear;"}
+				{Position -765.048 	 -4.1561 	 -11.3609}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_rear.ply"}
+				{bone "body_rear_sp"
+					{parameters "id=body_rear;"}
+					{Position 9.9798 	 0 	 42.1016}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/body_rear_sp.ply"}
+				}
+				{bone "depthcharges"
+					{parameters "id=body_rear;"}
+					{Position -158.596 	 -32.3327 	 63.5537}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/depthcharges.ply"}
+				}
+				{bone revolute "steer"
+					{parameters "id=body_rear;"}
+					{Position -111.063 	 -2.3785 	 -37.1266}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/steer.ply"}
+				}
+				{bone "mast_rear"
+					{parameters "id=body_rear;"}
+					{Position 188.717 	 0.1757 	 214.203}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mast_rear.ply"}
+				}
+				{bone "gunbase3"
+					{parameters "id=gun3;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/marine/hms_boadicea/gun3_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						120.461 	 -0.9574 	 107.651
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase3.ply"}
+					{bone revolute "aux_turret2"
+						{parameters "id=gun3;"}
+						{Position 0 	 0 	 3.4743}
+						
+						{bone "aim_hor2"
+							{parameters "id=gun3;"}
+							{Position 2.1029 	 -14.4384 	 25.6238}
+							
+						}
+						{bone "aim_ver2"
+							{parameters "id=gun3;"}
+							{Position 2.1029 	 15.5966 	 25.6238}
+							
+						}
+						{bone "charger6"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -1 	 0
+								1 	 0 	 0
+								0 	 0 	 1
+								-30.0449 	 17.3545 	 -5.0399
+							}
+						}
+						{bone "charger5"
+							{parameters "group=crew;"}
+							{matrix34
+								0.6428 	 -0.766 	 0
+								0.766 	 0.6428 	 0
+								0 	 0 	 1
+								-53.2664 	 15.5042 	 -5.0399
+							}
+						}
+						{bone revolute "gun_rot2"
+							{parameters "id=gun3;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								2.4396 	 -0.001 	 29.8031
+							}
+							
+							{bone "gun2"
+								{parameters "id=gun3;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									69.2177 	 -0.0563 	 -0.001
+								}
+								
+								{bone "breech_block2"
+									{parameters "id=gun3;"}
+									{Position -95.9597 	 0.9049 	 0.0634}
+									
+								}
+								{bone "breech_handle2"
+									{parameters "id=gun3;"}
+									{Position -93.3124 	 -4.2261 	 6.1867}
+									
+								}
+								{bone "foresight1b"
+									{parameters "group=crew;"}
+									{Position 22.441 	 0 	 0.0213}
+								}
+								{bone "fx_invers3"
+									{parameters "group=crew;"}
+									{matrix34
+										-1 	 0 	 0
+										0 	 -1 	 0
+										0 	 0 	 1
+										-95.9597 	 -0.0457 	 0.0635
+									}
+								}
+							}
+							{bone "loader_pivot2"
+								{parameters "id=gun3;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-45.1814 	 -5.8956 	 -4.6221
+								}
+								
+								{bone "shell_bed2"
+									{parameters "id=gun3;"}
+									{Position 11.8837 	 4.772 	 3.8498}
+									
+								}
+							}
+							{bone "loader_slide2"
+								{parameters "id=gun3;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-56.38 	 -3.0668 	 -9.0006
+								}
+								
+							}
+						}
+						{bone "gunner5"
+							{parameters "group=crew;"}
+							{Position -9.3809 	 21.0453 	 16.0498}
+						}
+						{bone "gunner6"
+							{parameters "group=crew;"}
+							{Position -8.9956 	 -20.405 	 11.1662}
+						}
+						{bone "shield3"
+							{parameters "id=shield3;"}
+							{Position 3.5552 	 0.06 	 24.5756}
+							
+							{bone "crew_shiedl3_1"
+								{parameters "id=shield3;"}
+								{matrix34
+									-0.4924 	 0.866 	 -0.0868
+									-0.8529 	 -0.5 	 -0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 23.8805 	 14.9078
+								}
+								
+								{bone "crew_shiedl3_2"
+									{parameters "id=shield3;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 -4.4009 	 3.1643
+									}
+									
+								}
+							}
+							{bone "crew_shiedr3_1"
+								{parameters "id=shield3;"}
+								{matrix34
+									-0.4924 	 -0.866 	 -0.0868
+									0.8529 	 -0.5 	 0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 -23.8355 	 14.9078
+								}
+								
+								{bone "crew_shiedr3_2"
+									{parameters "id=shield3;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 4.3713 	 3.1642
+									}
+									
+								}
+							}
+						}
+					}
+				}
+				{bone "gunbase4"
+					{parameters "id=gun4;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/marine/hms_boadicea/gun4_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-31.1223 	 -0.9575 	 55.099
+					}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase4.ply"}
+					{bone revolute "aux_turret3"
+						{parameters "id=gun4;"}
+						{Position 0 	 0 	 3.4743}
+						
+						{bone "aim_hor3"
+							{parameters "id=gun4;"}
+							{Position 2.103 	 -14.4384 	 25.6238}
+							
+						}
+						{bone "aim_ver3"
+							{parameters "id=gun4;"}
+							{Position 2.103 	 15.5966 	 25.6238}
+							
+						}
+						{bone "charger8"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -1 	 0
+								1 	 0 	 0
+								0 	 0 	 1
+								-30.0448 	 17.3545 	 -5.0399
+							}
+						}
+						{bone "charger7"
+							{parameters "group=crew;"}
+							{matrix34
+								0.6428 	 -0.766 	 0
+								0.766 	 0.6428 	 0
+								0 	 0 	 1
+								-53.2664 	 15.5042 	 -5.0399
+							}
+						}
+						{bone revolute "gun_rot3"
+							{parameters "id=gun4;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								2.4396 	 -0.001 	 29.8031
+							}
+							
+							{bone "gun3"
+								{parameters "id=gun4;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									69.2176 	 -0.0563 	 -0.001
+								}
+								
+								{bone "breech_block3"
+									{parameters "id=gun4;"}
+									{Position -95.9597 	 0.9049 	 0.0634}
+									
+								}
+								{bone "breech_handle3"
+									{parameters "id=gun4;"}
+									{Position -93.3124 	 -4.2261 	 6.1867}
+									
+								}
+								{bone "foresight1c"
+									{parameters "group=crew;"}
+									{Position 22.4411 	 0 	 0.0213}
+								}
+								{bone "fx_invers4"
+									{parameters "group=crew;"}
+									{matrix34
+										-1 	 0 	 0
+										0 	 -1 	 0
+										0 	 0 	 1
+										-95.9595 	 -0.0457 	 0.0634
+									}
+								}
+							}
+							{bone "loader_pivot3"
+								{parameters "id=gun4;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-45.1813 	 -5.8956 	 -4.6221
+								}
+								
+								{bone "shell_bed3"
+									{parameters "id=gun4;"}
+									{Position 11.8837 	 4.772 	 3.8498}
+									
+								}
+							}
+							{bone "loader_slide3"
+								{parameters "id=gun4;"}
+								{matrix34
+									1 	 0 	 0
+									0 	 0 	 -1
+									0 	 1 	 0
+									-56.3799 	 -3.0668 	 -9.0006
+								}
+								
+							}
+						}
+						{bone "gunner7"
+							{parameters "group=crew;"}
+							{Position -9.3808 	 21.0453 	 16.0498}
+						}
+						{bone "gunner8"
+							{parameters "group=crew;"}
+							{Position -8.9955 	 -20.405 	 11.1662}
+						}
+						{bone "shield4"
+							{parameters "id=shield4;"}
+							{Position 3.5553 	 0.06 	 24.5756}
+							
+							{bone "crew_shiedl4_1"
+								{parameters "id=shield4;"}
+								{matrix34
+									-0.4924 	 0.866 	 -0.0868
+									-0.8529 	 -0.5 	 -0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 23.8805 	 14.9078
+								}
+								
+								{bone "crew_shiedl4_2"
+									{parameters "id=shield4;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0471 	 -4.4008 	 3.1643
+									}
+									
+								}
+							}
+							{bone "crew_shiedr4_1"
+								{parameters "id=shield4;"}
+								{matrix34
+									-0.4924 	 -0.866 	 -0.0868
+									0.8529 	 -0.5 	 0.1504
+									-0.1736 	 0 	 0.9848
+									13.4817 	 -23.8355 	 14.9078
+								}
+								
+								{bone "crew_shiedr4_2"
+									{parameters "id=shield4;"}
+									{matrix34
+										-0.0872 	 0 	 0.9962
+										0 	 -1 	 0
+										0.9962 	 0 	 0.0872
+										-0.0472 	 4.3712 	 3.1643
+									}
+									
+								}
+							}
+						}
+					}
+				}
+				{bone "mast_rear_cables"
+					{parameters "id=body_rear;"}
+					{Position 218.638 	 0.1566 	 227.517}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mast_rear_cables.ply"}
+				}
+				{bone "fire_rear1"
+					{Position 165.509 	 71.9334 	 51.8629}
+				}
+				{bone "fire_rear2"
+					{Position 38.7527 	 -68.4834 	 49.3543}
+				}
+				{bone "fire_rear3"
+					{Position 165.326 	 -39.2791 	 96.0727}
+				}
+				{bone "fire_rear4"
+					{Position -157.642 	 -0.1907 	 45.6368}
+				}
+			}
+			{bone "fire_center2"
+				{Position -149.648 	 -65.0654 	 41.0967}
+			}
+			{bone "fire_center1"
+				{Position -15.8115 	 25.646 	 38.7588}
+			}
+			{bone "fx_fire1"
+				{matrix34
+					0 	 0.0017 	 1
+					0 	 1 	 -0.0017
+					-1 	 0 	 0
+					121.773 	 -6.4062 	 38.2929
+				}
+			}
+			{bone "fx_fire5"
+				{matrix34
+					0 	 0.0017 	 1
+					0 	 1 	 -0.0017
+					-1 	 0 	 0
+					409.829 	 3.2484 	 157.58
+				}
+			}
+			{bone "gunbase6"
+				{parameters "id=gun6;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					5.5439 	 0.4136 	 87.7041
+				}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase6.ply"}
+				{bone revolute "mgun_2_rot1"
+					{parameters "id=gun6;"}
+					{Position -0.0004 	 0 	 0.6435}
+					
+					{bone "aim_hor5_1"
+						{parameters "id=gun6;"}
+						{matrix34
+							0.5 	 0 	 -0.866
+							0 	 1 	 0
+							0.866 	 0 	 0.5
+							4.1409 	 8.2747 	 13.6522
+						}
+						
+					}
+					{bone "aim_hor5_2"
+						{parameters "id=gun6;"}
+						{matrix34
+							0.5 	 0 	 -0.866
+							0 	 1 	 0
+							0.866 	 0 	 0.5
+							4.1409 	 -10.7783 	 13.6522
+						}
+						
+					}
+					{bone "aim_ver5"
+						{parameters "id=gun6;"}
+						{Position 5.1613 	 7.7611 	 13.4397}
+						
+					}
+					{bone "charger10"
+						{parameters "group=crew;"}
+						{matrix34
+							0.9659 	 0.2588 	 -0.0053
+							-0.2588 	 0.9659 	 -0.0014
+							0.0048 	 0.0027 	 1
+							-16.4448 	 -11.2848 	 -0.9168
+						}
+					}
+					{bone "gunner11"
+						{parameters "group=crew;"}
+						{Position -4.3079 	 9.8211 	 6.7838}
+					}
+					{bone "gunner12"
+						{parameters "group=crew;"}
+						{Position -4.3079 	 -9.8214 	 7.1944}
+					}
+					{bone revolute "mgun_2_rot2"
+						{parameters "id=gun6;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0.1381 	 0 	 23.0669
+						}
+						
+						{bone "foresight1e"
+							{parameters "group=crew;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								27.8967 	 0.1691 	 -0.0531
+							}
+						}
+						{bone "fx_invers6"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -0.0872 	 -0.9962
+								-1 	 0 	 0
+								0 	 0.9962 	 -0.0872
+								1.178 	 2.0858 	 -2.0354
+							}
+						}
+						{bone "gunbase6_ammo"
+							{parameters "id=gun6;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.919 	 2.0858 	 3.0865
+							}
+							
+						}
+						{bone "gunbase6_ammobox"
+							{parameters "id=gun6;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.9353 	 -2.0577 	 4.9571
+							}
+							
+						}
+					}
+				}
+			}
+			{bone "gunbase5"
+				{parameters "id=gun5;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					244.537 	 0.4136 	 78.9401
+				}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase5.ply"}
+				{bone revolute "mgun_1_rot1"
+					{parameters "id=gun5;"}
+					{Position -0.0004 	 0 	 0.6435}
+					
+					{bone revolute "mgun_1_rot2"
+						{parameters "id=gun5;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0.1381 	 0 	 23.0669
+						}
+						
+						{bone "gunbase5_ammo"
+							{parameters "id=gun5;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.9191 	 2.0858 	 3.0865
+							}
+							
+						}
+						{bone "gunbase5_ammobox"
+							{parameters "id=gun5;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.9353 	 -2.0577 	 4.9571
+							}
+							
+						}
+						{bone "foresight1d"
+							{parameters "group=crew;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								27.8967 	 0.1691 	 -0.0531
+							}
+						}
+						{bone "fx_invers5"
+							{parameters "group=crew;"}
+							{matrix34
+								0 	 -0.0872 	 -0.9962
+								-1 	 0 	 0
+								0 	 0.9962 	 -0.0872
+								1.178 	 2.0858 	 -2.0354
+							}
+						}
+					}
+					{bone "aim_ver4"
+						{parameters "id=gun5;"}
+						{Position 5.1613 	 7.7611 	 13.4397}
+						
+					}
+					{bone "gunner9"
+						{parameters "group=crew;"}
+						{Position -4.3079 	 9.8211 	 6.7838}
+					}
+					{bone "gunner10"
+						{parameters "group=crew;"}
+						{Position -4.308 	 -9.8214 	 7.1944}
+					}
+					{bone "charger9"
+						{parameters "group=crew;"}
+						{matrix34
+							0.9659 	 0.2588 	 -0.0053
+							-0.2588 	 0.9659 	 -0.0014
+							0.0048 	 0.0027 	 1
+							-16.4448 	 -11.2848 	 -0.9168
+						}
+					}
+					{bone "aim_hor4_2"
+						{parameters "id=gun5;"}
+						{matrix34
+							0.5 	 0 	 -0.866
+							0 	 1 	 0
+							0.866 	 0 	 0.5
+							4.1409 	 -10.7783 	 13.6522
+						}
+						
+					}
+					{bone "aim_hor4_1"
+						{parameters "id=gun5;"}
+						{matrix34
+							0.5 	 0 	 -0.866
+							0 	 1 	 0
+							0.866 	 0 	 0.5
+							4.1409 	 8.2747 	 13.6522
+						}
+						
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{Position 43.9449 	 -0.944 	 -10.0695}
+				{bone "prop2"
+					{parameters "id=engine;"}
+					{Position -882.527 	 -33.982 	 -51.2285}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/prop2.ply"}
+				}
+				{bone "prop1"
+					{parameters "id=engine;"}
+					{Position -882.528 	 23.3675 	 -51.1505}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/prop1.ply"}
+				}
+				{bone "funnel1"
+					{parameters "id=engine;"}
+					{Position -142.35 	 0.5664 	 141.01}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/funnel1.ply"}
+				}
+				{bone "funnel2"
+					{parameters "id=engine;"}
+					{Position 113.15 	 2.2341 	 160.104}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/funnel2.ply"}
+				}
+				{bone "funnel2_cables"
+					{parameters "id=engine;"}
+					{Position 109.489 	 0.8931 	 120.961}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/funnel2_cables.ply"}
+				}
+				{bone "funnel1_cables"
+					{parameters "id=body;"}
+					{Position -140.053 	 -0.9394 	 119.743}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/funnel1_cables.ply"}
+				}
+				{bone "fx_smoke_pipe2"
+					{parameters "group=crew;"}
+					{matrix34
+						0.9962 	 0 	 0.0872
+						0 	 1 	 0
+						-0.0872 	 0 	 0.9962
+						106.32 	 2.25 	 196
+					}
+				}
+				{bone "fx_smoke_pipe1"
+					{parameters "group=crew;"}
+					{matrix34
+						0.9962 	 0 	 0.0872
+						0 	 1 	 0
+						-0.0872 	 0 	 0.9962
+						-144.093 	 2.25 	 196
+					}
+				}
+			}
+			{bone "static_searchlight"
+				{parameters "id=body_center;"}
+				{Position -313.941 	 -2.0311 	 101.42}
+				{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/static_searchlight.ply"}
+				{bone "static_searchlight_glass"
+					{parameters "id=body_center;"}
+					{Position 12.9794 	 0.0043 	 28.0955}
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/static_searchlight_glass.ply"}
+				}
+			}
+			{bone "fire_center3"
+				{Position -275.939 	 54.6306 	 40.2901}
+			}
+			{bone "fire_center4"
+				{Position -393.007 	 -65.0708 	 38.1954}
+			}
+			{bone "fire_center5"
+				{Position -542.492 	 42.5331 	 38.1954}
+			}
+			{bone "camera"
+				{matrix34
+					1 	 0 	 0.0029
+					0 	 1 	 0
+					-0.0029 	 0 	 1
+					370.026 	 1.4235 	 238.548
+				}
+			}
+		}
+		{bone "fx_bulb_norm_engine1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-1024.1 	 -0.0324 	 0
+			}
+		}
+		{bone "fx_bulb_norm_front1"
+			{matrix34
+				0.1736 	 0.9848 	 0
+				-0.9848 	 0.1736 	 0
+				0 	 0 	 1
+				917.852 	 22.6662 	 0
+			}
+		}
+		{bone "fx_bulb_norm_front2"
+			{matrix34
+				0.1736 	 -0.9848 	 0
+				0.9848 	 0.1736 	 0
+				0 	 0 	 1
+				917.863 	 3.9561 	 0
+			}
+		}
+		{bone "fx_bulb_small_center2"
+			{matrix34
+				0.0872 	 -0.9962 	 0
+				0.9962 	 0.0872 	 0
+				0 	 0 	 1
+				296.898 	 -72.1896 	 0
+			}
+		}
+		{bone "fx_bulb_small_center4"
+			{matrix34
+				0.0872 	 0.9962 	 0
+				-0.9962 	 0.0872 	 0
+				0 	 0 	 1
+				296.911 	 87.4404 	 0
+			}
+		}
+		{bone "fx_bulb_small_center5"
+			{matrix34
+				-0.154 	 -0.9881 	 0
+				0.9881 	 -0.154 	 0
+				0 	 0 	 1
+				-735.675 	 -77.5036 	 0
+			}
+		}
+		{bone "fx_bulb_small_center6"
+			{matrix34
+				-0.1269 	 0.9919 	 0
+				-0.9919 	 -0.1269 	 0
+				0 	 0 	 1
+				-735.672 	 79.9353 	 0
+			}
+		}
+		{bone "fx_bulb_small_engine1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-1006.98 	 -15.748 	 0
+			}
+		}
+		{bone "fx_bulb_small_engine2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-1006.98 	 15.6831 	 0
+			}
+		}
+		{bone "fx_exp1"
+			{Position 241.048 	 -32.8774 	 2.1231}
+		}
+		{bone "fx_exp2"
+			{Position 241.048 	 31.6721 	 2.1231}
+		}
+		{bone "pivot_front"
+			{Position 98.4252 	 0 	 0}
+		}
+		{bone "pivot_back"
+			{Position -98.4252 	 0 	 0}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.0175 	 -0.9998 	 0
+				0.9998 	 -0.0175 	 0
+				0 	 0 	 1
+				75 	 100.854 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.0175 	 0.9998 	 0
+				-0.9998 	 -0.0175 	 0
+				0 	 0 	 1
+				75 	 -90.0324 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				0 	 -90.0324 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 100.854 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-75 	 -90.0324 	 0
+			}
+		}
+		{bone "emit6"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-75 	 100.854 	 0
+			}
+		}
+		{bone "emit7"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-150 	 100.854 	 0
+			}
+		}
+		{bone "emit8"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-150 	 -90.0324 	 0
+			}
+		}
+		{bone "fx_bulb_small_center1"
+			{matrix34
+				-0.0046 	 -1 	 0
+				1 	 -0.0046 	 0
+				0 	 0 	 1
+				-299.757 	 -79.0794 	 0
+			}
+		}
+		{bone "fx_bulb_small_center3"
+			{matrix34
+				-0.0046 	 1 	 0
+				-1 	 -0.0046 	 0
+				0 	 0 	 1
+				-299.561 	 94.3301 	 0
+			}
+		}
+	}
+}
+{volume "armor1"
+	{cylinder 28.9094 50.82}
+	{bone "body"}
+	{Position -310.394 	 -2.1791 	 75.0935}
+}
+{volume "armor2"
+	{cylinder 47.3028 18.2392}
+	{bone "body"}
+	{Position -313.306 	 -2.1791 	 109.623}
+}
+{volume "armor3"
+	{box 42.6809 48.4657 43.1935}
+	{bone "body"}
+	{Position 36.7408 	 0.2826 	 65.801}
+}
+{volume "armor4"
+	{box 42.7141 22.6961 21.1963}
+	{bone "body"}
+	{Position 36.7242 	 35.585 	 97.9959}
+}
+{volume "armor5"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/armor5.vol"}
+	{bone "body"}
+	{Position 42.3422 	 0.3815 	 97.4811}
+}
+{volume "armor6"
+	{box 42.7225 22.6508 22.5802}
+	{bone "body"}
+	{Position 36.7682 	 -34.8653 	 97.4029}
+}
+{volume "armor7"
+	{cylinder 25.019 20.45}
+	{bone "body_front"}
+	{Position -198.475 	 0.4442 	 77.6708}
+}
+{volume "armor8"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/armor8.vol"}
+	{bone "funnel1"}
+	{Position 4.412 	 -0.2212 	 -2.0106}
+}
+{volume "armor9"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/armor9.vol"}
+	{bone "funnel2"}
+	{Position -0.6758 	 -0.052 	 -21.2069}
+}
+{volume "ballast1"
+	{box 460 45.566 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		710.268 	 67.7803 	 -6.2105
+	}
+}
+{volume "ballast2"
+	{box 460 45.566 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		710.268 	 -80.9506 	 -6.2278
+	}
+}
+{volume "ballast3"
+	{box 460 45.566 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		250.266 	 67.7726 	 -10.9316
+	}
+}
+{volume "ballast4"
+	{box 460 45.566 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		250.266 	 -80.9506 	 -11.0934
+	}
+}
+{volume "ballast5"
+	{box 460 45.566 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-209.734 	 67.7728 	 -10.7316
+	}
+}
+{volume "ballast6"
+	{box 460 45.566 29.5276}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-209.734 	 -80.9506 	 -11.0378
+	}
+}
+{volume "ballast7"
+	{box 460 45.566 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-669.732 	 67.781 	 -5.6102
+	}
+}
+{volume "ballast8"
+	{box 460 45.566 19.685}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 -0.0004
+		0 	 1 	 -0.0016
+		0.0004 	 0.0016 	 1
+		-669.732 	 -80.9506 	 -6.0609
+	}
+}
+{volume "barre22"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barre22.vol"}
+	{bone "aux_turret1"}
+	{Position -0.3842 	 0 	 15.8462}
+}
+{volume "barre32"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barre32.vol"}
+	{bone "aux_turret2"}
+	{Position -0.3842 	 0 	 15.8462}
+}
+{volume "barre42"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barre42.vol"}
+	{bone "aux_turret3"}
+	{Position -0.3842 	 0 	 15.8462}
+}
+{volume "barrel11"
+	{cylinder 22.2135 7.4}
+	{bone "gunbase1"}
+	{Position 0 	 0 	 1.673}
+}
+{volume "barrel12"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel12.vol"}
+	{bone "turret"}
+	{Position -0.3842 	 0 	 15.8462}
+}
+{volume "barrel13"
+	{box 53.9414 14.0101 9.46829}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-31.3878 	 -6.7689 	 -0.1302
+	}
+}
+{volume "barrel14"
+	{box 12.6055 11.2494 11.02}
+	{bone "gun"}
+	{Position -93.2336 	 -0.023 	 0.2093}
+}
+{volume "barrel15"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel15.vol"}
+	{bone "gun"}
+	{Position -32.4197 	 0 	 0}
+}
+{volume "barrel21"
+	{cylinder 22.2135 7.4}
+	{bone "gunbase2"}
+	{Position 0 	 0 	 1.673}
+}
+{volume "barrel23"
+	{box 53.9414 14.0101 9.46829}
+	{bone "gun_rot1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-31.3878 	 -6.7689 	 -0.1302
+	}
+}
+{volume "barrel24"
+	{box 12.6055 11.2494 11.02}
+	{bone "gun1"}
+	{Position -93.2336 	 -0.023 	 0.2093}
+}
+{volume "barrel25"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel25.vol"}
+	{bone "gun1"}
+	{Position -32.4197 	 0 	 0}
+}
+{volume "barrel31"
+	{cylinder 22.2135 7.4}
+	{bone "gunbase3"}
+	{Position 0 	 0 	 1.673}
+}
+{volume "barrel33"
+	{box 53.9414 14.0101 9.46829}
+	{bone "gun_rot2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-31.3878 	 -6.7689 	 -0.1302
+	}
+}
+{volume "barrel34"
+	{box 12.6055 11.2494 11.02}
+	{bone "gun2"}
+	{Position -93.2336 	 -0.023 	 0.2093}
+}
+{volume "barrel35"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel35.vol"}
+	{bone "gun2"}
+	{Position -32.4197 	 0 	 0}
+}
+{volume "barrel41"
+	{cylinder 22.2135 7.4}
+	{bone "gunbase4"}
+	{Position 0 	 0 	 1.673}
+}
+{volume "barrel43"
+	{box 53.9414 14.0101 9.46829}
+	{bone "gun_rot3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-31.3878 	 -6.7689 	 -0.1302
+	}
+}
+{volume "barrel44"
+	{box 12.6055 11.2494 11.02}
+	{bone "gun3"}
+	{Position -93.2336 	 -0.023 	 0.2093}
+}
+{volume "barrel45"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel45.vol"}
+	{bone "gun3"}
+	{Position -32.4197 	 0 	 0}
+}
+{volume "barrel51"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel51.vol"}
+	{bone "gunbase5"}
+	{Position 0 	 0 	 11.7417}
+}
+{volume "barrel52"
+	{box 22.5438 3.58252 6.10126}
+	{bone "mgun_1_rot2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-6.357 	 0.494 	 -0.0532
+	}
+}
+{volume "barrel53"
+	{box 7.96507 5.03721 9.04948}
+	{bone "mgun_1_rot2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0.1736 	 0.9848
+		0 	 0.9848 	 -0.1736
+		0.9093 	 -1.622 	 4.6702
+	}
+}
+{volume "barrel54"
+	{cylinder 1.96015 21.05}
+	{bone "mgun_1_rot2"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		15.4399 	 0.3306 	 -0.0531
+	}
+}
+{volume "barrel61"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/barrel61.vol"}
+	{bone "gunbase6"}
+	{Position 0 	 0 	 11.7417}
+}
+{volume "barrel62"
+	{box 22.5438 3.58252 6.10126}
+	{bone "mgun_2_rot2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-6.357 	 0.494 	 -0.0532
+	}
+}
+{volume "barrel63"
+	{box 7.96507 5.03721 9.04948}
+	{bone "mgun_2_rot2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0.1736 	 0.9848
+		0 	 0.9848 	 -0.1736
+		0.9093 	 -1.622 	 4.6702
+	}
+}
+{volume "barrel64"
+	{cylinder 1.96015 21.05}
+	{bone "mgun_2_rot2"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		15.44 	 0.3306 	 -0.0531
+	}
+}
+{volume "body_center"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_center.vol"}
+	{bone "body"}
+	{Position -227.993 	 -0.944 	 -10.0695}
+}
+{volume "body_front1"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_front1.vol"}
+	{bone "body_front"}
+	{Position 97.7939 	 1.3077 	 0.021}
+}
+{volume "body_front2"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_front2.vol"}
+	{bone "body_front"}
+	{Position 417.765 	 4.4153 	 2.3178}
+}
+{volume "body_front3"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_front3.vol"}
+	{bone "body_front"}
+	{Position -170.378 	 0.701 	 52.9632}
+}
+{volume "body_front4"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_front4.vol"}
+	{bone "body_front"}
+	{Position -159.618 	 0.8272 	 -3.0283}
+}
+{volume "body_front5"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_front5.vol"}
+	{bone "body_front"}
+	{Position -257.511 	 -0.6065 	 -16.7991}
+}
+{volume "body_rear1"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_rear1.vol"}
+	{bone "body_rear"}
+	{Position 117.41 	 0 	 0.2978}
+}
+{volume "body_rear2"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_rear2.vol"}
+	{bone "body_rear"}
+	{Position -81.9924 	 -1.1845 	 3.7866}
+}
+{volume "body_rear3"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/body_rear3.vol"}
+	{bone "body_rear"}
+	{Position 119.949 	 -0.3485 	 76.2589}
+}
+{volume "cabin1"
+	{box 115.19 47.3352 101.71}
+	{bone "cabin"}
+	{Position -151.377 	 0.1781 	 -10.1666}
+}
+{volume "cabin2"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/cabin2.vol"}
+	{bone "cabin"}
+	{Position -25.2672 	 1.0127 	 -37.3623}
+}
+{volume "engine"
+	{box 308.597 125.857 60.3549}
+	{bone "engine"}
+	{Position -7.6563 	 0.5664 	 21.1445}
+}
+{volume "hole10"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/hole10.vol"}
+	{bone "shield4"}
+	{Position -8.1978 	 0.006 	 -3.5307}
+}
+{volume "hole11"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield4"}
+	{Position -1.6571 	 19.2039 	 12.0501}
+}
+{volume "hole12"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield4"}
+	{Position -1.6571 	 -19.1884 	 12.0501}
+}
+{volume "hole13"
+	{cylinder 23.0175 22.8774}
+	{bone "body_front"}
+	{Position -198.475 	 0.4442 	 79.0422}
+}
+{volume "hole14"
+	{box 8.28187 20.5248 22.9284}
+	{bone "body_front"}
+	{Position -176.616 	 0.9417 	 79.2371}
+}
+{volume "hole15"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/hole15.vol"}
+	{bone "body"}
+	{Position 42.3422 	 0.3815 	 98.9415}
+}
+{volume "hole16"
+	{box 13.8765 126.58 23.5279}
+	{bone "body"}
+	{Position 36.7242 	 0.3815 	 99.3185}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/hole1.vol"}
+	{bone "shield1"}
+	{Position -8.1978 	 0.006 	 -3.5307}
+}
+{volume "hole2"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield1"}
+	{Position -1.6571 	 19.2039 	 12.0501}
+}
+{volume "hole3"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield1"}
+	{Position -1.6571 	 -19.1884 	 12.0501}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/hole4.vol"}
+	{bone "shield2"}
+	{Position -8.1978 	 0.006 	 -3.5307}
+}
+{volume "hole5"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield2"}
+	{Position -1.6571 	 19.2039 	 12.0501}
+}
+{volume "hole6"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield2"}
+	{Position -1.6571 	 -19.1884 	 12.0501}
+}
+{volume "hole7"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/hole7.vol"}
+	{bone "shield3"}
+	{Position -8.1978 	 0.006 	 -3.5307}
+}
+{volume "hole8"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield3"}
+	{Position -1.6572 	 19.2039 	 12.0501}
+}
+{volume "hole9"
+	{box 34.1905 7.10258 13.3234}
+	{bone "shield3"}
+	{Position -1.6572 	 -19.1884 	 12.0501}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/shield1.vol"}
+	{bone "shield1"}
+	{Position 0 	 0.0077 	 -0.6241}
+}
+{volume "shield2"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/shield2.vol"}
+	{bone "shield2"}
+	{Position 0 	 0.0077 	 -0.6241}
+}
+{volume "shield3"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/shield3.vol"}
+	{bone "shield3"}
+	{Position -0.0001 	 0.0077 	 -0.6241}
+}
+{volume "shield4"
+	{polyhedron "../../../../-vehicle/eng/marine/hms_boadicea/shield4.vol"}
+	{bone "shield4"}
+	{Position 0 	 0 	 0}
+}

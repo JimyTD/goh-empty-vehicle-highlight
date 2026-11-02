@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for mimosa (generated)
-	{Extension "../../../../-vehicle/eng/marine/mimosa/mimosa.mdl"}
+	{Extension "mimosa.mdl"}
 	{extender "stuff"
 		{item "evh_mimosa"}
 	}

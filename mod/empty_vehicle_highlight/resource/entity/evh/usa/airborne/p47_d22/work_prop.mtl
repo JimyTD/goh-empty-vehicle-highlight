@@ -1,0 +1,6 @@
+{material bump
+	{diffuse "$/_vehicle/prop_work4"}
+	{specular "$/_vehicle/prop_work4_sp"}
+	{color "230 230 230 25"}
+	{blend blend}
+}

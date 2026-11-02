@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 94mm_qf_3_7_aa_mid (generated)
-	{Extension "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/94mm_qf_3_7_aa.mdl"}
+	{Extension "94mm_qf_3_7_aa.mdl"}
 	{extender "stuff"
 		{item "evh_94mm_qf_3_7_aa_mid"}
 	}

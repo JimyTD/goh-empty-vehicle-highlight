@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sturmpanzer4 (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/sturmpanzer4/sturmpanzer4.mdl"}
+	{Extension "sturmpanzer4.mdl"}
 	{extender "stuff"
 		{item "evh_sturmpanzer4"}
 	}

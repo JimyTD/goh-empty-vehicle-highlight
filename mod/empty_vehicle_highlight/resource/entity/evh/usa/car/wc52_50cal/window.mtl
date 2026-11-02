@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/dodge_wc51-52"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/dodge_wc51-52_sp"}
+	{blend blend}
+}

@@ -1,0 +1,664 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: backdoor doorleft doorright
+;Exported by:	 TigerF
+;Date:			 30.05.2022 19:37:23
+;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_fin\3d vehicles\car\ford_v3000\ford_v3000_ammo.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/stop.anm"} {speed 0.7}}
+		{sequence "doorleft" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/doorleft.anm"} {speed 0.6}{events {0 "open_left"}}}
+		{sequence "doorright" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/doorright.anm"} {speed 0.6}{events {0 "open_right"}}}
+		{sequence "close_back" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/close_back.anm"} {speed 0.7}}
+		{sequence "open_back" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/open_back.anm"} {speed 0.7}}
+		{sequence "board" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/board.anm"} {speed 1}}
+		{sequence "wipers" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/wipers.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=35;wheelradius=0.46;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/body_r.anm"}{speed 0.7}}
+			}
+			{Position 35.9167 	 0 	 10.5033}
+			{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/body.ply"}
+			{bone "bodyback"
+				{parameters "id=bodyback;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback_r.anm"}{speed 0.7}}
+				}
+				{Position -61.8757 	 0.0197 	 10.9995}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback.ply"}
+				{bone "backdoor"
+					{parameters "id=bodyback;"}
+					{Position -36.3263 	 18.8927 	 -0.6482}
+					
+					{bone "enumerator1"
+						{Position 0.2786 	 -26.627 	 6.2674}
+						
+					}
+				}
+				{bone "leftdoor"
+					{parameters "id=bodyback;"}
+					{Position -30.7863 	 22.2068 	 -0.6482}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/leftdoor.ply"}
+				}
+				{bone "rightdoor"
+					{parameters "id=bodyback;"}
+					{Position -31.4013 	 -22.225 	 -0.6482}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/rightdoor.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=bodyback;"}
+					{Position -0.3654 	 -0.0469 	 12.8852}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail4.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=bodyback;"}
+					{matrix34
+						-0.9781 	 -0.2079 	 0
+						0.2079 	 -0.9781 	 0
+						0 	 0 	 1
+						-8.8217 	 10.0412 	 7.2385
+					}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail5.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=bodyback;"}
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						15.8232 	 9.167 	 10.0107
+					}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail6.ply"}
+				}
+				{bone "ammo_box"
+					{parameters "id=bodyback;"}
+					{matrix34
+						0.9994 	 -0.0349 	 0
+						0.0349 	 0.9994 	 0
+						0 	 0 	 1
+						-0.223 	 -0.0803 	 9.3949
+					}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/ammo_box.ply"}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/finland/car/ford_v3000_ammo/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 8.592 	 0 	 6.8794}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/engine.ply"}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						1.6595 	 0.0736 	 1.7736
+					}
+				}
+				{bone "engine_hatch"
+					{parameters "id=engine;"}
+					{Position -8.5391 	 0 	 12.3178}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/engine_hatch.ply"}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9986 	 -0.0523
+					0 	 0.0523 	 0.9986
+					-6.1977 	 13.9257 	 16.4032
+				}
+				
+				{bone "window2"
+					{parameters "id=window2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 0.0523
+						0 	 -0.0523 	 0.9986
+						-8.3739 	 -0.0496 	 6.2751
+					}
+					
+				}
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.9986 	 0.0523
+					0 	 -0.0523 	 0.9986
+					-6.1977 	 -13.8561 	 16.4032
+				}
+				
+				{bone "window3"
+					{parameters "id=window3;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9986 	 -0.0523
+						0 	 0.0523 	 0.9986
+						-8.3739 	 -0.0199 	 6.2787
+					}
+					
+				}
+			}
+			{bone "window1"
+				{parameters "id=window1;"}
+				{Position -6.9344 	 0 	 23.3937}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/window1.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					-0.8192 	 0 	 -0.5736
+					0 	 1 	 0
+					0.5736 	 0 	 -0.8192
+					-10.7811 	 6.9771 	 19.0715
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/steer.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9669 	 -0.2519 	 -0.0401
+					0.2521 	 0.9677 	 0
+					0.0388 	 -0.0101 	 0.9992
+					-4.3827 	 13.5831 	 13.6289
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9976 	 0.0698 	 0
+					-0.0698 	 0.9976 	 0
+					0 	 0 	 1
+					-3.2872 	 -16.4424 	 13.0848
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail2.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9889 	 0.0518 	 -0.1392
+					-0.0523 	 -0.9986 	 0
+					-0.139 	 0.0073 	 0.9903
+					-57.3651 	 7.9262 	 0.0839
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-92.0139 	 0.0007 	 3.4566
+				}
+			}
+			{bone "visor2"
+				{Position -3.0616 	 4.5076 	 23.6888}
+			}
+			{bone "visor1"
+				{Position -3.0616 	 -6.3193 	 23.6819}
+			}
+			{bone "headlightr"
+				{Position 21.3237 	 -11.2913 	 10.9035}
+			}
+			{bone "headlightl"
+				{Position 21.3237 	 11.2913 	 10.9035}
+			}
+			{bone "commander"
+				{matrix34
+					0.9817 	 0.1489 	 0.1186
+					-0.1499 	 0.9887 	 0
+					-0.1173 	 -0.0178 	 0.9929
+					-16.8737 	 -6.0248 	 1.0685
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9781 	 -0.1198 	 0.1704
+					0.1219 	 0.9925 	 -0.0018
+					-0.1689 	 0.0226 	 0.9854
+					-17.2496 	 5.9298 	 1.0685
+				}
+			}
+			{bone "wiper1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9118 	 -0.0196 	 0.4101
+					0.0534 	 0.996 	 -0.071
+					-0.4071 	 0.0867 	 0.9093
+					-5.1579 	 -4.2673 	 19.5392
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wiper1.ply"}
+			}
+			{bone "wiper2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9203 	 -0.0085 	 0.3912
+					0.0009 	 0.9998 	 0.0197
+					-0.3913 	 -0.0177 	 0.9201
+					-5.1579 	 4.1881 	 19.5392
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wiper2.ply"}
+			}
+			{bone "fuel"
+				{Position -21.7236 	 -0.87 	 6.6508}
+			}
+			{bone "transmission"
+				{parameters "id=body;"}
+				{Position -3.0926 	 0.2253 	 1.3701}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/transmission.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-36.994 	 0.2214 	 7.2596
+				}
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/detail3.ply"}
+			}
+		}
+		{bone "body_virt"
+			{Position 8.3283 	 0 	 16.1114}
+			{bone "pivot_front"
+				{Position 39.3111 	 0 	 -7.0996}
+				{bone revolute "steerl1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 13.9377 	 -0.1577
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							0.0872 	 0 	 -0.9962
+							0.1541 	 -2.1309 	 8.951
+						}
+					}
+					{bone prizmatic "suspension_l1"
+						{limits -0.07 0.07}
+						{speed 0.05}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							0 	 -1.5092 	 -0.1157
+						}
+						{bone revolute "wheell1"
+							{parameters "id=wheelleft1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0 	 1.229 	 0.042
+							}
+							{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wheell1.ply"}
+						}
+						{bone "breakl"
+							{parameters "id=body;"}
+							{Position 0 	 0 	 0.0246}
+							{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/breakl.ply"}
+						}
+					}
+				}
+				{bone revolute "steerr1"
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0.0359 	 -14.0543 	 -0.1577
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							0.0872 	 0 	 -0.9962
+							0.125 	 2.0969 	 8.9748
+						}
+					}
+					{bone prizmatic "suspension_r1"
+						{limits -0.07 0.07}
+						{speed 0.05}
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							-0.0359 	 1.3926 	 -0.1157
+						}
+						{bone revolute "wheelr1"
+							{parameters "id=wheelright1;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0 	 -1.2566 	 0.042
+							}
+							{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wheelr1.ply"}
+						}
+						{bone "breakr"
+							{parameters "id=body;"}
+							{Position 0 	 0 	 0.0246}
+							{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/breakr.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{Position 0 	 15.447 	 -0.042}
+					{bone revolute "wheell3"
+						{parameters "id=wheelleft3;radius=0.479;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{Position 0 	 -15.447 	 -0.042}
+					{bone revolute "wheelr3"
+						{parameters "id=wheelright3;radius=0.479;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+					}
+				}
+				{bone "front_susp"
+					{parameters "id=body;"}
+					{Position 0.0391 	 0 	 -1.0678}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/front_susp.ply"}
+				}
+				{bone "rod"
+					{parameters "id=body;"}
+					{Position -4.4991 	 0 	 -2.2053}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/rod.ply"}
+				}
+			}
+			{bone "pivot_back"
+				{Position -39.404 	 0 	 -7.2259}
+				{bone prizmatic "suspension_l2"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{Position 0 	 16.3563 	 0.1894}
+					{bone revolute "wheell2"
+						{parameters "id=wheelleft2;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.2592 	 -0.0685
+						}
+						{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{Position -0.0001 	 -16.3522 	 0.1894}
+					{bone revolute "wheelr2"
+						{parameters "id=wheelright2;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.2608 	 -0.0685
+						}
+						{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/wheelr2.ply"}
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9455 	 0 	 0.3256
+						0 	 -1 	 0
+						0.3256 	 0 	 0.9455
+						-4.5433 	 -16.6002 	 -8.1142
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9455 	 0 	 0.3256
+						0 	 -1 	 0
+						0.3256 	 0 	 0.9455
+						-4.5165 	 16.6275 	 -8.1142
+					}
+				}
+				{bone "rear_susp"
+					{parameters "id=body;"}
+					{Position -0.1986 	 0 	 0.0441}
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/rear_susp.ply"}
+				}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				15.2918 	 27.4203 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				15.3046 	 -30.4331 	 0
+			}
+		}
+		{bone "dummy"
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				-23.7048 	 0 	 16.7872
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/body1.vol"}
+	{bone "body"}
+	{Position 9.8208 	 0.1153 	 9.8153}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/body2.vol"}
+	{bone "body"}
+	{Position -15.2756 	 0.1153 	 15.3941}
+}
+{volume "body3"
+	{box 17.5271 65.8734 4.2144}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-57.7118 	 0.004 	 3.6082
+	}
+}
+{volume "bodyback1"
+	{box 44.0185 70.5427 11.2628}
+	{bone "bodyback"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		-0.1032 	 0.2507 	 4.6981
+	}
+}
+{volume "bodyback2"
+	{box 43.8852 0.691476 11.2589}
+	{bone "backdoor"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0.5783 	 -18.6684 	 5.3549
+	}
+}
+{volume "bodyback3"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback3.vol"}
+	{bone "bodyback"}
+	{Position 34.6856 	 0.0717 	 -3.152}
+}
+{volume "bodyback4"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback4.vol"}
+	{bone "bodyback"}
+	{Position 15.2252 	 0.0717 	 -3.152}
+}
+{volume "bodyback5"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback5.vol"}
+	{bone "bodyback"}
+	{Position 3.2347 	 0.0717 	 -3.152}
+}
+{volume "bodyback6"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback6.vol"}
+	{bone "bodyback"}
+	{Position -13.711 	 0.0717 	 -3.152}
+}
+{volume "bodyback7"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/bodyback7.vol"}
+	{bone "bodyback"}
+	{Position -30.6456 	 0.0717 	 -3.152}
+}
+{volume "engine"
+	{box 17.2326 16.0487 8.46835}
+	{bone "engine"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.6927 	 0.0102 	 1.5411
+	}
+}
+{volume "fuel"
+	{box 4.75714 21.3286 8.46002}
+	{bone "fuel"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		2.7139 	 0 	 0
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/hole1.vol"}
+	{bone "body"}
+	{Position -14.6042 	 0.1595 	 22.5465}
+}
+{volume "hole2"
+	{box 23.9415 6.88647 17.1864}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-13.5463 	 0.0846 	 23.3914
+	}
+}
+{volume "hole3"
+	{box 69.7192 10.8324 41.8271}
+	{bone "bodyback"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-0.6396 	 0.0014 	 6.2626
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/ram.vol"}
+	{bone "body"}
+	{Position -34.8215 	 0.0912 	 3.9154}
+}
+{volume "transmission"
+	{cylinder 3.5843 8.47365}
+	{bone "transmission"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		2.141 	 -0.3066 	 0.0257
+	}
+}
+{volume "wheelleft1"
+	{cylinder 9.23982 4.50349}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.6236
+	}
+}
+{volume "wheelleft2"
+	{cylinder 9.24075 10.5792}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.032
+	}
+}
+{volume "wheelright1"
+	{cylinder 9.24075 4.36685}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.5616
+	}
+}
+{volume "wheelright2"
+	{cylinder 9.24075 10.5694}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0349
+	}
+}
+{volume "window1"
+	{box 22.783 6.96474 0.708279}
+	{bone "window1"}
+	{matrix34
+		0 	 -1 	 0
+		-0.3256 	 0 	 0.9455
+		-0.9455 	 0 	 -0.3256
+		-0.1586 	 0.2358 	 -0.3489
+	}
+}
+{volume "window2"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/window2.vol"}
+	{bone "window2"}
+	{Position -0.0807 	 0.0492 	 -0.0455}
+}
+{volume "window3"
+	{polyhedron "../../../../-vehicle/finland/car/ford_v3000_ammo/window3.vol"}
+	{bone "window3"}
+	{Position -0.0811 	 -0.2949 	 -0.0455}
+}

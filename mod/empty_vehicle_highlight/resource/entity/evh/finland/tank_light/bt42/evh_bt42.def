@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bt42 (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/bt42/bt42.mdl"}
+	{Extension "bt42.mdl"}
 	{extender "stuff"
 		{item "evh_bt42"}
 	}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/jagdtiger"}
+	{bump "$/_vehicle/jagdtiger_bp"}
+	{specular "$/_vehicle/jagdtiger_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

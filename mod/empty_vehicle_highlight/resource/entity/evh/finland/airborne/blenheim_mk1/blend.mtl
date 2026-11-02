@@ -1,0 +1,7 @@
+{material envmap
+	{diffuse "$/_vehicle/blenheim_mk1"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/blenheim_mk1_sp"}
+;	{color "230 230 230 50"}
+	{blend blend}
+}

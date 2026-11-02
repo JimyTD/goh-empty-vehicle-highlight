@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for aec_mk3 (generated)
-	{Extension "../../../../-vehicle/eng/btr/aec_mk3/aec_mk3.mdl"}
+	{Extension "aec_mk3.mdl"}
 	{extender "stuff"
 		{item "evh_aec_mk3"}
 	}

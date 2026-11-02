@@ -1,0 +1,1048 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch1_1 turret
+;Exported by:	 nic21
+;Date:			 08.11.2025 19:39:17
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_light\Cruiser_A10_mk2\cruiser_mk2.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/open.anm"} {speed 0.3}{resume} {events {12 "hatch_light"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/open_driver.anm"} {speed 0.45}{resume} {events {2 "hatch_light"} {60 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.26;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position -0.3607 	 -21.6732 	 11.0034}
+			{bone "fxtracer1"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-39.1343 	 0.0057 	 -8.0039
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0 	 0.0057 	 -11.0034
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position 28.2412 	 -0.0731 	 -3.8296}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;radius=0.31;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position 16.4172 	 -0.0731 	 -4.9221}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.12 0.12}
+				{speed 0.18}
+				{Position 6.2152 	 -0.0731 	 -4.9221}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.12 0.12}
+				{speed 0.18}
+				{Position -7.6444 	 -0.0731 	 -4.9221}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position -17.8464 	 -0.0731 	 -4.9221}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position -29.678 	 -0.0731 	 -3.8296}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;radius=0.31;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.1518 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr7.ply"}
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/trackr.ply"}
+			}
+			{bone "springr"
+				{parameters "id=trackright;"}
+				{Position -0.7156 	 5.1325 	 -0.4026}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/springr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position -0.7156 	 4.8819 	 -1.9663}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/suspr.ply"}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -0.3607 	 21.6676 	 11.0034}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/trackl.ply"}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position -0.7155 	 -4.879 	 -1.9663}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/suspl.ply"}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position -29.678 	 -0.0731 	 -3.8296}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;radius=0.31;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell7.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position -17.8464 	 -0.0731 	 -4.9221}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.12 0.12}
+				{speed 0.18}
+				{Position -7.6444 	 -0.0731 	 -4.9221}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.12 0.12}
+				{speed 0.18}
+				{Position 6.2152 	 -0.0731 	 -4.9221}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.1 0.1}
+				{speed 0.18}
+				{Position 16.4172 	 -0.0731 	 -4.9221}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.18}
+				{Position 28.2412 	 -0.0731 	 -3.8296}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;radius=0.31;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell2.ply"}
+				}
+			}
+			{bone "springl"
+				{parameters "id=trackleft;"}
+				{Position -0.7155 	 -5.1296 	 -0.4026}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/springl.ply"}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0 	 0.0057 	 -11.0034
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-39.1343 	 0.0057 	 -8.0039
+				}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 19.685}
+			{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/body.ply"}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 9.8073 	 -18.8804 	 9.6499}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 6.5396 	 -20.0401 	 8.8908}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 7.6329 	 21.1452 	 8.7926}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail3.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -26.6331 	 -1.1477 	 -0.8486}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine.ply"}
+				{bone "engine_hatch2_1"
+					{parameters "id=engine;"}
+					{Position -2.5598 	 -3.5074 	 7.01}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine_hatch2_1.ply"}
+				}
+				{bone "engine_hatch2_2"
+					{parameters "id=engine;"}
+					{Position -13.426 	 -3.5074 	 1.2816}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine_hatch2_2.ply"}
+				}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position 11.2739 	 1.1477 	 11.0092}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine_hatch1.ply"}
+				}
+				{bone "engine_hatch3"
+					{parameters "id=engine;"}
+					{Position -19.4693 	 1.1477 	 -1.1003}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine_hatch3.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position -7.1876 	 -20.2842 	 6.6955}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail6.ply"}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-22.0259 	 -20.3172 	 5.2431
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-7.1877 	 -3.5074 	 0.0967
+					}
+				}
+				{bone "seat01"
+					{matrix34
+						-0.9848 	 0 	 0.1736
+						0 	 -1 	 0
+						0.1736 	 0 	 0.9848
+						-6.8446 	 -1.5829 	 5.3019
+					}
+				}
+				{bone "seat02"
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						12.1252 	 16.9619 	 9.3699
+					}
+				}
+				{bone "seat03"
+					{matrix34
+						-0.912 	 -0.3829 	 -0.1469
+						0.3859 	 -0.9225 	 0.0085
+						-0.1388 	 -0.0489 	 0.9891
+						6.748 	 -9.0282 	 10.5897
+					}
+				}
+				{bone "seat04"
+					{matrix34
+						-0.9945 	 -0.0827 	 0.0649
+						0.0808 	 -0.9963 	 -0.0305
+						0.0672 	 -0.0251 	 0.9974
+						4.704 	 9.8175 	 10.4148
+					}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position -22.7184 	 22.5135 	 -0.0051}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail4.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position -22.7184 	 -20.4665 	 -0.0051}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/detail5.ply"}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 10.3756 	 0 	 9.7281}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						9.8315 	 0 	 9.0318
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.4782 	 -0.5512 	 1.0236
+						}
+						
+						{bone "foresight1"
+							{Position 21.5948 	 -0.0014 	 0}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							10.4465 	 -0.315 	 5.9695
+						}
+					}
+				}
+				{bone "turret_hatch2_2"
+					{parameters "id=turret;"}
+					{Position -11.2614 	 -6.9367 	 16.0003}
+					
+				}
+				{bone "turret_hatch1_1"
+					{parameters "id=turret;"}
+					{Position -0.9661 	 4.8238 	 16.0003}
+					
+				}
+				{bone "turret_hatch2_1"
+					{parameters "id=turret;"}
+					{Position -0.7496 	 -6.9367 	 16.0003}
+					
+				}
+				{bone "turret_hatch1_2"
+					{parameters "id=turret;"}
+					{Position -14.6275 	 4.8238 	 16.0003}
+					
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -24.7639 	 -1.1794 	 18.5003}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position -0.0153 	 0 	 5.0984}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position -0.0153 	 0 	 5.0984}
+							
+							{bone "at1_4"
+								{parameters "id=turret;"}
+								{Position -0.0153 	 0 	 5.0984}
+								
+							}
+						}
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-6.0055 	 -6.9095 	 13.8041
+					}
+				}
+				{bone "enumerator1"
+					{matrix34
+						0 	 0.9384 	 -0.3457
+						-1 	 0 	 0
+						0 	 0.3457 	 0.9384
+						-11.8082 	 -14.5441 	 7.37
+					}
+					
+				}
+				{bone "enumerator2"
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9384 	 0.3457
+						0 	 -0.3457 	 0.9384
+						-12.5316 	 14.6375 	 7.1317
+					}
+					
+				}
+				{bone "visor1"
+					{Position -5.0102 	 4.8238 	 19.1967}
+				}
+				{bone "sight"
+					{Position 15.8067 	 4.9564 	 8.4047}
+				}
+			}
+			{bone "hatch2_1"
+				{parameters "id=body;"}
+				{Position 36.7913 	 -9.3898 	 9.311}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/hatch2_1.ply"}
+				{bone "hatch2_2"
+					{parameters "id=body;"}
+					{Position -5.1968 	 0 	 1.0433}
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/hatch2_2.ply"}
+				}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					17.6627 	 21.7278 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell11.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0029 	 21.7278 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell10.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-19.8306 	 21.7278 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell9.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-43.5892 	 21.5945 	 -5.7252
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell8.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.31;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					43.9228 	 21.5945 	 -6.4778
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheell1.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.31;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					43.9228 	 -21.5945 	 -6.4778
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.28;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-43.5892 	 -21.5945 	 -5.7252
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-19.8306 	 -21.5945 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.0029 	 -21.5945 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					17.6627 	 -21.5945 	 -2.9195
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/wheelr11.ply"}
+			}
+			{bone "visor2"
+				{Position 42.1796 	 3.6551 	 5.5709}
+			}
+			{bone "headlightl"
+				{Position 49.1892 	 13.5226 	 0.8497}
+			}
+			{bone "headlightr"
+				{Position 49.1892 	 -13.5227 	 0.8497}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					10.3756 	 0 	 11.7696
+				}
+			}
+			{bone "hatch1_hinge"
+				{parameters "id=body;"}
+				{Position 38.248 	 10.4768 	 7.1063}
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2/hatch1_hinge.ply"}
+			}
+			{bone "hatch1_1"
+				{parameters "id=body;"}
+				{Position 36.7913 	 10.1181 	 9.311}
+				
+				{bone "hatch1_2"
+					{parameters "id=body;"}
+					{Position -5.1969 	 -0.0032 	 1.0433}
+					
+				}
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				5.315 	 -39.3701 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				65.4706 	 10.1181 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				5.315 	 39.3701 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-14.5079 	 39.3701 	 0
+			}
+		}
+		{bone "emit6"
+			{parameters "group=crew;"}
+			{matrix34
+				0.0872 	 -0.9962 	 0
+				0.9962 	 0.0872 	 0
+				0 	 0 	 1
+				-27.6674 	 39.3701 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{Position -59.0551 	 -2.7362 	 0}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-19.8819 	 -39.3701 	 0
+			}
+		}
+	}
+}
+{volume "armor1"
+	{box 6.0039 6.52 4.4158}
+	{bone "body"}
+	{Position 21.6244 	 -21.3309 	 8.9281}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/armor2.vol"}
+	{bone "body"}
+	{Position 10.4528 	 -21.5682 	 4.9659}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/armor3.vol"}
+	{bone "body"}
+	{Position 10.4535 	 21.5746 	 4.9677}
+}
+{volume "armor4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/armor4.vol"}
+	{bone "engine"}
+	{Position 11.4839 	 -16.9787 	 7.5923}
+}
+{volume "armor5"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/armor5.vol"}
+	{bone "engine"}
+	{Position 11.4839 	 18.1264 	 7.5923}
+}
+{volume "armor_mantlet"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/armor_mantlet.vol"}
+	{bone "turret"}
+	{Position 13.6958 	 -0.0003 	 8.0202}
+}
+{volume "barrel"
+	{cylinder 1.05444 37.874}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		2.5627 	 0 	 0
+	}
+}
+{volume "basket"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/basket.vol"}
+	{bone "turret"}
+	{Position -18.0086 	 0 	 3.3457}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/body1.vol"}
+	{bone "body"}
+	{Position 22.4814 	 0 	 -4.3659}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/body2.vol"}
+	{bone "body"}
+	{Position 16.9854 	 18.4878 	 5.8188}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/body3.vol"}
+	{bone "body"}
+	{Position 16.9854 	 -2.7913 	 5.8188}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/body4.vol"}
+	{bone "body"}
+	{Position 38.8123 	 -11.2453 	 5.5737}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/body5.vol"}
+	{bone "body"}
+	{Position 31.8477 	 0.0008 	 9.9239}
+}
+{volume "breech"
+	{box 4.68125 3.97175 3.87145}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-8.2344 	 -0.481 	 1.0155
+	}
+}
+{volume "cupola1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/cupola1.vol"}
+	{bone "turret_hatch1_1"}
+	{Position -3.6843 	 0 	 1.1286}
+}
+{volume "cupola2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/cupola2.vol"}
+	{bone "turret_hatch1_2"}
+	{Position 2.8995 	 0 	 1.1286}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine1.vol"}
+	{bone "engine"}
+	{Position 11.5524 	 1.1476 	 6.6675}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine2.vol"}
+	{bone "engine"}
+	{Position 4.5563 	 1.1475 	 -3.5174}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine3.vol"}
+	{bone "engine"}
+	{Position -19.1136 	 1.1477 	 -4.3255}
+}
+{volume "engine4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/engine4.vol"}
+	{bone "engine"}
+	{Position -6.8248 	 1.1477 	 4.57}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole1.vol"}
+	{bone "wheelsr"}
+	{Position -0.0599 	 0 	 -0.0006}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole2.vol"}
+	{bone "wheelsl"}
+	{Position -0.0599 	 0.0057 	 -0.0006}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole3.vol"}
+	{bone "engine"}
+	{Position 11.4839 	 -16.7314 	 9.1764}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole4.vol"}
+	{bone "engine"}
+	{Position 11.4839 	 18.1249 	 8.3447}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole5.vol"}
+	{bone "turret"}
+	{Position 12.8185 	 -0.0018 	 8.02}
+}
+{volume "hole6"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole6.vol"}
+	{bone "turret"}
+	{Position 14.3882 	 -5.9832 	 8.7083}
+}
+{volume "hole7"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole7.vol"}
+	{bone "turret"}
+	{Position 14.3882 	 -1.0209 	 8.7463}
+}
+{volume "hole8"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/hole8.vol"}
+	{bone "turret"}
+	{Position 14.3928 	 4.9744 	 8.4609}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/ram.vol"}
+	{bone "body"}
+	{Position -0.2113 	 0 	 -19.685}
+}
+{volume "trackleft1"
+	{cylinder 6.12205 3.15868}
+	{bone "wheell1"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft2"
+	{cylinder 6.11933 3.15868}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.98757 3.15868}
+	{bone "wheell3"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.98757 3.15868}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.98757 3.15868}
+	{bone "wheell5"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.98757 3.15868}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft7"
+	{cylinder 6.12205 3.15868}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft8"
+	{cylinder 5.61024 5.446}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 1.063
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0 	 0.0057 	 0}
+}
+{volume "trackright1"
+	{cylinder 6.12205 3.15868}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright2"
+	{cylinder 6.11933 3.15868}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 4.98757 3.15868}
+	{bone "wheelr3"}
+	{orientation
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+	}
+}
+{volume "trackright4"
+	{cylinder 4.98757 3.15868}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 4.98757 3.15868}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 4.98757 3.15868}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 6.12205 3.15868}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "trackright8"
+	{cylinder 5.61024 5.446}
+	{bone "wheelr8"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0664
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0 	 0 	 0}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/turret1.vol"}
+	{bone "turret"}
+	{Position -3.9905 	 -0.0073 	 8.9546}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/turret2.vol"}
+	{bone "turret"}
+	{Position -0.0539 	 0 	 3.6487}
+}
+{volume "turret3"
+	{cylinder 16.3875 2.40389}
+	{bone "turret"}
+	{Position 0 	 0 	 1.0408}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/cruiser_mk2/turret4.vol"}
+	{bone "turret"}
+	{Position 11.5902 	 0 	 9.035}
+}
+{volume "turret5"
+	{cylinder 2.28178 1.52343}
+	{bone "turret"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		14.1245 	 -1.0225 	 9.2364
+	}
+}

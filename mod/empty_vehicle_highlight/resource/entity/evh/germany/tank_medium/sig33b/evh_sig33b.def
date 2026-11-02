@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sig33b (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/sig33b/sig33b.mdl"}
+	{Extension "sig33b.mdl"}
 	{extender "stuff"
 		{item "evh_sig33b"}
 	}

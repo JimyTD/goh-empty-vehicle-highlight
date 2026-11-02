@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for achilles_mk2 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/achilles_mk2/achilles_mk2.mdl"}
+	{Extension "achilles_mk2.mdl"}
 	{extender "stuff"
 		{item "evh_achilles_mk2"}
 	}

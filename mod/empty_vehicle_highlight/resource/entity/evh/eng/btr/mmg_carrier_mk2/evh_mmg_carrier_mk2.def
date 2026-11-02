@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for mmg_carrier_mk2 (generated)
-	{Extension "../../../../-vehicle/eng/btr/mmg_carrier_mk2/mmg_carrier_mk2.mdl"}
+	{Extension "mmg_carrier_mk2.mdl"}
 	{extender "stuff"
 		{item "evh_mmg_carrier_mk2"}
 	}

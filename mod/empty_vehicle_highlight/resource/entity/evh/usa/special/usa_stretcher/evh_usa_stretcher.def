@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for usa_stretcher (generated)
-	{Extension "../../../../-vehicle/usa/special/usa_stretcher/usa_stretcher.mdl"}
+	{Extension "usa_stretcher.mdl"}
 	{extender "stuff"
 		{item "evh_usa_stretcher"}
 	}

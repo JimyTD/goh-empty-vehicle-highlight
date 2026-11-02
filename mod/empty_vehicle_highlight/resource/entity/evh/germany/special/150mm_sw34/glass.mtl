@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/searchlight_sw_34"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/searchlight_sw_34_sp"}
+	{blend blend}
+}

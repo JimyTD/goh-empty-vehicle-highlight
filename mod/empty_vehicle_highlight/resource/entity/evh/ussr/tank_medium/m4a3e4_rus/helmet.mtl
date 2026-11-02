@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/general/ger_helm"}
+	{bump "$/_hum/ger_headwear/ger_helm_bp"}
+	{specular "$/_hum/ger_headwear/ger_helm_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for cckw (generated)
-	{Extension "../../../../-vehicle/usa/car/cckw/cckw.mdl"}
+	{Extension "cckw.mdl"}
 	{extender "stuff"
 		{item "evh_cckw"}
 	}

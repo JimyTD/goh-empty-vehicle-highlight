@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m7b1_hmc (generated)
-	{Extension "../../../../-vehicle/usa/tank_medium/m7b1_hmc/m7b1_hmc.mdl"}
+	{Extension "m7b1_hmc.mdl"}
 	{extender "stuff"
 		{item "evh_m7b1_hmc"}
 	}

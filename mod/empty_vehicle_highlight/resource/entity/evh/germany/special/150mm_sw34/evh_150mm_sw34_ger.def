@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 150mm_sw34_ger (generated)
-	{Extension "../../../../-vehicle/germany/special/150mm_sw34/150mm_sw34.mdl"}
+	{Extension "150mm_sw34.mdl"}
 	{extender "stuff"
 		{item "evh_150mm_sw34_ger"}
 	}

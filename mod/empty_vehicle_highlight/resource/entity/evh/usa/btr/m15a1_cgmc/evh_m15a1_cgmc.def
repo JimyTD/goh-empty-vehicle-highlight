@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m15a1_cgmc (generated)
-	{Extension "../../../../-vehicle/usa/btr/m15a1_cgmc/m15a1_cgmc.mdl"}
+	{Extension "m15a1_cgmc.mdl"}
 	{extender "stuff"
 		{item "evh_m15a1_cgmc"}
 	}

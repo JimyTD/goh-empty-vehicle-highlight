@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 90mm_m1a1 (generated)
-	{Extension "../../../../-vehicle/usa/cannon/90mm_m1a1/90mm_m1a1.mdl"}
+	{Extension "90mm_m1a1.mdl"}
 	{extender "stuff"
 		{item "evh_90mm_m1a1"}
 	}

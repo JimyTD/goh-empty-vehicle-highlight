@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for is2_45 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/is2_45/is2_45.mdl"}
+	{Extension "is2_45.mdl"}
 	{extender "stuff"
 		{item "evh_is2_45"}
 	}

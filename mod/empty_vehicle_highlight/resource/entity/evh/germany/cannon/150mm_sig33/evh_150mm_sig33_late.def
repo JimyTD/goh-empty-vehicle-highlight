@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 150mm_sig33_late (generated)
-	{Extension "../../../../-vehicle/germany/cannon/150mm_sig33/150mm_sig33.mdl"}
+	{Extension "150mm_sig33.mdl"}
 	{extender "stuff"
 		{item "evh_150mm_sig33_late"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kubelwagen_dak (generated)
-	{Extension "../../../../-vehicle/germany/car/kubelwagen_dak/kubelwagen_dak.mdl"}
+	{Extension "kubelwagen_dak.mdl"}
 	{extender "stuff"
 		{item "evh_kubelwagen_dak"}
 	}

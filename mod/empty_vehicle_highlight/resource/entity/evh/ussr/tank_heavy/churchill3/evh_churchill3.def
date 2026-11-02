@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for churchill3 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/churchill3/churchill3.mdl"}
+	{Extension "churchill3.mdl"}
 	{extender "stuff"
 		{item "evh_churchill3"}
 	}

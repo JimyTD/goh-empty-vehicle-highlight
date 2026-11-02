@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/fin/volvo_lv127d_glass"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/fin/volvo_lv127d_glass_sp"}
+	{blend blend}
+}

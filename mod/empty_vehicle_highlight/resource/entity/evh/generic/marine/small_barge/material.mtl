@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "/entity/-vehicle/generic/marine/small_barge/smallbarge"}
+	{bump "/entity/-vehicle/generic/marine/small_barge/smallbarge_nrm"}
+	{specular "/entity/-vehicle/generic/marine/small_barge/smallbarge_spc"}
+	{color "230 230 230 25"}
+	{blend test}
+}

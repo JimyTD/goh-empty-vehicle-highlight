@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ds39_stand (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/ds39_stand/ds39_stand.mdl"}
+	{Extension "ds39_stand.mdl"}
 	{extender "stuff"
 		{item "evh_ds39_stand"}
 	}

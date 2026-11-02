@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 122mm_a19 (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/122mm_a19/122mm_a19.mdl"}
+	{Extension "122mm_a19.mdl"}
 	{extender "stuff"
 		{item "evh_122mm_a19"}
 	}

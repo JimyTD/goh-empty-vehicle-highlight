@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for broneschitok_2 (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/broneschitok_2/broneschitok_2.mdl"}
+	{Extension "broneschitok_2.mdl"}
 	{extender "stuff"
 		{item "evh_broneschitok_2"}
 	}

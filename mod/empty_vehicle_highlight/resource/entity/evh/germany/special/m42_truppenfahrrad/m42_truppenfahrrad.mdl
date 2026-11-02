@@ -1,0 +1,246 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 TigerF
+;Date:			 19.05.2022 14:05:20
+;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\special\Truppen Fahrrad\Truppenfahrrad.max
+{skeleton
+	{animation
+		{sequence "down" {file "../../../../-vehicle/germany/special/m42_truppenfahrrad/down.anm"} {speed 1} {events {12 "drop"}}}
+		{sequence "up" {file "../../../../-vehicle/germany/special/m42_truppenfahrrad/up.anm"} {speed 1}}
+		{sequence "move" {file "../../../../-vehicle/germany/special/m42_truppenfahrrad/move.anm"} {speed 0.8}{resume}}
+		{sequence "stop" {file "../../../../-vehicle/germany/special/m42_truppenfahrrad/stop.anm"} {speed 0.4}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=40;wheelradius=0.35;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position -1.9755 	 0 	 0.0197}
+			{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/body.ply"}
+			{bone "driver"
+				{Position -4.9463 	 0 	 20.1428}
+			}
+			{bone "chain"
+				{parameters "id=body;"}
+				{Position -4.6472 	 -0.675 	 6.7102}
+				{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/chain.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -11.8434 	 0.0021 	 17.2566}
+				{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 3.4547 	 0 	 17.1882}
+				{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 1.8497 	 0.105 	 14.8393}
+				{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/detail3.ply"}
+			}
+			{bone "gear"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 -1
+					0.0128 	 -0.0018 	 6.7145
+				}
+				{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/gear.ply"}
+			}
+			{bone "pivot_back"
+				{Position -10.2497 	 -0.0054 	 7.4862}
+				{bone revolute "wheel2"
+					{parameters "id=wheel2;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/wheel2.ply"}
+				}
+				{bone "fxtracel2"
+					{Position 0 	 0.0054 	 -7.5059}
+				}
+			}
+			{bone "pivot_front"
+				{Position 14.5263 	 -0.0081 	 7.4862}
+				{bone revolute "steer"
+					{parameters "id=body;"}
+					{matrix34
+						-0.9267 	 0 	 -0.3759
+						0 	 1 	 0
+						0.3759 	 0 	 -0.9267
+						-5.1496 	 0.0081 	 8.688
+					}
+					{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/steer.ply"}
+					{bone revolute "wheel1"
+						{parameters "id=wheel1;"}
+						{matrix34
+							-0.9267 	 0 	 0.3759
+							0.3759 	 0 	 0.9267
+							0 	 1 	 0
+							-1.5063 	 -0.0081 	 9.9865
+						}
+						{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/wheel1.ply"}
+					}
+					{bone "bike_light"
+						{matrix34
+							-0.9267 	 0 	 0.3759
+							0 	 1 	 0
+							-0.3759 	 0 	 -0.9267
+							-4.0328 	 0 	 -2.6847
+						}
+					}
+					{bone "detail4"
+						{parameters "id=body;"}
+						{matrix34
+							-0.9267 	 0 	 0.3759
+							0 	 1 	 0
+							-0.3759 	 0 	 -0.9267
+							-1.4082 	 0 	 -4.6128
+						}
+						{VolumeView "../../../../-vehicle/germany/special/m42_truppenfahrrad/detail4.ply"}
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9267 	 0 	 0.3759
+							0 	 1 	 0
+							-0.3759 	 0 	 -0.9267
+							1.3073 	 0 	 16.9452
+						}
+					}
+				}
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-0.5633 	 8.9426 	 0
+			}
+		}
+	}
+}
+{volume "body1"
+	{box 0.353497 2.27624 11.4435}
+	{bone "body"}
+	{matrix34
+		0.8518 	 0 	 -0.5239
+		0 	 1 	 0
+		0.5239 	 0 	 0.8518
+		-7.3924 	 -0.0188 	 12.2558
+	}
+}
+{volume "body2"
+	{box 0.433497 5.34916 9.60368}
+	{bone "body"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-11.5048 	 -0.0188 	 15.6118
+	}
+}
+{volume "body3"
+	{box 2.49504 5.00613 6.71425}
+	{bone "body"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-4.392 	 -0.0188 	 19.2522
+	}
+}
+{volume "body4"
+	{cylinder 0.329463 13.2402}
+	{bone "body"}
+	{matrix34
+		0.9138 	 0 	 0.4062
+		0 	 1 	 0
+		-0.4062 	 0 	 0.9138
+		-2.5702 	 0 	 12.592
+	}
+}
+{volume "body5"
+	{cylinder 0.349463 13.0624}
+	{bone "body"}
+	{matrix34
+		0.6705 	 0 	 -0.7419
+		0 	 1 	 0
+		0.7419 	 0 	 0.6705
+		4.843 	 0 	 11.0987
+	}
+}
+{volume "body6"
+	{cylinder 0.324463 13.7676}
+	{bone "body"}
+	{matrix34
+		0 	 0 	 1
+		0 	 1 	 0
+		-1 	 0 	 0
+		2.2535 	 0 	 16.8478
+	}
+}
+{volume "body7"
+	{box 0.423497 2.0058 13.6258}
+	{bone "steer"}
+	{matrix34
+		-1 	 0 	 0.0013
+		0 	 1 	 0
+		-0.0013 	 0 	 -1
+		-0.0114 	 -0.0188 	 2.8873
+	}
+}
+{volume "body8"
+	{box 2.04782 11.4688 1.00645}
+	{bone "steer"}
+	{matrix34
+		0.0177 	 0 	 0.9998
+		0 	 1 	 0
+		-0.9998 	 0 	 0.0177
+		-0.1851 	 -0.0188 	 -4.5364
+	}
+}
+{volume "detail1"
+	{box 8.30095 6.06773 2.55761}
+	{bone "detail1"}
+	{Position -0.1358 	 -0.0021 	 -0.1313}
+}
+{volume "detail3"
+	{box 7.98543 1.90584 3.98777}
+	{bone "detail3"}
+	{Position -0.0033 	 -0.105 	 -0.3969}
+}
+{volume "select"
+	{box 30.1908 6.23077 20.4208}
+	{bone "body"}
+	{Position 2.3784 	 0 	 10.1907}
+}
+{volume "wheelleft1"
+	{cylinder 7.65748 0.951294}
+	{bone "wheel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0018
+	}
+}
+{volume "wheelleft2"
+	{cylinder 7.65748 0.941875}
+	{bone "wheel2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0029
+	}
+}

@@ -1,0 +1,1234 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch hatch_l hatch_r mgun_h_rot1 turret
+;Exported by:	 carlos
+;Date:			 04.10.2023 13:49:42
+;File:			 F:\GoH_3D_vehicles_ger\vehicles\tank_light\PZ35t\Pz_35t.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_light/pz35t/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_light/pz35t/stop.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_light/pz35t/open.anm"} {speed 0.6}{resume}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_light/pz35t/fire.anm"} {speed 0.75}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.20;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz35t/body_r.anm"}{speed 0.6}}
+			}
+			{Position -0.032 	 0.0843 	 13.2162}
+			{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/body.ply"}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.3;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					41.6442 	 -16.3488 	 2.5506
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr1.ply"}
+			}
+			{bone revolute "wheelr2"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					36.6065 	 -16.4295 	 -5.9659
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr2.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.3;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-41.9051 	 -17.1035 	 -3.372
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr11.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.3;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					41.6442 	 16.1811 	 2.6169
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell1.ply"}
+			}
+			{bone revolute "wheell2"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					36.6065 	 16.1811 	 -5.8996
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell2.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.3;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-41.9051 	 16.9122 	 -3.3056
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell11.ply"}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					24.5057 	 16.1811 	 4.2903
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell12.ply"}
+			}
+			{bone revolute "wheell13"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					7.6589 	 16.1811 	 3.3583
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell13.ply"}
+			}
+			{bone revolute "wheell14"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-13.4176 	 16.1811 	 2.4264
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell14.ply"}
+			}
+			{bone revolute "wheell15"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.121 	 16.1811 	 1.7812
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell15.ply"}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					24.5057 	 -16.3488 	 4.224
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr12.ply"}
+			}
+			{bone revolute "wheelr13"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					7.6589 	 -16.3488 	 3.292
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr13.ply"}
+			}
+			{bone revolute "wheelr14"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-13.4176 	 -16.3488 	 2.36
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr14.ply"}
+			}
+			{bone revolute "wheelr15"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-30.121 	 -16.3488 	 1.7148
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr15.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -1.1796 	 -16.6656 	 11.7681}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail3.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 0.1562 	 15.0955 	 12.9653}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 5.7129 	 15.0579 	 12.1378}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail6.ply"}
+			}
+			{bone "hatch_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.9998 	 0 	 -0.0185
+					0 	 1 	 0
+					0.0185 	 0 	 0.9998
+					30.2512 	 -5.7783 	 11.4346
+				}
+				
+			}
+			{bone "hatch_l"
+				{parameters "id=body;"}
+				{Position 30.2688 	 8.2366 	 11.43}
+				
+			}
+			{bone "visor2"
+				{Position 32.3654 	 -5.8146 	 10.0328}
+			}
+			{bone "headlightc"
+				{Position 32.0447 	 -0.4216 	 13.3473}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -11 35}
+				{Position 30.5653 	 3.318 	 9.4654}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							12.3549 	 0.0171 	 0.0336
+						}
+					}
+					{bone "mg_hull"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0121 	 -0.0034 	 0.0009
+						}
+						
+						{bone "detail1"
+							{parameters "id=body;"}
+							{Position 5.2693 	 -0.0091 	 -0.3693}
+							
+						}
+					}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz35t/turret_r.anm"}{speed 0.5}}
+				}
+				{Position 5.7323 	 -0.0839 	 17.4534}
+				
+				{bone "hatch"
+					{parameters "id=turret;"}
+					{matrix34
+						0.7809 	 0.6247 	 0
+						-0.6247 	 0.7809 	 0
+						0 	 0 	 1
+						-5.954 	 0.1932 	 11.4051
+					}
+					
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=mantlet;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz35t/gun_r.anm"}{speed 0.5}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						11.0798 	 0.015 	 3.9557
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							3.53 	 -1.296 	 0.015
+						}
+						
+						{bone "foresight1"
+							{Position 18.2841 	 0.1593 	 0.0485}
+						}
+					}
+				}
+				{bone "visor1"
+					{Position 7.6449 	 4.1997 	 11.0409}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-0.7986 	 4.1947 	 7.2573
+					}
+				}
+				{bone "fxfire4"
+					{Position 0 	 0 	 -2.3994}
+				}
+				{bone revolute "mgun_c_rot1"
+					{limits -10 10}
+					{Position 11.4916 	 -6.3632 	 3.2523}
+					{bone revolute "mgun_c_rot2"
+						{limits -14 25}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+						}
+						{bone "mg_turret"
+							{parameters "id=turret;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								0.0166 	 -0.1505 	 -0.022
+							}
+							
+							{bone "detail2"
+								{parameters "id=body;"}
+								{Position 5.2988 	 -0.0501 	 -0.3303}
+								
+							}
+						}
+						{bone "foresight5"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								12.3555 	 -0.13 	 0.0107
+							}
+						}
+					}
+				}
+				{bone "enumerator1"
+					{Position -0.3419 	 11.688 	 4.2943}
+					
+				}
+				{bone "enumerator2"
+					{Position -0.3419 	 -11.6919 	 4.2943}
+					
+				}
+				{bone revolute "commander_rot"
+					{terminator}
+					{Position -0.5815 	 4.1947 	 11.127}
+					{bone "gunner2"
+					}
+					{bone revolute "vision_rot"
+						{limits -10 85}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0 	 0 	 2.0254
+						}
+					}
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-44.9991 	 -5.2393 	 0.418
+				}
+			}
+			{bone "fuel1"
+				{Position -5.1475 	 -9.2874 	 5.4376}
+			}
+			{bone "ammo2"
+				{Position 7.9039 	 9.4436 	 11.2105}
+			}
+			{bone "ammo1"
+				{Position 7.9039 	 -9.7876 	 11.2105}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz35t/engine_r.anm"}{speed 0.25}}
+				}
+				{Position -26.227 	 -0.0839 	 4.0513}
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/engine.ply"}
+				{bone "engdoor_b"
+					{parameters "id=engine;"}
+					{Position -5.4981 	 0 	 9.3306}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/engdoor_b.ply"}
+					{bone "detail7"
+						{parameters "id=engine;"}
+						{Position -5.4263 	 -0.0124 	 -0.3931}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail7.ply"}
+					}
+				}
+				{bone "engdoor_l"
+					{parameters "id=engine;"}
+					{Position 3.9875 	 7.4085 	 11.094}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/engdoor_l.ply"}
+				}
+				{bone "engdoor_r"
+					{parameters "id=engine;"}
+					{Position 3.9875 	 -7.3944 	 11.1299}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/engdoor_r.ply"}
+				}
+				{bone "fuel2"
+					{Position 3.6313 	 9.1869 	 3.2642}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						4.3584 	 -0.0109 	 4.5887
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-12.6679 	 -16.8361 	 6.3942
+					}
+				}
+				{bone "transmission"
+					{Position -10.2396 	 -11.4549 	 -5.4175}
+				}
+				{bone "motor"
+					{parameters "id=engine;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/motor.ply"}
+				}
+				{bone "detail8"
+					{parameters "id=engine;"}
+					{Position 5.835 	 10.6727 	 11.1233}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail8.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position 3.9205 	 -4.7329 	 11.5078}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail4.ply"}
+				}
+			}
+			{bone "dimlight"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					41.6224 	 14.1703 	 11.5048
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-26.1641 	 19.6065 	 -0.6597
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.3256 	 0.9455 	 0
+					-0.9455 	 -0.3256 	 0
+					0 	 0 	 1
+					-39.6623 	 19.6065 	 -2.1504
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.5299 	 -0.848 	 0
+					0.848 	 -0.5299 	 0
+					0 	 0 	 1
+					-43.3073 	 -19.3723 	 -2.04
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -0.9744 	 0.225
+					1 	 0 	 0
+					0 	 0.225 	 0.9744
+					-12.0494 	 -15.6173 	 7.2816
+				}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				4.9018 	 -33.2674 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				4.9018 	 33.7812 	 0
+			}
+			{visibility 0}
+		}
+		{bone "body_virt"
+			{Position 0.0423 	 0 	 12.891}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position -1.0693 	 -16.5234 	 -5.8402}
+				{bone "susp_r"
+					{parameters "id=trackright;"}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/susp_r.ply"}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.05 0.05}
+					{speed 0.12}
+					{Position 26.0669 	 0.4027 	 -3.2623}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.0078 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr3.ply"}
+					}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.9492 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.08}
+					{speed 0.12}
+					{Position 9.3244 	 0.4027 	 -3.2623}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							3.9873 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr5.ply"}
+					}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.9692 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.08}
+					{speed 0.12}
+					{Position -9.3973 	 0.4027 	 -3.2623}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.0425 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr7.ply"}
+					}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.915 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.05 0.05}
+					{speed 0.12}
+					{Position -26.1149 	 0.4027 	 -3.2623}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							3.998 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr9.ply"}
+					}
+					{bone revolute "wheelr10"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.9609 	 -0.4027 	 0.3792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheelr10.ply"}
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.8745 	 0.2343 	 3.6179}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/trackr.ply"}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						0.1086 	 0.1782 	 -6.5602
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9063 	 0 	 0.4226
+						0 	 -1 	 0
+						0.4226 	 0 	 0.9063
+						-38.8688 	 0.1782 	 -4.8699
+					}
+				}
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position -1.0693 	 16.5335 	 -5.8402}
+				{bone "susp_l"
+					{parameters "id=trackleft;"}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/susp_l.ply"}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.05 0.05}
+					{speed 0.12}
+					{Position 26.0669 	 -0.3612 	 -3.2623}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							-0.4226 	 0.0158 	 0.9062
+							0.9063 	 0.0074 	 0.4226
+							0 	 0.9998 	 -0.0175
+							4.0078 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell3.ply"}
+					}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							-0.1736 	 -0.0172 	 -0.9847
+							-0.9848 	 0.003 	 0.1736
+							0 	 0.9998 	 -0.0175
+							-3.9492 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.08}
+					{speed 0.12}
+					{Position 9.3244 	 -0.3612 	 -3.2623}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 -0.0175 	 -0.9998
+							0 	 0.9998 	 -0.0175
+							3.9873 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell5.ply"}
+					}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							0.5 	 -0.0151 	 -0.8659
+							-0.866 	 -0.0087 	 -0.4999
+							0 	 0.9998 	 -0.0175
+							-3.9692 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.12}
+					{Position -9.3973 	 -0.3612 	 -3.2623}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							0.6428 	 0.0134 	 0.7659
+							0.766 	 -0.0112 	 -0.6427
+							0 	 0.9998 	 -0.0175
+							4.0425 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell7.ply"}
+					}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 -0.0175 	 -0.9998
+							0 	 0.9998 	 -0.0175
+							-3.915 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.05 0.05}
+					{speed 0.12}
+					{Position -26.1149 	 -0.3612 	 -3.2623}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;"}
+						{matrix34
+							-0.5 	 0.0151 	 0.8659
+							0.866 	 0.0087 	 0.4999
+							0 	 0.9998 	 -0.0175
+							3.998 	 0.3421 	 0.4427
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell9.ply"}
+					}
+					{bone revolute "wheell10"
+						{parameters "id=trackleft;"}
+						{matrix34
+							0.0872 	 0 	 -0.9962
+							-0.9962 	 0 	 -0.0872
+							0 	 1 	 0
+							-3.9609 	 0.3612 	 0.4453
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/wheell10.ply"}
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.8745 	 -0.2249 	 3.6179}
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/trackl.ply"}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						0.1086 	 -0.2499 	 -6.5602
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9063 	 0 	 0.4226
+						0 	 -1 	 0
+						0.4226 	 0 	 0.9063
+						-38.8687 	 -0.2499 	 -4.8699
+					}
+				}
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-25.3298 	 -34.5482 	 0
+			}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-37.9441 	 -34.5482 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-35.6247 	 34.6187 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-20.0097 	 34.6187 	 0
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/ram.vol"}
+	{bone "body"}
+	{Position -2.7873 	 -0.1179 	 0.8605}
+}
+{volume "ammo1"
+	{box 3.43463 9.29599 11.612}
+	{bone "ammo1"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 0 	 -5.806
+	}
+}
+{volume "ammo2"
+	{box 3.43463 9.29599 11.612}
+	{bone "ammo2"}
+	{matrix34
+		0 	 1 	 0
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 0 	 -5.806
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/barrel1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.3378 	 1.0215 	 0.0125
+	}
+}
+{volume "barrel2"
+	{cylinder 0.732072 33.1884}
+	{bone "gun"}
+	{matrix34
+		0 	 0.9511 	 -0.309
+		0 	 -0.309 	 -0.9511
+		-1 	 0 	 0
+		1.1674 	 0 	 -0.0047
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/body1.vol"}
+	{bone "body"}
+	{Position 17.8714 	 -0.1 	 -0.1228}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/body2.vol"}
+	{bone "body"}
+	{Position 11.5988 	 -0.1 	 10.3719}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/body3.vol"}
+	{bone "body"}
+	{Position 11.1853 	 13.1663 	 10.9897}
+}
+{volume "breech"
+	{box 16.7333 5.5056 5.24247}
+	{bone "gun"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-12.3741 	 0.1227 	 0.2664
+	}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/cupola.vol"}
+	{bone "turret"}
+	{matrix34
+		0.9659 	 0.2588 	 0
+		-0.2588 	 0.9659 	 0
+		0 	 0 	 1
+		-0.7985 	 4.1672 	 12.8399
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/engine1.vol"}
+	{bone "engine"}
+	{Position -0.2448 	 -0.0161 	 0.2726}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/engine2.vol"}
+	{bone "engine"}
+	{Position 3.9663 	 13.2503 	 5.3509}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/engine3.vol"}
+	{bone "engine"}
+	{Position 3.9889 	 -13.2825 	 5.3508}
+}
+{volume "fuel1"
+	{box 14.8265 4.44882 14.0104}
+	{bone "fuel1"}
+	{Position 0 	 0 	 -0.3387}
+}
+{volume "fuel2"
+	{box 13.8583 4.44882 13.3331}
+	{bone "fuel2"}
+	{Position 0 	 0 	 -6.6666}
+}
+{volume "hatch"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/hatch.vol"}
+	{bone "hatch"}
+	{matrix34
+		0.916 	 -0.4013 	 0
+		0.4013 	 0.916 	 0
+		0 	 0 	 1
+		6.5083 	 -0.1173 	 1.4348
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -3.0863 	 -0.2499 	 3.0981}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -3.0863 	 0.2593 	 3.0981}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/mantlet.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		1.5094 	 -0.0408 	 -0.1164
+	}
+}
+{volume "trackleft10"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell10"}
+	{matrix34
+		-0.996 	 -0.0871 	 0.0175
+		0.0872 	 -0.9962 	 0
+		0.0174 	 0.0015 	 0.9998
+		0.0656 	 0.0057 	 -0.1909
+	}
+}
+{volume "trackleft11"
+	{cylinder 5.89599 8.29273}
+	{bone "wheell11"}
+	{matrix34
+		0 	 -0.9998 	 0.0175
+		1 	 0 	 0
+		0 	 0.0175 	 0.9998
+		0 	 0.0655 	 -0.632
+	}
+}
+{volume "trackleft12"
+	{box 18.8558 9.31539 5.93418}
+	{bone "susp_l"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		17.6725 	 -0.3725 	 -0.134
+	}
+}
+{volume "trackleft13"
+	{box 18.8558 9.31539 5.93418}
+	{bone "susp_l"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-17.8743 	 -0.3725 	 -0.134
+	}
+}
+{volume "trackleft1"
+	{cylinder 5.89599 8.29273}
+	{bone "wheell1"}
+	{matrix34
+		0 	 -0.9998 	 0.0175
+		1 	 0 	 0
+		0 	 0.0175 	 0.9998
+		0 	 0.0644 	 0.0899
+	}
+}
+{volume "trackleft2"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell2"}
+	{matrix34
+		0 	 -0.9998 	 0.0175
+		1 	 0 	 0
+		0 	 0.0175 	 0.9998
+		0 	 0.0655 	 0.076
+	}
+}
+{volume "trackleft3"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell3"}
+	{matrix34
+		0.9063 	 0.4226 	 0
+		-0.4226 	 0.9063 	 0
+		0 	 0 	 1
+		-0.06 	 -0.028 	 -0.2485
+	}
+}
+{volume "trackleft4"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell4"}
+	{matrix34
+		-0.9848 	 0.1736 	 0
+		-0.1736 	 -0.9848 	 0
+		0 	 0 	 1
+		0.0657 	 -0.0116 	 -0.2485
+	}
+}
+{volume "trackleft5"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell5"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 0.0662 	 -0.2485
+	}
+}
+{volume "trackleft6"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell6"}
+	{matrix34
+		-0.866 	 -0.5 	 0
+		0.5 	 -0.866 	 0
+		0 	 0 	 1
+		0.0573 	 0.0331 	 -0.2485
+	}
+}
+{volume "trackleft7"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell7"}
+	{matrix34
+		0.766 	 -0.6428 	 0
+		0.6428 	 0.766 	 0
+		0 	 0 	 1
+		-0.0507 	 0.0425 	 -0.2485
+	}
+}
+{volume "trackleft8"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell8"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 0.0662 	 -0.2485
+	}
+}
+{volume "trackleft9"
+	{cylinder 3.39432 4.57315}
+	{bone "wheell9"}
+	{matrix34
+		0.866 	 0.5 	 0
+		-0.5 	 0.866 	 0
+		0 	 0 	 1
+		-0.0573 	 -0.0331 	 -0.2485
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -3.0863 	 -0.671 	 3.6529}
+}
+{volume "trackright10"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr10"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright11"
+	{cylinder 5.89599 8.29273}
+	{bone "wheelr11"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.755
+	}
+}
+{volume "trackright12"
+	{box 18.8558 9.31539 5.93418}
+	{bone "susp_r"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-17.8743 	 0.3576 	 -0.134
+	}
+}
+{volume "trackright13"
+	{box 18.8558 9.31539 5.93418}
+	{bone "susp_r"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		17.6725 	 0.3576 	 -0.134
+	}
+}
+{volume "trackright1"
+	{cylinder 5.89599 8.29273}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0003
+	}
+}
+{volume "trackright2"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.061
+	}
+}
+{volume "trackright3"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright4"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright5"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright6"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright7"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright8"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright9"
+	{cylinder 3.39432 4.57315}
+	{bone "wheelr9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2392
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -3.0863 	 0.9 	 3.653}
+}
+{volume "transmission"
+	{cylinder 4.33328 22.8472}
+	{bone "transmission"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 11.4236 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/turret1.vol"}
+	{bone "turret"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-3.8769 	 -0.0069 	 3.8564
+	}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/turret2.vol"}
+	{bone "turret"}
+	{Position -0.0595 	 0.0215 	 -1.793}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/turret3.vol"}
+	{bone "turret"}
+	{Position 8.6419 	 -0.0069 	 3.8574}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/turret4.vol"}
+	{bone "turret"}
+	{Position 12.6116 	 2.6842 	 3.9634}
+}
+{volume "turret5"
+	{polyhedron "../../../../-vehicle/germany/tank_light/pz35t/turret5.vol"}
+	{bone "turret"}
+	{Position 12.6116 	 -2.6827 	 3.9634}
+}

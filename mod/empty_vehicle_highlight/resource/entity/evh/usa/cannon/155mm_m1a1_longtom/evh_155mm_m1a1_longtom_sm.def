@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 155mm_m1a1_longtom_sm (generated)
-	{Extension "../../../../-vehicle/usa/cannon/155mm_m1a1_longtom/155mm_m1a1_longtom.mdl"}
+	{Extension "155mm_m1a1_longtom.mdl"}
 	{extender "stuff"
 		{item "evh_155mm_m1a1_longtom_sm"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for mg08_fin (generated)
-	{Extension "../../../../-vehicle/finland/cannon/mg08_fin/mg08_fin.mdl"}
+	{Extension "mg08_fin.mdl"}
 	{extender "stuff"
 		{item "evh_mg08_fin"}
 	}

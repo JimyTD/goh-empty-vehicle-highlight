@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stuart3 (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/stuart3/stuart3.mdl"}
+	{Extension "stuart3.mdl"}
 	{extender "stuff"
 		{item "evh_stuart3"}
 	}

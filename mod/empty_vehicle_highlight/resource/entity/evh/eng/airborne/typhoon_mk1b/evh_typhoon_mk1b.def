@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for typhoon_mk1b (generated)
-	{Extension "../../../../-vehicle/eng/airborne/typhoon_mk1b/typhoon_mk1b.mdl"}
+	{Extension "typhoon_mk1b.mdl"}
 	{extender "stuff"
 		{item "evh_typhoon_mk1b"}
 	}

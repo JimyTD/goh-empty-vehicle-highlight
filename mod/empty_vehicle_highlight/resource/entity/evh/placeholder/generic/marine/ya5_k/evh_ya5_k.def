@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ya5_k (generated)
-	{Extension "../../../../../-vehicle/placeholder/generic/marine/ya5_k/ya5_k.mdl"}
+	{Extension "ya5_k.mdl"}
 	{extender "stuff"
 		{item "evh_ya5_k"}
 	}

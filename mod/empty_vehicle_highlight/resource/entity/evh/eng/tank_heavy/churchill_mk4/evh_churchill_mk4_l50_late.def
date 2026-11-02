@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for churchill_mk4_l50_late (generated)
-	{Extension "../../../../-vehicle/eng/tank_heavy/churchill_mk4/churchill_mk4_l50.mdl"}
+	{Extension "churchill_mk4_l50.mdl"}
 	{texmod "late"}
 	{extender "stuff"
 		{item "evh_churchill_mk4_l50_late"}

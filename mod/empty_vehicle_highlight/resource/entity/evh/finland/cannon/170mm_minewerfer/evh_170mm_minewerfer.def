@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 170mm_minewerfer (generated)
-	{Extension "../../../../-vehicle/finland/cannon/170mm_minewerfer/170mm_minewerfer.mdl"}
+	{Extension "170mm_minewerfer.mdl"}
 	{extender "stuff"
 		{item "evh_170mm_minewerfer"}
 	}

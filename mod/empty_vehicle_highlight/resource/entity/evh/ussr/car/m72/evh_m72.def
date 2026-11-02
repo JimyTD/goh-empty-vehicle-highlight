@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m72 (generated)
-	{Extension "../../../../-vehicle/ussr/car/m72/m72.mdl"}
+	{Extension "m72.mdl"}
 	{extender "stuff"
 		{item "evh_m72"}
 	}

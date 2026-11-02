@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "/entity/-vehicle/germany/cannon/panzernest_krab/pillbox_earth"}
+	{bump "/entity/-vehicle/germany/cannon/panzernest_krab/pillbox_earth_bp"}
+	{specular "/entity/-vehicle/germany/cannon/panzernest_krab/pillbox_earth_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

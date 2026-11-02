@@ -1,0 +1,809 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 rudder step
+;Exported by:	 nic21
+;Date:			 11.12.2025 19:08:40
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\airborne\hawker_hurricane_1a\hurricane_2c.max
+{skeleton
+	{animation
+		{sequence "engine_start" {file "../../../../-vehicle/eng/airborne/hurribomber_mk2c/engine_start.anm"} {speed 0.7}}
+		{sequence "engine_work" {file "../../../../-vehicle/eng/airborne/hurribomber_mk2c/engine_work.anm"} {speed 0.2}}
+		{sequence "engine_stop" {file "../../../../-vehicle/eng/airborne/hurribomber_mk2c/engine_stop.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/airborne/hurribomber_mk2c/open.anm"} {speed 0.4}{resume}}
+		{sequence "wheels" {file "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wheels.anm"} {speed 1}{resume}}
+	}
+	{bone "basis"
+		{parameters "steermax=15;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position -8.5157 	 0 	 31.2732}
+			{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/body.ply"}
+			{bone "wingl1"
+				{parameters "id=wingleft;"}
+				{Position 11.4502 	 20.948 	 -5.9318}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingl1.ply"}
+				{bone "wingl2"
+					{parameters "id=wingleft;"}
+					{Position 2.4973 	 13.1125 	 0.5275}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingl2.ply"}
+					{bone revolute "aileron1"
+						{parameters "id=wingleft;"}
+						{limits -30 30}
+						{speed 0.1}
+						{matrix34
+							0.9923 	 -0.1234 	 -0.0067
+							0 	 -0.0545 	 0.9985
+							-0.1235 	 -0.9909 	 -0.054
+							-6.9945 	 53.5551 	 1.1083
+						}
+						
+					}
+					{bone "flapl1"
+						{parameters "id=wingleft;"}
+						{matrix34
+							0.9868 	 -0.1611 	 -0.0138
+							0.1617 	 0.9834 	 0.0823
+							0.0003 	 -0.0835 	 0.9965
+							-12.7794 	 11.6172 	 -1.9532
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/flapl1.ply"}
+					}
+					{bone "wingglassl"
+						{parameters "id=wingleft;"}
+						{Position 16.9847 	 52.2763 	 1.1326}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingglassl.ply"}
+					}
+					{bone "shooter00"
+						{Position 42.0828 	 2.7461 	 -0.1174}
+					}
+					{bone "shooter02"
+						{Position 42.5953 	 14.3849 	 0.3768}
+					}
+					{bone "fxshell1"
+						{matrix34
+							0 	 0 	 -1
+							0 	 -1 	 0
+							-1 	 0 	 0
+							0.1396 	 2.7482 	 -4.2918
+						}
+					}
+					{bone "fxshell3"
+						{matrix34
+							0 	 0 	 -1
+							0 	 -1 	 0
+							-1 	 0 	 0
+							0.8621 	 13.8309 	 -3.3108
+						}
+					}
+					{bone "shooter_bb00"
+						{Position 1.5742 	 8.3217 	 -7.6761}
+						{bone "bomb_00"
+							{parameters "id=body;"}
+							{Position 2.1643 	 0.1537 	 -0.2963}
+							{LODView
+								{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/bomb_00.ply"}
+								{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/bomb_00_lod1.ply"}
+							}
+						}
+					}
+					{bone "barrel00"
+						{Position 42.0828 	 2.7461 	 -0.1174}
+					}
+					{bone "barrel02"
+						{Position 42.5953 	 14.3849 	 0.3768}
+					}
+				}
+				{bone "flapl2"
+					{parameters "id=wingleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0.007
+						0 	 -0.007 	 1
+						-13.3461 	 -2.752 	 -2.652
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/flapl2.ply"}
+				}
+			}
+			{bone "wingr1"
+				{parameters "id=wingright;"}
+				{Position 11.4502 	 -21.0044 	 -5.9318}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingr1.ply"}
+				{bone "wingr2"
+					{parameters "id=wingright;"}
+					{Position 2.5218 	 -12.8099 	 0.6128}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingr2.ply"}
+					{bone revolute "aileron2"
+						{parameters "id=wingright;"}
+						{limits -30 30}
+						{speed 0.1}
+						{matrix34
+							0.9932 	 0.1165 	 0
+							0.0071 	 -0.0608 	 -0.9981
+							-0.1162 	 0.9913 	 -0.0613
+							-7.3005 	 -51.6814 	 0.9046
+						}
+						
+					}
+					{bone "flapr1"
+						{parameters "id=wingright;"}
+						{matrix34
+							0.9866 	 0.1631 	 -0.0003
+							-0.1628 	 0.9849 	 -0.0582
+							-0.0092 	 0.0575 	 0.9983
+							-12.8039 	 -11.8629 	 -2.0383
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/flapr1.ply"}
+					}
+					{bone "wingglassr"
+						{parameters "id=wingright;"}
+						{Position 16.9602 	 -52.5226 	 1.0474}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingglassr.ply"}
+					}
+					{bone "shooter01"
+						{Position 42.0578 	 -2.9974 	 -0.2022}
+					}
+					{bone "shooter03"
+						{Position 42.5704 	 -14.6453 	 0.2914}
+					}
+					{bone "fxshell4"
+						{matrix34
+							0 	 0 	 -1
+							0 	 -1 	 0
+							-1 	 0 	 0
+							1.031 	 -14.3878 	 -3.474
+						}
+					}
+					{bone "fxshell2"
+						{matrix34
+							0 	 0 	 -1
+							0 	 -1 	 0
+							-1 	 0 	 0
+							0.0175 	 -2.6996 	 -4.1329
+						}
+					}
+					{bone "shooter_bb01"
+						{Position 1.5497 	 -8.398 	 -7.7613}
+						{bone "bomb_01"
+							{parameters "id=body;"}
+							{Position 2.1888 	 0.2058 	 -0.2728}
+							{LODView
+								{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/bomb_01.ply"}
+								{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/bomb_01_lod1.ply"}
+							}
+						}
+					}
+					{bone "barrel01"
+						{Position 42.5704 	 -14.6453 	 0.2914}
+					}
+					{bone "barrel03"
+						{Position 42.0578 	 -2.9974 	 -0.2022}
+					}
+				}
+				{bone "flapr2"
+					{parameters "id=wingright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0.9999 	 -0.0141
+						0 	 0.0141 	 0.9999
+						-13.3461 	 2.7939 	 -2.6518
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/flapr2.ply"}
+				}
+			}
+			{bone revolute "rudder"
+				{parameters "id=body;"}
+				{limits -30 30}
+				{speed 0.1}
+				{Position -93.9936 	 0 	 13.5078}
+				
+			}
+			{bone "emit1"
+				{matrix34
+					-0.2551 	 -0.9636 	 0.0804
+					0.9314 	 -0.2672 	 -0.247
+					0.2595 	 0.0119 	 0.9657
+					-18.1491 	 25.4283 	 -21.4332
+				}
+			}
+			{bone "driver"
+				{matrix34
+					0.9978 	 0 	 0.0656
+					0 	 1 	 0
+					-0.0656 	 0 	 0.9978
+					7.8359 	 0.131 	 -7.0156
+				}
+			}
+			{bone "fxtracem1"
+				{matrix34
+					-0.9833 	 -0.0022 	 0.1822
+					0.1822 	 -0.0117 	 0.9832
+					0 	 0.9999 	 0.0119
+					6.2757 	 -1.7956 	 -29.861
+				}
+			}
+			{bone "visor"
+				{Position 23.0094 	 0 	 17.4309}
+			}
+			{bone "engine1"
+				{parameters "id=engine1;"}
+				{Position 50.5066 	 -0.0016 	 2.481}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/engine1.ply"}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9756 	 -0.2163 	 -0.0375
+						-0.0341 	 -0.0195 	 0.9992
+						-0.2168 	 0.9761 	 0.0116
+						-11.7408 	 -11.6126 	 3.7645
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9756 	 -0.2163 	 -0.0375
+						-0.0341 	 -0.0195 	 0.9992
+						-0.2168 	 0.9761 	 0.0116
+						-5.1396 	 -11.6521 	 3.7645
+					}
+				}
+				{bone "fxsmoke3"
+					{matrix34
+						-0.9756 	 -0.2163 	 -0.0375
+						-0.0341 	 -0.0195 	 0.9992
+						-0.2168 	 0.9761 	 0.0116
+						0.7556 	 -11.7184 	 3.7645
+					}
+				}
+				{bone "fxsmoke6"
+					{matrix34
+						-0.9777 	 0.2078 	 -0.03
+						-0.0317 	 -0.0044 	 0.9995
+						0.2076 	 0.9782 	 0.0109
+						-11.259 	 11.5319 	 3.7511
+					}
+				}
+				{bone "fxsmoke5"
+					{matrix34
+						-0.9777 	 0.2078 	 -0.03
+						-0.0317 	 -0.0044 	 0.9995
+						0.2076 	 0.9782 	 0.0109
+						-5.1595 	 11.5747 	 3.7511
+					}
+				}
+				{bone "fxsmoke4"
+					{matrix34
+						-0.9777 	 0.2078 	 -0.03
+						-0.0317 	 -0.0044 	 0.9995
+						0.2076 	 0.9782 	 0.0109
+						0.7497 	 11.5262 	 3.7511
+					}
+				}
+				{bone "propeller1"
+					{parameters "id=engine1;"}
+					{matrix34
+						0 	 -1 	 0
+						0 	 0 	 -1
+						1 	 0 	 0
+						18.8899 	 0.0016 	 2.6056
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/propeller1.ply"}
+				}
+				{bone "propeller1_work"
+					{parameters "commonmesh;id=engine1;"}
+					{Position 18.8899 	 0.0016 	 2.6056}
+					{visibility 0}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/propeller1_work.ply"}
+					{bone "prop_cone"
+						{parameters "id=engine1;"}
+						{matrix34
+							0 	 -1 	 0
+							0 	 0 	 -1
+							1 	 0 	 0
+							0 	 0 	 0
+						}
+						{visibility 0}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/prop_cone.ply"}
+					}
+				}
+			}
+			{bone "cabin"
+				{parameters "id=body;"}
+				{Position 16.6617 	 0 	 17.0965}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/cabin.ply"}
+				{bone "glass1"
+					{parameters "id=body;"}
+					{Position -14.873 	 0 	 0.7454}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/glass1.ply"}
+				}
+				{bone "sightglass"
+					{parameters "id=body;"}
+					{Position -0.7093 	 0 	 0.3947}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/sightglass.ply"}
+				}
+			}
+			{bone revolute "gun_rot1"
+				{limits -7.5 7.5}
+				{Position 52.9168 	 0 	 -4.6707}
+				{bone revolute "gun_rot2"
+					{limits -25 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{bone "foresight1"
+						{Position 23.1687 	 0 	 0}
+					}
+				}
+			}
+			{bone "stabilizer1"
+				{parameters "id=body;"}
+				{Position -85.1425 	 2.8647 	 8.6688}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/stabilizer1.ply"}
+				{bone revolute "elevator1"
+					{parameters "id=body;"}
+					{limits -30 30}
+					{speed 0.1}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-7.3601 	 14.5257 	 0
+					}
+					
+				}
+			}
+			{bone "stabilizer2"
+				{parameters "id=body;"}
+				{Position -85.1425 	 -3.5903 	 8.6688}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/stabilizer2.ply"}
+				{bone revolute "elevator2"
+					{parameters "id=body;"}
+					{limits -30 30}
+					{speed 0.1}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-7.3601 	 -13.7916 	 0
+					}
+					
+				}
+			}
+			{bone "coolantflap"
+				{parameters "id=body;"}
+				{Position 1.6691 	 0 	 -16.9846}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/coolantflap.ply"}
+				{bone "rod1"
+					{parameters "id=body;"}
+					{matrix34
+						0.9998 	 0 	 -0.0175
+						0 	 1 	 0
+						0.0175 	 0 	 0.9998
+						-4.294 	 0 	 0.1025
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/rod1.ply"}
+				}
+			}
+			{bone "gearbay"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 4.9416}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gearbay.ply"}
+				{bone "gearjackl"
+					{parameters "id=body;"}
+					{Position 29.8527 	 8.3892 	 -11.7463}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gearjackl.ply"}
+				}
+				{bone "gearjackr"
+					{parameters "id=body;"}
+					{Position 29.8527 	 -8.3858 	 -11.7463}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gearjackr.ply"}
+				}
+				{bone "geardoorr3"
+					{parameters "id=body;"}
+					{Position 18.5363 	 -26.063 	 -15.2048}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geardoorr3.ply"}
+				}
+				{bone "geardoorl3"
+					{parameters "id=body;"}
+					{Position 18.5363 	 26.0561 	 -15.2048}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geardoorl3.ply"}
+				}
+				{bone "jackactuatorl"
+					{parameters "id=body;"}
+					{Position 29.0956 	 15.104 	 -13.3866}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/jackactuatorl.ply"}
+					{bone "geararml1"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0.6157 	 0.788
+							0 	 -0.788 	 0.6157
+							0.7678 	 0.5912 	 -0.4392
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geararml1.ply"}
+					}
+					{bone "gearjackrodl"
+						{parameters "id=body;"}
+						{Position 0.7571 	 2.1281 	 1.5917}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gearjackrodl.ply"}
+					}
+				}
+				{bone "jackactuatorr"
+					{parameters "id=body;"}
+					{Position 29.0956 	 -15.0984 	 -13.3866}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/jackactuatorr.ply"}
+					{bone "gearjackrodr"
+						{parameters "id=body;"}
+						{Position 0.7571 	 -2.1361 	 1.575}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gearjackrodr.ply"}
+					}
+					{bone "geararmr1"
+						{parameters "id=body;"}
+						{Position 0.7679 	 -0.5343 	 -0.407}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geararmr1.ply"}
+					}
+				}
+			}
+			{bone "step"
+				{parameters "id=body;"}
+				{matrix34
+					0.9945 	 0 	 -0.1045
+					0 	 1 	 0
+					0.1045 	 0 	 0.9945
+					-18.4005 	 6.7227 	 -3.8713
+				}
+				
+			}
+			{bone "canopy"
+				{parameters "id=body;"}
+				{Position 4.2249 	 0 	 14.6269}
+				
+				{bone "glass2"
+					{parameters "id=body;"}
+					{Position -2.4362 	 0 	 3.215}
+					
+				}
+			}
+		}
+		{bone "pivot_back"
+			{Position -87.9299 	 0 	 26.6096}
+			{bone revolute "steer_back"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 -1.8483}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/steer_back.ply"}
+				{bone revolute "wheelback"
+					{parameters "id=body;radius=0.15;support;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						-2.9162 	 0 	 -5.4287
+					}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wheelback.ply"}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{parameters "main;"}
+			{Position 21.9621 	 0 	 2.4965}
+			{bone "support2"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					-0.1064 	 21.888 	 -6.324
+				}
+			}
+			{bone "support1"
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					-0.1063 	 -21.8898 	 -6.324
+				}
+			}
+			{bone "legsleever"
+				{parameters "id=body;"}
+				{Position -0.2067 	 -25.0394 	 19.6773}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/legsleever.ply"}
+				{bone "gear_r"
+					{parameters "id=body;"}
+					{Position -0.6047 	 0 	 -1.0802}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gear_r.ply"}
+					{bone "armhinger"
+						{parameters "id=body;"}
+						{Position -0.5522 	 1.2205 	 -4.8202}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/armhinger.ply"}
+						{bone "geararmr2"
+							{parameters "id=body;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0.8192 	 0.5736
+								0 	 -0.5736 	 0.8192
+								0.7207 	 0.6018 	 0.5239
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geararmr2.ply"}
+						}
+					}
+					{bone revolute "wheel_r"
+						{parameters "id=wheelr;radius=0.34;"}
+						{matrix34
+							-0.0436 	 0.0697 	 0.9966
+							0.999 	 0.003 	 0.0435
+							0 	 0.9976 	 -0.0698
+							0.8178 	 4.2417 	 -18.5968
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wheel_r.ply"}
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9833 	 0 	 0.1822
+							0.1822 	 0 	 0.9833
+							0 	 1 	 0
+							-2.4921 	 3.505 	 -24.7313
+						}
+					}
+					{bone "gear2_r"
+						{parameters "id=body;"}
+						{Position -1.1155 	 -0.0237 	 -4.9111}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gear2_r.ply"}
+					}
+				}
+			}
+			{bone "legsleevel"
+				{parameters "id=body;"}
+				{Position -0.2067 	 25.0319 	 19.6773}
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/legsleevel.ply"}
+				{bone "gear_l"
+					{parameters "id=body;"}
+					{Position -0.6047 	 0 	 -1.0802}
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gear_l.ply"}
+					{bone "gear2_l"
+						{parameters "id=body;"}
+						{Position -1.1155 	 0.0237 	 -4.9111}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/gear2_l.ply"}
+					}
+					{bone "armhingel"
+						{parameters "id=body;"}
+						{Position -0.5522 	 -1.2087 	 -4.8202}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/armhingel.ply"}
+						{bone "geararml2"
+							{parameters "id=body;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0.848 	 -0.5299
+								0 	 0.5299 	 0.848
+								0.7171 	 -0.627 	 0.5199
+							}
+							{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/geararml2.ply"}
+						}
+					}
+					{bone revolute "wheel_l"
+						{parameters "id=wheell;radius=0.34;"}
+						{matrix34
+							0.999 	 0 	 0.0436
+							-0.0435 	 -0.0698 	 0.9966
+							0.003 	 -0.9976 	 -0.0697
+							0.8178 	 -4.2285 	 -18.597
+						}
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wheel_l.ply"}
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-0.9833 	 0 	 0.1822
+							0.1822 	 0 	 0.9833
+							0 	 1 	 0
+							-2.4921 	 -1.8413 	 -24.7313
+						}
+					}
+				}
+			}
+		}
+	}
+}
+{obstacle "rectangle1"
+	{obb2
+		{center -98.5079 -0}
+		{extent 9.70597 29.8342}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{obstacle "rectangle2"
+	{obb2
+		{center -22.2946 0.33725}
+		{extent 83.0831 9.27582}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{obstacle "rectangle3"
+	{obb2
+		{center 5.63848 0}
+		{extent 16.8025 114.623}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{volume "1blade1"
+	{box 5.30891 33.3202 2.4942}
+	{bone "propeller1"}
+	{matrix34
+		-0.5245 	 -0.8514 	 0
+		-0.8514 	 0.5245 	 0
+		0 	 0 	 -1
+		13.8482 	 -8.7433 	 -0.1047
+	}
+}
+{volume "1blade2"
+	{box 5.2513 32.0231 2.4942}
+	{bone "propeller1"}
+	{matrix34
+		0.9993 	 -0.0373 	 0
+		-0.0373 	 -0.9993 	 0
+		0 	 0 	 -1
+		0.8098 	 17.9749 	 -0.1047
+	}
+}
+{volume "1blade3"
+	{box 5.35007 33.8639 2.4942}
+	{bone "propeller1"}
+	{matrix34
+		-0.4674 	 0.8841 	 0
+		0.8841 	 0.4674 	 0
+		0 	 0 	 -1
+		-14.1165 	 -7.8229 	 -0.1047
+	}
+}
+{volume "aileron1"
+	{box 8.44279 46.3147 1.73846}
+	{bone "aileron1"}
+	{matrix34
+		0.999 	 0.0195 	 0.0399
+		-0.04 	 0.0053 	 0.9992
+		0.0193 	 -0.9998 	 0.006
+		-2.4319 	 0.2251 	 0.9397
+	}
+}
+{volume "aileron2"
+	{box 8.44279 46.3147 1.73846}
+	{bone "aileron2"}
+	{matrix34
+		0.9998 	 0.0191 	 0.0098
+		0.0094 	 0.0225 	 -0.9997
+		-0.0193 	 0.9996 	 0.0223
+		-3.1757 	 -0.2002 	 -1.4743
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/body1.vol"}
+	{bone "body"}
+	{Position -27.2888 	 0 	 3.111}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/body2.vol"}
+	{bone "body"}
+	{Position -9.6513 	 0 	 18.7223}
+}
+{volume "elevator1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/elevator1.vol"}
+	{bone "elevator1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-7.8915 	 -1.2094 	 0.0996
+	}
+}
+{volume "elevator2"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/elevator2.vol"}
+	{bone "elevator2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-8.1048 	 -1.2094 	 -0.3002
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/engine1.vol"}
+	{bone "engine1"}
+	{Position 3.939 	 0.0016 	 0.3139}
+}
+{volume "gear_l"
+	{cylinder 1.40629 22.0739}
+	{bone "gear_l"}
+	{Position 0.333 	 -0.0903 	 -9.2618}
+}
+{volume "gear_r"
+	{cylinder 1.40629 22.0739}
+	{bone "gear_r"}
+	{Position 0.333 	 -0.1113 	 -9.2618}
+}
+{volume "rudder"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/rudder.vol"}
+	{bone "rudder"}
+	{Position -6.1551 	 -0.7959 	 0.5139}
+}
+{volume "spin1"
+	{cylinder 34.4065 2.80765}
+	{bone "propeller1_work"}
+	{matrix34
+		-0.0041 	 -0.436 	 -0.8999
+		0.005 	 0.8999 	 -0.436
+		1 	 -0.0063 	 -0.0016
+		0.118 	 -0.2273 	 0.364
+	}
+}
+{volume "stabilizer1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/stabilizer1.vol"}
+	{bone "body"}
+	{Position -78.2221 	 -0.0145 	 7.3227}
+}
+{volume "stabilizer2"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/stabilizer2.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-85.1298 	 -1.4132 	 25.7706
+	}
+}
+{volume "wheelback"
+	{cylinder 2.95276 3.09232}
+	{bone "wheelback"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0377 	 -0.0452 	 0.0377
+	}
+}
+{volume "wheell"
+	{cylinder 6.69291 4.40644}
+	{bone "wheel_l"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -1.449
+	}
+}
+{volume "wheelr"
+	{cylinder 6.69291 4.0359}
+	{bone "wheel_r"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -0.9997 	 0.0262
+		0 	 -0.0262 	 -0.9997
+		0 	 -0.0377 	 -1.4391
+	}
+}
+{volume "wingl1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingl1.vol"}
+	{bone "wingl1"}
+	{Position 0.5163 	 0.4532 	 0.6108}
+}
+{volume "wingl2"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingl2.vol"}
+	{bone "wingl2"}
+	{Position -0.7123 	 41.3319 	 1.8948}
+}
+{volume "wingr1"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingr1.vol"}
+	{bone "wingr1"}
+	{Position 0.5163 	 0.3167 	 0.6108}
+}
+{volume "wingr2"
+	{polyhedron "../../../../-vehicle/eng/airborne/hurribomber_mk2c/wingr2.vol"}
+	{bone "wingr2"}
+	{Position -0.7368 	 -40.868 	 1.8095}
+}

@@ -1,0 +1,242 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: turret
+;Exported by:	 guita
+;Date:			 28.04.2025 09:19:34
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_rus\vehicles\cannon\45mm_21k_naval\45mm_21k_naval.max
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/recoil.anm"} {speed 0.9}}
+		{sequence "shell_eject" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/shell_eject.anm"} {speed 0.6}}
+		{sequence "aim_v" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/aim_v.anm"} {speed 0.9}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/aim_h.anm"} {speed 0.9}{resume}}
+	}
+	{bone "basis"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 0.4768}
+			{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/body.ply"}
+			{bone revolute "turret"
+				{speed 0.003}
+				{Position 0.0074 	 0.0018 	 16.68}
+				{bone "turret_sup"
+					{parameters "id=body;"}
+					{orientation
+						1 	 -0.0005 	 -0.0031
+						0.0005 	 0.9999 	 0.0172
+						0.0031 	 -0.0172 	 0.9998
+					}
+					
+					{bone revolute "gun_rot"
+						{parameters "id=gun;"}
+						{animation
+							{sequence "repair" {file "../../../../-vehicle/ussr/cannon/45mm_21k_naval/gun_r.anm"}{speed 0.7}}
+						}
+						{limits 0 35}
+						{speed 0.005}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							-6.0811 	 -0.5827 	 9.8257
+						}
+						
+						{bone "gun"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								7.6038 	 0.3514 	 -0.3921
+							}
+							
+							{bone "fx_invers"
+								{matrix34
+									-1 	 0 	 0
+									0 	 -1 	 0
+									0 	 0 	 1
+									-21.8867 	 0.1843 	 0.189
+								}
+							}
+							{bone "foresight1"
+								{Position 22.1065 	 0.1766 	 -0.0322}
+							}
+							{bone "lever"
+								{parameters "id=gun;"}
+								{Position -19.3373 	 -1.9559 	 -1.0764}
+								
+							}
+							{bone "breechblock"
+								{parameters "id=gun;"}
+								{Position -20.8716 	 0.3063 	 0.0214}
+								
+							}
+						}
+						{bone "rod"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								-8.9957 	 -0.0644 	 1.486
+							}
+							
+						}
+						{bone "visor"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 -1
+								0 	 1 	 0
+								6.2882 	 -1.174 	 -7.7223
+							}
+						}
+					}
+					{bone "aim_v"
+						{parameters "id=body;"}
+						{Position -2.8283 	 7.654 	 2.5092}
+						
+					}
+					{bone "aim_h"
+						{parameters "id=body;"}
+						{matrix34
+							0.9455 	 -0.3256 	 0
+							0.3256 	 0.9455 	 0
+							0 	 0 	 1
+							-5.7145 	 5.3779 	 0.2418
+						}
+						
+					}
+				}
+				{bone "charger"
+					{parameters "group=crew;"}
+					{matrix34
+						0.2455 	 0.9694 	 0
+						-0.9694 	 0.2455 	 0
+						0 	 0 	 1
+						-13.6371 	 -11.7852 	 -16.9472
+					}
+				}
+				{bone "gunner"
+					{parameters "group=crew;"}
+					{matrix34
+						0.866 	 -0.5 	 0
+						0.5 	 0.866 	 0
+						0 	 0 	 1
+						-15.1368 	 10.4773 	 -16.9472
+					}
+				}
+				{bone "commander"
+					{parameters "group=crew;"}
+					{matrix34
+						0.6973 	 0.7168 	 0
+						-0.7168 	 0.6973 	 0
+						0 	 0 	 1
+						-26.3583 	 -5.1334 	 -16.878
+					}
+				}
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0.2774 	 0.9608 	 0
+				-0.9608 	 0.2774 	 0
+				0 	 0 	 1
+				-16.8315 	 -18.4158 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0.682 	 0.7314 	 0
+				-0.7314 	 0.682 	 0
+				0 	 0 	 1
+				-31.7126 	 -12.7138 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0.848 	 -0.5299 	 0
+				0.5299 	 0.848 	 0
+				0 	 0 	 1
+				-20.7082 	 16.0279 	 0
+			}
+		}
+	}
+}
+{obstacle "obstacle"
+	{polygon2
+		{radius 0}
+		{vertex 7.06489 3.04042}
+		{vertex 5.24495 5.61206}
+		{vertex 2.5744 7.17483}
+		{vertex -0.570926 7.49134}
+		{vertex -3.59756 6.52203}
+		{vertex -5.93182 4.44493}
+		{vertex -7.21764 1.53699}
+		{vertex -7.17808 -1.54899}
+		{vertex -5.93182 -4.45693}
+		{vertex -3.63712 -6.59337}
+		{vertex -0.590708 -7.52312}
+		{vertex 2.51505 -7.18683}
+		{vertex 5.20539 -5.66362}
+		{vertex 7.08467 -3.11176}
+		{vertex 7.73747 0.0137848}
+	}
+	{rotate}
+}
+{volume "barrel1"
+	{box 6.79116 7.01101 2.80196}
+	{bone "gun_rot"}
+	{Position 2.2951 	 0.4592 	 -0.5665}
+}
+{volume "barrel2"
+	{cylinder 0.898059 17.7769}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-1.2693 	 2.7697 	 -0.5849
+	}
+}
+{volume "barrel3"
+	{cylinder 0.898059 18.8705}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-0.7225 	 -1.9475 	 -0.5849
+	}
+}
+{volume "barrel4"
+	{cylinder 1.21359 43.8005}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		0.0514 	 0.1928 	 -0.0266
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/ussr/cannon/45mm_21k_naval/body1.vol"}
+	{bone "body"}
+	{Position -0.0839 	 0.0286 	 7.3331}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/ussr/cannon/45mm_21k_naval/body2.vol"}
+	{bone "turret"}
+	{Position -0.0754 	 -0.0176 	 2.1535}
+}
+{volume "select"
+	{box 17.6983 23.0191 31.565}
+	{bone "basis"}
+	{Position 0 	 0 	 15.6532}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for cromwell8 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/cromwell8/cromwell8.mdl"}
+	{Extension "cromwell8.mdl"}
 	{extender "stuff"
 		{item "evh_cromwell8"}
 	}

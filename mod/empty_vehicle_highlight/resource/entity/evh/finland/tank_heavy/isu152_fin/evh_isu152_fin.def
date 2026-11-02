@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for isu152_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_heavy/isu152_fin/isu152_fin.mdl"}
+	{Extension "isu152_fin.mdl"}
 	{extender "stuff"
 		{item "evh_isu152_fin"}
 	}

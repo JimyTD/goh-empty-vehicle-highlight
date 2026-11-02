@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/bl60pdr_mkivp"}
+	{bump "$/_vehicle/eng/bl60pdr_mkivp_bp"}
+	{specular "$/_vehicle/eng/bl60pdr_mkivp_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

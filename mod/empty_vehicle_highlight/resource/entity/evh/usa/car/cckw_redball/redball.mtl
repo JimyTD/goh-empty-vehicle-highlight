@@ -1,0 +1,4 @@
+{material simple
+	{diffuse "$/_vehicle/red_ball"}
+	{blend blend}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 122mm_m1910_fin (generated)
-	{Extension "../../../../-vehicle/finland/cannon/122mm_m1910_fin/122mm_m1910_fin.mdl"}
+	{Extension "122mm_m1910_fin.mdl"}
 	{extender "stuff"
 		{item "evh_122mm_m1910_fin"}
 	}

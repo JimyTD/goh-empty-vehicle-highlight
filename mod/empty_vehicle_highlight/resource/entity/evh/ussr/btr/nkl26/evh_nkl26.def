@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for nkl26 (generated)
-	{Extension "../../../../-vehicle/ussr/btr/nkl26/nkl26.mdl"}
+	{Extension "nkl26.mdl"}
 	{extender "stuff"
 		{item "evh_nkl26"}
 	}

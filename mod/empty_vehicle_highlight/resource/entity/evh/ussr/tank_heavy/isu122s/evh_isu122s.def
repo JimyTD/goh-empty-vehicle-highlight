@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for isu122s (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/isu122s/isu122s.mdl"}
+	{Extension "isu122s.mdl"}
 	{extender "stuff"
 		{item "evh_isu122s"}
 	}

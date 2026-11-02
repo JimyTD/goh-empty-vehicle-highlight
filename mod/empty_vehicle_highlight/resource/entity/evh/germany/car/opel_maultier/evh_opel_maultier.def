@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for opel_maultier (generated)
-	{Extension "../../../../-vehicle/germany/car/opel_maultier/opel_maultier.mdl"}
+	{Extension "opel_maultier.mdl"}
 	{extender "stuff"
 		{item "evh_opel_maultier"}
 	}

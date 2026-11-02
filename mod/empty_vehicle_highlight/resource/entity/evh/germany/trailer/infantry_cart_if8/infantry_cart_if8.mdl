@@ -1,0 +1,198 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 guita
+;Date:			 24.09.2023 09:06:50
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\trailer\infanty_cart_if8\infantry_cart_if8.max
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/germany/trailer/infantry_cart_if8/close.anm"} {speed 0.6}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.316;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/trailer/infantry_cart_if8/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.0024 	 0 	 5.9758}
+			{VolumeView "../../../../-vehicle/germany/trailer/infantry_cart_if8/body.ply"}
+			{bone "seat2"
+				{matrix34
+					-0.9703 	 0 	 -0.2419
+					0 	 -1 	 0
+					-0.2419 	 0 	 0.9703
+					-3.926 	 -3.9344 	 7.3294
+				}
+			}
+			{bone "seat1"
+				{matrix34
+					0.9703 	 0 	 0.2419
+					0 	 1 	 0
+					-0.2419 	 0 	 0.9703
+					1.5916 	 4.0806 	 8.6838
+				}
+			}
+			{bone "susp"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/germany/trailer/infantry_cart_if8/susp.ply"}
+			}
+		}
+		{bone "pivot_front"
+			{Position 0.0024 	 0 	 5.9758}
+			{bone prizmatic "suspension_l1"
+				{limits -0.03 0.03}
+				{speed 0.16}
+				{Position 0 	 9.0609 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.316;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/trailer/infantry_cart_if8/wheell.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0.03 0.03}
+				{speed 0.16}
+				{Position 0 	 -9.0961 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.316;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/trailer/infantry_cart_if8/wheelr.ply"}
+				}
+			}
+			{bone "fxtracer1"
+				{Position 0 	 -9.0688 	 -6.1601}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					0.9659 	 0 	 0.2588
+					0 	 1 	 0
+					-0.2588 	 0 	 0.9659
+					4.1289 	 -9.0688 	 -4.9149
+				}
+			}
+			{bone "fxtracel1"
+				{Position 0 	 9.1425 	 -6.1601}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					0.9659 	 0 	 0.2588
+					0 	 1 	 0
+					-0.2588 	 0 	 0.9659
+					4.1289 	 9.1425 	 -4.9149
+				}
+			}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 0 	 1
+				0 	 1 	 0
+				-22.2498 	 0 	 8.6343
+			}
+		}
+		{bone "driver1"
+			{Position -21.2014 	 8.0179 	 -0.1843}
+		}
+		{bone "driver2"
+			{Position -21.2014 	 -8.0352 	 -0.1843}
+		}
+		{bone "commander"
+			{Position -21.2014 	 -8.0352 	 -0.1843}
+		}
+		{bone "gunner"
+			{Position -21.2014 	 8.0179 	 -0.1843}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-21.3462 	 12.6252 	 -0.1843
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-22.147 	 -13.5919 	 -0.1843
+			}
+		}
+	}
+}
+{obstacle "obstacle"
+	{obb2
+		{center -0.0383019 -0}
+		{extent 6.17433 10.5447}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{obstacle "obstacle1"
+	{obb2
+		{center -0.354624 0.0180793}
+		{extent 10.3527 6.42978}
+		{axis 1 0}
+	}
+	{rotate}
+	{rotate}
+}
+{volume "body1"
+	{box 17.4119 12.56 9.40419}
+	{bone "body"}
+	{matrix34
+		0.9703 	 0 	 0.2419
+		0 	 1 	 0
+		-0.2419 	 0 	 0.9703
+		-1.1375 	 0 	 4.5624
+	}
+}
+{volume "hole1"
+	{box 16.1931 11.304 7.71143}
+	{bone "body"}
+	{matrix34
+		0.9703 	 0 	 0.2419
+		0 	 1 	 0
+		-0.2419 	 0 	 0.9703
+		-1.3735 	 0 	 5.5338
+	}
+}
+{volume "select"
+	{box 21.8329 22.172 18.5337}
+	{bone "basis"}
+	{Position -1.3104 	 -0.0087 	 9.0825}
+}
+{volume "wheelleft"
+	{cylinder 6.22047 2.45896}
+	{bone "wheell"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0109
+	}
+}
+{volume "wheelright"
+	{cylinder 6.22047 2.34098}
+	{bone "wheelr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0116
+	}
+}

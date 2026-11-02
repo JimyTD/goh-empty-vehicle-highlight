@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bishop (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/bishop/bishop.mdl"}
+	{Extension "bishop.mdl"}
 	{extender "stuff"
 		{item "evh_bishop"}
 	}

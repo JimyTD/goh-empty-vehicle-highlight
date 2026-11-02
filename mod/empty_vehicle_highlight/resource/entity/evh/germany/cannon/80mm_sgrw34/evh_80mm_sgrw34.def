@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 80mm_sgrw34 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/80mm_sgrw34/80mm_sgrw34.mdl"}
+	{Extension "80mm_sgrw34.mdl"}
 	{extender "stuff"
 		{item "evh_80mm_sgrw34"}
 	}

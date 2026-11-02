@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_weapon/mg13"}
+	{bump "$/_weapon/mg13_bp"}
+	{specular "$/_weapon/mg13_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

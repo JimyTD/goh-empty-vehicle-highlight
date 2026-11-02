@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kfz15 (generated)
-	{Extension "../../../../-vehicle/germany/car/kfz15/kfz15.mdl"}
+	{Extension "kfz15.mdl"}
 	{extender "stuff"
 		{item "evh_kfz15"}
 	}

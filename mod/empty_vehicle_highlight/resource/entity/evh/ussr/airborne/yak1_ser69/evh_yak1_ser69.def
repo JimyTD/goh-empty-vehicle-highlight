@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for yak1_ser69 (generated)
-	{Extension "../../../../-vehicle/ussr/airborne/yak1_ser69/yak1_ser69.mdl"}
+	{Extension "yak1_ser69.mdl"}
 	{extender "stuff"
 		{item "evh_yak1_ser69"}
 	}

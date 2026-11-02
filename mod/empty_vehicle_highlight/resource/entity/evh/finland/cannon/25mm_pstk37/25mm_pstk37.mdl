@@ -1,0 +1,587 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: axis_stand_rod gun_rot muzzlebreak shield1 shield2 shield3 shield4 standl standr turret
+{skeleton
+	{animation
+		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/recoil.anm"} {speed 0.8}}
+		{sequence "close" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/close.anm"} {speed 0.3}}
+		{sequence "aim_v" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/aim_h.anm"} {speed 1}{resume}}
+		{sequence "shell_eject" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/shell_eject.anm"} {speed 0.6}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.335;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_front"
+			{Position 0 	 0 	 6.5762}
+			{bone prizmatic "suspension_l1"
+				{limits -0.01 0.01}
+				{speed 0.075}
+				{Position 0 	 8.8929 	 0}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.335;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/cannon/25mm_pstk37/wheell.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r1"
+				{limits -0.05 0.05}
+				{speed 0.075}
+				{Position 0 	 -8.9653 	 0}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.425;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/finland/cannon/25mm_pstk37/wheelr.ply"}
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					0.0086 	 9.2934 	 -6.5126
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-0.0111 	 -9.0661 	 -6.5126
+				}
+			}
+		}
+		{bone "driver1"
+			{parameters "group=commander;"}
+			{Position -16.3302 	 13.9734 	 0}
+		}
+		{bone "driver2"
+			{Position -17.2288 	 -13.0562 	 0}
+		}
+		{bone "driver3"
+			{Position -45.6318 	 0.0457 	 0}
+		}
+		{bone "driver4"
+			{Position -35.1568 	 5.9421 	 0}
+		}
+		{bone "emit1"
+			{Position -22.6563 	 7.5073 	 0}
+		}
+		{bone "emit2"
+			{Position -30.4578 	 -9.7274 	 0}
+		}
+		{bone "emit3"
+			{Position -42.5252 	 -15.5783 	 0}
+		}
+		{bone "emit4"
+			{Position -40.9261 	 15.2104 	 0}
+		}
+		{bone "gunner"
+			{Position -22.6563 	 7.5073 	 0}
+		}
+		{bone "charger"
+			{Position -30.4578 	 -9.7274 	 0}
+		}
+		{bone "charger2"
+			{Position -42.5252 	 -15.5783 	 0}
+		}
+		{bone "commander"
+			{Position -40.9261 	 15.2104 	 0}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-42.7262 	 0.0168 	 15
+			}
+		}
+		{bone "sandbag"
+			{Position 10.8955 	 -0.0585 	 0}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 6.5762}
+			{bone "axis_stand_rod"
+				{parameters "id=body;"}
+				{Position -0.1928 	 -0.0376 	 -0.7879}
+				
+				{bone "stand_base"
+					{parameters "id=body;"}
+					{Position -4.144 	 -0.0019 	 -5.2164}
+					
+				}
+			}
+			{bone "standr"
+				{parameters "id=body;"}
+				{matrix34
+					0.866 	 0.5 	 0
+					-0.5 	 0.866 	 0
+					0 	 0 	 1
+					-1.4958 	 0.004 	 1.6866
+				}
+				
+				{bone "rod2"
+					{parameters "id=body;"}
+					{matrix34
+						0.866 	 -0.5 	 0
+						0.5 	 0.866 	 0
+						0 	 0 	 1
+						-9.0618 	 -0.4513 	 -2.5608
+					}
+					
+				}
+				{bone "detail2"
+					{parameters "id=body;"}
+					{matrix34
+						0.866 	 -0.5 	 0
+						0.5 	 0.866 	 0
+						0 	 0 	 1
+						-21.4635 	 -1.6209 	 -5.7022
+					}
+					
+				}
+				{bone "detail1"
+					{parameters "id=body;"}
+					{matrix34
+						0 	 1 	 0
+						-0.1564 	 0 	 0.9877
+						0.9877 	 0 	 0.1564
+						-20.2491 	 -2.4986 	 -4.6501
+					}
+					
+				}
+				{bone "seat3"
+					{matrix34
+						-0.0537 	 -0.9985 	 -0.0114
+						0.9767 	 -0.0549 	 0.2076
+						-0.2079 	 0 	 0.9781
+						-30.4066 	 -2.4474 	 -12.9851
+					}
+				}
+				{bone "seat2"
+					{matrix34
+						-0.0537 	 -0.9985 	 -0.0114
+						0.9767 	 -0.0549 	 0.2076
+						-0.2079 	 0 	 0.9781
+						-19.8717 	 -3.9786 	 -11.3734
+					}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{limits -18 18}
+				{speed 0.007}
+				{Position -1.4786 	 -0.0189 	 4.1611}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/finland/cannon/25mm_pstk37/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -10 20}
+					{speed 0.007}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.0019 	 0.0012 	 2.4625
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.221 	 -0.0603 	 0.02
+						}
+						
+						{bone "breech"
+							{parameters "id=gun;"}
+							{Position -9.3554 	 0 	 0.5594}
+							
+						}
+						{bone "lever"
+							{parameters "id=gun;"}
+							{Position -9.0012 	 -1.6072 	 -0.1763}
+							
+						}
+						{bone "foresight1"
+							{Position 34.9657 	 0.0788 	 0}
+						}
+						{bone "fx_invers"
+							{matrix34
+								-1 	 0 	 0
+								0 	 0 	 1
+								0 	 1 	 0
+								-11.2603 	 -0.0052 	 0.715
+							}
+						}
+						{bone "muzzlebreak"
+							{parameters "id=gun;"}
+							{Position 31.141 	 0.0299 	 0.0054}
+							
+						}
+					}
+					{bone "spring"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							12.1077 	 -0.0603 	 0.02
+						}
+						
+					}
+					{bone "rod1"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-6.1945 	 -1.0741 	 1.849
+						}
+						
+					}
+					{bone "aim_ver"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-6.3086 	 -1.3315 	 -2.2919
+						}
+						
+					}
+					{bone "visor"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							1.923 	 3.3641 	 -3.1455
+						}
+					}
+				}
+				{bone "rotator2"
+					{parameters "id=body;"}
+					{Position -7.6276 	 -0.0374 	 -5.5138}
+					
+					{bone "aim_hor"
+						{parameters "id=body;"}
+						{Position -1.4822 	 -0.0133 	 -0.0188}
+						
+					}
+				}
+				{bone "rod_v"
+					{parameters "id=body;"}
+					{Position -6.5141 	 -0.039 	 -1.6705}
+					
+				}
+			}
+			{bone "visor2"
+				{Position -7.9222 	 14.6624 	 11.672}
+			}
+			{bone "shield1"
+				{parameters "id=shield;"}
+				{Position 0 	 -0.0187 	 0}
+				
+				{bone "shield2"
+					{parameters "id=shield;"}
+					{Position -1.0066 	 3.0623 	 2.864}
+					
+					{bone "shield2a"
+						{parameters "id=shield;"}
+						{Position -0.3525 	 0.8813 	 -1.1106}
+						
+					}
+				}
+				{bone "shield3"
+					{parameters "id=shield;"}
+					{Position -1.0068 	 -3.0623 	 8.1331}
+					
+					{bone "shield4"
+						{parameters "id=shield;"}
+						{Position 0.0069 	 -0.0046 	 0.2868}
+						
+					}
+					{bone "shield3a"
+						{parameters "id=shield;"}
+						{Position -0.3226 	 -4.2755 	 -6.4248}
+						
+					}
+				}
+			}
+			{bone "base_wheels_axis"
+				{parameters "id=body;"}
+				{Position 0 	 -0.0376 	 0}
+				{VolumeView "../../../../-vehicle/finland/cannon/25mm_pstk37/base_wheels_axis.ply"}
+			}
+			{bone "standl"
+				{parameters "id=body;"}
+				{matrix34
+					0.866 	 -0.5 	 0
+					0.5 	 0.866 	 0
+					0 	 0 	 1
+					-1.4958 	 0 	 1.6866
+				}
+				
+				{bone "seat4"
+					{matrix34
+						-0.0405 	 0.9992 	 -0.005
+						-0.9735 	 -0.0406 	 -0.2252
+						-0.2252 	 -0.0043 	 0.9743
+						-30.6831 	 2.6638 	 -13.0544
+					}
+				}
+				{bone "seat1"
+					{matrix34
+						-0.0405 	 0.9992 	 -0.005
+						-0.9735 	 -0.0406 	 -0.2252
+						-0.2252 	 -0.0043 	 0.9743
+						-19.8815 	 3.881 	 -11.3721
+					}
+				}
+			}
+		}
+	}
+}
+{obstacle "close"
+	{obb2
+		{center -24.6619 -0}
+		{extent 17.008 3.26592}
+		{axis 1 0}
+	}
+	{rotate}
+	{Tags "close"}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 0.0595644 0.015027}
+		{extent 6.84046 9.84907}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "openl"
+	{obb2
+		{center -20.6446 -12.9509}
+		{extent 16.9415 0.833528}
+		{axis 0.866158 0.49977}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{obstacle "openr"
+	{obb2
+		{center -20.6826 12.7242}
+		{extent 0.687333 17.1641}
+		{axis 0.50046 0.86576}
+	}
+	{rotate}
+	{Tags "open"}
+}
+{volume "armor1"
+	{box 8.28653 3.53171 0.26722}
+	{bone "gun_rot"}
+	{Position -11.9476 	 -0.0192 	 -1.8022}
+}
+{volume "barrel1"
+	{box 11.4761 4.05676 3.88342}
+	{bone "gun_rot"}
+	{Position -5.6427 	 0.1755 	 0.1602}
+}
+{volume "barrel2"
+	{box 0.206842 6.01818 3.91107}
+	{bone "gun_rot"}
+	{matrix34
+		0.809 	 0 	 -0.5878
+		-0.5878 	 0 	 -0.809
+		0 	 1 	 0
+		-1.9959 	 2.8382 	 -3.5061
+	}
+}
+{volume "barrel3"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/barrel3.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-0.2033 	 -0.2138 	 -0.0236
+	}
+}
+{volume "barrel4"
+	{cylinder 0.811416 25.5515}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		15.7573 	 0.0012 	 0.0225
+	}
+}
+{volume "barrel5"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/barrel5.vol"}
+	{bone "muzzlebreak"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-3.4251 	 -0.0146 	 0.0251
+	}
+}
+{volume "body1"
+	{box 1.28954 1.39745 15.8156}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0.2051 	 -0.065 	 0.2205
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/body2.vol"}
+	{bone "turret"}
+	{Position -4.3248 	 -0.0243 	 -4.1625}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/body3.vol"}
+	{bone "standr"}
+	{Position -4.8646 	 -1.7005 	 -1.2845}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/body4.vol"}
+	{bone "standr"}
+	{Position -23.3463 	 -1.7005 	 -3.4799}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/body5.vol"}
+	{bone "standl"}
+	{matrix34
+		1 	 -0.0087 	 0
+		0.0087 	 1 	 0
+		0 	 0 	 1
+		-4.8646 	 1.5677 	 -1.2845
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/body6.vol"}
+	{bone "standl"}
+	{matrix34
+		1 	 -0.0087 	 0
+		0.0087 	 1 	 0
+		0 	 0 	 1
+		-23.3456 	 1.7421 	 -3.4799
+	}
+}
+{volume "hole1"
+	{cylinder 2.56506 1.9685}
+	{bone "body"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		-0.7381 	 0.0249 	 6.5119
+	}
+}
+{volume "hole2"
+	{box 3.25781 9.36059 0.445931}
+	{bone "shield3"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.2704 	 -6.2732 	 -4.8019
+	}
+}
+{volume "hole3"
+	{box 3.18024 9.12946 0.445931}
+	{bone "shield2"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.2707 	 6.214 	 0.5873
+	}
+}
+{volume "hole4"
+	{box 3.65001 3.03035 1.48462}
+	{bone "body"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.9677 	 2.4948 	 9.6226
+	}
+}
+{volume "select"
+	{box 25.6268 27.3613 24.4023}
+	{bone "body"}
+	{Position -2.77 	 -0.7161 	 3.1022}
+}
+{volume "shield1"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/shield1.vol"}
+	{bone "shield1"}
+	{Position -0.8581 	 -0.0411 	 3.4484}
+}
+{volume "shield2"
+	{box 7.791 15.9567 0.320516}
+	{bone "shield2"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.2909 	 3.7403 	 4.2034
+	}
+}
+{volume "shield3"
+	{box 7.791 15.9567 0.320516}
+	{bone "shield3"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.2907 	 -3.6924 	 -1.2449
+	}
+}
+{volume "shield4"
+	{polyhedron "../../../../-vehicle/finland/cannon/25mm_pstk37/shield4.vol"}
+	{bone "shield4"}
+	{Position -0.2334 	 3.1109 	 2.7304}
+}
+{volume "wheelleft"
+	{cylinder 6.59449 1.71233}
+	{bone "wheell"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.001
+	}
+}
+{volume "wheelright"
+	{cylinder 6.59449 1.71271}
+	{bone "wheelr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0018
+	}
+}

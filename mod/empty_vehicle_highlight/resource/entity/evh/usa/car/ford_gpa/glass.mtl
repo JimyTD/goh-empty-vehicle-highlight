@@ -1,0 +1,6 @@
+{material envmap
+	{diffuse "$/_vehicle/ford_gpa_windows"}
+	{envmap "$/_vehicle/envmap_gold01"}
+	{mask "$/_vehicle/ford_gpa_windows_sp"}
+	{blend blend}
+}

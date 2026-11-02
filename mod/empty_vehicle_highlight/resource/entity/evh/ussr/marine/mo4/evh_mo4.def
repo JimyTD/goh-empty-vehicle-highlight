@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for mo4 (generated)
-	{Extension "../../../../-vehicle/ussr/marine/mo4/mo4.mdl"}
+	{Extension "mo4.mdl"}
 	{extender "stuff"
 		{item "evh_mo4"}
 	}

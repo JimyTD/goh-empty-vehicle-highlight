@@ -29,7 +29,7 @@ Press the vanilla [b]"highlight items"[/b] key (default [b]C[/b]) to also outlin
 
 [h2]Known limitations[/h2]
 [list]
-[*]Turrets/hatches in the outline use the default pose.
+[*]Only the hull, chassis and wheels light up. Moving parts (turrets, gun barrels, gun trails, doors, hatches) are left out of the outline so that they never show a second, mismatched copy on the real vehicle. On towed guns this can leave only the carriage and wheels outlined.
 [*]On side slopes the outline may be slightly off (roll is not copied).
 [*]Only appends two include lines to the small vanilla [i]set/interaction_entity/debug.inc[/i]; it no longer overrides [i]entity.set[/i], so it works alongside most big mods. Vehicles added by other mods are not highlighted.
 [*]Multiplayer not tested.
@@ -51,7 +51,7 @@ Source code & generator: https://github.com/JimyTD/goh-empty-vehicle-highlight
 
 [h2]已知限制[/h2]
 [list]
-[*]轮廓中的炮塔、舱门为默认姿态。
+[*]只亮车身、底盘和车轮。炮塔、炮管、火炮大架、车门、舱盖等活动部件不参与轮廓，这样平时不会在真车上出现姿态对不上的重影。牵引火炮可能只有底座和轮子亮。
 [*]横向斜坡上轮廓可能略有偏差（不复制侧倾）。
 [*]只在原版很小的 [i]set/interaction_entity/debug.inc[/i] 末尾追加两行引用，不再覆盖 [i]entity.set[/i]，可与大多数大型模组同时使用。其他模组新增的载具不会高亮。
 [*]未测试联机。

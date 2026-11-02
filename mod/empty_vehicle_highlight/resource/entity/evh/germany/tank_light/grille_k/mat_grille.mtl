@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/grille"}
+	{bump "$/_vehicle/grille_bp"}
+	{specular "$/_vehicle/grille_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

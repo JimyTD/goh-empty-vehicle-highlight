@@ -1,0 +1,924 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_driver turret
+;Exported by:	 nic21
+;Date:			 18.12.2025 16:14:23
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_light\M22_Locust\m22_locust.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_light/m22_locust/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_light/m22_locust/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_light/m22_locust/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_light/m22_locust/open.anm"} {speed 0.7}{resume} {events {12 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_light/m22_locust/open_driver.anm"} {speed 0.40}{resume} {events {2 "hatch_light"} {73 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.22;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_light/m22_locust/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.041 	 0.0002 	 16.8206}
+			{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/body.ply"}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{Position 14.0327 	 10.97 	 7.3651}
+				
+			}
+			{bone "body2"
+				{Position 14.4317 	 16.1685 	 3.1438}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/m22_locust/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 0.0788 	 -0.0002 	 6.5806}
+				
+				{bone "hatch_turret1"
+					{parameters "id=turret;"}
+					{Position -12.2422 	 6.0941 	 9.334}
+					
+				}
+				{bone "hatch_turret2"
+					{parameters "id=turret;"}
+					{Position -12.2422 	 -6.0941 	 9.334}
+					
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -13.8756 	 4.7298 	 13.4727}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position -0.0008 	 0 	 3.621}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position -0.0128 	 0 	 3.6236}
+							
+							{bone "at1_4"
+								{parameters "id=turret;"}
+								{Position -0.0128 	 0 	 3.6215}
+								
+							}
+						}
+					}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_light/m22_locust/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						6.631 	 -0.7712 	 3.769
+					}
+					
+					{bone "mgun_turret"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							3.3031 	 0.8112 	 1.7474
+						}
+						
+					}
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							9.9471 	 1.0938 	 -0.853
+						}
+						
+						{bone "foresight1"
+							{Position 20.6233 	 0.0072 	 0.0351}
+						}
+					}
+					{bone "fxfire3"
+						{matrix34
+							0 	 1 	 0
+							0 	 0 	 -1
+							-1 	 0 	 0
+							-13.6505 	 2.745 	 4.729
+						}
+					}
+					{bone "visor1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-5.0234 	 5.9392 	 6.4574
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.4841 	 6.7455 	 -7.493
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							12.024 	 1.0415 	 1.4615
+						}
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/m22_locust/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -25.9655 	 0 	 -3.0611}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/engine.ply"}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position -3.5499 	 -4.526 	 8.5063}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/hatch_engine2.ply"}
+				}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{Position -1.556 	 8.9847 	 8.7212}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/hatch_engine1.ply"}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						8.4839 	 -21.0088 	 6.9864
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.1723 	 -5.3934 	 4.3313
+					}
+				}
+				{bone "seat1"
+					{matrix34
+						0 	 0.9848 	 0.1736
+						-1 	 0 	 0
+						0 	 -0.1736 	 0.9848
+						4.0898 	 16.6946 	 6.1435
+					}
+				}
+				{bone "seat2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-11.3923 	 -10.1867 	 -0.7731
+					}
+				}
+				{bone "seat3"
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						-7.7864 	 22.0589 	 -8.4557
+					}
+				}
+				{bone "seat4"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-11.4939 	 6.0755 	 -0.7731
+					}
+				}
+				{bone "fuel"
+					{Position -1.4628 	 8.4335 	 2.5584}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position -0.0796 	 16.7448 	 5.7863}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/detail4.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position 3.0116 	 16.9504 	 5.7228}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/detail5.ply"}
+				}
+				{bone "grill_cover"
+					{parameters "id=engine;"}
+					{Position -0.1557 	 -15.6972 	 7.2001}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/grill_cover.ply"}
+				}
+			}
+			{bone "enumerator1"
+				{Position -3.3662 	 -18.6246 	 3.3453}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{Position 0.6712 	 18.9864 	 2.9751}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/enumerator2.ply"}
+			}
+			{bone "body5"
+				{Position 14.4317 	 -16.1489 	 3.1438}
+			}
+			{bone "headlightl"
+				{Position 27.6669 	 -11.1746 	 2.246}
+			}
+			{bone "headlightr"
+				{Position 27.6669 	 11.2226 	 2.246}
+			}
+			{bone "visor2"
+				{Position 19.3383 	 9.1236 	 7.6034}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					0.1349 	 -0.0002 	 3.8105
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-38.454 	 -14.8233 	 3.687
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-38.454 	 14.8229 	 3.687
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 25.0979 	 17.3286 	 3.5604}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/detail1.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.329;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					29.5013 	 17.2592 	 -5.6551
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.123;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					10.5726 	 17.0306 	 -3.5408
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell8.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;radius=0.123;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-11.3917 	 17.0306 	 -3.5408
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell7.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.329;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					29.5014 	 -17.2553 	 -5.6551
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.123;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					10.5726 	 -17.0267 	 -3.5408
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr8.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;radius=0.123;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-11.3917 	 -17.0306 	 -3.5408
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr7.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 5.0978 	 11.6513 	 -0.9211}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -3.0109 	 16.9677 	 5.7273}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/detail3.ply"}
+			}
+			{bone "ammo1"
+				{Position 16.4788 	 3.0291 	 -6.2887}
+			}
+			{bone "ammo2"
+				{Position -4.8841 	 -8.6154 	 -4.5947}
+			}
+			{bone "ammo3"
+				{Position -6.9373 	 -0.0002 	 0.5072}
+			}
+			{bone "transmission"
+				{Position 35.8094 	 -0.0002 	 -3.2966}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position 0 	 -19.685 	 10.2036}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 21.3835 	 2.4886 	 -6.19}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 9.4226 	 2.4924 	 -6.1902}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -0.4434 	 2.4886 	 -6.1902}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -12.4043 	 2.4886 	 -6.1902}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position -28.2538 	 2.504 	 -3.1545}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.4;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheelr6.ply"}
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9063 	 0 	 0.4226
+					0 	 -1 	 0
+					0.4226 	 0 	 0.9063
+					-40.1668 	 -0.904 	 -7.5048
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.7683 	 -0.904 	 -10.2036
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0.6037 	 2.4073 	 -1.1481}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/trackr.ply"}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position -4.7669 	 2.3739 	 -3.156}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/suspr.ply"}
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position 0 	 19.685 	 10.2036}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 21.3835 	 -2.4882 	 -6.1902}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 9.4225 	 -2.4882 	 -6.1902}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -0.4434 	 -2.4882 	 -6.1902}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -12.4043 	 -2.4882 	 -6.1902}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position -28.2538 	 -2.4999 	 -3.1545}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.4;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/wheell6.ply"}
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.7683 	 0.9045 	 -10.2036
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9063 	 0 	 0.4226
+					0 	 -1 	 0
+					0.4226 	 0 	 0.9063
+					-40.1668 	 0.9045 	 -7.5048
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 0.6037 	 -2.4068 	 -1.1481}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/trackl.ply"}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position -4.7669 	 -2.3698 	 -3.156}
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/suspl.ply"}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				50.2067 	 10.821 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				0.3035 	 38.5 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				0.3035 	 -38.5 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-22.2607 	 39.3701 	 0
+			}
+		}
+		{bone "emit4"
+			{Position -63.4116 	 -8.4356 	 0}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-37.023 	 39.3701 	 0
+			}
+		}
+		{bone "emit6"
+			{Position -65.3548 	 8.1413 	 0}
+		}
+	}
+}
+{volume "ammo1"
+	{box 7.28346 2.16535 6.29921}
+	{bone "ammo1"}
+	{Position 0 	 0 	 -0.6004}
+}
+{volume "ammo2"
+	{box 7.48032 7.48032 6.29921}
+	{bone "ammo2"}
+	{Position 0 	 0 	 -0.6004}
+}
+{volume "ammo3"
+	{box 5.51181 4.72441 5.51181}
+	{bone "ammo3"}
+	{Position 0 	 0 	 -0.9941}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/armor1.vol"}
+	{bone "engine"}
+	{Position -10.8583 	 0.0098 	 5.8999}
+}
+{volume "barrel1"
+	{cylinder 1.05024 16.1}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		10.7502 	 1.0682 	 -0.8687
+	}
+}
+{volume "barrel2"
+	{cylinder 0.901862 31.3561}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		4.6989 	 -0.002 	 -0.0111
+	}
+}
+{volume "body10"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body10.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		15.1272 	 9.1797 	 6.7904
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body1.vol"}
+	{bone "body"}
+	{Position 10.9168 	 0.0098 	 -3.0831}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body3.vol"}
+	{bone "body"}
+	{Position 8.3917 	 16.7521 	 3.985}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body4.vol"}
+	{bone "body"}
+	{Position -10.6959 	 15.7572 	 3.9841}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body6.vol"}
+	{bone "body"}
+	{Position 8.3917 	 -16.7318 	 3.985}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body7.vol"}
+	{bone "body"}
+	{Position -10.6959 	 -15.7377 	 3.9841}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body8.vol"}
+	{bone "body"}
+	{Position 19.5416 	 9.112 	 4.3307}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/body9.vol"}
+	{bone "body"}
+	{Position 17.8937 	 9.0493 	 5.8841}
+}
+{volume "breech"
+	{box 7.30235 4.85045 3.06928}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-3.7591 	 0.2088 	 -1.2047
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/engine1.vol"}
+	{bone "engine"}
+	{Position 1.6346 	 0.0123 	 -0.0216}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/engine2.vol"}
+	{bone "engine"}
+	{Position 10.3889 	 -15.7389 	 7.0452}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/engine3.vol"}
+	{bone "engine"}
+	{Position 10.3901 	 15.7583 	 7.0452}
+}
+{volume "fuel"
+	{box 16.7323 9.84252 11.811}
+	{bone "fuel"}
+	{Position 3.0171 	 0 	 -1.8697}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.5728 	 -2.4263 	 -2.0473}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.5728 	 2.43 	 -2.0473}
+}
+{volume "mantlet1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/mantlet1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		4.8503 	 1.93 	 0.1004
+	}
+}
+{volume "mantlet2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/mantlet2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.0028 	 -1.9354 	 0.0682
+	}
+}
+{volume "mantlet3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/mantlet3.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		6.8887 	 0.5891 	 0.3151
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/ram.vol"}
+	{bone "body"}
+	{Position -0.3105 	 -0.2805 	 -16.8206}
+}
+{volume "trackleft1"
+	{cylinder 5.18418 5.63625}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0965
+	}
+}
+{volume "trackleft2"
+	{cylinder 3.64173 3.439}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 3.64173 3.439}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft4"
+	{cylinder 3.64173 3.439}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 3.64173 3.439}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 6.55925 4.0194}
+	{bone "wheell6"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.162 	 -2.409 	 -1.9346}
+}
+{volume "trackright1"
+	{cylinder 5.05458 5.79957}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0514
+	}
+}
+{volume "trackright2"
+	{cylinder 3.64173 3.439}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 3.64173 3.439}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright4"
+	{cylinder 3.64173 3.439}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 3.64173 3.439}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 6.55925 4.0194}
+	{bone "wheelr6"}
+	{orientation
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.162 	 2.4474 	 -1.9346}
+}
+{volume "transmission"
+	{cylinder 4.29134 23.622}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-6.0713 	 -0.7415 	 -2.1923
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/turret1.vol"}
+	{bone "turret"}
+	{Position -0.4433 	 0.01 	 1.0602}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/turret2.vol"}
+	{bone "turret"}
+	{Position -2.1796 	 0.01 	 5.5569}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/turret3.vol"}
+	{bone "turret"}
+	{Position 10.1731 	 -0.853 	 5.0701}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_light/m22_locust/turret4.vol"}
+	{bone "turret"}
+	{Position 0.0251 	 0.01 	 -0.1847}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 25mm_72k (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/25mm_72k/25mm_72k.mdl"}
+	{Extension "25mm_72k.mdl"}
 	{extender "stuff"
 		{item "evh_25mm_72k"}
 	}

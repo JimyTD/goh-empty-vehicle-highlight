@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m42_truppenfahrrad (generated)
-	{Extension "../../../../-vehicle/germany/special/m42_truppenfahrrad/m42_truppenfahrrad.mdl"}
+	{Extension "m42_truppenfahrrad.mdl"}
 	{extender "stuff"
 		{item "evh_m42_truppenfahrrad"}
 	}

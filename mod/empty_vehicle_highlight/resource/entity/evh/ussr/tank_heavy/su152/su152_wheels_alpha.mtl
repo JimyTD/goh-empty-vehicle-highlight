@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/rus/su152_wheels"}
+	{bump "$/_vehicle/rus/su152_wheels_bp"}
+	{specular "$/_vehicle/rus/su152_wheels_sp"}
+	{color "255 255 255 152"}
+	{blend test}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for morris_c8 (generated)
-	{Extension "../../../../-vehicle/eng/car/morris_c8/morris_c8.mdl"}
+	{Extension "morris_c8.mdl"}
 	{extender "stuff"
 		{item "evh_morris_c8"}
 	}

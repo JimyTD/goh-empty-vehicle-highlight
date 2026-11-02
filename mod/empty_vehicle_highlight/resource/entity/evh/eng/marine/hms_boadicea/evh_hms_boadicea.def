@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for hms_boadicea (generated)
-	{Extension "../../../../-vehicle/eng/marine/hms_boadicea/hms_boadicea.mdl"}
+	{Extension "hms_boadicea.mdl"}
 	{extender "stuff"
 		{item "evh_hms_boadicea"}
 	}

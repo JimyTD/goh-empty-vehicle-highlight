@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for universal_carrier_rus (generated)
-	{Extension "../../../../-vehicle/ussr/btr/universal_carrier_rus/universal_carrier_rus.mdl"}
+	{Extension "universal_carrier_rus.mdl"}
 	{extender "stuff"
 		{item "evh_universal_carrier_rus"}
 	}

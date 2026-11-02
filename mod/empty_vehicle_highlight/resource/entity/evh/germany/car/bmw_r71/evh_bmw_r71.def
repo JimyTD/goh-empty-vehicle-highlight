@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bmw_r71 (generated)
-	{Extension "../../../../-vehicle/germany/car/bmw_r71/bmw_r71.mdl"}
+	{Extension "bmw_r71.mdl"}
 	{extender "stuff"
 		{item "evh_bmw_r71"}
 	}

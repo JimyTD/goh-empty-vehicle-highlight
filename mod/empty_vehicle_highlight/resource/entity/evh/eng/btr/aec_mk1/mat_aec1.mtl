@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/aec_mki"}
+	{bump "$/_vehicle/eng/aec_mki_bp"}
+	{specular "$/_vehicle/eng/aec_mki_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

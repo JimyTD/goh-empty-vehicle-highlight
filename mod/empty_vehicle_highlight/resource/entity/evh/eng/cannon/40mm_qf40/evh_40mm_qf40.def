@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 40mm_qf40 (generated)
-	{Extension "../../../../-vehicle/eng/cannon/40mm_qf40/40mm_qf40.mdl"}
+	{Extension "40mm_qf40.mdl"}
 	{extender "stuff"
 		{item "evh_40mm_qf40"}
 	}

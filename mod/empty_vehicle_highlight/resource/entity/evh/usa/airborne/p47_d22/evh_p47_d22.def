@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for p47_d22 (generated)
-	{Extension "../../../../-vehicle/usa/airborne/p47_d22/p47_d22.mdl"}
+	{Extension "p47_d22.mdl"}
 	{extender "stuff"
 		{item "evh_p47_d22"}
 	}

@@ -1,0 +1,1138 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_driver1_1 hatch_driver1_2 turret
+;Exported by:	 guita
+;Date:			 17.12.2025 12:49:28
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Crusader_AA_mk2\crusader_aa_mk2.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/stop.anm"} {speed 0.6}}
+		{sequence "fire00" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/fire00.anm"} {speed 0.9}}
+		{sequence "fire01" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/fire01.anm"} {speed 0.9}}
+		{sequence "reload" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/reload.anm"} {speed 0.7}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/open_driver.anm"} {speed 0.45}{resume}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.43;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				67.0236 	 -9.3139 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				14.3504 	 39.3701 	 0
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				14.3504 	 -39.3701 	 0
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-16.769 	 39.3701 	 0
+			}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-16.769 	 -39.37 	 0
+			}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-42.5595 	 39.3701 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-42.322 	 -39.37 	 0
+			}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position 2.4209 	 22.5815 	 9.1602}
+			{bone prizmatic "suspension_l6"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -34.1212 	 -0.2015 	 0}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -16.7481 	 -0.2015 	 0}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.12 0.12}
+				{speed 0.15}
+				{Position 0 	 -0.2015 	 0}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 17.1057 	 -0.2015 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 34.4172 	 -0.2015 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell2.ply"}
+				}
+			}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{Position 0.7489 	 -0.1937 	 0.9243}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/trackl.ply"}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.7489 	 -0.1996 	 -9.1602
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9659 	 0 	 0.2588
+					0 	 -1 	 0
+					0.2588 	 0 	 0.9659
+					-44.4937 	 -0.1996 	 -6.7734
+				}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position 4.4608 	 -3.3985 	 0}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/suspl.ply"}
+			}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{Position 2.4208 	 -22.5815 	 9.1602}
+			{bone prizmatic "suspension_r6"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -34.1211 	 0.2015 	 0}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -16.7481 	 0.2015 	 0}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.12 0.12}
+				{speed 0.15}
+				{Position 0 	 0.2015 	 0}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 17.1057 	 0.2015 	 0}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.0369 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 34.4173 	 0.2015 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr2.ply"}
+				}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0.7489 	 0.1935 	 0.9242}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/trackr.ply"}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9659 	 0 	 0.2588
+					0 	 -1 	 0
+					0.2588 	 0 	 0.9659
+					-44.4937 	 0.1935 	 -6.7734
+				}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					0.7489 	 0.1935 	 -9.1602
+				}
+			}
+			{bone "suspr"
+				{parameters "id=trackleft;"}
+				{Position 4.4608 	 3.3992 	 0}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/suspr.ply"}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 19.685}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body.ply"}
+			{bone "hatch_driver1_2"
+				{parameters "id=body;"}
+				{Position 30.8138 	 -9.3085 	 7.7474}
+				
+			}
+			{bone "visor2"
+				{Position 42.5526 	 -7.7765 	 6.2743}
+			}
+			{bone "hatch_driver2"
+				{parameters "id=body;"}
+				{Position 40.5426 	 -5.0447 	 5.5144}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hatch_driver2.ply"}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					57.2278 	 -10.191 	 -0.1302
+				}
+			}
+			{bone "hatch_driver1_1"
+				{parameters "id=body;"}
+				{Position 40.2451 	 -10.2593 	 8.1053}
+				
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 53.9041 	 -17.2647 	 0.8895}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail1.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.26;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					54.4683 	 22.3955 	 -5.5523
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell1.ply"}
+			}
+			{bone revolute "wheell7"
+				{parameters "id=trackleft;radius=0.34;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.6985 	 22.3882 	 -7.0399
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheell7.ply"}
+			}
+			{bone revolute "wheelr7"
+				{parameters "id=trackright;radius=0.34;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.6985 	 -22.3882 	 -7.0399
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr7.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.26;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					54.4682 	 -22.3955 	 -5.5523
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/wheelr1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 47.9955 	 -22.2676 	 4.2277}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position 41.8217 	 -22.2676 	 5.0514}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail3.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -30.4864 	 0 	 -1.3436}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine.ply"}
+				{bone "fuel1"
+					{Position 11.8118 	 10.734 	 -3.3627}
+				}
+				{bone "fuel2"
+					{Position 11.8118 	 -10.734 	 -3.3627}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-12.3285 	 0 	 5.4121
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.866 	 0 	 -0.5
+						0 	 -1 	 0
+						-0.5 	 0 	 0.866
+						-20.2759 	 0 	 1.6293
+					}
+				}
+				{bone "seat1"
+					{matrix34
+						0 	 0.9397 	 0.342
+						-1 	 0 	 0
+						0 	 -0.342 	 0.9397
+						13.7268 	 20.4866 	 5.9722
+					}
+				}
+				{bone "seat2"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						13.7435 	 -24.3387 	 -1.5271
+					}
+				}
+				{bone "seat3"
+					{matrix34
+						0 	 1 	 0
+						-0.9877 	 0 	 -0.1564
+						-0.1564 	 0 	 0.9877
+						-12.0338 	 30.7365 	 -9.9213
+					}
+				}
+				{bone "seat4"
+					{matrix34
+						0 	 -1 	 0
+						0.9877 	 0 	 0.1564
+						-0.1564 	 0 	 0.9877
+						-11.8028 	 -26.6369 	 -7.017
+					}
+				}
+				{bone "transmission"
+					{Position -12.0679 	 0 	 -4.9908}
+				}
+				{bone "hatch_engine3"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9009 	 -0.4218 	 -0.1026
+						0.434 	 0.8793 	 0.1963
+						0.0074 	 -0.2213 	 0.9752
+						-6.5351 	 -9.8105 	 8.1799
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hatch_engine3.ply"}
+				}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position -5.3621 	 0 	 8.7214}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hatch_engine2.ply"}
+				}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9009 	 0.4218 	 -0.1026
+						-0.434 	 0.8793 	 -0.1963
+						0.0074 	 0.2213 	 0.9752
+						-6.5351 	 9.8105 	 8.1799
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hatch_engine1.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position -26.2571 	 0 	 8.5093}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail6.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position 4.4256 	 0 	 8.493}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail4.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position 2.8996 	 23.9354 	 7.4026}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/detail5.ply"}
+				}
+			}
+			{bone "shieldl1"
+				{parameters "id=shieldl1;"}
+				{Position 58.2732 	 22.3422 	 -2.5382}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl1.ply"}
+			}
+			{bone "shieldl2"
+				{parameters "id=shieldl2;"}
+				{Position 42.298 	 25.8299 	 0.777}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl2.ply"}
+			}
+			{bone "shieldl3"
+				{parameters "id=shieldl3;"}
+				{Position -51.8978 	 22.3443 	 -2.0653}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl3.ply"}
+			}
+			{bone "shieldr1"
+				{parameters "id=shieldr1;"}
+				{Position 58.2731 	 -22.3422 	 -2.5382}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr1.ply"}
+			}
+			{bone "shieldr2"
+				{parameters "id=shieldr2;"}
+				{Position 42.298 	 -25.8299 	 0.777}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr2.ply"}
+			}
+			{bone "shieldr3"
+				{parameters "id=shieldr3;"}
+				{Position -51.8978 	 -22.3443 	 -2.0653}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr3.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 13.4248 	 0 	 7.212}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						13.6552 	 0 	 6.4048
+					}
+					
+					{bone "gun1"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							8.816 	 -0.0524 	 -2.5666
+						}
+						
+						{bone "shooter00"
+							{Position 12.9375 	 0 	 0.0001}
+						}
+					}
+					{bone "gun2"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							8.816 	 -0.0524 	 2.5675
+						}
+						
+						{bone "shooter01"
+							{Position 12.9376 	 0 	 0.0001}
+						}
+					}
+					{bone "barrel_spring_cover"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.6341 	 0.2735 	 0.0005
+						}
+						
+					}
+					{bone "barrel_spring"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							3.1281 	 -0.0464 	 0
+						}
+						
+					}
+					{bone "magazine00"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-8.2928 	 0.6835 	 -2.895
+						}
+						
+					}
+					{bone "magazine01"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-8.2928 	 0.6835 	 2.8959
+						}
+						
+					}
+					{bone "foresight1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							21.7536 	 -0.0523 	 0
+						}
+					}
+					{bone "mgun"
+						{Position -12.4947 	 -0.6088 	 0}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.8869 	 2.0425 	 0
+						}
+					}
+				}
+				{bone "fxfire5"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-9.2838 	 0 	 8.2266
+					}
+				}
+				{bone "enumerator2"
+					{matrix34
+						0.231 	 -0.9508 	 -0.2063
+						0.9717 	 0.2363 	 -0.0012
+						0.0499 	 -0.2002 	 0.9785
+						-18.7963 	 11.1345 	 3.7249
+					}
+					
+				}
+				{bone "visor1"
+					{Position -12.6394 	 -0.0543 	 18.4547}
+				}
+				{bone "enumerator1"
+					{matrix34
+						0.231 	 0.9508 	 -0.2063
+						-0.9718 	 0.2358 	 -0.0012
+						0.0475 	 0.2008 	 0.9785
+						-14.7567 	 -12.1217 	 3.6552
+					}
+					
+				}
+				{bone "charger"
+					{matrix34
+						0.1736 	 -0.9848 	 0
+						0.9848 	 0.1736 	 0
+						0 	 0 	 1
+						0.066 	 6.562 	 -8.2196
+					}
+				}
+				{bone "charger2"
+					{matrix34
+						-0.0872 	 0.9962 	 0
+						-0.9962 	 -0.0872 	 0
+						0 	 0 	 1
+						0.066 	 -6.562 	 -8.2196
+					}
+				}
+				{bone "gunner"
+					{matrix34
+						0.9962 	 0 	 0.0872
+						0 	 1 	 0
+						-0.0872 	 0 	 0.9962
+						-12.9723 	 0.3045 	 -0.6405
+					}
+				}
+				{bone "ammo4"
+					{Position -7.0396 	 -4.1607 	 -13.1479}
+				}
+				{bone "ammo3"
+					{Position -7.0396 	 4.7134 	 -13.1479}
+				}
+				{bone "ammo2"
+					{Position 0.0774 	 7.3466 	 -13.9083}
+				}
+				{bone "ammo1"
+					{Position 7.3034 	 0 	 -11.866}
+				}
+				{bone "sight"
+					{Position -12.6394 	 -0.0543 	 16.4635}
+				}
+				{bone "crosshair"
+					{parameters "id=turret;"}
+					
+				}
+			}
+			{bone "at1_1"
+				{parameters "id=body;"}
+				{Position 44.6529 	 14.301 	 7.729}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/at1_1.ply"}
+				{bone "at1_2"
+					{parameters "id=body;"}
+					{Position -0.0641 	 0.0291 	 9.233}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/at1_2.ply"}
+					{bone "at1_3"
+						{parameters "id=body;"}
+						{Position -0.0419 	 0.0099 	 5.7585}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/at1_3.ply"}
+						{bone "at1_4"
+							{parameters "id=body;"}
+							{Position -0.0419 	 0.0099 	 5.758}
+							{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/at1_4.ply"}
+							{bone "at1_5"
+								{parameters "id=body;"}
+								{Position -0.0419 	 0.0099 	 5.759}
+								{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/at1_5.ply"}
+							}
+						}
+					}
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-55.8226 	 0.0002 	 -5.2197
+				}
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 4.75967 4.80532 7.32498}
+	{bone "ammo1"}
+}
+{volume "ammo2"
+	{box 4.75967 4.80532 3.2405}
+	{bone "ammo2"}
+}
+{volume "ammo3"
+	{box 4.75967 4.80532 4.76124}
+	{bone "ammo3"}
+}
+{volume "ammo4"
+	{box 4.75967 4.80532 4.76124}
+	{bone "ammo4"}
+}
+{volume "armor10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/armor10.vol"}
+	{bone "turret"}
+	{Position -6.1912 	 6.8532 	 14.1806}
+}
+{volume "armor11"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/armor11.vol"}
+	{bone "turret"}
+	{Position -6.1909 	 -6.8537 	 14.1811}
+}
+{volume "armor12"
+	{box 4.3695 10.798 4.8429}
+	{bone "turret"}
+	{Position -16.6757 	 0 	 13.0478}
+}
+{volume "armor13"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/armor13.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-0.1403 	 1.9452 	 0
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/armor1.vol"}
+	{bone "body"}
+	{Position 2.2493 	 17.458 	 -3.3095}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/armor2.vol"}
+	{bone "body"}
+	{Position 2.2493 	 -17.458 	 -3.3095}
+}
+{volume "barrel1"
+	{cylinder 0.722346 12.2548}
+	{bone "gun1"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		6.6129 	 0 	 0
+	}
+}
+{volume "barrel2"
+	{cylinder 0.722346 12.2548}
+	{bone "gun2"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		6.6129 	 0 	 0
+	}
+}
+{volume "barrel3"
+	{cylinder 0.939729 26}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		-3.6325 	 -0.0524 	 -2.5666
+	}
+}
+{volume "barrel4"
+	{cylinder 0.939729 26}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 -1
+		1 	 0 	 0
+		-3.6325 	 -0.0524 	 2.5675
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body1.vol"}
+	{bone "body"}
+	{Position 52.0548 	 0 	 -4.654}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body2.vol"}
+	{bone "body"}
+	{Position 22.1256 	 0 	 -3.3095}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body3.vol"}
+	{bone "body"}
+	{Position 35.1782 	 -9.3168 	 6.086}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/body4.vol"}
+	{bone "body"}
+	{Position 14.2434 	 0 	 6.2265}
+}
+{volume "breech"
+	{box 5.02646 15.2903 5.02779}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		-9.8675 	 1.4565 	 0
+	}
+}
+{volume "detail6"
+	{cylinder 4.50378 22.9}
+	{bone "detail6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 -0.001 	 0.0002
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine1.vol"}
+	{bone "engine"}
+	{Position 3.0797 	 0 	 -1.009}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine2.vol"}
+	{bone "engine"}
+	{Position -20.5774 	 0 	 2.6379}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine3.vol"}
+	{bone "engine"}
+	{Position -16.4427 	 17.458 	 -2.5098}
+}
+{volume "engine4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/engine4.vol"}
+	{bone "engine"}
+	{Position -16.4427 	 -17.458 	 -2.5098}
+}
+{volume "fuel1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/fuel1.vol"}
+	{bone "fuel1"}
+	{Position 0 	 0 	 0}
+}
+{volume "fuel2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/fuel2.vol"}
+	{bone "fuel2"}
+	{Position 0 	 0 	 0}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 0.7467 	 -0.1836 	 0.9157}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 0.7489 	 0.2089 	 0.9245}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole5.vol"}
+	{bone "turret"}
+	{Position 12.8448 	 0 	 8.8323}
+}
+{volume "hole6"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole6.vol"}
+	{bone "turret"}
+	{Position 2.4859 	 0 	 13.216}
+}
+{volume "hole7"
+	{box 4.12525 10.3357 6.38941}
+	{bone "turret"}
+	{Position -16.5565 	 0 	 13.5112}
+}
+{volume "hole8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole8.vol"}
+	{bone "turret"}
+	{Position -9.3593 	 0 	 13.5105}
+}
+{volume "hole9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/hole9.vol"}
+	{bone "turret"}
+	{Position -0.3359 	 -0.0005 	 14.9944}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/ram.vol"}
+	{bone "body"}
+	{Position 0 	 0 	 -19.685}
+}
+{volume "shieldl1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl1.vol"}
+	{bone "shieldl1"}
+	{Position 0 	 0 	 0}
+}
+{volume "shieldl2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl2.vol"}
+	{bone "shieldl2"}
+	{Position 0 	 0 	 0}
+}
+{volume "shieldl3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldl3.vol"}
+	{bone "shieldl3"}
+	{Position 0 	 0 	 0}
+}
+{volume "shieldr1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr1.vol"}
+	{bone "shieldr1"}
+	{Position 0 	 0 	 0}
+}
+{volume "shieldr2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr2.vol"}
+	{bone "shieldr2"}
+	{Position 0 	 0 	 0}
+}
+{volume "shieldr3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/shieldr3.vol"}
+	{bone "shieldr3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft1"
+	{cylinder 5.11811 5.15}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft2"
+	{cylinder 8.46457 5.15}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft3"
+	{cylinder 8.46457 5.15}
+	{bone "wheell3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft4"
+	{cylinder 8.46457 5.15}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft5"
+	{cylinder 8.46457 5.15}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft6"
+	{cylinder 8.46457 5.15}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackleft7"
+	{cylinder 6.69291 5.5105}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0.0001 	 -0.0002
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0.7491 	 -0.1929 	 0.9246}
+}
+{volume "trackright1"
+	{cylinder 5.11811 5.15}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright2"
+	{cylinder 8.46457 5.15}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright3"
+	{cylinder 8.46457 5.15}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.0369
+	}
+}
+{volume "trackright4"
+	{cylinder 8.46457 5.15}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright5"
+	{cylinder 8.46457 5.15}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright6"
+	{cylinder 8.46457 5.15}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "trackright7"
+	{cylinder 6.69291 5.5105}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.0002
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0.7489 	 0.1996 	 0.9245}
+}
+{volume "transmission"
+	{cylinder 4.54547 31}
+	{bone "transmission"}
+	{orientation
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/turret1.vol"}
+	{bone "turret"}
+	{Position -1.7478 	 0 	 8.4087}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/turret2.vol"}
+	{bone "turret"}
+	{Position 17.7365 	 0.0061 	 6.371}
+}
+{volume "turret3"
+	{cylinder 14.8827 2.22699}
+	{bone "turret"}
+	{Position 0 	 0 	 1.0855}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/crusader_aa_mk2/turret4.vol"}
+	{bone "gun_rot"}
+	{orientation
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+	}
+}

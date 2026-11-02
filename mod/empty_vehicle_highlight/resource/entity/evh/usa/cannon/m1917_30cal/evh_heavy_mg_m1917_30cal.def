@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for heavy_mg_m1917_30cal (generated)
-	{Extension "../../../../-vehicle/usa/cannon/m1917_30cal/m1917_30cal.mdl"}
+	{Extension "m1917_30cal.mdl"}
 	{extender "stuff"
 		{item "evh_heavy_mg_m1917_30cal"}
 	}

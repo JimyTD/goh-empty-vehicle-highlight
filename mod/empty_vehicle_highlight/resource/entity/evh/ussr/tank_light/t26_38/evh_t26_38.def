@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t26_38 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_light/t26_38/t26_38.mdl"}
+	{Extension "t26_38.mdl"}
 	{extender "stuff"
 		{item "evh_t26_38"}
 	}

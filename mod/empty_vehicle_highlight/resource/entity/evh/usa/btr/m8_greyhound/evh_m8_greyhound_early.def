@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m8_greyhound_early (generated)
-	{Extension "../../../../-vehicle/usa/btr/m8_greyhound/m8_greyhound_early.mdl"}
+	{Extension "m8_greyhound_early.mdl"}
 	{extender "stuff"
 		{item "evh_m8_greyhound_early"}
 	}

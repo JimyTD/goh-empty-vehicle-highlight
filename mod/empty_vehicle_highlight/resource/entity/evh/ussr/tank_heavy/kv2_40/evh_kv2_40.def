@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kv2_40 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/kv2_40/kv2_40.mdl"}
+	{Extension "kv2_40.mdl"}
 	{extender "stuff"
 		{item "evh_kv2_40"}
 	}

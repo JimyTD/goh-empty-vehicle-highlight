@@ -1,0 +1,349 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 Carlos
+;Date:			 26.08.2019 19:14:31
+;File:			 T:\GoH_3D_vehicles_rus\vehicles\marine\SmallBarge\small_boat.max
+{skeleton
+	{bone "basis"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_back"
+			{Position -100.258 	 0 	 0}
+		}
+		{bone "pivot_front"
+			{Position 58.4275 	 0 	 0}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				-0.0136 	 -0.9997 	 -0.0196
+				0.9995 	 -0.0131 	 -0.0271
+				0.0269 	 -0.02 	 0.9994
+				61.4617 	 45.4578 	 -4.977
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-9.4371 	 45.4578 	 -4.977
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				61.4617 	 -47.362 	 -4.977
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-9.4371 	 -47.362 	 -4.977
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position -48.7842 	 -0.0451 	 0}
+			{VolumeView "../../../../-vehicle/generic/marine/small_barge/body.ply"}
+			{bone "scissor"
+				{Position 72.4269 	 -1.4629 	 12.6543}
+				{visibility 0}
+				{VolumeView "../../../../-vehicle/generic/marine/small_barge/scissor.ply"
+					{Layer waterscissor}
+				}
+			}
+			{bone "commander"
+				{parameters "group=crew;"}
+				{Position -7.742 	 -10.2432 	 14.3566}
+			}
+			{bone "driver"
+				{parameters "group=crew;"}
+				{Position -7.871 	 8.8869 	 14.2755}
+			}
+			{bone "cabin"
+				{parameters "id=cabin;"}
+				{VolumeView "../../../../-vehicle/generic/marine/small_barge/cabin.ply"}
+			}
+			{bone "fx_bulb1"
+				{matrix34
+					-0.9592 	 0.2827 	 0
+					-0.2827 	 -0.9592 	 0
+					0 	 0 	 1
+					-95.9796 	 24.064 	 0
+				}
+			}
+			{bone "fx_bulb2"
+				{matrix34
+					-0.9339 	 -0.3576 	 0
+					0.3576 	 -0.9339 	 0
+					0 	 0 	 1
+					-95.109 	 -29.5939 	 0
+				}
+			}
+			{bone "fx_bulb_norm_engine1"
+				{matrix34
+					-0.999 	 -0.0443 	 0
+					0.0443 	 -0.999 	 0
+					0 	 0 	 1
+					-106.924 	 -0.1397 	 0
+				}
+			}
+			{bone "fx_bulb_small_center3"
+				{matrix34
+					-0.04 	 0.9992 	 0
+					-0.9992 	 -0.04 	 0
+					0 	 0 	 1
+					0.7879 	 44.0557 	 0
+				}
+			}
+			{bone "fx_bulb_small_center4"
+				{matrix34
+					0.0036 	 1 	 0
+					-1 	 0.0036 	 0
+					0 	 0 	 1
+					92.6077 	 41.4244 	 0
+				}
+			}
+			{bone "fx_bulb_small_center2"
+				{matrix34
+					0.0326 	 -0.9995 	 0
+					0.9995 	 0.0326 	 0
+					0 	 0 	 1
+					93.2305 	 -48.31 	 0
+				}
+			}
+			{bone "fx_bulb_small_center1"
+				{matrix34
+					-0.0847 	 -0.9964 	 0
+					0.9964 	 -0.0847 	 0
+					0 	 0 	 1
+					-17.4722 	 -47.7023 	 0
+				}
+			}
+			{bone "fx_bulb_norm_front2"
+				{matrix34
+					0.7034 	 -0.7108 	 0
+					0.7108 	 0.7034 	 0
+					0 	 0 	 1
+					192.086 	 -22.457 	 0
+				}
+			}
+			{bone "fx_bulb_norm_front1"
+				{matrix34
+					0.7331 	 0.6801 	 0
+					-0.6801 	 0.7331 	 0
+					0 	 0 	 1
+					191.333 	 20.7059 	 0
+				}
+			}
+			{bone "fx_bulb_small_back1"
+				{matrix34
+					-0.2402 	 -0.9707 	 0
+					0.9707 	 -0.2402 	 0
+					0 	 0 	 1
+					-80.01 	 -32.536 	 0
+				}
+			}
+			{bone "fx_bulb_small_back2"
+				{matrix34
+					-0.5452 	 0.8383 	 0
+					-0.8383 	 -0.5452 	 0
+					0 	 0 	 1
+					-82.3487 	 31.534 	 0
+				}
+			}
+			{bone "fx_exp2"
+				{Position -34.9992 	 -2.3182 	 0}
+			}
+			{bone "fx_exp1"
+				{Position 136.188 	 -1.1651 	 0}
+			}
+			{bone "place01"
+				{matrix34
+					0.9403 	 0.3404 	 0
+					-0.3404 	 0.9403 	 0
+					0 	 0 	 1
+					152.911 	 -22.9649 	 13.8711
+				}
+			}
+			{bone "place02"
+				{Position 123.05 	 -30.2895 	 13.8711}
+			}
+			{bone "place03"
+				{Position 88.6803 	 -30.2895 	 13.8711}
+			}
+			{bone "place04"
+				{Position 51.4938 	 -30.853 	 13.8711}
+			}
+			{bone "place05"
+				{Position 14.8708 	 -32.5432 	 13.8711}
+			}
+			{bone "place06"
+				{matrix34
+					0.951 	 -0.3092 	 0
+					0.3092 	 0.951 	 0
+					0 	 0 	 1
+					155.729 	 18.1656 	 13.8711
+				}
+			}
+			{bone "place07"
+				{Position 125.867 	 27.1805 	 13.8711}
+			}
+			{bone "place08"
+				{Position 94.8781 	 25.4902 	 13.8711}
+			}
+			{bone "place09"
+				{Position 50.9304 	 26.0537 	 13.8711}
+			}
+			{bone "place10"
+				{Position 12.617 	 27.1805 	 13.8711}
+			}
+			{bone "emit01"
+				{matrix34
+					0.9403 	 0.3404 	 0
+					-0.3404 	 0.9403 	 0
+					0 	 0 	 1
+					152.911 	 -43.0401 	 13.8711
+				}
+			}
+			{bone "emit02"
+				{Position 123.05 	 -50.3647 	 13.8711}
+			}
+			{bone "emit03"
+				{Position 88.6803 	 -50.3647 	 13.8711}
+			}
+			{bone "emit04"
+				{Position 51.4938 	 -50.9281 	 13.8711}
+			}
+			{bone "emit05"
+				{Position 14.8708 	 -52.6184 	 13.8711}
+			}
+			{bone "emit06"
+				{matrix34
+					0.951 	 -0.3092 	 0
+					0.3092 	 0.951 	 0
+					0 	 0 	 1
+					155.729 	 40.5918 	 13.8711
+				}
+			}
+			{bone "emit07"
+				{Position 125.867 	 49.6067 	 13.8711}
+			}
+			{bone "emit08"
+				{Position 94.8781 	 47.9164 	 13.8711}
+			}
+			{bone "emit09"
+				{Position 50.9304 	 48.4799 	 13.8711}
+			}
+			{bone "emit10"
+				{Position 12.617 	 49.6067 	 13.8711}
+			}
+		}
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/generic/marine/small_barge/body1.vol"}
+	{bone "body"}
+	{Position 45.8287 	 -0.6152 	 -0.4671}
+}
+{volume "body2"
+	{box 140.881 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.9992 	 0.0392 	 0
+		0 	 0 	 1
+		0.0392 	 -0.9992 	 0
+		71.1629 	 -37.8991 	 19.8849
+	}
+}
+{volume "body3"
+	{box 95.2918 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.9859 	 -0.1673 	 0
+		0 	 0 	 1
+		-0.1673 	 -0.9859 	 0
+		-45.521 	 -32.8352 	 19.8849
+	}
+}
+{volume "body4"
+	{box 34.305 17.0804 2.25373}
+	{bone "body"}
+	{matrix34
+		0.6829 	 -0.7306 	 0
+		0 	 0 	 1
+		-0.7306 	 -0.6829 	 0
+		-102.151 	 -13.8339 	 22.1826
+	}
+}
+{volume "body5"
+	{box 66.8198 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.8642 	 0.5031 	 0
+		0 	 0 	 1
+		0.5031 	 -0.8642 	 0
+		170.376 	 -18.9594 	 19.8849
+	}
+}
+{volume "body6"
+	{box 140.881 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.9992 	 -0.0392 	 0
+		0 	 0 	 1
+		-0.0392 	 -0.9992 	 0
+		71.0745 	 35.7372 	 19.8849
+	}
+}
+{volume "body7"
+	{box 66.8198 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.8642 	 -0.5031 	 0
+		0 	 0 	 1
+		-0.5031 	 -0.8642 	 0
+		169.242 	 17.102 	 19.8849
+	}
+}
+{volume "body8"
+	{box 95.2918 13.2406 2.25373}
+	{bone "body"}
+	{matrix34
+		0.9859 	 0.1673 	 0
+		0 	 0 	 1
+		0.1673 	 -0.9859 	 0
+		-45.1439 	 30.7034 	 19.8849
+	}
+}
+{volume "body9"
+	{box 34.305 17.0804 2.25373}
+	{bone "body"}
+	{matrix34
+		0.6829 	 0.7306 	 0
+		0 	 0 	 1
+		0.7306 	 -0.6829 	 0
+		-100.504 	 12.3853 	 22.1826
+	}
+}
+{volume "cabin"
+	{polyhedron "../../../../-vehicle/generic/marine/small_barge/cabin.vol"}
+	{bone "cabin"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		8.2424 	 -0.8658 	 38.0676
+	}
+}

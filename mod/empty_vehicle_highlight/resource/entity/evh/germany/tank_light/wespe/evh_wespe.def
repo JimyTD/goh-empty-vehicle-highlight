@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wespe (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/wespe/wespe.mdl"}
+	{Extension "wespe.mdl"}
 	{extender "stuff"
 		{item "evh_wespe"}
 	}

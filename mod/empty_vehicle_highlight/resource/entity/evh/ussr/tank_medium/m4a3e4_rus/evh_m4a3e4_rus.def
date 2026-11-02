@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m4a3e4_rus (generated)
-	{Extension "../../../../-vehicle/ussr/tank_medium/m4a3e4_rus/m4a3e4.mdl"}
+	{Extension "m4a3e4.mdl"}
 	{extender "stuff"
 		{item "evh_m4a3e4_rus"}
 	}

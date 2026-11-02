@@ -1,0 +1,180 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 guita
+;Date:			 07.06.2021 18:10:53
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_export\3d_vehicles\GENERIC\Train\wagon1_freight\wagon1a_freight.max
+{skeleton
+	{bone "basis"
+		{parameters "wheelradius=0.6;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{Position 0.5003 	 0 	 23.1296}
+			{VolumeView "../../../../-vehicle/generic/train/wagon1a/body.ply"}
+			{bone "pivot_back"
+				{parameters "id=body;"}
+				{Position -38.0212 	 0 	 -10.4837}
+				{VolumeView "../../../../-vehicle/generic/train/wagon1a/pivot_back.ply"}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 15.8955 	 0
+					}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/wheell2.ply"}
+				}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -15.8955 	 0
+					}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/wheelr2.ply"}
+				}
+			}
+			{bone "pivot_front"
+				{parameters "id=body;"}
+				{Position 37.0175 	 0 	 -10.4837}
+				{VolumeView "../../../../-vehicle/generic/train/wagon1a/pivot_front.ply"}
+				{bone revolute "wheell1"
+					{parameters "id=wheelleft1;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 15.8955 	 0
+					}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/wheell1.ply"}
+				}
+				{bone revolute "wheelr1"
+					{parameters "id=wheelright1;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -15.8955 	 0
+					}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/wheelr1.ply"}
+				}
+			}
+			{bone "cabin1"
+				{parameters "id=body;"}
+				{Position -0.4984 	 0 	 23.4808}
+				{VolumeView "../../../../-vehicle/generic/train/wagon1a/cabin1.ply"}
+				{bone "detail3"
+					{parameters "id=body;"}
+					{Position 36.4454 	 -30.9511 	 -0.4011}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/detail3.ply"}
+				}
+				{bone "detail4"
+					{parameters "id=body;"}
+					{Position -35.9681 	 30.951 	 -0.4011}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/detail4.ply"}
+				}
+				{bone "roof"
+					{parameters "id=body;"}
+					{Position -0.0037 	 0 	 23.5753}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/roof.ply"}
+				}
+				{bone "window_cover1"
+					{parameters "id=body;"}
+					{Position -42.0717 	 -29.2182 	 7.643}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/window_cover1.ply"}
+				}
+				{bone "window_cover2"
+					{parameters "id=body;"}
+					{Position 41.5902 	 29.3064 	 7.6243}
+					{VolumeView "../../../../-vehicle/generic/train/wagon1a/window_cover2.ply"}
+				}
+			}
+			{bone "1"
+				{parameters "id=body;"}
+				{VolumeView "../../../../-vehicle/generic/train/wagon1a/1.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -0.4897 	 -0.0171 	 39.8006}
+				{VolumeView "../../../../-vehicle/generic/train/wagon1a/detail5.ply"}
+			}
+		}
+		{bone "link1"
+			{Position 75.3634 	 0 	 19.6034}
+		}
+		{bone "link2"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-75.418 	 0 	 19.6034
+			}
+		}
+	}
+}
+{volume "body1"
+	{box 127.618 59.7884 5.258}
+	{bone "body"}
+	{Position -0.6292 	 0 	 0.7177}
+}
+{volume "body2"
+	{box 130.17 59.7884 4.66061}
+	{bone "body"}
+	{Position -0.6292 	 0 	 47.0733}
+}
+{volume "body3"
+	{box 46.8483 59.7704 42.1608}
+	{bone "body"}
+	{Position -40.954 	 0 	 24.4271}
+}
+{volume "body4"
+	{box 46.8483 59.7704 42.1608}
+	{bone "body"}
+	{Position 40.0131 	 0 	 24.4271}
+}
+{volume "wheelleft1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.6002
+	}
+}
+{volume "wheelleft2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.3459
+	}
+}
+{volume "wheelright1"
+	{cylinder 11.5844 2.54319}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.5327
+	}
+}
+{volume "wheelright2"
+	{cylinder 11.5844 2.54319}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.3744
+	}
+}

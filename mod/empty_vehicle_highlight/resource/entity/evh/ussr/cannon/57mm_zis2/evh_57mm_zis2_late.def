@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 57mm_zis2_late (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/57mm_zis2/57mm_zis2.mdl"}
+	{Extension "57mm_zis2.mdl"}
 	{extender "stuff"
 		{item "evh_57mm_zis2_late"}
 	}

@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/archer"}
+	{bump "$/_vehicle/eng/archer_bp"}
+	{specular "$/_vehicle/eng/archer_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

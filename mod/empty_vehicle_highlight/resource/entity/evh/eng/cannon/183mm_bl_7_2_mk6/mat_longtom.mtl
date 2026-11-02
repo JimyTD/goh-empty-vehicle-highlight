@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/british_long_tom"}
+	{bump "$/_vehicle/eng/british_long_tom_bp"}
+	{specular "$/_vehicle/eng/british_long_tom_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

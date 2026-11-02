@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for t50_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/t50_fin/t50_fin.mdl"}
+	{Extension "t50_fin.mdl"}
 	{extender "stuff"
 		{item "evh_t50_fin"}
 	}

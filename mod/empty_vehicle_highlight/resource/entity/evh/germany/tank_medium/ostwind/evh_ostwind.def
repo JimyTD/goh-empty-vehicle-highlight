@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ostwind (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/ostwind/ostwind.mdl"}
+	{Extension "ostwind.mdl"}
 	{extender "stuff"
 		{item "evh_ostwind"}
 	}

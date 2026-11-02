@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wolverine_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/wolverine_mk1/wolverine_mk1.mdl"}
+	{Extension "wolverine_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_wolverine_mk1"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for stug3a (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/stug3a/stug3a.mdl"}
+	{Extension "stug3a.mdl"}
 	{extender "stuff"
 		{item "evh_stug3a"}
 	}

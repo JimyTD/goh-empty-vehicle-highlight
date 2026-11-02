@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m3a1_scout (generated)
-	{Extension "../../../../-vehicle/usa/btr/m3a1_scout/m3a1_scout.mdl"}
+	{Extension "m3a1_scout.mdl"}
 	{extender "stuff"
 		{item "evh_m3a1_scout"}
 	}

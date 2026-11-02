@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/humber_scout_car"}
+	{bump "$/_vehicle/eng/humber_scout_car_bp"}
+	{specular "$/_vehicle/eng/humber_scout_car_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

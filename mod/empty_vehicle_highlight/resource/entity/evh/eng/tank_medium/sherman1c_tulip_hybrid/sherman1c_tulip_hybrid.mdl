@@ -1,0 +1,1318 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: hatch_driver hatch_r turret
+;Exported by:	 nic21
+;Date:			 26.10.2025 05:46:18
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_medium\M4_firefly_IC_hybrid\sherman1c_hybrid_tulip.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/start.anm"} {speed 0.65}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/stop.anm"} {speed 0.65}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hit.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/fire.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/open.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/open_driver.anm"} {speed 0.45}{resume} {events {2 "hatch_medium"} {100 "hatch_medium"}}}
+		{sequence "open_co_driver" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/open_co_driver.anm"} {speed 0.55}{resume} {events {2 "hatch_medium"} {100 "hatch_medium"}}}
+		{sequence "mgun_aa" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/mgun_aa.anm"} {speed 0.3}{resume}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.26;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.1778 	 -0.0008 	 23.723}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body.ply"}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/turret_r.anm"}{speed 0.7}}
+				}
+				{speed 0.006}
+				{Position 2.1633 	 -0.0077 	 15.0802}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=turret;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -10 25}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						13.7034 	 0 	 4.9847
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							6.7369 	 -0.0309 	 -0.1302
+						}
+						
+						{bone "foresight1"
+							{Position 66.9337 	 0.0325 	 0.005}
+						}
+					}
+					{bone "mgun_turrret"
+						{parameters "id=turret;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-3.6409 	 -0.0392 	 -7.5783
+						}
+						
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							6.6136 	 0.228 	 -7.9318
+						}
+					}
+				}
+				{bone revolute "cupola_ring"
+					{parameters "id=turret;"}
+					{speed 0.007}
+					{Position -6.5888 	 -9.1255 	 13.4327}
+					
+					{bone "hatch_turret1"
+						{parameters "id=turret;"}
+						{Position 0.0074 	 7.5981 	 0.7861}
+						
+					}
+					{bone "hatch_turret2"
+						{parameters "id=turret;"}
+						{Position 0.0074 	 -7.598 	 0.7861}
+						
+					}
+					{bone "gunner2"
+						{Position -4.7333 	 0.0663 	 -19.2245}
+					}
+				}
+				{bone "antenna1"
+					{parameters "id=turret;"}
+					{Position -19.9317 	 7.9492 	 16.294}
+					
+					{bone "antenna2"
+						{parameters "id=turret;"}
+						{Position -0.0306 	 0 	 8.4145}
+						
+					}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.7431 	 0 	 0.6691
+						0 	 1 	 0
+						-0.6691 	 0 	 0.7431
+						6.5143 	 15.7687 	 12.7408
+					}
+					{bone "smoke_shot1"
+						{Position 1.7292 	 0.0085 	 -0.0007}
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						-6.3275 	 -9.0912 	 10.2458
+					}
+				}
+				{bone "visor1"
+					{Position -5.4559 	 -12.7339 	 15.5019}
+				}
+				{bone "sight"
+					{Position 20.2517 	 -7.188 	 8.0622}
+				}
+				{bone "hatch_turret"
+					{parameters "id=turret;"}
+					{matrix34
+						0.9135 	 0.4067 	 0
+						-0.4067 	 0.9135 	 0
+						0 	 0 	 1
+						-8.4625 	 12.5794 	 13.6003
+					}
+					
+				}
+				{bone "ammo4"
+					{Position 7.6119 	 -0.0028 	 -14.7471}
+				}
+				{bone "ammo5"
+					{Position -4.2959 	 -5.6541 	 -14.7471}
+				}
+				{bone "tulip_launcher"
+					{parameters "id=turret;"}
+					{Position -6.3131 	 0.0844 	 11.1513}
+					
+					{bone revolute "foresight"
+						{limits 0 10}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							32.9925 	 -0.0759 	 -2.2918
+						}
+					}
+					{bone "shooter00"
+						{matrix34
+							0.9993 	 0 	 0.038
+							0 	 1 	 0
+							-0.038 	 0 	 0.9993
+							-9.5354 	 22.5471 	 -6.7013
+						}
+						{bone "rocket00"
+							{parameters "id=turret;"}
+							{matrix34
+								0.9998 	 0 	 0.0223
+								0 	 1 	 0
+								-0.0223 	 0 	 0.9998
+								10.9313 	 0.0065 	 0.3253
+							}
+							
+						}
+					}
+					{bone "shooter01"
+						{matrix34
+							0.9993 	 0 	 0.038
+							0 	 1 	 0
+							-0.038 	 0 	 0.9993
+							-9.8231 	 -22.4914 	 -5.0789
+						}
+						{bone "rocket01"
+							{parameters "id=turret;"}
+							{matrix34
+								1 	 0 	 0.002
+								0 	 1 	 0
+								-0.002 	 0 	 1
+								11.1318 	 -0.3519 	 0.2398
+							}
+							
+						}
+					}
+				}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -37.771 	 -0.0013 	 -0.2963}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine.ply"}
+				{bone "hatch_engine1"
+					{parameters "id=engine;"}
+					{Position 6.8735 	 4.2066 	 13.8873}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_engine1.ply"}
+				}
+				{bone "hatch_engine2"
+					{parameters "id=engine;"}
+					{Position 3.276 	 -8.4847 	 12.1855}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_engine2.ply"}
+					{bone "detail2"
+						{parameters "id=engine;"}
+						{Position -6.9751 	 6.6257 	 1.36}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail2.ply"}
+					}
+				}
+				{bone "engine_door1"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9749 	 0 	 0.2226
+						0 	 1 	 0
+						-0.2226 	 0 	 0.9749
+						-8.6926 	 8.3671 	 0.159
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine_door1.ply"}
+				}
+				{bone "engine_door2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9831 	 0 	 0.1832
+						0 	 1 	 0
+						-0.1832 	 0 	 0.9831
+						-8.7018 	 -8.3836 	 0.208
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine_door2.ply"}
+				}
+				{bone "fxstop2"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-14.2362 	 -23.4467 	 7.8873
+					}
+				}
+				{bone "fxstop1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-14.2361 	 23.4227 	 7.8837
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.3768 	 0 	 -0.9263
+						0 	 1 	 0
+						0.9263 	 0 	 -0.3768
+						-16.0492 	 3.0036 	 0.6259
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.3768 	 0 	 -0.9263
+						0 	 1 	 0
+						0.9263 	 0 	 -0.3768
+						-16.0492 	 -3.3073 	 0.6259
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						8.3598 	 0.0027 	 6.7538
+					}
+				}
+				{bone "basket"
+					{parameters "id=engine;"}
+					{Position -19.3215 	 -0.0064 	 5.2036}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/basket.ply"}
+				}
+				{bone "gun_holder"
+					{parameters "id=body;"}
+					{matrix34
+						0.9657 	 -0.2575 	 -0.0349
+						0.2587 	 0.9653 	 0.0349
+						0.0247 	 -0.0427 	 0.9988
+						-13.6976 	 9.5755 	 10.15
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/gun_holder.ply"}
+				}
+				{bone "enumerator"
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						4.777 	 -25.7523 	 4.7282
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/enumerator.ply"}
+				}
+			}
+			{bone "hatch_r"
+				{parameters "id=body;"}
+				{matrix34
+					0.8323 	 0 	 -0.5543
+					0 	 1 	 0
+					0.5543 	 0 	 0.8323
+					27.1938 	 -17.1674 	 13.7517
+				}
+				
+			}
+			{bone "hatch_driver"
+				{parameters "id=body;"}
+				{matrix34
+					0.8323 	 0 	 -0.5543
+					0 	 1 	 0
+					0.5543 	 0 	 0.8323
+					27.1938 	 17.1904 	 13.7517
+				}
+				
+			}
+			{bone "transmission"
+				{Position 40.7964 	 0.4128 	 -6.6442}
+			}
+			{bone "fuel4"
+				{Position -36.9451 	 -20.5025 	 6.2054}
+			}
+			{bone "fuel3"
+				{Position -36.9451 	 20.5589 	 6.2054}
+			}
+			{bone "fuel2"
+				{Position -30.2738 	 -12.4627 	 -8.1692}
+			}
+			{bone "fuel1"
+				{Position -30.2739 	 12.3488 	 -8.1691}
+			}
+			{bone "sus_l1"
+				{Position 32.3002 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l2"
+				{Position 3.7624 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_l3"
+				{Position -24.3147 	 20.3697 	 -11.0801}
+			}
+			{bone "sus_r1"
+				{Position 32.3002 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r2"
+				{Position 3.7624 	 -20.45 	 -11.0801}
+			}
+			{bone "sus_r3"
+				{Position -24.3147 	 -20.45 	 -11.0801}
+			}
+			{bone "headlightl"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					43.8697 	 15.8318 	 5.8175
+				}
+			}
+			{bone "headlightr"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					43.8591 	 -15.8264 	 5.8152
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					1.3199 	 0.0009 	 10.7562
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.465 	 20.9231 	 -8.348
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.7591 	 21.0227 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-4.6074 	 21.0227 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-32.9791 	 21.0228 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.769 	 21.0035 	 -9.5971
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.32;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					50.465 	 -20.9354 	 -8.348
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					23.7591 	 -21.0366 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-4.6074 	 -21.0366 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.11;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-32.9791 	 -21.0366 	 -5.69
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.769 	 -21.0181 	 -9.5971
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr11.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -2.9474 	 15.5413 	 5.4338}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail1.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=engine;"}
+				{Position -30.5717 	 24.5389 	 9.4295}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail3.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=engine;"}
+				{Position -50.492 	 -6.0058 	 10.045}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=engine;"}
+				{Position -32.9263 	 -22.7579 	 9.7059}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=engine;"}
+				{Position -35.0985 	 21.5835 	 9.7661}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/detail8.ply"}
+			}
+			{bone "visor2"
+				{Position 36.8318 	 8.1928 	 13.349}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-23.9841 	 24.7742 	 4.3406
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-22.4374 	 -24.8594 	 4.4285
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.1212 	 -0.9871 	 0.1045
+					0.9925 	 -0.1219 	 0
+					0.0127 	 0.1037 	 0.9945
+					-43.1396 	 -24.4591 	 3.81
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0.1204 	 0.9743 	 0.1906
+					-0.9925 	 0.1218 	 0.0043
+					-0.0191 	 -0.1896 	 0.9817
+					-42.9522 	 24.687 	 3.5787
+				}
+			}
+			{bone "shield2"
+				{parameters "id=body;"}
+				{Position 50.6852 	 -4.3774 	 -0.6426}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/shield2.ply"}
+			}
+			{bone "shield1"
+				{parameters "id=body;"}
+				{Position 50.6852 	 4.2052 	 -0.6426}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/shield1.ply"}
+			}
+			{bone "ammo2"
+				{Position 4.036 	 -8.0149 	 -5.5971}
+			}
+			{bone "ammo3"
+				{Position 7.0023 	 10.0624 	 -5.3597}
+			}
+			{bone "ammo1"
+				{Position 30.2919 	 -9.9992 	 -2.5398}
+			}
+		}
+		{bone "body_virt"
+			{Position -0.1147 	 0.0019 	 22.4011}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 1.7445 	 20.7871 	 -11.1458}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.9736 	 0.1197 	 -11.2758
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-43.027 	 0.0902 	 -7.9989
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 38.8587 	 0.2064 	 -4.3434}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.08}
+					{speed 0.15}
+					{Position 22.3554 	 0.2064 	 -4.3434}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 10.4911 	 0.2064 	 -4.3434}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -6.0123 	 0.2064 	 -4.3434}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -17.8826 	 0.2064 	 -4.3434}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -34.3859 	 0.2064 	 -4.3434}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheell7.ply"}
+					}
+				}
+				{bone "suspl"
+					{parameters "id=body;"}
+					{Position 2.2267 	 0.2086 	 -1.7009}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/suspl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.0999 	 0.0452 	 0.2233}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 1.7445 	 -20.6388 	 -11.1458}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.9736 	 -0.0447 	 -11.2758
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-43.027 	 -0.068 	 -7.9989
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position 22.3554 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position 10.4911 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.15 0.15}
+					{speed 0.15}
+					{Position -6.0123 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.11 0.11}
+					{speed 0.15}
+					{Position -17.8826 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -34.3859 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 38.8587 	 -0.3756 	 -4.3434}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/wheelr2.ply"}
+					}
+				}
+				{bone "suspr"
+					{parameters "id=body;"}
+					{Position 2.2267 	 -0.3608 	 -1.7009}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.0999 	 -0.2629 	 0.2233}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit3"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-5.3529 	 -41.8041 	 0.6718
+			}
+		}
+		{bone "emit4"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-24.1618 	 47.9586 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-22.6151 	 -48.4913 	 0
+			}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-43.3173 	 -48.4863 	 0
+			}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-43.1299 	 48.1586 	 0
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				68.7913 	 8.5822 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-5.6425 	 41.711 	 0
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				27.0963 	 -41.8041 	 0.6718
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/ram.vol"}
+	{bone "body"}
+	{Position -0.0236 	 0.0148 	 -4.9297}
+}
+{volume "ammo1"
+	{box 12.0509 6.41732 15.3421}
+	{bone "ammo1"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo2"
+	{box 25.7588 10.3543 9.22754}
+	{bone "ammo2"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo3"
+	{box 19.5767 8.38583 9.70236}
+	{bone "ammo3"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo4"
+	{box 14.8226 4.84252 1.37795}
+	{bone "ammo4"}
+	{matrix34
+		0 	 -1 	 0
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "ammo5"
+	{box 14.8226 3.54331 1.37795}
+	{bone "ammo5"}
+	{matrix34
+		0.766 	 -0.6428 	 0
+		0.6428 	 0.766 	 0
+		0 	 0 	 1
+		0 	 0 	 0
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/armor1.vol"}
+	{bone "body"}
+	{Position 3.3649 	 0.0008 	 13.4871}
+}
+{volume "barrel1"
+	{cylinder 1.36447 70.1771}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		30.42 	 -0.1217 	 -0.0268
+	}
+}
+{volume "basket"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/basket.vol"}
+	{bone "basket"}
+	{Position 0.102 	 0.0135 	 0.0192}
+}
+{volume "body10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body10.vol"}
+	{bone "body"}
+	{Position 20.991 	 -24.6606 	 6.366}
+}
+{volume "body11"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body11.vol"}
+	{bone "body"}
+	{Position -13.8554 	 -25.6081 	 6.2341}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body1.vol"}
+	{bone "body"}
+	{Position 48.8927 	 0.0087 	 -6.7485}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body2.vol"}
+	{bone "body"}
+	{Position 30.8916 	 -0.0586 	 7.5561}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body3.vol"}
+	{bone "body"}
+	{Position 50.8119 	 -12.1316 	 -10.4559}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body4.vol"}
+	{bone "body"}
+	{Position 50.8119 	 12.1458 	 -10.4559}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body5.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		28.7282 	 -10.6532 	 9.7343
+	}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body6.vol"}
+	{bone "body"}
+	{Position 28.7282 	 10.9495 	 9.7343}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body7.vol"}
+	{bone "body"}
+	{Position 18.2468 	 0.0044 	 -6.7486}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body8.vol"}
+	{bone "body"}
+	{Position -20.9818 	 -0.0456 	 6.9798}
+}
+{volume "body9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/body9.vol"}
+	{bone "body"}
+	{Position 13.7836 	 25.8112 	 6.3259}
+}
+{volume "breech"
+	{box 15.5787 5.97478 7.43971}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 -0.0059 	 0
+		0.0059 	 1 	 0
+		0 	 0 	 1
+		-9.7782 	 -0.1686 	 -0.0483
+	}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/cupola.vol"}
+	{bone "turret"}
+	{Position -6.7272 	 -9.5106 	 14.9755}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine1.vol"}
+	{bone "engine"}
+	{Position 5.2011 	 0.0057 	 -6.4522}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/engine2.vol"}
+	{bone "engine"}
+	{Position 16.7892 	 -0.0444 	 7.2762}
+}
+{volume "fuel1"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "fuel2"
+	{box 20.7213 10.4217 4.70116}
+	{bone "fuel2"}
+	{orientation
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+	}
+}
+{volume "fuel3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/fuel3.vol"}
+	{bone "fuel3"}
+}
+{volume "fuel4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/fuel4.vol"}
+	{bone "fuel4"}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hole1.vol"}
+	{bone "wheelsl"}
+	{Position -0.998 	 0.0645 	 -1.0176}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hole2.vol"}
+	{bone "wheelsr"}
+	{Position -0.998 	 -0.2768 	 -1.0176}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/mantlet.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		5.003 	 1.4327 	 -0.0252
+	}
+}
+{volume "shield1"
+	{box 8.01346 9.271 1.67633}
+	{bone "shield1"}
+	{matrix34
+		0 	 1 	 0
+		-0.8387 	 0 	 0.5446
+		0.5446 	 0 	 0.8387
+		-0.0513 	 0.0179 	 -0.0527
+	}
+}
+{volume "shield2"
+	{box 8.01346 9.271 1.6433}
+	{bone "shield2"}
+	{matrix34
+		0 	 1 	 0
+		-0.8387 	 0 	 0.5446
+		0.5446 	 0 	 0.8387
+		-0.0444 	 0.1077 	 -0.0765
+	}
+}
+{volume "trackleft10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackleft10.vol"}
+	{bone "sus_l3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheell11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0861
+	}
+}
+{volume "trackleft1"
+	{cylinder 6.79356 7.7732}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1786
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0436
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0481
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0371
+	}
+}
+{volume "trackleft8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackleft8.vol"}
+	{bone "sus_l1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackleft9.vol"}
+	{bone "sus_l2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position -0.1999 	 0.077 	 0.0835}
+}
+{volume "trackright10"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackright10.vol"}
+	{bone "sus_r3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright11"
+	{cylinder 5.73105 4.22457}
+	{bone "wheelr11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.226
+	}
+}
+{volume "trackright1"
+	{cylinder 6.79356 7.93326}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.4221
+	}
+}
+{volume "trackright2"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright3"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright4"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright5"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright6"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright7"
+	{cylinder 5.1631 4.22457}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.1105
+	}
+}
+{volume "trackright8"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackright8.vol"}
+	{bone "sus_r1"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright9"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackright9.vol"}
+	{bone "sus_r2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/trackright.vol"}
+	{bone "wheelsr"}
+	{Position -0.1999 	 -0.2644 	 0.0835}
+}
+{volume "transmission"
+	{cylinder 5.04519 27.4814}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		5.3818 	 -0.3904 	 -0.7328
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/turret1.vol"}
+	{bone "turret"}
+	{Position -0.5033 	 0.0905 	 5.918}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/turret3.vol"}
+	{bone "turret"}
+	{Position 15.2712 	 0.3549 	 5.4466}
+}
+{volume "turret4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/turret4.vol"}
+	{bone "turret"}
+	{Position -26.6798 	 -0.1008 	 5.6466}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for su100 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_medium/su100/su100.mdl"}
+	{Extension "su100.mdl"}
 	{extender "stuff"
 		{item "evh_su100"}
 	}

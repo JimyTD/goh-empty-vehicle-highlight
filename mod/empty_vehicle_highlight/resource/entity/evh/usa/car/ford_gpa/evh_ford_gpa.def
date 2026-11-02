@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ford_gpa (generated)
-	{Extension "../../../../-vehicle/usa/car/ford_gpa/ford_gpa.mdl"}
+	{Extension "ford_gpa.mdl"}
 	{extender "stuff"
 		{item "evh_ford_gpa"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for po2 (generated)
-	{Extension "../../../../-vehicle/ussr/airborne/po2/po2.mdl"}
+	{Extension "po2.mdl"}
 	{extender "stuff"
 		{item "evh_po2"}
 	}

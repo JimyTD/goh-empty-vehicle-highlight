@@ -1,0 +1,1340 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: door mgun_h_rot1 turret
+;Exported by:	 nic21
+;Date:			 20.07.2025 15:32:08
+;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_medium\jagdpanther\jagdpanther_export.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/stop.anm"} {speed 0.7}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/fire.anm"} {speed 0.65}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/open.anm"} {speed 0.3}{resume} {events {2 "hatch_medium"}}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/hit.anm"} {speed 0.8}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.43;"}
+		{limits 0 0}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.2195 	 -0.2037 	 17.5006}
+			{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/body.ply"}
+			{bone "shieldl1"
+				{parameters "id=body;"}
+				{Position 45.4444 	 32.8815 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldl1.ply"}
+			}
+			{bone "shieldl2"
+				{parameters "id=body;"}
+				{Position 22.2155 	 32.943 	 4.6517}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldl2.ply"}
+			}
+			{bone "shieldl3"
+				{parameters "id=body;"}
+				{Position -1.4967 	 32.892 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldl3.ply"}
+			}
+			{bone "shieldl4"
+				{parameters "id=body;"}
+				{Position -25.3573 	 32.943 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldl4.ply"}
+			}
+			{bone "shieldl5"
+				{parameters "id=body;"}
+				{Position -47.8924 	 32.8228 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldl5.ply"}
+			}
+			{bone "shieldr1"
+				{parameters "id=body;"}
+				{Position 45.4444 	 -32.7068 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldr1.ply"}
+			}
+			{bone "shieldr2"
+				{parameters "id=body;"}
+				{Position 22.2155 	 -32.7068 	 4.6518}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldr2.ply"}
+			}
+			{bone "shieldr3"
+				{parameters "id=body;"}
+				{Position -1.4967 	 -32.7067 	 4.6517}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldr3.ply"}
+			}
+			{bone "shieldr4"
+				{parameters "id=body;"}
+				{Position -25.3573 	 -32.7068 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldr4.ply"}
+			}
+			{bone "shieldr5"
+				{parameters "id=body;"}
+				{Position -47.8924 	 -32.7068 	 4.6516}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shieldr5.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -63.1613 	 0.0331 	 11.7381}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/engine.ply"}
+				{bone "enghatch"
+					{parameters "id=engine;"}
+					{Position 20.4214 	 -7.3324 	 7.2395}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/enghatch.ply"}
+				}
+			}
+			{bone "antena"
+				{parameters "id=body;"}
+				{Position -22.9521 	 -14.7331 	 31.5734}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/antena.ply"}
+			}
+			{bone "fxlight"
+				{matrix34
+					0.9962 	 0 	 -0.0872
+					0 	 1 	 0
+					0.0872 	 0 	 0.9962
+					75.768 	 -1.0363 	 8.8907
+				}
+			}
+			{bone "headlightl"
+				{Position 56.1583 	 24.3661 	 14.7389}
+			}
+			{bone "headlightr"
+				{Position 56.1583 	 -24.2743 	 14.7389}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -10 15}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					39.2076 	 -16.8226 	 19.1341
+				}
+				{bone revolute "mgun_h_rot2"
+					{limits -5 5}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.0007 	 0
+					}
+					{bone "hullmg"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 -0.0007}
+						
+					}
+					{bone "gpu"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							1.0375 	 -0.0338 	 0.9655
+						}
+						
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 1
+							8.0539 	 -0.0244 	 0.9853
+						}
+					}
+				}
+			}
+			{bone "visor2"
+				{Position 42.5879 	 14.0183 	 19.7822}
+			}
+			{bone "fxfire1"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-39.2285 	 0.2037 	 15.2527
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 -0.9994
+					-72.5049 	 -7.149 	 18.7747
+				}
+			}
+			{bone "fxsmoke2"
+				{matrix34
+					-0.9994 	 0 	 0.0349
+					0 	 1 	 0
+					-0.0349 	 0 	 -0.9994
+					-72.5049 	 7.4148 	 18.7747
+				}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.38;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					55.6688 	 -26.0001 	 -1.3692
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr1.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr1_lod1.ply"}
+				}
+			}
+			{bone revolute "wheelr0"
+				{parameters "id=trackright;radius=0.33;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.6065 	 -26.2202 	 -4.2727
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr0.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr0_lod1.ply"}
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.38;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					55.6688 	 26.0335 	 -1.3692
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell1.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell1_lod1.ply"}
+				}
+			}
+			{bone revolute "wheell0"
+				{parameters "id=trackleft;radius=0.33;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-46.6065 	 26.2312 	 -4.2728
+				}
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell0.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell0_lod1.ply"}
+				}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 0.4695 	 -0.8829
+					-1 	 0 	 0
+					0 	 0.8829 	 0.4695
+					29.5564 	 29.7352 	 12.9899
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail1.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.8746 	 0.4848
+					0 	 -0.4848 	 0.8746
+					39.2212 	 28.5833 	 15.4047
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail2.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -57.4038 	 4.8016 	 2.3768}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-12.2885 	 -29.4819 	 13.4886
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{matrix34
+					0.8746 	 0 	 0.4848
+					0 	 1 	 0
+					-0.4848 	 0 	 0.8746
+					62.908 	 0.3462 	 5.3178
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 0.5 	 0.866
+					-1 	 0 	 0
+					0 	 -0.866 	 0.5
+					-11.5544 	 -28.3337 	 16.0849
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0.0091
+					0.001 	 0.9938 	 0.1114
+					0.0091 	 -0.1114 	 0.9937
+					28.5099 	 -29.7235 	 12.869
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 -0.8746 	 0.4848
+					0 	 0.4848 	 0.8746
+					39.2212 	 -28.7175 	 15.4047
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail8.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 -0.5299 	 -0.848
+					1 	 0 	 0
+					0 	 -0.848 	 0.5299
+					29.7384 	 -28.8981 	 14.2796
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail9.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=engine;"}
+				{matrix34
+					0 	 -1 	 0
+					-0.5299 	 0 	 0.848
+					-0.848 	 0 	 -0.5299
+					-62.0891 	 0.5761 	 13.2559
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail10.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{Position 4.0342 	 -2.5416 	 20.6161}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail11.ply"}
+			}
+			{bone "detail12"
+				{parameters "id=body;"}
+				{matrix34
+					-1 	 0 	 0.0091
+					0.001 	 -0.9938 	 0.1114
+					0.0091 	 0.1114 	 0.9937
+					29.9022 	 28.1896 	 15.5899
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/detail12.ply"}
+			}
+			{bone "enumerator"
+				{Position 2.6003 	 -22.5538 	 24.2669}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/enumerator.ply"}
+			}
+			{bone "visor"
+				{Position -16.1536 	 -11.6945 	 36.305}
+			}
+			{bone "fxfire3"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-23.9692 	 0.2126 	 18.9725
+				}
+			}
+			{bone "door"
+				{parameters "id=body;"}
+				{Position -28.0813 	 0.1946 	 20.4139}
+				
+			}
+			{bone revolute "turret"
+				{limits -12 12}
+				{speed 0.002}
+				{Position 29.0941 	 0.2101 	 20.0761}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/jagdpanther/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -6 20}
+					{speed 0.002}
+					{matrix34
+						1 	 0 	 0
+						0 	 -0.0175 	 0.9998
+						0 	 -0.9998 	 -0.0175
+						0 	 0 	 0
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 -0.0175 	 -0.9998
+							0 	 0.9998 	 -0.0175
+							11.7468 	 0 	 -0.0002
+						}
+						
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								80.7769 	 -0.0066 	 -0.4156
+							}
+						}
+					}
+				}
+			}
+			{bone "internals"
+				{Position -2.2322 	 0.118 	 6.7013}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9659 	 0.2588
+					-1 	 0 	 0
+					0 	 -0.2588 	 0.9659
+					-34.144 	 28.5941 	 12.4773
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 -0.9659 	 0.2588
+					1 	 0 	 0
+					0 	 0.2588 	 0.9659
+					-54.5935 	 -28.4805 	 12.1604
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					0 	 0.9659 	 0.2588
+					-1 	 0 	 0
+					0 	 -0.2588 	 0.9659
+					-56.5296 	 28.4583 	 12.4924
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -0.9659 	 0.2588
+					1 	 0 	 0
+					0 	 0.2588 	 0.9659
+					-32.1682 	 -28.5404 	 12.2388
+				}
+			}
+			{bone "visor1"
+				{Position 16.9496 	 10.4661 	 31.8217}
+			}
+			{bone "smoke_shot1"
+				{matrix34
+					-0.6428 	 0 	 -0.766
+					0 	 -1 	 0
+					-0.766 	 0 	 0.6428
+					7.6546 	 13.7516 	 32.6764
+				}
+			}
+			{bone "fxsmoke_shot1"
+				{matrix34
+					0.6428 	 0 	 0.766
+					0 	 1 	 0
+					-0.766 	 0 	 0.6428
+					6.2536 	 13.7516 	 31.0072
+				}
+			}
+			{bone "shield1"
+				{parameters "id=shield1;"}
+				{Position -42.7837 	 28.5546 	 16.8562}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shield1.ply"}
+			}
+			{bone "shield2"
+				{parameters "id=shield2;"}
+				{Position -42.7837 	 -28.5492 	 16.8562}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/shield2.ply"}
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-36.9155 	 45.6663 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-36.9155 	 -46.3871 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-35.2716 	 53.8327 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-55.813 	 -55.5209 	 0
+			}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-33.3966 	 -55.5909 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-57.6682 	 53.9079 	 0
+			}
+		}
+		{bone "body_virt"
+			{Position 0 	 0 	 17.2084}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position -2.9622 	 22.5841 	 -5.5488}
+				{bone prizmatic "suspension_l2"
+					{limits -0.05 0.05}
+					{speed 0.16}
+					{Position 42.6018 	 2.9605 	 -1.9273}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							0 	 0 	 -1
+							-1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell2.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell2_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.09 0.09}
+					{speed 0.16}
+					{Position 31.6138 	 2.9419 	 -1.9272}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							0 	 0 	 -1
+							-1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell3.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell3_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.13 0.13}
+					{speed 0.16}
+					{Position 20.9377 	 2.9605 	 -1.9273}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell4.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell4_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.17 0.17}
+					{speed 0.16}
+					{Position 9.9318 	 2.9419 	 -1.9272}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell5.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell5_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.17 0.17}
+					{speed 0.16}
+					{Position -1.0787 	 2.9605 	 -1.9273}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell6.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell6_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.13 0.13}
+					{speed 0.16}
+					{Position -12.0784 	 2.9419 	 -1.9272}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell7.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell7_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l8"
+					{limits -0.09 0.09}
+					{speed 0.16}
+					{Position -23.0259 	 2.9605 	 -1.9273}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell8.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell8_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_l9"
+					{limits -0.05 0.05}
+					{speed 0.16}
+					{Position -34.0177 	 2.9419 	 -1.9272}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell9.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheell9_lod1.ply"}
+						}
+					}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 6.5293 	 3.2604 	 0.6716}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/trackl.ply"}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						11.3047 	 2.1722 	 -11.6068
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-40.6622 	 2.4001 	 -10.9149
+					}
+				}
+				{bone "suspl"
+					{parameters "id=trackleft;"}
+					{Position 0 	 0 	 0}
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/suspl.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/suspl_lod1.ply"}
+					}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position -2.9622 	 -23.0372 	 -5.5488}
+				{bone prizmatic "suspension_r2"
+					{limits -0.05 0.05}
+					{speed 0.16}
+					{Position 42.6018 	 -2.5991 	 -1.9273}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr2.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr2_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.09 0.09}
+					{speed 0.16}
+					{Position 31.6139 	 -2.6649 	 -1.9272}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr3.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr3_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.13 0.13}
+					{speed 0.16}
+					{Position 20.9374 	 -2.5991 	 -1.9273}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr4.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr4_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.17 0.17}
+					{speed 0.16}
+					{Position 9.9289 	 -2.6649 	 -1.9272}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr5.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr5_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.17 0.17}
+					{speed 0.16}
+					{Position -1.0793 	 -2.5991 	 -1.9273}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr6.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr6_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.13 0.13}
+					{speed 0.16}
+					{Position -12.0784 	 -2.6649 	 -1.9272}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr7.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr7_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r8"
+					{limits -0.09 0.09}
+					{speed 0.16}
+					{Position -23.0262 	 -2.5991 	 -1.9273}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr8.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr8_lod1.ply"}
+						}
+					}
+				}
+				{bone prizmatic "suspension_r9"
+					{limits -0.05 0.05}
+					{speed 0.16}
+					{Position -34.0175 	 -2.6649 	 -1.9272}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr9.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/wheelr9_lod1.ply"}
+						}
+					}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 6.5293 	 -2.8185 	 0.6716}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/trackr.ply"}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						11.3048 	 -2.5323 	 -11.6068
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-40.6622 	 -2.8853 	 -10.9149
+					}
+				}
+				{bone "suspr"
+					{parameters "id=trackright;"}
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/suspr.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/suspl_lod1.ply"}
+					}
+				}
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/ram.vol"}
+	{bone "body"}
+	{Position 1.0083 	 0.2177 	 0.9741}
+}
+{volume "ammo1"
+	{box 22.0185 6.88976 8.59908}
+	{bone "internals"}
+	{Position 16.4076 	 22.0642 	 7.9044}
+}
+{volume "ammo2"
+	{box 22.0185 4.54724 2.8377}
+	{bone "internals"}
+	{Position 16.4075 	 -21.7644 	 5.0146}
+}
+{volume "ammo3"
+	{box 22.0185 6.88976 8.59908}
+	{bone "internals"}
+	{Position -7.3002 	 22.6127 	 6.5606}
+}
+{volume "ammo4"
+	{box 22.0185 6.88976 8.59908}
+	{bone "internals"}
+	{Position -7.3002 	 -22.9406 	 6.5606}
+}
+{volume "barrel"
+	{cylinder 2.01387 91.4701}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		32.8297 	 0.0014 	 -0.178
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/body1.vol"}
+	{bone "body"}
+	{Position 4.1204 	 -0.0078 	 1.9903}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/body2.vol"}
+	{bone "body"}
+	{Position -6.0941 	 0.0064 	 12.328}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/body3.vol"}
+	{bone "body"}
+	{Position 5.9132 	 0.1321 	 25.9773}
+}
+{volume "breach"
+	{box 36.811 8.38002 8.38001}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -0.0175 	 -0.9998
+		0 	 0.9998 	 -0.0175
+		-19.5641 	 -0.0218 	 -0.0889
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/engine1.vol"}
+	{bone "engine"}
+	{Position 67.2818 	 -0.0409 	 -9.7478}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/engine2.vol"}
+	{bone "engine"}
+	{Position 57.0673 	 -0.0267 	 0.5899}
+}
+{volume "fuel1"
+	{box 24.6654 7.75591 7.41595}
+	{bone "internals"}
+	{Position -39.7307 	 23.8055 	 4.6635}
+}
+{volume "fuel2"
+	{box 24.6654 7.75591 7.41595}
+	{bone "internals"}
+	{Position -39.7307 	 -23.7529 	 4.6635}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 6.3019 	 3.0986 	 -0.0364}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 6.302 	 -2.8204 	 -0.0364}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/hole3.vol"}
+	{bone "body"}
+	{matrix34
+		0.9781 	 0 	 0.2079
+		0 	 1 	 0
+		-0.2079 	 0 	 0.9781
+		38.5948 	 0.21 	 14.3039
+	}
+}
+{volume "mantlet1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/mantlet1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -0.0175 	 -0.9998
+		0 	 0.9998 	 -0.0175
+		1 	 0 	 0
+		3.4445 	 0.0001 	 -0.0001
+	}
+}
+{volume "mantlet"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/mantlet.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -0.0175 	 -0.9998
+		0 	 0.9998 	 -0.0175
+		1 	 0 	 0
+		10.0024 	 0.0001 	 -0.0001
+	}
+}
+{volume "mg_port"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/mg_port.vol"}
+	{bone "body"}
+	{matrix34
+		0.9994 	 0 	 -0.0349
+		0.0349 	 0 	 0.9994
+		0 	 -1 	 0
+		37.3617 	 -16.8187 	 18.3421
+	}
+}
+{volume "shield1"
+	{box 38.1514 1.03394 5.41279}
+	{bone "shield1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.8829 	 0.4695
+		0 	 -0.4695 	 0.8829
+		0.0003 	 -0.5677 	 -0.3016
+	}
+}
+{volume "shield2"
+	{box 38.1514 1.03394 5.41279}
+	{bone "shield2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0.8829 	 -0.4695
+		0 	 0.4695 	 0.8829
+		0.0003 	 0.5962 	 -0.3015
+	}
+}
+{volume "shieldl1"
+	{box 22.7062 11.9628 0.58072}
+	{bone "shieldl1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.018 	 -0.0834 	 0.0058
+	}
+}
+{volume "shieldl2"
+	{box 23.3942 11.9628 0.58072}
+	{bone "shieldl2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0569 	 -0.1449 	 0.0058
+	}
+}
+{volume "shieldl3"
+	{box 23.3942 11.9628 0.58072}
+	{bone "shieldl3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0577 	 -0.0939 	 0.0058
+	}
+}
+{volume "shieldl4"
+	{box 24.103 11.9628 0.58072}
+	{bone "shieldl4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.032 	 -0.145 	 0.0059
+	}
+}
+{volume "shieldl5"
+	{box 20.73 11.9628 0.58072}
+	{bone "shieldl5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0762 	 -0.0248 	 0.0058
+	}
+}
+{volume "shieldr1"
+	{box 22.7062 11.9628 0.58072}
+	{bone "shieldr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.018 	 -0.0075 	 0.0058
+	}
+}
+{volume "shieldr2"
+	{box 23.3942 11.9628 0.58072}
+	{bone "shieldr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.057 	 -0.0077 	 0.0056
+	}
+}
+{volume "shieldr3"
+	{box 23.3942 11.9628 0.58072}
+	{bone "shieldr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0577 	 -0.0077 	 0.0058
+	}
+}
+{volume "shieldr4"
+	{box 24.103 11.9628 0.58072}
+	{bone "shieldr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0321 	 -0.0077 	 0.0058
+	}
+}
+{volume "shieldr5"
+	{box 20.73 11.9628 0.58072}
+	{bone "shieldr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		-0.0762 	 -0.0077 	 0.0059
+	}
+}
+{volume "trackleft10"
+	{cylinder 6.51575 3.80659}
+	{bone "wheell0"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.3027
+	}
+}
+{volume "trackleft1"
+	{cylinder 7.16535 6.83169}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 -0.2155
+	}
+}
+{volume "trackleft2"
+	{cylinder 8.67584 4.6539}
+	{bone "wheell2"}
+	{matrix34
+		0 	 -1 	 0
+		-1 	 0 	 0
+		0 	 0 	 -1
+		-0.0001 	 -0.0061 	 2.5901
+	}
+}
+{volume "trackleft3"
+	{cylinder 8.67411 8.50902}
+	{bone "wheell3"}
+	{matrix34
+		0 	 -1 	 0
+		-1 	 0 	 0
+		0 	 0 	 -1
+		0 	 -0.0097 	 0.0385
+	}
+}
+{volume "trackleft4"
+	{cylinder 8.67584 4.6539}
+	{bone "wheell4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.003 	 0 	 2.5902
+	}
+}
+{volume "trackleft5"
+	{cylinder 8.67584 8.50902}
+	{bone "wheell5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0011 	 0 	 0.0385
+	}
+}
+{volume "trackleft6"
+	{cylinder 8.67584 4.6539}
+	{bone "wheell6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0055 	 0 	 2.5902
+	}
+}
+{volume "trackleft7"
+	{cylinder 8.67411 8.50902}
+	{bone "wheell7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0013 	 0 	 0.0385
+	}
+}
+{volume "trackleft8"
+	{cylinder 8.67584 4.6539}
+	{bone "wheell8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0039 	 0 	 2.5902
+	}
+}
+{volume "trackleft9"
+	{cylinder 8.67584 8.50902}
+	{bone "wheell9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0082 	 0 	 0.0386
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 6.3019 	 3.0986 	 -0.0364}
+}
+{volume "trackright10"
+	{cylinder 6.51575 3.81567}
+	{bone "wheelr0"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.2735
+	}
+}
+{volume "trackright1"
+	{cylinder 7.16535 6.7075}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0.1581
+	}
+}
+{volume "trackright2"
+	{cylinder 8.67584 4.6539}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0061 	 0 	 -2.1756
+	}
+}
+{volume "trackright3"
+	{cylinder 8.67584 8.50902}
+	{bone "wheelr3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0098 	 0 	 -0.0603
+	}
+}
+{volume "trackright4"
+	{cylinder 8.67584 4.6539}
+	{bone "wheelr4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0027 	 0 	 -2.1756
+	}
+}
+{volume "trackright5"
+	{cylinder 8.67584 8.50902}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0018 	 0 	 -0.0603
+	}
+}
+{volume "trackright6"
+	{cylinder 8.67584 4.6539}
+	{bone "wheelr6"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0061 	 0 	 -2.1756
+	}
+}
+{volume "trackright7"
+	{cylinder 8.67584 8.50902}
+	{bone "wheelr7"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0012 	 0 	 -0.0603
+	}
+}
+{volume "trackright8"
+	{cylinder 8.67584 4.6539}
+	{bone "wheelr8"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0.0041 	 0 	 -2.1757
+	}
+}
+{volume "trackright9"
+	{cylinder 8.67584 8.50902}
+	{bone "wheelr9"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		-0.0084 	 0 	 -0.0603
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/jagdpanther/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 6.302 	 -2.8204 	 -0.0364}
+}
+{volume "transmission"
+	{cylinder 4.68811 31.427}
+	{bone "internals"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		53.5489 	 -0.2936 	 -6.603
+	}
+}

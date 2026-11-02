@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for matilda2_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/matilda2_mk1/matilda2_mk1.mdl"}
+	{Extension "matilda2_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_matilda2_mk1"}
 	}

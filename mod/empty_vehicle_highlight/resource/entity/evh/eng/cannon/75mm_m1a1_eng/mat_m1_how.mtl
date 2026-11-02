@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/75mm_pack_eng"}
+	{bump "$/_vehicle/eng/75mm_pack_eng_bp"}
+	{specular "$/_vehicle/eng/75mm_pack_eng_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

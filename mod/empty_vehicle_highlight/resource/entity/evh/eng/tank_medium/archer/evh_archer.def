@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for archer (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/archer/archer.mdl"}
+	{Extension "archer.mdl"}
 	{extender "stuff"
 		{item "evh_archer"}
 	}

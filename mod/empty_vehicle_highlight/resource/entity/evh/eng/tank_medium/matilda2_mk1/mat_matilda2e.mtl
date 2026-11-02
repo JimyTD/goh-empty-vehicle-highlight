@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/matilda2_erl"}
+	{bump "$/_vehicle/eng/matilda2_erl_bp"}
+	{specular "$/_vehicle/eng/matilda2_erl_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

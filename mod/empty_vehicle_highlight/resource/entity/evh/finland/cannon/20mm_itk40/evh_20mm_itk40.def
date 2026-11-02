@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 20mm_itk40 (generated)
-	{Extension "../../../../-vehicle/finland/cannon/20mm_itk40/20mm_itk40.mdl"}
+	{Extension "20mm_itk40.mdl"}
 	{extender "stuff"
 		{item "evh_20mm_itk40"}
 	}

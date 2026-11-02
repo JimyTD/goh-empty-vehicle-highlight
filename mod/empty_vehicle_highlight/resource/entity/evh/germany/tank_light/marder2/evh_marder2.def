@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for marder2 (generated)
-	{Extension "../../../../-vehicle/germany/tank_light/marder2/marder2.mdl"}
+	{Extension "marder2.mdl"}
 	{extender "stuff"
 		{item "evh_marder2"}
 	}

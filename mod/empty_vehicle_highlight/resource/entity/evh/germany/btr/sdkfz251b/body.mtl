@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/ger/sdkfz_251_b"}
+	{bump "$/_vehicle/ger/sdkfz_251_b_bp"}
+	{specular "$/_vehicle/ger/sdkfz_251_b_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

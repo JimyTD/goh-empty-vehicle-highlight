@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for blitz3_6_flak30 (generated)
-	{Extension "../../../../-vehicle/germany/car/blitz3_6_flak30/blitz3_6_flak30.mdl"}
+	{Extension "blitz3_6_flak30.mdl"}
 	{extender "stuff"
 		{item "evh_blitz3_6_flak30"}
 	}

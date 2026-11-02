@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for cruiser_mk4a (generated)
-	{Extension "../../../../-vehicle/eng/tank_light/cruiser_mk4a/cruiser_mk4a.mdl"}
+	{Extension "cruiser_mk4a.mdl"}
 	{extender "stuff"
 		{item "evh_cruiser_mk4a"}
 	}

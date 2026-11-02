@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for citroen_7_ger (generated)
-	{Extension "../../../../-vehicle/germany/car/citroen_7_ger/citroen_7_ger.mdl"}
+	{Extension "citroen_7_ger.mdl"}
 	{extender "stuff"
 		{item "evh_citroen_7_ger"}
 	}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bf109_f4 (generated)
-	{Extension "../../../../-vehicle/germany/airborne/bf109_f4/bf109_f4.mdl"}
+	{Extension "bf109_f4.mdl"}
 	{extender "stuff"
 		{item "evh_bf109_f4"}
 	}

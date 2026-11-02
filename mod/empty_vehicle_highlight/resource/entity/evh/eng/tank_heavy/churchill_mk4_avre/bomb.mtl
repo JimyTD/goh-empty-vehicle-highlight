@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_shell/avre_bomb"}
+	{bump "$/_shell/avre_bomb_bp"}
+	{specular "$/_shell/avre_bomb_sp"}
+	{color "230 230 230 25"}
+	{blend none}
+}

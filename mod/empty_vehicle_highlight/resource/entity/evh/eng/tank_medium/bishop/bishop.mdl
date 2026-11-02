@@ -1,0 +1,1187 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorl doorr driverhatch1 hatch2 turret
+;Exported by:	 guita
+;Date:			 04.11.2025 23:33:53
+;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Bishop\bishop.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/tank_medium/bishop/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/tank_medium/bishop/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/eng/tank_medium/bishop/fire.anm"} {speed 0.6}}
+		{sequence "hit" {file "../../../../-vehicle/eng/tank_medium/bishop/hit.anm"} {speed 0.7}}
+		{sequence "open" {file "../../../../-vehicle/eng/tank_medium/bishop/open.anm"} {speed 0.3}{resume} {events {1 "hatch_light"} {3 "hatch_medium"}}}
+		{sequence "open_driver" {file "../../../../-vehicle/eng/tank_medium/bishop/open_driver.anm"} {speed 0.5} {events {2 "hatch_medium"} {95 "hatch_medium"}}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.30;"}
+		{limits 0 0}
+		{speed 0.001}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/bishop/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.2581 	 -0.8705 	 13.7695}
+			{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/body.ply"}
+			{bone "driverhatch2"
+				{parameters "id=body;"}
+				{Position 30.7734 	 13.7085 	 9.4654}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/driverhatch2.ply"}
+			}
+			{bone "driverhatch1"
+				{parameters "id=body;"}
+				{Position 30.7734 	 -13.6084 	 9.4815}
+				
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/bishop/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -20.8519 	 0.039 	 2.7787}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/engine.ply"}
+				{bone "enginehatch1"
+					{parameters "id=engine;"}
+					{Position 10.789 	 2.6519 	 12.5744}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch1.ply"}
+				}
+				{bone "enginehatch2"
+					{parameters "id=engine;"}
+					{Position -4.0426 	 2.6327 	 12.5199}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch2.ply"}
+				}
+				{bone "enginehatch3"
+					{parameters "id=engine;"}
+					{Position 10.7889 	 -2.6473 	 12.546}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch3.ply"}
+				}
+				{bone "enginehatch4"
+					{parameters "id=engine;"}
+					{Position -4.1531 	 -2.6125 	 12.5177}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch4.ply"}
+				}
+				{bone "enginehatch5"
+					{parameters "id=engine;"}
+					{matrix34
+						0.8387 	 0 	 0.5446
+						0 	 1 	 0
+						-0.5446 	 0 	 0.8387
+						-14.9666 	 14.8376 	 7.8774
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch5.ply"}
+				}
+				{bone "enginehatch6"
+					{parameters "id=engine;"}
+					{matrix34
+						0.8387 	 0 	 0.5446
+						0 	 1 	 0
+						-0.5446 	 0 	 0.8387
+						-14.9735 	 -14.6318 	 7.889
+					}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch6.ply"}
+				}
+				{bone "enginehatch7"
+					{parameters "id=engine;"}
+					{Position -28.4828 	 -0.0004 	 0.0354}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch7.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.806 	 -0.0091 	 1.5137
+					}
+				}
+				{bone "enginehatch11"
+					{parameters "id=engine;"}
+					{Position 6.7224 	 -14.8452 	 6.8703}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch11.ply"}
+				}
+				{bone "enginehatch10"
+					{parameters "id=engine;"}
+					{Position -3.2392 	 -14.8452 	 6.8704}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch10.ply"}
+				}
+				{bone "enginehatch9"
+					{parameters "id=engine;"}
+					{Position 3.2408 	 14.8545 	 6.8624}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch9.ply"}
+				}
+				{bone "enginehatch8"
+					{parameters "id=engine;"}
+					{Position 11.0117 	 14.8544 	 6.8623}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enginehatch8.ply"}
+				}
+			}
+			{bone "external_tank"
+				{parameters "id=body;"}
+				{Position -17.9881 	 20.7432 	 13.318}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/external_tank.ply"}
+			}
+			{bone "detail3"
+				{parameters "id=body;"}
+				{Position -15.0116 	 23.0646 	 8.4101}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail3.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{Position -37.012 	 -20.9904 	 10.0988}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position -14.6985 	 -21.5626 	 11.5362}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 11.1224 	 -19.8472 	 13.4996}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail6.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position 31.9596 	 -21.8385 	 9.5255}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail2.ply"}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					45.7594 	 22.2011 	 -0.6138
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell1.ply"}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					19.3513 	 21.7663 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.1356 	 21.7663 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.8558 	 21.7663 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.39;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-44.7096 	 24.9025 	 -0.0837
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					45.7594 	 -22.124 	 -0.6138
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr1.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					19.3513 	 -21.6892 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-1.1356 	 -21.6892 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.13;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-20.8558 	 -21.6892 	 2.7221
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.39;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-44.7096 	 -24.8254 	 -0.0837
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr11.ply"}
+			}
+			{bone "headlightl"
+				{Position 47.1608 	 11.9403 	 7.2256}
+			}
+			{bone "headlightr"
+				{Position 47.1723 	 -11.8576 	 7.2256}
+			}
+			{bone "visor2"
+				{Position 37.7192 	 0.2365 	 9.0388}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					5.9458 	 -0.0909 	 20.1507
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 0.9903 	 0.1392
+					-1 	 0 	 0
+					0 	 -0.1392 	 0.9903
+					-40.6858 	 24.7023 	 2.0329
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-25.6698 	 -14.1995 	 7.195
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					0.1503 	 0.9587 	 -0.2416
+					-0.9874 	 0.158 	 0.0127
+					0.0503 	 0.2366 	 0.9703
+					29.2309 	 27.763 	 8.0317
+				}
+			}
+			{bone "seat05"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-12.6331 	 -24.8558 	 3.9552
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 0.9903 	 0.1392
+					-1 	 0 	 0
+					0 	 -0.1392 	 0.9903
+					-28.8082 	 15.0427 	 7.2203
+				}
+			}
+			{bone "ammo1"
+				{Position 10.7327 	 0.0249 	 -1.5974}
+			}
+			{bone "fuel1"
+				{Position -16.4749 	 10.3868 	 1.6798}
+			}
+			{bone "transmission"
+				{Position -44.4729 	 0.2219 	 -0.0864}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 -0.9903 	 0.1392
+					1 	 0 	 0
+					0 	 0.1392 	 0.9903
+					-40.6858 	 -24.7588 	 3.8345
+				}
+			}
+			{bone "seat06"
+				{matrix34
+					0 	 0.9903 	 0.1392
+					-1 	 0 	 0
+					0 	 -0.1392 	 0.9903
+					-14.0051 	 15.0427 	 7.2203
+				}
+			}
+			{bone "interior"
+				{parameters "id=body;"}
+				{Position 7.2065 	 0.3417 	 23.0167}
+				{LODView
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/interior.ply"}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/interior_lod1.ply"}
+				}
+			}
+			{bone "doorl"
+				{parameters "id=body;"}
+				{Position -11.1621 	 13.3851 	 18.5909}
+				
+				{bone "detail1"
+					{parameters "id=body;"}
+					{Position -3.0399 	 -9.6663 	 16.2646}
+					
+				}
+				{bone "detail7"
+					{parameters "id=body;"}
+					{Position -3.0399 	 -9.6289 	 9.5742}
+					
+				}
+			}
+			{bone "doorr"
+				{parameters "id=body;"}
+				{Position -11.158 	 -12.7092 	 34.3369}
+				
+			}
+			{bone "enumerator2"
+				{Position 17.1353 	 17.7004 	 16.5651}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enumerator2.ply"}
+			}
+			{bone "enumerator1"
+				{matrix34
+					1 	 -0.0052 	 0
+					0.0052 	 1 	 0
+					0 	 0 	 1
+					20.581 	 -16.1226 	 16.6421
+				}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/enumerator1.ply"}
+			}
+			{bone "gun_shield"
+				{parameters "id=body;"}
+				{Position 30.1828 	 0.5064 	 26.0963}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/gun_shield.ply"}
+			}
+			{bone "visor1"
+				{Position 2.1124 	 -7.9532 	 44.2147}
+			}
+			{bone "hatch1"
+				{parameters "id=body;"}
+				{Position 18.8464 	 0.2266 	 37.9263}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/hatch1.ply"}
+			}
+			{bone "hatch2"
+				{parameters "id=body;"}
+				{Position 22.4008 	 8.9286 	 38.0441}
+				
+			}
+			{bone "antenna1"
+				{parameters "id=body;"}
+				{Position 16.4687 	 -18.2093 	 40.0374}
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/antenna1.ply"}
+				{bone "antenna2"
+					{parameters "id=body;"}
+					{Position -0.0204 	 0 	 8.0901}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/antenna2.ply"}
+					{bone "antenna3"
+						{parameters "id=body;"}
+						{Position -0.0204 	 0 	 8.2129}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/antenna3.ply"}
+					}
+				}
+			}
+			{bone revolute "turret"
+				{parameters "id=body;"}
+				{limits -4 4}
+				{speed 0.001}
+				{Position 22.7827 	 0.4732 	 14.3266}
+				
+				{bone revolute "gun_rot"
+					{parameters "id=gun;inmax=15;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/bishop/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -5 0}
+					{speed 0.001}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						1.7244 	 4.5349 	 10.6597
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							5.7055 	 1.1255 	 4.8239
+						}
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0
+								0 	 0 	 1
+								0 	 -1 	 0
+								25.7689 	 0.2395 	 0.0383
+							}
+						}
+						{bone "qf25"
+							{parameters "id=gun;"}
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								3.5066 	 0 	 0
+							}
+							
+							{bone "breechblock"
+								{parameters "id=gun;"}
+								{Position -27.3309 	 0.2954 	 -0.8061}
+								
+							}
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 1 	 0
+							0 	 0 	 1
+							3.7977 	 4.3952 	 -5.5333
+						}
+					}
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-53.7202 	 0.0403 	 1.2418
+				}
+			}
+			{bone "camera"
+				{Position 5.9458 	 0.0403 	 16.6967}
+			}
+		}
+		{bone "emit0"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				61.6241 	 -13.3045 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				11.4873 	 35.6966 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				4.7376 	 -37.6181 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit4"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-40.4277 	 36.0114 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit5"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-25.3151 	 -37.4193 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit7"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-11.5189 	 -37.3769 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit6"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-27.0274 	 36.3557 	 0
+			}
+			{visibility 0}
+		}
+		{bone "body_virt"
+			{matrix34
+				1 	 0 	 0
+				0 	 0 	 1
+				0 	 -1 	 0
+				0.4979 	 -0.8302 	 10.2204
+			}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.9927 	 -1.4574 	 -16.7869
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.07 0.07}
+					{speed 0.18}
+					{Position 30.3221 	 5.7122 	 -1.8633}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.09 0.09}
+					{speed 0.18}
+					{Position 18.4981 	 5.7122 	 -2.9558}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;radius=0.25;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position 7.8644 	 5.7122 	 -2.9558}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;radius=0.25;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position -7.8339 	 5.7122 	 -2.9558}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;radius=0.25;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.09 0.09}
+					{speed 0.18}
+					{Position -18.4676 	 5.7122 	 -2.9558}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;radius=0.25;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.07 0.07}
+					{speed 0.18}
+					{Position -30.3967 	 5.7122 	 -1.8633}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheell7.ply"}
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-0.9707 	 0.1685 	 0.171
+						-0.1761 	 -0.9839 	 -0.0302
+						0.1632 	 -0.0594 	 0.9848
+						0.4363 	 4.9725 	 -8.5136
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-41.4002 	 4.9725 	 -5.165
+					}
+				}
+				{bone "left_susp"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/left_susp.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{Position 0.7265 	 4.895 	 2.0419}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/trackl.ply"}
+				}
+				{bone "springl"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/springl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-0.9927 	 -1.4574 	 16.7931
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.07 0.07}
+					{speed 0.18}
+					{Position 30.3221 	 -5.7095 	 -1.8633}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.09 0.09}
+					{speed 0.18}
+					{Position 18.4981 	 -5.7094 	 -2.9558}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;radius=0.25;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position 7.8644 	 -5.7094 	 -2.9558}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;radius=0.25;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.12 0.12}
+					{speed 0.18}
+					{Position -7.8339 	 -5.7094 	 -2.9558}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;radius=0.25;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.09 0.09}
+					{speed 0.18}
+					{Position -18.4676 	 -5.7094 	 -2.9558}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;radius=0.25;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.07 0.07}
+					{speed 0.18}
+					{Position -30.3967 	 -5.7095 	 -1.8633}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{orientation
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/wheelr7.ply"}
+					}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-0.9698 	 -0.1736 	 0.171
+						0.171 	 -0.9848 	 -0.0302
+						0.1736 	 0 	 0.9848
+						0.4363 	 -4.7724 	 -8.5136
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9511 	 0 	 0.309
+						0 	 -1 	 0
+						0.309 	 0 	 0.9511
+						-41.4002 	 -4.7724 	 -5.165
+					}
+				}
+				{bone "right_susp"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/right_susp.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{Position 0.7265 	 -4.9041 	 2.0419}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/trackr.ply"}
+				}
+				{bone "springr"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 0}
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/springr.ply"}
+				}
+			}
+		}
+		{bone "emit3"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-40.194 	 -37.4193 	 0
+			}
+			{visibility 0}
+		}
+		{bone "emit8"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-13.139 	 36.3557 	 0
+			}
+			{visibility 0}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/ram.vol"}
+	{bone "body"}
+	{Position -0.2862 	 -0.02 	 0.3072}
+}
+{volume "ammo1"
+	{cylinder 13.5176 6.1132}
+	{bone "ammo1"}
+	{Position 0 	 0 	 3.0566}
+}
+{volume "barrel1"
+	{box 20.5823 2.88222 6.06484}
+	{bone "gun_rot"}
+	{Position 14.1593 	 -2.3338 	 4.5634}
+}
+{volume "barrel2"
+	{cylinder 1.44932 26.9793}
+	{bone "qf25"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		8.2642 	 0.2907 	 -0.0186
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/body1.vol"}
+	{bone "body"}
+	{Position 43.5057 	 0.0249 	 1.3888}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/body2.vol"}
+	{bone "body"}
+	{Position 31.0995 	 0.0249 	 3.9671}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/body3.vol"}
+	{bone "body"}
+	{Position 10.7327 	 0.0249 	 3.9671}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/body4.vol"}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		9.4595 	 0.0403 	 25.6138
+	}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/body5.vol"}
+	{bone "body"}
+	{Position 26.8516 	 0.5517 	 23.4315}
+}
+{volume "breech"
+	{box 6.16805 5.81113 22.3113}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-7.1061 	 -0.4477 	 4.5769
+	}
+}
+{volume "detail1"
+	{cylinder 4.19754 23.3289}
+	{bone "external_tank"}
+	{matrix34
+		0 	 -1 	 0
+		0 	 0 	 1
+		-1 	 0 	 0
+		-0.0043 	 2.493 	 1.002
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/engine1.vol"}
+	{bone "engine"}
+	{Position 6.7707 	 -0.014 	 1.5225}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/engine2.vol"}
+	{bone "engine"}
+	{Position -15.6022 	 -0.014 	 -0.5303}
+}
+{volume "engine3"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/engine3.vol"}
+	{bone "engine"}
+	{Position -9.6889 	 -0.014 	 9.7792}
+}
+{volume "fuel1"
+	{box 16.6088 10.3325 5.02275}
+	{bone "fuel1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		3.6734 	 0 	 0.5315
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 1.5147 	 4.6969 	 1.2039}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 1.5147 	 -5.0317 	 1.2039}
+}
+{volume "hole3"
+	{box 6.8196 3.15566 39.8265}
+	{bone "body"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-7.6761 	 0.6612 	 14.7063
+	}
+}
+{volume "trackleft10"
+	{cylinder 2.47919 2.95967}
+	{bone "wheell10"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0168 	 0 	 -0.0653
+	}
+}
+{volume "trackleft11"
+	{cylinder 7.67185 5.10288}
+	{bone "wheell11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -2.0926
+	}
+}
+{volume "trackleft1"
+	{cylinder 5.92824 2.95967}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0.0001 	 -0.4946
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.92824 2.95967}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft3"
+	{cylinder 4.86115 2.95967}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft4"
+	{cylinder 4.86115 2.95967}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft5"
+	{cylinder 4.86115 2.95967}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft6"
+	{cylinder 4.86115 2.95967}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.92824 2.95967}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -1.0716
+	}
+}
+{volume "trackleft8"
+	{cylinder 2.47919 2.95967}
+	{bone "wheell8"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0653
+	}
+}
+{volume "trackleft9"
+	{cylinder 2.47919 2.95967}
+	{bone "wheell9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0107 	 0 	 -0.0653
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0.6692 	 4.8909 	 1.27}
+}
+{volume "trackright10"
+	{cylinder 2.47919 2.95967}
+	{bone "wheelr10"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0168 	 0 	 -0.0072
+	}
+}
+{volume "trackright11"
+	{cylinder 7.67185 5.10288}
+	{bone "wheelr11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 2.265
+	}
+}
+{volume "trackright1"
+	{cylinder 5.92824 2.95967}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5196
+	}
+}
+{volume "trackright2"
+	{cylinder 5.92824 2.95967}
+	{bone "wheelr2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5733
+	}
+}
+{volume "trackright3"
+	{cylinder 4.86115 2.95967}
+	{bone "wheelr3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5607
+	}
+}
+{volume "trackright4"
+	{cylinder 4.86115 2.95967}
+	{bone "wheelr4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5607
+	}
+}
+{volume "trackright5"
+	{cylinder 4.86115 2.95967}
+	{bone "wheelr5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5607
+	}
+}
+{volume "trackright6"
+	{cylinder 4.86115 2.95967}
+	{bone "wheelr6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5607
+	}
+}
+{volume "trackright7"
+	{cylinder 5.92824 2.95967}
+	{bone "wheelr7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.5733
+	}
+}
+{volume "trackright8"
+	{cylinder 2.47919 2.95967}
+	{bone "wheelr8"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0271
+	}
+}
+{volume "trackright9"
+	{cylinder 2.47919 2.95967}
+	{bone "wheelr9"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.0107 	 0 	 -0.0177
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/eng/tank_medium/bishop/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0.6692 	 -4.9733 	 1.27}
+}
+{volume "transmission"
+	{cylinder 3.69457 27.4595}
+	{bone "transmission"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0 	 0 	 1.0765
+	}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for wc52_50cal (generated)
-	{Extension "../../../../-vehicle/usa/car/wc52_50cal/wc52_50cal.mdl"}
+	{Extension "wc52_50cal.mdl"}
 	{extender "stuff"
 		{item "evh_wc52_50cal"}
 	}

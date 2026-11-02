@@ -1,0 +1,1310 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: driver_hatch mgun_h_rot1 turret
+;Exported by:	 TigerF
+;Date:			 03.04.2023 19:12:33
+;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_medium\wirbelwind\Wirbelwind.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/stop.anm"} {speed 0.7}}
+		{sequence "fire00" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/fire00.anm"} {speed 0.9}}
+		{sequence "fire01" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/fire01.anm"} {speed 0.9}}
+		{sequence "fire02" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/fire02.anm"} {speed 0.9}}
+		{sequence "fire03" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/fire03.anm"} {speed 0.9}}
+		{sequence "aim_v" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/aim_v.anm"} {speed 1}{resume}}
+		{sequence "aim_h" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/aim_h.anm"} {speed 1}{resume}}
+		{sequence "hit" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/hit.anm"} {speed 0.8}}
+		{sequence "open_driver" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/open_driver.anm"} {speed 0.3}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.24;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/body_r.anm"}{speed 0.7}}
+			}
+			{Position -1.6216 	 -0.0097 	 11.2839}
+			{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/engine.ply"}
+				{bone "engine_hatch"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9969 	 0 	 0.0788
+						0 	 1 	 0
+						-0.0788 	 0 	 0.9969
+						-40.5945 	 -18.2641 	 19.6341
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/engine_hatch.ply"}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 -1 	 0
+						1 	 0 	 0
+						-32.4918 	 1.077 	 15.2018
+					}
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					0.5225 	 1.3756 	 18.0022
+				}
+			}
+			{bone "fuel"
+				{Position 0.8271 	 -0.0008 	 -1.4792}
+			}
+			{bone "transmission"
+				{Position 46.5734 	 -0.0414 	 1.9055}
+			}
+			{bone revolute "mgun_h_rot1"
+				{limits -15 15}
+				{speed 0.01}
+				{Position 34.6181 	 -11.393 	 16.0412}
+				{bone revolute "mgun_h_rot2"
+					{limits -10 20}
+					{speed 0.01}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 -0.0007
+					}
+					{bone "hullmg"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.9708 	 0 	 0
+						}
+						
+					}
+					{bone "foresight4"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							9.3972 	 0.1 	 0.0294
+						}
+					}
+					{bone "mgun_h"
+						{Position -7.8654 	 -0.9896 	 0.0363}
+						
+					}
+				}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.4466 	 0.2913 	 0.846
+					0.8947 	 0.1454 	 0.4223
+					0 	 0.9455 	 -0.3256
+					-51.0122 	 -1.128 	 16.1848
+				}
+			}
+			{bone "visor2"
+				{Position 38.5756 	 6.402 	 15.3448}
+			}
+			{bone "headlightl"
+				{Position 44.6442 	 21.4697 	 16.1221}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					46.3191 	 23.7159 	 3.0348
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell1.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					46.3201 	 -23.7387 	 3.0425
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr1.ply"}
+			}
+			{bone revolute "wheell14"
+				{parameters "id=trackleft;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-44.7974 	 23.7114 	 -1.0172
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell14.ply"}
+			}
+			{bone revolute "wheelr14"
+				{parameters "id=trackright;radius=0.4;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-44.7978 	 -23.7685 	 -1.0173
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr14.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					28.0268 	 23.6675 	 6.8975
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell10.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					11.1927 	 23.6674 	 6.8976
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell11.ply"}
+			}
+			{bone revolute "wheell12"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-8.3159 	 23.6674 	 6.8976
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell12.ply"}
+			}
+			{bone revolute "wheell13"
+				{parameters "id=trackleft;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-28.1597 	 23.6675 	 5.5989
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell13.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					28.0268 	 -23.7808 	 6.8976
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr10.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					10.9443 	 -23.7808 	 6.8976
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr11.ply"}
+			}
+			{bone revolute "wheelr12"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-8.3159 	 -23.7808 	 6.8976
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr12.ply"}
+			}
+			{bone revolute "wheelr13"
+				{parameters "id=trackright;radius=0.15;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-28.1597 	 -23.7807 	 5.5989
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr13.ply"}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-37.1608 	 26.6087 	 14.4682
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-45.4457 	 10.5604 	 12.317
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-0.9962 	 0 	 0.0872
+					0 	 -1 	 0
+					0.0872 	 0 	 0.9962
+					-46.7925 	 -13.4024 	 12.3026
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-37.2313 	 -26.6079 	 9.861
+				}
+			}
+			{bone "driver_hatch"
+				{parameters "id=body;"}
+				{Position 30.183 	 11.721 	 20.0039}
+				
+			}
+			{bone "shield1"
+				{parameters "id=shield1;"}
+				{Position 44.8208 	 0.133 	 11.1416}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/shield1.ply"}
+			}
+			{bone "shield2"
+				{parameters "id=shield2;"}
+				{Position 53.7421 	 0.1279 	 4.0392}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/shield2.ply"}
+			}
+			{bone "shield3"
+				{parameters "id=shield3;"}
+				{Position 4.2591 	 25.2802 	 17.0937}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/shield3.ply"}
+			}
+			{bone "shield4"
+				{parameters "id=shield4;"}
+				{Position -4.9855 	 25.2802 	 17.0938}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/shield4.ply"}
+			}
+			{bone "detail5"
+				{parameters "id=body;"}
+				{Position 0.9453 	 -12.4918 	 7.2991}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail5.ply"}
+			}
+			{bone "detail6"
+				{parameters "id=body;"}
+				{Position 44.0815 	 -23.6215 	 13.0288}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail6.ply"}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position 19.0364 	 -25.7688 	 14.4517}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position 41.3883 	 26.2176 	 14.3483}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail8.ply"}
+			}
+			{bone "detail9"
+				{parameters "id=body;"}
+				{Position 53.1016 	 -23.2676 	 10.9737}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail9.ply"}
+			}
+			{bone "detail10"
+				{parameters "id=body;"}
+				{Position 53.1016 	 23.2677 	 10.9737}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail10.ply"}
+			}
+			{bone "detail11"
+				{parameters "id=body;"}
+				{Position 20.8376 	 24.303 	 12.8996}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/detail11.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/turret_r.anm"}{speed 0.7}}
+				}
+				{Position -0.2685 	 0.4508 	 23.4611}
+				
+				{bone "enumerator"
+					{Position -23.0031 	 10.6879 	 12.7076}
+					
+				}
+				{bone "visor1"
+					{Position 0.5026 	 0.8946 	 19.0713}
+				}
+				{bone "rod"
+					{parameters "id=body;"}
+					{Position -2.744 	 6.1967 	 17.7246}
+					
+				}
+				{bone "detail4"
+					{parameters "id=turret;"}
+					{Position 0.814 	 9.8422 	 -2.5615}
+					
+				}
+				{bone "detail3"
+					{parameters "id=turret;"}
+					{Position -1.7439 	 -9.9472 	 -2.5615}
+					
+				}
+				{bone "detail2"
+					{parameters "id=turret;"}
+					{Position -12.9988 	 -13.9257 	 8.003}
+					
+				}
+				{bone "detail1"
+					{parameters "id=turret;"}
+					{Position -14.1761 	 13.4776 	 7.9853}
+					
+				}
+				{bone "cover"
+					{parameters "id=body;"}
+					{Position 21.0905 	 0.5661 	 12.4414}
+					
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/wirbelwind/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						-0.2472 	 0.5917 	 7.1495
+					}
+					
+					{bone "foresight1"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							32.1411 	 0.8899 	 0.4089
+						}
+					}
+					{bone "gun2"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.3584 	 -0.4367 	 7.5952
+						}
+						
+						{bone "fxshell2"
+							{matrix34
+								0 	 -0.5736 	 -0.8192
+								1 	 0 	 0
+								0 	 -0.8192 	 0.5736
+								-3.7041 	 -0.235 	 -3.887
+							}
+						}
+						{bone "shooter01"
+							{Position 27.9469 	 0.5455 	 -1.4097}
+						}
+						{bone "magazine01"
+							{parameters "id=body;"}
+							{Position -3.0407 	 -1.9597 	 -1.4075}
+							
+						}
+					}
+					{bone "gun3"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.3584 	 -3.2548 	 -6.4087
+						}
+						
+						{bone "fxshell3"
+							{matrix34
+								0 	 0.4226 	 -0.9063
+								-1 	 0 	 0
+								0 	 0.9063 	 0.4226
+								-3.7041 	 0.0667 	 -1.5966
+							}
+						}
+						{bone "shooter02"
+							{Position 27.9469 	 -0.5433 	 1.4084}
+						}
+						{bone "magazine02"
+							{parameters "id=body;"}
+							{Position -3.0407 	 1.9419 	 1.3974}
+							
+						}
+					}
+					{bone "gun4"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.3584 	 4.7308 	 7.5952
+						}
+						
+						{bone "fxshell4"
+							{matrix34
+								0 	 -0.5736 	 -0.8192
+								1 	 0 	 0
+								0 	 -0.8192 	 0.5736
+								-3.7041 	 -0.235 	 -3.7074
+							}
+						}
+						{bone "shooter03"
+							{Position 27.9459 	 0.5638 	 -1.4049}
+						}
+						{bone "magazine03"
+							{parameters "id=body;"}
+							{Position -3.0407 	 -1.9597 	 -1.4119}
+							
+						}
+					}
+					{bone "gun1"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							4.3584 	 1.9127 	 -6.4087
+						}
+						
+						{bone "fxshell1"
+							{matrix34
+								0 	 0.4226 	 -0.9063
+								-1 	 0 	 0
+								0 	 0.9063 	 0.4226
+								-3.7041 	 0.0667 	 -0.8893
+							}
+						}
+						{bone "shooter00"
+							{Position 27.9459 	 -0.5433 	 1.4132}
+						}
+						{bone "magazine00"
+							{parameters "id=body;"}
+							{Position -3.0407 	 1.9419 	 1.4062}
+							
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							17.4625 	 11.5933 	 -0.6199
+						}
+					}
+				}
+				{bone "aim_ver"
+					{parameters "id=turret;"}
+					{Position -12.7425 	 -1.9625 	 9.616}
+					
+				}
+				{bone "aim_h_helper"
+					{matrix34
+						0.8192 	 0 	 0.5736
+						0 	 1 	 0
+						-0.5736 	 0 	 0.8192
+						-13.9223 	 2.9236 	 11.0427
+					}
+					{bone "aim_hor"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 0}
+						
+					}
+				}
+				{bone "gunner"
+					{Position -20.8821 	 -0.8764 	 2.8787}
+				}
+				{bone "charger"
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						0.5651 	 17.4219 	 -1.2447
+					}
+				}
+				{bone "commander"
+					{matrix34
+						0 	 1 	 0
+						-1 	 0 	 0
+						0 	 0 	 1
+						0.5651 	 -17.1354 	 -1.2447
+					}
+				}
+				{bone "ammo6"
+					{Position -14.0072 	 -14.4379 	 7.7256}
+				}
+				{bone "ammo7"
+					{Position -12.9947 	 12.7585 	 7.7256}
+				}
+			}
+			{bone "ammo1"
+				{Position -1.5109 	 -16.9896 	 16.1746}
+			}
+			{bone "ammo2"
+				{Position -1.5109 	 18.4152 	 16.1746}
+			}
+			{bone "ammo3"
+				{Position -1.5109 	 -16.9896 	 16.1746}
+			}
+			{bone "ammo4"
+				{Position -1.5109 	 -16.9896 	 16.1746}
+			}
+			{bone "ammo5"
+				{Position -1.5109 	 -16.9896 	 16.1746}
+			}
+		}
+		{bone "body_virt"
+			{Position 0.0966 	 0.4431 	 14.7972}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0.6926 	 19.1384 	 -8.4731}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 4.8825 	 -6.1565
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-51.9206 	 5.3095 	 -2.934
+					}
+				}
+				{bone prizmatic "suspension_l2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 33.8538 	 3.7811 	 -0.783}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 24.1176 	 3.7814 	 -0.783}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.1 0.1}
+					{speed 0.15}
+					{Position 14.5225 	 3.7816 	 -0.783}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.13 0.13}
+					{speed 0.15}
+					{Position 4.8209 	 3.7816 	 -0.783}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.13 0.13}
+					{speed 0.15}
+					{Position -4.8593 	 3.7816 	 -0.783}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.1 0.1}
+					{speed 0.15}
+					{Position -14.5609 	 3.7816 	 -0.783}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l8"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -24.1876 	 3.7816 	 -0.783}
+					{bone revolute "wheell8"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.1582 	 0.0204 	 0.2287
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -33.8892 	 3.7816 	 -0.783}
+					{bone revolute "wheell9"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.021 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheell9.ply"}
+					}
+				}
+				{bone "torzl"
+					{parameters "id=body;"}
+					{Position -0.3153 	 0 	 -0.7873}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/torzl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-1.5255 	 4.1978 	 4.981
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0.6926 	 -20.043 	 -8.4731}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						1.4738 	 -5.4859 	 -6.1565
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-51.9206 	 -4.5326 	 -2.9339
+					}
+				}
+				{bone prizmatic "suspension_r2"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position 33.8538 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position 24.1176 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.1 0.1}
+					{speed 0.15}
+					{Position 14.5225 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.13 0.13}
+					{speed 0.15}
+					{Position 4.8209 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.13 0.13}
+					{speed 0.15}
+					{Position -4.8593 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.1 0.1}
+					{speed 0.15}
+					{Position -14.5609 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr7.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r8"
+					{limits -0.07 0.07}
+					{speed 0.15}
+					{Position -24.1876 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr8"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.1591 	 -0.9951 	 0.2756
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr8.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r9"
+					{limits -0.05 0.05}
+					{speed 0.15}
+					{Position -33.8892 	 -2.8752 	 -0.783}
+					{bone revolute "wheelr9"
+						{parameters "id=trackright;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.9956 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/wheelr9.ply"}
+					}
+				}
+				{bone "torzr"
+					{parameters "id=body;"}
+					{Position -0.3153 	 0 	 -0.7873}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/torzr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-1.5038 	 -4.117 	 4.9795
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/wirbelwind/trackr.ply"}
+				}
+			}
+		}
+		{bone "emit0"
+			{parameters "group=crew;"}
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				62.9862 	 8.9852 	 0.6718
+			}
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-13.3466 	 42.2531 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-14.7506 	 -44.9824 	 0
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-36.787 	 42.076 	 0
+			}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-66.4086 	 10.5292 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{Position -67.5369 	 -13.5112 	 0}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-39.7084 	 -42.9287 	 0
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/ram.vol"}
+	{bone "body"}
+	{Position 1.4104 	 0.4647 	 -11.2839}
+}
+{volume "ammo1"
+	{box 25.7283 6.29265 5.1378}
+	{bone "ammo1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		1.7524 	 -2.4443 	 0
+	}
+}
+{volume "ammo2"
+	{box 25.7283 6.29265 5.1378}
+	{bone "ammo2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		1.7524 	 1.7018 	 0
+	}
+}
+{volume "ammo3"
+	{box 5.1378 12.5224 10.2559}
+	{bone "ammo3"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-12.8362 	 4.7832 	 -3.2098
+	}
+}
+{volume "ammo4"
+	{box 5.1378 12.5224 10.2559}
+	{bone "ammo4"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		-12.8362 	 29.3103 	 -3.2098
+	}
+}
+{volume "ammo5"
+	{box 5.1378 15.3973 14.4608}
+	{bone "ammo5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		22.0269 	 27.2079 	 -4.5151
+	}
+}
+{volume "ammo6"
+	{box 10.0718 7.5951 4.44652}
+	{bone "ammo6"}
+	{matrix34
+		0.866 	 -0.5 	 0
+		0 	 0 	 1
+		-0.5 	 -0.866 	 0
+		0.5535 	 0.9587 	 0
+	}
+}
+{volume "ammo7"
+	{box 10.0718 7.5951 4.44652}
+	{bone "ammo7"}
+	{matrix34
+		0.866 	 0.5 	 0
+		0 	 0 	 1
+		0.5 	 -0.866 	 0
+		-0.5535 	 0.9587 	 0
+	}
+}
+{volume "barrel1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/barrel1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 -1
+		0.1568 	 0.0592 	 8.3591
+	}
+}
+{volume "barrel2"
+	{cylinder 0.556983 21.5198}
+	{bone "gun1"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		17.0205 	 -0.548 	 1.4337
+	}
+}
+{volume "barrel3"
+	{cylinder 0.556983 21.5198}
+	{bone "gun4"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		17.0205 	 0.5451 	 -1.3844
+	}
+}
+{volume "barrel4"
+	{cylinder 0.556983 21.5198}
+	{bone "gun3"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		17.0205 	 -0.548 	 1.4291
+	}
+}
+{volume "barrel5"
+	{cylinder 0.556983 21.5198}
+	{bone "gun2"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		17.0205 	 0.5469 	 -1.389
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/body1.vol"}
+	{bone "body"}
+	{Position 3.7204 	 -0.003 	 4.0097}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/body2.vol"}
+	{bone "body"}
+	{Position 9.5444 	 0.3598 	 16.4422}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/engine1.vol"}
+	{bone "engine"}
+	{Position 3.7204 	 -0.003 	 4.0097}
+}
+{volume "engine2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/engine2.vol"}
+	{bone "engine"}
+	{Position -31.6001 	 -0.0381 	 16.6068}
+}
+{volume "fuel"
+	{box 28.7473 33.6715 4.33071}
+	{bone "fuel"}
+	{matrix34
+		0 	 1 	 0
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/hole1.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.8324 	 4.1548 	 4.9345
+	}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/hole2.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -4.1623 	 4.9345
+	}
+}
+{volume "hole3"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/hole3.vol"}
+	{bone "turret"}
+	{Position -4.1316 	 0.1925 	 9.4368}
+}
+{volume "hole4"
+	{box 7.97643 5.23315 5.83054}
+	{bone "turret"}
+	{Position 17.8521 	 1.3488 	 15.3568}
+}
+{volume "shield1"
+	{box 8.01657 17.8002 1.13568}
+	{bone "shield1"}
+	{matrix34
+		0.9659 	 0 	 -0.2588
+		0 	 1 	 0
+		0.2588 	 0 	 0.9659
+		-0.0403 	 0.0626 	 -0.2958
+	}
+}
+{volume "shield2"
+	{box 8.01657 22.4283 1.13568}
+	{bone "shield2"}
+	{matrix34
+		-0.1736 	 0 	 -0.9848
+		0 	 1 	 0
+		0.9848 	 0 	 -0.1736
+		-0.5197 	 -0.1456 	 -0.2428
+	}
+}
+{volume "shield3"
+	{cylinder 4.77794 4.65819}
+	{bone "shield3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0365 	 0.4386 	 0.0705
+	}
+}
+{volume "shield4"
+	{cylinder 4.73016 4.65773}
+	{bone "shield4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 0 	 1
+		0 	 1 	 0
+		0.0362 	 0.4384 	 0.0922
+	}
+}
+{volume "trackleft10"
+	{cylinder 6.37154 3.07824}
+	{bone "wheell14"}
+	{Position -0.0005 	 0 	 -0.0626}
+}
+{volume "trackleft1"
+	{cylinder 6.78979 6.16398}
+	{bone "wheell1"}
+	{Position -0.022 	 0.0284 	 0.0166}
+}
+{volume "trackleft2"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell2"}
+	{Position 0.0612 	 -0.0435 	 0.0842}
+}
+{volume "trackleft3"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell3"}
+	{Position -0.0329 	 -0.1695 	 0.0842}
+}
+{volume "trackleft4"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell4"}
+	{Position 0.1251 	 -0.0435 	 0.0895}
+}
+{volume "trackleft5"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell5"}
+	{Position -0.095 	 -0.0435 	 0.0842}
+}
+{volume "trackleft6"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell6"}
+	{Position -0.063 	 -0.1695 	 0.0895}
+}
+{volume "trackleft7"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell7"}
+	{Position 0.0949 	 -0.0435 	 0.0895}
+}
+{volume "trackleft8"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell8"}
+	{Position 0.0058 	 0.0127 	 0.0901}
+}
+{volume "trackleft9"
+	{cylinder 4.76551 4.25395}
+	{bone "wheell9"}
+	{Position -0.0932 	 -0.2955 	 0.0895}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/trackleft.vol"}
+	{bone "wheelsl"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.8324 	 4.1548 	 4.9345
+	}
+}
+{volume "trackright10"
+	{cylinder 6.37154 3.07824}
+	{bone "wheelr14"}
+	{Position 0 	 0 	 -0.9332}
+}
+{volume "trackright1"
+	{cylinder 6.78979 6.16398}
+	{bone "wheelr1"}
+	{Position -0.023 	 0.0361 	 -0.8674}
+}
+{volume "trackright2"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr2"}
+	{Position 0.0612 	 -0.0435 	 -0.0406}
+}
+{volume "trackright3"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr3"}
+	{Position -0.0329 	 -0.1695 	 -0.0406}
+}
+{volume "trackright4"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr4"}
+	{Position 0.1251 	 -0.0435 	 -0.0406}
+}
+{volume "trackright5"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr5"}
+	{Position -0.095 	 -0.0435 	 -0.0406}
+}
+{volume "trackright6"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr6"}
+	{Position -0.063 	 -0.1695 	 -0.0406}
+}
+{volume "trackright7"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr7"}
+	{Position 0.0949 	 -0.0435 	 -0.0406}
+}
+{volume "trackright8"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr8"}
+	{Position 0.0084 	 0.0315 	 -0.0411}
+}
+{volume "trackright9"
+	{cylinder 4.76551 4.25395}
+	{bone "wheelr9"}
+	{Position -0.0932 	 -0.2955 	 -0.0406}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/trackright.vol"}
+	{bone "wheelsr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		-1.9079 	 -4.1623 	 4.9345
+	}
+}
+{volume "transmission"
+	{cylinder 4.42913 34.4488}
+	{bone "transmission"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 1
+		0 	 -1 	 0
+		0 	 0 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/wirbelwind/turret1.vol"}
+	{bone "turret"}
+	{Position -3.4016 	 0.046 	 7.9553}
+}
+{volume "turret2"
+	{cylinder 18.292 0.982386}
+	{bone "turret"}
+	{Position 0 	 0 	 -2.3693}
+}

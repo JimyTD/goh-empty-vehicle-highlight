@@ -1,0 +1,895 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: back_door1 back_door2 mgun_a_rot1
+;Exported by:	 nic21
+;Date:			 15.01.2026 18:56:45
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\Unic_304\unic304f.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/btr/unic304f/start.anm"} {speed 0.7}}
+		{sequence "stop" {file "../../../../-vehicle/germany/btr/unic304f/stop.anm"} {speed 0.7}}
+		{sequence "board" {file "../../../../-vehicle/germany/btr/unic304f/board.anm"} {events {0 "board"}}}
+		{sequence "open_back" {file "../../../../-vehicle/germany/btr/unic304f/open_back.anm"} {speed 0.7}{resume} {events {2 "hatch_light"}}}
+		{sequence "close_back" {file "../../../../-vehicle/germany/btr/unic304f/close_back.anm"} {speed 0.7}{resume} {events {2 "hatch_light"}}}
+		{sequence "mgun_aa" {file "../../../../-vehicle/germany/btr/unic304f/mgun_aa.anm"} {speed 0.7}{resume}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.46;steermax=30;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_back"
+			{Position -13.563 	 0 	 8.2381}
+		}
+		{bone "pivot_front"
+			{Position 27.9586 	 0 	 8.2381}
+			{bone "suspf"
+				{parameters "id=body;"}
+				{Position -1.5769 	 0 	 1.0444}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/suspf.ply"}
+			}
+			{bone revolute "steerl"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 11.5354 	 0
+				}
+				{bone "fxtracel1"
+					{matrix34
+						0 	 -1 	 0
+						-1 	 0 	 0
+						0 	 0 	 -1
+						-0.0003 	 -1.9094 	 8.2381
+					}
+				}
+				{bone prizmatic "suspension_l1"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -1.9094 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.46;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 0.6481 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell1.ply"}
+					}
+					{bone "druml"
+						{parameters "id=body;"}
+						{Position 0 	 -1.1439 	 0}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/druml.ply"}
+					}
+				}
+			}
+			{bone revolute "steerr"
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					0 	 -11.5354 	 0
+				}
+				{bone "fxtracer1"
+					{matrix34
+						0 	 1 	 0
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1.9095 	 8.2381
+					}
+				}
+				{bone prizmatic "suspension_r1"
+					{limits -0.04 0.04}
+					{speed 0.15}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 1.9095 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.46;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0 	 -0.6481 	 0
+						}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr1.ply"}
+					}
+					{bone "drumr"
+						{parameters "id=body;"}
+						{Position 0 	 1.1439 	 0}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/drumr.ply"}
+					}
+				}
+			}
+			{bone prizmatic "suspension_r9"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position 0 	 -14.093 	 0}
+				{bone revolute "wheelr9"
+					{parameters "id=wheelright9;radius=0.46;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_l9"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position 0 	 14.093 	 0}
+				{bone revolute "wheell9"
+					{parameters "id=wheelleft9;radius=0.46;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/btr/unic304f/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 19.685}
+			{VolumeView "../../../../-vehicle/germany/btr/unic304f/body.ply"}
+			{bone revolute "mgun_a_rot1"
+				{parameters "id=body;"}
+				{limits -25 25}
+				{Position 12.6266 	 0 	 16.1806}
+				
+				{bone revolute "mgun_a_rot2"
+					{limits -10 45}
+					{matrix34
+						0.848 	 0 	 0.5299
+						-0.5299 	 0 	 0.848
+						0 	 -1 	 0
+						-1.0911 	 0 	 2.3139
+					}
+					{bone "mgun"
+						{Position -5.6957 	 -1.1588 	 0}
+					}
+					{bone "gunner"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-6.9057 	 -0.9776 	 0
+						}
+					}
+				}
+			}
+			{bone "back_door2"
+				{parameters "id=body;"}
+				{matrix34
+					0.9728 	 0 	 0.2315
+					0 	 1 	 0
+					-0.2315 	 0 	 0.9728
+					-46.0388 	 -6.1992 	 5.4622
+				}
+				
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/btr/unic304f/engine_r.anm"}{speed 0.7}}
+				}
+				{Position 29.9346 	 0 	 -2.0166}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine.ply"}
+				{bone "engine_hatch3"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9934 	 0.1109 	 0.0282
+						-0.1123 	 0.9923 	 0.0518
+						-0.0223 	 -0.0547 	 0.9983
+						-8.7722 	 -10.7664 	 7.0127
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine_hatch3.ply"}
+				}
+				{bone "engine_hatch2"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9934 	 -0.1109 	 0.0282
+						0.1123 	 0.9923 	 -0.0518
+						-0.0223 	 0.0547 	 0.9983
+						-8.7722 	 10.7664 	 7.0127
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine_hatch2.ply"}
+				}
+				{bone "engine_hatch1"
+					{parameters "id=engine;"}
+					{Position -11.574 	 -8.4252 	 11.2095}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine_hatch1.ply"}
+					{bone "detail4"
+						{parameters "id=engine;"}
+						{Position 11.0519 	 3.043 	 -0.4112}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/detail4.ply"}
+					}
+					{bone "detail5"
+						{parameters "id=engine;"}
+						{Position 10.6695 	 15.0867 	 -0.1676}
+						{VolumeView "../../../../-vehicle/germany/btr/unic304f/detail5.ply"}
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0.0003
+						0 	 -0.0003 	 1
+						-1.3374 	 0 	 4.9693
+					}
+				}
+				{bone "engine_latchr"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9934 	 0.1109 	 0.0282
+						-0.1123 	 0.9923 	 0.0518
+						-0.0223 	 -0.0547 	 0.9983
+						-9.2462 	 -11.0689 	 5.4626
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine_latchr.ply"}
+				}
+				{bone "engine_latchl"
+					{parameters "id=engine;"}
+					{Position -9.2462 	 11.063 	 5.4626}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/engine_latchl.ply"}
+				}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{Position -21.5168 	 15.875 	 12.5262}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/detail2.ply"}
+			}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position -21.5168 	 -15.875 	 12.5262}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/detail1.ply"}
+			}
+			{bone revolute "steer"
+				{parameters "id=body;"}
+				{matrix34
+					0.632 	 0 	 0.7749
+					0 	 1 	 0
+					-0.7749 	 0 	 0.632
+					12.0439 	 6.5381 	 7.5968
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/steer.ply"}
+			}
+			{bone "back_door1"
+				{parameters "id=body;"}
+				{matrix34
+					0.9728 	 0 	 0.2315
+					0 	 1 	 0
+					-0.2315 	 0 	 0.9728
+					-46.0388 	 6.1992 	 5.4622
+				}
+				
+			}
+			{bone "detail3_helper"
+				{matrix34
+					0.9788 	 0 	 -0.205
+					0 	 1 	 0
+					0.205 	 0 	 0.9788
+					-44.0914 	 9.5669 	 -2.9065
+				}
+				{bone "detail3"
+					{parameters "id=body;"}
+					{matrix34
+						0.9788 	 0 	 0.205
+						0 	 1 	 0
+						-0.205 	 0 	 0.9788
+						0.2114 	 0 	 -4.5388
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/detail3.ply"}
+				}
+			}
+			{bone "fxfire5"
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0.0003
+					0 	 -0.0003 	 1
+					-4.3655 	 0 	 7.9719
+				}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;radius=0.085;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-17.6705 	 14.0292 	 -8.6005
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell8.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;radius=0.085;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-17.6705 	 -14.0292 	 -8.6005
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr8.ply"}
+			}
+			{bone "fxsmoke1"
+				{matrix34
+					-0.9875 	 -0.1467 	 0.0584
+					0.1469 	 -0.9891 	 0
+					0.0577 	 0.0086 	 0.9983
+					-38.6902 	 -9.7119 	 -7.2529
+				}
+			}
+			{bone "seat1"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-10.3456 	 -2.9528 	 -2.0126
+				}
+			}
+			{bone "seat2"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-10.3456 	 2.9528 	 -2.0126
+				}
+			}
+			{bone "seat3"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-22.3635 	 -2.9528 	 -2.0126
+				}
+			}
+			{bone "seat4"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-22.5182 	 2.9528 	 -2.0126
+				}
+			}
+			{bone "seat5"
+				{matrix34
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 1
+					-34.169 	 -2.9528 	 -2.0126
+				}
+			}
+			{bone "seat6"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-34.169 	 2.9527 	 -2.0126
+				}
+			}
+			{bone "seat7"
+				{Position 3.1864 	 -6.5354 	 1.6245}
+			}
+			{bone "driver"
+				{Position 3.1864 	 6.5354 	 1.6245}
+			}
+			{bone "dimlightr"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					40.1696 	 -9.9213 	 0.7152
+				}
+			}
+			{bone "dimlightl"
+				{matrix34
+					0.866 	 0 	 -0.5
+					0 	 1 	 0
+					0.5 	 0 	 0.866
+					40.1696 	 9.9127 	 0.7152
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-43.1504 	 6.1992 	 -4.7047
+				}
+			}
+			{bone "enumerator2"
+				{matrix34
+					1 	 0 	 0
+					0 	 0.7373 	 0.6756
+					0 	 -0.6756 	 0.7373
+					-22.264 	 16.6326 	 9.643
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/enumerator2.ply"}
+			}
+			{bone "enumerator1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -0.7373 	 0.6756
+					0 	 0.6756 	 0.7373
+					-22.264 	 -16.6339 	 9.643
+				}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/enumerator1.ply"}
+			}
+			{bone "transmission"
+				{Position 10.0984 	 0 	 -8.6346}
+			}
+			{bone "fuel"
+				{Position 10.4411 	 0 	 -3.2518}
+			}
+		}
+		{bone "emit1"
+			{Position -59.0551 	 0 	 0}
+		}
+		{bone "wheelsl"
+			{parameters "id=trackleft;"}
+			{Position -16.7426 	 14.0009 	 8.03}
+			{bone "trackl"
+				{parameters "id=trackleft;"}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/trackl.ply"}
+			}
+			{bone prizmatic "suspension_l6"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -7.7798 	 0.1051 	 -4.8838}
+				{bone revolute "wheell6"
+					{parameters "id=trackleft;radius=0.168;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell6.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l5"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -2.9935 	 0.1051 	 -4.8838}
+				{bone revolute "wheell5"
+					{parameters "id=trackleft;radius=0.168;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell5.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l4"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 1.1377 	 0.1051 	 -4.8838}
+				{bone revolute "wheell4"
+					{parameters "id=trackleft;radius=0.168;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 5.924 	 0.043 	 -4.8838}
+				{bone revolute "wheell3"
+					{parameters "id=trackleft;radius=0.168;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell3.ply"}
+				}
+			}
+			{bone "fxtracel3"
+				{matrix34
+					-0.9962 	 0.0872 	 0
+					-0.0872 	 -0.9962 	 0
+					0 	 0 	 1
+					-0.8952 	 0 	 -8.03
+				}
+			}
+			{bone "fxtracel2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-17.6973 	 0 	 -7.0157
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position 14.5535 	 0.0289 	 0.7422}
+				{bone revolute "wheell2"
+					{parameters "id=trackleft;radius=0.47;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.0057 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell2.ply"}
+				}
+			}
+			{bone "suspl"
+				{parameters "id=trackleft;"}
+				{Position 3.181 	 -2.854 	 -1.7031}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/suspl.ply"}
+			}
+			{bone "springl"
+				{parameters "id=trackleft;"}
+				{Position 14.5535 	 -4.4822 	 3.3177}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/springl.ply"}
+			}
+			{bone prizmatic "suspension_l7"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{Position -15.0343 	 0.0289 	 -0.6356}
+				{bone revolute "wheell7"
+					{parameters "id=trackleft;radius=0.8;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheell7.ply"}
+				}
+			}
+			{bone "link2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-30.4351 	 -14.0009 	 8.2715
+				}
+			}
+		}
+		{bone "dummy"
+			{Position 0 	 0 	 19.685}
+		}
+		{bone "wheelsr"
+			{parameters "id=trackright;"}
+			{matrix34
+				1 	 0 	 0
+				0 	 1 	 0
+				0 	 0 	 1
+				-16.7426 	 -14.0009 	 8.0299
+			}
+			{bone "fxtracer3"
+				{matrix34
+					-0.9962 	 0.0872 	 0
+					-0.0872 	 -0.9962 	 0
+					0 	 0 	 1
+					-0.8952 	 0.0048 	 -8.03
+				}
+			}
+			{bone "fxtracer2"
+				{matrix34
+					-0.9397 	 0 	 0.342
+					0 	 -1 	 0
+					0.342 	 0 	 0.9397
+					-17.6973 	 0.0048 	 -7.0157
+				}
+			}
+			{bone prizmatic "suspension_r5"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position -2.9935 	 -0.1051 	 -4.8838}
+				{bone revolute "wheelr5"
+					{parameters "id=trackright;radius=0.168;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr5.ply"}
+				}
+			}
+			{bone "springr"
+				{parameters "id=trackright;"}
+				{Position 14.5535 	 4.4822 	 3.3177}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/springr.ply"}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position 5.924 	 -0.043 	 -4.8838}
+				{bone revolute "wheelr3"
+					{parameters "id=trackright;radius=0.168;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr3.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r4"
+				{limits -0.1 0.1}
+				{speed 0.15}
+				{Position 1.1377 	 -0.1051 	 -4.8838}
+				{bone revolute "wheelr4"
+					{parameters "id=trackright;radius=0.168;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr4.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r6"
+				{limits -0.08 0.08}
+				{speed 0.15}
+				{Position -7.7798 	 -0.1051 	 -4.8838}
+				{bone revolute "wheelr6"
+					{parameters "id=trackright;radius=0.168;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr6.ply"}
+				}
+			}
+			{bone "suspr"
+				{parameters "id=trackright;"}
+				{Position 3.1809 	 2.854 	 -1.7031}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/suspr.ply"}
+			}
+			{bone "trackr"
+				{parameters "id=trackright;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/trackr.ply"}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					14.5535 	 -0.0289 	 0.7422
+				}
+				{bone revolute "wheelr2"
+					{parameters "id=trackright;radius=0.47;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr2.ply"}
+				}
+			}
+			{bone prizmatic "suspension_r7"
+				{limits -0.04 0.04}
+				{speed 0.15}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					-15.0343 	 -0.0289 	 -0.6356
+				}
+				{bone revolute "wheelr7"
+					{parameters "id=trackright;radius=0.8;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/btr/unic304f/wheelr7.ply"}
+				}
+			}
+		}
+	}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/armor1.vol"}
+	{bone "engine"}
+	{Position 9.7239 	 0 	 -6.5653}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/body1.vol"}
+	{bone "body"}
+	{Position -11.3343 	 0 	 3.8512}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/body2.vol"}
+	{bone "body"}
+	{Position -44.8924 	 0.0029 	 5.9559}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/body3.vol"}
+	{bone "body"}
+	{Position -17.7278 	 0 	 14.3909}
+}
+{volume "detail3"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/detail3.vol"}
+	{bone "detail3"}
+	{Position 0.2314 	 0 	 -1.6387}
+}
+{volume "doorl"
+	{box 0.611406 6.18617 16.4173}
+	{bone "back_door1"}
+	{Position 0.4849 	 -3.1061 	 0.4621}
+}
+{volume "doorr"
+	{box 0.611406 6.18617 16.4173}
+	{bone "back_door2"}
+	{Position 0.4849 	 3.1061 	 0.4621}
+}
+{volume "engine"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/engine.vol"}
+	{bone "engine"}
+	{Position 0.8311 	 0 	 3.1277}
+}
+{volume "fuel"
+	{box 12.2137 16.0479 5.56925}
+	{bone "fuel"}
+}
+{volume "gun_shield"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/gun_shield.vol"}
+	{bone "mgun_a_rot1"}
+	{Position -0.7681 	 0 	 2.8868}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/hole1.vol"}
+	{bone "wheelsr"}
+	{Position -0.0084 	 0.0048 	 -0.0051}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/hole2.vol"}
+	{bone "wheelsl"}
+	{Position -0.0084 	 -0.0048 	 -0.0051}
+}
+{volume "hole3"
+	{box 7.92395 12.0652 24.5553}
+	{bone "body"}
+	{Position -44.1461 	 0 	 10.4688}
+}
+{volume "hole4"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/hole4.vol"}
+	{bone "body"}
+	{Position -14.5037 	 0 	 9.9827}
+}
+{volume "hole5"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/hole5.vol"}
+	{bone "mgun_a_rot1"}
+	{Position -0.9404 	 0 	 2.8943}
+}
+{volume "hole6"
+	{box 1.31271 1.13795 3.6128}
+	{bone "mgun_a_rot1"}
+	{Position 0.6076 	 0 	 3.7661}
+}
+{volume "trackleft1"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/trackleft1.vol"}
+	{bone "wheelsl"}
+	{Position -0.0003 	 -0.0048 	 0.0002}
+}
+{volume "trackleft2"
+	{cylinder 6.43701 5.41339}
+	{bone "wheell2"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft3"
+	{cylinder 3.30709 3.0315}
+	{bone "wheell3"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft4"
+	{cylinder 3.30709 3.0315}
+	{bone "wheell4"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft5"
+	{cylinder 3.30709 3.0315}
+	{bone "wheell5"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft6"
+	{cylinder 3.30709 3.0315}
+	{bone "wheell6"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft7"
+	{cylinder 6.11864 3.22835}
+	{bone "wheell7"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackleft8"
+	{cylinder 1.67054 2.30394}
+	{bone "wheell8"}
+	{Position 0 	 0 	 0}
+}
+{volume "trackright1"
+	{polyhedron "../../../../-vehicle/germany/btr/unic304f/trackright1.vol"}
+	{bone "wheelsr"}
+	{Position -0.0003 	 -0.001 	 0.0002}
+}
+{volume "trackright2"
+	{cylinder 6.43701 5.41339}
+	{bone "wheelr2"}
+}
+{volume "trackright3"
+	{cylinder 3.30709 3.0315}
+	{bone "wheelr3"}
+	{Position 0 	 0 	 0.0057}
+}
+{volume "trackright4"
+	{cylinder 3.30709 3.0315}
+	{bone "wheelr4"}
+	{Position 0 	 0 	 0.0057}
+}
+{volume "trackright5"
+	{cylinder 3.30709 3.0315}
+	{bone "wheelr5"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0057
+	}
+}
+{volume "trackright6"
+	{cylinder 3.30709 3.0315}
+	{bone "wheelr6"}
+	{Position 0 	 0 	 0.0057}
+}
+{volume "trackright7"
+	{cylinder 6.11864 3.22835}
+	{bone "wheelr7"}
+	{Position 0 	 0 	 0.0057}
+}
+{volume "trackright8"
+	{cylinder 1.67054 2.30394}
+	{bone "wheelr8"}
+	{Position 0 	 0 	 0.0057}
+}
+{volume "transmission"
+	{box 12.451 7.92943 8.2356}
+	{bone "transmission"}
+}
+{volume "wheelleft1"
+	{cylinder 8.46457 3.3555}
+	{bone "wheell1"}
+	{Position 0 	 0 	 -0.6481}
+}
+{volume "wheelright1"
+	{cylinder 8.46457 3.3555}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.6481
+	}
+}

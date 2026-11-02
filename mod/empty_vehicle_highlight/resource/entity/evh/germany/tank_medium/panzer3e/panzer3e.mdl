@@ -1,0 +1,1018 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: mgun1_rot turret
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/germany/tank_medium/panzer3e/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/germany/tank_medium/panzer3e/stop.anm"} {speed 0.6}}
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_medium/panzer3e/fire.anm"} {speed 0.6}}
+		{sequence "open" {file "../../../../-vehicle/germany/tank_medium/panzer3e/open.anm"} {speed 0.3}{resume} {events {2 "hatch_light"}}}
+		{sequence "close" {file "../../../../-vehicle/germany/tank_medium/panzer3e/close.anm"} {speed 0.3}{resume} {events {42 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "wheelradius=0.4;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "emit1"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-6.3958 	 40.5491 	 0
+			}
+		}
+		{bone "emit2"
+			{parameters "group=crew;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-6.1633 	 -40.5709 	 0
+			}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/panzer3e/body_r.anm"}{speed 0.7}}
+			}
+			{Position -0.8871 	 -0.0012 	 28.4058}
+			{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/body.ply"}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/panzer3e/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -32.3231 	 0.0566 	 -8.5169}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/engine.ply"}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9798 	 0 	 -0.1998
+						-0.1998 	 0 	 0.9798
+						0 	 1 	 0
+						-24.1152 	 -13.5484 	 -6.6727
+					}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9798 	 0 	 -0.1998
+						-0.1998 	 0 	 0.9798
+						0 	 1 	 0
+						-24.1152 	 13.4658 	 -6.6727
+					}
+				}
+				{bone "hatch_engine1_2"
+					{parameters "id=engine;"}
+					{Position -5.2938 	 10.2966 	 10.8394}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/hatch_engine1_2.ply"}
+				}
+				{bone "hatch_engine1_1"
+					{parameters "id=engine;"}
+					{Position -5.2938 	 -10.4097 	 10.8394}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/hatch_engine1_1.ply"}
+				}
+				{bone "detail1"
+					{parameters "id=engine;"}
+					{Position -7.7863 	 -0.0646 	 10.209}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail1.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=engine;"}
+					{Position -8.5419 	 24.0391 	 9.0874}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail3.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{matrix34
+						0 	 -1 	 0
+						1 	 0 	 0
+						0 	 0 	 1
+						9.9596 	 -25.8021 	 6.6717
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail5.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{matrix34
+						0 	 0 	 -1
+						1 	 0 	 0
+						0 	 1 	 0
+						14.8944 	 26.4444 	 9.2614
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail6.ply"}
+				}
+			}
+			{bone revolute "wheell1"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					44.4645 	 24.6961 	 -14.5951
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell1.ply"}
+			}
+			{bone revolute "wheell11"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.4663 	 25.0961 	 -13.3975
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell11.ply"}
+			}
+			{bone revolute "wheelr1"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					44.4645 	 -24.5711 	 -14.5951
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr1.ply"}
+			}
+			{bone revolute "wheelr11"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-40.4663 	 -25.0586 	 -13.3975
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr11.ply"}
+			}
+			{bone "detail2"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 1 	 0
+					0 	 0 	 1
+					19.6332 	 24.0457 	 1.0038
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail2.ply"}
+			}
+			{bone "detail4"
+				{parameters "id=body;"}
+				{matrix34
+					0 	 1 	 0
+					-0.9994 	 0 	 0.0349
+					0.0349 	 0 	 0.9994
+					22.4859 	 -25.156 	 -2.0372
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/detail4.ply"}
+			}
+			{bone "headlightl"
+				{Position 51.3524 	 15.2078 	 -4.7493}
+			}
+			{bone "headlightr"
+				{Position 51.3679 	 -15.0184 	 -4.7493}
+			}
+			{bone "visor2"
+				{Position 37.8412 	 9.3555 	 -1.1533}
+			}
+			{bone "fxfire1"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					-38.9731 	 0.0012 	 0.4764
+				}
+			}
+			{bone revolute "wheell8"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					19.811 	 24.6854 	 -8.1361
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell8.ply"}
+			}
+			{bone revolute "wheell9"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					0.7403 	 24.6856 	 -8.4592
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell9.ply"}
+			}
+			{bone revolute "wheell10"
+				{parameters "id=trackleft;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 1 	 0
+					-19.6279 	 24.6856 	 -8.0784
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell9.ply"}
+			}
+			{bone revolute "wheelr8"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					19.8109 	 -24.5152 	 -8.1361
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr8.ply"}
+			}
+			{bone revolute "wheelr9"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					0.7611 	 -24.515 	 -8.4607
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr9.ply"}
+			}
+			{bone revolute "wheelr10"
+				{parameters "id=trackright;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-19.6105 	 -24.515 	 -8.0608
+				}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr9.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/panzer3e/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 5.9849 	 -0.008 	 8.408}
+				
+				{bone "fxfire3"
+					{matrix34
+						-0.0017 	 -0.0087 	 1
+						0.0003 	 -1 	 -0.0087
+						1 	 0.0003 	 0.0017
+						-11.2924 	 -0.0819 	 5.6958
+					}
+				}
+				{bone "enumerator1"
+					{matrix34
+						1 	 0.0003 	 0
+						-0.0003 	 1 	 0.0087
+						0 	 -0.0087 	 1
+						5.2955 	 -15.1979 	 0.7027
+					}
+					
+				}
+				{bone "visor1"
+					{Position -11.5196 	 -0.1406 	 12.8991}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;ikspeed2=5;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/panzer3e/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -8 10}
+					{matrix34
+						1 	 0 	 0
+						0 	 -0.0087 	 1
+						0 	 -1 	 -0.0087
+						15.2718 	 0.121 	 -0.1852
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 -0.0003
+							-0.0003 	 0 	 -1
+							0 	 1 	 0
+							11.646 	 0.1792 	 -1.2541
+						}
+						
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								13.2066 	 -0.0166 	 0.0014
+							}
+						}
+					}
+					{bone "mgun2"
+						{parameters "id=mantlet;"}
+						{matrix34
+							-0.0003 	 -0.0087 	 -1
+							0 	 1 	 -0.0087
+							1 	 0 	 -0.0003
+							-0.9503 	 -1.313 	 6.9781
+						}
+						
+						{bone "foresight5"
+							{matrix34
+								0 	 -0.0017 	 1
+								1 	 0 	 0
+								0 	 1 	 0.0017
+								0.2995 	 0.021 	 10.4756
+							}
+						}
+						{bone "shooter00"
+							{matrix34
+								0 	 -0.0017 	 1
+								1 	 0 	 0
+								0 	 1 	 0.0017
+								2.2427 	 -0.0325 	 10.377
+							}
+						}
+						{bone "shooter01"
+							{matrix34
+								0 	 -0.0017 	 1
+								1 	 0 	 0
+								0 	 1 	 0.0017
+								-2.3912 	 -0.0325 	 10.377
+							}
+						}
+					}
+					{bone "sight"
+						{matrix34
+							1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 -1
+							4.3018 	 0.3497 	 -6.5023
+						}
+					}
+				}
+				{bone revolute "commander_rot"
+					{parameters "ikspeed2=180;"}
+					{Position -11.8498 	 0.0093 	 11.6901}
+					{bone "gunner2"
+					}
+					{bone revolute "vision_rot"
+						{parameters "ikspeed2=180;"}
+						{limits -10 85}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 1
+							0 	 -1 	 0
+							0 	 0 	 2.234
+						}
+					}
+				}
+				{bone "hatch_commander1_1"
+					{parameters "id=turret;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0.0009
+						0 	 -0.0009 	 1
+						-11.5887 	 -5.9524 	 11.2034
+					}
+					
+				}
+				{bone "hatch_commander1_2"
+					{parameters "id=turret;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 -0.0009
+						0 	 0.0009 	 1
+						-11.5887 	 5.3937 	 11.2034
+					}
+					
+				}
+			}
+			{bone "internals"
+				{Position 0.887 	 0.0012 	 -28.4058}
+			}
+			{bone "fxlight"
+				{Position 56.7079 	 0.0152 	 -4.7493}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 -1 	 0
+					1 	 0 	 0
+					4.9244 	 0.0012 	 2.8785
+				}
+			}
+			{bone "seat04"
+				{matrix34
+					-0.8192 	 0 	 0.5736
+					0 	 -1 	 0
+					0.5736 	 0 	 0.8192
+					-51.4948 	 -10.0381 	 -3.7798
+				}
+			}
+			{bone "seat01"
+				{matrix34
+					0 	 0.9848 	 0.1736
+					-1 	 0 	 0
+					0 	 -0.1736 	 0.9848
+					-30.1956 	 24.017 	 -3.9964
+				}
+			}
+			{bone "seat02"
+				{matrix34
+					0 	 -0.9848 	 0.1736
+					1 	 0 	 0
+					0 	 0.1736 	 0.9848
+					-27.7744 	 -25.609 	 -3.9964
+				}
+			}
+			{bone "seat03"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-50.571 	 10.0209 	 -13.5377
+				}
+			}
+			{bone revolute "mgun1_rot"
+				{parameters "ikspeed2=20;"}
+				{limits -10 10}
+				{matrix34
+					1 	 0 	 0
+					0 	 0 	 1
+					0 	 -1 	 0
+					31.6977 	 -12.5757 	 -0.508
+				}
+				{bone revolute "mgun1a_rot"
+					{parameters "ikspeed2=20;"}
+					{limits -20 15}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0.0007 	 0
+					}
+					{bone "hmgun1"
+						{parameters "id=body;"}
+						{matrix34
+							0 	 1 	 0
+							0 	 0 	 1
+							1 	 0 	 0
+							-0.7345 	 0.2311 	 0.0133
+						}
+						
+						{bone "mgun1"
+							{parameters "id=body;"}
+							{matrix34
+								0 	 0.0152 	 0.9999
+								0.9965 	 0.0837 	 -0.0013
+								-0.0837 	 0.9964 	 -0.0151
+								0.0076 	 0.0864 	 1.3365
+							}
+							
+							{bone "foresight4"
+								{matrix34
+									0.9999 	 -0.0013 	 -0.0151
+									0 	 0.9965 	 -0.0837
+									0.0152 	 0.0837 	 0.9964
+									7.9746 	 -0.0216 	 -0.1039
+								}
+							}
+						}
+					}
+				}
+			}
+			{bone "can"
+				{Position 6.8291 	 -23.7608 	 -0.7023}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/can.ply"}
+			}
+			{bone "at1_1"
+				{parameters "id=body;"}
+				{Position -1.0895 	 -24.0045 	 0.439}
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/at1_1.ply"}
+				{bone "at1_2"
+					{parameters "id=body;"}
+					{Position 0 	 0 	 1.844}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/at1_2.ply"}
+					{bone "at1_3"
+						{parameters "id=body;"}
+						{Position 0 	 0 	 6.5748}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/at1_3.ply"}
+						{bone "at1_4"
+							{parameters "id=body;"}
+							{Position 0 	 0 	 6.5748}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/at1_4.ply"}
+							{bone "at1_5"
+								{parameters "id=body;"}
+								{Position 0 	 0 	 8.622}
+								{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/at1_5.ply"}
+							}
+						}
+					}
+				}
+			}
+		}
+		{bone "emit3"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				-30.6537 	 42.7369 	 0
+			}
+		}
+		{bone "emit5"
+			{parameters "group=passenger;"}
+			{Position -68.6158 	 10.0457 	 0}
+		}
+		{bone "emit6"
+			{parameters "group=passenger;"}
+			{Position -68.6158 	 -10.1631 	 0}
+		}
+		{bone "emit4"
+			{parameters "group=passenger;"}
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				-28.5484 	 -42.5454 	 0
+			}
+		}
+		{bone "body_virt"
+			{Position 1.1972 	 0 	 6.2565}
+			{bone "wheelsl"
+				{parameters "id=trackleft;"}
+				{Position 0 	 24.6011 	 6.0522}
+				{bone prizmatic "suspension_l2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 26.4367 	 -0.1548 	 -5.9709}
+					{bone revolute "wheell2"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0593 	 1.6783 	 0.0425
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l3"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 15.0573 	 -0.1548 	 -5.9709}
+					{bone revolute "wheell3"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.1461 	 1.6783 	 0.0425
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l4"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 3.8604 	 -0.1548 	 -5.9101}
+					{bone revolute "wheell4"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0502 	 1.6783 	 -0.0184
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l5"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -7.4582 	 -0.1548 	 -5.9101}
+					{bone revolute "wheell5"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0761 	 1.6783 	 -0.0184
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l6"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -18.7159 	 -0.1548 	 -5.8492}
+					{bone revolute "wheell6"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0412 	 1.6783 	 -0.0792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell6.ply"}
+					}
+				}
+				{bone prizmatic "suspension_l7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -29.9128 	 -0.1548 	 -5.8492}
+					{bone revolute "wheell7"
+						{parameters "id=trackleft;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							-0.0547 	 1.6783 	 -0.0792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheell7.ply"}
+					}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-42.2522 	 0.1962 	 -8.7772
+					}
+				}
+				{bone "fxtracel1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						7.1453 	 0.1962 	 -11.6976
+					}
+				}
+				{bone "suspl"
+					{Position 2.2698 	 -2.281 	 -3.2062}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/suspl.ply"}
+				}
+				{bone "trackl"
+					{parameters "id=trackleft;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/trackl.ply"}
+				}
+			}
+			{bone "wheelsr"
+				{parameters "id=trackright;"}
+				{Position 0 	 -24.545 	 6.0522}
+				{bone prizmatic "suspension_r2"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 26.4367 	 0.1652 	 -5.97}
+					{bone revolute "wheelr2"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.0593 	 -1.6217 	 0.0425
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr2.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r3"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 15.0572 	 0.1652 	 -5.971}
+					{bone revolute "wheelr3"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.1688 	 -1.6217 	 0.0425
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr3.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r4"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position 3.8604 	 0.1652 	 -5.9101}
+					{bone revolute "wheelr4"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.0957 	 -1.6217 	 -0.0184
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr4.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r5"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -7.4582 	 0.1652 	 -5.9101}
+					{bone revolute "wheelr5"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.1443 	 -1.6217 	 -0.0184
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r6"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -18.7159 	 0.1652 	 -5.8492}
+					{bone revolute "wheelr6"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.132 	 -1.6217 	 -0.0792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr5.ply"}
+					}
+				}
+				{bone prizmatic "suspension_r7"
+					{limits -0.08 0.078}
+					{speed 0.15}
+					{Position -29.9128 	 0.1652 	 -5.8492}
+					{bone revolute "wheelr7"
+						{parameters "id=trackright;"}
+						{matrix34
+							-1 	 0 	 0
+							0 	 0 	 1
+							0 	 1 	 0
+							0.0589 	 -1.6217 	 -0.0792
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/wheelr5.ply"}
+					}
+				}
+				{bone "suspr"
+					{Position 2.2698 	 2.3484 	 -3.2062}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/suspr.ply"}
+				}
+				{bone "trackr"
+					{parameters "id=trackright;"}
+					{orientation
+						1 	 0 	 0
+						0 	 1 	 0
+						0 	 0 	 1
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3e/trackr.ply"}
+				}
+				{bone "fxtracer1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 0 	 1
+						0 	 1 	 0
+						7.1453 	 -0.086 	 -11.6976
+					}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.9523 	 0 	 0.305
+						0.305 	 0 	 0.9523
+						0 	 1 	 0
+						-42.2522 	 -0.086 	 -8.7772
+					}
+				}
+			}
+		}
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/ram.vol"}
+	{bone "body"}
+	{Position 0.9385 	 0.0152 	 -12.6127}
+}
+{volume "ammo1"
+	{box 9.55988 7.10748 11.718}
+	{bone "internals"}
+	{Position -6.18 	 14.0431 	 13.6868}
+}
+{volume "ammo2"
+	{box 9.55988 7.10748 11.718}
+	{bone "internals"}
+	{Position -6.18 	 -14.0736 	 13.6868}
+}
+{volume "barrel"
+	{cylinder 0.97951 24.4954}
+	{bone "gun"}
+	{matrix34
+		0.0003 	 1 	 -0.0087
+		0 	 0.0087 	 1
+		1 	 -0.0003 	 0
+		-0.6116 	 -0.0012 	 -0.0015
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/body1.vol"}
+	{bone "body"}
+	{Position 17.8893 	 -0.0173 	 -12.2529}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/body2.vol"}
+	{bone "body"}
+	{Position 17.8893 	 -0.0173 	 -0.4415}
+}
+{volume "breach"
+	{box 6.43508 6.12153 17.2927}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 -0.0087 	 -1
+		0 	 1 	 -0.0087
+		1 	 0 	 0
+		-9.8597 	 0.1777 	 -1.2528
+	}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/cupola.vol"}
+	{bone "turret"}
+	{Position -11.8463 	 -0.2446 	 5.891}
+}
+{volume "engine"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/engine.vol"}
+	{bone "engine"}
+	{Position -0.9702 	 -0.0739 	 -0.5331}
+}
+{volume "fuel"
+	{box 19.3161 10.1019 18.8803}
+	{bone "internals"}
+	{Position -24.0353 	 -12.6062 	 17.5337}
+}
+{volume "hole1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/hole1.vol"}
+	{bone "wheelsl"}
+	{Position 0 	 -0.0003 	 -12.1592}
+}
+{volume "hole2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/hole2.vol"}
+	{bone "wheelsr"}
+	{Position 0 	 0.0077 	 -12.1592}
+}
+{volume "trackleft1"
+	{cylinder 7.70174 6.23255}
+	{bone "wheell1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 0.0572
+	}
+}
+{volume "trackleft2"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell2"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0009 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft3"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell3"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-0.017 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft4"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell4"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0082 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft5"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell5"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0048 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft6"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell6"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0005 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft7"
+	{cylinder 5.26783 5.02301}
+	{bone "wheell7"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.0004 	 0.0008 	 -1.5678
+	}
+}
+{volume "trackleft8"
+	{cylinder 7.48033 4.72163}
+	{bone "wheell11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.002 	 -0.002 	 -0.5316
+	}
+}
+{volume "trackleft"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/trackleft.vol"}
+	{bone "wheelsl"}
+	{Position 0 	 -0.0003 	 -12.1592}
+}
+{volume "trackright1"
+	{cylinder 7.70174 6.23255}
+	{bone "wheelr1"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0 	 0 	 -0.0312
+	}
+}
+{volume "trackright2"
+	{cylinder 5.26783 4.87232}
+	{bone "wheelr2"}
+	{Position -0.0009 	 -0.0008 	 1.5124}
+}
+{volume "trackright3"
+	{cylinder 5.26783 4.82209}
+	{bone "wheelr3"}
+	{Position 0.0012 	 -0.0008 	 1.4872}
+}
+{volume "trackright4"
+	{cylinder 5.26783 4.87232}
+	{bone "wheelr4"}
+	{Position 0.0014 	 -0.0008 	 1.5123}
+}
+{volume "trackright5"
+	{cylinder 5.26783 4.82209}
+	{bone "wheelr5"}
+	{Position 0.0038 	 -0.0008 	 1.4872}
+}
+{volume "trackright6"
+	{cylinder 5.26783 4.87232}
+	{bone "wheelr6"}
+	{Position 0.0225 	 -0.0008 	 1.5123}
+}
+{volume "trackright7"
+	{cylinder 5.26783 4.87232}
+	{bone "wheelr7"}
+	{Position -0.0051 	 -0.0008 	 1.5123}
+}
+{volume "trackright8"
+	{cylinder 7.48033 4.72163}
+	{bone "wheelr11"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		0.002 	 -0.002 	 0.5627
+	}
+}
+{volume "trackright"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/trackright.vol"}
+	{bone "wheelsr"}
+	{Position 0 	 0.0077 	 -12.1592}
+}
+{volume "transmission"
+	{cylinder 4.42653 34.3}
+	{bone "internals"}
+	{matrix34
+		1 	 0 	 0
+		0 	 0 	 -1
+		0 	 1 	 0
+		43.1343 	 0.4385 	 12.2394
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/turret1.vol"}
+	{bone "turret"}
+	{Position -2.1122 	 0.0443 	 0.2447}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/germany/tank_medium/panzer3e/turret2.vol"}
+	{bone "turret"}
+	{matrix34
+		0.9994 	 0 	 0.0349
+		-0.0003 	 1 	 0.0087
+		-0.0349 	 -0.0087 	 0.9994
+		17.2225 	 -0.0014 	 -0.0057
+	}
+}

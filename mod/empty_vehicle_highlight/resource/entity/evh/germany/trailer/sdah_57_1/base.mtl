@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "/entity/-vehicle/germany/trailer/sdah_57_1/sdah57"}
+	{bump "/entity/-vehicle/germany/trailer/sdah_57_1/sdah57_nm"}
+	{specular "/entity/-vehicle/germany/trailer/sdah_57_1/sdah57_sp"}
+	{color "156 156 119 63"}
+	{blend none}
+}

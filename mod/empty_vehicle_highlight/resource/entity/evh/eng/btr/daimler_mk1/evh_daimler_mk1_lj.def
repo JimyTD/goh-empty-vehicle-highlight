@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for daimler_mk1_lj (generated)
-	{Extension "../../../../-vehicle/eng/btr/daimler_mk1/daimler_mk1_lj.mdl"}
+	{Extension "daimler_mk1_lj.mdl"}
 	{extender "stuff"
 		{item "evh_daimler_mk1_lj"}
 	}

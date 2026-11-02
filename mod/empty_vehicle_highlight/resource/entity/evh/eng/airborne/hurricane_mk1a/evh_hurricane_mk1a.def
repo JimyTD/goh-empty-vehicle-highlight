@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for hurricane_mk1a (generated)
-	{Extension "../../../../-vehicle/eng/airborne/hurricane_mk1a/hurricane_mk1a.mdl"}
+	{Extension "hurricane_mk1a.mdl"}
 	{extender "stuff"
 		{item "evh_hurricane_mk1a"}
 	}

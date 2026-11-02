@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for crusader_aa_mk1 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/crusader_aa_mk1/crusader_aa_mk1.mdl"}
+	{Extension "crusader_aa_mk1.mdl"}
 	{extender "stuff"
 		{item "evh_crusader_aa_mk1"}
 	}

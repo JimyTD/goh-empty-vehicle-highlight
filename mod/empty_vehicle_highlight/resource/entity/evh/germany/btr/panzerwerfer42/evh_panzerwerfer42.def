@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for panzerwerfer42 (generated)
-	{Extension "../../../../-vehicle/germany/btr/panzerwerfer42/panzerwerfer42.mdl"}
+	{Extension "panzerwerfer42.mdl"}
 	{extender "stuff"
 		{item "evh_panzerwerfer42"}
 	}

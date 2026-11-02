@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for kv8 (generated)
-	{Extension "../../../../-vehicle/ussr/tank_heavy/kv8/kv8.mdl"}
+	{Extension "kv8.mdl"}
 	{extender "stuff"
 		{item "evh_kv8"}
 	}

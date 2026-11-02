@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for zis6_bm8_48 (generated)
-	{Extension "../../../../-vehicle/ussr/car/zis6_bm8_48/zis6_bm8_48.mdl"}
+	{Extension "zis6_bm8_48.mdl"}
 	{extender "stuff"
 		{item "evh_zis6_bm8_48"}
 	}

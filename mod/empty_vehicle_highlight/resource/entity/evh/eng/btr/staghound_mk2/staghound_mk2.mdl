@@ -1,0 +1,767 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: doorleft doorright turret
+;Exported by:	 nic21
+;Date:			 18.12.2025 16:30:03
+;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Staghound_mk1_mk2\staghound_mk2.max
+{skeleton
+	{animation
+		{sequence "start" {file "../../../../-vehicle/eng/btr/staghound_mk2/start.anm"} {speed 0.6}}
+		{sequence "stop" {file "../../../../-vehicle/eng/btr/staghound_mk2/stop.anm"} {speed 0.6}}
+		{sequence "open_left" {file "../../../../-vehicle/eng/btr/staghound_mk2/open_left.anm"} {speed 0.4}{events {102 "hatch_light"} {146 "hatch_light"}}}
+		{sequence "open_right" {file "../../../../-vehicle/eng/btr/staghound_mk2/open_right.anm"} {speed 0.4}{events {102 "hatch_light"} {146 "hatch_light"}}}
+		{sequence "fire" {file "../../../../-vehicle/eng/btr/staghound_mk2/fire.anm"} {speed 0.6}}
+		{sequence "open" {file "../../../../-vehicle/eng/btr/staghound_mk2/open.anm"} {speed 0.3}{resume}{events {268 "hatch_light"}}}
+	}
+	{bone "basis"
+		{parameters "steermax=25;wheelradius=0.652;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mk2/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0.0018 	 23.4932}
+			{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/body.ply"}
+			{bone "detail1"
+				{parameters "id=body;"}
+				{Position 41.39 	 -0.6814 	 0.2513}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail1.ply"}
+			}
+			{bone revolute "turret"
+				{parameters "id=turret;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mk2/turret_r.anm"}{speed 0.7}}
+				}
+				{Position 1.2559 	 0 	 13.8108}
+				
+				{bone "hatch_gunner"
+					{parameters "id=turret;"}
+					{matrix34
+						0.1509 	 0.9885 	 0
+						-0.9885 	 0.1509 	 0
+						0 	 0 	 1
+						-13.3889 	 -9.4693 	 9.8971
+					}
+					
+				}
+				{bone "hatch_commander"
+					{parameters "id=turret;"}
+					{matrix34
+						0.1509 	 -0.9885 	 0
+						0.9885 	 0.1509 	 0
+						0 	 0 	 1
+						-13.5874 	 9.9509 	 10.6259
+					}
+					
+				}
+				{bone "sight"
+					{Position 12.0465 	 5.3441 	 5.1003}
+				}
+				{bone "at1_1"
+					{parameters "id=turret;"}
+					{Position -18.7559 	 7.7934 	 12.322}
+					
+					{bone "at1_2"
+						{parameters "id=turret;"}
+						{Position 0 	 0 	 8.5236}
+						
+						{bone "at1_3"
+							{parameters "id=turret;"}
+							{Position 0 	 0 	 5.5315}
+							
+							{bone "at1_4"
+								{parameters "id=turret;"}
+								{Position 0.0095 	 0.0042 	 3.5827}
+								
+							}
+						}
+					}
+				}
+				{bone "at2_1"
+					{parameters "id=turret;"}
+					{Position -18.5 	 -8.683 	 13.4047}
+					
+					{bone "at2_2"
+						{parameters "id=turret;"}
+						{Position -0.0984 	 0.0591 	 9.2323}
+						
+						{bone "at2_3"
+							{parameters "id=turret;"}
+							{Position -0.0394 	 0 	 6.9095}
+							
+							{bone "at2_4"
+								{parameters "id=turret;"}
+								{Position -0.055 	 0.0128 	 8.0709}
+								
+							}
+						}
+					}
+				}
+				{bone "visor1"
+					{Position 1.1457 	 7.321 	 11.0031}
+				}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mk2/gun_r.anm"}{speed 0.7}}
+					}
+					{matrix34
+						1 	 -0.0052 	 0
+						0 	 0 	 1
+						-0.0052 	 -1 	 0
+						8.9485 	 -4.3882 	 3.8761
+					}
+					
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 -0.0052
+							-0.0052 	 0 	 -1
+							0 	 1 	 0
+							1.7364 	 -0.2871 	 -3.1275
+						}
+						
+						{bone "foresight1"
+							{Position 21.2199 	 0.0081 	 -0.0071}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 -0.0052
+							-0.0052 	 0 	 -1
+							0 	 1 	 0
+							10.2928 	 0.0405 	 -0.7788
+						}
+					}
+					{bone "mgun_coax"
+						{parameters "id=body;"}
+						{matrix34
+							1 	 0 	 -0.0052
+							-0.0052 	 0 	 -1
+							0 	 1 	 0
+							2.694 	 0.0529 	 -0.7399
+						}
+						
+					}
+				}
+				{bone "fxfire3"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-8.9331 	 5.7265 	 3.4084
+					}
+				}
+				{bone "ammo3"
+					{Position 1.4894 	 12.675 	 -3.2882}
+				}
+				{bone "ammo2"
+					{Position -17.8323 	 -7.6485 	 4.3498}
+				}
+				{bone "fxsmoke_shot1"
+					{matrix34
+						0.8191 	 0.0117 	 0.5736
+						-0.0143 	 0.9999 	 0
+						-0.5735 	 -0.0082 	 0.8192
+						5.3604 	 -10.8098 	 10.1171
+					}
+				}
+				{bone "smoke_shot1"
+					{matrix34
+						0.818 	 0.0336 	 0.5743
+						-0.0282 	 0.9994 	 -0.0183
+						-0.5746 	 -0.0012 	 0.8185
+						4.9108 	 -10.8098 	 9.8152
+					}
+				}
+			}
+			{bone "doorleft"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.974 	 -0.2267
+					0 	 0.2267 	 0.974
+					16.7384 	 16.8113 	 1.9144
+				}
+				
+			}
+			{bone "body_extra"
+				{parameters "id=body;"}
+				{Position -21.0581 	 0 	 0.7564}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/body_extra.ply"}
+			}
+			{bone "headlightl"
+				{Position 47.6227 	 9.0533 	 -1.9971}
+			}
+			{bone "headlightr"
+				{Position 47.6227 	 -9.057 	 -1.9971}
+			}
+			{bone "doorright"
+				{parameters "id=body;"}
+				{matrix34
+					1 	 0 	 0
+					0 	 0.974 	 0.2267
+					0 	 -0.2267 	 0.974
+					16.7384 	 -16.8113 	 1.9144
+				}
+				
+			}
+			{bone "visor2"
+				{Position 29.147 	 7.7409 	 12.8651}
+			}
+			{bone "transmission"
+				{Position 0 	 -0.0018 	 -10.7766}
+			}
+			{bone "detail7"
+				{parameters "id=body;"}
+				{Position -3.5827 	 21.7934 	 1.9779}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail7.ply"}
+			}
+			{bone "detail8"
+				{parameters "id=body;"}
+				{Position -3.5877 	 -21.7933 	 1.9779}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail8.ply"}
+			}
+			{bone "engine"
+				{parameters "id=engine;"}
+				{animation
+					{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mk2/engine_r.anm"}{speed 0.7}}
+				}
+				{Position -35.4373 	 -0.0019 	 -1.6788}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/engine.ply"}
+				{bone "detail4"
+					{parameters "id=engine;"}
+					{Position -5.755 	 15.7565 	 5.6802}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail4.ply"}
+				}
+				{bone "detail2"
+					{parameters "id=engine;"}
+					{Position 12.8981 	 18.1191 	 7.8384}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail2.ply"}
+				}
+				{bone "detail5"
+					{parameters "id=engine;"}
+					{Position -6.9617 	 -15.5695 	 7.0718}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail5.ply"}
+				}
+				{bone "detail3"
+					{parameters "id=engine;"}
+					{Position 14.1962 	 22.8758 	 7.0756}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail3.ply"}
+				}
+				{bone "hatch_enginel"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9642 	 0.248 	 0.0936
+						-0.2505 	 0.968 	 0.0161
+						-0.0866 	 -0.039 	 0.9955
+						-9.8084 	 13.7996 	 10.8163
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/hatch_enginel.ply"}
+				}
+				{bone "detail6"
+					{parameters "id=engine;"}
+					{Position 4.7915 	 -21.2389 	 5.6856}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/detail6.ply"}
+				}
+				{bone "hatch_enginer"
+					{parameters "id=engine;"}
+					{matrix34
+						0.9642 	 -0.248 	 0.0936
+						0.2476 	 0.9687 	 0.0161
+						-0.0947 	 0.0076 	 0.9955
+						-8.2534 	 -14.1972 	 10.9709
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/hatch_enginer.ply"}
+				}
+				{bone "fxsmoke2"
+					{matrix34
+						-0.9229 	 0 	 0.3851
+						0 	 -1 	 0
+						0.3851 	 0 	 0.9229
+						-26.0997 	 -10.1575 	 -1.7672
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-0.9229 	 0 	 0.3851
+						0 	 -1 	 0
+						0.3851 	 0 	 0.9229
+						-26.0997 	 6.122 	 -1.7672
+					}
+				}
+				{bone "fxfire1"
+					{matrix34
+						0 	 0 	 1
+						0 	 1 	 0
+						-1 	 0 	 0
+						-1.3959 	 0.0137 	 4.0199
+					}
+				}
+				{bone "fuel1"
+					{Position -10.5255 	 0.0333 	 2.9126}
+				}
+			}
+			{bone "fxfire4"
+				{matrix34
+					0 	 0 	 1
+					0 	 1 	 0
+					-1 	 0 	 0
+					0 	 0 	 7.8907
+				}
+			}
+			{bone "fxstop1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-53.2774 	 14.4667 	 -2.2
+				}
+			}
+			{bone "fxstop2"
+				{matrix34
+					-1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 1
+					-53.2774 	 -14.4704 	 -2.2
+				}
+			}
+			{bone "ammo1"
+				{Position 19.0325 	 -0.0018 	 0.9397}
+			}
+			{bone "enumerator1"
+				{Position 45.3943 	 2.466 	 -4.1222}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/enumerator1.ply"}
+			}
+			{bone "enumerator2"
+				{Position -58.7726 	 -4.4067 	 0.9653}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/enumerator2.ply"}
+			}
+		}
+		{bone "pivot_back"
+			{Position -30.5906 	 0 	 12.7165}
+			{bone "suspb"
+				{parameters "id=body;"}
+				{Position 0.0063 	 0 	 -0.0084}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/suspb.ply"}
+			}
+			{bone prizmatic "suspension_r2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 -26.5354 	 0}
+				{bone revolute "wheelr2"
+					{parameters "id=wheelright2;radius=0.652;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 4.2106 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/wheelr2.ply"}
+				}
+				{bone "fxtracer2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-6.4381 	 3.7992 	 -8.6662
+					}
+				}
+			}
+			{bone prizmatic "suspension_l2"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0 	 26.5353 	 0}
+				{bone revolute "wheell2"
+					{parameters "id=wheelleft2;radius=0.652;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 -3.74 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/wheell2.ply"}
+				}
+				{bone "fxtracel2"
+					{matrix34
+						-0.866 	 0 	 0.5
+						0 	 -1 	 0
+						0.5 	 0 	 0.866
+						-6.4381 	 -3.799 	 -8.6662
+					}
+				}
+			}
+		}
+		{bone "pivot_front"
+			{Position 30.7087 	 0 	 12.7165}
+			{bone "suspf"
+				{parameters "id=body;"}
+				{Position -0.0017 	 0.1969 	 -0.0084}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/suspf.ply"}
+			}
+			{bone revolute "steer_r1"
+				{parameters "id=body;"}
+				{limits -25 25}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-0.0017 	 -19.0078 	 -0.0084
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/steer_r1.ply"}
+				{bone prizmatic "suspension_r1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 7.5276 	 0
+					}
+					{bone revolute "wheelr1"
+						{parameters "id=wheelright1;radius=0.652;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0017 	 3.7992 	 0.0084
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/wheelr1.ply"}
+					}
+					{bone "fxtracer1"
+						{matrix34
+							-0.9999 	 0 	 0.0151
+							0 	 -1 	 -0.0007
+							0.0151 	 -0.0007 	 0.9999
+							0.0017 	 3.7992 	 -10.3823
+						}
+					}
+				}
+			}
+			{bone revolute "steer_l1"
+				{parameters "id=body;"}
+				{limits -25 25}
+				{matrix34
+					1 	 0 	 0
+					0 	 -1 	 0
+					0 	 0 	 -1
+					-0.0017 	 19.0115 	 -0.0084
+				}
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/steer_l1.ply"}
+				{bone prizmatic "suspension_l1"
+					{limits -0.07 0.07}
+					{speed 0.05}
+					{matrix34
+						1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 -1
+						0 	 -7.5237 	 0
+					}
+					{bone revolute "wheell1"
+						{parameters "id=wheelleft1;radius=0.652;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							0.0017 	 -3.74 	 0
+						}
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mk2/wheell1.ply"}
+					}
+					{bone "fxtracel1"
+						{matrix34
+							-1 	 0 	 0
+							0 	 -1 	 0
+							0 	 0 	 1
+							0.0017 	 -3.799 	 -10.3863
+						}
+					}
+				}
+			}
+			{bone prizmatic "suspension_l3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position -0.0017 	 22.7953 	 0}
+				{bone revolute "wheell3"
+					{parameters "id=wheelleft3;radius=0.652;"}
+					{orientation
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+					}
+				}
+			}
+			{bone prizmatic "suspension_r3"
+				{limits -0.07 0.07}
+				{speed 0.05}
+				{Position 0.3442 	 -22.7082 	 0}
+				{bone revolute "wheelr3"
+					{parameters "id=wheelright3;radius=0.652;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						0 	 0 	 0
+					}
+				}
+			}
+		}
+		{bone "emit2"
+			{matrix34
+				0 	 1 	 0
+				-1 	 0 	 0
+				0 	 0 	 1
+				10.5906 	 -40.0394 	 0
+			}
+		}
+		{bone "emit1"
+			{matrix34
+				0 	 -1 	 0
+				1 	 0 	 0
+				0 	 0 	 1
+				10.5906 	 40.0394 	 0
+			}
+		}
+	}
+}
+{volume "ammo1"
+	{box 5.73011 6.15748 13.1528}
+	{bone "ammo1"}
+}
+{volume "ammo2"
+	{box 5.99409 4.31102 6.44446}
+	{bone "ammo2"}
+	{Position 0 	 0 	 0}
+}
+{volume "ammo3"
+	{box 10.19 1.31141 6.44446}
+	{bone "ammo3"}
+	{Position 0 	 0 	 0}
+}
+{volume "armor1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/armor1.vol"}
+	{bone "body"}
+	{Position -4.5669 	 19.7619 	 -7.8632}
+}
+{volume "armor2"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/armor2.vol"}
+	{bone "body"}
+	{matrix34
+		-1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 1
+		-4.5669 	 -19.7656 	 -7.8541
+	}
+}
+{volume "armor3"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/armor3.vol"}
+	{bone "engine"}
+	{Position -15.885 	 0.0018 	 3.1459}
+}
+{volume "barrel1"
+	{cylinder 1.05544 20.7803}
+	{bone "gun"}
+	{matrix34
+		0 	 0 	 1
+		0 	 -1 	 0
+		1 	 0 	 0
+		10.9175 	 0 	 -0.0071
+	}
+}
+{volume "body1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/body1.vol"}
+	{bone "body"}
+	{matrix34
+		0.9999 	 0.0097 	 0.0113
+		-0.0096 	 0.9999 	 -0.0097
+		-0.0113 	 0.0096 	 0.9999
+		-0.5949 	 -0.1184 	 -1.2513
+	}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/body2.vol"}
+	{bone "body"}
+	{Position 32.313 	 0 	 -0.7555}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/body3.vol"}
+	{bone "body"}
+	{Position 41.6696 	 0 	 -4.2736}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/body4.vol"}
+	{bone "body"}
+	{Position 39.2863 	 -7.7059 	 2.0549}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/body5.vol"}
+	{bone "body"}
+	{matrix34
+		0.9999 	 0.0097 	 0.0113
+		-0.0096 	 0.9999 	 -0.0097
+		-0.0113 	 0.0096 	 0.9999
+		21.9143 	 -0.0422 	 -0.656
+	}
+}
+{volume "breech"
+	{box 10.4919 4.219 6.65351}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 -0.0052
+		-0.0052 	 0 	 -1
+		0 	 1 	 0
+		-8.5211 	 -1.47 	 -3.3772
+	}
+}
+{volume "detail7"
+	{cylinder 4.46951 17.4948}
+	{bone "detail7"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-0.1315 	 -0.1417 	 0.5132
+	}
+}
+{volume "detail8"
+	{cylinder 4.46951 17.4948}
+	{bone "detail8"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-0.1266 	 0.138 	 0.5132
+	}
+}
+{volume "engine1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/engine1.vol"}
+	{bone "engine"}
+	{Position 4.0078 	 0.0018 	 0.403}
+}
+{volume "fuel1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/fuel1.vol"}
+	{bone "fuel1"}
+}
+{volume "hole1"
+	{cylinder 1.05544 8.23447}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 1 	 0
+		-0.0052 	 0 	 -1
+		-1 	 0 	 0.0052
+		6.3809 	 -0.2942 	 -3.1518
+	}
+}
+{volume "hole2"
+	{cylinder 0.496692 8.23447}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 1 	 0
+		-0.0052 	 0 	 -1
+		-1 	 0 	 0.0052
+		6.7799 	 0.0405 	 -0.7604
+	}
+}
+{volume "mantlet1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/mantlet1.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 -0.0052
+		-0.0052 	 0 	 -1
+		0 	 1 	 0
+		5.3253 	 0.5188 	 -2.3178
+	}
+}
+{volume "mantlet2"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/mantlet2.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 -0.0052
+		-0.0052 	 0 	 -1
+		0 	 1 	 0
+		9.5148 	 -2.1575 	 -4.9946
+	}
+}
+{volume "mantlet3"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/mantlet3.vol"}
+	{bone "gun_rot"}
+	{matrix34
+		1 	 0 	 -0.0052
+		-0.0052 	 0 	 -1
+		0 	 1 	 0
+		9.5382 	 -2.1549 	 -0.519
+	}
+}
+{volume "ram"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/ram.vol"}
+	{bone "body"}
+	{Position -5.2633 	 -0.0018 	 -23.4932}
+}
+{volume "transmission"
+	{cylinder 2.34291 57.5751}
+	{bone "transmission"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		0.2263 	 0 	 0
+	}
+}
+{volume "turret1"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/turret1.vol"}
+	{bone "turret"}
+	{Position 9.9724 	 -2.3237 	 5.6289}
+}
+{volume "turret2"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/turret2.vol"}
+	{bone "turret"}
+	{Position -3.4467 	 -0.0002 	 3.9856}
+}
+{volume "turret3"
+	{polyhedron "../../../../-vehicle/eng/btr/staghound_mk2/turret3.vol"}
+	{bone "turret"}
+	{Position -0.1715 	 0 	 -1.3812}
+}
+{volume "wheelleft1"
+	{cylinder 12.8392 7.67783}
+	{bone "wheell1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelleft2"
+	{cylinder 12.8392 7.67783}
+	{bone "wheell2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelright1"
+	{cylinder 12.8346 7.67783}
+	{bone "wheelr1"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelright2"
+	{cylinder 12.8392 7.67783}
+	{bone "wheelr2"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}

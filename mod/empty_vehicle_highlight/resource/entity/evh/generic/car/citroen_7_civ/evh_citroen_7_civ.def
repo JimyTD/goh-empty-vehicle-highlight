@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for citroen_7_civ (generated)
-	{Extension "../../../../-vehicle/generic/car/citroen_7_civ/citroen_7_civ.mdl"}
+	{Extension "citroen_7_civ.mdl"}
 	{extender "stuff"
 		{item "evh_citroen_7_civ"}
 	}

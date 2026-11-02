@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 140mm_bl_5_5_late (generated)
-	{Extension "../../../../-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.mdl"}
+	{Extension "140mm_bl_5_5.mdl"}
 	{extender "stuff"
 		{item "evh_140mm_bl_5_5_late"}
 	}

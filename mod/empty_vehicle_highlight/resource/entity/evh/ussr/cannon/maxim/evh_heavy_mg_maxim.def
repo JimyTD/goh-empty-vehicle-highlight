@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for heavy_mg_maxim (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/maxim/maxim.mdl"}
+	{Extension "maxim.mdl"}
 	{extender "stuff"
 		{item "evh_heavy_mg_maxim"}
 	}

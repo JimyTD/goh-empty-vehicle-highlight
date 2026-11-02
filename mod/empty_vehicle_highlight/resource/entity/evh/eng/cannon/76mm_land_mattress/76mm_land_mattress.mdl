@@ -1,0 +1,543 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: foresight stand supportl supportr
+{skeleton
+	{animation
+		{sequence "close" {file "../../../../-vehicle/eng/cannon/76mm_land_mattress/close.anm"} {speed 0.7}}
+	}
+	{bone revolute "basis"
+		{parameters "wheelradius=0.401;"}
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone "pivot_front"
+			{Position 0.0003 	 0 	 7.7464}
+			{bone prizmatic "suspension_r1"
+				{limits -0.04 0.04}
+				{speed 0.075}
+				{Position -0.0003 	 -18.8386 	 0.0096}
+				{bone revolute "wheell"
+					{parameters "id=wheelleft;radius=0.401;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 1.6799 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/wheell.ply"}
+				}
+			}
+			{bone prizmatic "suspension_l1"
+				{limits -0.04 0.04}
+				{speed 0.075}
+				{Position -0.0003 	 18.8386 	 0.0096}
+				{bone revolute "wheelr"
+					{parameters "id=wheelright;radius=0.401;"}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 -1.6799 	 0
+					}
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/wheelr.ply"}
+				}
+			}
+			{bone "susp"
+				{parameters "id=body;"}
+				{Position 0 	 0 	 0}
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/susp.ply"}
+			}
+			{bone "fxtracer1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-0.0003 	 -17.1587 	 -7.7464
+				}
+			}
+			{bone "fxtracel1"
+				{matrix34
+					-1 	 0 	 0
+					0 	 0 	 -1
+					0 	 -1 	 0
+					-0.0003 	 17.1587 	 -7.7464
+				}
+			}
+		}
+		{bone "gunner"
+			{matrix34
+				0.9684 	 -0.2495 	 0
+				0.2495 	 0.9684 	 0
+				0 	 0 	 1
+				-41.2298 	 24.1169 	 0
+			}
+		}
+		{bone "emit4"
+			{Position -55 	 40 	 0}
+		}
+		{bone "emit3"
+			{Position -55 	 -40 	 -4.9213}
+		}
+		{bone "emit2"
+			{Position -35 	 -30 	 0}
+		}
+		{bone "emit1"
+			{Position -35 	 30 	 0}
+		}
+		{bone "commander"
+			{Position -61.0264 	 34.6778 	 0}
+		}
+		{bone "charger2"
+			{Position -63.0754 	 -34.685 	 0}
+		}
+		{bone "body"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/eng/cannon/76mm_land_mattress/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0.0003 	 0 	 7.7464}
+			{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/body.ply"}
+			{bone "stand"
+				{parameters "id=body;"}
+				{Position 17.685 	 0 	 7.3408}
+				
+				{bone "seat2"
+					{matrix34
+						0.5736 	 -0.8192 	 0
+						0.8192 	 0.5736 	 0
+						0 	 0 	 1
+						7.8799 	 -10.9745 	 -12.1636
+					}
+				}
+				{bone "seat1"
+					{matrix34
+						0.7071 	 0.7071 	 0
+						-0.7071 	 0.7071 	 0
+						0 	 0 	 1
+						11.0338 	 8.8398 	 -12.6701
+					}
+				}
+			}
+			{bone "supportl"
+				{parameters "id=body;"}
+				{Position -16.9294 	 13.9636 	 7.0568}
+				
+			}
+			{bone "supportr"
+				{parameters "id=body;"}
+				{Position -16.9294 	 -13.9636 	 7.0568}
+				
+			}
+			{bone "gun"
+				{parameters "id=gun;"}
+				{Position -0.892 	 -0.5966 	 19.2418}
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/gun.ply"}
+				{bone "visor"
+					{Position -4.3247 	 13.3919 	 10.4528}
+				}
+				{bone "shooter29"
+					{Position -14.7977 	 3.4034 	 -6.6511}
+					{bone "rocket29"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket29.ply"}
+					}
+				}
+				{bone "shooter28"
+					{Position -14.7976 	 -2.2103 	 -6.6511}
+					{bone "rocket28"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket28.ply"}
+					}
+				}
+				{bone "shooter27"
+					{Position -14.7977 	 3.4034 	 -3.2353}
+					{bone "rocket27"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket27.ply"}
+					}
+				}
+				{bone "shooter26"
+					{Position -14.7977 	 -2.2103 	 -3.2353}
+					{bone "rocket26"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket26.ply"}
+					}
+				}
+				{bone "shooter25"
+					{Position -14.7977 	 3.4034 	 0.1805}
+					{bone "rocket25"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket25.ply"}
+					}
+				}
+				{bone "shooter24"
+					{Position -14.7977 	 -2.2103 	 0.1805}
+					{bone "rocket24"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket24.ply"}
+					}
+				}
+				{bone "shooter23"
+					{Position -14.7977 	 3.4034 	 3.5963}
+					{bone "rocket23"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket23.ply"}
+					}
+				}
+				{bone "shooter22"
+					{Position -14.7976 	 -2.2103 	 3.5962}
+					{bone "rocket22"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket22.ply"}
+					}
+				}
+				{bone "shooter21"
+					{Position -14.7977 	 3.4034 	 7.012}
+					{bone "rocket21"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket21.ply"}
+					}
+				}
+				{bone "shooter20"
+					{Position -14.7977 	 -2.2103 	 7.012}
+					{bone "rocket20"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket20.ply"}
+					}
+				}
+				{bone "shooter19"
+					{Position -14.7977 	 6.8192 	 -6.6511}
+					{bone "rocket19"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket19.ply"}
+					}
+				}
+				{bone "shooter18"
+					{Position -14.7977 	 -5.6261 	 -6.6511}
+					{bone "rocket18"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket18.ply"}
+					}
+				}
+				{bone "shooter17"
+					{Position -14.7977 	 6.8192 	 -3.2353}
+					{bone "rocket17"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket17.ply"}
+					}
+				}
+				{bone "shooter16"
+					{Position -14.7977 	 -5.6261 	 -3.2353}
+					{bone "rocket16"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket16.ply"}
+					}
+				}
+				{bone "shooter15"
+					{Position -14.7977 	 6.8192 	 0.1805}
+					{bone "rocket15"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket15.ply"}
+					}
+				}
+				{bone "shooter14"
+					{Position -14.7977 	 -5.6261 	 0.1805}
+					{bone "rocket14"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket14.ply"}
+					}
+				}
+				{bone "shooter13"
+					{Position -14.7977 	 6.8192 	 3.5963}
+					{bone "rocket13"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket13.ply"}
+					}
+				}
+				{bone "shooter12"
+					{Position -14.7977 	 -5.6261 	 3.5963}
+					{bone "rocket12"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket12.ply"}
+					}
+				}
+				{bone "shooter11"
+					{Position -14.7977 	 6.8192 	 7.012}
+					{bone "rocket11"
+						{Position 17.5097 	 0 	 -0.0001}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket11.ply"}
+					}
+				}
+				{bone "shooter10"
+					{Position -14.7977 	 -5.6261 	 7.012}
+					{bone "rocket10"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket10.ply"}
+					}
+				}
+				{bone "shooter09"
+					{Position -14.7976 	 10.235 	 -6.6511}
+					{bone "rocket09"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket09.ply"}
+					}
+				}
+				{bone "shooter08"
+					{Position -14.7977 	 -9.0418 	 -6.6511}
+					{bone "rocket08"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket08.ply"}
+					}
+				}
+				{bone "shooter07"
+					{Position -14.7977 	 10.235 	 -3.2353}
+					{bone "rocket07"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket07.ply"}
+					}
+				}
+				{bone "shooter06"
+					{Position -14.7977 	 -9.0418 	 -3.2353}
+					{bone "rocket06"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket06.ply"}
+					}
+				}
+				{bone "shooter05"
+					{Position -14.7977 	 10.235 	 0.1805}
+					{bone "rocket05"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket05.ply"}
+					}
+				}
+				{bone "shooter04"
+					{Position -14.7977 	 -9.0418 	 0.1805}
+					{bone "rocket04"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket04.ply"}
+					}
+				}
+				{bone "shooter03"
+					{Position -14.7977 	 10.235 	 3.5962}
+					{bone "rocket03"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket03.ply"}
+					}
+				}
+				{bone "shooter02"
+					{Position -14.7977 	 -9.0418 	 3.5962}
+					{bone "rocket02"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket02.ply"}
+					}
+				}
+				{bone "shooter01"
+					{Position -14.7977 	 10.235 	 7.012}
+					{bone "rocket01"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket01.ply"}
+					}
+				}
+				{bone "shooter00"
+					{Position -15.0514 	 -9.0418 	 7.012}
+					{bone "rocket00"
+						{Position 17.5097 	 0 	 0}
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/rocket00.ply"}
+					}
+				}
+				{bone "fxsmoke1"
+					{matrix34
+						-1 	 0 	 0
+						0 	 -1 	 0
+						0 	 0 	 1
+						-16.1236 	 0.5966 	 0
+					}
+				}
+				{bone revolute "foresight"
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 -1
+						0 	 1 	 0
+						21.039 	 0.5966 	 0
+					}
+				}
+			}
+			{bone "visor2"
+				{Position -37.0234 	 28.1256 	 37.867}
+			}
+			{bone "seat4"
+				{matrix34
+					-0.342 	 0.9397 	 0
+					-0.9397 	 -0.342 	 0
+					0 	 0 	 1
+					1.9682 	 19.685 	 -2.7067
+				}
+			}
+			{bone "seat3"
+				{matrix34
+					0 	 -1 	 0
+					1 	 0 	 0
+					0 	 0 	 1
+					-1.9688 	 -19.685 	 -2.7067
+				}
+			}
+		}
+		{bone "driver4"
+			{Position -50.1765 	 10 	 0}
+		}
+		{bone "driver1"
+			{Position -35.1765 	 15 	 0}
+		}
+		{bone "driver2"
+			{Position -35.1765 	 -15 	 0}
+		}
+		{bone "driver3"
+			{Position -50.1765 	 -10 	 0}
+		}
+		{bone "link1"
+			{matrix34
+				-1 	 0 	 0
+				0 	 -1 	 0
+				0 	 0 	 1
+				-45.4528 	 0 	 15.0872
+			}
+		}
+		{bone "charger"
+			{matrix34
+				0.9956 	 0.0941 	 0
+				-0.0941 	 0.9956 	 0
+				0 	 0 	 1
+				-41.3705 	 -24.1142 	 0
+			}
+		}
+	}
+}
+{obstacle "obstacle"
+	{obb2
+		{center 0 0}
+		{extent 20 20}
+		{axis 1 0}
+	}
+	{rotate}
+}
+{obstacle "close"
+	{polygon2
+		{radius 0}
+		{vertex -19.7562 -14.7319}
+		{vertex -0.0896378 -14.7343}
+		{vertex -0.0895882 11.411}
+		{vertex -19.7562 11.4087}
+	}
+	{Tags "close"}
+}
+{obstacle "open"
+	{polygon2
+		{radius 0}
+		{vertex -68.083 -14.7319}
+		{vertex -37.0026 -14.7343}
+		{vertex -37.0025 11.411}
+		{vertex -68.083 11.4087}
+	}
+	{Tags "open"}
+}
+{volume "barrel1"
+	{box 28.7415 9.60522 16.3802}
+	{bone "gun"}
+	{Position 0 	 -5.6297 	 0.2201}
+}
+{volume "barrel2"
+	{box 28.7415 9.60522 16.3802}
+	{bone "gun"}
+	{Position 0 	 6.8192 	 0.1805}
+}
+{volume "body10"
+	{box 36.972 1.74325 2.26057}
+	{bone "body"}
+	{Position 0.7689 	 -13.9557 	 7.3997}
+}
+{volume "body11"
+	{box 36.972 1.74325 2.26057}
+	{bone "body"}
+	{Position 0.7689 	 13.9557 	 7.3997}
+}
+{volume "body1"
+	{box 23.1114 26.1675 2.32895}
+	{bone "body"}
+	{Position 0 	 0 	 7.3793}
+}
+{volume "body2"
+	{box 19.5669 23.2087 19.6654}
+	{bone "body"}
+	{Position 0.8265 	 0 	 18.3764}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body3.vol"}
+	{bone "stand"}
+	{Position 2.4972 	 -12.6143 	 0}
+}
+{volume "body4"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body4.vol"}
+	{bone "stand"}
+	{Position 14.508 	 -7.1811 	 -0.0024}
+}
+{volume "body5"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body5.vol"}
+	{bone "stand"}
+	{Position 14.508 	 7.1811 	 -0.0024}
+}
+{volume "body6"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body6.vol"}
+	{bone "stand"}
+	{Position 8.7362 	 0 	 0}
+}
+{volume "body7"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body7.vol"}
+	{bone "stand"}
+	{Position 2.4972 	 12.6143 	 0}
+}
+{volume "body8"
+	{polyhedron "../../../../-vehicle/eng/cannon/76mm_land_mattress/body8.vol"}
+	{bone "stand"}
+	{Position 19.712 	 0 	 0}
+}
+{volume "body9"
+	{box 2.19799 3.08366 3.08368}
+	{bone "stand"}
+	{Position 11.6776 	 0 	 0}
+}
+{volume "hole1"
+	{box 25.5709 9.60522 16.3802}
+	{bone "gun"}
+	{Position 0 	 6.8192 	 0.1805}
+}
+{volume "hole2"
+	{box 25.5709 9.60522 16.3802}
+	{bone "gun"}
+	{Position 0 	 -5.6297 	 0.2201}
+}
+{volume "select"
+	{box 45 40 36.2203}
+	{bone "basis"}
+	{Position -5.1521 	 0 	 18.1102}
+}
+{volume "wheelleft"
+	{cylinder 7.8937 4.59484}
+	{bone "wheell"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}
+{volume "wheelright"
+	{cylinder 7.8937 4.59484}
+	{bone "wheelr"}
+	{matrix34
+		1 	 0 	 0
+		0 	 -1 	 0
+		0 	 0 	 -1
+		0 	 0 	 0
+	}
+}

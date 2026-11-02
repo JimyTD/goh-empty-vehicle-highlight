@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for jagdpanzer4_l48 (generated)
-	{Extension "../../../../-vehicle/germany/tank_medium/jagdpanzer4_l48/jagdpanzer4_l48.mdl"}
+	{Extension "jagdpanzer4_l48.mdl"}
 	{texmod "camo2"}
 	{extender "stuff"
 		{item "evh_jagdpanzer4_l48"}

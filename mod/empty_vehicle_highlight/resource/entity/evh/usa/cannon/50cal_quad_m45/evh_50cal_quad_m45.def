@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 50cal_quad_m45 (generated)
-	{Extension "../../../../-vehicle/usa/cannon/50cal_quad_m45/50cal_quad_m45.mdl"}
+	{Extension "50cal_quad_m45.mdl"}
 	{extender "stuff"
 		{item "evh_50cal_quad_m45"}
 	}

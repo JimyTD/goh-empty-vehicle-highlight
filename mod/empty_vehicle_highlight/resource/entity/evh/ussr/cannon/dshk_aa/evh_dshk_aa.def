@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for dshk_aa (generated)
-	{Extension "../../../../-vehicle/ussr/cannon/dshk_aa/dshk_aa.mdl"}
+	{Extension "dshk_aa.mdl"}
 	{extender "stuff"
 		{item "evh_dshk_aa"}
 	}

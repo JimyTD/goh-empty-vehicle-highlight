@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ft17_mg_fin (generated)
-	{Extension "../../../../-vehicle/finland/tank_light/ft17_mg_fin/ft17_mg_fin.mdl"}
+	{Extension "ft17_mg_fin.mdl"}
 	{extender "stuff"
 		{item "evh_ft17_mg_fin"}
 	}

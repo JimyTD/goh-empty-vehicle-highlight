@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for bedford_oyd_engineer (generated)
-	{Extension "../../../../-vehicle/eng/car/bedford_oyd_engineer/bedford_oyd_engineer.mdl"}
+	{Extension "bedford_oyd_engineer.mdl"}
 	{extender "stuff"
 		{item "evh_bedford_oyd_engineer"}
 	}

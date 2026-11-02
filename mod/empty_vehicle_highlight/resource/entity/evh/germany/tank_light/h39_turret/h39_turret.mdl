@@ -1,0 +1,156 @@
+;// empty_vehicle_highlight proxy model (generated from vanilla)
+;// moving parts without geometry: -
+;Exported by:	 guita
+;Date:			 23.09.2023 17:40:38
+;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\tank_light\h39_turret\h39_turret.max
+{skeleton
+	{animation
+		{sequence "fire" {file "../../../../-vehicle/germany/tank_light/h39_turret/fire.anm"} {speed 0.7}}
+	}
+	{bone "basis"
+		{orientation
+			1 	 0 	 0
+			0 	 -1 	 0
+			0 	 0 	 1
+		}
+		{bone revolute "turret"
+			{parameters "id=body;"}
+			{animation
+				{sequence "repair" {file "../../../../-vehicle/germany/tank_light/h39_turret/body_r.anm"}{speed 0.7}}
+			}
+			{Position 0 	 0 	 0.642}
+			{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/turret.ply"}
+			{bone "cover2"
+				{parameters "id=body;"}
+				{Position -1.2736 	 6.5144 	 12.0761}
+				{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/cover2.ply"}
+			}
+			{bone "cover1"
+				{parameters "id=body;"}
+				{Position -1.2736 	 -2.8886 	 12.0636}
+				{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/cover1.ply"}
+			}
+			{bone "turret_hatch"
+				{parameters "id=body;"}
+				{Position -13.7085 	 -0.6358 	 1.9239}
+				{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/turret_hatch.ply"}
+			}
+			{bone "fxfire3"
+				{matrix34
+					-0.0017 	 -0.0087 	 1
+					0.0003 	 -1 	 -0.0087
+					1 	 0.0003 	 0.0017
+					-1.3637 	 1.6973 	 8.1959
+				}
+			}
+			{bone "visor"
+				{Position -1.2177 	 1.8015 	 13.2005}
+			}
+			{bone revolute "gun_rot1"
+				{limits -5 5}
+				{Position 8.9524 	 -1.3636 	 4.7985}
+				{bone revolute "gun_rot"
+					{parameters "id=gun;"}
+					{animation
+						{sequence "repair" {file "../../../../-vehicle/germany/tank_light/h39_turret/gun_r.anm"}{speed 0.7}}
+					}
+					{limits -13 20}
+					{matrix34
+						1 	 0 	 0
+						0 	 0 	 1
+						0 	 -1 	 0
+						0 	 0 	 0
+					}
+					{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/gun_rot.ply"}
+					{bone "gun"
+						{parameters "id=gun;"}
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							13.8406 	 -0.326 	 0.1714
+						}
+						{VolumeView "../../../../-vehicle/germany/tank_light/h39_turret/gun.ply"}
+						{bone "foresight1"
+							{matrix34
+								1 	 0 	 0
+								0 	 1 	 0
+								0 	 0 	 1
+								7.6107 	 0.0106 	 0.0001
+							}
+						}
+					}
+					{bone "foresight5"
+						{matrix34
+							1 	 0 	 0
+							0 	 0 	 -1
+							0 	 1 	 0
+							7.9748 	 -1.799 	 2.8486
+						}
+					}
+				}
+				{bone "visor2"
+					{Position 5.8358 	 3.1651 	 -0.4188}
+				}
+			}
+		}
+		{bone "emit1"
+			{Position -21.1934 	 0 	 -41.3386}
+		}
+	}
+}
+{volume "barrel1"
+	{cylinder 1.52871 13.5889}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		7.0815 	 -0.3259 	 0.1765
+	}
+}
+{volume "barrel2"
+	{cylinder 0.810218 7.39915}
+	{bone "gun"}
+	{matrix34
+		0 	 1 	 0
+		0 	 0 	 1
+		1 	 0 	 0
+		3.3747 	 -0.0051 	 0.0001
+	}
+}
+{volume "body1"
+	{cylinder 10.6658 0.995683}
+	{bone "turret"}
+	{Position 0 	 0 	 -0.3488}
+}
+{volume "body2"
+	{polyhedron "../../../../-vehicle/germany/tank_light/h39_turret/body2.vol"}
+	{bone "turret"}
+	{Position -2.8199 	 -0.1307 	 4.9951}
+}
+{volume "body3"
+	{polyhedron "../../../../-vehicle/germany/tank_light/h39_turret/body3.vol"}
+	{bone "turret"}
+	{Position 8.1338 	 -1.6949 	 4.9912}
+}
+{volume "breech"
+	{box 4.89066 5.81545 12.4508}
+	{bone "gun_rot"}
+	{matrix34
+		0 	 0 	 -1
+		0 	 1 	 0
+		1 	 0 	 0
+		-5.8018 	 -0.9342 	 0.6252
+	}
+}
+{volume "cupola"
+	{polyhedron "../../../../-vehicle/germany/tank_light/h39_turret/cupola.vol"}
+	{bone "turret"}
+	{Position -1.2744 	 1.8123 	 10.9917}
+}
+{volume "select"
+	{cylinder 19.685 16.6344}
+	{bone "basis"}
+	{Position -0.3127 	 0.0848 	 4.8113}
+}

@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for ram_kangaroo_mk2 (generated)
-	{Extension "../../../../-vehicle/eng/tank_medium/ram_kangaroo_mk2/ram_kangaroo_mk2.mdl"}
+	{Extension "ram_kangaroo_mk2.mdl"}
 	{extender "stuff"
 		{item "evh_ram_kangaroo_mk2"}
 	}

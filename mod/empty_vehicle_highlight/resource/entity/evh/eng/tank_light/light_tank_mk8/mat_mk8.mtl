@@ -1,0 +1,7 @@
+{material bump
+	{diffuse "$/_vehicle/eng/light_tank_mkviii"}
+	{bump "$/_vehicle/eng/light_tank_mkviii_bp"}
+	{specular "$/_vehicle/eng/light_tank_mkviii_sp"}
+	{color "230 230 230 25"}
+	{blend test}
+}

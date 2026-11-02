@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m2_halftrack_at (generated)
-	{Extension "../../../../-vehicle/usa/btr/m2_halftrack/m2_halftrack.mdl"}
+	{Extension "m2_halftrack.mdl"}
 	{extender "stuff"
 		{item "evh_m2_halftrack_at"}
 	}

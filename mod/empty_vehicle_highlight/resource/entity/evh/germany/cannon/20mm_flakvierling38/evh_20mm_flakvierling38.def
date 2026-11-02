@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 20mm_flakvierling38 (generated)
-	{Extension "../../../../-vehicle/germany/cannon/20mm_flakvierling38/20mm_flakvierling38.mdl"}
+	{Extension "20mm_flakvierling38.mdl"}
 	{extender "stuff"
 		{item "evh_20mm_flakvierling38"}
 	}

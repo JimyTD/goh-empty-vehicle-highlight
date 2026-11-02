@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for 47mm_pakt (generated)
-	{Extension "../../../../-vehicle/germany/cannon/47mm_pakt/47mm_pakt.mdl"}
+	{Extension "47mm_pakt.mdl"}
 	{extender "stuff"
 		{item "evh_47mm_pakt"}
 	}

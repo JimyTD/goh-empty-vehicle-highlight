@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for blitz3_6_fuel (generated)
-	{Extension "../../../../-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.mdl"}
+	{Extension "blitz3_6_fuel.mdl"}
 	{extender "stuff"
 		{item "evh_blitz3_6_fuel"}
 	}

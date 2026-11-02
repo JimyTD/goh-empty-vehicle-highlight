@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for sturmtiger (generated)
-	{Extension "../../../../-vehicle/germany/tank_heavy/sturmtiger/sturmtiger.mdl"}
+	{Extension "sturmtiger.mdl"}
 	{extender "stuff"
 		{item "evh_sturmtiger"}
 	}

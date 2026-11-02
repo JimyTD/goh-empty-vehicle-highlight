@@ -1,6 +1,6 @@
 {game_entity
 	;// empty_vehicle_highlight proxy for m8_hmc (generated)
-	{Extension "../../../../-vehicle/usa/tank_light/m8_hmc/m8_hmc.mdl"}
+	{Extension "m8_hmc.mdl"}
 	{extender "stuff"
 		{item "evh_m8_hmc"}
 	}
