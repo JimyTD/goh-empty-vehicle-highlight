@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 23.09.2023 09:56:16
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\Sdkfz 234_2\Sdkfz 234_2 Puma.max
@@ -179,7 +179,7 @@
 				}
 				{speed 0.07}
 				{Position 12.4543 	 -0.0477 	 23.3169}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/turret.ply"}
 				{bone "cover_commander"
 					{parameters "id=turret;"}
 					{matrix34
@@ -188,7 +188,7 @@
 						0 	 0 	 1
 						-4.3528 	 9.3145 	 7.5161
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/cover_commander.ply"}
 				}
 				{bone "cover_gunner"
 					{parameters "id=turret;"}
@@ -198,24 +198,24 @@
 						0 	 0 	 1
 						-6.971 	 -8.0612 	 7.5615
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/cover_gunner.ply"}
 				}
 				{bone "at_turret1"
 					{parameters "id=turret;"}
 					{Position -12.7429 	 0.0138 	 8.9717}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/at_turret1.ply"}
 					{bone "at_turret2"
 						{parameters "id=turret;"}
 						{Position -0.5255 	 0 	 17.1805}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/at_turret2.ply"}
 						{bone "at_turret3"
 							{parameters "id=turret;"}
 							{Position -0.6027 	 0 	 11.8462}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/at_turret3.ply"}
 							{bone "at_turret4"
 								{parameters "id=turret;"}
 								{Position -0.6932 	 0 	 7.5612}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/at_turret4.ply"}
 							}
 						}
 					}
@@ -239,11 +239,11 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 18.126 	 -0.7414 	 0.0722}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/gun.ply"}
 							{bone "foresight1"
 								{Position 30.7484 	 1.37 	 -0.06}
 							}
@@ -337,7 +337,7 @@
 							0.6884 	 -0.7254 	 0
 							5.2423 	 -1.2503 	 -11.0986
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot1.ply"}
 					}
 					{bone "smoke_shot3"
 						{parameters "id=turret;"}
@@ -347,7 +347,7 @@
 							0.7254 	 -0.6884 	 0
 							6.5536 	 -2.5906 	 -12.0069
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot3.ply"}
 					}
 					{bone "smoke_shot5"
 						{parameters "id=turret;"}
@@ -357,7 +357,7 @@
 							0.7106 	 -0.702 	 0.0472
 							7.7777 	 -4.0164 	 -12.6318
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot5.ply"}
 					}
 					{bone "smoke_shot6"
 						{parameters "id=turret;"}
@@ -367,7 +367,7 @@
 							0.682 	 -0.7314 	 0
 							7.7777 	 -4.0164 	 13.9081
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot6.ply"}
 					}
 					{bone "smoke_shot4"
 						{parameters "id=turret;"}
@@ -377,7 +377,7 @@
 							0.7133 	 -0.7009 	 0
 							6.5536 	 -2.5906 	 13.2832
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot4.ply"}
 					}
 					{bone "smoke_shot2"
 						{parameters "id=turret;"}
@@ -387,7 +387,7 @@
 							0.7373 	 -0.6756 	 0
 							5.2423 	 -1.2503 	 12.3749
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_2/smoke_shot2.ply"}
 					}
 				}
 			}

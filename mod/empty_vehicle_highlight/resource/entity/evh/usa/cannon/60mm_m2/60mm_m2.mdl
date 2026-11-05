@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bipod_base stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 08.11.2023 19:13:03
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_usa\vehicles\cannon\60mm_m2\60mm_m2.max
@@ -76,7 +76,7 @@
 				{bone "gun_rot"
 					{parameters "id=body;"}
 					{Position -0.0987 	 -0.0017 	 -0.2467}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{orientation
@@ -84,7 +84,7 @@
 							0 	 1 	 0
 							-0.0992 	 0 	 0.9951
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/gun.ply"}
 						{bone "bipod_base"
 							{parameters "id=body;"}
 							{matrix34
@@ -93,7 +93,7 @@
 								0.0992 	 0 	 0.9951
 								6.9457 	 0.0014 	 8.7468
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/bipod_base.ply"}
 							{bone "stan_r"
 								{parameters "id=body;"}
 								{matrix34
@@ -102,7 +102,7 @@
 									-0.2588 	 0 	 0.9659
 									1.0077 	 -1.4505 	 -2.3252
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/stan_r.ply"}
 								{bone "support2"
 									{matrix34
 										0.9659 	 0 	 -0.2588
@@ -120,7 +120,7 @@
 									-0.2588 	 0 	 0.9659
 									1.0096 	 1.451 	 -2.3237
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/stan_l.ply"}
 								{bone "support1"
 									{matrix34
 										0.9659 	 0 	 -0.2588
@@ -138,11 +138,11 @@
 									-0.2588 	 0.0175 	 0.9658
 									1.5669 	 -0.323 	 -4.3716
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/1.ply"}
 								{bone "1a"
 									{parameters "id=body;"}
 									{Position 0 	 4.2317 	 -1.9634}
-									
+									{VolumeView "../../../../-vehicle/usa/cannon/60mm_m2/1a.ply"}
 								}
 							}
 						}

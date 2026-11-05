@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bone001 gun_rot sandbag turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 14.06.2021 13:55:26
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\Early WW2 tanks\germany\300mm_nebelwerfer42\Rework\Wip\300mm_nebelwerfer42.max
@@ -169,13 +169,13 @@
 								0 	 0 	 1
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/bolzen3.ply"}
 						}
 					}
 					{bone "bolzen2"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/bolzen2.ply"}
 					}
 				}
 				{bone "bolzen1"
@@ -186,7 +186,7 @@
 						0.4412 	 0.8974 	 0
 						0.0354 	 0.0275 	 -0.6673
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/bolzen1.ply"}
 				}
 			}
 			{bone "suspension_sys"
@@ -215,7 +215,7 @@
 						0 	 -1 	 0
 						-12.7809 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/gun_rot.ply"}
 					{bone "ik_chain001"
 						{matrix34
 							0.9847 	 -0.1741 	 0
@@ -232,7 +232,7 @@
 							0 	 1 	 0
 							5.309 	 -1.2301 	 0.0071
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/gun.ply"}
 						{bone "door"
 							{parameters "id=gun;"}
 							{matrix34
@@ -241,7 +241,7 @@
 								-0.0004 	 -1 	 0
 								20.8516 	 -0.0011 	 20.4415
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/door.ply"}
 						}
 						{bone "kurbel"
 							{matrix34
@@ -250,10 +250,10 @@
 								-0.2336 	 0.9721 	 0.0192
 								-8.1539 	 12.5821 	 3.7048
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/kurbel.ply"}
 							{bone "crank"
 								{Position 0 	 0 	 0}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/crank.ply"}
 							}
 						}
 						{bone "shooter05"
@@ -270,7 +270,7 @@
 									0 	 0 	 1
 									15.7171 	 -1.4872 	 -7.4255
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket05.ply"}
 							}
 						}
 						{bone "shooter00"
@@ -287,7 +287,7 @@
 									0 	 0 	 1
 									15.7171 	 -1.4872 	 -8.2904
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket00.ply"}
 							}
 						}
 						{bone "shooter01"
@@ -304,7 +304,7 @@
 									0 	 0 	 1
 									15.6011 	 6.9106 	 16.445
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket01.ply"}
 							}
 						}
 						{bone "shooter02"
@@ -321,7 +321,7 @@
 									0 	 0 	 1
 									15.4806 	 -2.6428 	 8.0549
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket02.ply"}
 							}
 						}
 						{bone "shooter03"
@@ -338,7 +338,7 @@
 									0 	 0 	 1
 									15.4806 	 -2.6428 	 -8.2297
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket03.ply"}
 							}
 						}
 						{bone "shooter04"
@@ -355,7 +355,7 @@
 									0 	 0 	 1
 									15.5965 	 -11.0406 	 0.9816
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/rocket04.ply"}
 							}
 						}
 						{bone "foresight"
@@ -373,7 +373,7 @@
 								0.1741 	 0 	 0.9847
 								16.3227 	 14.2718 	 15.5153
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/box002.ply"}
 							{bone "piece1"
 								{matrix34
 									0.9825 	 0 	 0.1863
@@ -381,7 +381,7 @@
 									0.1277 	 -0.7279 	 -0.6737
 									-0.3013 	 -1.5903 	 1.5687
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/piece1.ply"}
 							}
 						}
 						{bone "box003"
@@ -392,7 +392,7 @@
 								-0.0124 	 0 	 0.9999
 								16.3111 	 14.2701 	 15.5265
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/300mm_nebelwerfer42/box003.ply"}
 						}
 					}
 					{bone "fxsmoke1"

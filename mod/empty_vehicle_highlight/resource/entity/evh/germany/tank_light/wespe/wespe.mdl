@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor hatch1 hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.09.2023 09:57:42
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\tank_light\Wespe\Wespe.max
@@ -51,7 +51,7 @@
 			{bone "backdoor"
 				{parameters "id=body;"}
 				{Position -47.135 	 -0.0211 	 8.2971}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/wespe/backdoor.ply"}
 			}
 			{bone "fuel"
 				{matrix34
@@ -231,7 +231,7 @@
 			{bone "hatch1"
 				{parameters "id=body;"}
 				{Position 27.1896 	 4.8011 	 8.662}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/wespe/hatch1.ply"}
 			}
 			{bone "fxfire5"
 				{matrix34
@@ -244,7 +244,7 @@
 			{bone "hatch2"
 				{parameters "id=body;"}
 				{Position 17.2065 	 4.8011 	 8.662}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/wespe/hatch2.ply"}
 			}
 			{bone "frontdoor"
 				{parameters "id=body;"}
@@ -304,7 +304,7 @@
 				{limits -20 20}
 				{speed 0.07}
 				{Position -12.2685 	 -0.0446 	 14.6632}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/wespe/turret.ply"}
 				{bone "visor1"
 					{matrix34
 						1 	 0 	 0.0073
@@ -316,7 +316,7 @@
 				{bone "aim_hor"
 					{parameters "id=gun;"}
 					{Position 3.9231 	 6.1584 	 -1.7703}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/wespe/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=gun;"}
@@ -326,7 +326,7 @@
 						0 	 0 	 1
 						-8.1811 	 -7.4727 	 -1.7715
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/wespe/aim_ver.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -338,7 +338,7 @@
 						0 	 -1 	 0
 						-4.3249 	 0.0003 	 5.3419
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/wespe/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -347,11 +347,11 @@
 							0 	 1 	 0
 							2.36 	 -0.7655 	 -0.0001
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/wespe/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -8.6266 	 -0.3795 	 0.1208}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/wespe/breech_block.ply"}
 						}
 						{bone "foresight1"
 							{Position 57.614 	 0.0163 	 -0.0054}
@@ -368,7 +368,7 @@
 				}
 				{bone "gun_shield"
 					{parameters "id=gun;"}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/wespe/gun_shield.ply"}
 				}
 			}
 		}

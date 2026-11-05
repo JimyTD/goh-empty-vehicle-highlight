@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: commander doorbackl doorbackr doorleft doorright driver seat01 seat02 seat03 seat04
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:49:15
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\car\Latil_M2TL6\latil_m2tl6.max
@@ -72,7 +72,7 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 12.6878 	 12.0866 	 12.6005}
-				
+				{VolumeView "../../../../-vehicle/finland/car/latil_m2tl6/doorleft.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -99,12 +99,12 @@
 						0 	 0 	 1
 						-14.8327 	 -6.8898 	 -7.3609
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/car/latil_m2tl6/doorbackr.ply"}
 				}
 				{bone "doorbackl"
 					{parameters "id=bodyback;"}
 					{Position -14.8326 	 6.8898 	 -7.3609}
-					
+					{VolumeView "../../../../-vehicle/finland/car/latil_m2tl6/doorbackl.ply"}
 				}
 				{bone revolute "seat01"
 					{matrix34
@@ -181,7 +181,7 @@
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 12.6878 	 -12.0866 	 12.6005}
-				
+				{VolumeView "../../../../-vehicle/finland/car/latil_m2tl6/doorright.ply"}
 			}
 			{bone "glass2"
 				{parameters "id=glass2;"}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_heavy/kv1_41/start.anm"} {speed 0.7}}
@@ -274,7 +274,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_heavy/kv1_41/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 9.3464 	 0 	 13.8424}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;ikspeed2=10;"}
 					{limits -5 25}
@@ -284,7 +284,7 @@
 						0 	 -1 	 0
 						15.8912 	 -0.0078 	 7.828
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{orientation
@@ -292,7 +292,7 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/gun.ply"}
 						{bone "foresight1"
 							{Position 45.3386 	 -0.5394 	 2.3744}
 						}
@@ -309,7 +309,7 @@
 				{bone "hatch"
 					{parameters "id=turret;"}
 					{Position -20.3441 	 0 	 15.0531}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/hatch.ply"}
 				}
 				{bone "visor1"
 					{Position 8.1912 	 9.1291 	 19.5515}
@@ -324,7 +324,7 @@
 						0.0006 	 -0.1564 	 0.9877
 						-12.3653 	 -15.6488 	 9.0197
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/enumerator.ply"}
 				}
 				{bone "internals_t"
 					{Position -12.8293 	 0 	 4.5309}
@@ -363,7 +363,7 @@
 								1 	 0 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/mgunshield_rear.ply"}
 						}
 						{bone "dt29_rear"
 							{matrix34
@@ -372,7 +372,7 @@
 								0 	 -1 	 0
 								-5.0622 	 0.9953 	 -0.0042
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/dt29_rear.ply"}
 						}
 					}
 				}
@@ -621,7 +621,7 @@
 							1 	 0 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/mgunshield_hull.ply"}
 					}
 					{bone "dt29_hull"
 						{matrix34
@@ -630,7 +630,7 @@
 							0 	 -1 	 0
 							-4.472 	 0.9088 	 0.1148
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_41/dt29_hull.ply"}
 					}
 				}
 			}

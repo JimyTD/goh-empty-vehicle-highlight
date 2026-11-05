@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 05.08.2025 18:16:41
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_light\marder2\Sd.Kfz.131.max
@@ -71,7 +71,7 @@
 				}
 				{limits -12 12}
 				{Position 16.2726 	 2.1316 	 13.9626}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -8 15}
@@ -81,7 +81,7 @@
 						0 	 -1 	 0
 						-0.8783 	 0.263 	 9.8124
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -93,7 +93,7 @@
 							0 	 1 	 0
 							-3.4758 	 -1.4822 	 -0.5446
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/marder2/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -112,12 +112,12 @@
 				}
 				{bone "gun_shield"
 					{parameters "id=turret;"}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder2/gun_shield.ply"}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=body;"}
 						{limits -50 50}
 						{Position -6.9916 	 -11.7748 	 13.5292}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/marder2/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=body;"}
 							{limits -10 30}
@@ -127,7 +127,7 @@
 								0 	 -1 	 0
 								-0.4886 	 0 	 2.3295
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/marder2/mgun_a_rot2.ply"}
 							{bone "mgun2"
 								{Position -6.9026 	 -0.6973 	 0.0364}
 							}

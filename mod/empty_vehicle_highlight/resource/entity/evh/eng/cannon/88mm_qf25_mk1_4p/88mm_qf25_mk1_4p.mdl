@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: shield2 shield4 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/recoil.anm"} {speed 0.7}}
@@ -130,7 +130,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -58.2371 	 -0.0001 	 -8.5088}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -142,7 +142,7 @@
 						0 	 -1 	 0
 						60.1761 	 0 	 16.644
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -151,15 +151,15 @@
 							0 	 1 	 0
 							-17.6097 	 3.3052 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position 0.9239 	 -2.3687 	 -1.2313}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/breech_block.ply"}
 							{bone "breech_handle"
 								{parameters "id=gun;"}
 								{Position -1.4821 	 -0.7399 	 1.3625}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/breech_handle.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -182,27 +182,27 @@
 							1 	 0 	 0
 							-12.6037 	 4.1828 	 4.1535
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/aim_wheel2_1.ply"}
 					}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position 28.7171 	 -7.4135 	 4.5933}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/detail4.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position 12.7575 	 -4.314 	 1.6441}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/detail3.ply"}
 				}
 				{bone "hook"
 					{parameters "id=body;"}
 					{Position 6.3725 	 0.7599 	 3.0084}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/hook.ply"}
 					{bone "hook_hinge"
 						{parameters "id=body;"}
 						{Position -1.0533 	 -1.6031 	 0.8044}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/hook_hinge.ply"}
 					}
 				}
 				{bone "detail2"
@@ -213,12 +213,12 @@
 						-0.0955 	 0 	 0.9954
 						59.099 	 -8.0134 	 20.6992
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/detail2.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 61.2903 	 8.7606 	 16.1722}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/detail1.ply"}
 				}
 				{bone "aim_wheel1_1"
 					{parameters "id=body;"}
@@ -228,17 +228,17 @@
 						0.729 	 -0.2712 	 0.6285
 						54.2055 	 -6.9291 	 15.7087
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/aim_wheel1_1.ply"}
 				}
 				{bone "aim_wheel1_2"
 					{parameters "id=body;"}
 					{Position 55.2461 	 8.0315 	 16.623}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/aim_wheel1_2.ply"}
 				}
 				{bone "seat"
 					{parameters "id=body;"}
 					{Position 40.925 	 -9.7224 	 9.6724}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/seat.ply"}
 				}
 				{bone "aim_wheel2_2"
 					{parameters "id=body;"}
@@ -248,7 +248,7 @@
 						0.682 	 0 	 0.7314
 						52.1977 	 6.1811 	 14.7638
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/aim_wheel2_2.ply"}
 				}
 				{bone "support_bar"
 					{parameters "id=body;"}
@@ -258,11 +258,11 @@
 						-0.2672 	 0 	 0.9636
 						35.1588 	 -4.435 	 8.9566
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/support_bar.ply"}
 					{bone "support_bar_hinge"
 						{parameters "id=body;"}
 						{Position -8.8452 	 0 	 0.0525}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/support_bar_hinge.ply"}
 					}
 				}
 				{bone "gunner"
@@ -340,7 +340,7 @@
 							-0.5736 	 0 	 0.8192
 							-3.3653 	 20.8176 	 3.7647
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/shield4.ply"}
 					}
 				}
 				{bone "visor_shield2_holder"
@@ -360,7 +360,7 @@
 						-0.8192 	 0 	 0.5736
 						-0.8283 	 10.7899 	 6.0534
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk1_4p/shield2.ply"}
 				}
 			}
 		}

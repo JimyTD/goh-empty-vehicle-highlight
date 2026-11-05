@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/cckw_352_swb_engi"}
-	{bump "$/_vehicle/cckw_352_swb_engi_bp"}
-	{specular "$/_vehicle/cckw_352_swb_engi_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

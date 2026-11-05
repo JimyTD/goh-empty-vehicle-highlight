@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bipod_base commander gunner stan_l stan_r
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.05.2022 11:58:46
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\Cannon\50_Krh38\50mm_krh38.max
@@ -94,7 +94,7 @@
 								0.0992 	 0 	 0.9951
 								12.228 	 -0.3579 	 15.3033
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/50mm_krh38/bipod_base.ply"}
 							{bone "stan_r"
 								{parameters "id=body;"}
 								{matrix34
@@ -103,11 +103,11 @@
 									-0.2924 	 0 	 0.9563
 									2.9048 	 -0.795 	 -7.2542
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/50mm_krh38/stan_r.ply"}
 								{bone "1"
 									{parameters "id=body;"}
 									{Position -0.3277 	 -3.8338 	 -5.7212}
-									
+									{VolumeView "../../../../-vehicle/finland/cannon/50mm_krh38/1.ply"}
 								}
 								{bone "support2"
 									{matrix34
@@ -126,7 +126,7 @@
 									-0.2924 	 0 	 0.9563
 									2.9067 	 1.5701 	 -7.257
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/50mm_krh38/stan_l.ply"}
 								{bone "support1"
 									{matrix34
 										0.9563 	 0 	 -0.2924

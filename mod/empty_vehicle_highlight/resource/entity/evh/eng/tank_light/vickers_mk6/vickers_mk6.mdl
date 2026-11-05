@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.10.2025 12:52:17
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Vickers_MK_VI\Vickers_mkVIB.max
@@ -31,30 +31,30 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -9.6228 	 0 	 16.0806}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/turret.ply"}
 				{bone "turret_hatchl1"
 					{parameters "id=turret;"}
 					{Position 5.9679 	 9.8077 	 11.4697}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_hatchl1.ply"}
 				}
 				{bone "turret_hatchl2"
 					{parameters "id=turret;"}
 					{Position -6.0972 	 5.4391 	 11.4892}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_hatchl2.ply"}
 				}
 				{bone revolute "cupola"
 					{parameters "id=turret;"}
 					{Position -0.8256 	 -6.6174 	 11.4594}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/cupola.ply"}
 					{bone "turret_hatchr1"
 						{parameters "id=turret;"}
 						{Position 5.0457 	 -1.9249 	 5.3413}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_hatchr1.ply"}
 					}
 					{bone "turret_hatchr2"
 						{parameters "id=turret;"}
 						{Position -5.0197 	 1.6697 	 5.3593}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/turret_hatchr2.ply"}
 					}
 					{bone "visor1"
 						{Position 7.3664 	 0 	 1.8995}
@@ -111,7 +111,7 @@
 						0 	 -1 	 0
 						10.5251 	 1.5349 	 6.1449
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/gun_rot.ply"}
 					{bone "foresight1"
 						{Position 14.0141 	 -0.9025 	 2.8948}
 					}
@@ -126,12 +126,12 @@
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 19.6804 	 11.7689 	 14.9843}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/driver_hatch1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 29.6844 	 11.5616 	 7.6887}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_mk6/driver_hatch2.ply"}
 			}
 			{bone "hatch"
 				{parameters "id=body;"}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: door_left door_right guide1_left guide1_right guide2_left guide2_right
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 17.01.2025 23:05:20
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_generic\vehicles\train\locomotive\VLc75\VIc75.max
@@ -130,7 +130,7 @@
 							0 	 0 	 1
 							7.1307 	 0.0152 	 -2.6647
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/drg_class75/guide2_right.ply"}
 						{bone "guide_wheelright1"
 							{parameters "lastpose=undefined;"}
 							{matrix34
@@ -159,7 +159,7 @@
 							-1 	 0 	 0
 							-0.0271 	 0.0522 	 -16.9968
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/drg_class75/guide1_right.ply"}
 						{bone "guide_wheelright2"
 							{Position -40.2409 	 -0.0005 	 3.6311}
 						}
@@ -232,7 +232,7 @@
 							0 	 0 	 1
 							7.1306 	 0.0157 	 -0.0548
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/drg_class75/guide2_left.ply"}
 						{bone "guide_wheelleft1"
 							{matrix34
 								-1 	 0 	 0
@@ -260,7 +260,7 @@
 							-1 	 0 	 0
 							-0.0271 	 0.0543 	 -16.9968
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/drg_class75/guide1_left.ply"}
 						{bone "guide_wheelleft2"
 							{Position -40.2409 	 -0.0025 	 -3.6648}
 						}
@@ -378,7 +378,7 @@
 				{bone "door_right"
 					{parameters "commonmesh;id=body;"}
 					{Position 9.7588 	 -24.9234 	 -11.3578}
-					
+					{VolumeView "../../../../-vehicle/generic/train/drg_class75/door_right.ply"}
 				}
 				{bone "driver"
 					{Position 13.6307 	 17.597 	 -18.1795}
@@ -386,7 +386,7 @@
 				{bone "door_left"
 					{parameters "commonmesh;id=body;"}
 					{Position 9.7588 	 24.9527 	 -11.3578}
-					
+					{VolumeView "../../../../-vehicle/generic/train/drg_class75/door_left.ply"}
 				}
 				{bone "window1"
 					{parameters "id=window1;"}

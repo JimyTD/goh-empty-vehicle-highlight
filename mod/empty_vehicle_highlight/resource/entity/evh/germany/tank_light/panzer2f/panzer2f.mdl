@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 26.04.2025 14:59:35
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_light\pz2f\panzerIIf_export.max
@@ -385,7 +385,7 @@
 					0 	 0 	 1
 					6.0085 	 2.9963 	 21.043
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{matrix34
@@ -394,7 +394,7 @@
 						0 	 1 	 0
 						-11.267 	 -0.0008 	 5.5418
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -403,7 +403,7 @@
 							0 	 -1 	 0
 							-4.4161 	 0.0312 	 -4.7171
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/gun.ply"}
 					}
 					{bone "mgun"
 						{parameters "id=turret;"}
@@ -413,7 +413,7 @@
 							0 	 0 	 1
 							-2.3601 	 0.0105 	 5.3151
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/mgun.ply"}
 						{bone "foresight3"
 							{Position 8.2232 	 -0.1033 	 0}
 						}
@@ -438,11 +438,11 @@
 				{bone "cupola"
 					{parameters "id=turret;"}
 					{Position 3.3778 	 2.334 	 9.8415}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/cupola.ply"}
 					{bone "hatch"
 						{parameters "id=turret;"}
 						{Position 0 	 3.3542 	 2.2617}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2f/hatch.ply"}
 					}
 				}
 				{bone "fxfire3"

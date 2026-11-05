@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 front_hatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 17.10.2025 11:53:54
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Stuart_V\stuart5.max
@@ -35,7 +35,7 @@
 					0 	 0 	 1
 					17.8067 	 14.1716 	 13.6178
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/driver_hatch1.ply"}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
@@ -45,7 +45,7 @@
 					0 	 0 	 1
 					17.582 	 -13.9518 	 13.619
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/front_hatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -267,7 +267,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mg_frontring.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -277,7 +277,10 @@
 							0 	 1 	 0
 							-1.7912 	 -0.2324 	 0.3342
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_hull.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_hull_lod1.ply"}
+						}
 					}
 				}
 			}
@@ -400,29 +403,29 @@
 				}
 				{speed 0.007}
 				{Position 4.5119 	 0 	 15.0874}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/turret.ply"}
 				{bone "turret_hatch1"
 					{parameters "id=turret;"}
 					{Position -10.6443 	 2.4639 	 10.5957}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/turret_hatch1.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -10.6443 	 -8.6097 	 10.5986}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/turret_hatch2.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=body;"}
 					{Position -20.1744 	 -0.0091 	 14.4041}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=body;"}
 						{Position -12.5949 	 -0.0078 	 11.5489}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/antenna2.ply"}
 						{bone "antenna3"
 							{parameters "id=body;"}
 							{Position 4.18 	 -0.0078 	 11.6996}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/antenna3.ply"}
 						}
 					}
 				}
@@ -431,7 +434,7 @@
 					{limits -20 20}
 					{terminator}
 					{Position -0.1848 	 -14.2769 	 8.8251}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -14 60}
@@ -441,7 +444,7 @@
 							0 	 -1 	 0
 							-3.7109 	 -0.0068 	 5.6272
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -6.5127 	 0.5323 	 0.0032}
 						}
@@ -476,7 +479,7 @@
 						0 	 -1 	 0
 						11.3874 	 0 	 3.5044
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/gun_rot.ply"}
 					{bone "mgun_coax"
 						{parameters "id=turret;"}
 						{matrix34
@@ -485,7 +488,10 @@
 							0 	 1 	 0
 							-0.1709 	 -0.1428 	 2.6696
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_coax.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/mgun_coax_lod1.ply"}
+						}
 						{bone "foresight5"
 							{Position 10.5439 	 0.3483 	 0.2643}
 						}
@@ -498,7 +504,7 @@
 							0 	 1 	 0
 							5.7531 	 -0.0669 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/gun.ply"}
 						{bone "foresight1"
 							{Position 21.0357 	 0.0008 	 0.0724}
 						}
@@ -507,32 +513,32 @@
 				{bone "detail14"
 					{parameters "id=turret;"}
 					{Position 4.7394 	 -12.4265 	 4.7273}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail14.ply"}
 				}
 				{bone "detail13"
 					{parameters "id=turret;"}
 					{Position -10.813 	 -11.6596 	 4.7273}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail13.ply"}
 				}
 				{bone "detail12"
 					{parameters "id=turret;"}
 					{Position -18.4565 	 -6.223 	 4.7289}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail12.ply"}
 				}
 				{bone "detail11"
 					{parameters "id=turret;"}
 					{Position -18.4565 	 5.9879 	 4.7289}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail11.ply"}
 				}
 				{bone "detail10"
 					{parameters "id=turret;"}
 					{Position -10.8796 	 11.7207 	 4.7273}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail10.ply"}
 				}
 				{bone "detail9"
 					{parameters "id=turret;"}
 					{Position 5.0687 	 12.4672 	 4.7273}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5/detail9.ply"}
 				}
 			}
 			{bone "enumerator"

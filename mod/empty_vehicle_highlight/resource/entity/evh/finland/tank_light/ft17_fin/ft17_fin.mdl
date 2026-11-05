@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 driver_hatch3 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 14.03.2024 17:30:01
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\tank_light\FT-17\FT-17.max
@@ -228,7 +228,10 @@
 				}
 				{speed 0.02}
 				{Position 5.057 	 -0.0046 	 13.6206}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret_lod1.ply"}
+				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{matrix34
@@ -237,7 +240,10 @@
 						0.1694 	 0.1219 	 0.978
 						-8.3522 	 -5.7432 	 5.1033
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret_hatch2.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret_hatch2_lod1.ply"}
+					}
 				}
 				{bone "turret_hatch1"
 					{parameters "id=turret;"}
@@ -247,12 +253,18 @@
 						0.1707 	 -0.1252 	 0.9773
 						-8.3645 	 5.7279 	 5.1012
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret_hatch1.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/turret_hatch1_lod1.ply"}
+					}
 				}
 				{bone "cupola"
 					{parameters "id=turret;"}
 					{Position -3.0366 	 2.2848 	 12.5374}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/cupola.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/cupola_lod1.ply"}
+					}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -267,7 +279,10 @@
 						0 	 -1 	 0
 						8.9715 	 -0.0246 	 2.8111
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -276,7 +291,10 @@
 							0 	 1 	 0
 							0.5145 	 0.2871 	 0.8719
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/gun_lod1.ply"}
+						}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -302,7 +320,7 @@
 						0.0045 	 -0.1993 	 0.9799
 						1.071 	 10.2071 	 3.6832
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/enumerator.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -319,7 +337,7 @@
 						-0.0011 	 0.1994 	 0.9799
 						-1.4345 	 -10.1313 	 3.6832
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/enumerator2.ply"}
 				}
 			}
 			{bone "left_spring"
@@ -518,7 +536,10 @@
 					-0.9342 	 0.16 	 0.319
 					31.0601 	 6.2806 	 1.9445
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch2.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch2_lod1.ply"}
+				}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
@@ -528,12 +549,18 @@
 					-0.9339 	 -0.1613 	 0.319
 					30.3467 	 -6.4014 	 2.1817
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch1.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch1_lod1.ply"}
+				}
 			}
 			{bone "driver_hatch3"
 				{parameters "id=body;"}
 				{Position 17.0689 	 -0.0046 	 11.3459}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch3.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/ft17_fin/driver_hatch3_lod1.ply"}
+				}
 			}
 			{bone "visor2"
 				{matrix34

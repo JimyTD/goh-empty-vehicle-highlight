@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/tracks/track_somua_s35"}
-	{bump "$/_vehicle/tracks/track_somua_s35_bp"}
-	{specular "$/_vehicle/tracks/track_somua_s35_sp"}
-	{color "255 255 255 50"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

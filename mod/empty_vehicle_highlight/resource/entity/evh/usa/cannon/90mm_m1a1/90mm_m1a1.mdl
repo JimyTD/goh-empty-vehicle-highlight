@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_plus fixer5 gun_holder gun_rot helper_left helper_right plate1 plate2 plate3 plate4 rod standf standf1 standl standl1 standr standr1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 16.09.2023 11:40:53
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\90mm_m1_aa\90mm_m1_aa.max
@@ -38,7 +38,7 @@
 					0 	 0 	 1
 					0 	 0 	 0
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/body_plus.ply"}
 				{bone "helper_t"
 					{parameters "id=body;"}
 					{Position 13.4632 	 0 	 6.0801}
@@ -49,11 +49,11 @@
 						{bone "turret_mesh"
 							{parameters "id=body;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/turret_mesh.ply"}
 							{bone "seat_right"
 								{parameters "id=body;"}
 								{Position 5.3282 	 -15.4779 	 17.7856}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/seat_right.ply"}
 							}
 							{bone "seat_left1"
 								{parameters "id=body;"}
@@ -63,7 +63,7 @@
 									0.4617 	 0.887 	 0
 									8.7922 	 17.5751 	 19.267
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/seat_left1.ply"}
 							}
 							{bone "seat_left2"
 								{parameters "id=body;"}
@@ -73,7 +73,7 @@
 									-0.5736 	 0.8192 	 0
 									-4.6484 	 11.2245 	 7.8786
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/seat_left2.ply"}
 							}
 							{bone revolute "gun_rot"
 								{parameters "id=gun;"}
@@ -86,7 +86,7 @@
 									0 	 -1 	 0
 									-10.7973 	 0 	 19.7208
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/gun_rot.ply"}
 								{bone "gun"
 									{parameters "id=gun;"}
 									{matrix34
@@ -95,11 +95,11 @@
 										0 	 1 	 0
 										5.2187 	 1.3876 	 0
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/gun.ply"}
 									{bone "breech"
 										{parameters "id=gun;"}
 										{Position -1.4247 	 0 	 0.7395}
-										
+										{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/breech.ply"}
 									}
 									{bone "foresight1"
 										{Position 107.827 	 -0.0016 	 0.4158}
@@ -124,7 +124,7 @@
 								{bone "aim_hor"
 									{parameters "id=body;"}
 									{Position 0 	 0 	 0}
-									
+									{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/aim_hor.ply"}
 								}
 							}
 							{bone "aim_v_helper"
@@ -132,18 +132,18 @@
 								{bone "aim_ver"
 									{parameters "id=body;"}
 									{Position 0 	 0 	 0}
-									
+									{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/aim_ver.ply"}
 								}
 							}
 							{bone "sight"
 								{parameters "id=body;"}
 								{Position -9.1304 	 18.8563 	 17.2639}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/sight.ply"}
 							}
 							{bone "belt_vertical"
 								{parameters "id=body;"}
 								{Position -14.9253 	 5.8139 	 10.9095}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/belt_vertical.ply"}
 							}
 							{bone "commander"
 								{matrix34
@@ -204,11 +204,11 @@
 						0 	 0 	 1
 						18.481 	 19.8184 	 1.8444
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standl.ply"}
 					{bone "standl1"
 						{parameters "id=body;"}
 						{Position 0 	 -42.9175 	 -5.849}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standl1.ply"}
 						{bone "detail1"
 							{parameters "id=body;"}
 							{matrix34
@@ -217,7 +217,7 @@
 								0 	 0.9969 	 0.0785
 								-0.004 	 -47.5946 	 2.6818
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/detail1.ply"}
 						}
 					}
 					{bone "stick4"
@@ -228,12 +228,12 @@
 							-1 	 0 	 0
 							-1.044 	 -47.1524 	 -1.6186
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick4.ply"}
 					}
 					{bone "fixer3"
 						{parameters "id=body;"}
 						{Position -2.3745 	 -20.4802 	 -2.6384}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/fixer3.ply"}
 					}
 				}
 				{bone "standr"
@@ -244,7 +244,7 @@
 						0 	 0 	 1
 						18.4867 	 -19.8187 	 1.8444
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standr.ply"}
 					{bone "stick2"
 						{parameters "id=body;"}
 						{matrix34
@@ -253,7 +253,7 @@
 							-1 	 0 	 0
 							-1.044 	 -47.1524 	 -1.6186
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick2.ply"}
 					}
 					{bone "fixer2"
 						{parameters "id=body;"}
@@ -263,12 +263,12 @@
 							-1 	 0 	 0
 							1.365 	 -20.4802 	 -2.6384
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/fixer2.ply"}
 					}
 					{bone "standr1"
 						{parameters "id=body;"}
 						{Position 0 	 -42.9175 	 -5.849}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standr1.ply"}
 					}
 				}
 				{bone "standf"
@@ -279,7 +279,7 @@
 						0 	 0 	 1
 						32.9074 	 0 	 1.8444
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standf.ply"}
 					{bone "stick6"
 						{parameters "id=body;"}
 						{matrix34
@@ -288,12 +288,12 @@
 							-1 	 0 	 0
 							-1.044 	 -47.1524 	 -1.6186
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick6.ply"}
 					}
 					{bone "standf1"
 						{parameters "id=body;"}
 						{Position 0 	 -42.9175 	 -5.849}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/standf1.ply"}
 					}
 					{bone "fixer4"
 						{parameters "id=body;"}
@@ -303,7 +303,7 @@
 							0 	 -0.1478 	 -0.989
 							0 	 -18.2412 	 -3.2347
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/fixer4.ply"}
 					}
 				}
 				{bone "stick1"
@@ -314,17 +314,17 @@
 						0 	 0 	 1
 						15.629 	 -27.1897 	 -2.0706
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick1.ply"}
 				}
 				{bone "stick3"
 					{parameters "id=body;"}
 					{Position 21.3386 	 27.1893 	 -2.0706}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick3.ply"}
 				}
 				{bone "stick5"
 					{parameters "id=body;"}
 					{Position 40.2784 	 -2.8576 	 -2.0706}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/stick5.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -346,7 +346,7 @@
 			{bone "gun_holder"
 				{parameters "id=body;"}
 				{Position -87.1675 	 -2.4271 	 -1.5692}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/gun_holder.ply"}
 				{bone "fixer1"
 					{parameters "id=body;"}
 					{matrix34
@@ -355,7 +355,7 @@
 						0 	 0 	 1
 						-29.7337 	 4.2877 	 3.0054
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/fixer1.ply"}
 				}
 			}
 			{bone "fixer5"
@@ -366,7 +366,7 @@
 					0 	 0 	 1
 					-21.4842 	 -0.0008 	 0.1103
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/fixer5.ply"}
 			}
 			{bone "helper_right"
 				{matrix34
@@ -382,7 +382,7 @@
 						0 	 1 	 0
 						-1 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/plate1.ply"}
 				}
 				{bone "plate3"
 					{parameters "id=body;"}
@@ -392,7 +392,7 @@
 						-1 	 0 	 0
 						0 	 2.5611 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/plate3.ply"}
 				}
 			}
 			{bone "helper_left"
@@ -410,7 +410,7 @@
 						-1 	 0 	 0
 						0 	 2.5584 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/plate4.ply"}
 				}
 				{bone "plate2"
 					{parameters "id=body;"}
@@ -419,7 +419,7 @@
 						0 	 1 	 0
 						-1 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/plate2.ply"}
 				}
 			}
 			{bone "seat3"
@@ -510,7 +510,7 @@
 						1.0899 	 13.8251 	 -7.4318
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/90mm_m1a1/rod.ply"}
 				}
 			}
 			{bone "fxtracel1"

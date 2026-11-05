@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: door1 door2 landing_door mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.11.2023 06:59:37
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\marine\Lca Barge\lca_ty.max
@@ -30,12 +30,12 @@
 			{bone "door1"
 				{parameters "id=body;"}
 				{Position 89.7661 	 -13.5585 	 19.0951}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/door1.ply"}
 			}
 			{bone "door2"
 				{parameters "id=body;"}
 				{Position 89.7803 	 13.5713 	 9.1847}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/door2.ply"}
 			}
 			{bone "landing_door"
 				{parameters "id=body;"}
@@ -45,7 +45,7 @@
 					-0.8631 	 0 	 0.505
 					116.924 	 -0.0016 	 7.1587
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/landing_door.ply"}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}

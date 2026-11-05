@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: box gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 05.03.2025 11:02:31
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\94mm_QF3.7\94mm_qf_3.7.max
@@ -31,7 +31,7 @@
 				{limits -20 20}
 				{speed 0.008}
 				{Position 0 	 0 	 1.5068}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						-1.7883 	 0 	 3.4743
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,11 +54,11 @@
 							0 	 1 	 0
 							1.8294 	 2.7757 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/gun.ply"}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -10.3042 	 -2.1227 	 0.1069}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/breechblock.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -80,7 +80,7 @@
 							0 	 1 	 0
 							-8.9026 	 0.9957 	 -2.2908
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/lever.ply"}
 					}
 				}
 				{bone "visor"
@@ -94,7 +94,7 @@
 						0 	 0 	 1
 						-6.4337 	 6.4312 	 -0.1077
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
@@ -104,7 +104,7 @@
 						0 	 0 	 1
 						-9.6073 	 5.114 	 0.919
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/aim_hor.ply"}
 				}
 			}
 			{bone "standl"
@@ -115,7 +115,7 @@
 					0 	 0 	 1
 					0.0531 	 5.0056 	 -0.0484
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/standl.ply"}
 				{bone "seat4"
 					{matrix34
 						0.0465 	 0.9989 	 0.0028
@@ -140,7 +140,7 @@
 						0 	 0 	 1
 						-21.2681 	 -0.5284 	 -2.7893
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/standl2.ply"}
 				}
 			}
 			{bone "standr"
@@ -151,7 +151,7 @@
 					0 	 0 	 1
 					0.0531 	 -5.0067 	 -0.0484
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/standr.ply"}
 				{bone "seat3"
 					{matrix34
 						0.0323 	 -0.9995 	 -0.001
@@ -171,12 +171,12 @@
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -37.348 	 1.1316 	 -5.7679}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/detail1.ply"}
 				}
 				{bone "standr2"
 					{parameters "id=body;"}
 					{Position -21.2571 	 0.633 	 -2.7897}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/standr2.ply"}
 				}
 			}
 			{bone "box"
@@ -188,7 +188,7 @@
 					-6.927 	 0 	 -2.4729
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_how/box.ply"}
 			}
 			{bone "rod"
 				{parameters "id=body;"}

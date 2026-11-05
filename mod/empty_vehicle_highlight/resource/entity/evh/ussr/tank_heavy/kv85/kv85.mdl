@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 17.11.2024 14:16:07
 ;File:			 E:\SVN GoH RUS 3D models\vehicles\tank_heavy\KV85\kv-85.max
@@ -298,7 +298,7 @@
 				}
 				{speed 0.03}
 				{Position 10.258 	 0 	 15.6592}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -312,7 +312,7 @@
 						0 	 -1 	 0
 						21.9512 	 0.0394 	 4.5068
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -321,7 +321,7 @@
 							0 	 1 	 0
 							10.9742 	 -0.6236 	 0.0394
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/gun.ply"}
 						{bone "foresight1"
 							{Position 58.1808 	 -0.0054 	 0.2045}
 						}
@@ -348,7 +348,7 @@
 						-0.0009 	 0.0872 	 0.9962
 						-8.0632 	 -18.9981 	 5.8398
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/enumerator.ply"}
 				}
 				{bone revolute "mgun_r_rot1"
 					{limits -15 15}
@@ -385,7 +385,7 @@
 								1 	 0 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/mgunshield_rear.ply"}
 						}
 						{bone "dt29_rear"
 							{matrix34
@@ -394,7 +394,7 @@
 								0 	 -1 	 0
 								-5.0622 	 0.9953 	 -0.0042
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/dt29_rear.ply"}
 						}
 					}
 				}
@@ -405,27 +405,27 @@
 						-0.0018 	 0.1045 	 0.9945
 						-6.5252 	 20.6514 	 4.115
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/enumerator1.ply"}
 				}
 				{bone "hatchbase"
 					{parameters "id;"}
 					{Position -11.4197 	 7.1893 	 18.1217}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/hatchbase.ply"}
 					{bone "hatch2b"
 						{parameters "id;"}
 						{Position -4.2796 	 0 	 0.1449}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/hatch2b.ply"}
 					}
 					{bone "hatch2a"
 						{parameters "id;"}
 						{Position 4.2899 	 0 	 0.1471}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/hatch2a.ply"}
 					}
 				}
 				{bone "hatch"
 					{parameters "id;"}
 					{Position -1.6457 	 -8.1973 	 13.4468}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv85/hatch.ply"}
 				}
 				{bone "ammo2"
 					{Position -7.9573 	 -15.9594 	 1.1981}

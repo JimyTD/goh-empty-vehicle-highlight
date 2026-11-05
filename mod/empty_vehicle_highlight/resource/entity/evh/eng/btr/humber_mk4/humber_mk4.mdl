@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/eng/btr/humber_mk4/start.anm"} {speed 0.6}}
@@ -29,21 +29,21 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_mk4/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 1.3789 	 0 	 13.2908}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/turret.ply"}
 				{bone "hatch_gunner1_1"
 					{parameters "id=turret;"}
 					{Position -12.169 	 10.3062 	 10.5335}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/hatch_gunner1_1.ply"}
 					{bone "hatch_gunner1_2"
 						{parameters "id=turret;"}
 						{Position 5.1793 	 -1.4368 	 0.4562}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/hatch_gunner1_2.ply"}
 					}
 				}
 				{bone "hatch_commander1_1"
 					{parameters "id=turret;"}
 					{Position -12.169 	 -1.5655 	 10.5335}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/hatch_commander1_1.ply"}
 					{bone "hatch_commander1_2"
 						{parameters "id=turret;"}
 						{matrix34
@@ -52,7 +52,7 @@
 							0.005 	 0 	 1
 							5.1793 	 -1.4368 	 0.4562
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/hatch_commander1_2.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -66,7 +66,7 @@
 						0 	 -1 	 0
 						10.1969 	 1.8791 	 4.3531
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -75,7 +75,7 @@
 							0 	 1 	 0
 							11.1012 	 0.7609 	 1.8791
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/gun.ply"}
 						{bone "foresight1"
 							{Position 15.9683 	 0 	 0}
 						}
@@ -100,12 +100,12 @@
 				{bone "smoke_shot2_cap"
 					{parameters "id=turret;"}
 					{Position 12.7627 	 -7.3431 	 6.4148}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/smoke_shot2_cap.ply"}
 				}
 				{bone "smoke_shot1_cap"
 					{parameters "id=turret;"}
 					{Position 12.4164 	 -7.3431 	 9.2772}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/smoke_shot1_cap.ply"}
 				}
 				{bone "visor1"
 					{Position 5.2331 	 -6.8701 	 12.5353}
@@ -113,34 +113,34 @@
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -17.7568 	 -9.8275 	 13.4605}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position -0.1575 	 0 	 4.8425}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position -0.1968 	 0 	 3.4843}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at2_3.ply"}
 						}
 					}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -20.2371 	 8.0036 	 10.7439}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.1181 	 -0.0004 	 5.4134}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.1575 	 -0.0002 	 7.0276}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.1968 	 0 	 3.6614}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/at1_4.ply"}
 							}
 						}
 					}
@@ -225,7 +225,7 @@
 					0 	 0.2588 	 0.9659
 					12.4898 	 13.5102 	 2.6368
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/doorleft.ply"}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
@@ -235,7 +235,7 @@
 					0 	 -0.2588 	 0.9659
 					12.4898 	 -13.5102 	 2.6368
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_mk4/doorright.ply"}
 			}
 			{bone "detail3"
 				{parameters "id=body;"}

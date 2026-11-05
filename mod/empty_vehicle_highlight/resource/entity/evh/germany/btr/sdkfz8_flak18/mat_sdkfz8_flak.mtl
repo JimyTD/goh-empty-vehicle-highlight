@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/sdkfz8_flak18"}
-	{bump "$/_vehicle/sdkfz8_flak18_bp"}
-	{specular "$/_vehicle/sdkfz8_flak18_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

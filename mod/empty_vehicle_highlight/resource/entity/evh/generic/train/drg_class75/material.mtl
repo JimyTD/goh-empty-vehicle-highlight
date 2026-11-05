@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/drg_class75"}
-	{bump "$/_vehicle/drg_class75_bp"}
-	{specular "$/_vehicle/drg_class75_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

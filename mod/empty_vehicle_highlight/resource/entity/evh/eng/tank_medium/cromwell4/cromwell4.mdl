@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 seat01 seat02 seat03 seat04 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.06.2025 03:56:50
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_eng\vehicles\tank_medium\Cromwell_4_6_A27M\cromwell4.max
@@ -426,20 +426,20 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/cromwell4/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 9.6063 	 0 	 10.5846}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/turret.ply"}
 				{bone "hatch_turret2_ring"
 					{parameters "id=turret;"}
 					{Position -4.4823 	 7.7954 	 15.0522}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/hatch_turret2_ring.ply"}
 					{bone "hatch_turret2_2"
 						{parameters "id=turret;"}
 						{Position 3.8467 	 0 	 0.0055}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/hatch_turret2_2.ply"}
 					}
 					{bone "hatch_turret2_1"
 						{parameters "id=turret;"}
 						{Position -3.8502 	 0 	 0.0055}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/hatch_turret2_1.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -453,7 +453,7 @@
 						0 	 -1 	 0
 						15.8998 	 -0.0203 	 6.8687
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -462,7 +462,7 @@
 							0 	 1 	 0
 							-0.7677 	 -1.3189 	 0.9049
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/gun.ply"}
 						{bone "foresight1"
 							{Position 42.3639 	 0 	 0}
 						}
@@ -479,39 +479,39 @@
 				{bone "detail8"
 					{parameters "id=turret;"}
 					{Position -18.6717 	 15.0402 	 10.8244}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/detail8.ply"}
 				}
 				{bone "hatch_turret1_1"
 					{parameters "id=turret;"}
 					{Position -9.8286 	 -7.0914 	 14.2112}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/hatch_turret1_1.ply"}
 				}
 				{bone "detail11"
 					{parameters "id=turret;"}
 					{Position -18.6717 	 -15.0402 	 11.0803}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/detail11.ply"}
 				}
 				{bone "hatch_turret1_2"
 					{parameters "id=turret;"}
 					{Position 1.3329 	 -7.0914 	 14.2112}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/hatch_turret1_2.ply"}
 				}
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -11.2801 	 -13.2783 	 15.7466}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.311}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.311}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at2_3.ply"}
 							{bone "at2_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.3307}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at2_4.ply"}
 							}
 						}
 					}
@@ -519,19 +519,19 @@
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -13.8746 	 12.1133 	 16.4553}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.311}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.3307}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.311}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/at1_4.ply"}
 							}
 						}
 					}
@@ -552,11 +552,11 @@
 				}
 				{bone "enumerator1"
 					{Position 3.4834 	 -16.7972 	 5.6197}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{Position 8.2182 	 15.9516 	 5.5149}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/enumerator2.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34
@@ -684,7 +684,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/cromwell4/machine_gun_mount.ply"}
 					}
 					{bone "foresight4"
 						{matrix34

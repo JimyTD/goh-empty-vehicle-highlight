@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 15.10.2024 12:18:19
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Bedford_OYD\bedford_oyd.max
@@ -38,7 +38,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -35.3047 	 17.8573 	 -0.8459}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/backdoor.ply"}
 				}
 				{bone "shield_cover"
 					{parameters "id=shield_cover;"}
@@ -196,7 +196,7 @@
 					0 	 0.0523 	 0.9986
 					36.1068 	 14.8352 	 11.3636
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/doorleft.ply"}
 				{bone "window2"
 					{parameters "id=window2;"}
 					{matrix34
@@ -205,7 +205,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.0462 	 -0.3345 	 13.4766
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/window2.ply"}
 				}
 				{bone "enumerator1"
 					{matrix34
@@ -214,7 +214,7 @@
 						0 	 -0.0523 	 0.9986
 						-7.8049 	 0.8475 	 4.0767
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/enumerator1.ply"}
 				}
 			}
 			{bone "doorright"
@@ -225,7 +225,7 @@
 					0 	 -0.0523 	 0.9986
 					36.1068 	 -14.8352 	 19.3158
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/doorright.ply"}
 				{bone "window3"
 					{parameters "id=window3;"}
 					{matrix34
@@ -234,7 +234,7 @@
 						0 	 0.0523 	 0.9986
 						-8.0462 	 -0.0817 	 5.5354
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/window3.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -243,7 +243,7 @@
 						0 	 0.1045 	 0.9945
 						-4.5079 	 -0.839 	 -3.7488
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd/enumerator2.ply"}
 				}
 			}
 			{bone "window1"

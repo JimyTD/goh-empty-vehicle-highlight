@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/model/mg34"}
-	{bump "$/model/mg34_bp"}
-	{specular "$/model/mg34_sp"}
-	{color "229 229 229 25"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

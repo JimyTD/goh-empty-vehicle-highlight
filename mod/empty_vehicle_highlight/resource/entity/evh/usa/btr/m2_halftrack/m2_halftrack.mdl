@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 mgun_1_rot1 mgun_2_rot1 mgun_3_rot1 ws_shield
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 09.01.2024 17:25:50
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3D_vehicle_usa\vehicles\btr\M2_halftrack\m2_halftrack.max
@@ -94,7 +94,7 @@
 					{parameters "id=body;"}
 					{limits -40 40}
 					{Position -1.5514 	 0.014 	 0.7556}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -25 35}
@@ -104,7 +104,7 @@
 							0 	 -1 	 0
 							-1.7371 	 -0.5689 	 2.3039
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_1_rot2.ply"}
 						{bone "mgun"
 							{Position -10.6876 	 0.7247 	 -0.5988}
 						}
@@ -135,7 +135,7 @@
 						0 	 0 	 1
 						-1.5226 	 0.0142 	 0.5739
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_2_rot1.ply"}
 					{bone revolute "mgun_2_rot2"
 						{parameters "id=body;"}
 						{limits -25 35}
@@ -145,7 +145,7 @@
 							0 	 1 	 0
 							1.134 	 0.0769 	 3.8541
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_2_rot2.ply"}
 						{bone "mgun2"
 							{matrix34
 								-1 	 0 	 0
@@ -181,7 +181,7 @@
 					{parameters "id=body;"}
 					{limits -40 40}
 					{Position -1.5226 	 0.0142 	 0.5739}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_3_rot1.ply"}
 					{bone revolute "mgun_3_rot2"
 						{parameters "id=body;"}
 						{limits -25 35}
@@ -191,7 +191,7 @@
 							0 	 -1 	 0
 							-1.134 	 -0.2786 	 3.8541
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/mgun_3_rot2.ply"}
 						{bone "mgun3"
 							{matrix34
 								1 	 0 	 0
@@ -214,21 +214,21 @@
 			{bone "doorl1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 16.099 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/doorl1.ply"}
 				{bone "doorl_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/doorl_ext.ply"}
 				}
 			}
 			{bone "doorr1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 -16.0992 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/doorr1.ply"}
 				{bone "doorr_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 -0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/doorr_ext.ply"}
 				}
 			}
 			{bone "ws_shield"
@@ -239,7 +239,7 @@
 					0.8771 	 0 	 0.4802
 					19.4999 	 14.5538 	 25.5067
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/ws_shield.ply"}
 			}
 			{bone "holder1"
 				{parameters "id=body;"}
@@ -249,7 +249,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -13.7665 	 18.6898
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/holder1.ply"}
 			}
 			{bone "holder2"
 				{parameters "id=body;"}
@@ -259,7 +259,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -2.4975 	 18.6898
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/holder2.ply"}
 			}
 			{bone "holder3"
 				{parameters "id=body;"}
@@ -269,7 +269,7 @@
 					0 	 -0.9998 	 -0.0175
 					25.7989 	 13.648 	 18.6898
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m2_halftrack/holder3.ply"}
 			}
 			{bone "window1"
 				{parameters "id=window1;"}

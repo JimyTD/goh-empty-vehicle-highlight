@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 13.08.2025 18:06:53
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_fin\3d vehicles\Cannon\76mm_RK27\76mm_rk27_39.max
@@ -48,7 +48,10 @@
 						-0.0031 	 -0.0006 	 1
 						-46.9618 	 0.2638 	 -5.8493
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/turret.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/turret_lod1.ply"}
+					}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -61,7 +64,10 @@
 							0 	 -1 	 0
 							47.7004 	 0 	 9.101
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/gun_rot.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/gun_rot_lod1.ply"}
+						}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -70,7 +76,10 @@
 								0 	 1 	 0
 								-1.2561 	 3.1335 	 0.0077
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/gun.ply"}
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/gun_lod1.ply"}
+							}
 							{bone "foresight1"
 								{Position 14.5215 	 0.0084 	 1.0354}
 							}
@@ -85,12 +94,18 @@
 							{bone "breech"
 								{parameters "id=gun;"}
 								{Position -9.5954 	 -2.1053 	 1.0809}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/breech.ply"}
+									{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/breech_lod1.ply"}
+								}
 							}
 							{bone "handle"
 								{parameters "id=gun;"}
 								{Position -9.5954 	 -2.1053 	 2.4461}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/handle.ply"}
+									{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/handle_lod1.ply"}
+								}
 							}
 						}
 						{bone "sight"
@@ -101,7 +116,10 @@
 								0 	 1 	 0
 								0.6323 	 -0.2191 	 0
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/sight.ply"}
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/sight_lod1.ply"}
+							}
 						}
 					}
 					{bone "shield2"
@@ -112,27 +130,42 @@
 							-0.2079 	 0 	 0.9781
 							48.4633 	 5.0478 	 14.4776
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/shield2.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/shield2_lod1.ply"}
+						}
 					}
 					{bone "plow"
 						{parameters "id=body;"}
 						{Position 2.8 	 0 	 -3.4193}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/plow.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/plow_lod1.ply"}
+						}
 					}
 					{bone "detail1"
 						{parameters "id=body;"}
 						{Position 23.5141 	 -3.3699 	 0.9648}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/detail1.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/detail1_lod1.ply"}
+						}
 					}
 					{bone "rule"
 						{parameters "id=body;"}
 						{Position 1.6295 	 -0.0304 	 -1.6881}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/rule.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/rule_lod1.ply"}
+						}
 					}
 					{bone "plow_closure"
 						{parameters "id=body;"}
 						{Position 6.1967 	 0.698 	 -1.9795}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/plow_closure.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/plow_closure_lod1.ply"}
+						}
 					}
 					{bone "visor2"
 						{Position 39.019 	 -7.9846 	 22.6962}
@@ -148,7 +181,10 @@
 							-0.1822 	 0 	 0.9833
 							40.0253 	 5.0165 	 6.4357
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/aim_wheel2.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/aim_wheel2_lod1.ply"}
+						}
 					}
 					{bone revolute "aim_wheel1"
 						{parameters "id=body;"}
@@ -158,7 +194,10 @@
 							-0.0262 	 0.105 	 0.9941
 							38.0759 	 4.2605 	 3.2898
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/aim_wheel1.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_rk27_39/aim_wheel1_lod1.ply"}
+						}
 					}
 				}
 			}

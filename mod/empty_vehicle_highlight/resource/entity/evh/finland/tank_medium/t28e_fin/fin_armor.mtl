@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/t28e_armfin"}
-	{bump "$/_vehicle/t28e_armfin_bp"}
-	{specular "$/_vehicle/t28e_armfin_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

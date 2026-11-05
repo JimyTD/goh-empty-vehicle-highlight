@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.04.2022 11:51:30
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\maxim MG x4\maxim_4m.max
@@ -24,7 +24,7 @@
 				{parameters "id=body;"}
 				{speed 0.007}
 				{Position 0 	 0.0029 	 19.6286}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -38,7 +38,7 @@
 						0 	 -1 	 0
 						-1.5315 	 0.0002 	 5.4459
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/gun_rot.ply"}
 					{bone "gun4"
 						{parameters "id=gun;"}
 						{matrix34
@@ -47,7 +47,7 @@
 							0 	 1 	 0
 							0.7999 	 2.1359 	 -5.0392
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/gun4.ply"}
 					}
 					{bone "gun3"
 						{parameters "id=gun;"}
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							0.7999 	 2.1359 	 -1.6732
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/gun3.ply"}
 					}
 					{bone "gun2"
 						{parameters "id=gun;"}
@@ -67,7 +67,7 @@
 							0 	 1 	 0
 							0.7999 	 2.1359 	 1.673
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/gun2.ply"}
 					}
 					{bone "gun1"
 						{parameters "id=gun;"}
@@ -77,7 +77,7 @@
 							0 	 1 	 0
 							0.7999 	 2.1359 	 5.0396
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/gun1.ply"}
 					}
 					{bone "foresight14"
 						{matrix34
@@ -155,7 +155,7 @@
 				{bone "belts"
 					{parameters "id=body;"}
 					{Position -2.9251 	 -1.6546 	 5.5339}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/maxim_x4/belts.ply"}
 				}
 				{bone "gunner"
 					{Position -13.2792 	 0 	 -19.6286}

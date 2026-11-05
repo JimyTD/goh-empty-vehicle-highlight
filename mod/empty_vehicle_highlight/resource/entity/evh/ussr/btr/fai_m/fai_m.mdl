@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail1 hatch_turret leftdoor rightdoor turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 26.08.2025 01:43:30
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_rus\vehicles\btr\ba20\FAI-m.max
@@ -49,7 +49,7 @@
 					0.9933 	 0 	 0.1156
 					-32.632 	 -0.3605 	 -3.0141
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/fai_m/detail1.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -57,7 +57,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/btr/fai_m/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -13.2694 	 -0.0049 	 13.419}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/fai_m/turret.ply"}
 				{bone revolute "mgun_c_rot1"
 					{limits -15 15}
 					{speed 0.08}
@@ -86,11 +86,11 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/fai_m/mgun_shield.ply"}
 							{bone "dt29"
 								{parameters "id=turret;"}
 								{Position -2.6833 	 0 	 -0.9067}
-								
+								{VolumeView "../../../../-vehicle/ussr/btr/fai_m/dt29.ply"}
 							}
 						}
 					}
@@ -109,7 +109,7 @@
 				{bone "hatch_turret"
 					{parameters "id=turret;"}
 					{Position -6.9975 	 -0.8987 	 7.8556}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/fai_m/hatch_turret.ply"}
 				}
 			}
 			{bone "engine"
@@ -186,7 +186,7 @@
 				{bone "rightdoor"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/fai_m/rightdoor.ply"}
 				}
 			}
 			{bone "leftdoor_helper"
@@ -198,7 +198,7 @@
 				}
 				{bone "leftdoor"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/fai_m/leftdoor.ply"}
 				}
 			}
 			{bone "headlightr"

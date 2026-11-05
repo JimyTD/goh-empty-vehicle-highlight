@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor aim_ver doorleft doorright foot shield1 shield2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 10.11.2023 15:59:00
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\car\ZIS-6_BM-13-16\zis6_bm13_16.max
@@ -80,7 +80,7 @@
 					}
 					{limits -8 8}
 					{Position -15.0332 	 -0.1038 	 3.274}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/turret.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{limits 0 45}
@@ -90,7 +90,7 @@
 							0 	 -1 	 0
 							0.325 	 -0.085 	 4.5352
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/gun_rot.ply"}
 						{bone "shooter00"
 							{matrix34
 								0.9986 	 0.0523 	 0
@@ -100,7 +100,11 @@
 							}
 							{bone "rocket00"
 								{Position 13.4026 	 -0.0974 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket00.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket00_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket00_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter01"
@@ -112,7 +116,11 @@
 							}
 							{bone "rocket01"
 								{Position 13.4026 	 0.0056 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket01.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket01_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket01_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter02"
@@ -124,7 +132,11 @@
 							}
 							{bone "rocket02"
 								{Position 13.4026 	 0.0167 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket02.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket02_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket02_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter03"
@@ -136,7 +148,11 @@
 							}
 							{bone "rocket03"
 								{Position 13.4026 	 0.0183 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket03.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket03_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket03_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter04"
@@ -148,7 +164,11 @@
 							}
 							{bone "rocket04"
 								{Position 13.4026 	 0.0064 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket04.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket04_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket04_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter05"
@@ -160,7 +180,11 @@
 							}
 							{bone "rocket05"
 								{Position 13.4026 	 0.01 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket05.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket05_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket05_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter06"
@@ -172,7 +196,11 @@
 							}
 							{bone "rocket06"
 								{Position 13.4026 	 -0.0058 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket06.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket06_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket06_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter07"
@@ -184,7 +212,11 @@
 							}
 							{bone "rocket07"
 								{Position 13.4026 	 0.003 	 0.0141}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket07.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket07_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket07_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter08"
@@ -196,7 +228,11 @@
 							}
 							{bone "rocket08"
 								{Position 13.4668 	 -0.0974 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket08.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket08_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket08_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter09"
@@ -208,7 +244,11 @@
 							}
 							{bone "rocket09"
 								{Position 13.4668 	 0.0134 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket09.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket09_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket09_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter10"
@@ -220,7 +260,11 @@
 							}
 							{bone "rocket10"
 								{Position 13.4668 	 0.0273 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket10.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket10_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket10_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter11"
@@ -232,7 +276,11 @@
 							}
 							{bone "rocket11"
 								{Position 13.4668 	 0.0317 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket11.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket11_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket11_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter12"
@@ -244,7 +292,11 @@
 							}
 							{bone "rocket12"
 								{Position 13.4668 	 0.019 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket12.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket12_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket12_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter13"
@@ -256,7 +308,11 @@
 							}
 							{bone "rocket13"
 								{Position 13.4668 	 0.0159 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket13.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket13_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket13_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter14"
@@ -268,7 +324,11 @@
 							}
 							{bone "rocket14"
 								{Position 13.4668 	 0.0028 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket14.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket14_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket14_lod2.ply"}
+								}
 							}
 						}
 						{bone "shooter15"
@@ -280,7 +340,11 @@
 							}
 							{bone "rocket15"
 								{Position 13.4668 	 -0.0101 	 0.0418}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket15.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket15_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/rocket15_lod2.ply"}
+								}
 							}
 						}
 						{bone "foresight"
@@ -295,7 +359,7 @@
 					{bone "wire"
 						{parameters "id=gun;"}
 						{Position -0.0213 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/wire.ply"}
 					}
 					{bone "aimv_rod"
 						{parameters "id=gun;"}
@@ -305,7 +369,7 @@
 							0 	 0 	 1
 							36.7596 	 14.5651 	 0.9928
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/aimv_rod.ply"}
 					}
 					{bone "aimv1_rod"
 						{parameters "id=gun;"}
@@ -315,13 +379,13 @@
 							-0.0914 	 0.4848 	 0.8698
 							35.7087 	 0.0765 	 11.9025
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/aimv1_rod.ply"}
 					}
 				}
 				{bone "foot"
 					{parameters "id=body;"}
 					{Position -29.1226 	 -0.1034 	 -11.1795}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/foot.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
@@ -331,7 +395,7 @@
 						0 	 0 	 1
 						30.8187 	 11.3774 	 1.1392
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=gun;"}
@@ -341,7 +405,7 @@
 						0 	 0 	 1
 						21.7264 	 14.4613 	 4.2668
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/aim_ver.ply"}
 				}
 			}
 			{bone "headlightl"
@@ -353,11 +417,11 @@
 			{bone "shield1"
 				{parameters "id=shield1;"}
 				{Position 24.4609 	 11.2596 	 28.8808}
-				
+				{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/shield1.ply"}
 				{bone "shield2"
 					{parameters "id=shield2;"}
 					{Position -7.2117 	 -22.6086 	 0.8792}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/shield2.ply"}
 				}
 			}
 			{bone "visor2"
@@ -393,21 +457,21 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 22.1478 	 13.0774 	 9.4002}
-				
+				{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/doorleft.ply"}
 				{bone "window4"
 					{parameters "id=window4;"}
 					{Position -7.6339 	 0.6311 	 11.387}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/window4.ply"}
 				}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 22.1478 	 -13.091 	 9.2754}
-				
+				{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/doorright.ply"}
 				{bone "window5"
 					{parameters "id=window5;"}
 					{Position -7.6339 	 -0.6176 	 11.5118}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis6_bm13_16/window5.ply"}
 				}
 			}
 			{bone revolute "steer"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret2 hutchlower hutchupper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t26_31/start.anm"} {speed 0.7}}
@@ -59,11 +59,11 @@
 					0 	 0 	 1
 					-1.2571 	 -9.393 	 23.495
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/aux_turret2.ply"}
 				{bone "hutch2"
 					{parameters "id=aux_turret2;"}
 					{Position 0.0834 	 0 	 10.0063}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/hutch2.ply"}
 				}
 				{bone revolute "mgun_2_rot1"
 					{limits -10 10}
@@ -83,7 +83,7 @@
 								0 	 1 	 0
 								1.4136 	 0.4881 	 -0.0136
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/t2.ply"}
 						}
 						{bone "foresight6"
 							{matrix34
@@ -101,7 +101,7 @@
 								0 	 1 	 0
 								-1.635 	 -0.6728 	 -0.0297
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/dt29_jobb.ply"}
 						}
 					}
 				}
@@ -117,11 +117,11 @@
 					0 	 0 	 1
 					-1.2564 	 9.3891 	 23.495
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/turret.ply"}
 				{bone "hutch1"
 					{parameters "id=turret;"}
 					{Position 0.0801 	 0 	 9.9922}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/hutch1.ply"}
 				}
 				{bone revolute "mgun_1_rot1"
 					{limits -10 10}
@@ -141,7 +141,7 @@
 								0 	 1 	 0
 								1.4136 	 0.4881 	 -0.0003
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/t1.ply"}
 						}
 						{bone "foresight5"
 							{matrix34
@@ -159,7 +159,7 @@
 								0 	 1 	 0
 								-1.635 	 -0.6728 	 0.0209
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/dt29_bal.ply"}
 						}
 					}
 				}
@@ -175,12 +175,12 @@
 			{bone "hutchupper"
 				{parameters "id=body;"}
 				{Position 13.4555 	 -9.7283 	 20.333}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/hutchupper.ply"}
 			}
 			{bone "hutchlower"
 				{parameters "id=body;"}
 				{Position 22.3264 	 -9.7283 	 12.0606}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_31/hutchlower.ply"}
 			}
 			{bone revolute "wheell1"
 				{parameters "id=trackleft;"}

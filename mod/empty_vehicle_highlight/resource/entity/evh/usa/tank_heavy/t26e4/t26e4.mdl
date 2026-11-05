@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 rad_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 27.08.2024 17:19:31
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_usa\vehicles\tank_heavy\M26E4\t26e4.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.007}
 				{Position 2.0735 	 1.8837 	 14.2337}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/turret.ply"}
 				{bone "com_hatch"
 					{parameters "id=turret;"}
 					{matrix34
@@ -44,12 +44,12 @@
 						0 	 0 	 1
 						-8.3903 	 -17.4521 	 21.0046
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/com_hatch.ply"}
 				}
 				{bone "antenna"
 					{parameters "id=turret;"}
 					{Position -31.7548 	 -4.1756 	 24.3661}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/antenna.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -65,16 +65,16 @@
 				{bone revolute "hmgun_cupola"
 					{parameters "id=turret;"}
 					{Position -2.0263 	 10.5039 	 18.6527}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/hmgun_cupola.ply"}
 					{bone "hmgun_hatch1"
 						{parameters "id=turret;"}
 						{Position 0.0031 	 7.7267 	 1.3964}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/hmgun_hatch1.ply"}
 					}
 					{bone "hmgun_hatch2"
 						{parameters "id=turret;"}
 						{Position 0.0011 	 -7.7298 	 1.3964}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/hmgun_hatch2.ply"}
 					}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=turret;"}
@@ -85,7 +85,7 @@
 							0 	 0 	 1
 							8.4436 	 0.0039 	 5.6456
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 30}
@@ -95,7 +95,7 @@
 								0 	 -1 	 0
 								-1.3798 	 -0.129 	 2.6059
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{matrix34
 									1 	 0.0015 	 0
@@ -114,7 +114,7 @@
 							0 	 0.9744 	 0.225
 							-8.036 	 -0.0588 	 1.2418
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/hmg_holder.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.5514 	 -0.0205 	 -18.1085}
@@ -123,27 +123,27 @@
 				{bone "detail2"
 					{parameters "id=turret;"}
 					{Position 3.6934 	 21.9132 	 8.7635}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=turret;"}
 					{Position -1.4466 	 22.4285 	 8.9234}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=turret;"}
 					{Position -5.9716 	 21.6748 	 8.8434}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/detail4.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=turret;"}
 					{Position -10.2851 	 20.0105 	 8.6786}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/detail5.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=turret;"}
 					{Position 8.399 	 20.4291 	 8.9504}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/detail1.ply"}
 				}
 				{bone prizmatic "gun_cylinder"
 					{parameters "id=turret;"}
@@ -153,7 +153,7 @@
 						0 	 -1 	 0
 						3.081 	 -7.419 	 21.2078
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/gun_cylinder.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
@@ -167,7 +167,7 @@
 						0 	 -1 	 0
 						19.6673 	 0 	 8.0681
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -176,7 +176,7 @@
 							0 	 1 	 0
 							9.0605 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -196,7 +196,7 @@
 					}
 					{bone "extra_armor"
 						{parameters "id=gun;"}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/extra_armor.ply"}
 					}
 				}
 				{bone "visor1"
@@ -327,7 +327,7 @@
 					0.0616 	 0 	 0.9981
 					21.9993 	 23.4244 	 12.7434
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/driver_hatch.ply"}
 			}
 			{bone "rad_hatch"
 				{parameters "id=body;"}
@@ -337,7 +337,7 @@
 					0.0616 	 0 	 0.9981
 					22.3406 	 -19.6559 	 12.7244
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/rad_hatch.ply"}
 			}
 			{bone "detail6"
 				{parameters "id=body;"}
@@ -377,10 +377,10 @@
 							0 	 1 	 0
 							0 	 -0.0007 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/mg_shield.ply"}
 						{bone "30cal"
 							{Position -3.1015 	 -0.35 	 -0.2332}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_heavy/t26e4/30cal.ply"}
 						}
 					}
 				}

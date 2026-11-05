@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 19.05.2021 15:15:05
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\Early WW2 tanks\russian\bs3\100mm_BS-3.max
@@ -28,7 +28,7 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -10.5475 	 10.1178 	 1.75}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/standl.ply"}
 				{bone "fixing1"
 					{parameters "id=body;"}
 					{matrix34
@@ -37,7 +37,7 @@
 						-0.1556 	 0.1045 	 0.9823
 						-17.8288 	 9.8433 	 -1.7261
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/fixing1.ply"}
 				}
 				{bone "spadel"
 					{parameters "id=body;"}
@@ -47,17 +47,17 @@
 						0.8067 	 -0.5649 	 -0.1736
 						-59.9805 	 39.5633 	 -8.7994
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/spadel.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/detail2.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/detail1.ply"}
 				}
 				{bone "xl"
 					{parameters "id=body;"}
@@ -67,7 +67,7 @@
 						-0.114 	 0.0798 	 0.9903
 						-57.9799 	 40.5047 	 -7.3922
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/xl.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -89,7 +89,7 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -10.5475 	 -10.1184 	 1.75}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/standr.ply"}
 				{bone "spader"
 					{parameters "id=body;"}
 					{matrix34
@@ -98,17 +98,17 @@
 						0.8067 	 0.5649 	 -0.1736
 						-57.7882 	 -42.6942 	 -8.7994
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/spader.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/detail4.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/detail3.ply"}
 				}
 				{bone "xr"
 					{parameters "id=body;"}
@@ -118,7 +118,7 @@
 						-0.114 	 -0.0798 	 0.9903
 						-57.9799 	 -40.5047 	 -7.3921
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/xr.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -142,16 +142,16 @@
 				{limits -29 29}
 				{speed 0.005}
 				{Position -5.9274 	 -0.0003 	 7.2254}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/turret.ply"}
 				{bone "cylinders"
 					{parameters "id=body;"}
 					{Position -0.7906 	 5.5118 	 7.876}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/cylinders.ply"}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 2.0043 	 0 	 5.944}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/shield.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
@@ -161,7 +161,7 @@
 						0 	 0 	 1
 						-9.8708 	 11.8694 	 3.2643
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
@@ -171,7 +171,7 @@
 						0.0698 	 -0.0087 	 0.9975
 						-11.2338 	 9.1229 	 1.7804
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/aim_hor.ply"}
 				}
 				{bone "visor"
 					{Position 4.0204 	 12.8516 	 11.3292}
@@ -189,7 +189,7 @@
 						0 	 -1 	 0
 						-4.4883 	 -0.003 	 3.6491
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -198,11 +198,11 @@
 							0 	 1 	 0
 							23.9108 	 2.028 	 -0.0029
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/gun.ply"}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -34.2112 	 0 	 0.8943}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/breechblock.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -218,12 +218,12 @@
 						{bone "lever1"
 							{parameters "id=gun;"}
 							{Position -36.5577 	 -4.7342 	 -1.9595}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/lever1.ply"}
 						}
 						{bone "lever2"
 							{parameters "id=gun;"}
 							{Position -36.5577 	 -3.9747 	 -1.9595}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/lever2.ply"}
 						}
 					}
 				}
@@ -231,7 +231,7 @@
 			{bone "shield_lower"
 				{parameters "id=body;"}
 				{Position 0.4018 	 -0.0003 	 0.9557}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/100mm_bs3/shield_lower.ply"}
 			}
 		}
 		{bone "charger"

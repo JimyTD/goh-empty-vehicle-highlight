@@ -1,6 +1,5 @@
-{material envmap
-	{diffuse "$/model/glass2"}
-	{mask "$/model/glass2_mask"}
-	{envmap "$/_vehicle/envmap_gold01"}
-	{blend blend}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

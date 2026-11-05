@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/drifter"}
-	{bump "$/_vehicle/eng/drifter_bp"}
-	{specular "$/_vehicle/eng/drifter_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

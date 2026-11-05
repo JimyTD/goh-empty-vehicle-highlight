@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.04.2025 14:34:03
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_usa\vehicles\car\dodge_wc55\M6_gmc.max
@@ -108,11 +108,11 @@
 					-0.9848 	 0 	 -0.1736
 					-40.9188 	 11.2359 	 1.2386
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/car/m6_gmc/backdoor.ply"}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -1.0893 	 -11.2359 	 4.238}
-					
+					{VolumeView "../../../../-vehicle/usa/car/m6_gmc/detail3.ply"}
 				}
 			}
 			{bone revolute "steer"
@@ -247,7 +247,7 @@
 					0 	 0 	 1
 					-29.168 	 -0.0008 	 14.2232
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/car/m6_gmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -10 15}
@@ -257,11 +257,11 @@
 						0 	 -1 	 0
 						0.918 	 -0.0008 	 3.9609
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/car/m6_gmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/car/m6_gmc/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{matrix34
@@ -270,7 +270,7 @@
 								0 	 1 	 0
 								-9.7975 	 -2.2306 	 1.0695
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/car/m6_gmc/lever.ply"}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
@@ -280,7 +280,7 @@
 								0 	 1 	 0
 								-10.8867 	 -0.1772 	 0.0541
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/car/m6_gmc/breech_block.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -303,7 +303,7 @@
 				{bone "shield"
 					{parameters "id=gun;"}
 					{Position -3.1234 	 -3.2566 	 6.2278}
-					
+					{VolumeView "../../../../-vehicle/usa/car/m6_gmc/shield.ply"}
 				}
 				{bone "aim_hor_helper"
 					{matrix34
@@ -315,7 +315,7 @@
 					{bone "aim_hor"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/car/m6_gmc/aim_hor.ply"}
 					}
 				}
 				{bone "aim_ver_helper"
@@ -328,18 +328,18 @@
 					{bone "aim_ver"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/car/m6_gmc/aim_ver.ply"}
 					}
 				}
 				{bone "rod1"
 					{parameters "id=gun;"}
 					{Position -4.0831 	 2.6826 	 3.8493}
-					
+					{VolumeView "../../../../-vehicle/usa/car/m6_gmc/rod1.ply"}
 				}
 				{bone "rod2"
 					{parameters "id=gun;"}
 					{Position -1.9521 	 -1.1579 	 -0.703}
-					
+					{VolumeView "../../../../-vehicle/usa/car/m6_gmc/rod2.ply"}
 				}
 				{bone "charger"
 					{matrix34

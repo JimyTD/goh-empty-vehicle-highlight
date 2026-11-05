@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 16.05.2021 19:55:21
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_light\PZ38t\pz38t_f.max
@@ -30,7 +30,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz38t_f/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 5.0517 	 0.1002 	 17.9928}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/turret.ply"}
 				{bone "cover"
 					{parameters "id=turret;"}
 					{matrix34
@@ -39,7 +39,7 @@
 						0 	 0 	 1
 						-3.707 	 0.4539 	 7.6452
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/cover.ply"}
 				}
 				{bone revolute "mgun_c_rot1"
 					{limits -7.5 7.5}
@@ -60,7 +60,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/mgun2.ply"}
 							{bone "foresight5"
 								{matrix34
 									1 	 0 	 0
@@ -91,7 +91,7 @@
 						0 	 -1 	 0
 						12.2575 	 -0.0428 	 -1.5864
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -100,7 +100,7 @@
 							0 	 1 	 0
 							-0.0013 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -113,11 +113,11 @@
 				}
 				{bone "enumerator1"
 					{Position -3.1464 	 -12.7283 	 -2.2842}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/enumerator1.ply"}
 				}
 				{bone "enumerator"
 					{Position -3.1464 	 12.7298 	 -2.2842}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/enumerator.ply"}
 				}
 				{bone "ammo2"
 					{matrix34
@@ -254,7 +254,7 @@
 							0 	 1 	 0
 							0.5849 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz38t_f/mgun1.ply"}
 						{bone "foresight4"
 							{Position 12.4005 	 0.071 	 0.2723}
 						}

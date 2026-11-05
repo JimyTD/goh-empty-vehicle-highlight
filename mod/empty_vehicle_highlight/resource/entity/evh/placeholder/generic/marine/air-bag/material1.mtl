@@ -1,4 +1,5 @@
-{material simple
-	{diffuse "$/model_old_mow/air_bag"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

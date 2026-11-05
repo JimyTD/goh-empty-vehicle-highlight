@@ -3,7 +3,8 @@
 ;// empty_vehicle_highlight
 ;// Marks every entity built on /properties/vehicle.ext (no type filter)
 ;// that currently has no crew and is shown on the minimap:
-;//   a proxy entity "evh_<vehicle name>" with the vehicle's own model,
+;//   a proxy entity "evh_<vehicle name>" with the vehicle's own model and an
+;//      invisible marker material (only the highlight pass draws it),
 ;//      spawned at the vehicle's "basis" bone. It is a stuff item, so the
 ;//      vanilla "highlight items" key (C) outlines it, and hovering shows the
 ;//      vehicle name. Proxies are generated per vehicle by tools/gen_proxies.py
@@ -44,7 +45,10 @@
 			{if able "minimap"
 				{if not tagged "destroyed"
 					{if not prop "no_minimap_view"
-						{call "evh_proxy"}
+						;// towed guns and trailers would leave a trail of proxies
+						{if not linked
+							{call "evh_proxy"}
+						}
 						{delay 3 "evh_loop" {call "evh_tick"}}
 					}
 				}

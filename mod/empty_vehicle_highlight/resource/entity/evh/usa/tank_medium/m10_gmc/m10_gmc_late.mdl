@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch2 hatch_driver turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.11.2023 13:30:29
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\m10\m10_gmc_late.max
@@ -36,7 +36,7 @@
 				}
 				{speed 0.006}
 				{Position -0.3647 	 0 	 20.4207}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -50,7 +50,7 @@
 						0 	 -1 	 0
 						20.6891 	 -0.0179 	 4.2598
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -59,7 +59,7 @@
 							0 	 1 	 0
 							-17.6656 	 0 	 -0.0179
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -84,7 +84,7 @@
 								0 	 0 	 1
 								-2.1307 	 0 	 0.5416
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/breechblock.ply"}
 						}
 					}
 				}
@@ -98,7 +98,7 @@
 						0 	 0 	 1
 						-18.6153 	 0.4707 	 13.77
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -10 30}
@@ -108,7 +108,7 @@
 							0 	 -1 	 0
 							-1.3553 	 0.5925 	 2.7821
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -8.757 	 0.8705 	 -0.0269}
 						}
@@ -125,7 +125,7 @@
 				{bone "detail8"
 					{parameters "id=turret;"}
 					{Position 3.2122 	 0 	 8.6434}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/detail8.ply"}
 				}
 				{bone "charger"
 					{matrix34
@@ -167,13 +167,13 @@
 				}
 				{bone "mg_holder"
 					{parameters "id=turret;"}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/mg_holder.ply"}
 					{bone revolute "mgun_a1_rot1"
 						{parameters "id=turret;"}
 						{limits -15 15}
 						{terminator}
 						{Position 10.5038 	 -9.3776 	 12.3218}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/mgun_a1_rot1.ply"}
 						{bone revolute "mgun_a1_rot2"
 							{parameters "id=turret;"}
 							{limits -10 30}
@@ -183,7 +183,7 @@
 								0 	 -1 	 0
 								-1.1143 	 -0.0472 	 3.4982
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/mgun_a1_rot2.ply"}
 							{bone "30cal"
 								{Position -9.1897 	 -0.3266 	 -0.0705}
 							}
@@ -387,7 +387,7 @@
 					0.3907 	 0 	 0.9205
 					29.4307 	 15.023 	 18.8376
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/hatch_driver.ply"}
 			}
 			{bone "fxfire5"
 				{matrix34
@@ -518,7 +518,7 @@
 					0.3584 	 0 	 0.9336
 					29.3168 	 -14.9946 	 18.729
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m10_gmc/hatch2.ply"}
 			}
 		}
 		{bone "body_virt"

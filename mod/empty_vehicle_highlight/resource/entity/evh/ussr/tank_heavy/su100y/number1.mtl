@@ -1,4 +1,5 @@
-{material simple
-	{diffuse "$/vehicle/enumerator/1"}
-	{blend blend}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.11.2023 19:46:15
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\Willys_MB\willys_mb_30cal.max
@@ -87,7 +87,7 @@
 					{parameters "id=body;"}
 					{limits -40 35}
 					{Position 0.0802 	 0 	 15.9814}
-					
+					{VolumeView "../../../../-vehicle/usa/car/Willys_MB/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=body;"}
 						{limits -10 45}
@@ -97,7 +97,7 @@
 							0 	 -1 	 0
 							-1.3263 	 0.2764 	 4.2912
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/car/Willys_MB/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -6.9398 	 -0.4637 	 0.2559}
 						}

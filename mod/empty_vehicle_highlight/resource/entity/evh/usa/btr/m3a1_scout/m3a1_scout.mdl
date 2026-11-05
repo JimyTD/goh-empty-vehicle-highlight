@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_1_rot1 mgun_2_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.11.2023 08:12:02
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\btr\M3A1_commander_car\m3a1_scout.max
@@ -207,7 +207,7 @@
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 7.7418 	 -16.1789 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/doorright.ply"}
 				{bone "armor3"
 					{parameters "id=body;"}
 					{matrix34
@@ -216,13 +216,13 @@
 						0 	 0 	 -1
 						-4.0333 	 -0.8578 	 2.8638
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/armor3.ply"}
 				}
 			}
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 7.7297 	 16.1162 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/doorleft.ply"}
 				{bone "armor2"
 					{parameters "id=body;"}
 					{matrix34
@@ -231,7 +231,7 @@
 						0 	 0 	 -1
 						-4.0593 	 0.8691 	 2.8828
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/armor2.ply"}
 				}
 			}
 			{bone "detail1"
@@ -338,7 +338,7 @@
 							-0.225 	 0 	 0.9744
 							-0.2545 	 0.1621 	 0.4128
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/mgun_1_rot1.ply"}
 						{bone revolute "mgun_1_rot2"
 							{parameters "id=body;"}
 							{limits -15 35}
@@ -348,7 +348,7 @@
 								0 	 -1 	 0
 								-1.4255 	 0.1292 	 3.7753
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/mgun_1_rot2.ply"}
 							{bone "mgun"
 								{Position -10.6472 	 0.594 	 -0.0046}
 							}
@@ -381,7 +381,7 @@
 							0 	 0 	 1
 							-0.111 	 0.1621 	 0.4298
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/mgun_2_rot1.ply"}
 						{bone revolute "mgun_2_rot2"
 							{parameters "id=body;"}
 							{limits -15 35}
@@ -391,7 +391,7 @@
 								0 	 -1 	 0
 								-1.4569 	 0 	 4.7145
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m3a1_scout/mgun_2_rot2.ply"}
 							{bone "mgun2"
 								{matrix34
 									1 	 0 	 0

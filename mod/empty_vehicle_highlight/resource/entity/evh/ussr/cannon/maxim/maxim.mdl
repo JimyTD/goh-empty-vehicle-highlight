@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_angular box handle
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 10.04.2020 09:48:50
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\maxim MG\maxim_M1910-30_export.max
@@ -25,12 +25,12 @@
 			{bone "body_angular"
 				{parameters "id=body;"}
 				{Position -2.3074 	 0 	 -5.5859}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/maxim/body_angular.ply"}
 				{bone revolute "turret"
 					{parameters "id=body;"}
 					{limits 15 15}
 					{Position -1.5165 	 0 	 8.3952}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/maxim/turret.ply"}
 					{bone revolute "gun_rot"
 						{matrix34
 							1 	 0 	 0
@@ -46,7 +46,7 @@
 								0 	 1 	 0
 								1.3185 	 2.1351 	 -0.0001
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/maxim/gun.ply"}
 							{bone "belt2"
 								{parameters "commonmesh;id=body;"}
 								{matrix34
@@ -55,7 +55,7 @@
 									-1 	 0 	 0
 									-2.9822 	 -2.0844 	 -2.6404
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim/belt2.ply"}
 							}
 							{bone "foresight14"
 								{Position 11.6463 	 0 	 -1.0822}
@@ -71,12 +71,12 @@
 							{bone "hammer"
 								{parameters "id=body;"}
 								{Position -7.6077 	 -0.6682 	 -0.9884}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim/hammer.ply"}
 							}
 							{bone "hammer2"
 								{parameters "id=body;"}
 								{Position -7.6667 	 -0.5866 	 -0.9745}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim/hammer2.ply"}
 							}
 						}
 					}
@@ -88,12 +88,12 @@
 							0 	 -1 	 0
 							-0.4746 	 0 	 1.2551
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim/pole.ply"}
 					}
 					{bone "shield"
 						{parameters "id=shield;"}
 						{Position 0.3678 	 0.062 	 4.1199}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim/shield.ply"}
 					}
 					{bone "gunner"
 						{matrix34
@@ -108,7 +108,7 @@
 			{bone "handle"
 				{parameters "id=body;"}
 				{Position -7.0035 	 0 	 -1.3724}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/maxim/handle.ply"}
 			}
 		}
 		{bone "pivot_front"
@@ -174,7 +174,7 @@
 				0 	 0 	 1
 				-6.7825 	 -7.6215 	 2.7351
 			}
-			
+			{VolumeView "../../../../-vehicle/ussr/cannon/maxim/box.ply"}
 			{bone "lid"
 				{parameters "id=body;"}
 				{matrix34
@@ -183,7 +183,7 @@
 					0 	 0.5 	 -0.866
 					0 	 -2.8075 	 2.0549
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/maxim/lid.ply"}
 				{bone "flap"
 					{parameters "id=body;"}
 					{matrix34
@@ -192,7 +192,7 @@
 						0 	 -0.454 	 -0.891
 						0 	 5.4225 	 0.0039
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/maxim/flap.ply"}
 				}
 			}
 			{bone "belt"
@@ -203,7 +203,7 @@
 					-0.9563 	 -0.2924 	 0
 					-0.853 	 5.5379 	 4.4962
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/maxim/belt.ply"}
 			}
 		}
 		{bone "driver2"

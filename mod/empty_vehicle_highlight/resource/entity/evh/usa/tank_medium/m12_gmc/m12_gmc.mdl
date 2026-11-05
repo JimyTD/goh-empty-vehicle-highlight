@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: drum hatch hatch1 hatch2 hatch3 hatch4 lever1 lever2 object001 object002 spade turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 18:59:32
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_usa\vehicles\tank_medium\M12_gmc_155mm\m12_gmc.max
@@ -40,7 +40,7 @@
 				{limits -7 7}
 				{speed 0.004}
 				{Position -27.2621 	 -0.0009 	 1.0538}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -5 30}
@@ -51,7 +51,7 @@
 						0 	 -1 	 0
 						-0.1247 	 0 	 16.3496
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -60,25 +60,25 @@
 							0 	 1 	 0
 							-26.8022 	 1.1206 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -6.4951 	 -5.2604 	 0.3995}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/breech_block.ply"}
 							{bone "levr"
 								{parameters "id=gun;"}
 								{Position -0.0167 	 -0.0502 	 3.6231}
-								
+								{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/levr.ply"}
 							}
 						}
 						{bone "gun_cyl"
 							{parameters "id=gun;"}
 							{Position 1.6728 	 -3.5606 	 5.5271}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/gun_cyl.ply"}
 							{bone "rod_gun"
 								{parameters "id=gun;"}
 								{Position -1.6728 	 3.5606 	 -5.5271}
-								
+								{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/rod_gun.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -102,17 +102,17 @@
 				{bone "aim_hor"
 					{parameters "id=gun;"}
 					{Position -5.8546 	 8.206 	 10.243}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=gun;"}
 					{Position 1.0565 	 9.8495 	 12.8878}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/aim_ver.ply"}
 				}
 				{bone "line"
 					{parameters "id=gun;"}
 					{Position 6.67 	 4.8451 	 11.9639}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/line.ply"}
 				}
 			}
 			{bone "engine"
@@ -149,7 +149,7 @@
 			{bone "spade"
 				{parameters "id=body;"}
 				{Position -54.9687 	 -0.001 	 -5.53}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/spade.ply"}
 			}
 			{bone "sodrony"
 				{parameters "id=body;"}
@@ -236,27 +236,27 @@
 			{bone "hatch"
 				{parameters "id=body;"}
 				{Position 11.4758 	 15.8546 	 4.0007}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/hatch.ply"}
 			}
 			{bone "hatch1"
 				{parameters "id=body;"}
 				{Position 12.434 	 7.1637 	 9.6596}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/hatch1.ply"}
 			}
 			{bone "hatch2"
 				{parameters "id=body;"}
 				{Position 21.3895 	 9.8759 	 8.153}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/hatch2.ply"}
 			}
 			{bone "hatch3"
 				{parameters "id=body;"}
 				{Position 12.434 	 -7.346 	 9.6596}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/hatch3.ply"}
 			}
 			{bone "hatch4"
 				{parameters "id=body;"}
 				{Position 21.3895 	 -9.8863 	 8.153}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/hatch4.ply"}
 			}
 			{bone revolute "wheelr1"
 				{parameters "id=trackright;radius=0.345;"}
@@ -370,17 +370,17 @@
 			{bone "lever2"
 				{parameters "id=body;"}
 				{Position -24.9742 	 -14.6827 	 11.0833}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/lever2.ply"}
 			}
 			{bone "lever1"
 				{parameters "id=body;"}
 				{Position -30.5872 	 -16.0608 	 10.1336}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/lever1.ply"}
 			}
 			{bone "drum"
 				{parameters "id=body;"}
 				{Position -28.3877 	 -18.8023 	 13.5699}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/drum.ply"}
 			}
 			{bone "ammo"
 				{parameters "id=body;"}
@@ -430,12 +430,12 @@
 			{bone "object001"
 				{parameters "id=body;"}
 				{Position 25.3016 	 -13.2247 	 4.9347}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/object001.ply"}
 			}
 			{bone "object002"
 				{parameters "id=body;"}
 				{Position 25.3016 	 6.5064 	 4.9347}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m12_gmc/object002.ply"}
 			}
 			{bone "gunner"
 				{matrix34

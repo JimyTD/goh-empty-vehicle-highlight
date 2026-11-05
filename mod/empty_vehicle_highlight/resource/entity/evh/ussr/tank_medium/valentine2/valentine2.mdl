@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driverhatch1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.11.2025 16:24:46
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_rus\vehicles\Lend-Lease\valentine\MKII\valentine2.max
@@ -34,7 +34,7 @@
 			{bone "driverhatch1"
 				{parameters "id=body;"}
 				{Position 30.7734 	 -13.6084 	 9.4815}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/driverhatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -313,7 +313,7 @@
 				}
 				{speed 0.003}
 				{Position 10.6094 	 0.0403 	 13.3635}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -326,7 +326,7 @@
 						0 	 -1 	 0
 						10.267 	 -1.5412 	 6.0005
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -335,7 +335,7 @@
 							0 	 1 	 0
 							6.3444 	 -0.2582 	 -1.6929
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -353,7 +353,7 @@
 							0 	 1 	 0
 							4.7905 	 0.1689 	 2.7109
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/mgun_turret.ply"}
 					}
 					{bone "foresight5"
 						{Position 10.5866 	 0.4788 	 2.7207}
@@ -376,12 +376,12 @@
 				{bone "hatch1"
 					{parameters "id=turret;"}
 					{Position 0.253 	 0.8703 	 12.6234}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/hatch1.ply"}
 				}
 				{bone "hatch2"
 					{parameters "id=turret;"}
 					{Position -8.161 	 0.8703 	 12.0304}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/valentine2/hatch2.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34

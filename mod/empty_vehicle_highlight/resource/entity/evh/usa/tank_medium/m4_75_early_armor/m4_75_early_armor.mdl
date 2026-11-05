@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver hatch_r mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 17.12.2023 11:06:03
 ;File:			 D:\games\GoH_3d_vehicle_usa\vehicles\tank_medium\M4_75_early\M4_75_early_armor.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.006}
 				{Position 1.3774 	 0.0008 	 14.1404}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						14.0884 	 0 	 5.6236
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							6.9189 	 -0.0117 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/gun.ply"}
 						{bone "foresight1"
 							{Position 35.4037 	 0.0325 	 0.01}
 						}
@@ -70,7 +70,7 @@
 							0 	 1 	 0
 							-7.2381 	 -0.0181 	 -7.9923
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/mgun_turrret.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -85,16 +85,16 @@
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5888 	 -9.1255 	 14.1594}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/cupola_ring.ply"}
 					{bone "hatch_turret1"
 						{parameters "id=turret;"}
 						{Position -0.0703 	 7.5801 	 0.706}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/hatch_turret1.ply"}
 					}
 					{bone "hatch_turret2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.5967 	 0.7197}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/hatch_turret2.ply"}
 					}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=turret;"}
@@ -106,7 +106,7 @@
 							0 	 0 	 1
 							7.8409 	 -0.0004 	 2.5034
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 40}
@@ -117,7 +117,7 @@
 								0 	 -1 	 0
 								-2.5634 	 -0.9953 	 4.8315
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{matrix34
 									1 	 -0.0015 	 0
@@ -131,7 +131,7 @@
 					{bone "mg_holder"
 						{parameters "id=turret;"}
 						{Position -7.3613 	 0.0652 	 2.0786}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/mg_holder.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.3611 	 0.4027 	 -19.8165}
@@ -140,11 +140,11 @@
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -19.8384 	 7.9492 	 17.0466}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{Position -0.0298 	 0 	 7.7229}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/antenna2.ply"}
 					}
 				}
 				{bone "fxfire3"
@@ -296,7 +296,7 @@
 					0.1216 	 0 	 0.9926
 					24.6544 	 -14.0305 	 14.4618
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/hatch_r.ply"}
 			}
 			{bone "hatch_driver"
 				{parameters "id=body;"}
@@ -306,7 +306,7 @@
 					0.1216 	 0 	 0.9926
 					24.6544 	 14.0317 	 14.4618
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/hatch_driver.ply"}
 			}
 			{bone revolute "mgun_h_rot1"
 				{limits -25 20}
@@ -335,7 +335,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2652 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/mgun_hull.ply"}
 					}
 					{bone "hull_mg_shield"
 						{parameters "id=body;"}
@@ -345,7 +345,7 @@
 							0 	 1 	 0
 							0.2552 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_75_early_armor/hull_mg_shield.ply"}
 					}
 				}
 			}

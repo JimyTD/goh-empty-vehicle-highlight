@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover_driver mgun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 12.08.2023 17:46:54
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\tank_medium\t-34-40\T-34-40.max
@@ -209,7 +209,10 @@
 					0 	 0 	 1
 					35.2745 	 3.9935 	 8.5118
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/cover_driver.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/cover_driver_lod1.ply"}
+				}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -217,7 +220,10 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_medium/t3476_40/turret_r.anm"}}
 				}
 				{Position 12.3903 	 -0.0316 	 13.8714}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -229,7 +235,10 @@
 						0 	 -1 	 0
 						12.8576 	 -0.3733 	 3.9048
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -238,7 +247,10 @@
 							0 	 0 	 1
 							23.3155 	 -1.6311 	 -0.3332
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/gun.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -251,7 +263,10 @@
 					{bone "mgun1"
 						{parameters "id=turret;"}
 						{Position 2.2849 	 0.7964 	 4.2575}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/mgun1.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/mgun1_lod1.ply"}
+						}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -270,7 +285,10 @@
 						0 	 0 	 1
 						0.9628 	 -0.0015 	 10.7143
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/cover.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/cover_lod1.ply"}
+					}
 				}
 				{bone "visor1"
 					{matrix34
@@ -303,7 +321,7 @@
 						0.1799 	 -0.4565 	 0.8714
 						-10.7189 	 11.2958 	 5.1515
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/enumerator.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -312,7 +330,7 @@
 						0.1762 	 0.4515 	 0.8747
 						-13.7556 	 -10.1668 	 5.1455
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/enumerator2.ply"}
 				}
 			}
 			{bone "a1"
@@ -418,7 +436,10 @@
 						0 	 -1 	 0
 						-0.0045 	 -0.0093 	 -0.1968
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/mgun.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_40/mgun_lod1.ply"}
+					}
 					{bone "foresight4"
 						{matrix34
 							1 	 0 	 0

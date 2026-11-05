@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/daimler_dingo"}
-	{bump "$/_vehicle/eng/daimler_dingo_bp"}
-	{specular "$/_vehicle/eng/daimler_dingo_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

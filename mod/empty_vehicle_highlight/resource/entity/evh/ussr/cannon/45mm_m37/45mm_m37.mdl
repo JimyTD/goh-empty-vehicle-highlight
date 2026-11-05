@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot shield shield_lower standl standr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/ussr/cannon/45mm_m37/recoil.anm"} {speed 0.8}}
@@ -32,7 +32,11 @@
 					-0.1045 	 0 	 0.9945
 					-1.1525 	 -7.3955 	 -0.3644
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standr.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standr_lod1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standr_lod2.ply"}
+				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
@@ -42,7 +46,11 @@
 					-0.1045 	 0 	 0.9945
 					-1.2887 	 7.5119 	 -0.3296
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standl.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standl_lod1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/standl_lod2.ply"}
+				}
 			}
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
@@ -52,12 +60,12 @@
 					-0.1045 	 0 	 0.9945
 					1.5481 	 -0.0061 	 -1.4234
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/shield_lower.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.9997 	 0.1537 	 2.0228}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -69,11 +77,15 @@
 						0 	 -1 	 0
 						-0.1752 	 -0.0041 	 1.5112
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/gun_rot.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/gun.ply"}
+						}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -90,7 +102,7 @@
 								0 	 1 	 0
 								-12.0001 	 1.7559 	 1.6723
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/lever.ply"}
 						}
 					}
 					{bone "foresight1"
@@ -118,7 +130,7 @@
 						-0.1045 	 0 	 0.9945
 						-7.1467 	 -0.0041 	 0.7784
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/shield.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -128,7 +140,7 @@
 						0.057 	 -0.0119 	 0.9983
 						-11.4201 	 6.0175 	 0.9485
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
@@ -138,7 +150,7 @@
 						0.2183 	 -0.182 	 0.9588
 						-9.9317 	 7.3444 	 3.5299
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_m37/aim_wheel1.ply"}
 				}
 			}
 		}

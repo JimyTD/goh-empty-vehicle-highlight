@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: drvhatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 29.05.2024 19:42:25
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\pz4\pz4d_export.max
@@ -33,7 +33,7 @@
 				}
 				{speed 0.003}
 				{Position -2.2978 	 1.1165 	 19.4809}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/turret.ply"}
 				{bone "visor1"
 					{Position -11.7168 	 0.2288 	 13.1116}
 				}
@@ -55,7 +55,7 @@
 						0 	 -1 	 0
 						13.317 	 -0.0335 	 0.0435
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/gun_rot.ply"}
 					{bone "tmgun"
 						{parameters "id=mantlet;"}
 						{matrix34
@@ -64,7 +64,7 @@
 							0 	 0 	 1
 							5.0576 	 0.8745 	 6.4857
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/tmgun.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -85,7 +85,10 @@
 							0 	 1 	 0
 							16.949 	 0.0131 	 -0.0484
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -98,17 +101,17 @@
 				}
 				{bone "enumerator"
 					{Position 6.2396 	 17.7063 	 -2.3757}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/enumerator.ply"}
 				}
 				{bone "cover03"
 					{parameters "id=turret;"}
 					{Position -11.7118 	 5.0934 	 11.5175}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/cover03.ply"}
 				}
 				{bone "cover04"
 					{parameters "id=turret;"}
 					{Position -11.7119 	 -4.7382 	 11.5175}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/cover04.ply"}
 				}
 			}
 			{bone "detail1"
@@ -177,7 +180,7 @@
 			{bone "drvhatch"
 				{parameters "commonmesh;id=body;"}
 				{Position 29.831 	 11.721 	 12.498}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/drvhatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -381,7 +384,7 @@
 					{bone "hullmg"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 -0.0007}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/hullmg.ply"}
 						{bone "hmgun"
 							{parameters "id=body;"}
 							{matrix34
@@ -390,7 +393,7 @@
 								0 	 -1 	 0
 								2.5408 	 -0.0256 	 0.0752
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer4d/hmgun.ply"}
 							{bone "foresight4"
 								{matrix34
 									1 	 0 	 0

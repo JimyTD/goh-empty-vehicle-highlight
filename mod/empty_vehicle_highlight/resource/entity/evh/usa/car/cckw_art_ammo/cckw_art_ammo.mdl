@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.10.2023 07:10:28
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\cckw\cckw353_ammo\cckw353_ammo.max
@@ -36,7 +36,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -29.3418 	 0 	 1.1981}
-					
+					{VolumeView "../../../../-vehicle/usa/car/cckw_art_ammo/backdoor.ply"}
 					{bone "fxstop2"
 						{matrix34
 							-1 	 0 	 0

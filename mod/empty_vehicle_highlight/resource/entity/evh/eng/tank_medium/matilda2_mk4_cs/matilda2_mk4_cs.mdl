@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 03.11.2025 15:45:08
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Matilda_MKIICS\Matilda2_mk4_cs.max
@@ -47,31 +47,31 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 9.1667 	 0 	 10.5116}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/turret.ply"}
 				{bone "detail5"
 					{parameters "id=turret;"}
 					{Position -18.683 	 2.4805 	 10.022}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/detail5.ply"}
 				}
 				{bone "detail7"
 					{parameters "id=turret;"}
 					{Position -15.4431 	 10.9313 	 10.0221}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/detail7.ply"}
 				}
 				{bone "detail6"
 					{parameters "id=turret;"}
 					{Position -17.2403 	 6.5361 	 5.7476}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/detail6.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=turret;"}
 					{Position -9.0913 	 -13.8447 	 10.022}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/detail4.ply"}
 				}
 				{bone "detail8"
 					{parameters "id=turret;"}
 					{Position -7.8557 	 15.9251 	 5.5261}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/detail8.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -84,7 +84,7 @@
 						0 	 -1 	 0
 						12.1439 	 -0.5311 	 5.2989
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -93,7 +93,7 @@
 							0 	 1 	 0
 							7.4676 	 -0.22 	 -0.5901
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -118,12 +118,12 @@
 						-0.866 	 0 	 -0.5
 						-12.6903 	 5.9099 	 14.075
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/turret_hatch1_2.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -4.6825 	 -9.4882 	 12.3821}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/turret_hatch2.ply"}
 				}
 				{bone "turret_hatch1_1"
 					{parameters "id=turret;"}
@@ -133,7 +133,7 @@
 						0.866 	 0 	 -0.5
 						-0.3675 	 5.9099 	 14.075
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/turret_hatch1_1.ply"}
 				}
 				{bone "visor1"
 					{Position 9.7034 	 9.1732 	 12.8545}
@@ -152,15 +152,15 @@
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -11.111 	 -5.7539 	 13.9569}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 3.0315}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position 0 	 0 	 2.7165}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/at1_3.ply"}
 						}
 					}
 				}
@@ -324,7 +324,7 @@
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 29.0176 	 0 	 3.1153}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk4_cs/driver_hatch.ply"}
 			}
 			{bone revolute "wheell19"
 				{parameters "id=trackleft;radius=0.07;"}

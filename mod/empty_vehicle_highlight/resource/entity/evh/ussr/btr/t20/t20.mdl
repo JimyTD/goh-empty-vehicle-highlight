@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch hatch_driver mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 19:14:08
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_rus\vehicles\btr\t20\t-20.max
@@ -29,12 +29,12 @@
 			{bone "hatch"
 				{parameters "id=body;"}
 				{Position 7.6471 	 -6.5014 	 11.6866}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/t20/hatch.ply"}
 			}
 			{bone "hatch_driver"
 				{parameters "id=body;"}
 				{Position 7.6471 	 6.7092 	 11.6866}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/t20/hatch_driver.ply"}
 			}
 			{bone revolute "wheelr1"
 				{parameters "id=trackright;"}
@@ -204,7 +204,7 @@
 							0 	 1 	 0
 							0.4444 	 -0.0122 	 0.0044
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/t20/mgun_shield.ply"}
 					}
 					{bone "dt29"
 						{parameters "id=body;"}
@@ -214,7 +214,7 @@
 							0 	 1 	 0
 							-2.2231 	 -0.6753 	 -0.0139
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/t20/dt29.ply"}
 					}
 				}
 			}

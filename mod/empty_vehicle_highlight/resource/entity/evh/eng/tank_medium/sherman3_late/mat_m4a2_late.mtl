@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/m4a2_sherman_iii_mid#late"}
-	{bump "$/_vehicle/eng/m4a2_sherman_iii_mid_bp"}
-	{specular "$/_vehicle/eng/m4a2_sherman_iii_mid_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

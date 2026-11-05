@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.04.2025 09:19:34
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_rus\vehicles\cannon\45mm_21k_naval\45mm_21k_naval.max
@@ -33,7 +33,7 @@
 						0.0005 	 0.9999 	 0.0172
 						0.0031 	 -0.0172 	 0.9998
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/turret_sup.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -47,7 +47,7 @@
 							0 	 -1 	 0
 							-6.0811 	 -0.5827 	 9.8257
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -56,7 +56,7 @@
 								0 	 1 	 0
 								7.6038 	 0.3514 	 -0.3921
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/gun.ply"}
 							{bone "fx_invers"
 								{matrix34
 									-1 	 0 	 0
@@ -71,12 +71,12 @@
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -19.3373 	 -1.9559 	 -1.0764}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/lever.ply"}
 							}
 							{bone "breechblock"
 								{parameters "id=gun;"}
 								{Position -20.8716 	 0.3063 	 0.0214}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/breechblock.ply"}
 							}
 						}
 						{bone "rod"
@@ -87,7 +87,7 @@
 								0 	 1 	 0
 								-8.9957 	 -0.0644 	 1.486
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/rod.ply"}
 						}
 						{bone "visor"
 							{matrix34
@@ -101,7 +101,7 @@
 					{bone "aim_v"
 						{parameters "id=body;"}
 						{Position -2.8283 	 7.654 	 2.5092}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/aim_v.ply"}
 					}
 					{bone "aim_h"
 						{parameters "id=body;"}
@@ -111,7 +111,7 @@
 							0 	 0 	 1
 							-5.7145 	 5.3779 	 0.2418
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/45mm_21k_naval/aim_h.ply"}
 					}
 				}
 				{bone "charger"

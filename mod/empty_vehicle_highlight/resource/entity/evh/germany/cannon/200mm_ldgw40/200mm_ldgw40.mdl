@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.05.2022 15:46:56
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\20cm_leLdgW\20cm_leLdgW.max
@@ -24,7 +24,7 @@
 				{bone "gun_rot"
 					{parameters "id=body;"}
 					{Position -0.1378 	 -0.1772 	 0.5541}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{matrix34
@@ -33,7 +33,7 @@
 							-0.0992 	 0 	 0.9951
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/gun.ply"}
 						{bone revolute "foresight"
 							{matrix34
 								0.5547 	 0 	 0.832
@@ -50,14 +50,14 @@
 								6.396 	 0 	 14.5915
 							}
 							{bone "rocket00"
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/rocket00.ply"}
 							}
 						}
 					}
 					{bone "bipod_base"
 						{parameters "id=body;"}
 						{Position 11.8837 	 0.004 	 16.5797}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/bipod_base.ply"}
 						{bone "bipod_cent"
 							{parameters "id=body;"}
 							{matrix34
@@ -66,7 +66,7 @@
 								-0.4801 	 0 	 0.8772
 								4.1014 	 0.0131 	 -7.593
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/bipod_cent.ply"}
 							{bone "stan_l"
 								{parameters "id=body;"}
 								{matrix34
@@ -75,7 +75,7 @@
 									-0.0751 	 0 	 0.9972
 									0.068 	 1.9388 	 4.3537
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/stan_l.ply"}
 								{bone "support1"
 									{matrix34
 										0.8387 	 0 	 -0.5446
@@ -93,7 +93,7 @@
 									-0.065 	 0.5 	 0.8636
 									0.0681 	 -2.0171 	 4.3537
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/200mm_ldgw40/stan_r.ply"}
 								{bone "support2"
 									{matrix34
 										0.8387 	 0.2723 	 -0.4717

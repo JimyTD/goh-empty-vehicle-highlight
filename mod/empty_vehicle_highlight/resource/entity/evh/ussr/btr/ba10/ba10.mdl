@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 22.03.2022 14:01:20
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\btr\ba10\BA-10.max
@@ -53,11 +53,11 @@
 					0.0349 	 0 	 0.9994
 					-25.526 	 0 	 13.4556
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/ba10/turret.ply"}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position 0.3494 	 0 	 10.7937}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/turret_hatch.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -70,7 +70,7 @@
 						0 	 -1 	 0
 						13.4977 	 -0.8425 	 4.6018
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -79,7 +79,7 @@
 							0 	 1 	 0
 							9.3429 	 0.0808 	 -0.8425
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/ba10/gun.ply"}
 						{bone "foresight1"
 							{Position 18.6262 	 -0.001 	 0}
 						}
@@ -95,11 +95,11 @@
 				}
 				{bone "enumerator2"
 					{Position 6.5037 	 10.2293 	 4.8152}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position 6.4841 	 -10.2092 	 4.8152}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/enumerator1.ply"}
 				}
 				{bone "visor1"
 					{Position 7.863 	 6.0382 	 12.3375}
@@ -149,7 +149,7 @@
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/doorleft.ply"}
 				}
 			}
 			{bone "doorr_help"
@@ -162,7 +162,7 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/ba10/doorright.ply"}
 				}
 			}
 			{bone "detail4"
@@ -204,7 +204,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/ba10/mgun_hull.ply"}
 					}
 					{bone "foresight4"
 						{matrix34

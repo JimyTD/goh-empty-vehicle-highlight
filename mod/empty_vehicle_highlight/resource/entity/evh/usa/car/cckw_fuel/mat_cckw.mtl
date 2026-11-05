@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/cckw353_fuel"}
-	{bump "$/_vehicle/cckw353_fuel_bp"}
-	{specular "$/_vehicle/cckw353_fuel_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
-{material simple
-	{diffuse "/entity/-vehicle/placeholder/generic/marine/ya5_k/ya5"}
-	{blend test}
-	{tile}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

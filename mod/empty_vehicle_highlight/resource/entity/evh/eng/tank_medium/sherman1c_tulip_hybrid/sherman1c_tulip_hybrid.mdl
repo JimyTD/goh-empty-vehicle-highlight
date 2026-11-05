@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver hatch_r turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 26.10.2025 05:46:18
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_medium\M4_firefly_IC_hybrid\sherman1c_hybrid_tulip.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.006}
 				{Position 2.1633 	 -0.0077 	 15.0802}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						13.7034 	 0 	 4.9847
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							6.7369 	 -0.0309 	 -0.1302
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/gun.ply"}
 						{bone "foresight1"
 							{Position 66.9337 	 0.0325 	 0.005}
 						}
@@ -70,7 +70,7 @@
 							0 	 1 	 0
 							-3.6409 	 -0.0392 	 -7.5783
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/mgun_turrret.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -85,16 +85,16 @@
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5888 	 -9.1255 	 13.4327}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/cupola_ring.ply"}
 					{bone "hatch_turret1"
 						{parameters "id=turret;"}
 						{Position 0.0074 	 7.5981 	 0.7861}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_turret1.ply"}
 					}
 					{bone "hatch_turret2"
 						{parameters "id=turret;"}
 						{Position 0.0074 	 -7.598 	 0.7861}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_turret2.ply"}
 					}
 					{bone "gunner2"
 						{Position -4.7333 	 0.0663 	 -19.2245}
@@ -103,11 +103,11 @@
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -19.9317 	 7.9492 	 16.294}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{Position -0.0306 	 0 	 8.4145}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/antenna2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -143,7 +143,7 @@
 						0 	 0 	 1
 						-8.4625 	 12.5794 	 13.6003
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_turret.ply"}
 				}
 				{bone "ammo4"
 					{Position 7.6119 	 -0.0028 	 -14.7471}
@@ -154,7 +154,7 @@
 				{bone "tulip_launcher"
 					{parameters "id=turret;"}
 					{Position -6.3131 	 0.0844 	 11.1513}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/tulip_launcher.ply"}
 					{bone revolute "foresight"
 						{limits 0 10}
 						{matrix34
@@ -179,7 +179,7 @@
 								-0.0223 	 0 	 0.9998
 								10.9313 	 0.0065 	 0.3253
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/rocket00.ply"}
 						}
 					}
 					{bone "shooter01"
@@ -197,7 +197,7 @@
 								-0.002 	 0 	 1
 								11.1318 	 -0.3519 	 0.2398
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/rocket01.ply"}
 						}
 					}
 				}
@@ -317,7 +317,7 @@
 					0.5543 	 0 	 0.8323
 					27.1938 	 -17.1674 	 13.7517
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_r.ply"}
 			}
 			{bone "hatch_driver"
 				{parameters "id=body;"}
@@ -327,7 +327,7 @@
 					0.5543 	 0 	 0.8323
 					27.1938 	 17.1904 	 13.7517
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1c_tulip_hybrid/hatch_driver.ply"}
 			}
 			{bone "transmission"
 				{Position 40.7964 	 0.4128 	 -6.6442}

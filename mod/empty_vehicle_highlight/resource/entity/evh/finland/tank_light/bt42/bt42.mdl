@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/finland/tank_light/bt42/start.anm"} {speed 0.7}}
@@ -26,12 +26,12 @@
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 35.8589 	 1.3271 	 10.4625}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt42/driver_hatch1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 45.3201 	 1.3271 	 -0.421}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt42/driver_hatch2.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -40,21 +40,21 @@
 				}
 				{speed 0.002}
 				{Position 14.1725 	 0 	 13.3696}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt42/turret.ply"}
 				{bone "turret_door1"
 					{parameters "id=turret;"}
 					{Position -23.4039 	 6.4978 	 8.3054}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt42/turret_door1.ply"}
 				}
 				{bone "turret_door2"
 					{parameters "id=turret;"}
 					{Position -23.3938 	 -6.5053 	 8.3054}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt42/turret_door2.ply"}
 				}
 				{bone "cover"
 					{parameters "id=turret;"}
 					{Position -8.2031 	 0 	 17.9259}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt42/cover.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -69,7 +69,7 @@
 						0 	 -1 	 0
 						14.0195 	 -0.0002 	 5.5794
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt42/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -78,7 +78,7 @@
 							0 	 1 	 0
 							5.4709 	 0.0358 	 -0.2154
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/bt42/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0

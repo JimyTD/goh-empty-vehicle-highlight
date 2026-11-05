@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.05.2022 21:04:24
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\car\ZIS-5_dshk\ZIS5_dshk.max
@@ -34,15 +34,15 @@
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 7.6007 	 11.3269 	 0.4097}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/doorleft.ply"}
 					{bone "window4"
 						{parameters "id=window4;"}
 						{Position -7.3687 	 0.7618 	 6.6212}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/window4.ply"}
 					}
 					{bone "enumerator2"
 						{Position -10.9948 	 1.4865 	 -4.2254}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/enumerator2.ply"}
 					}
 				}
 				{bone "windscreen"
@@ -73,11 +73,11 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 7.647 	 -11.4001 	 0.4097}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/doorright.ply"}
 					{bone "window5"
 						{parameters "id=window5;"}
 						{Position -7.415 	 -0.6886 	 6.6212}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/window5.ply"}
 					}
 					{bone "enumerator3"
 						{matrix34
@@ -86,7 +86,7 @@
 							0 	 0 	 1
 							-3.8906 	 -0.4355 	 -4.2254
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/enumerator3.ply"}
 					}
 				}
 				{bone "window6"
@@ -131,10 +131,10 @@
 				{bone "back_door"
 					{parameters "id=bodyback;"}
 					{Position -31.0801 	 0.3194 	 3.4925}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/back_door.ply"}
 					{bone "enumerator1"
 						{Position 0.0922 	 -8.034 	 6.8423}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/enumerator1.ply"}
 					}
 				}
 				{bone "l_door"
@@ -161,7 +161,10 @@
 						}
 						{speed 0.02}
 						{Position -2.4333 	 -0.0179 	 1.4812}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/turret.ply"}
+							{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/turret_lod1.ply"}
+						}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{limits -15 25}
@@ -172,7 +175,10 @@
 								0 	 -1 	 0
 								-2.6744 	 0.8404 	 2.0993
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/gun_rot.ply"}
+								{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/gun_rot_lod1.ply"}
+							}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -181,7 +187,10 @@
 									0 	 1 	 0
 									5.0762 	 4.0289 	 0.8404
 								}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/gun.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/gun_lod1.ply"}
+								}
 								{bone "foresight14"
 									{matrix34
 										1 	 -0.0017 	 0.0031
@@ -207,7 +216,10 @@
 									0 	 1 	 0
 									-3.272 	 0.453 	 -1.6847
 								}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/magazine.ply"}
+									{VolumeView "../../../../-vehicle/ussr/car/zis5_dshk/magazine_lod1.ply"}
+								}
 							}
 						}
 						{bone "gunner"

@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/gaz98"}
-	{bump "$/_vehicle/gaz98_bp"}
-	{specular "$/_vehicle/gaz98_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

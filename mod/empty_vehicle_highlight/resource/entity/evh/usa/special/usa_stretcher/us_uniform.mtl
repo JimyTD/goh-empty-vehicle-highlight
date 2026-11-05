@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_hum/usa_uniform/us_uniform_early_var1"}
-	{bump "$/_hum/usa_uniform/us_uniform_early_bp"}
-	{specular "$/_hum/usa_uniform/us_uniform_early_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

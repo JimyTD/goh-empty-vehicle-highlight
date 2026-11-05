@@ -1,4 +1,5 @@
-{material simple
-	{diffuse "$/animation/track_toldi"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

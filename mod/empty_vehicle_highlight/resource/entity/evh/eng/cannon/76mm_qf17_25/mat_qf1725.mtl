@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/76mm_qf1725"}
-	{bump "$/_vehicle/eng/76mm_qf1725_bp"}
-	{specular "$/_vehicle/eng/76mm_qf1725_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

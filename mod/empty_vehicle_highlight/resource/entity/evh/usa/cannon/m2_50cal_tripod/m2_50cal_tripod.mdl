@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: support1 support2 support3 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.11.2023 15:04:33
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\mg_tripods\m2_50cal_tripod.max
@@ -26,7 +26,7 @@
 			{bone "support1"
 				{parameters "id=body;"}
 				{Position 1.8009 	 -0.4289 	 -0.8384}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/support1.ply"}
 			}
 			{bone "support2"
 				{parameters "id=body;"}
@@ -36,7 +36,7 @@
 					-0.3437 	 0 	 0.9391
 					-1.646 	 0.8408 	 -0.6464
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/support2.ply"}
 				{bone "fixer"
 					{parameters "id=body;"}
 					{matrix34
@@ -45,7 +45,7 @@
 						-0.0256 	 0 	 0.9997
 						-6.7876 	 2.6965 	 0.0219
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/fixer.ply"}
 				}
 			}
 			{bone "support3"
@@ -56,14 +56,14 @@
 					-0.3437 	 0 	 0.9391
 					-1.646 	 -0.8408 	 -0.6464
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/support3.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{limits -10 10}
 				{speed 0.008}
 				{Position 0 	 0 	 0.2413}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=body;"}
 					{limits -15 15}
@@ -74,7 +74,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0.5709
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/m2_50cal_tripod/gun_rot.ply"}
 					{bone "mgun"
 						{matrix34
 							1 	 0 	 0

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bipod_base commander gunner stan_l stan_r
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.02.2025 15:28:32
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\81mm_ML3_mortar\81mm_ml3.max
@@ -99,7 +99,7 @@
 								0.0992 	 0 	 0.9951
 								11.1282 	 0.0068 	 14.2675
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/bipod_base.ply"}
 							{bone "stan_r"
 								{parameters "id=body;"}
 								{matrix34
@@ -108,7 +108,7 @@
 									-0.454 	 0 	 0.891
 									3.0854 	 -2.4901 	 -6.0381
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/stan_r.ply"}
 								{bone "support2"
 									{matrix34
 										0.9563 	 0 	 -0.2924
@@ -120,11 +120,11 @@
 								{bone "1r"
 									{parameters "id=body;"}
 									{Position -0.0065 	 -1.2696 	 -7.4633}
-									
+									{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/1r.ply"}
 									{bone "2r"
 										{parameters "id=body;"}
 										{Position -0.0004 	 1.5051 	 -0.0462}
-										
+										{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/2r.ply"}
 									}
 								}
 							}
@@ -136,7 +136,7 @@
 									-0.454 	 0 	 0.891
 									3.0854 	 2.4901 	 -6.0381
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/stan_l.ply"}
 								{bone "support1"
 									{matrix34
 										0.9563 	 0 	 -0.2924
@@ -148,11 +148,11 @@
 								{bone "1l"
 									{parameters "id=body;"}
 									{Position -0.0065 	 1.2696 	 -7.4633}
-									
+									{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/1l.ply"}
 									{bone "2l"
 										{parameters "id=body;"}
 										{Position -0.0004 	 -1.5051 	 -0.0462}
-										
+										{VolumeView "../../../../-vehicle/eng/cannon/81mm_ml3_early/2l.ply"}
 									}
 								}
 							}

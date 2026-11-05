@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 turret ws_shield
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.02.2025 15:15:56
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\btr\M13_halftrack\M13_ halftrack.max
@@ -90,42 +90,42 @@
 			{bone "doorl1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 16.099 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/doorl1.ply"}
 				{bone "doorl_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/doorl_ext.ply"}
 				}
 			}
 			{bone "doorr1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 -16.0992 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/doorr1.ply"}
 				{bone "doorr_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 -0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/doorr_ext.ply"}
 				}
 			}
 			{bone "ws_shield"
 				{parameters "id=body;"}
 				{Position 19.4999 	 14.5538 	 25.5067}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/ws_shield.ply"}
 			}
 			{bone "holder1"
 				{parameters "id=body;"}
 				{Position 25.7989 	 -13.7628 	 18.7239}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/holder1.ply"}
 			}
 			{bone "holder2"
 				{parameters "id=body;"}
 				{Position 25.7989 	 -2.4938 	 18.7239}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/holder2.ply"}
 			}
 			{bone "holder3"
 				{parameters "id=body;"}
 				{Position 25.7989 	 13.6517 	 18.7239}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/holder3.ply"}
 			}
 			{bone "window1"
 				{parameters "id=window1;"}
@@ -405,7 +405,10 @@
 				}
 				{speed 0.008}
 				{Position -30.853 	 0.0008 	 20.398}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/turret.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -418,7 +421,10 @@
 						0 	 -1 	 0
 						-1.2496 	 -6.8634 	 11.5974
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun_rot_lod1.ply"}
+					}
 					{bone "gun1"
 						{parameters "id=gun;"}
 						{matrix34
@@ -427,16 +433,19 @@
 							0 	 1 	 0
 							-7.549 	 2.5529 	 -15.8032
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun1.ply"}
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun1_lod1.ply"}
+						}
 						{bone "shutter1"
 							{parameters "id=gun;"}
 							{Position 6.9329 	 0.2152 	 -0.5}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/shutter1.ply"}
 						}
 						{bone "b1"
 							{parameters "id=gun;"}
 							{Position 17.9804 	 0.0016 	 -0.2601}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/b1.ply"}
 							{bone "shooter00"
 								{matrix34
 									1 	 0 	 0
@@ -449,7 +458,7 @@
 						{bone "ammo1"
 							{parameters "id=gun;"}
 							{Position 10.6396 	 4.2339 	 0.398}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/ammo1.ply"}
 						}
 						{bone "fxshell1"
 							{matrix34
@@ -468,16 +477,19 @@
 							0 	 1 	 0
 							-7.549 	 2.5528 	 1.9616
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun2.ply"}
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/gun2_lod1.ply"}
+						}
 						{bone "shutter2"
 							{parameters "id=gun;"}
 							{Position 6.9329 	 -0.2152 	 -0.5}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/shutter2.ply"}
 						}
 						{bone "b2"
 							{parameters "id=gun;"}
 							{Position 17.9804 	 -0.0016 	 -0.2601}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/b2.ply"}
 							{bone "shooter01"
 								{Position 14.4644 	 0.0006 	 -0.0002}
 							}
@@ -485,7 +497,7 @@
 						{bone "ammo2"
 							{parameters "id=gun;"}
 							{Position 10.6396 	 -4.2339 	 0.398}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/ammo2.ply"}
 						}
 						{bone "fxshell2"
 							{matrix34
@@ -504,7 +516,7 @@
 							0 	 1 	 0
 							3.7174 	 0.3622 	 -18.8217
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/magazine01.ply"}
 					}
 					{bone "magazine02"
 						{parameters "id=gun;"}
@@ -514,7 +526,7 @@
 							0 	 1 	 0
 							2.8495 	 0.3622 	 4.9926
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/magazine02.ply"}
 					}
 					{bone "foresight14"
 						{matrix34
@@ -531,7 +543,7 @@
 				{bone "shield"
 					{parameters "id=turret;"}
 					{Position 7.6195 	 0 	 -0.9356}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m13_mgmc/shield.ply"}
 				}
 				{bone "gunner"
 					{Position 2.3197 	 0 	 0.7631}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: 1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 22.05.2018 20:16:53
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\Early WW2 tanks\germany\sdkfz10\ammo_trailer.max
@@ -62,7 +62,7 @@
 					0.6018 	 0 	 0.7986
 					-17.8668 	 0.0011 	 0.5865
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/trailer/ammo_trailer/1.ply"}
 			}
 			{bone "seat1"
 				{Position 0.4554 	 15.0836 	 9.2007}

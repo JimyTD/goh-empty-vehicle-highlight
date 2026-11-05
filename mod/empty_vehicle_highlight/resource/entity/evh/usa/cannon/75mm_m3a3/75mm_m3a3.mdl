@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: box gun_fixer gun_rot shieldl shieldr standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.09.2023 16:13:33
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\75mm_m3a3\75mm_m3a3.max
@@ -31,7 +31,7 @@
 				{limits -22.5 22.5}
 				{speed 0.01}
 				{Position 0.5227 	 0 	 -2.2282}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						-7.8884 	 0 	 8.7456
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,20 +54,20 @@
 							0 	 1 	 0
 							3.3701 	 2.5845 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -3.0838 	 -1.4378 	 2.1496}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/lever.ply"}
 						}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -2.1333 	 -0.0004 	 -0.2565}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/breechblock.ply"}
 							{bone "lever1"
 								{parameters "id=gun;"}
 								{Position -0.1614 	 -1.6643 	 -0.739}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/lever1.ply"}
 							}
 						}
 						{bone "fx_invers"
@@ -90,7 +90,7 @@
 							0 	 1 	 0
 							12.2842 	 -5.085 	 -4.0809
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/cylinderl.ply"}
 					}
 					{bone "cylinderr"
 						{parameters "id=gun;"}
@@ -100,7 +100,7 @@
 							0 	 1 	 0
 							12.2842 	 -5.085 	 4.0586
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/cylinderr.ply"}
 					}
 				}
 				{bone "aim_h_helper"
@@ -113,7 +113,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/aim_hor.ply"}
 					}
 				}
 				{bone "aim_v_helper"
@@ -131,7 +131,7 @@
 							0 	 0 	 1
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/aim_ver.ply"}
 					}
 				}
 				{bone "visor"
@@ -146,7 +146,7 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position -0.6283 	 -0.0004 	 14.4293}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/shield.ply"}
 					{bone "shieldl_helper"
 						{matrix34
 							0.8658 	 0 	 0.5004
@@ -157,7 +157,7 @@
 						{bone "shieldl"
 							{parameters "id=shield;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/shieldl.ply"}
 						}
 					}
 					{bone "shieldr_helper001"
@@ -170,7 +170,7 @@
 						{bone "shieldr_fixer"
 							{parameters "id=shield;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/shieldr_fixer.ply"}
 						}
 					}
 					{bone "shieldl_helper001"
@@ -183,7 +183,7 @@
 						{bone "shieldl_fixer"
 							{parameters "id=shield;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/shieldl_fixer.ply"}
 						}
 					}
 					{bone "shieldr_helper"
@@ -195,7 +195,7 @@
 						}
 						{bone "shieldr"
 							{parameters "id=shield;"}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/shieldr.ply"}
 						}
 					}
 				}
@@ -208,16 +208,16 @@
 					0 	 0 	 1
 					-0.0945 	 6.18 	 -2.3074
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/standl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -10.1541 	 1.8482 	 1.478}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -28.744 	 -0.3378 	 1.2504}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/detail2.ply"}
 				}
 				{bone "seat4"
 					{matrix34
@@ -244,20 +244,20 @@
 					0 	 0 	 1
 					-0.0945 	 -6.1936 	 -0.005
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/standr.ply"}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -28.744 	 -0.7392 	 -1.0514}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/detail3.ply"}
 				}
 				{bone "legfixer1"
 					{parameters "id=body;"}
 					{Position -46.3507 	 1.6387 	 -3.1078}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/legfixer1.ply"}
 					{bone "legfixer2"
 						{parameters "id=body;"}
 						{Position 0.4442 	 -0.5063 	 0.0253}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/legfixer2.ply"}
 					}
 				}
 				{bone "seat3"
@@ -280,7 +280,7 @@
 			{bone "gun_fixer"
 				{parameters "id=body;"}
 				{Position 7.2905 	 -5.597 	 0.414}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/gun_fixer.ply"}
 			}
 			{bone "suspl"
 				{parameters "id=body;"}
@@ -301,7 +301,7 @@
 					-10.8177 	 0 	 -4.5674
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m3a3/box.ply"}
 			}
 		}
 		{bone "pivot_front"

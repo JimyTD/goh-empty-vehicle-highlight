@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_h aim_v suspl suspr trailer_body
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/20mm_flak38/recoil.anm"} {speed 1.5}}
@@ -143,12 +143,12 @@
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position -9.1879 	 -1.1453 	 4.4709}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak38/aim_h.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position -2.2958 	 -6.1423 	 9.2153}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak38/aim_v.ply"}
 				}
 				{bone "holder"
 					{parameters "id=body;"}
@@ -233,7 +233,7 @@
 				-36.3898 	 0.0024 	 8.635
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak38/trailer_body.ply"}
 			{bone "seat1"
 				{matrix34
 					0 	 -1 	 0
@@ -311,7 +311,7 @@
 					-0.019 	 -13.9206 	 0.0079
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak38/suspr.ply"}
 			}
 			{bone "suspl"
 				{parameters "id=body;"}
@@ -322,7 +322,7 @@
 					-0.019 	 13.8806 	 0.0079
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak38/suspl.ply"}
 			}
 		}
 	}

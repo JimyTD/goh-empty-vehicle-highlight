@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover_driver mgun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 23.08.2024 12:07:42
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_rus\vehicles\tank_medium\t-34-76e_armored\t34_76e.max
@@ -32,7 +32,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_medium/t3476_41e/turret_r.anm"}}
 				}
 				{Position 12.3605 	 0.0507 	 13.1493}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -44,7 +44,7 @@
 						0 	 -1 	 0
 						13.636 	 -0.3733 	 3.9048
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -53,7 +53,7 @@
 							0 	 0 	 1
 							28.822 	 1.6276 	 -0.1362
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -80,7 +80,7 @@
 						0 	 0 	 1
 						1.7412 	 -0.0015 	 10.7143
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/cover.ply"}
 				}
 				{bone "visor1"
 					{matrix34
@@ -113,7 +113,7 @@
 						0 	 -0.0175 	 0.9998
 						-11.5497 	 12.2627 	 6.7423
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/enumerator.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -122,7 +122,7 @@
 						0.0003 	 0.0174 	 0.9998
 						-11.5943 	 -12.8379 	 6.3615
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/enumerator2.ply"}
 				}
 				{bone "armor"
 					{parameters "id=turret;"}
@@ -132,7 +132,7 @@
 						0 	 0 	 1
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/armor.ply"}
 				}
 			}
 			{bone "a1"
@@ -191,7 +191,7 @@
 					0 	 0 	 1
 					35.6791 	 5.5653 	 8.2887
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/cover_driver.ply"}
 			}
 			{bone revolute "mgun_rot"
 				{limits -15 15}
@@ -206,7 +206,7 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3476_41e/mgun.ply"}
 					{bone "foresight4"
 						{matrix34
 							1 	 0 	 0

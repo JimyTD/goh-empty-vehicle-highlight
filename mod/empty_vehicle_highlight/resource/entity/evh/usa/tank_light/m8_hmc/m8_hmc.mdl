@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 front_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 24.11.2023 06:40:09
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_light\M8_scott\M8_scott.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.007}
 				{Position 6.7416 	 -0.0004 	 14.7232}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						14.5186 	 -0.2198 	 5.6636
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,19 +57,19 @@
 							0 	 1 	 0
 							-9.6451 	 -0.1039 	 -1.2618
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/gun.ply"}
 						{bone "foresight1"
 							{Position 25.9826 	 0.0114 	 0.0055}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -4.9077 	 -1.4313 	 2.5727}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/lever.ply"}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -3.6065 	 0.0628 	 0.0028}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/breech_block.ply"}
 						}
 					}
 					{bone "barrel1"
@@ -92,11 +92,11 @@
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
 					{Position -13.3257 	 -3.0738 	 10.2533}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/mgun_a_rot1.ply"}
 					{bone "mgun_a_rotc"
 						{parameters "id=turret;"}
 						{Position 6.689 	 0.0076 	 2.2307}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/mgun_a_rotc.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 20}
@@ -106,7 +106,7 @@
 								0 	 -1 	 0
 								0.2211 	 1.294 	 4.4531
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{matrix34
 									1 	 0 	 0.0015
@@ -127,42 +127,42 @@
 				{bone "aim_ver"
 					{parameters "id=turret;"}
 					{Position 5.4812 	 -11.2205 	 0.9477}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=turret;"}
 					{Position 1.7425 	 -14.0913 	 4.0616}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/aim_hor.ply"}
 				}
 				{bone "shield1"
 					{parameters "id=shield1;"}
 					{Position 4.3263 	 16.3019 	 5.325}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield1.ply"}
 				}
 				{bone "shield2"
 					{parameters "id=shield2;"}
 					{Position -5.7118 	 16.3977 	 5.3617}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield2.ply"}
 				}
 				{bone "shield3"
 					{parameters "id=shield3;"}
 					{Position -16.1698 	 13.6594 	 6.8451}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield3.ply"}
 				}
 				{bone "shield4"
 					{parameters "id=shield4;"}
 					{Position 4.3264 	 -16.3067 	 5.325}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield4.ply"}
 				}
 				{bone "shield5"
 					{parameters "id=shield5;"}
 					{Position -5.7118 	 -16.4025 	 5.3617}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield5.ply"}
 				}
 				{bone "shield6"
 					{parameters "id=shield6;"}
 					{Position -16.1698 	 -13.6642 	 6.8451}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/shield6.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -192,12 +192,12 @@
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 28.7763 	 11.306 	 10.3271}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/driver_hatch1.ply"}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
 				{Position 28.7763 	 -11.4875 	 10.3271}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m8_hmc/front_hatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

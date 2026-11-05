@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 cover_driver turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 13.08.2023 08:47:00
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\tank_medium\su-100\SU-100.max
@@ -479,7 +479,10 @@
 					0 	 0 	 1
 					21.9595 	 -15.2956 	 25.1318
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover1_lod1.ply"}
+				}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
@@ -489,7 +492,10 @@
 					0 	 0 	 1
 					12.1109 	 -15.2951 	 25.1294
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover2.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover2_lod1.ply"}
+				}
 			}
 			{bone "cover_driver"
 				{parameters "id=body;"}
@@ -499,7 +505,10 @@
 					0 	 0 	 1
 					37.5038 	 11.9749 	 12.282
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover_driver.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/cover_driver_lod1.ply"}
+				}
 			}
 			{bone "visor2"
 				{matrix34
@@ -559,7 +568,10 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -568,7 +580,10 @@
 							0 	 0 	 1
 							50.4345 	 0.11 	 0.0162
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/gun.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/su100/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0

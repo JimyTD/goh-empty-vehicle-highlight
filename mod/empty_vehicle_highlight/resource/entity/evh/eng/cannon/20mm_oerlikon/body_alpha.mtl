@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/20mm_polsten"}
-	{bump "$/_vehicle/eng/20mm_polsten_bp"}
-	{specular "$/_vehicle/eng/20mm_polsten_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

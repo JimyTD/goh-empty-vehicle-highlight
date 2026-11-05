@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/jumbo_75_76"}
-	{bump "$/_vehicle/jumbo_75_76_bp"}
-	{specular "$/_vehicle/jumbo_75_76_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

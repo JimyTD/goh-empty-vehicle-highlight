@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail2 mgun_1_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.04.2025 14:20:51
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\car\Schwimmwagen\Schwimmwagen.max
@@ -104,7 +104,7 @@
 				{limits -10 10}
 				{speed 0.008}
 				{Position 14.5155 	 -10.5269 	 13.11}
-				
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/mgun_1_rot1.ply"}
 			}
 			{bone revolute "steer"
 				{parameters "id=body;"}
@@ -145,7 +145,7 @@
 					0.1045 	 0 	 0.9945
 					26.4591 	 0.0003 	 9.7051
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/car/schwimmwagen/detail2.ply"}
 			}
 			{bone "detail3"
 				{parameters "id=body;"}

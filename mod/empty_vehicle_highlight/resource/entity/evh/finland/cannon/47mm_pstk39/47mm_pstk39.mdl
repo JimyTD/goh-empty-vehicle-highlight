@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot standl standr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/47mm_pstk39/recoil.anm"} {speed 0.85}}
@@ -26,7 +26,7 @@
 				{parameters "id=body;"}
 				{limits -31 31}
 				{Position -1.7948 	 0.3306 	 5.2499}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -39,7 +39,7 @@
 						0 	 -1 	 0
 						-1.6821 	 0.2471 	 6.3979
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -48,21 +48,21 @@
 							0 	 1 	 0
 							8.8368 	 1.1153 	 0.0422
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/gun.ply"}
 						{bone "breech_handle"
 							{parameters "id=gun;"}
 							{Position -14.9265 	 -0.8361 	 1.5849}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/breech_handle.ply"}
 						}
 						{bone "handle2"
 							{parameters "id=gun;"}
 							{Position -12.0929 	 -0.5869 	 1.5159}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/handle2.ply"}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -15.5419 	 0.0586 	 -0.0361}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/breech.ply"}
 						}
 						{bone "foresight1"
 							{Position 18.6742 	 -0.0763 	 0.0381}
@@ -80,12 +80,12 @@
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position -1.1326 	 5.9366 	 3.9692}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position -4.1109 	 4.0671 	 1.8231}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/aim_hor.ply"}
 				}
 				{bone "visor2"
 					{Position -9.3833 	 -8.1039 	 8.3445}
@@ -97,12 +97,12 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -15.7085 	 11.5795 	 1.9816}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/standl.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -15.7085 	 -11.3032 	 1.9816}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/47mm_pstk39/standr.ply"}
 			}
 			{bone "support_front"
 				{parameters "id=body;"}

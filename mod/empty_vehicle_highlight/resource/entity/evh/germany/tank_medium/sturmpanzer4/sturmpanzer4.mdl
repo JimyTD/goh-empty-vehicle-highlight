@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatchbackl hatchbackr hatchcomm1 hatchcomm2 hatchmain mgun_shield turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 08.06.2022 15:19:03
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\tank_medium\brummbaer\brummbar.max
@@ -465,7 +465,7 @@
 					0 	 0 	 1
 					-5.2291 	 11.6202 	 26.9482
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/hatchcomm1.ply"}
 			}
 			{bone "hatchcomm2"
 				{parameters "id=body;"}
@@ -475,7 +475,7 @@
 					0 	 0 	 1
 					-13.8289 	 11.6202 	 27.8673
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/hatchcomm2.ply"}
 			}
 			{bone "hatchmain"
 				{parameters "id=body;"}
@@ -485,7 +485,7 @@
 					0 	 0 	 1
 					-13.6712 	 -8.4172 	 27.8861
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/hatchmain.ply"}
 			}
 			{bone "hatchbackl"
 				{parameters "id=body;"}
@@ -495,7 +495,7 @@
 					0.5299 	 0 	 0.848
 					-19.3287 	 2.4198 	 22.8382
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/hatchbackl.ply"}
 			}
 			{bone "hatchbackr"
 				{parameters "id=body;"}
@@ -505,7 +505,7 @@
 					0.5299 	 0 	 0.848
 					-19.2325 	 -8.4111 	 22.7783
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/hatchbackr.ply"}
 			}
 			{bone "hatchengl"
 				{parameters "id=engine;"}
@@ -532,7 +532,7 @@
 				{limits -10 10}
 				{speed 0.015}
 				{Position 23.5767 	 -2.704 	 15.4874}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{limits -5 30}
@@ -542,14 +542,14 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
 							{sequence "repair" {file "../../../../-vehicle/germany/tank_medium/sturmpanzer4/gun_r.anm"}}
 						}
 						{Position 14.5751 	 0.5061 	 -0.058}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -921,7 +921,7 @@
 					-0.8339 	 0 	 0.5519
 					6.2914 	 -8.4172 	 25.8465
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sturmpanzer4/mgun_shield.ply"}
 				{bone revolute "mgun_a_rot1"
 					{parameters "ikspeed2=20;"}
 					{limits -10 19}

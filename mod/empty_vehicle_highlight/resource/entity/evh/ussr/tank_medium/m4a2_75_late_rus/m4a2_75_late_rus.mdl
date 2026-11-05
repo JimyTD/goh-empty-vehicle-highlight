@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 29.10.2022 00:43:13
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\M4A2_75\M4A2_75_late_rus.max
@@ -34,7 +34,7 @@
 				}
 				{speed 0.007}
 				{Position 4.0409 	 0.0051 	 23.7821}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						14.0206 	 -0.0007 	 5.5045
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							9.1046 	 0 	 -0.0007
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/gun.ply"}
 						{bone "foresight1"
 							{Position 32.7324 	 0.0325 	 0.02}
 						}
@@ -70,7 +70,7 @@
 							0 	 1 	 0
 							5.4878 	 1.6679 	 -0.0007
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mantlet.ply"}
 					}
 					{bone "sight"
 						{matrix34
@@ -96,23 +96,23 @@
 							0 	 1 	 0
 							-3.284 	 -0.0181 	 -7.6028
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mgun_turrret.ply"}
 					}
 				}
 				{bone revolute "cupola_ring"
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5888 	 -9.1255 	 14.0052}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/cupola_ring.ply"}
 					{bone "copola_cover1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 7.5969 	 0.7573}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/copola_cover1.ply"}
 					}
 					{bone "copola_cover2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.5977 	 0.7626}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/copola_cover2.ply"}
 					}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=turret;"}
@@ -124,7 +124,7 @@
 							0 	 0 	 1
 							7.8365 	 0 	 2.9824
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 40}
@@ -135,7 +135,7 @@
 								0 	 -1 	 0
 								-1.6332 	 0.9054 	 4.3931
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{Position -7.9638 	 0.153 	 0.9055}
 							}
@@ -149,7 +149,7 @@
 							0 	 1 	 0
 							-7.3071 	 -0.0009 	 2.1024
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/holder.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.7377 	 0.4027 	 -19.313}
@@ -158,11 +158,11 @@
 				{bone "antena1"
 					{parameters "id=body;"}
 					{Position -19.8391 	 7.9492 	 17.7715}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/antena1.ply"}
 					{bone "antena2"
 						{parameters "id=body;"}
 						{Position -0.0306 	 0 	 8.5133}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/antena2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -195,7 +195,7 @@
 						0 	 0 	 1
 						-11.2484 	 10.8505 	 14.708
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/turret_hatch.ply"}
 				}
 				{bone "turret3"
 					{Position 14.9777 	 0.1403 	 6.2137}
@@ -327,7 +327,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -337,7 +337,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/mgun_hull.ply"}
 					}
 				}
 			}
@@ -469,7 +469,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_late_rus/driver_hatch.ply"}
 				}
 			}
 			{bone revolute "wheell1"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driverhatch1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 10.12.2025 18:56:28
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\tank_medium\Valentine_MK_III_IIICS\valentine_MKIII_cs.max
@@ -34,7 +34,7 @@
 			{bone "driverhatch1"
 				{parameters "id=body;"}
 				{Position 30.7734 	 -13.6084 	 9.4815}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/driverhatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -300,7 +300,7 @@
 				}
 				{speed 0.003}
 				{Position 10.57 	 0.0386 	 13.3643}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/turret.ply"}
 				{bone "visor1"
 					{Position 6.6266 	 -6.3046 	 12.3075}
 				}
@@ -314,30 +314,30 @@
 				}
 				{bone "enumerator2"
 					{Position -4.601 	 14.3055 	 8.9585}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position -2.7345 	 -15.0385 	 9.1564}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/enumerator1.ply"}
 				}
 				{bone "cupola"
 					{parameters "id=turret;"}
 					{Position -7.8597 	 0 	 13.3697}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/cupola.ply"}
 					{bone "hatch1"
 						{parameters "id=turret;"}
 						{Position -2.8783 	 -5.9483 	 0.0037}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/hatch1.ply"}
 					}
 					{bone "hatch2"
 						{parameters "id=turret;"}
 						{Position 3.1971 	 5.9549 	 0.0033}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/hatch2.ply"}
 					}
 					{bone "hatch3"
 						{parameters "id=turret;"}
 						{Position 6.1257 	 2.2608 	 0.0032}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/hatch3.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -352,7 +352,7 @@
 						0 	 -1 	 0
 						13.178 	 0.0017 	 5.9863
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/gun_rot.ply"}
 					{bone "foresight5"
 						{Position 10.698 	 -0.7551 	 4.117}
 					}
@@ -367,7 +367,7 @@
 						{bone "76mm_qf3"
 							{parameters "id=gun;"}
 							{Position -1.1256 	 -0.0354 	 0.0097}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk3/76mm_qf3.ply"}
 						}
 						{bone "foresight1"
 							{matrix34

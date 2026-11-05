@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 mgun_a_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 20.07.2025 19:16:03
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_light\hetzer\hetzer.max
@@ -29,7 +29,7 @@
 				{parameters "id=body;"}
 				{terminator}
 				{Position 1.4875 	 9.7398 	 25.4704}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -8 5}
 					{matrix34
@@ -136,7 +136,7 @@
 						0 	 1 	 0
 						0 	 0 	 -0.1388
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -145,7 +145,7 @@
 							0 	 1 	 0
 							33.8439 	 -0.026 	 0.0001
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/gun.ply"}
 						{bone "foresight1"
 							{Position 18.6787 	 0 	 0}
 						}
@@ -159,7 +159,7 @@
 						0 	 0 	 -1
 						-17.1989 	 -9.4599 	 -10.6383
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/viewport.ply"}
 					{bone "visor1"
 						{Position 0.13 	 0.4714 	 -0.0288}
 					}
@@ -259,12 +259,12 @@
 			{bone "cover1"
 				{parameters "id=body;"}
 				{Position -6.1567 	 -9.7282 	 23.1114}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/cover1.ply"}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position -15.2606 	 -10.0278 	 21.5631}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/hetzer/cover2.ply"}
 			}
 			{bone "shield1"
 				{parameters "id=body;"}

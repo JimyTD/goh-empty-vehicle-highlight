@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver1_1 hatch_driver1_2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 07.11.2025 16:48:55
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Crusader_mk3\crusader_mk3.max
@@ -392,16 +392,16 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/crusader_mk3/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 14.1755 	 0 	 7.158}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/turret.ply"}
 				{bone "turret_hatch1_2_latch"
 					{parameters "id=turret;"}
 					{Position -15.4189 	 6.8035 	 11.3596}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/turret_hatch1_2_latch.ply"}
 				}
 				{bone "turret_hatch1_1_latch"
 					{parameters "id=turret;"}
 					{Position -15.4189 	 -6.8035 	 11.3596}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/turret_hatch1_1_latch.ply"}
 				}
 				{bone "hatch_turret1_2"
 					{parameters "id=turret;"}
@@ -411,7 +411,7 @@
 						0 	 0 	 1
 						-11.6374 	 8.133 	 12.5934
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/hatch_turret1_2.ply"}
 				}
 				{bone "hatch_turret1_1"
 					{parameters "id=turret;"}
@@ -421,7 +421,7 @@
 						0 	 0 	 1
 						-11.6374 	 -8.1329 	 12.5934
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/hatch_turret1_1.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -434,7 +434,7 @@
 						0 	 -1 	 0
 						12.557 	 2.5511 	 5.1292
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -443,7 +443,7 @@
 							0 	 1 	 0
 							5.1999 	 -0.0932 	 2.3348
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/gun.ply"}
 						{bone "foresight1"
 							{Position 29.1975 	 0.0001 	 0}
 						}
@@ -467,21 +467,21 @@
 					{bone "mgun_coax"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/mgun_coax.ply"}
 					}
 				}
 				{bone "detail6"
 					{parameters "id=turret;"}
 					{Position -26.3288 	 0 	 7.5381}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/detail6.ply"}
 					{bone "hatch_box"
 						{parameters "id=turret;"}
 						{Position 0.2716 	 -0.0111 	 2.403}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/hatch_box.ply"}
 						{bone "detail7"
 							{parameters "id=turret;"}
 							{Position -3.6194 	 0.3031 	 0.4793}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/detail7.ply"}
 						}
 					}
 				}
@@ -495,28 +495,28 @@
 						0.1052 	 0.7562 	 0.6459
 						-17.1855 	 -15.8991 	 5.7288
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/enumerator1.ply"}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -4.9282 	 7.2698 	 17.3923}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0622 	 0.0289 	 9.2325}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0444 	 0.0098 	 5.17}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0476 	 0.0118 	 7.2725}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at1_4.ply"}
 								{bone "at1_5"
 									{parameters "id=turret;"}
 									{Position -0.0388 	 0.0094 	 5.603}
-									
+									{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at1_5.ply"}
 								}
 							}
 						}
@@ -525,19 +525,19 @@
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -20.4741 	 -8.6177 	 13.9228}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 8.53}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position 0 	 0 	 5.5405}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at2_3.ply"}
 							{bone "at2_4"
 								{parameters "id=turret;"}
 								{Position 0 	 0 	 3.576}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/at2_4.ply"}
 							}
 						}
 					}
@@ -560,7 +560,7 @@
 						0.1052 	 -0.7562 	 0.6459
 						-20.1068 	 15.3779 	 5.8156
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/enumerator2.ply"}
 				}
 				{bone "smoke_shot1"
 					{matrix34
@@ -587,12 +587,12 @@
 			{bone "hatch_driver1_1"
 				{parameters "id=body;"}
 				{Position 40.2451 	 -10.2593 	 8.1053}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/hatch_driver1_1.ply"}
 			}
 			{bone "hatch_driver1_2"
 				{parameters "id=body;"}
 				{Position 30.8138 	 -9.3085 	 7.7474}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/crusader_mk3/hatch_driver1_2.ply"}
 			}
 			{bone "hatch_driver2"
 				{parameters "id=body;"}

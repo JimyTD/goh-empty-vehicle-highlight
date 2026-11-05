@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/marder3m_wheels"}
-	{bump "$/_vehicle/marder3m_wheels_bp"}
-	{specular "$/_vehicle/marder3m_wheels_sp"}
-	{color "230 230 230 152"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

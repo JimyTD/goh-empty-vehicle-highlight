@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_weapon/vickers_mg"}
-	{bump "$/_weapon/vickers_mg_bp"}
-	{specular "$/_weapon/vickers_mg_sp"}
-	{color "255 255 255 50"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

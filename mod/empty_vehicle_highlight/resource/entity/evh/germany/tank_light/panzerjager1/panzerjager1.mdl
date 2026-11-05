@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 18.07.2023 16:54:03
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_light\panzerjager1\panzerjager1.max
@@ -234,20 +234,20 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 1.3264 	 -1.2309 	 15.4695}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/turret.ply"}
 				{bone "gun_shield"
 					{parameters "id=gun_shield;"}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/gun_shield.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=turret;"}
 					{Position -5.9126 	 4.8058 	 1.0357}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/aim_v.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=turret;"}
 					{Position -4.258 	 6.6236 	 2.157}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/aim_h.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -260,7 +260,7 @@
 						0 	 -1 	 0
 						-0.0449 	 -0.0061 	 5.1149
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/gun_rot.ply"}
 					{bone "telo"
 						{parameters "id=gun;"}
 						{matrix34
@@ -269,7 +269,7 @@
 							0 	 1 	 0
 							2.6663 	 -8.7049 	 -0.0005
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/telo.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -279,7 +279,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzerjager1/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0

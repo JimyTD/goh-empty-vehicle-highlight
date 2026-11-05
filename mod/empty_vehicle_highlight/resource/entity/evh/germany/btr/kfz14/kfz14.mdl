@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: commander_rot doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 13.05.2022 20:26:30
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\Kfz_13_14\Kfz_14.max
@@ -85,12 +85,12 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 0.1732 	 13.6391 	 12.384}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/kfz14/doorleft.ply"}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 0.1732 	 -13.9204 	 12.384}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/kfz14/doorright.ply"}
 			}
 			{bone revolute "steer"
 				{parameters "id=body;"}
@@ -236,7 +236,11 @@
 							7.0332 	 -2.3492 	 33.9714
 						}
 						{visibility 0}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/kfz14/binocular.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/kfz14/binocular_lod1.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/kfz14/binocular_lod2.ply"}
+						}
 					}
 				}
 			}

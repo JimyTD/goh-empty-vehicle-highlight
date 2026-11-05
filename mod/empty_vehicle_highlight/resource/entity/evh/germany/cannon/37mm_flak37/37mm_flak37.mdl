@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: lafette
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/37mm_flak37/recoil.anm"} {speed 2}}
@@ -23,7 +23,7 @@
 				-46.7073 	 0 	 8.9996
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/germany/cannon/37mm_flak37/lafette.ply"}
 			{bone "stand1"
 				{parameters "id=body;"}
 				{matrix34
@@ -33,7 +33,7 @@
 					16.1684 	 0.1832 	 0.6952
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/37mm_flak37/stand1.ply"}
 			}
 			{bone "pivot_front"
 				{matrix34
@@ -52,7 +52,7 @@
 						0.2605 	 -21.8137 	 -0.6327
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/37mm_flak37/wheelr1.ply"}
 				}
 				{bone revolute "wheell1"
 					{parameters "id=wheelleft;"}
@@ -63,7 +63,7 @@
 						0.2605 	 22.0872 	 -0.6326
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/37mm_flak37/wheell1.ply"}
 				}
 				{bone "fxtracer1"
 					{matrix34

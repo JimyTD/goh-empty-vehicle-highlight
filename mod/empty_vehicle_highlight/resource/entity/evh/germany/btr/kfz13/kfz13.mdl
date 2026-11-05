@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 01.01.2022 10:53:35
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\Kfz_13_14\Kfz_13.max
@@ -84,12 +84,12 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 0.1732 	 13.6391 	 12.384}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/kfz13/doorleft.ply"}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 0.1732 	 -13.9204 	 12.384}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/kfz13/doorright.ply"}
 			}
 			{bone revolute "steer"
 				{parameters "id=body;"}
@@ -104,7 +104,7 @@
 			{bone revolute "mgun_a_rot1"
 				{parameters "id=body;"}
 				{Position -14.4197 	 -0.1407 	 7.0209}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/kfz13/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{parameters "id=body;"}
 					{limits -35 65}
@@ -114,7 +114,7 @@
 						0 	 -1 	 0
 						7.9599 	 0 	 12.7202
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/kfz13/mgun_a_rot2.ply"}
 					{bone "mgun"
 						{Position -6.4751 	 -0.85 	 0.0021}
 					}
@@ -138,7 +138,7 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 6.0605 	 0 	 13.5313}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/kfz13/shield.ply"}
 				}
 			}
 			{bone "detail1"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorright seat1 seat10 seat2 seat3 seat4 seat5 seat6 seat7 seat8 seat9
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 09.10.2025 16:50:40
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\marine\Mimosa\mimosa.max
@@ -143,11 +143,11 @@
 				{bone "doorright"
 					{parameters "id=cabin;"}
 					{Position 19.0752 	 -23.0511 	 7.7387}
-					
+					{VolumeView "../../../../-vehicle/eng/marine/mimosa/doorright.ply"}
 					{bone "window25"
 						{parameters "id=window19;"}
 						{Position 6.4896 	 -0.8531 	 9.3887}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/mimosa/window25.ply"}
 					}
 				}
 				{bone "window13"

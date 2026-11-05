@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatchl1 hatchl2 hatchr1 hatchr2 mgun_holder1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.11.2023 11:48:53
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\btr\M20\m20_auc.max
@@ -60,12 +60,12 @@
 					0.1219 	 0 	 0.9925
 					24.2785 	 12.6042 	 17.6469
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m20/hatchl1.ply"}
 			}
 			{bone "hatchl2"
 				{parameters "id=body;"}
 				{Position 32.2693 	 7.1347 	 12.907}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m20/hatchl2.ply"}
 			}
 			{bone "hatchr1"
 				{parameters "id=body;"}
@@ -75,12 +75,12 @@
 					0.1219 	 0 	 0.9925
 					24.2835 	 -12.6522 	 17.6298
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m20/hatchr1.ply"}
 			}
 			{bone "hatchr2"
 				{parameters "id=body;"}
 				{Position 32.2693 	 -7.1212 	 12.9071}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m20/hatchr2.ply"}
 			}
 			{bone revolute "steer"
 				{parameters "id=body;"}
@@ -263,12 +263,12 @@
 				{VolumeView "../../../../-vehicle/usa/btr/m20/mgun_ring.ply"}
 				{bone revolute "mgun_holder1"
 					{parameters "id=turret;"}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m20/mgun_holder1.ply"}
 					{bone revolute "mgun_1_rot1"
 						{parameters "id=turret;"}
 						{limits -15 15}
 						{Position 10.372 	 -0.0765 	 1.8029}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m20/mgun_1_rot1.ply"}
 						{bone revolute "mgun_1_rot2"
 							{parameters "id=turret;"}
 							{limits -20 80}
@@ -278,7 +278,7 @@
 								0 	 -1 	 0
 								-1.4518 	 0.1292 	 3.7653
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m20/mgun_1_rot2.ply"}
 							{bone "mgun"
 								{Position -10.6261 	 0.6038 	 0.051}
 							}

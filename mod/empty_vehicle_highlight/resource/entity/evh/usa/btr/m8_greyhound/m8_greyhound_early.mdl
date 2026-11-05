@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatchl1 hatchl2 hatchr1 hatchr2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 30.10.2023 09:18:21
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\btr\M8 greyhound\m8_new.max
@@ -30,7 +30,7 @@
 					{sequence "repair" {file "../../../../-vehicle/usa/btr/m8_greyhound/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 0.007 	 0.0068 	 13.7907}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -43,7 +43,7 @@
 						0 	 -1 	 0
 						12.2085 	 -2.5396 	 7.8122
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -52,11 +52,11 @@
 							0 	 1 	 0
 							20.5714 	 0.0643 	 -2.5396
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/gun.ply"}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -32.5898 	 -0.0727 	 -0.293}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/breechblock.ply"}
 						}
 						{bone "foresight1"
 							{Position 10.7696 	 -0.0008 	 -0.0177}
@@ -70,7 +70,7 @@
 							0 	 1 	 0
 							4.6624 	 -0.635 	 -2.5173
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/mantlet.ply"}
 					}
 					{bone "30cal"
 						{parameters "id=turret;"}
@@ -80,7 +80,7 @@
 							0 	 1 	 0
 							-1.6788 	 -0.1174 	 0.7577
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/30cal.ply"}
 					}
 					{bone "foresight4"
 						{matrix34
@@ -94,22 +94,22 @@
 				{bone "detail6"
 					{parameters "id=turret;"}
 					{Position -0.692 	 15.4281 	 10.376}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/detail6.ply"}
 				}
 				{bone "detail7"
 					{parameters "id=turret;"}
 					{Position -0.692 	 -15.4281 	 10.376}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/detail7.ply"}
 				}
 				{bone "detail8"
 					{parameters "id=turret;"}
 					{Position 9.5583 	 -9.7685 	 6.5269}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/detail8.ply"}
 				}
 				{bone "detail9"
 					{parameters "id=turret;"}
 					{Position 8.2841 	 -10.8674 	 6.5269}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/detail9.ply"}
 				}
 				{bone "ammo1"
 					{matrix34
@@ -188,12 +188,12 @@
 					0.1219 	 0 	 0.9925
 					24.2785 	 12.6042 	 17.6469
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/hatchl1.ply"}
 			}
 			{bone "hatchl2"
 				{parameters "id=body;"}
 				{Position 32.2693 	 7.1347 	 12.907}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/hatchl2.ply"}
 			}
 			{bone "hatchr1"
 				{parameters "id=body;"}
@@ -203,12 +203,12 @@
 					0.1219 	 0 	 0.9925
 					24.2835 	 -12.6522 	 17.6298
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/hatchr1.ply"}
 			}
 			{bone "hatchr2"
 				{parameters "id=body;"}
 				{Position 32.2693 	 -7.1212 	 12.9071}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m8_greyhound/hatchr2.ply"}
 			}
 			{bone revolute "steer"
 				{parameters "id=body;"}

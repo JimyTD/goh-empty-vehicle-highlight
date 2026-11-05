@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_body1 hatch_body2 hatch_left1 hatch_left2 hatch_right1 hatch_right2 mgun_rot turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_heavy/isu122s/start.anm"} {speed 0.7}}
@@ -325,7 +325,10 @@
 			{bone revolute "turret"
 				{parameters "id=turret;"}
 				{Position 33.2867 	 -4.3752 	 13.6063}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -337,7 +340,10 @@
 						0 	 -1 	 0
 						5.3041 	 0.0034 	 3.4527
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -346,7 +352,10 @@
 							0 	 1 	 0
 							30.8448 	 1.4327 	 0.2415
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/gun.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{Position 62.6973 	 -0.1335 	 -1.2305}
 						}
@@ -386,7 +395,10 @@
 					0 	 0 	 1
 					20.1425 	 -13.8147 	 26.914
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_rot.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_rot_lod1.ply"}
+				}
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=body;"}
 					{limits -5 5}
@@ -396,7 +408,10 @@
 						0 	 0 	 1
 						-5.9717 	 0.3562 	 6.2159
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_a_rot1.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_a_rot1_lod1.ply"}
+					}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=body;"}
 						{limits -11 85}
@@ -406,7 +421,10 @@
 							0 	 -1 	 0
 							-2.101 	 -0.6267 	 1.6574
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_a_rot2.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/mgun_a_rot2_lod1.ply"}
+						}
 						{bone "mgun_bone"
 							{Position -3.1256 	 0.0003 	 -0.5967}
 						}
@@ -423,12 +441,18 @@
 				{bone "hatch_right2"
 					{parameters "id=body;"}
 					{Position -0.002 	 -4.2812 	 0.997}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_right2.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_right2_lod1.ply"}
+					}
 				}
 				{bone "hatch_right1"
 					{parameters "id=body;"}
 					{Position -0.002 	 4.3071 	 0.9928}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_right1.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_right1_lod1.ply"}
+					}
 				}
 			}
 			{bone "detail9"
@@ -813,22 +837,34 @@
 			{bone "hatch_left1"
 				{parameters "id=body;"}
 				{Position 19.4056 	 9.9115 	 27.9069}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_left1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_left1_lod1.ply"}
+				}
 			}
 			{bone "hatch_left2"
 				{parameters "id=body;"}
 				{Position 27.9837 	 9.9115 	 27.911}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_left2.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_left2_lod1.ply"}
+				}
 			}
 			{bone "hatch_body2"
 				{parameters "id=body;"}
 				{Position -13.0191 	 7.426 	 20.9729}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_body2.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_body2_lod1.ply"}
+				}
 			}
 			{bone "hatch_body1"
 				{parameters "id=body;"}
 				{Position 0.4545 	 7.4647 	 27.8431}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_body1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/isu122s/hatch_body1_lod1.ply"}
+				}
 			}
 			{bone "fuel1"
 				{matrix34

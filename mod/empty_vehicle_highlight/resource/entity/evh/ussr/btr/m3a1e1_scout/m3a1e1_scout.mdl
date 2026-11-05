@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 31.03.2023 22:48:00
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\Lend-Lease\M3A1E1_scout\m3a1e1.max
@@ -189,7 +189,7 @@
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 7.7418 	 -16.1789 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout/doorright.ply"}
 				{bone "armor3"
 					{parameters "id=body;"}
 					{matrix34
@@ -198,13 +198,13 @@
 						0 	 0 	 -1
 						-4.0333 	 -0.8578 	 2.8638
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout/armor3.ply"}
 				}
 			}
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 7.7297 	 16.1162 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout/doorleft.ply"}
 				{bone "armor2"
 					{parameters "id=body;"}
 					{matrix34
@@ -213,7 +213,7 @@
 						0 	 0 	 -1
 						-4.0593 	 0.8691 	 2.8828
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout/armor2.ply"}
 				}
 			}
 			{bone "detail1"

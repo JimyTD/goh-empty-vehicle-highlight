@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_holder1 gun_rot spade_l1 spade_r1 standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 25.09.2024 19:02:53
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\cannon\155mm_longtom_brit\155mm_m1a1_longtom.max
@@ -33,7 +33,7 @@
 				{Position -28.8873 	 0.0012 	 4.3221}
 				{bone "turret_mesh"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/turret_mesh.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;ikspedd=0.003;"}
 						{animation
@@ -46,7 +46,7 @@
 							0 	 -1 	 0
 							-11.7765 	 0 	 23.4478
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -55,25 +55,25 @@
 								0 	 1 	 0
 								-2.5172 	 0.4652 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/gun.ply"}
 							{bone "breech"
 								{parameters "id=gun;"}
 								{Position -10.7488 	 -6.5962 	 -2.6568}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/breech.ply"}
 								{bone "lever"
 									{parameters "id=gun;"}
 									{Position -2.9969 	 0.1561 	 2.6876}
-									
+									{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/lever.ply"}
 								}
 							}
 							{bone "1"
 								{parameters "id=gun;"}
 								{Position -1.5099 	 -3.6597 	 5.2988}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/1.ply"}
 								{bone "1a"
 									{parameters "id=gun;"}
 									{Position 0 	 0 	 0}
-									
+									{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/1a.ply"}
 								}
 							}
 							{bone "foresight1"
@@ -96,18 +96,18 @@
 								0 	 1 	 0
 								13.6137 	 3.8865 	 0.0455
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/cylinder.ply"}
 						}
 					}
 					{bone "aim_sight"
 						{parameters "id=body;"}
 						{Position -11.8068 	 13.677 	 23.4662}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/aim_sight.ply"}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position -6.0018 	 -14.0004 	 13.4698}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/aim_ver.ply"}
 					}
 					{bone "aim_hor"
 						{parameters "id=body;"}
@@ -117,7 +117,7 @@
 							0.1161 	 0 	 0.9932
 							-12.1211 	 13.8277 	 11.5433
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/aim_hor.ply"}
 					}
 					{bone "visor"
 						{Position -1.4047 	 14.0782 	 31.4135}
@@ -127,26 +127,26 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -32.0242 	 14.6017 	 -0.1895}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/standl.ply"}
 				{bone "coverl"
 					{parameters "id=body;"}
 					{Position -6.2968 	 6.9099 	 -0.1006}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/coverl.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -44.4389 	 27.4274 	 0.2421}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -37.2043 	 17.0064 	 1.3273}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/detail2.ply"}
 				}
 				{bone "spade_l2"
 					{parameters "id=body;"}
 					{Position -84.2665 	 45.3212 	 -6.1205}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/spade_l2.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -173,44 +173,44 @@
 						-45.2383 	 18.6995 	 10.878
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/gun_holder2.ply"}
 					{bone "fixer1"
 						{parameters "id=body;"}
 						{Position 0.0341 	 5.2259 	 -5.38}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/fixer1.ply"}
 					}
 					{bone "fixer2"
 						{parameters "id=body;"}
 						{Position 0.0341 	 -13.1672 	 -5.38}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/fixer2.ply"}
 					}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -32.0242 	 -14.6294 	 -0.1895}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/standr.ply"}
 				{bone "coverr"
 					{parameters "id=body;"}
 					{Position -6.3976 	 -6.7659 	 -0.1006}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/coverr.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -44.5365 	 -27.2867 	 0.2421}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -37.2986 	 -16.8718 	 1.3273}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/detail4.ply"}
 				}
 				{bone "spade_r2"
 					{parameters "id=body;"}
 					{Position -84.4077 	 -45.1106 	 -6.1205}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/spade_r2.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -240,12 +240,12 @@
 			{bone "spade_l1"
 				{parameters "id=body;"}
 				{Position -31.3696 	 10.7727 	 -6.1019}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/spade_l1.ply"}
 			}
 			{bone "spade_r1"
 				{parameters "id=body;"}
 				{Position -31.2694 	 -10.927 	 -6.1886}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/spade_r1.ply"}
 			}
 		}
 		{bone "pivot_front"
@@ -255,7 +255,7 @@
 			{bone "gun_holder1"
 				{parameters "id=body;"}
 				{Position 0.0817 	 0.0012 	 6.1459}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/155mm_m1a1_longtom_eng/gun_holder1.ply"}
 			}
 			{bone prizmatic "suspension_r1"
 				{limits -0.05 0.05}

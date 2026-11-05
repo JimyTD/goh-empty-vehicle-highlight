@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatchl driver_hatchr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 29.06.2023 13:54:42
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_light\Marder3M\Marder 3M.max
@@ -74,7 +74,7 @@
 				{limits -25 25}
 				{speed 0.005}
 				{Position -15.2248 	 0.8052 	 20.2117}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -88,7 +88,7 @@
 						0 	 -1 	 0
 						2.3877 	 0.4848 	 1.7833
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -97,7 +97,7 @@
 							0 	 1 	 0
 							19.2042 	 1.2427 	 -0.1803
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/gun.ply"}
 						{bone "foresight1"
 							{Position 40.9534 	 -0.6748 	 -0.843}
 						}
@@ -112,12 +112,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -34.9992 	 -0.8563 	 -0.8929}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -38.1615 	 0.9624 	 3.9247}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/lever.ply"}
 						}
 					}
 				}
@@ -129,7 +129,7 @@
 						0 	 -1 	 0
 						-0.483 	 7.1701 	 -6.8135
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/aim_h.ply"}
 				}
 				{bone revolute "aim_v"
 					{parameters "id=turret;"}
@@ -139,7 +139,7 @@
 						0.9455 	 -0.3256 	 0
 						-3.642 	 5.8529 	 -4.7305
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/aim_v.ply"}
 				}
 			}
 			{bone "fxsmoke1"
@@ -253,12 +253,12 @@
 			{bone "driver_hatchl"
 				{parameters "id=body;"}
 				{Position 24.3659 	 -0.6785 	 11.2244}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/driver_hatchl.ply"}
 			}
 			{bone "driver_hatchr"
 				{parameters "id=body;"}
 				{Position 24.3724 	 -11.7824 	 11.2309}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/marder3m/driver_hatchr.ply"}
 			}
 			{bone "backdoor"
 				{parameters "id=body;"}

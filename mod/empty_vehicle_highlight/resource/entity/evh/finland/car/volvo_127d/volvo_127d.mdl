@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bodyback_doorcenter dooright doorleft
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:52:30
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\car\Volvo_LV_127D\volvo_127d.max
@@ -31,11 +31,11 @@
 			{bone "dooright"
 				{parameters "id=body;"}
 				{Position 29.2017 	 -14.4882 	 20.6918}
-				
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/dooright.ply"}
 				{bone "glass3"
 					{parameters "id=glass3;"}
 					{Position -8.3892 	 -0.802 	 6.2373}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/glass3.ply"}
 				}
 			}
 			{bone "emblem"
@@ -99,7 +99,7 @@
 				{bone "bodyback_doorcenter"
 					{parameters "id=bodyback;"}
 					{Position -37.0161 	 11.8546 	 -1.6524}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/bodyback_doorcenter.ply"}
 				}
 				{bone "bodyback_doorright"
 					{parameters "id=bodyback;"}
@@ -110,11 +110,11 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 29.2017 	 14.4882 	 20.6918}
-				
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d/doorleft.ply"}
 				{bone "glass2"
 					{parameters "id=glass2;"}
 					{Position -8.3892 	 0.802 	 6.2373}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d/glass2.ply"}
 				}
 			}
 			{bone "glass1"

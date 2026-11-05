@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 cover3 cover4 mgun_a_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 10.07.2025 20:37:03
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_medium\Stug_3_f\stug3f_export2.max
@@ -163,7 +163,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -172,7 +172,7 @@
 							1 	 0 	 0
 							10.0471 	 -0.979 	 -0.6655
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								0 	 0 	 1
@@ -186,7 +186,7 @@
 				{bone "optics"
 					{parameters "id=body;"}
 					{Position -10.7667 	 13.3671 	 6.4331}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/optics.ply"}
 					{bone "visor1"
 						{Position 1.557 	 -0.0079 	 1.7061}
 					}
@@ -399,17 +399,17 @@
 			{bone "cover3"
 				{parameters "id=body;"}
 				{Position -12.5119 	 -12.3109 	 8.0581}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/cover3.ply"}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position 0.1162 	 12.313 	 9.8555}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/cover2.ply"}
 			}
 			{bone "cover1"
 				{parameters "id=body;"}
 				{Position -12.5119 	 12.313 	 8.0581}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/cover1.ply"}
 			}
 			{bone "antenna001"
 				{parameters "id=body;"}
@@ -474,7 +474,7 @@
 						0 	 0.1802 	 0.9836
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3f/cover4.ply"}
 				}
 			}
 		}

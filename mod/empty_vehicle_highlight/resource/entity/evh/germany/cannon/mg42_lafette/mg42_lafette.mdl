@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: support1 support1_leg support2 supportl supportr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.06.2025 10:19:39
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\cannon\8mm_mg_lafette\8mm_lafette42.max
@@ -31,11 +31,11 @@
 					-0.4848 	 0 	 0.8746
 					1.5522 	 0 	 -0.9928
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/support1.ply"}
 				{bone "support1_leg"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 -9.6114}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/support1_leg.ply"}
 				}
 			}
 			{bone "supportl"
@@ -46,7 +46,7 @@
 					0.8235 	 -0.2997 	 -0.4818
 					-6.9916 	 2.7123 	 -3.9383
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/supportl.ply"}
 			}
 			{bone "supportr"
 				{parameters "id=body;"}
@@ -56,7 +56,7 @@
 					0.8219 	 0.2991 	 -0.4848
 					-6.9916 	 -2.7123 	 -3.9383
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/supportr.ply"}
 			}
 			{bone "support2"
 				{parameters "id=body;"}
@@ -66,18 +66,18 @@
 					-0.117 	 0 	 0.9931
 					-7.4825 	 0 	 -4.4755
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/support2.ply"}
 				{bone "support2_leg"
 					{parameters "id=body;"}
 					{Position -4.4082 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/support2_leg.ply"}
 				}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{limits -28 28}
 				{speed 0.003}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=body;"}
 					{limits -15 15}
@@ -88,7 +88,7 @@
 						0 	 -1 	 0
 						1.2931 	 0 	 0.5272
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/gun_rot.ply"}
 					{bone "lafette42_optic"
 						{parameters "id=body;"}
 						{matrix34
@@ -97,7 +97,7 @@
 							0 	 1 	 0
 							-1.2931 	 -0.5272 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/lafette42_optic.ply"}
 					}
 					{bone "lafette_mechtop"
 						{parameters "id=body;"}
@@ -107,16 +107,16 @@
 							0 	 1 	 0
 							-1.2931 	 -0.5272 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/lafette_mechtop.ply"}
 						{bone "lafette_trigger"
 							{parameters "id=body;"}
 							{Position 6.7406 	 0 	 -2.0343}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/lafette_trigger.ply"}
 						}
 					}
 					{bone "recoil"
 						{parameters "id=body;"}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/recoil.ply"}
 						{bone "mgun"
 							{Position -5.1634 	 0.5121 	 0}
 						}
@@ -132,7 +132,7 @@
 				}
 				{bone "lafette_mechbot"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/lafette_mechbot.ply"}
 					{bone "lafette_mech"
 						{parameters "id=body;"}
 						{matrix34
@@ -141,7 +141,7 @@
 							0 	 0 	 1
 							-7.4788 	 0.8996 	 -2.9328
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/mg42_lafette/lafette_mech.ply"}
 					}
 				}
 				{bone "gunner"

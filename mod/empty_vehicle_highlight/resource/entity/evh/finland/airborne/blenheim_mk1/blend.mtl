@@ -1,7 +1,5 @@
-{material envmap
-	{diffuse "$/_vehicle/blenheim_mk1"}
-	{envmap "$/_vehicle/envmap_gold01"}
-	{mask "$/_vehicle/blenheim_mk1_sp"}
-;	{color "230 230 230 50"}
-	{blend blend}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

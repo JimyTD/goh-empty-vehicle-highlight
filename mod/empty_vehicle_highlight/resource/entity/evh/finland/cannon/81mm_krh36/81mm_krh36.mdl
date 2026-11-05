@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 30.01.2022 13:09:36
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\Cannon\Brandt Mle 31\Brandt_Mle31.max
@@ -86,7 +86,7 @@
 				}
 				{bone "gun_rot"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{orientation
@@ -94,11 +94,11 @@
 							0 	 1 	 0
 							-0.0992 	 0 	 0.9951
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/gun.ply"}
 						{bone "grip"
 							{parameters "id=body;"}
 							{Position 10.3485 	 -0.454 	 13.026}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/grip.ply"}
 						}
 						{bone revolute "foresight"
 							{limits -25 20}
@@ -119,7 +119,7 @@
 							0.1353 	 0 	 0.9908
 							11.7828 	 -2.4805 	 15.9007
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/bipod_base.ply"}
 						{bone "stan_l"
 							{parameters "id=body;"}
 							{matrix34
@@ -128,7 +128,7 @@
 								-0.4209 	 0 	 0.9071
 								2.0877 	 2.482 	 -3.6609
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/stan_l.ply"}
 							{bone "support1"
 								{matrix34
 									0.9557 	 0 	 -0.2944
@@ -146,7 +146,7 @@
 								-0.4209 	 0 	 0.9071
 								2.0877 	 2.482 	 -3.6609
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/stan_r.ply"}
 							{bone "support2"
 								{matrix34
 									0.9557 	 0 	 -0.2944
@@ -159,7 +159,7 @@
 						{bone "rod"
 							{parameters "id=body;"}
 							{Position 5.5324 	 5.4054 	 -10.8587}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/81mm_krh36/rod.ply"}
 						}
 					}
 				}

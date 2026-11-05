@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1 back_door2 mgun_a_rot1 mgun_rear_holder rocket_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 19.10.2023 07:28:27
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\btr\sdkfz251d_1_II_stuka_zu_fuss\SdKfz251d_1_stuka.max
@@ -73,7 +73,7 @@
 				{parameters "id=body;"}
 				{limits -40 40}
 				{Position 5.2281 	 0 	 23.821}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 45}
 					{matrix34
@@ -89,7 +89,7 @@
 				{bone "gun_shield"
 					{parameters "id=body;"}
 					{Position -1.8053 	 0 	 3.6417}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/gun_shield.ply"}
 				}
 				{bone "gunner2"
 					{Position -6.115 	 -0.0064 	 2.8301}
@@ -103,7 +103,7 @@
 					0 	 0 	 1
 					-54.2445 	 0.0011 	 22.847
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/mgun_rear_holder.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -131,7 +131,7 @@
 							0 	 -1 	 0
 							0 	 0 	 1
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/mgun_rear_holder2.ply"}
 					}
 					{bone "gunner4"
 						{matrix34
@@ -211,7 +211,7 @@
 					0.8753 	 0 	 0.4836
 					-55.211 	 10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/back_door1.ply"}
 			}
 			{bone "back_door2"
 				{parameters "id=body;"}
@@ -221,7 +221,7 @@
 					0.8734 	 0 	 0.4871
 					-55.2181 	 -10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_1_stuka/back_door2.ply"}
 			}
 			{bone "transmission"
 				{Position 10.2156 	 0 	 -0.2838}

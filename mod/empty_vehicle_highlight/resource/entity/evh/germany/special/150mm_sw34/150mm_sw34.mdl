@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: trailer_back trailer_front turret turret_1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 23.04.2022 13:33:01
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\special\150cm_sw34\150cm_sw34.max
@@ -39,7 +39,7 @@
 						0 	 0 	 1
 						-0.0112 	 -0.0109 	 0.8071
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/turret_1.ply"}
 					{bone "aim_hor"
 						{parameters "id=turret;"}
 						{matrix34
@@ -48,7 +48,7 @@
 							0 	 0 	 1
 							-8.3273 	 -24.1505 	 12.984
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/aim_hor.ply"}
 					}
 					{bone "aim_ver"
 						{parameters "id=turret;"}
@@ -58,7 +58,7 @@
 							0 	 0 	 1
 							-8.3273 	 21.4905 	 12.984
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/aim_ver.ply"}
 					}
 					{bone revolute "gun"
 						{parameters "id=gun;"}
@@ -73,7 +73,7 @@
 							0 	 -1 	 0
 							0 	 0.0065 	 28.2935
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/gun.ply"}
 						{bone "lamp_glass1"
 							{parameters "id=lamp;"}
 							{matrix34
@@ -82,7 +82,7 @@
 								0 	 1 	 0
 								12.9794 	 -0.198 	 0.0022
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/lamp_glass1.ply"}
 						}
 						{bone "foresight3"
 							{matrix34
@@ -100,7 +100,7 @@
 								0 	 1 	 0
 								6.8885 	 -0.2837 	 0.0022
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/lamp_light_spot1.ply"}
 						}
 						{bone "visor"
 							{matrix34
@@ -194,12 +194,12 @@
 					0 	 0 	 0
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/trailer_front.ply"}
 				{bone "susp_front"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/susp_front.ply"}
 				}
 				{bone "kurbli1"
 					{parameters "id=body;"}
@@ -210,12 +210,12 @@
 						-9.3852 	 -5.3426 	 8.8963
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/kurbli1.ply"}
 					{bone "1"
 						{parameters "id=body;"}
 						{Position 6.8274 	 0.0448 	 -5.0505}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/1.ply"}
 					}
 				}
 				{bone "seat2"
@@ -293,7 +293,7 @@
 					0 	 0 	 0
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/trailer_back.ply"}
 				{bone "vonorud"
 					{parameters "id=body;"}
 					{matrix34
@@ -303,12 +303,12 @@
 						-17.3533 	 -0.067 	 1.8524
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/vonorud.ply"}
 				}
 				{bone "susp_back"
 					{parameters "id=body;"}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/susp_back.ply"}
 				}
 				{bone "kurbli2"
 					{parameters "id=body;"}
@@ -319,12 +319,12 @@
 						-9.4199 	 -5.3299 	 9.0212
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/kurbli2.ply"}
 					{bone "2"
 						{parameters "id=body;"}
 						{Position -6.852 	 -0.0782 	 -4.9133}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/germany/special/150mm_sw34/2.ply"}
 					}
 				}
 				{bone "seat1"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 14.07.2023 08:30:21
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\tank_light\t27\t27_export.max
@@ -26,12 +26,12 @@
 			{bone "cover1"
 				{parameters "id=body;"}
 				{Position -11.2603 	 -8.6578 	 16.0133}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t27/cover1.ply"}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position -11.2592 	 9.3596 	 16.0112}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t27/cover2.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -52,7 +52,7 @@
 				{parameters "id=body;"}
 				{limits -12 12}
 				{Position 5.0104 	 -9.7909 	 10.9586}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t27/mgun_h_rot1.ply"}
 				{bone revolute "mgun_h_rot2"
 					{limits -15 15}
 					{matrix34

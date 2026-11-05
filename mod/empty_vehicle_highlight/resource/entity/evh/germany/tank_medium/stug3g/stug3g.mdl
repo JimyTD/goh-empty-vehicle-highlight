@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 hatch mgunh_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 22.03.2021 19:33:09
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\Early WW2 tanks\germany\stug3\stug3_g_early_stuH42\stug3g_export.max
@@ -220,7 +220,7 @@
 			{bone "hatch"
 				{parameters "id=body;"}
 				{Position -6.6341 	 12.2684 	 13.6485}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g/hatch.ply"}
 			}
 			{bone "shieldr"
 				{parameters "id=shieldr;"}
@@ -360,7 +360,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{animation
@@ -372,7 +372,7 @@
 								1 	 0 	 0
 								16.8452 	 0 	 -0.979
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									0 	 0 	 1
@@ -401,12 +401,12 @@
 			{bone "cover1"
 				{parameters "id=body;"}
 				{Position -0.9107 	 -13.0907 	 10.9184}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g/cover1.ply"}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position -10.116 	 -13.0906 	 10.9187}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g/cover2.ply"}
 			}
 			{bone "visor2"
 				{Position 37.8412 	 11.6937 	 -1.1526}

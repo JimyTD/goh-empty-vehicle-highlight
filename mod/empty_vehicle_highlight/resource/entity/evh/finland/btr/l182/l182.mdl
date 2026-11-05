@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.04.2022 14:14:26
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\btr\landswerk182\L182.max
@@ -32,11 +32,11 @@
 				}
 				{speed 0.008}
 				{Position -12.9482 	 0.1109 	 19.0758}
-				
+				{VolumeView "../../../../-vehicle/finland/btr/l182/turret.ply"}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position -0.4146 	 -2.7898 	 10.768}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/l182/turret_hatch.ply"}
 				}
 				{bone revolute "mgun_c_rot1"
 					{limits -15 15}
@@ -67,7 +67,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/btr/l182/mgun_turret.ply"}
 						}
 					}
 				}
@@ -91,7 +91,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/l182/gun.ply"}
 						{bone "foresight1"
 							{Position 21.0255 	 0.0102 	 0.4068}
 						}
@@ -145,7 +145,7 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/l182/doorright.ply"}
 				}
 			}
 			{bone "doorl_help"
@@ -158,7 +158,7 @@
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/l182/doorleft.ply"}
 				}
 			}
 			{bone revolute "mgun_h_rot1"
@@ -190,7 +190,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/l182/mgun_hull.ply"}
 					}
 				}
 			}

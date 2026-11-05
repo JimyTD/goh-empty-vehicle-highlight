@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 05.04.2025 21:28:11
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\btr\bren_carrier\bren_carrier.max
@@ -293,7 +293,7 @@
 				{parameters "id=body;"}
 				{limits -20 20}
 				{Position 27.5699 	 6.3296 	 7.013}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/mgun_h_rot1.ply"}
 				{bone revolute "mgun_h_rot2"
 					{parameters "id=body;"}
 					{limits -27 27}
@@ -302,7 +302,7 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/bren_carrier/mgun_h_rot2.ply"}
 					{bone "mgun"
 						{Position -5.3629 	 0.0488 	 0.0089}
 					}

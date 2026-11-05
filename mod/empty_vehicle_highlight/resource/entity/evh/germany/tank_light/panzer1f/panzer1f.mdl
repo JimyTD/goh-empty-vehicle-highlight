@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 18.07.2023 13:06:36
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_light\pz1f\pz1f_export.max
@@ -29,18 +29,18 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer1f/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 0.8863 	 0 	 17.4679}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer1f/turret.ply"}
 				{bone "hatch"
 					{parameters "id=turret;"}
 					{Position -10.1931 	 -0.012 	 7.111}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer1f/hatch.ply"}
 				}
 				{bone "visor1"
 					{Position 0.7599 	 0.0222 	 7.6155}
 				}
 				{bone "enumerator"
 					{Position -1.4935 	 -11.3109 	 3.6624}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer1f/enumerator.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -64,7 +64,7 @@
 							0 	 -1 	 0
 							0 	 0 	 -1
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer1f/mantlet.ply"}
 					}
 					{bone "mgu"
 						{parameters "id=turret;"}
@@ -74,7 +74,7 @@
 							0 	 1 	 0
 							-1.2332 	 -0.5107 	 -0.2049
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer1f/mgu.ply"}
 					}
 					{bone "foresight14"
 						{Position 11.4122 	 0.0617 	 -0.007}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 11.10.2025 23:55:03
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Bedford_OYD\bedford_oyd_AMMO.max
@@ -37,7 +37,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -35.3047 	 17.8573 	 -0.8459}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/backdoor.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=bodyback;"}
@@ -120,7 +120,7 @@
 					0 	 0.0523 	 0.9986
 					36.1068 	 14.8352 	 11.3636
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/doorleft.ply"}
 				{bone "glass2"
 					{parameters "id=glass2;"}
 					{matrix34
@@ -129,7 +129,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.0462 	 -0.3345 	 13.4766
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/glass2.ply"}
 				}
 				{bone "enumerator1"
 					{matrix34
@@ -138,7 +138,7 @@
 						0 	 -0.0523 	 0.9986
 						-7.8049 	 0.8475 	 4.0767
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/enumerator1.ply"}
 				}
 			}
 			{bone "doorright"
@@ -149,7 +149,7 @@
 					0 	 -0.0523 	 0.9986
 					36.1068 	 -14.8352 	 19.3158
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/doorright.ply"}
 				{bone "glass3"
 					{parameters "id=glass3;"}
 					{matrix34
@@ -158,7 +158,7 @@
 						0 	 0.0523 	 0.9986
 						-8.0462 	 -0.0817 	 5.5354
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/glass3.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -167,7 +167,7 @@
 						0 	 0.1045 	 0.9945
 						-4.5079 	 -0.839 	 -3.7488
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyd_art_ammo/enumerator2.ply"}
 				}
 			}
 			{bone "glass1"

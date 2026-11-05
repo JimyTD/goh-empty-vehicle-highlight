@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1 back_door2 bino_holder detail5 detail6 driver_hatch front_hatch1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 15.06.2024 13:28:18
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\Nashorn\nashorn.max
@@ -46,7 +46,7 @@
 					0.0075 	 -0.0045 	 1
 					-5.5907 	 -0.0559 	 16.5451
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/turret.ply"}
 				{bone "visor1"
 					{matrix34
 						1 	 0 	 0.0075
@@ -58,7 +58,7 @@
 				{bone "gun_shield"
 					{parameters "id=gun;"}
 					{Position 11.6412 	 -0.0186 	 11.5136}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/gun_shield.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=gun;"}
@@ -68,7 +68,7 @@
 						-0.0075 	 0.0045 	 1
 						-2.5292 	 -8.6349 	 5.0316
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/aim_ver.ply"}
 				}
 				{bone "aim_hor_helper"
 					{matrix34
@@ -80,7 +80,7 @@
 					{bone "aim_hor"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/aim_hor.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -93,7 +93,7 @@
 						0 	 -1 	 0
 						-0.1602 	 3.0503 	 12.0024
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -102,7 +102,7 @@
 							0.0075 	 1 	 0
 							-7.1195 	 0.0516 	 3.208
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{matrix34
@@ -111,7 +111,7 @@
 								-0.0075 	 0.0045 	 1
 								-9.1338 	 0.1498 	 -0.4211
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
@@ -121,7 +121,7 @@
 								-0.0075 	 0.0045 	 1
 								-10.8913 	 1.1249 	 3.275
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/lever.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -192,7 +192,7 @@
 					0 	 0 	 1
 					33.2556 	 9.6163 	 16.9341
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/driver_hatch.ply"}
 			}
 			{bone "front_hatch1"
 				{parameters "id=body;"}
@@ -202,7 +202,7 @@
 					0 	 0 	 1
 					37.8053 	 10.6928 	 15.5589
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/front_hatch1.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -222,7 +222,7 @@
 					0 	 0 	 1
 					-59.454 	 10.0614 	 0.771
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail5.ply"}
 			}
 			{bone revolute "detail6"
 				{parameters "id=body;"}
@@ -232,7 +232,7 @@
 					0 	 0 	 1
 					-60.3849 	 -10.8001 	 0.1077
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/detail6.ply"}
 			}
 			{bone "detail9"
 				{parameters "id=body;"}
@@ -505,11 +505,11 @@
 				{bone "bino_holder"
 					{parameters "id=body;"}
 					{Position -28.0175 	 20.9833 	 27.3719}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/bino_holder.ply"}
 					{bone "bino"
 						{parameters "id=body;"}
 						{Position -3.5175 	 -6.7893 	 2.1106}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/bino.ply"}
 					}
 				}
 				{bone "door_helper1"
@@ -527,7 +527,7 @@
 							0 	 0 	 1
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/back_door1.ply"}
 					}
 				}
 				{bone "door_helper2"
@@ -540,7 +540,7 @@
 					{bone "back_door2"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/nashorn/back_door2.ply"}
 					}
 				}
 			}

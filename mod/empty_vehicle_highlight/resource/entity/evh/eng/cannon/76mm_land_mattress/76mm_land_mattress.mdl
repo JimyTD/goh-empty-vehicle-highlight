@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: foresight stand supportl supportr
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "close" {file "../../../../-vehicle/eng/cannon/76mm_land_mattress/close.anm"} {speed 0.7}}
@@ -101,7 +101,7 @@
 			{bone "stand"
 				{parameters "id=body;"}
 				{Position 17.685 	 0 	 7.3408}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/stand.ply"}
 				{bone "seat2"
 					{matrix34
 						0.5736 	 -0.8192 	 0
@@ -122,12 +122,12 @@
 			{bone "supportl"
 				{parameters "id=body;"}
 				{Position -16.9294 	 13.9636 	 7.0568}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/supportl.ply"}
 			}
 			{bone "supportr"
 				{parameters "id=body;"}
 				{Position -16.9294 	 -13.9636 	 7.0568}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_land_mattress/supportr.ply"}
 			}
 			{bone "gun"
 				{parameters "id=gun;"}

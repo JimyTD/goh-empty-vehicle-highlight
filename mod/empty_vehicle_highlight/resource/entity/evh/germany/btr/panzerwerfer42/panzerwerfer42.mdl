@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_rear1 hatch_rear2 mg_support tophatch1 tophatch2 turret vision_slot1 vision_slot2
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 11.10.2024 16:38:22
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\btr\Panzerwerfer 42\Panzerwerfer_42.max
@@ -36,7 +36,7 @@
 				}
 				{speed 0.05}
 				{Position -31.2778 	 0 	 18.7285}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/turret.ply"}
 				{bone revolute "gun_rot"
 					{limits -4 40}
 					{speed 0.05}
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							0 	 0 	 10.857
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/gun.ply"}
 						{bone "foresight"
 							{Position 20.0955 	 10.857 	 0.0479}
 						}
@@ -75,7 +75,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket00.ply"}
 							}
 						}
 						{bone "shooter01"
@@ -92,7 +92,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket01.ply"}
 							}
 						}
 						{bone "shooter02"
@@ -109,7 +109,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket02.ply"}
 							}
 						}
 						{bone "shooter03"
@@ -126,7 +126,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket03.ply"}
 							}
 						}
 						{bone "shooter04"
@@ -143,7 +143,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket04.ply"}
 							}
 						}
 						{bone "shooter05"
@@ -160,7 +160,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket05.ply"}
 							}
 						}
 						{bone "shooter06"
@@ -177,7 +177,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket06.ply"}
 							}
 						}
 						{bone "shooter07"
@@ -194,7 +194,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket07.ply"}
 							}
 						}
 						{bone "shooter08"
@@ -211,7 +211,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket08.ply"}
 							}
 						}
 						{bone "shooter09"
@@ -228,7 +228,7 @@
 									0 	 1 	 0
 									-12.387 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/rocket09.ply"}
 							}
 						}
 					}
@@ -236,7 +236,7 @@
 				{bone "controlrod"
 					{parameters "id=turret;"}
 					{Position 3.407 	 7.0621 	 1.7658}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/controlrod.ply"}
 				}
 			}
 			{bone "engine"
@@ -403,7 +403,7 @@
 					0.329 	 0 	 0.9443
 					24.3777 	 6.705 	 21.9305
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/vision_slot1.ply"}
 				{bone "vision_plate1"
 					{parameters "id=body;"}
 					{matrix34
@@ -412,7 +412,7 @@
 						-0.329 	 0 	 0.9443
 						1.4246 	 0.0025 	 -1.6675
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/vision_plate1.ply"}
 				}
 			}
 			{bone "vision_slot2"
@@ -423,7 +423,7 @@
 					0 	 0.5736 	 0.8192
 					17.5198 	 13.3375 	 21.7865
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/vision_slot2.ply"}
 				{bone "vision_plate2"
 					{parameters "id=body;"}
 					{matrix34
@@ -432,7 +432,7 @@
 						0 	 -0.5736 	 0.8192
 						-1.9731 	 1.8473 	 -1.2233
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/vision_plate2.ply"}
 				}
 			}
 			{bone "detail1"
@@ -519,7 +519,7 @@
 				{bone "hatch_rear1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/hatch_rear1.ply"}
 				}
 			}
 			{bone "helper2"
@@ -532,18 +532,18 @@
 				{bone "hatch_rear2"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/hatch_rear2.ply"}
 				}
 			}
 			{bone "tophatch1"
 				{parameters "id=body;"}
 				{Position -8.4214 	 8.5846 	 16.9909}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/tophatch1.ply"}
 			}
 			{bone "tophatch2"
 				{parameters "id=body;"}
 				{Position -8.4214 	 -8.5877 	 16.9851}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/tophatch2.ply"}
 			}
 			{bone revolute "mg_support"
 				{parameters "id=body;"}
@@ -554,7 +554,7 @@
 					0 	 0 	 1
 					9.4699 	 0.1442 	 24.1453
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/mg_support.ply"}
 				{bone revolute "mgun_a_rot1"
 					{limits -20 20}
 					{matrix34
@@ -582,7 +582,7 @@
 								0.9744 	 0.225 	 0
 								0.0178 	 0.4671 	 0.0062
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/mg_holder.ply"}
 						}
 					}
 					{bone "mg_holder1"
@@ -593,7 +593,7 @@
 							0 	 0 	 1
 							-0.0014 	 0.0055 	 -0.1246
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/panzerwerfer42/mg_holder1.ply"}
 					}
 					{bone "gunner2_notgood"
 						{matrix34

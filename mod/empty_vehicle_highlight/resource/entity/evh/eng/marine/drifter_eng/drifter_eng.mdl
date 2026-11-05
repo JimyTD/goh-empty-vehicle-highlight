@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cabin_door gun_2_rot1 rear_door1 seat1 seat10 seat11 seat12 seat13 seat14 seat15 seat2 seat3 seat4 seat5 seat6 seat7 seat8 seat9 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 09.10.2025 02:11:08
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\marine\drifter_CD_class\Drifter_CD_class.max
@@ -70,11 +70,11 @@
 				{bone "cabin_door"
 					{parameters "id=cabin;"}
 					{Position 50.9346 	 14.8305 	 -25.8846}
-					
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/cabin_door.ply"}
 					{bone "window17"
 						{parameters "id=window17;"}
 						{Position -0.7773 	 5.1837 	 25.8357}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/window17.ply"}
 					}
 				}
 				{bone "detail9"
@@ -171,7 +171,7 @@
 							0 	 0 	 1
 							0 	 -1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/gun_2_rot2.ply"}
 						{bone "lamp_light_spot1"
 							{matrix34
 								1 	 0 	 0
@@ -183,7 +183,7 @@
 						{bone "lamp_glass1"
 							{parameters "id=cabin;"}
 							{Position 2.446 	 2.7229 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/lamp_glass1.ply"}
 						}
 						{bone "visor2"
 							{matrix34
@@ -380,7 +380,7 @@
 				{bone revolute "turret"
 					{parameters "id=gun;"}
 					{Position -0.0002 	 0 	 6.8889}
-					
+					{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/turret.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -392,7 +392,7 @@
 							0 	 -1 	 0
 							0.0113 	 0 	 6.5588
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -401,7 +401,7 @@
 								0 	 1 	 0
 								15.7388 	 0.0437 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/gun.ply"}
 							{bone "foresight1"
 								{Position 9.6515 	 0 	 0}
 							}
@@ -465,7 +465,7 @@
 			{bone "rear_door1"
 				{parameters "id=body;"}
 				{Position -146.564 	 -7.0866 	 35.2936}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/drifter_eng/rear_door1.ply"}
 			}
 			{bone "rear_door2"
 				{parameters "id=body;"}

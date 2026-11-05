@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor gun gun_rot shield shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 05.03.2025 16:24:47
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\cannon\37mm_bofors_AT\37mm_bofors_AT_eng.max
@@ -80,7 +80,7 @@
 					-0.1564 	 0 	 0.9877
 					-1.6089 	 -5.3752 	 0.8897
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/standr.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
@@ -90,14 +90,14 @@
 					-0.1564 	 0 	 0.9877
 					-1.6089 	 5.3752 	 0.8897
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/standl.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{limits -25 25}
 				{speed 0.006}
 				{Position -0.6529 	 0 	 1.1006}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -111,7 +111,7 @@
 						0 	 -1 	 0
 						-2.0026 	 -0.0013 	 5.1574
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/gun_rot.ply"}
 					{bone "foresight1"
 						{matrix34
 							1 	 0 	 0
@@ -131,7 +131,7 @@
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position -5.3382 	 -0.5918 	 -0.0053}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -148,7 +148,7 @@
 								0 	 1 	 0
 								-3.4765 	 -1.1825 	 2.0327
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/lever.ply"}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
@@ -158,18 +158,18 @@
 								0 	 1 	 0
 								-2.62 	 0.216 	 -0.0006
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/breech.ply"}
 						}
 					}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 2.5352 	 0 	 0.5574}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/shield.ply"}
 					{bone "shield_lower"
 						{parameters "id=shield_lower;"}
 						{Position 8.5948 	 0 	 4.4215}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/shield_lower.ply"}
 					}
 				}
 				{bone "aim_ver"
@@ -180,7 +180,7 @@
 						-0.1461 	 0.0313 	 0.9888
 						-2.7484 	 3.0567 	 1.7813
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/aim_ver.ply"}
 				}
 			}
 			{bone "aim_h_help"
@@ -193,7 +193,7 @@
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/37mm_qf_mk1/aim_hor.ply"}
 				}
 			}
 			{bone "susp"

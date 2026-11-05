@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: door1 door2 gun_rot1 landing_door mgun_h_rot1 shooter00 shooter01 shooter02 shooter03
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.11.2023 07:48:45
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\marine\Lca Barge\lca_ty.max
@@ -30,12 +30,12 @@
 			{bone "door1"
 				{parameters "id=body;"}
 				{Position 89.7661 	 -13.5585 	 19.0951}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/door1.ply"}
 			}
 			{bone "door2"
 				{parameters "id=body;"}
 				{Position 89.7803 	 13.5713 	 9.1847}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/door2.ply"}
 			}
 			{bone "landing_door"
 				{parameters "id=body;"}
@@ -45,7 +45,7 @@
 					-0.8631 	 0 	 0.505
 					116.924 	 -0.0016 	 7.1587
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/marine/lca/landing_door.ply"}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
@@ -559,7 +559,7 @@
 								0.0002 	 0.0016 	 1
 								-8.8292 	 -0.3481 	 0.1036
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/lca/rocket00.ply"}
 						}
 					}
 				}
@@ -581,7 +581,7 @@
 								0.0001 	 0.0016 	 1
 								-8.7987 	 0.2199 	 -0.1294
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/lca/rocket01.ply"}
 						}
 					}
 				}
@@ -603,7 +603,7 @@
 								0.0002 	 0.0016 	 1
 								-8.7782 	 0.3319 	 0.045
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/lca/rocket02.ply"}
 						}
 					}
 				}
@@ -625,7 +625,7 @@
 								0.0002 	 0.0016 	 1
 								-8.8407 	 -0.284 	 -0.0771
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/lca/rocket03.ply"}
 						}
 					}
 				}

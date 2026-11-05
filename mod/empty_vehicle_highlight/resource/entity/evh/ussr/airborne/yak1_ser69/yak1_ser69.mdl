@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 mgun_rot1 rudder
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/ussr/airborne/yak1_ser69/engine_start.anm"} {speed 0.5}}
@@ -172,7 +172,7 @@
 					0 	 -1 	 0
 					-92.3639 	 -16.619 	 7.4812
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/elevator2.ply"}
 			}
 			{bone revolute "rudder"
 				{parameters "id=body;"}
@@ -184,7 +184,7 @@
 					0.1103 	 0 	 0.9939
 					-96.0553 	 0.0149 	 12.3308
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/rudder.ply"}
 			}
 			{bone "door_right1"
 				{parameters "id=body;"}
@@ -194,11 +194,11 @@
 			{bone "canopy"
 				{parameters "id=body;"}
 				{Position -13.845 	 0.0149 	 13.3318}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/canopy.ply"}
 				{bone "glass_canopy"
 					{parameters "id=body;"}
 					{Position 0.287 	 0 	 0.3478}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/glass_canopy.ply"}
 				}
 			}
 			{bone "pitot"
@@ -239,7 +239,7 @@
 						-0.1402 	 -0.9862 	 -0.0876
 						-6.2763 	 0.095 	 0.7104
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/aileron1.ply"}
 				}
 			}
 			{bone "wingr2"
@@ -256,7 +256,7 @@
 						-0.1427 	 0.9863 	 -0.0828
 						-6.0766 	 -0.1125 	 0.502
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/aileron2.ply"}
 				}
 			}
 			{bone "engine1"
@@ -350,7 +350,7 @@
 					0 	 -1 	 0
 					-92.364 	 16.6394 	 7.4812
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/yak1_ser69/elevator1.ply"}
 			}
 			{bone revolute "mgun_rot1"
 				{limits -7.5 7.5}

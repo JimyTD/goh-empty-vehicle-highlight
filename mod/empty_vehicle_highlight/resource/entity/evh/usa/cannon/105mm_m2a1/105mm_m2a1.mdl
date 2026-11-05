@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_h gun_rot shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 10.04.2025 11:56:09
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\cannon\105mm_M2A\105mm M2A1.max
@@ -30,7 +30,7 @@
 				{limits -23 23}
 				{speed 0.007}
 				{Position -2.2058 	 0 	 0.5447}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -44,7 +44,7 @@
 						0 	 -1 	 0
 						-6.5726 	 3.7098 	 8.3504
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -53,16 +53,16 @@
 							0 	 1 	 0
 							1.3181 	 3.4956 	 3.7098
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -4.0713 	 -2.706 	 1.5306}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/lever.ply"}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -2.9072 	 -0.0732 	 -0.5988}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/breech.ply"}
 						}
 						{bone "foresight1"
 							{Position 46.3457 	 0 	 0.0931}
@@ -84,7 +84,7 @@
 							0 	 1 	 0
 							2.409 	 -0.397 	 10.6496
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/aim_v1.ply"}
 					}
 					{bone "aim_v2"
 						{parameters "id=gun;"}
@@ -94,7 +94,7 @@
 							0 	 1 	 0
 							-8.7176 	 -1.906 	 0.0821
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/aim_v2.ply"}
 					}
 					{bone "cylinder"
 						{parameters "id=body;"}
@@ -104,7 +104,7 @@
 							-0.0157 	 0.9999 	 0
 							4.8077 	 -4.8506 	 3.9558
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/cylinder.ply"}
 					}
 				}
 				{bone "shield2"
@@ -115,7 +115,7 @@
 						-0.0698 	 0 	 0.9976
 						-0.3944 	 0 	 7.0003
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/shield2.ply"}
 				}
 				{bone "visor"
 					{Position -2.8587 	 8.3857 	 23.4012}
@@ -129,21 +129,21 @@
 					-0.0698 	 0 	 0.9976
 					-4.305 	 7.4077 	 1.1935
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/standl.ply"}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -29.106 	 19.6159 	 -2.3165}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/detail2.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -24.5599 	 16.9337 	 -3.2731}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/detail1.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -37.9757 	 22.541 	 -1.9328}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/detail3.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -170,11 +170,11 @@
 					-0.0698 	 0 	 0.9976
 					-4.305 	 -7.4089 	 1.1935
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/standr.ply"}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -20.5748 	 -14.2689 	 -1.3178}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/detail4.ply"}
 				}
 				{bone "dragbar"
 					{parameters "id=body;"}
@@ -184,7 +184,7 @@
 						-0.0846 	 -0.0614 	 0.9945
 						-57.3023 	 -31.0694 	 -3.9138
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/dragbar.ply"}
 				}
 				{bone "seat3"
 					{matrix34
@@ -211,7 +211,7 @@
 					0 	 0 	 1
 					-9.7416 	 11.1187 	 6.7754
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/aim_h.ply"}
 			}
 			{bone "shield"
 				{parameters "id=shield;"}
@@ -256,7 +256,7 @@
 					-0.0175 	 0 	 0.9998
 					1.7385 	 10.3674 	 -0.7905
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m2a1/shield_lower.ply"}
 			}
 		}
 		{bone "pivot_front"

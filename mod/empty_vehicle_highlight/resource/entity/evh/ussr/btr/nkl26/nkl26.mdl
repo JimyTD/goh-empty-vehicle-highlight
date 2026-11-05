@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: door propeller seat01 seat02 seat03 seat04 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.01.2022 08:55:57
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\special\nkl 26\NKL-26_v24.max
@@ -32,7 +32,7 @@
 					-1 	 0 	 0
 					18.1883 	 8.1858 	 -0.8427
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/nkl26/door.ply"}
 			}
 			{bone revolute "steer_l3"
 				{parameters "id=body;"}
@@ -57,7 +57,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 9.0421 	 -0.0461 	 11.8801}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/nkl26/turret.ply"}
 				{bone revolute "mgun_rot"
 					{limits -12 14}
 					{matrix34
@@ -89,7 +89,7 @@
 				{bone "shield"
 					{parameters "id=body;"}
 					{Position 4.7681 	 0 	 2.2952}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/nkl26/shield.ply"}
 				}
 			}
 			{bone "engine"
@@ -102,12 +102,12 @@
 				{bone revolute "propeller"
 					{parameters "id=engine;"}
 					{Position -13.5088 	 0 	 6.4432}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/nkl26/propeller.ply"}
 					{bone "propeller_work"
 						{parameters "id=engine;"}
 						{Position 0 	 0 	 0}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/nkl26/propeller_work.ply"}
 					}
 				}
 			}

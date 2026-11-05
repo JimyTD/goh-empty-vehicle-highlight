@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1_1 back_door1_2 back_door2_1 back_door2_2 mgun_a_rot1 mgun_rear_holder
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 01.12.2025 13:33:46
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\SdKfz_251_B\sdkfz251b.max
@@ -398,7 +398,7 @@
 				{parameters "id=body;"}
 				{limits -40 40}
 				{Position 3.2691 	 0.0004 	 18.4115}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 45}
 					{matrix34
@@ -514,21 +514,21 @@
 			{bone "back_door2_1"
 				{parameters "id=body;"}
 				{Position -53.7587 	 -11.2358 	 7.2261}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/back_door2_1.ply"}
 				{bone "back_door2_2"
 					{parameters "id=body;"}
 					{Position 1.1716 	 6.0788 	 -0.2417}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/back_door2_2.ply"}
 				}
 			}
 			{bone "back_door1_1"
 				{parameters "id=body;"}
 				{Position -53.7587 	 11.2366 	 7.2261}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/back_door1_1.ply"}
 				{bone "back_door1_2"
 					{parameters "id=body;"}
 					{Position 1.1716 	 -6.0791 	 -0.2417}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/back_door1_2.ply"}
 				}
 			}
 			{bone "at1_1"
@@ -559,7 +559,7 @@
 					0 	 0 	 1
 					-46.3205 	 0.0004 	 16.0855
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/mgun_rear_holder.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -596,7 +596,7 @@
 							0 	 0 	 1
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251b/mgun_rear_holder2.ply"}
 					}
 				}
 			}

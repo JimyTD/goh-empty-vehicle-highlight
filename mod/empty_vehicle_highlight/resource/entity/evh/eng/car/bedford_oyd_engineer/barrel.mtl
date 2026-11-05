@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_military/metal_barrel"}
-	{bump "$/_military/metal_barrel_bp"}
-	{specular "$/_military/metal_barrel_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

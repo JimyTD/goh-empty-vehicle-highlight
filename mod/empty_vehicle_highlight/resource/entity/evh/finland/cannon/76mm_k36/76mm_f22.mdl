@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.12.2020 17:59:32
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\f22\76mm_f22.max
@@ -34,7 +34,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0.0853 	 0.4243 	 2.5367}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -46,7 +46,7 @@
 						0 	 -1 	 0
 						-8.6843 	 -0.4243 	 8.3895
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/gun_rot.ply"}
 					{bone "visor"
 						{matrix34
 							1 	 0 	 0
@@ -71,7 +71,7 @@
 							0 	 1 	 0
 							32.6531 	 0.1857 	 0.04
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -83,12 +83,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -37.1892 	 1.2408 	 2.3149}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -37.8192 	 -2.9127 	 -1.6812}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/lever.ply"}
 						}
 					}
 				}
@@ -100,11 +100,11 @@
 						0.0268 	 0 	 0.9996
 						-1.1149 	 -0.4243 	 8.7068
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/shield.ply"}
 					{bone "shield_slider"
 						{parameters "id=shield;"}
 						{Position -1.7931 	 0 	 6.3786}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/shield_slider.ply"}
 					}
 				}
 				{bone "aim_wheel1"
@@ -115,7 +115,7 @@
 						-0.2269 	 -0.1172 	 -0.9669
 						-18.9685 	 7.1151 	 5.1814
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/aim_wheel1.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -125,7 +125,7 @@
 						-0.5373 	 0 	 -0.8434
 						-7.3346 	 -8.2786 	 5.3783
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/aim_wheel2.ply"}
 				}
 			}
 			{bone "standr"
@@ -136,7 +136,7 @@
 					-0.0148 	 0 	 0.9999
 					-2.7354 	 -5.6144 	 -3.0787
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/standr.ply"}
 				{bone "latch"
 					{parameters "id=body;"}
 					{matrix34
@@ -145,7 +145,7 @@
 						0 	 0 	 1
 						-15.6572 	 -9.7798 	 2.7743
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/latch.ply"}
 				}
 			}
 			{bone "standl"
@@ -156,7 +156,7 @@
 					-0.0148 	 0 	 0.9999
 					-2.6779 	 5.5306 	 -3.0787
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k36/standl.ply"}
 			}
 		}
 		{bone "pivot_front"

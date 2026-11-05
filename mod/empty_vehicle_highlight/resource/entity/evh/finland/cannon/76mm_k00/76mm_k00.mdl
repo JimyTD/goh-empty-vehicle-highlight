@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_h aim_v gun_rot
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 29.08.2025 21:38:08
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\Cannon\76mm_K00_M1900\76mm_k00.max
@@ -38,7 +38,7 @@
 			{bone "aim_h"
 				{parameters "id=body;"}
 				{Position -14.6457 	 4.7244 	 -4.626}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/aim_h.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -97,23 +97,23 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/gun.ply"}
 						{bone "foresight1"
 							{Position 30.1432 	 0 	 0}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -16.2598 	 -2.5197 	 0.1642}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/breech.ply"}
 							{bone "hinge1_1"
 								{parameters "id=gun;"}
 								{Position -2.4016 	 2.5198 	 -1.2468}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/hinge1_1.ply"}
 							}
 							{bone "hinge1_2"
 								{parameters "id=gun;"}
 								{Position -2.4016 	 2.5198 	 -1.2468}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/hinge1_2.ply"}
 							}
 						}
 						{bone "visor"
@@ -137,7 +137,7 @@
 						0.225 	 0 	 0.9744
 						-3.3551 	 3.9173 	 -1.1834
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_k00/aim_v.ply"}
 				}
 			}
 			{bone "seat2"

@@ -1,5 +1,5 @@
-{material simple
-	{diffuse "$/_vehicle/eng/typhoon_propwork"}
-	;{color "230 230 230 60"}
-	{blend blend}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

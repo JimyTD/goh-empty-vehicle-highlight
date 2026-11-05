@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover3a cover3b turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/finland/tank_light/bt5_fin/start.anm"} {speed 0.7}}
@@ -100,7 +100,7 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_light/bt5_fin/turret_r.anm"}{speed 0.6}}
 				}
 				{Position 13.7109 	 0 	 9.7027}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -109,7 +109,7 @@
 						0 	 -1 	 -0.0087
 						12.0888 	 -0.9556 	 6.8575
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -118,7 +118,7 @@
 							0 	 1 	 -0.0087
 							12.6181 	 0.4413 	 -0.861
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/gun.ply"}
 						{bone "foresight1"
 							{parameters "id=turret;"}
 							{Position 17.7567 	 0.0062 	 0}
@@ -132,7 +132,7 @@
 							0 	 1 	 -0.0087
 							5.0762 	 -0.9764 	 2.998
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/mgun.ply"}
 						{bone "foresight3"
 							{parameters "id=turret;"}
 							{Position 3.0415 	 0 	 0.3079}
@@ -142,7 +142,7 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position -0.0647 	 -4.9846 	 12.9687}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/cover1.ply"}
 				}
 				{bone "visor1"
 					{matrix34
@@ -163,7 +163,7 @@
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{Position -0.0647 	 4.8482 	 12.9687}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/cover2.ply"}
 				}
 				{bone "ammo4"
 					{matrix34
@@ -309,12 +309,12 @@
 			{bone "cover3b"
 				{parameters "id=body;"}
 				{Position 43.8463 	 0 	 -0.2904}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/cover3b.ply"}
 			}
 			{bone "cover3a"
 				{parameters "id=body;"}
 				{Position 33.1787 	 0 	 9.8694}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/bt5_fin/cover3a.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

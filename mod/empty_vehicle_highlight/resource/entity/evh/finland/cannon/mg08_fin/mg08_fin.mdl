@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_v ammo_box gun_rot legs tube water_cooling
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 21.08.2025 18:29:26
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\Cannon\mg08\mg08_schlittenlafette.max
@@ -26,12 +26,12 @@
 			{bone "legs"
 				{parameters "id=body;"}
 				{Position 5.5521 	 0 	 4.2134}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/legs.ply"}
 			}
 			{bone "aim_v"
 				{parameters "id=body;"}
 				{Position -5.0243 	 -0.0068 	 -1.0583}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/aim_v.ply"}
 			}
 			{bone revolute "gun_rot"
 				{parameters "id=body;"}
@@ -41,7 +41,7 @@
 					0 	 -1 	 0
 					4.3701 	 -0.0068 	 6.1661
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/gun_rot.ply"}
 				{bone revolute "turret"
 					{matrix34
 						1 	 0 	 0
@@ -52,26 +52,26 @@
 					{bone "gun"
 						{parameters "id=body;"}
 						{Position -5.6549 	 0 	 -1.9268}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/gun.ply"}
 						{bone "gun_cover"
 							{parameters "id=body;"}
 							{Position 4.201 	 0 	 1.0023}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/gun_cover.ply"}
 						}
 						{bone "recoil_mechanism2_1"
 							{parameters "id=body;"}
 							{Position -2.2562 	 -1.0475 	 -0.098}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/recoil_mechanism2_1.ply"}
 						}
 						{bone "recoil_mechanism2_2"
 							{parameters "id=body;"}
 							{Position -3.4001 	 -1.0624 	 -0.104}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/recoil_mechanism2_2.ply"}
 						}
 						{bone "recoil_mechanism1_1"
 							{parameters "id=body;"}
 							{Position -4.3816 	 0 	 0.2693}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/recoil_mechanism1_1.ply"}
 						}
 						{bone "recoil_mechanism1_2"
 							{parameters "id=body;"}
@@ -81,7 +81,7 @@
 								0.2588 	 0 	 0.9659
 								-4.293 	 0 	 -0.9473
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/recoil_mechanism1_2.ply"}
 						}
 						{bone "foresight14"
 							{Position 17.9894 	 0 	 0.0948}
@@ -94,7 +94,7 @@
 								0 	 -0.2297 	 0.9733
 								3.2265 	 -7.1198 	 -10.8433
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet01.ply"}
 						}
 						{bone "belt_bullet02"
 							{parameters "id=body;"}
@@ -104,7 +104,7 @@
 								0 	 -0.2297 	 0.9733
 								3.2265 	 -6.7585 	 -10.758
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet02.ply"}
 						}
 						{bone "belt_bullet03"
 							{parameters "id=body;"}
@@ -114,7 +114,7 @@
 								0 	 -0.0944 	 0.9955
 								3.2265 	 -6.3973 	 -10.6728
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet03.ply"}
 						}
 						{bone "belt_bullet04"
 							{parameters "id=body;"}
@@ -124,7 +124,7 @@
 								0 	 0.1138 	 0.9935
 								3.2265 	 -6.036 	 -10.5875
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet04.ply"}
 						}
 						{bone "belt_bullet05"
 							{parameters "id=body;"}
@@ -134,7 +134,7 @@
 								0 	 -0.1108 	 0.9938
 								3.2265 	 -5.6863 	 -10.4734
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet05.ply"}
 						}
 						{bone "belt_bullet06"
 							{parameters "id=body;"}
@@ -144,7 +144,7 @@
 								0 	 -0.3981 	 0.9173
 								3.2265 	 -5.3845 	 -10.2645
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet06.ply"}
 						}
 						{bone "belt_bullet07"
 							{parameters "id=body;"}
@@ -154,7 +154,7 @@
 								0 	 -0.1516 	 0.9884
 								3.2265 	 -5.1535 	 -9.9739
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet07.ply"}
 						}
 						{bone "belt_bullet08"
 							{parameters "id=body;"}
@@ -164,7 +164,7 @@
 								0 	 -0.3875 	 0.9219
 								3.2265 	 -4.9993 	 -9.6462
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet08.ply"}
 						}
 						{bone "belt_bullet09"
 							{parameters "id=body;"}
@@ -174,7 +174,7 @@
 								0 	 -0.3173 	 0.9483
 								3.2265 	 -4.915 	 -9.2847
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet09.ply"}
 						}
 						{bone "belt_bullet10"
 							{parameters "id=body;"}
@@ -184,7 +184,7 @@
 								0 	 -0.3777 	 0.9259
 								3.2265 	 -4.8306 	 -8.9232
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet10.ply"}
 						}
 						{bone "belt_bullet11"
 							{parameters "id=body;"}
@@ -194,7 +194,7 @@
 								0 	 -0.3748 	 0.9271
 								3.2265 	 -4.7463 	 -8.5617
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet11.ply"}
 						}
 						{bone "belt_bullet12"
 							{parameters "id=body;"}
@@ -204,7 +204,7 @@
 								0 	 -0.3064 	 0.9519
 								3.2265 	 -4.662 	 -8.2003
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet12.ply"}
 						}
 						{bone "belt_bullet13"
 							{parameters "id=body;"}
@@ -214,7 +214,7 @@
 								0 	 -0.163 	 0.9866
 								3.2265 	 -4.5776 	 -7.8388
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet13.ply"}
 						}
 						{bone "belt_bullet14"
 							{parameters "id=body;"}
@@ -224,7 +224,7 @@
 								0 	 -0.1455 	 0.9894
 								3.2265 	 -4.4933 	 -7.4773
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet14.ply"}
 						}
 						{bone "belt_bullet15"
 							{parameters "id=body;"}
@@ -234,7 +234,7 @@
 								0 	 -0.0237 	 0.9997
 								3.2265 	 -4.4089 	 -7.1158
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet15.ply"}
 						}
 						{bone "belt_bullet16"
 							{parameters "id=body;"}
@@ -244,7 +244,7 @@
 								0 	 0.185 	 0.9827
 								3.2265 	 -4.3246 	 -6.7543
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet16.ply"}
 						}
 						{bone "belt_bullet17"
 							{parameters "id=body;"}
@@ -254,7 +254,7 @@
 								0 	 0.2263 	 0.9741
 								3.2265 	 -4.2402 	 -6.3929
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet17.ply"}
 						}
 						{bone "belt_bullet18"
 							{parameters "id=body;"}
@@ -264,7 +264,7 @@
 								0 	 0.1028 	 0.9947
 								3.2265 	 -4.1559 	 -6.0314
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet18.ply"}
 						}
 						{bone "belt_bullet19"
 							{parameters "id=body;"}
@@ -274,7 +274,7 @@
 								0 	 0.2308 	 0.973
 								3.2265 	 -4.0716 	 -5.6699
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet19.ply"}
 						}
 						{bone "belt_bullet20"
 							{parameters "id=body;"}
@@ -284,7 +284,7 @@
 								0 	 0.1899 	 0.9818
 								3.2265 	 -3.9872 	 -5.3084
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet20.ply"}
 						}
 						{bone "belt_bullet21"
 							{parameters "id=body;"}
@@ -294,7 +294,7 @@
 								0 	 0.105 	 0.9945
 								3.2265 	 -3.9029 	 -4.947
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet21.ply"}
 						}
 						{bone "belt_bullet22"
 							{parameters "id=body;"}
@@ -304,7 +304,7 @@
 								0 	 0.1599 	 0.9871
 								3.2265 	 -3.8189 	 -4.5854
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet22.ply"}
 						}
 						{bone "belt_bullet23"
 							{parameters "id=body;"}
@@ -314,7 +314,7 @@
 								0 	 0.214 	 0.9768
 								3.2265 	 -3.7466 	 -4.2213
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet23.ply"}
 						}
 						{bone "belt_bullet24"
 							{parameters "id=body;"}
@@ -324,7 +324,7 @@
 								0 	 0.1859 	 0.9826
 								3.2265 	 -3.6743 	 -3.8572
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet24.ply"}
 						}
 						{bone "belt_bullet25"
 							{parameters "id=body;"}
@@ -334,7 +334,7 @@
 								0 	 0.1926 	 0.9813
 								3.2265 	 -3.602 	 -3.4932
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet25.ply"}
 						}
 						{bone "belt_bullet26"
 							{parameters "id=body;"}
@@ -344,7 +344,7 @@
 								0 	 0.1685 	 0.9857
 								3.2265 	 -3.5297 	 -3.1291
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet26.ply"}
 						}
 						{bone "belt_bullet27"
 							{parameters "id=body;"}
@@ -354,7 +354,7 @@
 								0 	 0.2018 	 0.9794
 								3.2265 	 -3.4573 	 -2.765
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet27.ply"}
 						}
 						{bone "belt_bullet28"
 							{parameters "id=body;"}
@@ -364,7 +364,7 @@
 								0 	 0.3267 	 0.9451
 								3.2265 	 -3.3824 	 -2.4016
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet28.ply"}
 						}
 						{bone "belt_bullet29"
 							{parameters "id=body;"}
@@ -374,7 +374,7 @@
 								0 	 0.2896 	 0.9571
 								3.2265 	 -3.2696 	 -2.048
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet29.ply"}
 						}
 						{bone "belt_bullet30"
 							{parameters "id=body;"}
@@ -384,7 +384,7 @@
 								0 	 0.1959 	 0.9806
 								3.2265 	 -3.1568 	 -1.6943
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet30.ply"}
 						}
 						{bone "belt_bullet31"
 							{parameters "id=body;"}
@@ -394,7 +394,7 @@
 								0 	 0.1058 	 0.9944
 								3.2265 	 -3.044 	 -1.3407
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet31.ply"}
 						}
 						{bone "belt_bullet32"
 							{parameters "id=body;"}
@@ -404,7 +404,7 @@
 								0 	 -0.0182 	 0.9998
 								3.2265 	 -2.9312 	 -0.9871
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet32.ply"}
 						}
 						{bone "belt_bullet33"
 							{parameters "id=body;"}
@@ -414,7 +414,7 @@
 								0 	 -0.0732 	 0.9973
 								3.2265 	 -2.805 	 -0.6381
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet33.ply"}
 						}
 						{bone "belt_bullet34"
 							{parameters "id=body;"}
@@ -424,7 +424,7 @@
 								0 	 -0.5372 	 0.8434
 								3.2265 	 -2.6676 	 -0.2934
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet34.ply"}
 						}
 						{bone "belt_bullet35"
 							{parameters "id=body;"}
@@ -434,7 +434,7 @@
 								0 	 -0.4937 	 0.8697
 								3.2265 	 -2.4838 	 0.024
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet35.ply"}
 						}
 						{bone "belt_bullet36"
 							{parameters "id=body;"}
@@ -444,7 +444,7 @@
 								0 	 -0.4339 	 0.901
 								3.2265 	 -2.2053 	 0.2576
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet36.ply"}
 						}
 						{bone "belt_bullet37"
 							{parameters "id=body;"}
@@ -454,7 +454,7 @@
 								0 	 -0.2097 	 0.9778
 								3.2265 	 -1.8616 	 0.3915
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet37.ply"}
 						}
 						{bone "belt_bullet38"
 							{parameters "id=body;"}
@@ -464,7 +464,7 @@
 								0 	 -0.0793 	 0.9969
 								3.2265 	 -1.497 	 0.4578
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet38.ply"}
 						}
 						{bone "belt_bullet39"
 							{parameters "id=body;"}
@@ -474,7 +474,7 @@
 								0 	 -0.0793 	 0.9969
 								3.2265 	 -1.1269 	 0.4872
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet39.ply"}
 						}
 						{bone "belt_bullet40"
 							{parameters "id=body;"}
@@ -484,7 +484,7 @@
 								0 	 -0.0793 	 0.9969
 								3.2265 	 -0.7569 	 0.5166
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet40.ply"}
 						}
 						{bone "belt_bullet41"
 							{parameters "id=body;"}
@@ -494,11 +494,11 @@
 								0 	 -0.0793 	 0.9969
 								3.2265 	 -0.3869 	 0.546
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/belt_bullet41.ply"}
 						}
 						{bone "optic"
 							{parameters "id=body;"}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/optic.ply"}
 							{bone "camera"
 								{Position -2.3788 	 1.065 	 3.181}
 							}
@@ -517,7 +517,7 @@
 			{bone "water_cooling"
 				{parameters "id=body;"}
 				{Position 10.4016 	 8.563 	 -5.1528}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/water_cooling.ply"}
 			}
 			{bone "hinge"
 				{parameters "id=body;"}
@@ -527,12 +527,12 @@
 			{bone "tube"
 				{parameters "id=body;"}
 				{Position 12.5255 	 4.7088 	 0.8911}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/tube.ply"}
 			}
 			{bone "ammo_box"
 				{parameters "id=body;"}
 				{Position 1.105 	 -9.1369 	 -5.7237}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/ammo_box.ply"}
 				{bone "ammo_box_cover"
 					{parameters "id=body;"}
 					{matrix34
@@ -541,7 +541,7 @@
 						0 	 -0.1457 	 0.9893
 						0.1262 	 -3.5984 	 0.5269
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/mg08_fin/ammo_box_cover.ply"}
 				}
 			}
 		}

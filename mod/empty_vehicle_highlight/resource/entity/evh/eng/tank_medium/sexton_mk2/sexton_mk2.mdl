@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch1 mgun_a_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.11.2025 13:47:58
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Sexton_MK2\sexton_mk2.max
@@ -38,7 +38,7 @@
 				{limits -30 15}
 				{speed 0.007}
 				{Position 25.547 	 2.6654 	 17.805}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -5 35}
@@ -49,7 +49,7 @@
 						0 	 -1 	 0
 						-5.4047 	 0.8877 	 3.436
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -58,7 +58,7 @@
 							0 	 1 	 0
 							-1.2774 	 5.0234 	 1.1312
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{matrix34
@@ -67,12 +67,12 @@
 								0 	 -1 	 0
 								-12.0601 	 0.2483 	 -1.1526
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -9.2929 	 -2.7671 	 -4.5213}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/lever.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -91,7 +91,7 @@
 							0 	 1 	 0
 							-4.9692 	 -1.1857 	 -6.2915
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/aim_ver.ply"}
 					}
 				}
 				{bone "aim_hor_help"
@@ -104,7 +104,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/aim_hor.ply"}
 					}
 				}
 			}
@@ -116,7 +116,7 @@
 			{bone "hatch1"
 				{parameters "id=body;"}
 				{Position 29.5088 	 -8.7884 	 21.5706}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sexton_mk2/hatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

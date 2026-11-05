@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr driverhatch1 hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.11.2025 23:33:53
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Bishop\bishop.max
@@ -36,7 +36,7 @@
 			{bone "driverhatch1"
 				{parameters "id=body;"}
 				{Position 30.7734 	 -13.6084 	 9.4815}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/driverhatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -342,22 +342,22 @@
 			{bone "doorl"
 				{parameters "id=body;"}
 				{Position -11.1621 	 13.3851 	 18.5909}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/doorl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -3.0399 	 -9.6663 	 16.2646}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail1.ply"}
 				}
 				{bone "detail7"
 					{parameters "id=body;"}
 					{Position -3.0399 	 -9.6289 	 9.5742}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/detail7.ply"}
 				}
 			}
 			{bone "doorr"
 				{parameters "id=body;"}
 				{Position -11.158 	 -12.7092 	 34.3369}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/doorr.ply"}
 			}
 			{bone "enumerator2"
 				{Position 17.1353 	 17.7004 	 16.5651}
@@ -388,7 +388,7 @@
 			{bone "hatch2"
 				{parameters "id=body;"}
 				{Position 22.4008 	 8.9286 	 38.0441}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/hatch2.ply"}
 			}
 			{bone "antenna1"
 				{parameters "id=body;"}
@@ -410,7 +410,7 @@
 				{limits -4 4}
 				{speed 0.001}
 				{Position 22.7827 	 0.4732 	 14.3266}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;inmax=15;"}
 					{animation
@@ -424,7 +424,7 @@
 						0 	 -1 	 0
 						1.7244 	 4.5349 	 10.6597
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -449,11 +449,11 @@
 								0 	 0 	 1
 								3.5066 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/qf25.ply"}
 							{bone "breechblock"
 								{parameters "id=gun;"}
 								{Position -27.3309 	 0.2954 	 -0.8061}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/bishop/breechblock.ply"}
 							}
 						}
 					}

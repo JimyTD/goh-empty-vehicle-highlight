@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch mgun_a_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 22.06.2025 16:33:45
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_medium\Stug_3_g_late\stug3g_late.max
@@ -454,7 +454,7 @@
 			{bone "hatch"
 				{parameters "id=body;"}
 				{Position -6.6341 	 12.2684 	 13.6485}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g_late/hatch.ply"}
 			}
 			{bone "detail1"
 				{Position 17.3004 	 -25.2214 	 -2.28}
@@ -482,7 +482,7 @@
 				{speed 0.08}
 				{terminator}
 				{Position 2.0309 	 -13.4303 	 14.0272}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g_late/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 30}
 					{speed 0.08}
@@ -633,7 +633,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g_late/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -642,7 +642,7 @@
 							1 	 0 	 0
 							16.8452 	 -0.979 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/stug3g_late/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								0 	 0 	 1

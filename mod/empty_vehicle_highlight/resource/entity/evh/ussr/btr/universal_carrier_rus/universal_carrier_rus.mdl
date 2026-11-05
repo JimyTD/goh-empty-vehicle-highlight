@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_a_rot1 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 12.09.2021 09:06:33
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\Lend-Lease\universal_carrier\universal_carrier.max
@@ -273,7 +273,7 @@
 				{limits -15 30}
 				{terminator}
 				{Position 7.5095 	 -10.6946 	 21.967}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/universal_carrier_rus/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -27 35}
 					{matrix34

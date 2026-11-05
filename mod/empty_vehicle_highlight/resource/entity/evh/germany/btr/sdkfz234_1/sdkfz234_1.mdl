@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail11 grill1 grill2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:16:35
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\Sdkfz 234_1\SdKfz234_1.max
@@ -98,14 +98,14 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz234_1/turret_r.anm"}}
 				}
 				{Position 13.7061 	 -0.9672 	 17.3689}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/turret.ply"}
 				{bone "visor1"
 					{Position -0.6749 	 -6.3839 	 9.6211}
 				}
 				{bone "radioant"
 					{parameters "id=turret;"}
 					{Position -12.4701 	 0.0017 	 6.5303}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/radioant.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -127,7 +127,7 @@
 						0 	 -1 	 0
 						-1.5395 	 -0.0054 	 3.8656
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{orientation
@@ -135,10 +135,10 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/gun.ply"}
 						{bone "magazine"
 							{parameters "id=gun;"}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/magazine.ply"}
 						}
 					}
 					{bone "mgun"
@@ -156,12 +156,12 @@
 				{bone "grill2"
 					{parameters "id=turret;"}
 					{Position -4.8232 	 -9.7665 	 5.0261}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/grill2.ply"}
 				}
 				{bone "grill1"
 					{parameters "id=turret;"}
 					{Position -4.8232 	 9.7664 	 5.0261}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/grill1.ply"}
 				}
 				{bone "commander"
 					{matrix34
@@ -239,7 +239,7 @@
 					-0.8618 	 0 	 -0.5072
 					-58.9395 	 -0.9715 	 -1.5881
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_1/detail11.ply"}
 			}
 			{bone "transmission"
 				{Position 42.5042 	 -0.9661 	 -5.5155}

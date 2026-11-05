@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: shield_lower turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/75mm_leig18/recoil.anm"} {speed 0.6}}
@@ -59,11 +59,11 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/cannon/75mm_leig18/body_r.anm"}{speed 0.6}}
 				}
 				{Position 40.9688 	 0.032 	 6.7251}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/body.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 9.2712 	 0 	 3.8754}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/shield.ply"}
 					{bone "shield_lower"
 						{parameters "id=shield_lower;"}
 						{matrix34
@@ -72,7 +72,7 @@
 							0.024 	 0 	 0.9997
 							6.9063 	 0 	 -3.1282
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/shield_lower.ply"}
 						{bone "shield_addon"
 							{parameters "id=shield_lower;"}
 							{matrix34
@@ -81,7 +81,7 @@
 								0.0785 	 0 	 0.9969
 								-0.2108 	 0 	 -1.8874
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/shield_addon.ply"}
 						}
 					}
 				}
@@ -101,7 +101,7 @@
 						0 	 -1 	 0
 						5.6388 	 0.0012 	 6.125
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/gun_rot.ply"}
 					{bone "gun_rot1"
 						{parameters "id=gun;"}
 						{animation
@@ -112,7 +112,7 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/gun_rot1.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -121,7 +121,7 @@
 								0 	 -1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -141,7 +141,7 @@
 						}
 						{bone "shield_gun"
 							{parameters "id=shield_gun;"}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/shield_gun.ply"}
 						}
 					}
 				}
@@ -153,7 +153,7 @@
 						-0.333 	 -0.9429 	 0
 						-2.1535 	 8.5994 	 3.9011
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/aim_wheel1.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -163,7 +163,7 @@
 						0 	 0 	 1
 						-6.1071 	 -9.2061 	 3.8397
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_leig18/aim_wheel2.ply"}
 				}
 			}
 		}

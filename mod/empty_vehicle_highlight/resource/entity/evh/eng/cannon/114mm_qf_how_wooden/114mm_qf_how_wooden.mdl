@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_extra_wooden charger charger2 commander detail1 detail2 detail3 detail4 driver1 driver2 driver3 driver4 emit1 emit2 emit3 emit4 fixer fxtracel1 fxtracer1 gun gun_rot gunner link1 rod sandbag seat1 seat2 seat3 seat4 shield sight turret upper_shield visor2
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 05.03.2025 13:13:49
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\114mm_QF4.5\114mm_qf_4.5_wooden.max
@@ -31,7 +31,7 @@
 				{limits -3 3}
 				{speed 0.008}
 				{Position 3.6672 	 0.0077 	 4.2734}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/turret.ply"}
 				{bone "visor"
 					{Position -4.7427 	 5.7867 	 18.1745}
 				}
@@ -45,7 +45,7 @@
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/aim_ver.ply"}
 					}
 				}
 				{bone "aim_hor_help"
@@ -58,7 +58,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/aim_hor.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -74,7 +74,7 @@
 						0 	 -1 	 0
 						-2.6089 	 -3.3553 	 8.0612
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -83,19 +83,19 @@
 							0 	 1 	 0
 							-9.3544 	 0.7972 	 -3.0964
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/gun.ply"}
 						{bone "foresight1"
 							{Position 31.5197 	 0.2513 	 0.0421}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -2.4092 	 0.2904 	 0.0473}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -3.7228 	 -2.7167 	 2.1047}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/lever.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -111,52 +111,52 @@
 			{bone "shield"
 				{parameters "id=shield;"}
 				{Position 0.0641 	 -8.2368 	 4.4135}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/shield.ply"}
 				{bone "object046"
 					{parameters "id=shield;"}
 					{Position 1.9991 	 17.7354 	 9.8368}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/object046.ply"}
 				}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
 				{Position -1.8503 	 -10.0102 	 10.8875}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/detail1.ply"}
 			}
 			{bone "detail3"
 				{parameters "id=body;"}
 				{Position 9.6004 	 -0.0637 	 2.9474}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/detail3.ply"}
 			}
 			{bone "detail4"
 				{parameters "id=body;"}
 				{Position -21.4365 	 -7.2982 	 -2.7887}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/detail4.ply"}
 			}
 			{bone "sight"
 				{parameters "id=gun;"}
 				{Position 1.0583 	 5.2501 	 12.3345}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/sight.ply"}
 			}
 			{bone "rod"
 				{parameters "id=body;"}
 				{Position -46.8775 	 0 	 -6.3399}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/rod.ply"}
 			}
 			{bone "upper_shield"
 				{parameters "id=shield;"}
 				{Position -2.8479 	 -7.1968 	 19.7022}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/upper_shield.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}
 				{Position 0.346 	 -9.9831 	 14.2321}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/detail2.ply"}
 			}
 			{bone "fixer"
 				{parameters "id=body;"}
 				{Position -8.6586 	 4.4972 	 -1.0331}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/fixer.ply"}
 			}
 			{bone "seat4"
 				{matrix34
@@ -196,7 +196,7 @@
 			{bone "body_extra_wooden"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 4.3172}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_qf_how_wooden/body_extra_wooden.ply"}
 			}
 		}
 		{bone "pivot_front"

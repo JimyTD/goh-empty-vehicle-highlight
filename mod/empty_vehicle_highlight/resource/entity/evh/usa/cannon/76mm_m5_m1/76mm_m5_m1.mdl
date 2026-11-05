@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.09.2023 17:26:39
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\76mm_m5_m1\76mm_m5_m1.max
@@ -28,21 +28,21 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -4.2113 	 7.4077 	 1.4908}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/standl.ply"}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -37.9757 	 22.541 	 -1.9328}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/detail4.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -29.106 	 19.6159 	 -2.3165}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -24.5599 	 16.9337 	 -3.2731}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/detail3.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -64,11 +64,11 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -4.2113 	 -7.4089 	 1.4908}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/standr.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -20.5748 	 -14.2689 	 -1.3178}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/detail1.ply"}
 				}
 				{bone "tow_bar"
 					{parameters "id=body;"}
@@ -78,7 +78,7 @@
 						-0.0714 	 -0.05 	 0.9962
 						-57.3023 	 -31.0695 	 -3.9138
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/tow_bar.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -102,11 +102,11 @@
 				{limits -22.5 22.5}
 				{speed 0.01}
 				{Position -2.1624 	 0 	 0.0058}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/turret.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 0 	 0 	 0.6914}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/shield.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -121,7 +121,7 @@
 						0 	 -1 	 0
 						-5.9741 	 3.4518 	 9.4799
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -130,16 +130,16 @@
 							0 	 1 	 0
 							-0.9535 	 3.4956 	 3.4518
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -10.1736 	 -2.706 	 1.5306}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/lever.ply"}
 						}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -9.0096 	 -0.0732 	 -0.5988}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/breechblock.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -161,7 +161,7 @@
 							0 	 1 	 0
 							-8.7176 	 -1.906 	 -0.1759
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/aim_ver1.ply"}
 					}
 					{bone "aim_ver2"
 						{parameters "id=gun;"}
@@ -171,7 +171,7 @@
 							0 	 1 	 0
 							2.409 	 -0.397 	 10.3916
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/aim_ver2.ply"}
 					}
 					{bone "telo"
 						{parameters "id=body;"}
@@ -181,13 +181,13 @@
 							0 	 1 	 0
 							4.4576 	 -5.1741 	 3.6978
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/telo.ply"}
 					}
 				}
 				{bone "aim_rod"
 					{parameters "id=body;"}
 					{Position 3.0557 	 9.043 	 7.0259}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/aim_rod.ply"}
 				}
 			}
 			{bone "aim_hor"
@@ -198,7 +198,7 @@
 					0 	 0 	 1
 					-10.8329 	 11.2717 	 6.9997
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/76mm_m5_m1/aim_hor.ply"}
 			}
 			{bone "visor"
 				{Position 6.3606 	 8.3406 	 23.7166}

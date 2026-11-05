@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: leftdoor1 leftdoor2 rightdoor1 rightdoor2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:12:42
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\sdkfz231\SdKfz_231.max
@@ -36,7 +36,7 @@
 				}
 				{speed 0.07}
 				{Position 14.3518 	 0 	 23.1545}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/turret.ply"}
 				{bone revolute "gun_rot"
 					{limits -10 25}
 					{speed 0.02}
@@ -54,7 +54,7 @@
 							0 	 1 	 0
 							0.4138 	 -0.0074 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/mantlet.ply"}
 						{bone "mg34"
 							{parameters "id=turret;"}
 							{matrix34
@@ -63,7 +63,10 @@
 								0 	 -1 	 0
 								-6.8282 	 6.8302 	 -1.8061
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/mg34.ply"}
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/mg34_lod1.ply"}
+							}
 						}
 						{bone "gun"
 							{parameters "id=gun;"}
@@ -71,7 +74,7 @@
 								{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz231/gun_r.anm"}{speed 0.7}}
 							}
 							{Position 2.5831 	 -0.9907 	 -0.0365}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/gun.ply"}
 						}
 						{bone "foresight5"
 							{Position 10.5847 	 6.8302 	 -0.7218}
@@ -101,7 +104,7 @@
 					}
 					{bone "turretdoor2"
 						{parameters "id=turret;"}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/turretdoor2.ply"}
 					}
 				}
 				{bone "turretdoor1_help"
@@ -114,7 +117,7 @@
 					{bone "turretdoor1"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/turretdoor1.ply"}
 					}
 				}
 			}
@@ -156,7 +159,7 @@
 					0.4692 	 0.4844 	 0.7384
 					7.5823 	 14.0589 	 9.1004
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/leftdoor1.ply"}
 			}
 			{bone "leftdoor2"
 				{parameters "id=body;"}
@@ -166,7 +169,7 @@
 					-0.454 	 0.5111 	 0.7299
 					-6.8742 	 12.5324 	 6.9637
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/leftdoor2.ply"}
 			}
 			{bone "rightdoor1"
 				{parameters "id=body;"}
@@ -176,7 +179,7 @@
 					0.4695 	 -0.4809 	 0.7405
 					7.6823 	 -14.2133 	 9.2923
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/rightdoor1.ply"}
 			}
 			{bone "rightdoor2"
 				{parameters "id=body;"}
@@ -186,7 +189,7 @@
 					-0.4694 	 -0.4955 	 0.7309
 					-8.3567 	 -14.2291 	 9.2923
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz231/rightdoor2.ply"}
 			}
 			{bone "fuel"
 				{Position -0.0874 	 0 	 0.0491}

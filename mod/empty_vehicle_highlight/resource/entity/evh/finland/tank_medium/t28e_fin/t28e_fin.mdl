@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 aux_turret2 driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 25.06.2025 22:47:05
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\tank_medium\t28E_fin\t28e_fin.max
@@ -31,7 +31,7 @@
 				{parameters "id=aux_turret1;"}
 				{limits -12 150}
 				{Position 40.2013 	 13.9465 	 12.5127}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/aux_turret1.ply"}
 				{bone revolute "mgun_1_rot1"
 					{limits -15 15}
 					{Position 9.5814 	 -1.7612 	 5.9263}
@@ -44,7 +44,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_1_rot2.ply"}
 						{bone "foresight4"
 							{matrix34
 								1 	 0 	 0
@@ -63,19 +63,19 @@
 						0 	 0 	 1
 						1.0021 	 0.0176 	 11.128
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/turret1_hatch.ply"}
 				}
 				{bone "auxturret1_armor"
 					{parameters "id=aux_turret1;"}
 					{Position 1.0003 	 0 	 5.4433}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/auxturret1_armor.ply"}
 				}
 			}
 			{bone revolute "aux_turret2"
 				{parameters "id=aux_turret2;"}
 				{limits -130 17}
 				{Position 40.2013 	 -14.3686 	 12.5127}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/aux_turret2.ply"}
 				{bone revolute "mgun_2_rot1"
 					{limits -15 15}
 					{Position 9.5815 	 -1.7609 	 5.9262}
@@ -88,7 +88,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_2_rot2.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -102,12 +102,12 @@
 				{bone "turret2_hatch"
 					{parameters "id=aux_turret2;"}
 					{Position 1.023 	 0.0176 	 11.1489}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/turret2_hatch.ply"}
 				}
 				{bone "auxturret2_armor"
 					{parameters "id=aux_turret2;"}
 					{Position 1.0003 	 0 	 5.4433}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/auxturret2_armor.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -116,7 +116,7 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_medium/t28e_fin/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 15.7292 	 -0.215 	 21.0639}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/turret.ply"}
 				{bone "visor1"
 					{Position 9.8971 	 -8.6974 	 16.856}
 				}
@@ -153,7 +153,7 @@
 							0 	 0 	 1
 							0 	 -1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_c_rot2.ply"}
 						{bone "foresight3"
 							{matrix34
 								1 	 0 	 0
@@ -181,7 +181,7 @@
 							0 	 0 	 1
 							0 	 -1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_r_rot2.ply"}
 						{bone "foresight6"
 							{matrix34
 								1 	 0 	 0
@@ -198,7 +198,7 @@
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
 					{Position -9.9844 	 6.1247 	 15.0243}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_a_rot1.ply"}
 					{bone revolute "cover1"
 						{parameters "id=turret;"}
 						{matrix34
@@ -207,7 +207,7 @@
 							0 	 -1 	 0
 							-6.0588 	 0.1456 	 1.6947
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/cover1.ply"}
 					}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
@@ -217,13 +217,13 @@
 							0 	 -1 	 0
 							6.0455 	 0.8317 	 2.2692
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/mgun_a_rot2.ply"}
 					}
 				}
 				{bone "turret_armor"
 					{parameters "id=turret;"}
 					{Position -5.5504 	 0 	 7.3136}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/turret_armor.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -237,7 +237,7 @@
 						0 	 -1 	 0
 						14.912 	 1.1245 	 7.2379
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -246,7 +246,7 @@
 							0 	 1 	 0
 							8.423 	 -1.8059 	 1.0036
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -534,16 +534,16 @@
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 45.1019 	 -0.215 	 20.8772}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/driver_hatch2.ply"}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 54.3711 	 -0.215 	 12.7065}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/driver_hatch1.ply"}
 				{bone "driver_armor"
 					{parameters "id=body;"}
 					{Position -1.6188 	 0 	 4.318}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t28e_fin/driver_armor.ply"}
 				}
 			}
 			{bone "shieldl1"

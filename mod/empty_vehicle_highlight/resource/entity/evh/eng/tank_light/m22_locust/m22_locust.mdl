@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:14:23
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_light\M22_Locust\m22_locust.max
@@ -28,7 +28,7 @@
 			{bone "hatch_driver"
 				{parameters "id=body;"}
 				{Position 14.0327 	 10.97 	 7.3651}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/hatch_driver.ply"}
 			}
 			{bone "body2"
 				{Position 14.4317 	 16.1685 	 3.1438}
@@ -39,33 +39,33 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/m22_locust/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 0.0788 	 -0.0002 	 6.5806}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/turret.ply"}
 				{bone "hatch_turret1"
 					{parameters "id=turret;"}
 					{Position -12.2422 	 6.0941 	 9.334}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/hatch_turret1.ply"}
 				}
 				{bone "hatch_turret2"
 					{parameters "id=turret;"}
 					{Position -12.2422 	 -6.0941 	 9.334}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/hatch_turret2.ply"}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -13.8756 	 4.7298 	 13.4727}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0008 	 0 	 3.621}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0128 	 0 	 3.6236}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0128 	 0 	 3.6215}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/at1_4.ply"}
 							}
 						}
 					}
@@ -81,7 +81,7 @@
 						0 	 -1 	 0
 						6.631 	 -0.7712 	 3.769
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/gun_rot.ply"}
 					{bone "mgun_turret"
 						{parameters "id=gun;"}
 						{matrix34
@@ -90,7 +90,7 @@
 							0 	 1 	 0
 							3.3031 	 0.8112 	 1.7474
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/mgun_turret.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -100,7 +100,7 @@
 							0 	 1 	 0
 							9.9471 	 1.0938 	 -0.853
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/m22_locust/gun.ply"}
 						{bone "foresight1"
 							{Position 20.6233 	 0.0072 	 0.0351}
 						}

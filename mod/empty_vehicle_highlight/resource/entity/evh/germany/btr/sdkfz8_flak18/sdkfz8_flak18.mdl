@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 26.09.2024 13:25:14
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\btr\sdkfz8_flak88\sdkfz8_flak.max
@@ -110,7 +110,7 @@
 							0 	 1 	 0
 							0 	 0 	 1
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/turret_mesh.ply"}
 						{bone "visor1"
 							{matrix34
 								1 	 0 	 0
@@ -132,7 +132,7 @@
 								0 	 -1 	 0
 								-13.508 	 5.6497 	 15.1965
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -141,7 +141,7 @@
 									0 	 1 	 0
 									9.7852 	 0.2277 	 5.6497
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/gun.ply"}
 								{bone "foresight1"
 									{matrix34
 										1 	 0 	 0
@@ -166,7 +166,7 @@
 										0 	 0 	 1
 										-16.8046 	 -1.5522 	 4.0045
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/lever.ply"}
 								}
 								{bone "breechblock"
 									{parameters "id=gun;"}
@@ -176,7 +176,7 @@
 										0 	 0 	 1
 										-14.883 	 -0.0113 	 0.181
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/breechblock.ply"}
 								}
 							}
 						}
@@ -188,7 +188,7 @@
 								0 	 0 	 1
 								-8.203 	 -0.0002 	 7.4047
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/rods.ply"}
 						}
 						{bone "controller"
 							{parameters "id=turret;"}
@@ -198,7 +198,7 @@
 								0 	 0 	 1
 								-2.763 	 11.1596 	 -0.4895
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/controller.ply"}
 						}
 						{bone "woodenseat2"
 							{parameters "id=turret;"}
@@ -208,7 +208,7 @@
 								0 	 0 	 1
 								8.2586 	 7.2687 	 -1.2082
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/woodenseat2.ply"}
 						}
 						{bone "woodenseat1"
 							{parameters "id=turret;"}
@@ -218,7 +218,7 @@
 								0 	 0 	 1
 								-0.3101 	 -8.1453 	 -0.3876
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/woodenseat1.ply"}
 						}
 						{bone "aim_hor"
 							{parameters "id=turret;"}
@@ -228,7 +228,7 @@
 								0 	 0 	 1
 								6.3244 	 -12.0453 	 0.9294
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/aim_hor.ply"}
 						}
 						{bone "aim_ver"
 							{parameters "id=turret;"}
@@ -238,7 +238,7 @@
 								0 	 0 	 1
 								-9.5434 	 -12.0455 	 0.9294
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/aim_ver.ply"}
 						}
 						{bone "cylinders"
 							{parameters "id=turret;"}
@@ -248,7 +248,7 @@
 								0 	 0 	 1
 								9.7318 	 0 	 7.2169
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/cylinders.ply"}
 						}
 						{bone "shield1"
 							{parameters "id=turret;"}
@@ -258,7 +258,7 @@
 								0 	 0 	 1
 								-3.5086 	 -6.8294 	 14.3219
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/shield1.ply"}
 							{bone "shield2"
 								{parameters "id=turret;"}
 								{matrix34
@@ -267,7 +267,7 @@
 									-0.4067 	 0 	 0.9135
 									16.6769 	 26.5723 	 -3.7674
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/shield2.ply"}
 							}
 							{bone "shield3"
 								{parameters "id=turret;"}
@@ -277,30 +277,30 @@
 									-0.4226 	 0 	 0.9063
 									16.6786 	 -12.9169 	 -3.7673
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/shield3.ply"}
 							}
 							{bone "shield4"
 								{parameters "id=turret;"}
 								{Position 23.0674 	 6.8304 	 -17.9608}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/shield4.ply"}
 							}
 							{bone "ammo1"
 								{parameters "id=turret;"}
 								{Position 4.9058 	 23.0294 	 -3.7097}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/ammo1.ply"}
 								{bone "ammo_he"
 									{Position -2.5039 	 -1.4849 	 -2.3099}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/ammo_he.ply"}
 								}
 								{bone "detail6"
 									{parameters "id=turret;"}
 									{Position -1.8466 	 1.535 	 -0.0628}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/detail6.ply"}
 								}
 								{bone "detail7"
 									{parameters "id=turret;"}
 									{Position -0.694 	 1.7698 	 4.5036}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz8_flak18/detail7.ply"}
 								}
 							}
 						}

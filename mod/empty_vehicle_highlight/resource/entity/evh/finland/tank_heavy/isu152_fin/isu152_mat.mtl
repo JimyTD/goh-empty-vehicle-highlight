@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/fin/isu_152_fin"}
-	{bump "$/_vehicle/rus/isu_152_bp"}
-	{specular "$/_vehicle/rus/isu_152_sp"}
-	{color "255 255 255 152"}
-	{blend none}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

@@ -23,14 +23,16 @@ Press the vanilla [b]"highlight items"[/b] key (default [b]C[/b]) to also outlin
 [list]
 [*]Works for all 822 vehicles in the base game and DLCs.
 [*]Only vehicles that the minimap still shows are marked - destroyed wrecks are ignored.
+[*]The full vehicle is outlined, including turrets, gun barrels, gun trails and machine guns.
+[*]The highlight helper is invisible during normal play: no doubled parts on your vehicles.
 [*]The outline disappears within ~3 s after someone climbs in.
 [*]No new keys, no UI changes: it simply rides on the vanilla C highlight.
 [/list]
 
 [h2]Known limitations[/h2]
 [list]
-[*]Only the hull, chassis and wheels light up. Moving parts (turrets, gun barrels, gun trails, doors, hatches) are left out of the outline so that they never show a second, mismatched copy on the real vehicle. On towed guns this can leave only the carriage and wheels outlined.
-[*]On side slopes the outline may be slightly off (roll is not copied).
+[*]While C is held, the outline can differ from the real vehicle: turrets, barrels and doors are drawn in their default pose, and on slopes the outline can be tilted. This is only visible while C is held.
+[*]Towed guns and trailers are not outlined while being towed.
 [*]Only appends two include lines to the small vanilla [i]set/interaction_entity/debug.inc[/i]; it no longer overrides [i]entity.set[/i], so it works alongside most big mods. Vehicles added by other mods are not highlighted.
 [*]Multiplayer not tested.
 [/list]
@@ -45,14 +47,16 @@ Source code & generator: https://github.com/JimyTD/goh-empty-vehicle-highlight
 [list]
 [*]覆盖本体及 DLC 的全部 822 种载具。
 [*]只标小地图上仍显示的载具，已被摧毁的残骸不标。
+[*]轮廓包含整车：炮塔、炮管、火炮大架、机枪都在。
+[*]用于高亮的替身平时不可见，不会在载具上出现重影。
 [*]有人上车后约 3 秒内轮廓消失。
 [*]不新增按键、不改界面，直接沿用原版 C 键高亮。
 [/list]
 
 [h2]已知限制[/h2]
 [list]
-[*]只亮车身、底盘和车轮。炮塔、炮管、火炮大架、车门、舱盖等活动部件不参与轮廓，这样平时不会在真车上出现姿态对不上的重影。牵引火炮可能只有底座和轮子亮。
-[*]横向斜坡上轮廓可能略有偏差（不复制侧倾）。
+[*]按住 C 时轮廓可能和真车不完全一致：炮塔、炮管、车门是默认姿态，坡上的轮廓可能带倾斜。这些偏差只在按住 C 时看得到。
+[*]被牵引中的火炮和拖车不显示轮廓。
 [*]只在原版很小的 [i]set/interaction_entity/debug.inc[/i] 末尾追加两行引用，不再覆盖 [i]entity.set[/i]，可与大多数大型模组同时使用。其他模组新增的载具不会高亮。
 [*]未测试联机。
 [/list]

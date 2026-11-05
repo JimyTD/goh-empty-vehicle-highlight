@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 front_hatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 24.11.2023 06:40:51
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_light\M5A1_stuart\M5A1_stuart.max
@@ -34,7 +34,7 @@
 				}
 				{speed 0.007}
 				{Position 4.5119 	 0 	 14.8334}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;iknax=20;"}
 					{animation
@@ -47,7 +47,7 @@
 						0 	 -1 	 0
 						11.3874 	 0 	 3.7585
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -56,7 +56,7 @@
 							0 	 1 	 0
 							5.7531 	 -0.0669 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/gun.ply"}
 						{bone "foresight1"
 							{Position 21.0357 	 0.0008 	 0.0724}
 						}
@@ -69,7 +69,10 @@
 							0 	 1 	 0
 							-0.1709 	 -0.1428 	 2.6696
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_coax.ply"}
+							{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_coax_lod1.ply"}
+						}
 						{bone "foresight5"
 							{Position 10.5439 	 0.3483 	 0.2643}
 						}
@@ -78,19 +81,19 @@
 				{bone "turret_hatch1"
 					{parameters "id=turret;"}
 					{Position -10.6443 	 2.4639 	 10.8498}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/turret_hatch1.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -10.6443 	 -8.6097 	 10.8526}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/turret_hatch2.ply"}
 				}
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
 					{limits -20 20}
 					{terminator}
 					{Position 2.2367 	 -14.1837 	 7.9159}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -14 60}
@@ -100,7 +103,7 @@
 							0 	 -1 	 0
 							-3.6947 	 -0.0068 	 6.7639
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -6.5127 	 0.5323 	 0.0032}
 						}
@@ -123,15 +126,15 @@
 				{bone "antenna1"
 					{parameters "id=body;"}
 					{Position -20.1743 	 -0.0091 	 14.6581}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=body;"}
 						{Position 0.0067 	 -0.0078 	 11.5489}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/antenna2.ply"}
 						{bone "antenna3"
 							{parameters "id=body;"}
 							{Position 0.0068 	 -0.0078 	 11.6996}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/antenna3.ply"}
 						}
 					}
 				}
@@ -152,7 +155,7 @@
 					0 	 0 	 1
 					17.8067 	 14.1716 	 13.6178
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/driver_hatch1.ply"}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
@@ -162,7 +165,7 @@
 					0 	 0 	 1
 					17.582 	 -13.9518 	 13.619
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/front_hatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -374,7 +377,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mg_frontring.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -384,7 +387,10 @@
 							0 	 1 	 0
 							-1.7912 	 -0.2324 	 0.3342
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_hull.ply"}
+							{VolumeView "../../../../-vehicle/usa/tank_light/m5a1_stuart/mgun_hull_lod1.ply"}
+						}
 					}
 				}
 			}

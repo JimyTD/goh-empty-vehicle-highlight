@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.10.2025 13:04:08
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Light_Tank_Mark_VIII\Light_Tank_MK8.max
@@ -33,7 +33,7 @@
 				}
 				{speed 0.008}
 				{Position 2.0805 	 0 	 16.4447}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -47,7 +47,7 @@
 						0 	 -1 	 0
 						7.7387 	 0.5033 	 6.0641
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -56,7 +56,7 @@
 							0 	 1 	 0
 							2.5181 	 -0.4711 	 0.5334
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -76,7 +76,7 @@
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position -13.3128 	 0.0016 	 9.3846}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/turret_hatch.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34
@@ -106,30 +106,30 @@
 				{bone "antennal1"
 					{parameters "id=turret;"}
 					{Position -17.5925 	 8.9429 	 10.8181}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennal1.ply"}
 					{bone "antennal2"
 						{parameters "id=turret;"}
 						{Position -0.0202 	 0 	 5.7117}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennal2.ply"}
 						{bone "antennal3"
 							{parameters "id=turret;"}
 							{Position -0.0204 	 0 	 5.7549}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennal3.ply"}
 						}
 					}
 				}
 				{bone "antennar1"
 					{parameters "id=turret;"}
 					{Position -17.5925 	 -8.9429 	 10.8181}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennar1.ply"}
 					{bone "antennar2"
 						{parameters "id=turret;"}
 						{Position -0.0207 	 0 	 5.7099}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennar2.ply"}
 						{bone "antennar3"
 							{parameters "id=turret;"}
 							{Position -0.0192 	 0 	 5.7576}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/antennar3.ply"}
 						}
 					}
 				}
@@ -277,7 +277,7 @@
 				{bone "driver_hatch1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/driver_hatch1.ply"}
 				}
 			}
 			{bone "hatch_help2"
@@ -290,7 +290,7 @@
 				{bone "driver_hatch2"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/light_tank_mk8/driver_hatch2.ply"}
 				}
 			}
 		}

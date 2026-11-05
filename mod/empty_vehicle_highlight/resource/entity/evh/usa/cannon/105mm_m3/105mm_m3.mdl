@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: box gun_fixer gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 18.09.2023 11:12:25
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\105mm_M3\105mm_m3.max
@@ -31,7 +31,7 @@
 				{limits -22.5 22.5}
 				{speed 0.01}
 				{Position 0.5227 	 0 	 -2.2282}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						-7.8884 	 0 	 8.7456
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,16 +54,16 @@
 							0 	 1 	 0
 							3.3701 	 2.5845 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -6.3279 	 -2.4205 	 1.3691}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/lever.ply"}
 						}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -5.0461 	 0 	 -2.5024}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/breechblock.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -85,7 +85,7 @@
 							0 	 1 	 0
 							12.2842 	 -5.085 	 -4.0809
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/cylinderl.ply"}
 					}
 					{bone "cylinderr"
 						{parameters "id=gun;"}
@@ -95,7 +95,7 @@
 							0 	 1 	 0
 							12.2842 	 -5.085 	 4.0586
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/cylinderr.ply"}
 					}
 				}
 				{bone "aim_h_helper"
@@ -108,7 +108,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/aim_hor.ply"}
 					}
 				}
 				{bone "aim_v_helper"
@@ -126,7 +126,7 @@
 							0 	 0 	 1
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/aim_ver.ply"}
 					}
 				}
 				{bone "visor"
@@ -147,16 +147,16 @@
 					0 	 0 	 1
 					-0.0945 	 6.18 	 -2.3074
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/standl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -10.1541 	 1.8482 	 1.478}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -28.744 	 -0.3378 	 1.2504}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/detail2.ply"}
 				}
 				{bone "seat4"
 					{matrix34
@@ -183,20 +183,20 @@
 					0 	 0 	 1
 					-0.0945 	 -6.1936 	 -0.005
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/standr.ply"}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -28.744 	 -0.7392 	 -1.0514}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/detail3.ply"}
 				}
 				{bone "legfixer1"
 					{parameters "id=body;"}
 					{Position -46.3507 	 1.6387 	 -3.1078}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/legfixer1.ply"}
 					{bone "legfixer2"
 						{parameters "id=body;"}
 						{Position 0.4442 	 -0.5063 	 0.0253}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/legfixer2.ply"}
 					}
 				}
 				{bone "towbar"
@@ -207,7 +207,7 @@
 						-0.0868 	 -0.0076 	 0.9962
 						-50.3353 	 1.8265 	 -3.3554
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/towbar.ply"}
 				}
 				{bone "seat3"
 					{matrix34
@@ -229,7 +229,7 @@
 			{bone "gun_fixer"
 				{parameters "id=body;"}
 				{Position 7.2905 	 -5.597 	 0.414}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/gun_fixer.ply"}
 			}
 			{bone "suspl"
 				{parameters "id=body;"}
@@ -250,7 +250,7 @@
 					-10.8177 	 0 	 -4.5674
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/105mm_m3/box.ply"}
 			}
 		}
 		{bone "pivot_front"

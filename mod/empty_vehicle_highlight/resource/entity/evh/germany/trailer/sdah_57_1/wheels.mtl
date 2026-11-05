@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "/entity/-vehicle/germany/trailer/sdah_57_1/opel_blitz"}
-	{bump "/entity/-vehicle/germany/trailer/sdah_57_1/opel_blitz_bp"}
-	{specular "/entity/-vehicle/germany/trailer/sdah_57_1/opel_blitz_sp"}
-	{color "230 230 230 63"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

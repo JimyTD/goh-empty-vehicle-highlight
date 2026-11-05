@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/panzerjager1"}
-	{bump "$/_vehicle/panzerjager1_bp"}
-	{specular "$/_vehicle/panzerjager1_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

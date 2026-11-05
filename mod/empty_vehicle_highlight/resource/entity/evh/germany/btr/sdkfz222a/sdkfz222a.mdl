@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr grill_left grill_right turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:10:41
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\sdkfz222\sdkfz-222.max
@@ -87,7 +87,7 @@
 				{bone "doorl"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/doorl.ply"}
 				}
 			}
 			{bone "doorr_help"
@@ -100,7 +100,7 @@
 				{bone "doorr"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/doorr.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -109,7 +109,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz222a/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -7.4262 	 -0.2281 	 6.7659}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{matrix34
@@ -118,7 +118,7 @@
 						0 	 -1 	 0
 						-1.8717 	 0.0504 	 13.7302
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -127,7 +127,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/gun.ply"}
 					}
 					{bone "mg34"
 						{parameters "id=gun;"}
@@ -137,7 +137,7 @@
 							0 	 1 	 0
 							6.2694 	 -2.6791 	 -7.0906
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/mg34.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -162,37 +162,37 @@
 				{bone "grill_left"
 					{parameters "id=turret;"}
 					{Position 0.3486 	 11.7751 	 14.797}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/grill_left.ply"}
 					{bone "shield_cover1"
 						{parameters "id=shield_cover;"}
 						{Position -0.1021 	 -11.6345 	 1.773}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/shield_cover1.ply"}
 					}
 				}
 				{bone "grill_right"
 					{parameters "id=turret;"}
 					{Position 0.3486 	 -11.7758 	 14.797}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/grill_right.ply"}
 					{bone "shield_cover2"
 						{parameters "id=shield_cover;"}
 						{Position -0.102 	 5.7852 	 1.773}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/shield_cover2.ply"}
 					}
 				}
 				{bone "turrethatchr"
 					{parameters "id=turret;"}
 					{Position -3.3584 	 -12.4063 	 14.2866}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/turrethatchr.ply"}
 				}
 				{bone "turrethatchback"
 					{parameters "id=turret;"}
 					{Position -10.6218 	 7.4473 	 14.2737}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/turrethatchback.ply"}
 				}
 				{bone "turrethatchl"
 					{parameters "id=turret;"}
 					{Position -1.4855 	 12.4063 	 14.2866}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz222a/turrethatchl.ply"}
 				}
 				{bone "gunner"
 					{matrix34

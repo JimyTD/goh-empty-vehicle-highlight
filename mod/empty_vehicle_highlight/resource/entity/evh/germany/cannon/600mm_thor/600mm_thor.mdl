@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_ver gun_rot gun_rot1 winch1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 29.08.2025 21:53:42
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\cannon\600mm_thor\karl_gerat.max
@@ -81,7 +81,7 @@
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0.9007}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/aim_ver.ply"}
 					}
 				}
 				{bone revolute "gun_rot1"
@@ -95,7 +95,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -104,7 +104,7 @@
 								0.0698 	 0.9976 	 0
 								-5.2785 	 -9.1421 	 -0.0787
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/gun.ply"}
 							{bone "breech_block"
 								{parameters "id=body;"}
 								{matrix34
@@ -113,7 +113,7 @@
 									-0.8988 	 0 	 0.4384
 									-6.0106 	 -0.1354 	 -12.3246
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/breech_block.ply"}
 							}
 							{bone "fx_invers"
 								{matrix34
@@ -130,7 +130,7 @@
 									-0.8988 	 0 	 0.4384
 									-3.0883 	 -0.0766 	 -6.3299
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/ammo001.ply"}
 							}
 							{bone revolute "gun_rot2"
 								{limits -5 5}
@@ -158,7 +158,7 @@
 								-0.866 	 0.5 	 0
 								3.338 	 8.2709 	 -12.2804
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/rivets.ply"}
 						}
 					}
 				}
@@ -373,7 +373,7 @@
 			{bone "winch1"
 				{parameters "id=body;"}
 				{Position 74.1535 	 12.9523 	 18.2721}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/600mm_thor/winch1.ply"}
 			}
 			{bone "lap_frontl"
 				{parameters "id=body;"}

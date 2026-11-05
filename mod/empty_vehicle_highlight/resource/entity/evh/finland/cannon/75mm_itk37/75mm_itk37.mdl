@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: b f foot_back foot_front standl standr susp_back susp_front trailer_back trailer_front turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 24.04.2022 22:49:01
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\Cannon\75mm_itk37\75mm_itk37.max
@@ -28,52 +28,52 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -0.0011 	 7.3508 	 -2.9474}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/standl.ply"}
 				{bone "foot_left"
 					{parameters "id=body;"}
 					{Position -0.001 	 39.8676 	 2.1971}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/foot_left.ply"}
 				}
 				{bone "fixerl"
 					{parameters "id=body;"}
 					{Position 2.473 	 8.5182 	 2.2114}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/fixerl.ply"}
 				}
 				{bone "l"
 					{parameters "id=body;"}
 					{Position -0.9364 	 37.3653 	 14.1537}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/l.ply"}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -0.0011 	 -7.3475 	 -2.9474}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/standr.ply"}
 				{bone "fixerr"
 					{parameters "id=body;"}
 					{Position 2.4779 	 -8.5136 	 1.3202}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/fixerr.ply"}
 				}
 				{bone "foot_right"
 					{parameters "id=body;"}
 					{Position -0.001 	 -39.8691 	 2.1971}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/foot_right.ply"}
 				}
 				{bone "r"
 					{parameters "id=body;"}
 					{Position -0.9364 	 -37.3669 	 14.1537}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/r.ply"}
 				}
 			}
 			{bone "foot_back"
 				{parameters "id=body;"}
 				{Position -46.0533 	 -0.0003 	 -0.0398}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/foot_back.ply"}
 			}
 			{bone "foot_front"
 				{parameters "id=body;"}
 				{Position 45.9537 	 0 	 -0.7411}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/foot_front.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -85,7 +85,7 @@
 				{Position 0 	 0 	 3.3203}
 				{bone "turreta"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/turreta.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -98,7 +98,7 @@
 							0 	 -1 	 0
 							-15.2872 	 0 	 14.8374
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -107,16 +107,16 @@
 								0 	 1 	 0
 								11.1009 	 3.6498 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/gun.ply"}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -3.8138 	 -3.8169 	 -1.9593}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/lever.ply"}
 							}
 							{bone "breech_block"
 								{parameters "id=gun;"}
 								{Position -5.7379 	 0 	 2.845}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/breech_block.ply"}
 							}
 							{bone "fx_invers"
 								{matrix34
@@ -134,17 +134,17 @@
 					{bone "line"
 						{parameters "id=body;"}
 						{Position -11.9892 	 0 	 4.6603}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/line.ply"}
 					}
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 5.0817 	 -9.2002 	 9.6566}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/aim_hor.ply"}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 3.6285 	 11.7181 	 13.0249}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/aim_ver.ply"}
 					}
 					{bone "visor2"
 						{Position 7.4871 	 -13.0652 	 21.2884}
@@ -205,12 +205,12 @@
 			{bone "b"
 				{parameters "id=body;"}
 				{Position -43.5504 	 0.9354 	 11.2067}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/b.ply"}
 			}
 			{bone "f"
 				{parameters "id=body;"}
 				{Position 43.4508 	 -0.9513 	 7.3682}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/f.ply"}
 			}
 			{bone "sandbag"
 				{Position 38.5687 	 0 	 -5.0121}
@@ -279,7 +279,7 @@
 			{bone "trailer_front"
 				{parameters "id=body;"}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/trailer_front.ply"}
 				{bone "seat3"
 					{matrix34
 						-0.0102 	 -0.9961 	 0.0872
@@ -303,7 +303,7 @@
 				{parameters "id=body;"}
 				{Position -0.0086 	 0 	 6.3096}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/susp_front.ply"}
 			}
 		}
 		{bone "pivot_back"
@@ -369,7 +369,7 @@
 			{bone "trailer_back"
 				{parameters "id=body;"}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/trailer_back.ply"}
 				{bone "seat5"
 					{matrix34
 						-0.2088 	 -0.978 	 0
@@ -393,7 +393,7 @@
 				{parameters "id=body;"}
 				{Position -0.0198 	 0 	 6.5908}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37/susp_back.ply"}
 			}
 		}
 		{bone "emit1"

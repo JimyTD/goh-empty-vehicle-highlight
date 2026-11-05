@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: shield_lower2 standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.04.2022 08:20:35
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\75mm_pak9738\75mm_pak9738_export.max
@@ -124,11 +124,11 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -6.4942 	 0.0296 	 2.1548}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/turret.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 3.9558 	 0.1204 	 0.7}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/shield.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -141,7 +141,7 @@
 						0 	 -1 	 0
 						-0.5475 	 1.4704 	 6.3502
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -150,7 +150,7 @@
 							0 	 1 	 0
 							14.3135 	 1.9092 	 1.2949
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/gun.ply"}
 						{bone "stopper1"
 							{parameters "id=gun;"}
 							{matrix34
@@ -159,7 +159,7 @@
 								0 	 0 	 1
 								-29.3047 	 2.1412 	 -0.0727
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/stopper1.ply"}
 						}
 						{bone "foresight1"
 							{Position 29.6993 	 -0.0083 	 0.5371}
@@ -198,12 +198,12 @@
 						0 	 0 	 1
 						-4.9795 	 9.0267 	 2.4801
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/aim_wheel2.ply"}
 				}
 				{bone revolute "aim_wheel1"
 					{parameters "id=body;"}
 					{Position -0.0153 	 9.7937 	 3.6359}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/aim_wheel1.ply"}
 				}
 			}
 			{bone "pivot_front"
@@ -268,12 +268,12 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -9.3626 	 8.4717 	 0.7414}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/standl.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -9.3253 	 -8.4737 	 0.4482}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/standr.ply"}
 			}
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
@@ -292,7 +292,7 @@
 						-0.218 	 0 	 0.976
 						0.2782 	 0 	 -0.7349
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_pak9738/shield_lower2.ply"}
 				}
 			}
 		}

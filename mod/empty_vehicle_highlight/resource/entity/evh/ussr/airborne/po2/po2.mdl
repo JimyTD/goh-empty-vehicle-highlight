@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 aileron3 aileron4 elevator1 elevator2 elevator3 rudder rudder2
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/ussr/airborne/po2/engine_start.anm"} {speed 0.7}}
@@ -126,7 +126,7 @@
 							0 	 -0.9995 	 -0.0305
 							-5.597 	 17.3999 	 -0.3311
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/po2/aileron1.ply"}
 					}
 					{bone "wirel_top"
 						{parameters "id=wingleft;"}
@@ -153,7 +153,7 @@
 							0 	 -0.9998 	 -0.0223
 							-5.5097 	 25.5112 	 -0.2888
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/po2/aileron3.ply"}
 					}
 					{bone "wirel_bottom"
 						{parameters "id=wingleft;"}
@@ -180,7 +180,7 @@
 							0 	 0.9994 	 -0.0356
 							-5.3353 	 -30.7764 	 -0.0602
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/po2/aileron2.ply"}
 					}
 					{bone "wirer_top"
 						{parameters "id=wingright;"}
@@ -207,7 +207,7 @@
 							0 	 0.9994 	 -0.0343
 							-5.5067 	 -28.389 	 -0.0917
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/po2/aileron4.ply"}
 					}
 					{bone "wirer_bottom"
 						{parameters "id=wingright;"}
@@ -231,7 +231,7 @@
 					0 	 -1 	 0
 					-66.3329 	 8.2436 	 5.543
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/po2/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=body;"}
@@ -243,7 +243,7 @@
 					0 	 -1 	 0
 					-66.3329 	 -14.8056 	 5.543
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/po2/elevator2.ply"}
 			}
 			{bone revolute "elevator3"
 				{parameters "id=body;"}
@@ -255,14 +255,14 @@
 					0 	 -1 	 0
 					9.7863 	 0 	 -5.2572
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/po2/elevator3.ply"}
 			}
 			{bone revolute "rudder"
 				{parameters "id=body;"}
 				{limits -20 20}
 				{speed 0.1}
 				{Position -66.1052 	 0 	 14.2245}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/po2/rudder.ply"}
 			}
 			{bone revolute "rudder2"
 				{parameters "id=body;"}
@@ -274,7 +274,7 @@
 					0 	 0 	 1
 					48.3034 	 0 	 -10.7917
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/po2/rudder2.ply"}
 			}
 			{bone "visor"
 				{matrix34

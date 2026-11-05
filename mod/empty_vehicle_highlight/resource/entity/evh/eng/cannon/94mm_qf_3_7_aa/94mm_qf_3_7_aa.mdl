@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_front body_rear fbody_front standl1 standl2 standr1 standr2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 03.12.2025 13:19:49
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\94mm_QF3.7_AA\94mm_qf_3_7_aa.max
@@ -33,7 +33,7 @@
 					0 	 0 	 1
 					-21.7323 	 25.2559 	 1.4173
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/standl2.ply"}
 				{bone "anchorl2_ik1"
 					{matrix34
 						0.7547 	 -0.6561 	 0
@@ -50,7 +50,7 @@
 						0 	 0 	 1
 						-0.0022 	 28.581 	 -4.7164
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/anchorl2.ply"}
 				}
 				{bone "stabilizerl2"
 					{parameters "id=body;"}
@@ -60,7 +60,7 @@
 						0 	 0 	 1
 						-0.0022 	 38.9675 	 -5.8858
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/stabilizerl2.ply"}
 				}
 			}
 			{bone "standr1"
@@ -71,7 +71,7 @@
 					0 	 0 	 1
 					19.2716 	 -26.437 	 1.4169
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/standr1.ply"}
 				{bone "anchorr1"
 					{parameters "id=body;"}
 					{matrix34
@@ -80,7 +80,7 @@
 						0 	 0 	 1
 						28.5726 	 0.0049 	 -4.716
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/anchorr1.ply"}
 				}
 				{bone "stabilizerr1"
 					{parameters "id=body;"}
@@ -90,7 +90,7 @@
 						0 	 0 	 1
 						38.9591 	 0.0049 	 -5.8854
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/stabilizerr1.ply"}
 				}
 				{bone "anchorr1_ik1"
 					{matrix34
@@ -114,7 +114,7 @@
 					0 	 0 	 1
 					-21.6535 	 -25.315 	 1.4253
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/standr2.ply"}
 				{bone "anchorr2"
 					{parameters "id=body;"}
 					{matrix34
@@ -123,7 +123,7 @@
 						0 	 0 	 1
 						0.0063 	 -28.5829 	 -4.7244
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/anchorr2.ply"}
 				}
 				{bone "stabilizerr2"
 					{parameters "id=body;"}
@@ -133,7 +133,7 @@
 						0 	 0 	 1
 						0.0063 	 -38.9694 	 -5.8938
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/stabilizerr2.ply"}
 				}
 				{bone "anchorr2_ik1"
 					{matrix34
@@ -152,7 +152,7 @@
 					0 	 0 	 1
 					19.2717 	 26.437 	 1.4173
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/standl1.ply"}
 				{bone "stabilizerl1"
 					{parameters "id=body;"}
 					{matrix34
@@ -161,7 +161,7 @@
 						0 	 0 	 1
 						38.9647 	 0.0015 	 -5.8858
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/stabilizerl1.ply"}
 				}
 				{bone "anchorl1_ik1"
 					{matrix34
@@ -179,7 +179,7 @@
 						0 	 0 	 1
 						28.572 	 0.0015 	 -4.685
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/anchorl1.ply"}
 				}
 			}
 			{bone "anchorl2_ik2"
@@ -192,18 +192,18 @@
 				{parameters "id=body;"}
 				{Position -41.6142 	 0 	 10.5742}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/body_rear.ply"}
 				{bone "valve"
 					{parameters "id=body;"}
 					{Position 0.6377 	 1.8999 	 6.2335}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/valve.ply"}
 				}
 				{bone "tow_bar_rot"
 					{parameters "id=body;"}
 					{Position -8.3749 	 0 	 2.0386}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/tow_bar_rot.ply"}
 					{bone "tow_bar"
 						{parameters "id=body;"}
 						{matrix34
@@ -213,20 +213,20 @@
 							-15.2741 	 0 	 -2.3868
 						}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/tow_bar.ply"}
 					}
 				}
 				{bone "tow_bar_torsion1"
 					{parameters "id=body;"}
 					{Position -7.1985 	 -17.7032 	 -2.1041}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/tow_bar_torsion1.ply"}
 				}
 				{bone "tow_bar_torsion2"
 					{parameters "id=body;"}
 					{Position -7.1985 	 17.7029 	 -2.1041}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/tow_bar_torsion2.ply"}
 				}
 				{bone "seat6"
 					{matrix34
@@ -280,12 +280,12 @@
 					37.4669 	 0 	 6.5892
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/body_front.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.8756 	 0 	 -2.2673}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -297,7 +297,7 @@
 						0 	 -1 	 0
 						-20.4311 	 0 	 22.1357
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -306,16 +306,16 @@
 							0 	 1 	 0
 							10.16 	 4.3125 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -1.147 	 -0.8015 	 0.2841}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/breech.ply"}
 						}
 						{bone "breech_lock1"
 							{parameters "id=gun;"}
 							{Position 1.2199 	 -6.1512 	 4.4178}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/breech_lock1.ply"}
 						}
 						{bone "foresight1"
 							{Position 97.6522 	 0 	 0.2759}
@@ -341,22 +341,22 @@
 				{bone "metal_spring"
 					{parameters "id=body;"}
 					{Position -12.898 	 -14.1831 	 13.1407}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/metal_spring.ply"}
 				}
 				{bone "seat02"
 					{parameters "id=body;"}
 					{Position -2.6737 	 13.6403 	 4.5587}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat02.ply"}
 				}
 				{bone "seat01_2"
 					{parameters "id=body;"}
 					{Position 3.409 	 11.8018 	 8.3834}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat01_2.ply"}
 				}
 				{bone "seat01_1"
 					{parameters "id=body;"}
 					{Position -2.7659 	 9.8764 	 12.2582}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat01_1.ply"}
 					{bone "gunner"
 						{Position -6.3824 	 2.8818 	 2.2452}
 					}
@@ -364,22 +364,22 @@
 				{bone "holder"
 					{parameters "id=body;"}
 					{Position -17.3188 	 -10.1624 	 7.2792}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/holder.ply"}
 				}
 				{bone "turret_rod1"
 					{parameters "id=body;"}
 					{Position 29.6655 	 -5.3687 	 17.6935}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/turret_rod1.ply"}
 				}
 				{bone "turret_rod2"
 					{parameters "id=body;"}
 					{Position 29.6655 	 5.4045 	 17.6935}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/turret_rod2.ply"}
 				}
 				{bone "seat05_1"
 					{parameters "id=body;"}
 					{Position 24.2697 	 -8.5754 	 13.7762}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat05_1.ply"}
 					{bone "charger3"
 						{matrix34
 							-1 	 0 	 0
@@ -392,7 +392,7 @@
 				{bone "torsion_bars"
 					{parameters "id=body;"}
 					{Position -15.648 	 0 	 12.616}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/torsion_bars.ply"}
 				}
 				{bone "gun_lock"
 					{parameters "id=body;"}
@@ -402,7 +402,7 @@
 						1 	 0 	 0
 						27.3222 	 0 	 16.906
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/gun_lock.ply"}
 				}
 				{bone "seat05_2"
 					{parameters "id=body;"}
@@ -412,32 +412,32 @@
 						0 	 0 	 1
 						3.409 	 -11.8018 	 8.3834
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat05_2.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position 12.8573 	 13.1445 	 22.9351}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/aim_v.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position 17.6187 	 0 	 17.3461}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/detail3.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position 16.3781 	 0 	 17.3461}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/detail2.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position 12.8573 	 -13.1348 	 22.9351}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/aim_h.ply"}
 				}
 				{bone "seat04"
 					{parameters "id=body;"}
 					{Position 24.2697 	 8.5754 	 12.6884}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/seat04.ply"}
 					{bone "gunner2"
 						{matrix34
 							-1 	 0 	 0
@@ -469,7 +469,7 @@
 						1 	 0 	 0
 						35.6787 	 0 	 17.3132
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/fbody_front.ply"}
 					{bone revolute "fwheelr1"
 						{parameters "id=body;"}
 						{matrix34
@@ -478,7 +478,7 @@
 							0 	 1 	 0
 							0.092 	 -23.3593 	 -0.0005
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/fwheelr1.ply"}
 					}
 					{bone revolute "fwheell1"
 						{parameters "id=body;"}
@@ -488,7 +488,7 @@
 							0 	 1 	 0
 							0.092 	 23.3661 	 -0.0005
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/94mm_qf_3_7_aa/fwheell1.ply"}
 					}
 				}
 			}

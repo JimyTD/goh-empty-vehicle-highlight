@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/cruiser_mk1_a9"}
-	{bump "$/_vehicle/eng/cruiser_mk1_a9_bp"}
-	{specular "$/_vehicle/eng/cruiser_mk1_a9_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

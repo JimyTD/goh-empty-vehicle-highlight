@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 16.04.2023 00:57:13
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\cannon\105mm_sk18\sk18_105.max
@@ -64,26 +64,26 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -7.5925 	 9.1433 	 4.7856}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/standl.ply"}
 				{bone "spadel"
 					{parameters "id=body;"}
 					{Position -64.0113 	 34.0323 	 -13.0198}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/spadel.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -29.8567 	 18.5846 	 -6.3792}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -40.8918 	 19.3922 	 -10.8996}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -30.1525 	 18.5715 	 -8.2481}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail3.ply"}
 				}
 				{bone "standplate"
 					{parameters "id=body;"}
@@ -93,7 +93,7 @@
 						0 	 0 	 1
 						-13.8136 	 10.6005 	 -8.5099
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/standplate.ply"}
 				}
 				{bone "lockl"
 					{parameters "id=body;"}
@@ -103,7 +103,7 @@
 						0 	 0 	 1
 						-22.8791 	 12.7053 	 -2.2741
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/lockl.ply"}
 				}
 			}
 			{bone "standr"
@@ -114,7 +114,7 @@
 					0 	 0 	 1
 					-7.5925 	 -9.1451 	 4.7856
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/standr.ply"}
 				{bone "spader"
 					{parameters "id=body;"}
 					{matrix34
@@ -123,7 +123,7 @@
 						0 	 0 	 1
 						-72.4958 	 0.0057 	 -13.0198
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/spader.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
@@ -133,7 +133,7 @@
 						0 	 0 	 1
 						-35.0869 	 -2.3923 	 -6.3792
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail4.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=body;"}
@@ -143,7 +143,7 @@
 						0 	 0 	 1
 						-45.2094 	 2.0752 	 -10.8996
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail5.ply"}
 				}
 				{bone "detail6"
 					{parameters "id=body;"}
@@ -153,7 +153,7 @@
 						0 	 0 	 1
 						-35.3419 	 -2.2419 	 -8.2481
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/detail6.ply"}
 				}
 				{bone "vinch"
 					{parameters "id=body;"}
@@ -163,7 +163,7 @@
 						0 	 0 	 1
 						-18.7712 	 -1.9485 	 -1.2935
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/vinch.ply"}
 					{bone "aim_vert"
 						{parameters "id=body;"}
 						{matrix34
@@ -172,7 +172,7 @@
 							0 	 0 	 1
 							-0.0161 	 -1.5587 	 3.3107
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/aim_vert.ply"}
 					}
 				}
 				{bone "lockr"
@@ -183,7 +183,7 @@
 						-0.2242 	 -0.0182 	 0.9744
 						-26.1653 	 -0.3433 	 -2.2818
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/lockr.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -199,7 +199,7 @@
 					0.0082 	 0.0006 	 1
 					-5.9999 	 -0.0015 	 4.4998
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/turret.ply"}
 				{bone "cardan"
 					{parameters "id=body;"}
 					{matrix34
@@ -208,7 +208,7 @@
 						-0.0082 	 -0.0006 	 1
 						-17.2471 	 -19.6722 	 -1.1618
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/cardan.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
@@ -218,7 +218,7 @@
 						-0.0082 	 -0.0006 	 1
 						-17.5394 	 8.8666 	 3.9004
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/aim_hor.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -230,7 +230,7 @@
 						-0.0002 	 -1 	 -0.0006
 						-3.2419 	 -0.0042 	 11.2955
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -239,7 +239,7 @@
 							0 	 1 	 0
 							-5.9563 	 0.2508 	 -0.0015
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/gun.ply"}
 						{bone "foresight1"
 							{Position 94.4473 	 -0.0254 	 -0.0232}
 						}
@@ -254,12 +254,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -0.1576 	 -0.0004 	 0.002}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -1.7218 	 -2.957 	 4.2092}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/lever.ply"}
 						}
 					}
 				}
@@ -279,7 +279,7 @@
 						-0.0082 	 -0.0006 	 1
 						14.5254 	 -5.3397 	 3.6524
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/telor.ply"}
 				}
 				{bone "telol"
 					{parameters "id=gun;"}
@@ -289,7 +289,7 @@
 						-0.0082 	 -0.0006 	 1
 						14.5252 	 5.3218 	 3.6484
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_sk18/telol.ply"}
 				}
 			}
 		}

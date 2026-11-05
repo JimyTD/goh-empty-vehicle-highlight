@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_ver ammo_box commander gun_rot gunner holderl holderr standl standr water_can
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 15.08.2025 23:17:43
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\Cannon\Maxim M32_33\maxim_M32_33.max
@@ -87,7 +87,7 @@
 						0.3176 	 -0.3552 	 0.8792
 						0 	 0.9821 	 -0.0032
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/standl.ply"}
 				}
 				{bone "standr"
 					{parameters "id=body;"}
@@ -97,7 +97,7 @@
 						0.3095 	 0.3718 	 0.8752
 						0 	 -0.983 	 -0.0032
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/standr.ply"}
 				}
 			}
 			{bone "holderl"
@@ -108,7 +108,7 @@
 					0 	 -1 	 0
 					-15.3862 	 2.3497 	 -5.4485
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/holderl.ply"}
 			}
 			{bone "holderr"
 				{parameters "id=body;"}
@@ -118,7 +118,7 @@
 					0 	 -1 	 0
 					-15.3862 	 -2.3434 	 -5.4485
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/holderr.ply"}
 			}
 			{bone revolute "gun_rot"
 				{parameters "id=body;"}
@@ -130,7 +130,7 @@
 					0 	 -1 	 0
 					0.5022 	 0 	 2.7208
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/gun_rot.ply"}
 				{bone revolute "turret"
 					{parameters "id=body;"}
 					{limits -5 5}
@@ -141,7 +141,7 @@
 						0 	 1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/turret.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{matrix34
@@ -150,21 +150,21 @@
 							0 	 0 	 1
 							-2.4384 	 0 	 0.0529
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/gun.ply"}
 						{bone "hammer"
 							{parameters "id=body;"}
 							{Position -6.2651 	 -0.6682 	 1.1523}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/hammer.ply"}
 						}
 						{bone "1"
 							{parameters "id=body;"}
 							{Position -7.3773 	 -0.8636 	 1.1715}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/1.ply"}
 						}
 						{bone "gun_fixer"
 							{parameters "id=body;"}
 							{Position -5.7635 	 0.4712 	 -0.8668}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/gun_fixer.ply"}
 						}
 						{bone "empty_belt"
 							{parameters "id=body;"}
@@ -174,7 +174,7 @@
 								0 	 0 	 1
 								-1.8143 	 0.2736 	 1.7726
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/empty_belt.ply"}
 						}
 						{bone "visor"
 							{matrix34
@@ -208,7 +208,7 @@
 								0 	 -0.3836 	 0.9235
 								-1.8143 	 -0.6228 	 1.776
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo002"
 							{parameters "id=body;"}
@@ -218,7 +218,7 @@
 								0 	 -0.447 	 0.8945
 								-1.8143 	 -1.0054 	 1.6171
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo003"
 							{parameters "id=body;"}
@@ -228,7 +228,7 @@
 								-0.0031 	 -0.6253 	 0.7803
 								-1.8145 	 -1.4053 	 1.438
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo004"
 							{parameters "id=body;"}
@@ -238,7 +238,7 @@
 								0.0055 	 -0.7624 	 0.6471
 								-1.8153 	 -1.7403 	 1.1845
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo006"
 							{parameters "id=body;"}
@@ -248,7 +248,7 @@
 								0.0004 	 -0.8926 	 0.4508
 								-1.8143 	 -2.0092 	 0.8747
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo007"
 							{parameters "id=body;"}
@@ -258,7 +258,7 @@
 								-0.0001 	 -0.9743 	 0.2254
 								-1.8143 	 -2.1918 	 0.4967
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo008"
 							{parameters "id=body;"}
@@ -268,7 +268,7 @@
 								0.0002 	 -0.9985 	 0.0553
 								-1.8143 	 -2.2667 	 0.0777
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo009"
 							{parameters "id=body;"}
@@ -278,7 +278,7 @@
 								0.0002 	 -0.9985 	 0.0553
 								-1.8143 	 -2.2977 	 -0.348
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo010"
 							{parameters "id=body;"}
@@ -288,7 +288,7 @@
 								0.0002 	 -0.9993 	 0.0378
 								-1.8143 	 -2.3283 	 -0.7674
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo011"
 							{parameters "id=body;"}
@@ -298,7 +298,7 @@
 								0.0002 	 -0.9985 	 0.0553
 								-1.8143 	 -2.3588 	 -1.1869
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo012"
 							{parameters "id=body;"}
@@ -308,7 +308,7 @@
 								0.0002 	 -0.9974 	 0.0727
 								-1.8143 	 -2.3898 	 -1.6126
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo013"
 							{parameters "id=body;"}
@@ -318,7 +318,7 @@
 								0.0001 	 -0.9974 	 0.0727
 								-1.8143 	 -2.4204 	 -2.032
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo014"
 							{parameters "id=body;"}
@@ -328,7 +328,7 @@
 								0.0001 	 -0.9974 	 0.0727
 								-1.8143 	 -2.4515 	 -2.459
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo015"
 							{parameters "id=body;"}
@@ -338,7 +338,7 @@
 								0.0002 	 -0.9974 	 0.0722
 								-1.8143 	 -2.482 	 -2.8772
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo016"
 							{parameters "id=body;"}
@@ -348,7 +348,7 @@
 								0.0002 	 -0.9974 	 0.0721
 								-1.8143 	 -2.5126 	 -3.2966
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo017"
 							{parameters "id=body;"}
@@ -358,7 +358,7 @@
 								0.0001 	 -0.9957 	 0.0931
 								-1.8143 	 -2.5432 	 -3.7161
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo018"
 							{parameters "id=body;"}
@@ -368,7 +368,7 @@
 								0.0001 	 -0.9956 	 0.0939
 								-1.8143 	 -2.5752 	 -4.1417
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo019"
 							{parameters "id=body;"}
@@ -378,7 +378,7 @@
 								0 	 -0.9917 	 0.1287
 								-1.8144 	 -2.6133 	 -4.5606
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo020"
 							{parameters "id=body;"}
@@ -388,7 +388,7 @@
 								0 	 -0.9977 	 0.0676
 								-1.8144 	 -2.6508 	 -4.9845
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo021"
 							{parameters "id=body;"}
@@ -398,7 +398,7 @@
 								0 	 -0.994 	 0.109
 								-1.8144 	 -2.6796 	 -5.4066
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo022"
 							{parameters "id=body;"}
@@ -408,7 +408,7 @@
 								0 	 -0.9955 	 0.0946
 								-1.8144 	 -2.7109 	 -5.831
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo023"
 							{parameters "id=body;"}
@@ -418,7 +418,7 @@
 								0 	 -0.9946 	 0.1039
 								-1.8144 	 -2.7547 	 -6.2429
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo024"
 							{parameters "id=body;"}
@@ -428,7 +428,7 @@
 								0.0161 	 -0.9877 	 0.1553
 								-1.8144 	 -2.8003 	 -6.6724
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo025"
 							{parameters "id=body;"}
@@ -438,7 +438,7 @@
 								0.0032 	 -0.9517 	 0.3069
 								-1.8144 	 -2.8656 	 -7.0875
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo026"
 							{parameters "id=body;"}
@@ -448,7 +448,7 @@
 								0 	 -0.9486 	 0.3164
 								-1.8144 	 -2.9948 	 -7.4943
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo027"
 							{parameters "id=body;"}
@@ -458,7 +458,7 @@
 								-0.0228 	 -0.9489 	 0.3146
 								-1.8144 	 -3.1224 	 -7.8963
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo028"
 							{parameters "id=body;"}
@@ -468,7 +468,7 @@
 								-0.027 	 -0.8942 	 0.4469
 								-1.8144 	 -3.2493 	 -8.296
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo029"
 							{parameters "id=body;"}
@@ -478,7 +478,7 @@
 								-0.0052 	 -0.6515 	 0.7587
 								-1.8144 	 -3.4372 	 -8.6672
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo030"
 							{parameters "id=body;"}
@@ -488,7 +488,7 @@
 								-0.0027 	 -0.43 	 0.9028
 								-1.8144 	 -3.7595 	 -8.9426
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "ammo039"
 							{parameters "id=body;"}
@@ -498,7 +498,7 @@
 								-0.0027 	 -0.1791 	 0.9838
 								-1.8144 	 -4.1288 	 -9.1218
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo001.ply"}
 						}
 						{bone "line001"
 							{matrix34
@@ -537,7 +537,7 @@
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/aim_ver.ply"}
 				}
 			}
 		}
@@ -549,7 +549,7 @@
 		{bone "water_can"
 			{parameters "id=body;"}
 			{Position 7.3109 	 0.1003 	 1.9709}
-			
+			{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/water_can.ply"}
 			{bone "tube"
 				{parameters "id=body;"}
 				{matrix34
@@ -558,7 +558,7 @@
 					-0.1389 	 0 	 0.9903
 					0 	 0 	 3.9214
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/tube.ply"}
 			}
 		}
 		{bone "ammo_box"
@@ -569,7 +569,7 @@
 				0.0019 	 0 	 1
 				-3.9992 	 -5.4392 	 2.7603
 			}
-			
+			{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo_box.ply"}
 			{bone "ammo038"
 				{parameters "id=body;"}
 				{matrix34
@@ -578,7 +578,7 @@
 					-0.0018 	 0.0006 	 1
 					-0.74 	 -1.9535 	 1.3433
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/ammo038.ply"}
 			}
 			{bone "cover"
 				{parameters "id=body;"}
@@ -588,7 +588,7 @@
 					-0.0018 	 0.0006 	 1
 					-0.8346 	 -2.7299 	 2.0549
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m32_33/cover.ply"}
 			}
 		}
 	}

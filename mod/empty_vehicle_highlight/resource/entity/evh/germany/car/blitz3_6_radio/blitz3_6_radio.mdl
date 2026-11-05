@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door doorl doorr side_door
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 20.07.2020 07:13:26
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\Opel_blitz_Radio\opel_blitz_3_6_Radio_export.max
@@ -213,7 +213,7 @@
 						0 	 -0.1564 	 0.9877
 						8.1261 	 -11.2493 	 -5.0044
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -222,7 +222,7 @@
 							0 	 0.1564 	 0.9877
 							-9.174 	 0.4934 	 17.9737
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -233,7 +233,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						8.3071 	 11.5158 	 -4.4291
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -242,7 +242,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.6795 	 1.0623 	 17.6914
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/glassl.ply"}
 					}
 				}
 				{bone "driver"
@@ -372,7 +372,7 @@
 				{bone "back_door"
 					{parameters "id=bodyback;"}
 					{Position -37.7096 	 -7.7155 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/back_door.ply"}
 					{bone "glass6"
 						{parameters "id=glass6;"}
 						{matrix34
@@ -381,7 +381,7 @@
 							0 	 0 	 1
 							0.1294 	 7.8128 	 8.7775
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/glass6.ply"}
 					}
 				}
 				{bone "side_door"
@@ -392,7 +392,7 @@
 						0 	 0 	 1
 						20.273 	 -19.9586 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/side_door.ply"}
 					{bone "glass2"
 						{parameters "id=glass2;"}
 						{matrix34
@@ -401,7 +401,7 @@
 							0 	 0 	 1
 							-7.7521 	 0.2067 	 8.7854
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_radio/glass2.ply"}
 					}
 				}
 				{bone "fxstop2"

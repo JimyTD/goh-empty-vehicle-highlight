@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 31.07.2024 14:56:44
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\pz3\pz3n.max
@@ -32,7 +32,7 @@
 				}
 				{speed 0.003}
 				{Position 5.9848 	 -0.0079 	 8.408}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{limits -8 15}
@@ -43,7 +43,7 @@
 						0 	 -1 	 0
 						14.9863 	 0.1927 	 0.1207
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -55,7 +55,7 @@
 							0 	 1 	 0
 							15.6149 	 0.0823 	 -0.5146
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -73,7 +73,7 @@
 							0 	 1 	 0
 							-1.194 	 1.2674 	 5.8332
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/mgun_t.ply"}
 						{bone "foresight5"
 							{Position 10.6039 	 0.0082 	 -0.0131}
 						}
@@ -82,36 +82,36 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position -11.5727 	 5.5746 	 11.7113}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/cover1.ply"}
 				}
 				{bone "shieldt"
 					{parameters "id=turret;"}
 					{Position -2.9643 	 -1.2339 	 1.4386}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/shieldt.ply"}
 					{bone "shieldl5"
 						{parameters "id=turret;"}
 						{Position -4.5886 	 21.0633 	 -0.63}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/shieldl5.ply"}
 					}
 					{bone "shieldr5"
 						{parameters "id=turret;"}
 						{Position -4.6397 	 -18.5803 	 -0.63}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/shieldr5.ply"}
 					}
 				}
 				{bone "turret_basket"
 					{parameters "id=turret;"}
 					{Position -23.4138 	 0.0006 	 2.5638}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/turret_basket.ply"}
 				}
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{Position -11.5727 	 -5.7715 	 11.7113}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/cover2.ply"}
 				}
 				{bone "enumerator1"
 					{Position 4.9815 	 -15.1178 	 0.7639}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/enumerator1.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -438,10 +438,10 @@
 					{bone "hmgun1"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 -0.0007}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/hmgun1.ply"}
 						{bone "mgun_h"
 							{Position -2.1335 	 -0.0102 	 -0.0561}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3n/mgun_h.ply"}
 							{bone "foresight4"
 								{Position 10.7107 	 0.0007 	 0.0104}
 							}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bodyback_doorcenter dooright doorleft turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:53:55
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\car\Volvo_LV_127D\volvo_127d_itk40.max
@@ -33,11 +33,11 @@
 			{bone "dooright"
 				{parameters "id=body;"}
 				{Position 29.2017 	 -14.4882 	 20.6918}
-				
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/dooright.ply"}
 				{bone "glass3"
 					{parameters "id=glass3;"}
 					{Position -8.3892 	 -0.802 	 6.2373}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/glass3.ply"}
 				}
 			}
 			{bone "emblem"
@@ -103,7 +103,7 @@
 					{bone revolute "turret"
 						{parameters "id=turret;"}
 						{Position 0.8319 	 0.0234 	 1.6114}
-						
+						{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/turret.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{animation
@@ -115,7 +115,7 @@
 								0 	 -1 	 0
 								3.6499 	 0 	 9.2127
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/gun_rot.ply"}
 							{bone "gun1"
 								{parameters "id=gun;"}
 								{matrix34
@@ -124,7 +124,7 @@
 									-0.0045 	 1 	 0
 									7.4303 	 0.4415 	 -1.5179
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/gun1.ply"}
 								{bone "shooter00"
 									{matrix34
 										0.9997 	 0 	 -0.0262
@@ -150,7 +150,7 @@
 									-0.0045 	 1 	 0
 									7.4303 	 0.4415 	 1.5179
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/gun2.ply"}
 								{bone "shooter01"
 									{matrix34
 										0.9997 	 0 	 -0.0262
@@ -180,17 +180,17 @@
 						{bone "aim_horizontal"
 							{parameters "id=turret;"}
 							{Position -7.2756 	 0 	 5.3694}
-							
+							{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/aim_horizontal.ply"}
 						}
 						{bone "aim_vertical"
 							{parameters "id=turret;"}
 							{Position -7.5965 	 -5.3476 	 10.2025}
-							
+							{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/aim_vertical.ply"}
 						}
 						{bone "sight_detail"
 							{parameters "id=body;"}
 							{Position -6.1988 	 3.6029 	 15.6234}
-							
+							{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/sight_detail.ply"}
 						}
 						{bone "gunner"
 							{Position -15.1448 	 -0.0243 	 -0.038}
@@ -251,7 +251,7 @@
 				{bone "bodyback_doorcenter"
 					{parameters "id=bodyback;"}
 					{Position -37.0161 	 11.8546 	 -1.6524}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/bodyback_doorcenter.ply"}
 				}
 				{bone "bodyback_doorright"
 					{parameters "id=bodyback;"}
@@ -262,11 +262,11 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 29.2017 	 14.4882 	 20.6918}
-				
+				{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/doorleft.ply"}
 				{bone "glass2"
 					{parameters "id=glass2;"}
 					{Position -8.3892 	 0.802 	 6.2373}
-					
+					{VolumeView "../../../../-vehicle/finland/car/volvo_127d_itk40/glass2.ply"}
 				}
 			}
 			{bone "glass1"

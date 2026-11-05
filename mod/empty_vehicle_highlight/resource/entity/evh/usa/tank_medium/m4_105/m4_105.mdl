@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 radio_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 14.10.2025 14:44:14
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\tank_medium\m4_105\M4_105.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.007}
 				{Position 4.0409 	 0.0051 	 24.6809}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						15.571 	 0 	 5.027
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							8.0192 	 0.3052 	 -0.8571
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/gun.ply"}
 						{bone "foresight1"
 							{Position 25.8949 	 0.0084 	 0.0096}
 						}
@@ -78,23 +78,23 @@
 							0 	 1 	 0
 							-3.54 	 2.2776 	 -6.6268
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/mgun_turrret.ply"}
 					}
 				}
 				{bone revolute "cupola_ring"
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5888 	 -9.1255 	 14.0052}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/cupola_ring.ply"}
 					{bone "copola_cover1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 7.5969 	 0.7573}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/copola_cover1.ply"}
 					}
 					{bone "copola_cover2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.5977 	 0.7626}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/copola_cover2.ply"}
 					}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=turret;"}
@@ -106,7 +106,7 @@
 							0 	 0 	 1
 							7.8365 	 0 	 2.9824
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 40}
@@ -117,7 +117,7 @@
 								0 	 -1 	 0
 								-1.6332 	 0.9054 	 4.3931
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{Position -7.9638 	 0.153 	 0.9055}
 							}
@@ -131,7 +131,7 @@
 							0 	 1 	 0
 							-7.3071 	 -0.0009 	 2.1024
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/holder.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.7377 	 0.4027 	 -19.313}
@@ -140,11 +140,11 @@
 				{bone "antena1"
 					{parameters "id=body;"}
 					{Position -19.8391 	 7.9492 	 17.7715}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/antena1.ply"}
 					{bone "antena2"
 						{parameters "id=body;"}
 						{Position -0.0306 	 0 	 8.5132}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/antena2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -174,7 +174,7 @@
 						0 	 0 	 1
 						-11.2484 	 10.8505 	 14.708
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/turret_hatch.ply"}
 				}
 				{bone "ammo5"
 					{Position -13.9366 	 0.0084 	 -4.8339}
@@ -309,7 +309,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -319,7 +319,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/mgun_hull.ply"}
 					}
 				}
 			}
@@ -403,7 +403,7 @@
 				{bone "radio_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/radio_hatch.ply"}
 				}
 			}
 			{bone "helper_driverh"
@@ -416,7 +416,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4_105/driver_hatch.ply"}
 				}
 			}
 			{bone revolute "wheell1"

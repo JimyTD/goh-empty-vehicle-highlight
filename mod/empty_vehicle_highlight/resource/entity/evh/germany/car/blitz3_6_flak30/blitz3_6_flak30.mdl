@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 doorl doorr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 15.06.2024 14:05:11
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\car\blitz3_6\opel_blitz_flak30.max
@@ -210,7 +210,7 @@
 						0 	 -0.1564 	 0.9877
 						29.646 	 -11.2493 	 -3.1149
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -219,7 +219,7 @@
 							0 	 0.1564 	 0.9877
 							-9.174 	 0.4934 	 17.9737
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -230,7 +230,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						29.8257 	 11.5232 	 -2.5379
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -239,7 +239,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.6795 	 1.0623 	 17.6914
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/glassl.ply"}
 					}
 					{bone "detail6"
 						{matrix34
@@ -248,7 +248,7 @@
 							-0.1721 	 -0.1842 	 0.9677
 							-0.8032 	 2.0772 	 14.5158
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/detail6.ply"}
 					}
 				}
 				{bone "driver"
@@ -323,7 +323,7 @@
 						0 	 -1 	 0
 						-33.663 	 0 	 13.1791
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/cover1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=bodyback;"}
@@ -360,7 +360,7 @@
 							{sequence "repair" {file "../../../../-vehicle/germany/car/blitz3_6_flak30/turret_r.anm"}{speed 0.7}}
 						}
 						{Position -11.1614 	 0.0026 	 0.1056}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/turret.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{animation
@@ -372,7 +372,7 @@
 								0 	 -1 	 0
 								4.4708 	 -0.0039 	 10.9404
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/gun_rot.ply"}
 							{bone "gun_holder"
 								{parameters "id=turret;"}
 								{matrix34
@@ -381,15 +381,15 @@
 									0 	 1 	 0
 									4.0988 	 -1.5914 	 0.0006
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/gun_holder.ply"}
 								{bone "gun"
 									{parameters "id=gun;"}
 									{Position 4.8424 	 0.0006 	 1.991}
-									
+									{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/gun.ply"}
 									{bone "magazine"
 										{parameters "id=gun;"}
 										{Position -2.9655 	 0.609 	 -0.0129}
-										
+										{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/magazine.ply"}
 									}
 									{bone "bullet"
 										{parameters "id=gun;"}
@@ -399,7 +399,7 @@
 											1 	 0 	 0
 											-2.0089 	 0.0042 	 0.0144
 										}
-										
+										{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/bullet.ply"}
 									}
 									{bone "ize"
 										{parameters "id=gun;"}
@@ -409,7 +409,7 @@
 											1 	 0 	 0
 											-7.6419 	 -0.3759 	 1.0542
 										}
-										
+										{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/ize.ply"}
 									}
 									{bone "foresight1"
 										{matrix34
@@ -436,7 +436,7 @@
 										0 	 0 	 1
 										-8.7714 	 0.0047 	 1.6466
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/ize2.ply"}
 								}
 							}
 							{bone "fixing"
@@ -447,13 +447,13 @@
 									0 	 0 	 1
 									8.8451 	 -3.6637 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/fixing.ply"}
 							}
 						}
 						{bone "kuplung"
 							{parameters "id=turret;"}
 							{Position 4.3707 	 -0.0039 	 1.0688}
-							
+							{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/kuplung.ply"}
 						}
 						{bone "gunner"
 							{matrix34
@@ -482,12 +482,12 @@
 						{bone "aim_v"
 							{parameters "id=turret;"}
 							{Position -3.135 	 -4.1484 	 10.4628}
-							
+							{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/aim_v.ply"}
 						}
 						{bone "aim_h"
 							{parameters "id=turret;"}
 							{Position -7.1554 	 0.0067 	 8.2235}
-							
+							{VolumeView "../../../../-vehicle/germany/car/blitz3_6_flak30/aim_h.ply"}
 						}
 					}
 				}

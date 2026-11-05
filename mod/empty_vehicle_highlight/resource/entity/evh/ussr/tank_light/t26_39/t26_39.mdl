@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hutch1 hutch2 tophatch turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t26_39/start.anm"} {speed 0.65}}
@@ -57,11 +57,11 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t26_39/turret_r.anm"}{speed 0.9}}
 				}
 				{Position 0.7209 	 3.3912 	 21.327}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/turret.ply"}
 				{bone "tophatch"
 					{parameters "id=turret;"}
 					{Position -0.4819 	 -4.3507 	 13.5515}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/tophatch.ply"}
 				}
 				{bone revolute "gun_rot"
 					{limits -6 28}
@@ -79,14 +79,14 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{animation
 								{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t26_39/gun_r.anm"}{speed 0.9}}
 							}
 							{Position 9.7537 	 0.8676 	 0.5867}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -99,7 +99,7 @@
 						{bone "turret_light"
 							{parameters "id=turret;"}
 							{Position 6.2658 	 1.0967 	 2.2058}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/turret_light.ply"}
 							{bone "headlightr"
 								{Position 2.461 	 -2.7423 	 2.8535}
 							}
@@ -113,7 +113,7 @@
 						{bone "dt29_mgun"
 							{parameters "id=turret;"}
 							{Position 3.6104 	 -3.0463 	 -0.7226}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/dt29_mgun.ply"}
 						}
 					}
 				}
@@ -135,7 +135,7 @@
 						0 	 -0.9659 	 0.2588
 						-9.4682 	 -12.8006 	 7.1291
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -144,7 +144,7 @@
 						0 	 0.9659 	 0.2588
 						-9.4682 	 12.7824 	 7.1291
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/enumerator2.ply"}
 				}
 				{bone "internals_turret"
 					{Position -3.4863 	 -3.39 	 6.5431}
@@ -163,12 +163,12 @@
 			{bone "hutch1"
 				{parameters "id=body;"}
 				{Position 14.6276 	 -9.8027 	 20.7225}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/hutch1.ply"}
 			}
 			{bone "hutch2"
 				{parameters "id=body;"}
 				{Position 22.3392 	 -9.8027 	 12.4837}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_39/hutch2.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}

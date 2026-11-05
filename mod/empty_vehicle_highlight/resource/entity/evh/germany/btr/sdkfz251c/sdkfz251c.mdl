@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr mg_support mgun_a_rot1
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "board" {file "../../../../-vehicle/germany/btr/sdkfz251c/board.anm"} {speed 1} {events {0 "board"}}}
@@ -58,12 +58,12 @@
 			{bone "doorr"
 				{parameters "id=body;"}
 				{Position -53.9185 	 -12.0286 	 1.9847}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/doorr.ply"}
 			}
 			{bone "doorl"
 				{parameters "id=body;"}
 				{Position -53.918 	 12.0276 	 1.9882}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/doorl.ply"}
 			}
 			{bone "at1"
 				{parameters "id=body;"}
@@ -170,7 +170,7 @@
 				{parameters "id=body;"}
 				{limits -40 40}
 				{Position 4.3497 	 0.0197 	 12.126}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 45}
 					{matrix34
@@ -321,7 +321,7 @@
 					0 	 0 	 1
 					-47.4748 	 0 	 11.8902
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/mg_support.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -357,7 +357,7 @@
 								0.9744 	 0.225 	 0
 								0.0178 	 0.4671 	 0.0062
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/mg_holder2.ply"}
 						}
 					}
 					{bone "mg_holder1"
@@ -368,7 +368,7 @@
 							0 	 0 	 1
 							-0.0014 	 0.0055 	 -0.1246
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c/mg_holder1.ply"}
 					}
 				}
 			}

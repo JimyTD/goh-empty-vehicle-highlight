@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 31.01.2022 17:23:34
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_light\pz1b\pz1b.max
@@ -48,11 +48,11 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer1b/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 2.8354 	 -4.0018 	 18.7008}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/turret.ply"}
 				{bone "cover"
 					{parameters "id=turret;"}
 					{Position 2.1904 	 0.2741 	 3.282}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/cover.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
@@ -62,7 +62,7 @@
 						0 	 -1 	 0
 						10.6245 	 0.095 	 -0.689
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/gun_rot.ply"}
 					{bone "shooter00"
 						{matrix34
 							1 	 0 	 0
@@ -85,12 +85,12 @@
 					{bone "mgu02"
 						{parameters "id=turret;"}
 						{Position -5.6828 	 -1.4927 	 3.9582}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/mgu02.ply"}
 					}
 					{bone "mgu01"
 						{parameters "id=turret;"}
 						{Position -5.6919 	 -1.4926 	 -4.2668}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/mgu01.ply"}
 					}
 				}
 				{bone "fxfire3"
@@ -108,7 +108,7 @@
 						-0.0012 	 0.0077 	 1
 						-2.7988 	 -9.4099 	 0.1441
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/enumerator.ply"}
 				}
 			}
 			{bone "detail4"
@@ -144,12 +144,12 @@
 			{bone "cover1"
 				{parameters "id=body;"}
 				{Position 2.0578 	 9.5995 	 15.0663}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/cover1.ply"}
 			}
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position 2.06 	 17.1723 	 10.4007}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer1b/cover2.ply"}
 			}
 			{bone "antena"
 				{parameters "id=body;"}

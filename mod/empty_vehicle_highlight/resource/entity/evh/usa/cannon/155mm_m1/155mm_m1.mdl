@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: fixer foot gun gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 20.09.2023 09:00:31
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\155mm_m1\155mm_m1.max
@@ -30,7 +30,7 @@
 				{limits -25 25}
 				{speed 0.006}
 				{Position 0.0715 	 0 	 4.0864}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -44,7 +44,7 @@
 						0 	 -1 	 0
 						-12.5949 	 5.0904 	 11.6418
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/gun_rot.ply"}
 					{bone "telo"
 						{parameters "id=gun;"}
 						{matrix34
@@ -53,7 +53,7 @@
 							0 	 1 	 0
 							0.0356 	 6.8183 	 -0.5298
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/telo.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -63,21 +63,21 @@
 							0 	 1 	 0
 							-1.9458 	 0.0022 	 5.0904
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -8.2093 	 -3.8378 	 0}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/breech.ply"}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -2.1846 	 0.0459 	 -0.1689}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/lever.ply"}
 							}
 						}
 						{bone "1"
 							{parameters "id=gun;"}
 							{Position -1.4603 	 -3.0172 	 4.5781}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/1.ply"}
 						}
 						{bone "foresight1"
 							{Position 66.3102 	 0 	 -0.0005}
@@ -91,18 +91,18 @@
 							0 	 1 	 0
 							31.2864 	 -2.9158 	 -0.5298
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/telo_ow.ply"}
 					}
 				}
 				{bone "aim_sight"
 					{parameters "id=body;"}
 					{Position -12.5787 	 8.2511 	 11.6418}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/aim_sight.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position -7.8034 	 8.381 	 6.3797}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/aim_v.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=body;"}
@@ -112,7 +112,7 @@
 						0 	 0 	 1
 						-18.0909 	 8.1098 	 6.8993
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/aim_h.ply"}
 				}
 				{bone "visor"
 					{Position 1.9591 	 9.6687 	 18.5996}
@@ -120,47 +120,47 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 1.6929 	 0 	 3.2869}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/shield.ply"}
 					{bone "shieldl"
 						{parameters "id=shield;"}
 						{Position -2.521 	 19.6341 	 11.0071}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/shieldl.ply"}
 					}
 					{bone "rod"
 						{parameters "id=shield;"}
 						{Position -1.0253 	 13.9528 	 9.9078}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/rod.ply"}
 					}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -2.5055 	 -9.633 	 3.1546}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/standr.ply"}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -37.6594 	 -19.8291 	 -5.2172}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail2.ply"}
 				}
 				{bone "spader"
 					{parameters "id=body;"}
 					{Position -62.3071 	 -35.9732 	 -19.3341}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/spader.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -46.7912 	 -24.3001 	 -10.3407}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail4.ply"}
 				}
 				{bone "detail6"
 					{parameters "id=body;"}
 					{Position -34.0413 	 -22.3765 	 -6.1382}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail6.ply"}
 				}
 				{bone "stiftr"
 					{parameters "id=body;"}
 					{Position -65.4704 	 -37.5775 	 -14.2593}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/stiftr.ply"}
 				}
 				{bone "seat3"
 					{matrix34
@@ -190,31 +190,31 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -2.5055 	 9.6359 	 3.1546}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/standl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -25.7293 	 15.837 	 -2.1183}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail1.ply"}
 				}
 				{bone "spadel"
 					{parameters "id=body;"}
 					{Position -62.7105 	 35.2743 	 -19.3341}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/spadel.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -46.7912 	 24.3001 	 -10.3407}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail3.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=body;"}
 					{Position -27.8865 	 13.3478 	 -7.7679}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/detail5.ply"}
 				}
 				{bone "stiftl"
 					{parameters "id=body;"}
 					{Position -65.4704 	 37.5774 	 -14.2593}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/stiftl.ply"}
 				}
 				{bone "seat5"
 					{matrix34
@@ -236,7 +236,7 @@
 			{bone "fixer"
 				{parameters "id=body;"}
 				{Position 8.1441 	 -4.9138 	 1.1849}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/fixer.ply"}
 			}
 			{bone "shaft"
 				{parameters "id=body;"}
@@ -245,7 +245,7 @@
 				{bone "foot"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 -13.054}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/155mm_m1/foot.ply"}
 				}
 			}
 			{bone "cylinderr"

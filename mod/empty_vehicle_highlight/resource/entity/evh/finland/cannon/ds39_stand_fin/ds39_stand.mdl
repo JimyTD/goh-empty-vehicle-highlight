@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: ammo ammo_box box_cover center_leg commander gun_rot gunner left_leg right_leg
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 27.02.2023 12:12:49
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\ds39_stan\DS 39 stan.max
@@ -45,7 +45,10 @@
 					0.2633 	 -0.1064 	 0.9588
 					0.4636 	 -0.8755 	 -1.0802
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/right_leg.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/right_leg_lod1.ply"}
+				}
 			}
 			{bone "center_leg"
 				{parameters "id=body;"}
@@ -55,7 +58,10 @@
 					-0.1564 	 0 	 0.9877
 					-1.0471 	 0.2261 	 -0.9637
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/center_leg.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/center_leg_lod1.ply"}
+				}
 			}
 			{bone "left_leg"
 				{parameters "id=body;"}
@@ -65,7 +71,10 @@
 					0.2601 	 0.1026 	 0.9601
 					0.4952 	 0.789 	 -1.084
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/left_leg.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/left_leg_lod1.ply"}
+				}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
@@ -82,7 +91,10 @@
 						0 	 -1 	 0
 						0.0505 	 -0.8625 	 2.2658
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/gun_rot_lod1.ply"}
+					}
 					{bone "gun_rot_detail"
 						{parameters "id=body;"}
 						{matrix34
@@ -91,7 +103,10 @@
 							0 	 0 	 1
 							2.0775 	 0.0907 	 0
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/gun_rot_detail.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/gun_rot_detail_lod1.ply"}
+						}
 						{bone "visor"
 							{matrix34
 								1 	 0 	 0
@@ -108,7 +123,7 @@
 								0 	 0 	 1
 								-10.8173 	 1.9702 	 -0.8637
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/mgun.ply"}
 							{bone "foresight14"
 								{matrix34
 									1 	 0 	 0
@@ -179,11 +194,14 @@
 		{bone "ammo_box"
 			{parameters "id=body;"}
 			{Position -2.1517 	 -6.4925 	 2.4395}
-			
+			{LODView
+				{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/ammo_box.ply"}
+				{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/ammo_box_lod1.ply"}
+			}
 			{bone "ammo"
 				{parameters "id=body;"}
 				{Position -0.5782 	 6.3546 	 10.2923}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/ammo.ply"}
 			}
 		}
 		{bone "box_cover"
@@ -194,7 +212,10 @@
 				0 	 0 	 1
 				-2.6266 	 -9.0419 	 4.3122
 			}
-			
+			{LODView
+				{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/box_cover.ply"}
+				{VolumeView "../../../../-vehicle/finland/cannon/ds39_stand_fin/box_cover_lod1.ply"}
+			}
 		}
 		{bone "handle1"
 			{Position 11.9493 	 0 	 11.1074}

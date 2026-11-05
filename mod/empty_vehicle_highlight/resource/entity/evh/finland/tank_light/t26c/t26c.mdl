@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hutch1 hutch2 tophatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 04.07.2025 16:50:02
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\tank_light\T-26C\t26c.max
@@ -60,7 +60,7 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_light/t26c/turret_r.anm"}{speed 0.9}}
 				}
 				{Position 0.6944 	 3.5818 	 21.1764}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26c/turret.ply"}
 				{bone "tophatch"
 					{parameters "id=turret;"}
 					{matrix34
@@ -69,7 +69,7 @@
 						0 	 0 	 1
 						-12.2307 	 -4.2673 	 13.5161
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26c/tophatch.ply"}
 				}
 				{bone revolute "gun_rot"
 					{animation
@@ -90,11 +90,11 @@
 							0 	 1 	 0
 							-0.0693 	 -0.0107 	 -0.0035
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/t26c/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 9.9395 	 0.8676 	 0.7482}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_light/t26c/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -110,7 +110,7 @@
 						{bone "dt29_mgun"
 							{parameters "id=turret;"}
 							{Position 3.6104 	 -2.9047 	 0.0782}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_light/t26c/dt29_mgun.ply"}
 						}
 					}
 				}
@@ -127,7 +127,7 @@
 				}
 				{bone "enumerator1"
 					{Position -11.2954 	 -11.7505 	 6.6001}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26c/enumerator1.ply"}
 				}
 				{bone "ammo1"
 					{Position -13.4583 	 6.5462 	 6.0373}
@@ -144,12 +144,12 @@
 			{bone "hutch1"
 				{parameters "id=body;"}
 				{Position 14.6276 	 -9.8027 	 20.7225}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26c/hutch1.ply"}
 			}
 			{bone "hutch2"
 				{parameters "id=body;"}
 				{Position 22.3392 	 -9.8027 	 12.4837}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26c/hutch2.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}

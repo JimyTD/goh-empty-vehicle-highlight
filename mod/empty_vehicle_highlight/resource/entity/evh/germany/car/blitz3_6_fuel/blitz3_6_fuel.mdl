@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 11.07.2020 13:23:38
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\blitz_tanker\opel blitz tanker.max
@@ -211,7 +211,7 @@
 						0 	 -0.1564 	 0.9877
 						-3.1765 	 -11.2541 	 -10.7978
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_fuel/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -220,7 +220,7 @@
 							0 	 0.1564 	 0.9877
 							-9.174 	 0.4934 	 17.9737
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_fuel/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -231,7 +231,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						-3.0006 	 11.5233 	 -10.2269
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_fuel/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -240,7 +240,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.6795 	 1.0623 	 17.6914
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_fuel/glassl.ply"}
 					}
 				}
 				{bone "driver"

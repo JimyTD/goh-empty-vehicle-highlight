@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 02.10.2025 08:22:20
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\sdkfz221\sdkfz-221_Export.max
@@ -112,14 +112,18 @@
 				}
 				{speed 0.01}
 				{Position -1.5986 	 0.0027 	 3.3669}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/turret.ply"}
 				{bone "visor1"
 					{Position 0.2296 	 0.0175 	 19.7625}
 				}
 				{bone "detail15"
 					{parameters "id=shield;"}
 					{Position -0.54 	 -0.033 	 18.021}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/detail15.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/detail15_lod1.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/detail15_lod2.ply"}
+					}
 				}
 				{bone revolute "mgun_a_rot1"
 					{limits -5 5}
@@ -135,7 +139,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -3.6402 	 -0.3779 	 0.1094}
 						}
@@ -144,12 +148,12 @@
 				{bone "hatch1"
 					{parameters "id=turret;"}
 					{Position 3.0334 	 -8.2458 	 18.952}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/hatch1.ply"}
 				}
 				{bone "hatch2"
 					{parameters "id=turret;"}
 					{Position 3.0334 	 8.2559 	 18.952}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/hatch2.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -251,7 +255,7 @@
 				{bone "doorr"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/doorr.ply"}
 				}
 			}
 			{bone "doorl_help"
@@ -264,7 +268,7 @@
 				{bone "doorl"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz221/doorl.ply"}
 				}
 			}
 			{bone "driver"

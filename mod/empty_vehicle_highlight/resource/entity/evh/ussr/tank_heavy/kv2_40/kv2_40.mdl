@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_virt hatchdriverhull mgun_h_rot1 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_heavy/kv2_40/start.anm"} {speed 0.6}}
@@ -42,7 +42,7 @@
 			{bone "hatchdriverhull"
 				{parameters "id=body;"}
 				{Position 44.9754 	 10.3727 	 22.7025}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/hatchdriverhull.ply"}
 			}
 			{bone "engine"
 				{parameters "commonmesh;id=engine;"}
@@ -179,21 +179,21 @@
 				}
 				{speed 0.001}
 				{Position 12.6579 	 0 	 25.4132}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/turret.ply"}
 				{bone "hatchturrettop"
 					{parameters "id=turret;"}
 					{Position -6.0268 	 -13.4971 	 25.9941}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/hatchturrettop.ply"}
 				}
 				{bone "hatchturretback"
 					{parameters "id=turret;"}
 					{Position -32.6314 	 -8.1269 	 23.0756}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/hatchturretback.ply"}
 				}
 				{bone "hatchturrettopsquare"
 					{parameters "id=turret;"}
 					{Position -29.5685 	 0.0519 	 27.166}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/hatchturrettopsquare.ply"}
 				}
 				{bone revolute "gun_rot"
 					{limits -5 24}
@@ -210,14 +210,14 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{animation
 								{sequence "repair" {file "../../../../-vehicle/ussr/tank_heavy/kv2_40/gun_r.anm"}{speed 0.7}}
 							}
 							{Position 19.687 	 -0.0077 	 -0.0004}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/gun.ply"}
 							{bone "foresight1"
 								{Position 30.6163 	 -0.0261 	 0.0242}
 							}
@@ -266,7 +266,7 @@
 								0 	 0 	 -1
 								0 	 -1 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/mgun_rear.ply"}
 							{bone "dt29_turretback"
 								{matrix34
 									0 	 1 	 0
@@ -274,7 +274,7 @@
 									0 	 0 	 1
 									6.4293 	 0 	 0.0001
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/dt29_turretback.ply"}
 							}
 							{bone "foresight6"
 								{matrix34
@@ -289,7 +289,7 @@
 				}
 				{bone "enumerator1"
 					{Position -12.8754 	 0.0177 	 15.4026}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/enumerator1.ply"}
 				}
 				{bone "ammo2"
 					{Position -18.7364 	 -13.2239 	 3.9399}
@@ -323,11 +323,11 @@
 					}
 					{bone "mgun_hull"
 						{Position 0 	 0 	 0.0001}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/mgun_hull.ply"}
 						{bone "dt29_front"
 							{parameters "id=mgun;"}
 							{Position 0.4548 	 -0.0029 	 -0.2806}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/dt29_front.ply"}
 						}
 						{bone "foresight4"
 							{matrix34
@@ -513,11 +513,11 @@
 					0 	 -1 	 0
 					6.0373 	 -3.9185 	 20.6003
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelsl.ply"}
 				{bone "trackl"
 					{parameters "commonmesh;id=trackleft;"}
 					{Position -1.9609 	 5.3035 	 -4.9638}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/trackl.ply"}
 				}
 				{bone "fxtracel1"
 					{matrix34
@@ -538,7 +538,7 @@
 				{bone "torzl"
 					{parameters "id=trackleft;"}
 					{Position -1.258 	 -2.2061 	 -6.3939}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/torzl.ply"}
 				}
 				{bone prizmatic "suspension_l2"
 					{limits -0.08 0.08}
@@ -557,7 +557,7 @@
 							0 	 1 	 0
 							0 	 3.8658 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell02.ply"}
 					}
 				}
 				{bone prizmatic "suspension_l3"
@@ -577,7 +577,7 @@
 							0 	 1 	 0
 							0 	 3.8659 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell03.ply"}
 					}
 				}
 				{bone prizmatic "suspension_l4"
@@ -597,7 +597,7 @@
 							0 	 1 	 0
 							0 	 3.8659 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell04.ply"}
 					}
 				}
 				{bone prizmatic "suspension_l5"
@@ -617,7 +617,7 @@
 							0 	 1 	 0
 							0 	 3.8659 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell05.ply"}
 					}
 				}
 				{bone prizmatic "suspension_l6"
@@ -637,7 +637,7 @@
 							0 	 1 	 0
 							0 	 3.8659 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell06.ply"}
 					}
 				}
 				{bone prizmatic "suspension_l7"
@@ -657,7 +657,7 @@
 							0 	 1 	 0
 							0 	 3.8659 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheell07.ply"}
 					}
 				}
 			}
@@ -669,11 +669,11 @@
 					0 	 -1 	 0
 					3.3152 	 -3.9185 	 -20.5327
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelsr.ply"}
 				{bone "trackr"
 					{parameters "commonmesh;id=trackright;"}
 					{Position 0.7612 	 -5.2338 	 -4.9638}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/trackr.ply"}
 				}
 				{bone "fxtracer1"
 					{matrix34
@@ -694,7 +694,7 @@
 				{bone "torzr"
 					{parameters "id=trackright;"}
 					{Position -1.258 	 2.2061 	 -6.3938}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/torzr.ply"}
 				}
 				{bone prizmatic "suspension_r2"
 					{limits -0.08 0.08}
@@ -713,7 +713,7 @@
 							0 	 1 	 0
 							0.0032 	 -4.0714 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr02.ply"}
 					}
 				}
 				{bone prizmatic "suspension_r3"
@@ -728,7 +728,7 @@
 							0 	 1 	 0
 							0.0033 	 -4.0715 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr03.ply"}
 					}
 				}
 				{bone prizmatic "suspension_r4"
@@ -743,7 +743,7 @@
 							0 	 1 	 0
 							0.0033 	 -3.8708 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr04.ply"}
 					}
 				}
 				{bone prizmatic "suspension_r5"
@@ -758,7 +758,7 @@
 							0 	 1 	 0
 							0.0033 	 -3.8709 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr05.ply"}
 					}
 				}
 				{bone prizmatic "suspension_r6"
@@ -773,7 +773,7 @@
 							0 	 1 	 0
 							0.0032 	 -4.0715 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr06.ply"}
 					}
 				}
 				{bone prizmatic "suspension_r7"
@@ -788,7 +788,7 @@
 							0 	 1 	 0
 							0.0031 	 -4.0715 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv2_40/wheelr07.ply"}
 					}
 				}
 			}

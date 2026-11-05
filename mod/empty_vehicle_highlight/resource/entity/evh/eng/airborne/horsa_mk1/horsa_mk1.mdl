@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 bodyback door ramp ramp2
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.10.2025 16:30:00
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\airborne\Airspeed_AS.51_Horsa\horsa_glider_mk1.max
@@ -25,7 +25,7 @@
 			{bone "door"
 				{parameters "id=body;"}
 				{Position 106.697 	 16.3646 	 -7.3828}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/door.ply"}
 				{bone "door_glass"
 					{parameters "id=body;"}
 					{matrix34
@@ -34,17 +34,17 @@
 						0 	 -0.9511 	 -0.309
 						-10.8469 	 2.9593 	 23.4233
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/door_glass.ply"}
 				}
 			}
 			{bone "bodyback"
 				{parameters "id=bodyback;"}
 				{Position -71.8118 	 0 	 -14.6166}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/bodyback.ply"}
 				{bone "stabilizer"
 					{parameters "id=bodyback;"}
 					{Position -106.212 	 0 	 42.6904}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/stabilizer.ply"}
 					{bone revolute "elavator1"
 						{parameters "id=body;"}
 						{limits -30 30}
@@ -55,7 +55,7 @@
 							0 	 -1 	 0
 							-11.5681 	 39.0093 	 10.4646
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/elavator1.ply"}
 					}
 					{bone revolute "elevator2"
 						{parameters "id=body;"}
@@ -67,14 +67,14 @@
 							0 	 -1 	 0
 							-11.5681 	 -38.7848 	 10.4646
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/elevator2.ply"}
 					}
 					{bone revolute "rudder"
 						{parameters "id=body;"}
 						{limits -35 35}
 						{speed 0.01}
 						{Position -16.2155 	 0.003 	 18.3873}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/rudder.ply"}
 					}
 				}
 			}
@@ -107,7 +107,7 @@
 						0.0754 	 -0.9965 	 -0.0349
 						-32.5865 	 94.2382 	 -0.9235
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/aileron1.ply"}
 				}
 				{bone "flap2_l"
 					{parameters "id=wingleft;"}
@@ -148,7 +148,7 @@
 						0.0426 	 0.9985 	 -0.0349
 						-32.5866 	 -180.093 	 27.9871
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/aileron2.ply"}
 				}
 				{bone "wingl2_rib"
 					{parameters "id=wingight;"}
@@ -392,7 +392,7 @@
 				107.084 	 -0.0493 	 43.1862
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/ramp.ply"}
 		}
 		{bone "pivot_back"
 			{parameters "main;"}
@@ -524,7 +524,7 @@
 				-46.5316 	 -0.0493 	 41.6847
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/eng/airborne/horsa_mk1/ramp2.ply"}
 		}
 	}
 }

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 03.11.2025 15:42:55
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Matilda_MK2_A12\mk3\Matilda2_mk3.max
@@ -34,7 +34,7 @@
 				}
 				{speed 0.007}
 				{Position 9.2236 	 0 	 19.8316}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						12.1516 	 -0.5311 	 5.3034
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							6.5317 	 -0.2306 	 -0.3598
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -77,16 +77,16 @@
 				{bone revolute "cupola"
 					{parameters "id=turret;"}
 					{Position -6.5261 	 5.9099 	 11.3584}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/cupola.ply"}
 					{bone "turret_hatch2"
 						{parameters "id=turret;"}
 						{Position 6.1833 	 -3.1705 	 5.1536}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/turret_hatch2.ply"}
 					}
 					{bone "turret_hatch1"
 						{parameters "id=turret;"}
 						{Position -6.1588 	 3.0792 	 5.1635}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/turret_hatch1.ply"}
 					}
 					{bone "headlightc"
 						{Position -0.3883 	 9.4021 	 3.6762}
@@ -95,7 +95,7 @@
 				{bone "turret_hatch3"
 					{parameters "id=turret;"}
 					{Position -4.6824 	 -9.4741 	 12.3856}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/turret_hatch3.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -207,7 +207,7 @@
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 29.0745 	 0 	 12.4352}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/matilda2_mk3/driver_hatch.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}

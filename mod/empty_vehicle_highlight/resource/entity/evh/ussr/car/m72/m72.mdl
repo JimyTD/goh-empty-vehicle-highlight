@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail1 mgun_rot1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 22.05.2022 22:39:57
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\car\BMW r-71\m72.max
@@ -133,7 +133,7 @@
 					0 	 -1 	 0
 					-17.4276 	 -12.722 	 8.7712
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/car/m72/detail1.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}
@@ -147,7 +147,7 @@
 				{parameters "id=body;"}
 				{limits -15 15}
 				{Position 14.3964 	 -12.7709 	 6.1385}
-				
+				{VolumeView "../../../../-vehicle/ussr/car/m72/mgun_rot1.ply"}
 				{bone revolute "mgun_rot2"
 					{parameters "id=body;"}
 					{limits -10 16}
@@ -157,7 +157,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0.72
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/m72/mgun_rot2.ply"}
 					{bone "mgun"
 						{matrix34
 							1 	 0 	 0

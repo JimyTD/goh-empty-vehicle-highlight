@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1 back_door2 mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:56:45
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\Unic_304\unic304f.max
@@ -149,7 +149,7 @@
 				{parameters "id=body;"}
 				{limits -25 25}
 				{Position 12.6266 	 0 	 16.1806}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 45}
 					{matrix34
@@ -179,7 +179,7 @@
 					-0.2315 	 0 	 0.9728
 					-46.0388 	 -6.1992 	 5.4622
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/back_door2.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -275,7 +275,7 @@
 					-0.2315 	 0 	 0.9728
 					-46.0388 	 6.1992 	 5.4622
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/unic304f/back_door1.ply"}
 			}
 			{bone "detail3_helper"
 				{matrix34

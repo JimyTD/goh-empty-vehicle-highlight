@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/m18_canvas"}
-	{bump "$/_vehicle/m18_canvas_bp"}
-	{specular "$/_vehicle/m18_canvas_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

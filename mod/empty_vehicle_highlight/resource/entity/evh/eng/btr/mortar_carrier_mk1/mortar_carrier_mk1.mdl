@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_base mgun_a_rot1 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 11.11.2025 17:03:07
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\btr\Universal_carrier_mk1\mortar_carrier_mk1.max
@@ -602,7 +602,7 @@
 							}
 							{speed 0.01}
 							{Position 0.002 	 0 	 -0.0249}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/mortar_carrier_mk1/gun_base.ply"}
 							{bone revolute "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -611,7 +611,7 @@
 									0 	 -1 	 0
 									-0.0453 	 0 	 0.5692
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/mortar_carrier_mk1/gun.ply"}
 								{bone "foresight"
 									{matrix34
 										0.5736 	 0.8192 	 0

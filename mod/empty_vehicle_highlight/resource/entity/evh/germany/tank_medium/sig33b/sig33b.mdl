@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 29.03.2023 22:34:05
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\tank_medium\sig33b\sig33b_export.max
@@ -289,7 +289,7 @@
 			{bone "cover"
 				{parameters "id=hatch;"}
 				{Position -5.6478 	 3.6299 	 17.0662}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/sig33b/cover.ply"}
 			}
 			{bone revolute "turret"
 				{limits -3 3}
@@ -318,11 +318,11 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/sig33b/gun_lower.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 4.6589 	 -0.0729 	 0.2232}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/sig33b/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -363,11 +363,11 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/sig33b/mg_ball.ply"}
 					}
 					{bone "mg34"
 						{Position -8.8518 	 -1.0021 	 -0.068}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/sig33b/mg34.ply"}
 					}
 					{bone "foresight4"
 						{matrix34

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_h aim_v
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 13.12.2023 14:05:15
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3d_vehicle_ger\vehicles\cannon\155mm_gpf_platform\155mm_GPF_platform.max
@@ -82,12 +82,12 @@
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position 1.0565 	 9.8495 	 15.186}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/155mm_gpf_platform/aim_v.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position -4.4171 	 -14.3004 	 13.0688}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/155mm_gpf_platform/aim_h.ply"}
 				}
 				{bone "gunner"
 					{matrix34

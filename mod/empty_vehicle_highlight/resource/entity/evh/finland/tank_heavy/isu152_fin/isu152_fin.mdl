@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_body1 hatch_body2 hatch_left1 hatch_left2 hatch_right1 hatch_right2 mgun_rot turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/finland/tank_heavy/isu152_fin/start.anm"} {speed 0.7}}
@@ -312,7 +312,10 @@
 			{bone revolute "turret"
 				{parameters "id=turret;"}
 				{Position 33.3692 	 -4.0233 	 17.5654}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -324,7 +327,10 @@
 						0 	 -1 	 0
 						10.1185 	 -0.7761 	 -0.4085
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -333,7 +339,10 @@
 							0 	 1 	 0
 							13.7981 	 1.4428 	 -0.1861
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{Position 50.5632 	 -0.2081 	 -0.4672}
 						}
@@ -351,12 +360,18 @@
 			{bone "hatch_left2"
 				{parameters "id=body;"}
 				{Position 28.0512 	 9.9114 	 27.9029}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_left2.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_left2_lod1.ply"}
+				}
 			}
 			{bone "hatch_left1"
 				{parameters "id=body;"}
 				{Position 19.4831 	 9.9114 	 27.8778}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_left1.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_left1_lod1.ply"}
+				}
 			}
 			{bone revolute "mgun_rot"
 				{parameters "id=body;"}
@@ -367,16 +382,25 @@
 					0 	 0 	 1
 					20.5855 	 -13.8351 	 27.2966
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/mgun_rot.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/mgun_rot_lod1.ply"}
+				}
 				{bone "hatch_right1"
 					{parameters "id=body;"}
 					{Position 0 	 4.2813 	 0.602}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_right1.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_right1_lod1.ply"}
+					}
 				}
 				{bone "hatch_right2"
 					{parameters "id=body;"}
 					{Position 0 	 -4.291 	 0.6011}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_right2.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_right2_lod1.ply"}
+					}
 				}
 			}
 			{bone "detail11"
@@ -623,12 +647,18 @@
 			{bone "hatch_body2"
 				{parameters "id=body;"}
 				{Position -12.9415 	 7.4259 	 20.9557}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_body2.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_body2_lod1.ply"}
+				}
 			}
 			{bone "hatch_body1"
 				{parameters "id=body;"}
 				{Position 0.5374 	 7.4647 	 27.8504}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_body1.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_heavy/isu152_fin/hatch_body1_lod1.ply"}
+				}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

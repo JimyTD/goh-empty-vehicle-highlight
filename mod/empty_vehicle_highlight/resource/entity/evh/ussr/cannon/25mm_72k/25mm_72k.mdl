@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_horizontal aim_vertical body_virt footb footf gun_rot shield4 standl standr
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:32:29
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\cannon\72K\25mm_72k.max
@@ -27,32 +27,32 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -0.002 	 -14.9872 	 1.9593}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/standr.ply"}
 				{bone "footr"
 					{parameters "id=body;"}
 					{Position 0.0049 	 -12.949 	 -4.2428}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/footr.ply"}
 				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -0.002 	 15.0047 	 1.9593}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/standl.ply"}
 				{bone "footl"
 					{parameters "id=body;"}
 					{Position 0.005 	 12.9315 	 -4.2428}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/footl.ply"}
 				}
 			}
 			{bone "footb"
 				{parameters "id=body;"}
 				{Position -28.2107 	 0.0029 	 -2.2835}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/footb.ply"}
 			}
 			{bone "footf"
 				{parameters "id=body;"}
 				{Position 28.2107 	 0.0029 	 -2.2835}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/footf.ply"}
 			}
 			{bone "seat3"
 				{matrix34
@@ -98,7 +98,10 @@
 						0 	 -1 	 0
 						3.9461 	 0 	 10.611
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/gun_rot_lod1.ply"}
+					}
 					{bone "ammo"
 						{parameters "id=gun;"}
 						{matrix34
@@ -107,7 +110,7 @@
 							0 	 1 	 0
 							0.4292 	 4.0207 	 -0.0004
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/ammo.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -117,7 +120,7 @@
 							0 	 1 	 0
 							16.9974 	 0.0217 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/gun.ply"}
 					}
 					{bone "shield3"
 						{parameters "id=shield3;"}
@@ -127,7 +130,7 @@
 							0 	 1 	 0
 							10.4885 	 1.4704 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/shield3.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -157,19 +160,19 @@
 								0 	 0 	 1
 								-0.0825 	 -0.0108 	 0.2294
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/shield4.ply"}
 						}
 					}
 				}
 				{bone "aim_vertical"
 					{parameters "id=body;"}
 					{Position -2.1326 	 -16.9887 	 7.5812}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/aim_vertical.ply"}
 				}
 				{bone "aim_horizontal"
 					{parameters "id=body;"}
 					{Position -0.9202 	 -12.7521 	 8.9067}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/aim_horizontal.ply"}
 				}
 				{bone "rod1"
 					{parameters "id=body;"}
@@ -250,7 +253,7 @@
 							-0.5 	 0 	 0.866
 							1.1483 	 0 	 1.2553
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/axes_front.ply"}
 						{bone "holder"
 							{parameters "id=body;"}
 							{matrix34
@@ -259,7 +262,7 @@
 								0.9998 	 0 	 0.0175
 								-0.3263 	 -0.0011 	 -0.5437
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/holder.ply"}
 						}
 					}
 					{bone prizmatic "suspension_r1"
@@ -274,7 +277,7 @@
 						{bone "teloright1"
 							{parameters "id=body;"}
 							{Position -0.0035 	 3.6932 	 3.911}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/teloright1.ply"}
 						}
 						{bone revolute "wheelr1"
 							{parameters "id=wheelright1;"}
@@ -284,7 +287,10 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheelr1.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheelr1_lod1.ply"}
+							}
 						}
 					}
 					{bone prizmatic "suspension_l1"
@@ -304,12 +310,15 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheell1.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheell1_lod1.ply"}
+							}
 						}
 						{bone "teloleft1"
 							{parameters "id=body;"}
 							{Position -0.0035 	 -3.6767 	 3.911}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/teloleft1.ply"}
 						}
 					}
 				}
@@ -336,7 +345,7 @@
 							0.866 	 0 	 0.5
 							0 	 -0.0089 	 0.0026
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/axes_back.ply"}
 						{bone "drawbar"
 							{parameters "id=body;"}
 							{matrix34
@@ -345,7 +354,7 @@
 								-0.9925 	 0 	 -0.1219
 								-11.4198 	 -0.0011 	 -0.0313
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/drawbar.ply"}
 						}
 					}
 					{bone prizmatic "suspension_l2"
@@ -364,12 +373,15 @@
 								0 	 0 	 -1
 								0 	 1 	 0
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheell2.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheell2_lod1.ply"}
+							}
 						}
 						{bone "teloleft2"
 							{parameters "id=body;"}
 							{Position 0.0143 	 -3.689 	 3.911}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/teloleft2.ply"}
 						}
 					}
 					{bone prizmatic "suspension_r2"
@@ -389,12 +401,15 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheelr2.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/wheelr2_lod1.ply"}
+							}
 						}
 						{bone "teloright2"
 							{parameters "id=body;"}
 							{Position 0.0143 	 3.6941 	 3.911}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/25mm_72k/teloright2.ply"}
 						}
 					}
 				}

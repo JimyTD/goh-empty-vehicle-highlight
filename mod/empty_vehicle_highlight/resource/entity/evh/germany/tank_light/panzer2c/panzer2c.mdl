@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 16.04.2025 14:12:09
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_light\pz2c\panzerII_c.max
@@ -160,7 +160,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer2c/turret_r.anm"}}
 				}
 				{Position 7.4757 	 2.9988 	 23.9706}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{matrix34
@@ -169,7 +169,7 @@
 						0 	 -1 	 0
 						11.2872 	 -0.0728 	 0.1258
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -178,12 +178,12 @@
 							0 	 1 	 0
 							4.6448 	 -0.0338 	 -4.7178
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/gun.ply"}
 					}
 					{bone "mgun"
 						{parameters "id=turret;"}
 						{Position 1.9549 	 0.0089 	 5.889}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/mgun.ply"}
 						{bone "foresight3"
 							{Position 8.1173 	 -0.1206 	 -0.0105}
 						}
@@ -200,12 +200,12 @@
 				{bone "hatch1"
 					{parameters "id=turret;"}
 					{Position -3.6989 	 -5.7435 	 5.1524}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/hatch1.ply"}
 				}
 				{bone "hatch2"
 					{parameters "id=turret;"}
 					{Position -3.6989 	 4.3088 	 5.1524}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2c/hatch2.ply"}
 				}
 				{bone "visor1"
 					{Position 5.6237 	 -0.7586 	 5.6518}

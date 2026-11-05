@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_lower hatch_top hatch_upper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t26_38/start.anm"} {speed 0.65}}
@@ -79,12 +79,12 @@
 			{bone "hatch_upper"
 				{parameters "id=body;"}
 				{Position 15.8472 	 -9.7211 	 22.2106}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/hatch_upper.ply"}
 			}
 			{bone "hatch_lower"
 				{parameters "id=body;"}
 				{Position 23.563 	 -9.7211 	 13.969}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/hatch_lower.ply"}
 			}
 			{bone "frontlight"
 				{parameters "id=body;"}
@@ -283,11 +283,11 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t26_38/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 1.925 	 3.5827 	 22.6658}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/turret.ply"}
 				{bone "hatch_top"
 					{parameters "id=turret;"}
 					{Position -12.2307 	 -4.2673 	 13.5161}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/hatch_top.ply"}
 				}
 				{bone revolute "mgun_r_rot1"
 					{limits -15 15}
@@ -313,7 +313,7 @@
 								0 	 -1 	 0
 								0.1988 	 -0.0037 	 -0.0072
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/mgunshield_rear.ply"}
 						}
 						{bone "dt29_rear"
 							{parameters "id=turret;"}
@@ -323,7 +323,7 @@
 								0 	 -1 	 0
 								-4.3748 	 1.0641 	 0.0025
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/dt29_rear.ply"}
 						}
 						{bone "foresight6"
 							{matrix34
@@ -361,14 +361,14 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/mantlet.ply"}
 						{bone "foresight5"
 							{Position 8.5881 	 -2.9151 	 0.3799}
 						}
 						{bone "dt29_coax"
 							{parameters "id=turret;"}
 							{Position 5.9084 	 -2.8995 	 0.0401}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/dt29_coax.ply"}
 						}
 						{bone "gun"
 							{parameters "id=gun;"}
@@ -376,7 +376,7 @@
 								{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t26_38/gun_r.anm"}{speed 0.7}}
 							}
 							{Position 9.9395 	 0.8676 	 0.7482}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -389,7 +389,7 @@
 						{bone "turret_light"
 							{parameters "id=turret;"}
 							{Position 5.6191 	 0.9357 	 0.7486}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/t26_38/turret_light.ply"}
 							{bone "headlightl"
 								{Position 2.7093 	 2.7236 	 4.4922}
 							}

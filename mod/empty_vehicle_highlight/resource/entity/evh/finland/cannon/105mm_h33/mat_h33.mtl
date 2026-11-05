@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/105mm_lefh18m_finn"}
-	{bump "$/_vehicle/105mm_lefh18m_bp"}
-	{specular "$/_vehicle/105mm_lefh18m_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/churchill3"}
-	{bump "$/_vehicle/eng/churchill3_bp"}
-	{specular "$/_vehicle/eng/churchill3_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

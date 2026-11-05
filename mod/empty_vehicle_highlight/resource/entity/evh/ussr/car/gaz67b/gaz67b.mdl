@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: front_mgun
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.04.2025 14:09:25
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_rus\vehicles\car\gaz_67\GAZ-67b_mgun.max
@@ -186,7 +186,7 @@
 					{limits -40 40}
 					{speed 0.01}
 					{Position -0.0789 	 -0.0018 	 12.0386}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz67b/front_mgun.ply"}
 					{bone revolute "front_mgun1"
 						{limits -13 55}
 						{speed 0.01}

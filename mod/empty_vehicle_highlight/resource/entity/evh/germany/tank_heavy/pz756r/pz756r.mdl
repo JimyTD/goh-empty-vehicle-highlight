@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 17.11.2024 18:20:22
 ;File:			 E:\SVN GoH GER 3D models\vehicles\tank_heavy\panzer 756r\PzKpfw_756R.max
@@ -183,7 +183,7 @@
 							0 	 -1 	 0
 							-49.0512 	 6.4859 	 -9.3653
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/mgunshield_hull.ply"}
 					}
 					{bone "mgun_h"
 						{matrix34
@@ -192,7 +192,7 @@
 							0 	 -1 	 0
 							1.652 	 -0.2237 	 0.0206
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/mgun_h.ply"}
 					}
 				}
 			}
@@ -306,21 +306,21 @@
 				}
 				{speed 0.008}
 				{Position 11.5842 	 -0.0798 	 14.538}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/turret.ply"}
 				{bone "hatch_top"
 					{parameters "id=turret;"}
 					{Position -18.0817 	 0 	 14.2585}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/hatch_top.ply"}
 				}
 				{bone "hatchl"
 					{parameters "id=turret;"}
 					{Position 3.9478 	 -0.2736 	 19.8226}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/hatchl.ply"}
 				}
 				{bone "hatchr"
 					{parameters "id=turret;"}
 					{Position 3.946 	 -9.7899 	 19.8226}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/hatchr.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -335,7 +335,7 @@
 						0 	 -1 	 0
 						17.3031 	 0.1998 	 7.1634
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -344,7 +344,7 @@
 							0 	 1 	 0
 							22.4416 	 -0.4533 	 -1.0255
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/gun.ply"}
 						{bone "foresight1"
 							{Position 42.7723 	 -0.0044 	 0.0171}
 						}
@@ -356,7 +356,7 @@
 							0 	 1 	 0
 							4.596 	 0.2025 	 4.9806
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/mgun_c.ply"}
 						{bone "foresight5"
 							{Position 6.3353 	 -0.0351 	 -0.23}
 						}
@@ -395,7 +395,7 @@
 								0 	 -1 	 0
 								0.8021 	 0.0001 	 0.0041
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/mgunshield_rear.ply"}
 						}
 						{bone "mgun_r"
 							{parameters "id=turret;"}
@@ -405,7 +405,7 @@
 								0 	 0 	 -1
 								-9.4385 	 1.1135 	 -0.0026
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/mgun_r.ply"}
 						}
 					}
 				}
@@ -417,11 +417,11 @@
 				}
 				{bone "enumerator2"
 					{Position -10.0947 	 -15.7878 	 8.5242}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position -7.3732 	 15.9815 	 8.531}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/pz756r/enumerator1.ply"}
 				}
 				{bone "ammo3"
 					{Position -14.9313 	 -13.2661 	 2.4496}

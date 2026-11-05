@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: board_back board_left board_right doorl doorr turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 05.01.2026 18:29:49
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\sdkfz7\Sdkfz 7_2.max
@@ -404,7 +404,10 @@
 					0 	 0 	 1
 					-24.7174 	 -0.0212 	 22.5331
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/turret.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/turret_lod1.ply"}
+				}
 				{bone "camera"
 					{matrix34
 						1 	 0 	 0.0073
@@ -424,11 +427,17 @@
 						0 	 -1 	 0
 						-2.1482 	 3.5731 	 12.4657
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 12.1156 	 0.0729 	 -2.3357}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun_lod1.ply"}
+						}
 						{bone "gun_barrel"
 							{parameters "id=gun;"}
 							{matrix34
@@ -437,7 +446,10 @@
 								0 	 1 	 0
 								35.6509 	 0.8813 	 5.9087
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun_barrel.ply"}
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/gun_barrel_lod1.ply"}
+							}
 						}
 						{bone "ammo"
 							{parameters "id=gun_rot;"}
@@ -447,11 +459,17 @@
 								0.0698 	 0.9976 	 0
 								-4.236 	 1.7917 	 1.9579
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/ammo.ply"}
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/ammo_lod1.ply"}
+							}
 							{bone "ammo2"
 								{parameters "id=gun_rot;"}
 								{Position -2.436 	 -2.8338 	 0.1395}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/ammo2.ply"}
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/ammo2_lod1.ply"}
+								}
 							}
 						}
 						{bone "fx_invers"
@@ -474,13 +492,19 @@
 					{bone "shield_gun"
 						{parameters "id=gun_rot;"}
 						{Position 18.5982 	 1.7808 	 3.5731}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/shield_gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/shield_gun_lod1.ply"}
+						}
 					}
 				}
 				{bone revolute "shield"
 					{parameters "id=turret;"}
 					{Position 2.5728 	 0 	 7.3369}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/shield.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/shield_lod1.ply"}
+					}
 				}
 				{bone revolute "aim_v"
 					{parameters "id=turret;"}
@@ -490,7 +514,10 @@
 						0 	 -1 	 0
 						-12.6672 	 -12.1565 	 13.1816
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/aim_v.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/aim_v_lod1.ply"}
+					}
 				}
 				{bone revolute "aim_h"
 					{parameters "id=turret;"}
@@ -500,7 +527,10 @@
 						0 	 -1 	 0
 						-12.6672 	 -7.5075 	 13.1816
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/aim_h.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/aim_h_lod1.ply"}
+					}
 				}
 				{bone "turret4"
 					{matrix34
@@ -518,7 +548,10 @@
 						0.061 	 0 	 0.9981
 						3.4242 	 13.4063 	 4.6313
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/detail8.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/detail8_lod1.ply"}
+					}
 				}
 				{bone "commander"
 					{Position -32.0347 	 1.6231 	 5.699}
@@ -551,27 +584,42 @@
 			{bone "board_back"
 				{parameters "id=body;"}
 				{Position -62.8439 	 -0.4852 	 10.9897}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_back.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_back_lod1.ply"}
+				}
 			}
 			{bone "board_left"
 				{parameters "id=body;"}
 				{Position -28.4014 	 23.4333 	 10.9208}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_left.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_left_lod1.ply"}
+				}
 			}
 			{bone "board_right"
 				{parameters "id=body;"}
 				{Position -28.4014 	 -23.4757 	 10.9708}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_right.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/board_right_lod1.ply"}
+				}
 			}
 			{bone "doorr"
 				{parameters "id=body;"}
 				{Position 33.7505 	 -18.3408 	 13.0277}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/doorr.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/doorr_lod1.ply"}
+				}
 			}
 			{bone "doorl"
 				{parameters "id=body;"}
 				{Position 33.7505 	 18.2984 	 13.0277}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/doorl.ply"}
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz7_2/doorl_lod1.ply"}
+				}
 			}
 			{bone "detail5"
 				{parameters "id=body;"}

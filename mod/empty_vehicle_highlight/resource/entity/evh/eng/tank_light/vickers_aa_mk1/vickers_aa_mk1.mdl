@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1_1 driver_hatch1_2 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:31:26
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_light\Vickers_AA_MK_I\vickers_light_aa_mk1.max
@@ -59,7 +59,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -11.2571 	 0 	 16.2517}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{matrix34
@@ -68,7 +68,7 @@
 						0 	 -1 	 0
 						1.9514 	 0 	 3.7441
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=turret;"}
 						{matrix34
@@ -77,7 +77,7 @@
 							0 	 1 	 0
 							2.8522 	 -0.8805 	 0.0029
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/gun.ply"}
 						{bone "shooter01"
 							{Position 11.0269 	 2.3258 	 0.7077}
 						}
@@ -134,7 +134,7 @@
 							0 	 1 	 0
 							-2.2807 	 -7.2742 	 7.3622
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/magazine4.ply"}
 					}
 					{bone "magazine3"
 						{parameters "id=turret;"}
@@ -144,7 +144,7 @@
 							0 	 1 	 0
 							-2.2807 	 -7.2742 	 2.5984
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/magazine3.ply"}
 					}
 					{bone "magazine1"
 						{parameters "id=turret;"}
@@ -154,7 +154,7 @@
 							0 	 1 	 0
 							-2.2831 	 -7.2742 	 -6.9008
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/magazine1.ply"}
 					}
 					{bone "visor1"
 						{matrix34
@@ -168,7 +168,7 @@
 				{bone "magazine"
 					{parameters "id=turret;"}
 					{Position -0.3293 	 2.1457 	 -3.5301}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/magazine.ply"}
 				}
 				{bone "gunner"
 					{Position -9.176 	 0 	 -13.7168}
@@ -241,12 +241,12 @@
 			{bone "driver_hatch1_1"
 				{parameters "id=body;"}
 				{Position 18.487 	 11.7717 	 7.8349}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/driver_hatch1_1.ply"}
 			}
 			{bone "driver_hatch1_2"
 				{parameters "id=body;"}
 				{Position 28.5067 	 11.5551 	 0.5317}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/vickers_aa_mk1/driver_hatch1_2.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

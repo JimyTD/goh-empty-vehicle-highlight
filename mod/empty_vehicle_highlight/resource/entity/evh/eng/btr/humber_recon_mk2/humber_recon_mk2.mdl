@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright driver gunner mgun2_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:36:33
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Humber_recon_mk2\humber_recon_mk2.max
@@ -30,7 +30,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/btr/humber_recon_mk2/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -20.5953 	 0 	 4.9977}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_recon_mk2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{matrix34
@@ -39,7 +39,7 @@
 						0 	 1 	 0
 						-0.2877 	 8.0532 	 0.3897
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_recon_mk2/gun_rot.ply"}
 					{bone revolute "mgun1_h_rot1"
 						{limits -1 1}
 						{matrix34
@@ -108,7 +108,7 @@
 					0 	 -0.2334 	 0.9724
 					1.1073 	 -15.9685 	 -5.4652
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_recon_mk2/doorright.ply"}
 			}
 			{bone "doorleft"
 				{parameters "id=body;"}
@@ -118,7 +118,7 @@
 					0 	 0.2334 	 0.9724
 					1.0922 	 15.8804 	 -5.7755
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_recon_mk2/doorleft.ply"}
 			}
 			{bone "detail7"
 				{parameters "id=body;"}

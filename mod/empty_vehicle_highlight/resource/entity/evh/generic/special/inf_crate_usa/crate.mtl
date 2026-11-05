@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "/entity/-vehicle/generic/special/inf_crate_usa/inf_ammobox"}
-	{bump "$/_vehicle/inf_ammobox_bp"}
-	{specular "$/_vehicle/inf_ammobox_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

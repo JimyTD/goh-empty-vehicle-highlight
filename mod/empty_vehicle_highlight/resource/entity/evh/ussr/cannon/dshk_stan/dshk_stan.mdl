@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 11.11.2021 17:35:49
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\dshk\DSHK stan.max
@@ -69,11 +69,17 @@
 				{parameters "id=body;"}
 				{limits -10 10}
 				{Position -2.3412 	 0 	 1.4748}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/turret_lod1.ply"}
+				}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 1.9099 	 0 	 0.5888}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/shield.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/shield_lod1.ply"}
+					}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=body;"}
@@ -84,7 +90,10 @@
 						0 	 -1 	 0
 						-2.6966 	 0.8405 	 2.1614
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/gun_rot_lod1.ply"}
+					}
 					{bone "magazine"
 						{parameters "id=body;"}
 						{matrix34
@@ -93,7 +102,10 @@
 							0 	 1 	 0
 							-3.2417 	 0.3583 	 -1.9522
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/magazine.ply"}
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/magazine_lod1.ply"}
+						}
 						{bone "magazine_cover"
 							{parameters "id=body;"}
 							{matrix34
@@ -102,7 +114,10 @@
 								0 	 -0.3502 	 0.9367
 								-0.0005 	 -0.3435 	 2.2664
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/magazine_cover.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/magazine_cover_lod1.ply"}
+							}
 						}
 					}
 					{bone "dshk"
@@ -113,11 +128,17 @@
 							0 	 1 	 0
 							-0.0331 	 2.6517 	 0.8405
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk.ply"}
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_lod1.ply"}
+						}
 						{bone "dshk_detail1"
 							{parameters "id=body;"}
 							{Position 0.3158 	 -0.0089 	 -0.9552}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_detail1.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_detail1_lod1.ply"}
+							}
 						}
 						{bone "dshk_detail2"
 							{parameters "id=body;"}
@@ -127,7 +148,10 @@
 								-0.8829 	 0 	 0.4695
 								-5.0702 	 -0.844 	 1.2463
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_detail2.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/dshk_detail2_lod1.ply"}
+							}
 						}
 						{bone "foresight14"
 							{matrix34
@@ -154,7 +178,10 @@
 							0 	 1 	 0
 							-3.2187 	 2.3166 	 -0.8218
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/ammo.ply"}
+							{VolumeView "../../../../-vehicle/ussr/cannon/dshk_stan/ammo_lod1.ply"}
+						}
 					}
 				}
 				{bone "visor2"

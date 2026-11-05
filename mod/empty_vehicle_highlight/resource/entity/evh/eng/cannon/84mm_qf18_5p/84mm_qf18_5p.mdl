@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 07.10.2025 09:13:12
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\84mm_QF18_5p\84mm_qf18_5p.max
@@ -28,16 +28,16 @@
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position 0 	 7.3792 	 4.3172}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/standl.ply"}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -37.5136 	 18.2824 	 -8.3401}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail4.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -18.7124 	 13.435 	 -5.378}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail2.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -63,17 +63,17 @@
 						0.2632 	 -0.1426 	 0.9541
 						-52.3993 	 26.5576 	 -11.4112
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/spikel.ply"}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position 0 	 -7.3792 	 4.3172}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/standr.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -21.423 	 -12.2194 	 -5.6487}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail1.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -94,12 +94,12 @@
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -25.356 	 -13.1083 	 -4.1637}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail3.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=body;"}
 					{Position -37.5608 	 -18.3128 	 -8.281}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail5.ply"}
 				}
 				{bone "spiker"
 					{parameters "id=body;"}
@@ -109,7 +109,7 @@
 						0.2386 	 0.0041 	 0.9711
 						-52.0336 	 -26.2826 	 -11.6041
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/spiker.ply"}
 				}
 				{bone "fixer1"
 					{parameters "id=body;"}
@@ -119,7 +119,7 @@
 						-0.1355 	 -0.0488 	 0.9896
 						-16.6653 	 -7.4474 	 -5.0284
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/fixer1.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -127,34 +127,34 @@
 				{limits -25 25}
 				{speed 0.01}
 				{Position -2.294 	 0 	 4.8475}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/turret.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 1.501 	 4.4643 	 4.7184}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/shield.ply"}
 					{bone "detail7"
 						{parameters "id=body;"}
 						{Position 2.805 	 -12.9584 	 -0.8991}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail7.ply"}
 					}
 					{bone "detail8"
 						{parameters "id=body;"}
 						{Position 3.1415 	 3.9647 	 -0.912}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail8.ply"}
 					}
 					{bone "detail9"
 						{parameters "id=body;"}
 						{Position -0.3051 	 7.8477 	 6.9334}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail9.ply"}
 					}
 					{bone "shield_upper"
 						{parameters "id=shield_upper;"}
 						{Position 2.2725 	 -9.6022 	 10.3072}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/shield_upper.ply"}
 						{bone "detail10"
 							{parameters "id=body;"}
 							{Position -1.7825 	 -0.3362 	 1.1537}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/detail10.ply"}
 						}
 					}
 				}
@@ -171,7 +171,7 @@
 						0 	 -1 	 0
 						3.9056 	 0.3443 	 4.6682
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -180,15 +180,15 @@
 							0 	 1 	 0
 							-11.7807 	 3.0329 	 0.3443
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/gun.ply"}
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -5.5182 	 -2.3673 	 0.0038}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/breechblock.ply"}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -1.4843 	 -0.72 	 0.1294}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/lever.ply"}
 							}
 						}
 						{bone "fx_invers"
@@ -213,7 +213,7 @@
 						{bone "aim_ver2"
 							{parameters "id=gun;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/aim_ver2.ply"}
 						}
 					}
 				}
@@ -230,7 +230,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/aim_hor.ply"}
 					}
 				}
 				{bone "aim_ver1_helper"
@@ -243,13 +243,13 @@
 					{bone "aim_ver1"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/aim_ver1.ply"}
 					}
 				}
 				{bone "aim_sight"
 					{parameters "id=body;"}
 					{Position 3.8996 	 6.4372 	 4.6651}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/84mm_qf18_5p/aim_sight.ply"}
 				}
 			}
 			{bone "shield_lower"

@@ -1,5 +1,5 @@
-{material bump
-	{diffuse "/entity/-vehicle/germany/tank_light/pz38t_g/flag"}
-	{bump "/entity/-vehicle/germany/tank_light/pz38t_g/flag_bp"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: codriver_hatch driver_hatch flail_drum mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 04.11.2025 00:07:14
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\tank_medium\m4a4_crab\sherman5_crab.max
@@ -37,7 +37,7 @@
 				}
 				{speed 0.006}
 				{Position 3.6431 	 0.0036 	 23.2381}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -51,7 +51,7 @@
 						0 	 -1 	 0
 						14.1025 	 -0.2218 	 5.095
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -60,7 +60,7 @@
 							0 	 1 	 0
 							10.4088 	 0.0038 	 -0.2219
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 -0.0059
@@ -77,7 +77,7 @@
 							0 	 1 	 0
 							-4.0136 	 0.0183 	 -7.8315
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/mgun_turrret.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -92,16 +92,16 @@
 					{parameters "id=turret;"}
 					{speed 0.008}
 					{Position -6.5888 	 -9.1254 	 13.4634}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/commander_cupola.ply"}
 					{bone "commander_hatch2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 7.6003 	 0.9012}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/commander_hatch2.ply"}
 					}
 					{bone "commander_hatch1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.6004 	 0.8956}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/commander_hatch1.ply"}
 					}
 					{bone "visor1"
 						{matrix34
@@ -528,7 +528,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/driver_hatch.ply"}
 				}
 			}
 			{bone "codriver_hatch_helper"
@@ -541,7 +541,7 @@
 				{bone "codriver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/codriver_hatch.ply"}
 				}
 			}
 			{bone "enumerator"
@@ -579,7 +579,7 @@
 							0 	 1 	 0
 							-3.4528 	 -0.1922 	 0.335
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/mgun_hull.ply"}
 					}
 					{bone "mg_shield"
 						{parameters "id=body;"}
@@ -589,7 +589,7 @@
 							0 	 1 	 0
 							1.7397 	 0.0745 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/mg_shield.ply"}
 					}
 				}
 			}
@@ -616,24 +616,24 @@
 				{bone "flail_drum"
 					{parameters "id=body;"}
 					{Position 40.8562 	 3.2855 	 0.438}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/flail_drum.ply"}
 					{bone "chains_full"
 						{parameters "id=body;"}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_full.ply"}
 					}
 					{bone "chains_start11"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 -5.2211}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start11.ply"}
 						{bone "chains_start12"
 							{parameters "id=body;"}
 							{Position 0 	 0 	 -7.0437}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start12.ply"}
 							{bone "chains_start13"
 								{parameters "id=body;"}
 								{Position 0 	 0 	 -8.1679}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start13.ply"}
 							}
 						}
 					}
@@ -645,15 +645,15 @@
 							-0.7071 	 0 	 0.7071
 							-3.7021 	 0 	 -3.6929
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start21.ply"}
 						{bone "chains_start22"
 							{parameters "id=body;"}
 							{Position -4.9713 	 0 	 -4.9802}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start22.ply"}
 							{bone "chains_start23"
 								{parameters "id=body;"}
 								{Position -5.7758 	 0 	 -5.7755}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start23.ply"}
 							}
 						}
 					}
@@ -665,15 +665,15 @@
 							-1 	 0 	 0
 							-5.2294 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start31.ply"}
 						{bone "chains_start32"
 							{parameters "id=body;"}
 							{Position -7.035 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start32.ply"}
 							{bone "chains_start33"
 								{parameters "id=body;"}
 								{Position -8.1705 	 0 	 0}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start33.ply"}
 							}
 						}
 					}
@@ -685,7 +685,7 @@
 							-0.9848 	 0 	 -0.1736
 							-3.706 	 0 	 3.7004
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start41.ply"}
 						{bone "chains_start42"
 							{parameters "id=body;"}
 							{matrix34
@@ -694,15 +694,15 @@
 								-0.5736 	 0 	 0.8192
 								-2.2339 	 0 	 2.2334
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start42.ply"}
 							{bone "chains_start43"
 								{parameters "id=body;"}
 								{Position -2.7358 	 0 	 2.7399}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start43.ply"}
 								{bone "chains_start44"
 									{parameters "id=body;"}
 									{Position -5.7809 	 0 	 5.7845}
-									
+									{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start44.ply"}
 								}
 							}
 						}
@@ -715,7 +715,7 @@
 							-0.9848 	 0 	 -0.1736
 							0 	 0 	 5.2266
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start51.ply"}
 						{bone "chains_start52"
 							{parameters "id=body;"}
 							{matrix34
@@ -724,7 +724,7 @@
 								-0.7193 	 0 	 0.6947
 								0 	 0 	 3.1676
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start52.ply"}
 							{bone "chains_start53"
 								{parameters "id=body;"}
 								{matrix34
@@ -733,11 +733,11 @@
 									-0.5592 	 0 	 0.829
 									0 	 0 	 3.8714
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start53.ply"}
 								{bone "chains_start54"
 									{parameters "id=body;"}
 									{Position 0 	 0 	 8.1699}
-									
+									{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start54.ply"}
 								}
 							}
 						}
@@ -750,7 +750,7 @@
 							0.9848 	 0 	 -0.1736
 							3.7564 	 0 	 3.7487
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start61.ply"}
 						{bone "chains_start62"
 							{parameters "id=body;"}
 							{matrix34
@@ -759,15 +759,15 @@
 								0.5736 	 0 	 0.8192
 								2.2117 	 0 	 2.2532
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start62.ply"}
 							{bone "chains_start63"
 								{parameters "id=body;"}
 								{Position 2.6833 	 0 	 2.6598}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start63.ply"}
 								{bone "chains_start64"
 									{parameters "id=body;"}
 									{Position 5.7978 	 0 	 5.7878}
-									
+									{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start64.ply"}
 								}
 							}
 						}
@@ -780,15 +780,15 @@
 							1 	 0 	 0
 							5.2382 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start71.ply"}
 						{bone "chains_start72"
 							{parameters "id=body;"}
 							{Position 7.0316 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start72.ply"}
 							{bone "chains_start73"
 								{parameters "id=body;"}
 								{Position 8.157 	 0 	 0}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start73.ply"}
 							}
 						}
 					}
@@ -800,15 +800,15 @@
 							0.7071 	 0 	 0.7071
 							3.7009 	 0 	 -3.7036
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start81.ply"}
 						{bone "chains_start82"
 							{parameters "id=body;"}
 							{Position 4.969 	 0 	 -4.9691}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start82.ply"}
 							{bone "chains_start83"
 								{parameters "id=body;"}
 								{Position 5.7905 	 0 	 -5.782}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_crab/chains_start83.ply"}
 							}
 						}
 					}

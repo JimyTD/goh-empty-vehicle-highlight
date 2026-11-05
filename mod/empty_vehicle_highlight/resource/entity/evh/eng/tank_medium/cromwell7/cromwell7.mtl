@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/cromwell_7_8"}
-	{bump "$/_vehicle/eng/cromwell_7_8_bp"}
-	{specular "$/_vehicle/eng/cromwell_7_8_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot shield shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 Carlos
 ;Date:			 10.02.2022 14:14:36
 ;File:			 T:\goh_3d_vehicles_fin\3d vehicles\Cannon\45mm_PstK32\45mm_m37.max
@@ -36,22 +36,30 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -1.1842 	 -7.3955 	 -0.2419}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standr.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standr_lod1.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standr_lod2.ply"}
+				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -1.3161 	 7.5119 	 -0.1931}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standl.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standl_lod1.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/standl_lod2.ply"}
+				}
 			}
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
 				{Position 1.3908 	 -0.0061 	 -1.5774}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/shield_lower.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.7827 	 0.1537 	 2.1162}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -63,7 +71,9 @@
 						0 	 -1 	 0
 						-0.0163 	 -0.0041 	 1.5212
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/gun_rot.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -72,7 +82,9 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/gun.ply"}
+						}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -84,7 +96,7 @@
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -12.0001 	 -1.6723 	 1.7559}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/lever.ply"}
 						}
 					}
 					{bone "foresight1"
@@ -107,7 +119,7 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position -7.0262 	 -0.0041 	 1.5212}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/shield.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -117,7 +129,7 @@
 						0.1611 	 -0.0119 	 0.9869
 						-11.2584 	 6.0175 	 2.137
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
@@ -127,7 +139,7 @@
 						0.3174 	 -0.182 	 0.9307
 						-9.5083 	 7.3444 	 4.5487
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/45mm_pstk32/aim_wheel1.ply"}
 				}
 			}
 		}

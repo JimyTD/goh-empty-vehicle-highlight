@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor hatch turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/su76/start.anm"} {speed 0.7}}
@@ -32,17 +32,17 @@
 			{bone "backdoor"
 				{parameters "id=body;"}
 				{Position -41.5423 	 -2.0018 	 21.6236}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su76/backdoor.ply"}
 			}
 			{bone "hatch"
 				{parameters "commonmesh;id=body;"}
 				{Position 27.6151 	 1.5578 	 20.5837}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su76/hatch.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
 				{Position -4.7366 	 4.7497 	 19.3534}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su76/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{matrix34
@@ -51,7 +51,7 @@
 						0 	 -1 	 0
 						-4.8713 	 0.0418 	 5.32
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su76/gun_rot.ply"}
 					{bone "mantlet"
 						{parameters "id=gun;"}
 						{orientation
@@ -59,14 +59,14 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su76/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{animation
 								{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/su76/gun_r.anm"}{speed 0.7}}
 							}
 							{Position 27.0748 	 0.0209 	 3.2787}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/su76/gun.ply"}
 							{bone "foresight1"
 								{Position 35.0587 	 -0.0655 	 -0.0124}
 							}

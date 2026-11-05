@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 turret ws_shield
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 12.01.2024 15:55:33
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3D_vehicle_usa\vehicles\btr\M15A1\M15A1.max
@@ -89,21 +89,21 @@
 			{bone "doorl1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 16.099 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/doorl1.ply"}
 				{bone "doorl_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/doorl_ext.ply"}
 				}
 			}
 			{bone "doorr1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 -16.0992 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/doorr1.ply"}
 				{bone "doorr_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 -0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/doorr_ext.ply"}
 				}
 			}
 			{bone "ws_shield"
@@ -114,7 +114,7 @@
 					0.8829 	 0 	 0.4695
 					19.4999 	 14.5538 	 25.5067
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/ws_shield.ply"}
 			}
 			{bone "holder1"
 				{parameters "id=body;"}
@@ -124,7 +124,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -13.7587 	 18.7049
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/holder1.ply"}
 			}
 			{bone "holder2"
 				{parameters "id=body;"}
@@ -134,7 +134,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -2.4897 	 18.7049
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/holder2.ply"}
 			}
 			{bone "holder3"
 				{parameters "id=body;"}
@@ -144,7 +144,7 @@
 					0 	 -0.9998 	 -0.0175
 					25.7989 	 13.6558 	 18.7049
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/holder3.ply"}
 			}
 			{bone "window1"
 				{parameters "id=window1;"}
@@ -376,7 +376,10 @@
 					0 	 0 	 1
 					-28.487 	 0 	 9.0435
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/turret.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/turret_lod1.ply"}
+				}
 				{bone "shield2"
 					{parameters "id=turret;"}
 					{matrix34
@@ -385,7 +388,7 @@
 						-0.0151 	 -0.0087 	 0.9998
 						15.3021 	 18.8825 	 16.0263
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/shield2.ply"}
 				}
 				{bone "shield1"
 					{parameters "id=turret;"}
@@ -395,22 +398,22 @@
 						0 	 0 	 1
 						20.5681 	 -10.2255 	 16.0263
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/shield1.ply"}
 				}
 				{bone "gun_rod"
 					{parameters "id=gun;"}
 					{Position -4.827 	 -1.6114 	 11.721}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/gun_rod.ply"}
 				}
 				{bone "3"
 					{parameters "id=turret;"}
 					{Position -0.3517 	 -18.485 	 20.9672}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/3.ply"}
 				}
 				{bone "2"
 					{parameters "id=turret;"}
 					{Position -9.1128 	 -18.485 	 20.9672}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/2.ply"}
 				}
 				{bone "1"
 					{parameters "id=turret;"}
@@ -420,27 +423,27 @@
 						0 	 -0.0017 	 1
 						-12.4031 	 -18.485 	 22.2965
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/1.ply"}
 				}
 				{bone "6"
 					{parameters "id=turret;"}
 					{Position 0.5112 	 18.4979 	 20.9672}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/6.ply"}
 				}
 				{bone "5"
 					{parameters "id=turret;"}
 					{Position -8.2779 	 18.4979 	 20.9673}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/5.ply"}
 				}
 				{bone "4"
 					{parameters "id=turret;"}
 					{Position -16.2664 	 18.4979 	 22.2965}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/4.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=turret;"}
 					{Position -3.0637 	 -10.8375 	 14.3349}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/aim_ver.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -454,7 +457,10 @@
 						0 	 -1 	 0
 						-2.3494 	 0.2618 	 16.5771
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/gun_rot_lod1.ply"}
+					}
 					{bone "magazine"
 						{parameters "id=gun;"}
 						{matrix34
@@ -463,7 +469,10 @@
 							0 	 1 	 0
 							6.356 	 1.2913 	 -4.081
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/magazine.ply"}
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/magazine_lod1.ply"}
+						}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -473,7 +482,7 @@
 							0 	 1 	 0
 							16.6866 	 0 	 0.2618
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/gun.ply"}
 						{bone "foresight1"
 							{Position 30.5582 	 -0.0213 	 0.0008}
 						}
@@ -486,7 +495,7 @@
 							0 	 1 	 0
 							15.8102 	 -2.9971 	 7.8633
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/magazine00.ply"}
 					}
 					{bone "magazine01"
 						{parameters "id=gun;"}
@@ -496,7 +505,7 @@
 							0 	 1 	 0
 							15.8057 	 -2.9999 	 -6.9708
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/magazine01.ply"}
 					}
 					{bone "50cal"
 						{parameters "id=gun;"}
@@ -506,11 +515,14 @@
 							0 	 1 	 0
 							5.1988 	 -1.6394 	 -5.1136
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/50cal.ply"}
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/50cal_lod1.ply"}
+						}
 						{bone "b00"
 							{parameters "id=gun;"}
 							{Position 17.9804 	 -10.7423 	 -0.2601}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/b00.ply"}
 							{bone "shooter00"
 								{Position 14.2263 	 -0.0022 	 0.0005}
 							}
@@ -518,7 +530,7 @@
 						{bone "b01"
 							{parameters "id=gun;"}
 							{Position 17.9804 	 0.0016 	 -0.2601}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/b01.ply"}
 							{bone "shooter01"
 								{Position 14.2263 	 -0.0074 	 0.0005}
 							}
@@ -526,12 +538,12 @@
 						{bone "ammo00"
 							{parameters "id=gun;"}
 							{Position 10.6396 	 -15.0756 	 0.398}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/ammo00.ply"}
 						}
 						{bone "ammo01"
 							{parameters "id=gun;"}
 							{Position 10.6396 	 4.2339 	 0.398}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/ammo01.ply"}
 						}
 						{bone "foresight14"
 							{Position 32.1765 	 -5.3754 	 -0.2596}
@@ -565,7 +577,7 @@
 				{bone "aim_hor"
 					{parameters "id=turret;"}
 					{Position -0.244 	 10.419 	 14.6331}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m15a1_cgmc/aim_hor.ply"}
 				}
 				{bone "gunner"
 					{matrix34

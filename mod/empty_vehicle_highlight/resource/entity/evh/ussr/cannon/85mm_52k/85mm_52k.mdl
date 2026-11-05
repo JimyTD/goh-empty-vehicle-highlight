@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_support plate1 plate2 sandbag screwjack1 screwjack2 standl standr towbar turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.05.2021 16:51:50
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\52k\85mm_52k.max
@@ -34,7 +34,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 16.4678}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -46,7 +46,7 @@
 						0 	 -1 	 0
 						-12.6102 	 0 	 10.2327
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -55,7 +55,7 @@
 							0 	 1 	 0
 							18.7274 	 -0.4281 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/gun.ply"}
 						{bone "foresight1"
 							{parameters "vis;"}
 							{matrix34
@@ -76,12 +76,12 @@
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -25.7628 	 -2.8543 	 -1.8849}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/lever.ply"}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -25.3411 	 1.2685 	 3.056}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/breech.ply"}
 						}
 					}
 				}
@@ -117,12 +117,12 @@
 						0 	 0 	 1
 						-8.085 	 -13.5655 	 -11.1671
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/seat.ply"}
 				}
 				{bone "footrest"
 					{parameters "id=body;"}
 					{Position 6.8964 	 -7.1259 	 -2.8521}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/footrest.ply"}
 				}
 				{bone "charger"
 					{matrix34
@@ -141,7 +141,7 @@
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
 					{Position 2.3028 	 8.0527 	 -0.5974}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/aim_wheel1.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -151,7 +151,7 @@
 						0 	 -0.3256 	 0.9455
 						1.7161 	 -11.6322 	 -3.2001
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/aim_wheel2.ply"}
 				}
 			}
 			{bone "plate2"
@@ -162,7 +162,7 @@
 					0 	 0 	 1
 					7.3336 	 8.265 	 1.5447
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/plate2.ply"}
 			}
 			{bone "plate1"
 				{parameters "id=body;"}
@@ -172,37 +172,37 @@
 					0 	 0 	 1
 					7.2653 	 -8.2081 	 1.5447
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/plate1.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position 0 	 17.1457 	 -0.3368}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/standl.ply"}
 				{bone "screwjack4"
 					{parameters "id=body;"}
 					{Position 0 	 24.6657 	 -9.7836}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/screwjack4.ply"}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position 0 	 -17.1483 	 -0.3368}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/standr.ply"}
 				{bone "screwjack3"
 					{parameters "id=body;"}
 					{Position 0 	 -24.6575 	 -9.7836}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/screwjack3.ply"}
 				}
 			}
 			{bone "screwjack1"
 				{parameters "id=body;"}
 				{Position 47.2452 	 0 	 -10.1204}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/screwjack1.ply"}
 			}
 			{bone "screwjack2"
 				{parameters "id=body;"}
 				{Position -47.2452 	 0 	 -10.1204}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/screwjack2.ply"}
 			}
 			{bone "gun_support"
 				{parameters "id=body;"}
@@ -212,17 +212,17 @@
 					0.7314 	 0 	 0.682
 					40.0016 	 0 	 2.3283
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/gun_support.ply"}
 				{bone "lock"
 					{parameters "id=body;"}
 					{Position -0.0118 	 1.8597 	 23.8599}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/lock.ply"}
 				}
 			}
 			{bone "towbar"
 				{parameters "id=body;"}
 				{Position -50.7009 	 0 	 3.2402}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/85mm_52k/towbar.ply"}
 			}
 			{bone "seat2"
 				{matrix34

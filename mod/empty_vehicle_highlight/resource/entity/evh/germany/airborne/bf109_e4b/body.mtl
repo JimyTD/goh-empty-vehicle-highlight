@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/ger/bf109e4b_fuselage"}
-	{bump "$/_vehicle/ger/bf109e4b_fuselage_bp"}
-	{specular "$/_vehicle/ger/bf109e4b_fuselage_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch hull_hatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 06.12.2023 23:18:51
 ;File:			 D:\games\GoH_3d_vehicle_usa\vehicles\tank_medium\M4A3_76W_hvss\M4A3_76w_HVSS.max
@@ -33,7 +33,7 @@
 					{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 3.8627 	 0.0006 	 16.0762}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						17.9494 	 0 	 5.5372
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,7 +54,7 @@
 							0 	 1 	 0
 							10.0016 	 -0.0162 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/gun.ply"}
 						{bone "foresight1"
 							{Position 57.7745 	 -0.0019 	 0.0052}
 						}
@@ -67,7 +67,7 @@
 							0 	 1 	 0
 							-5.0885 	 0.6177 	 -6.7922
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/mgun_turrret.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -86,7 +86,7 @@
 						0 	 0 	 1
 						-11.2628 	 12.9011 	 14.5792
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/turret_hatch.ply"}
 				}
 				{bone "cupola_hatch"
 					{parameters "id=turret;"}
@@ -96,16 +96,16 @@
 						0 	 0 	 1
 						-6.2387 	 -16.8523 	 16.3532
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/cupola_hatch.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -21.4001 	 -10.1226 	 18.8565}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{Position -0.0306 	 0 	 8.4167}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/antenna2.ply"}
 					}
 				}
 				{bone revolute "mgun_a_rot1"
@@ -113,7 +113,7 @@
 					{limits -15 15}
 					{terminator}
 					{Position -14.3869 	 0.0005 	 20.3132}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -15 40}
@@ -124,7 +124,7 @@
 							0 	 -1 	 0
 							-2.5555 	 0.8593 	 3.7515
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0.0087 	 0
@@ -287,7 +287,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/mgun_hull.ply"}
 					}
 					{bone "mgun_shield"
 						{parameters "id=body;"}
@@ -297,7 +297,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/mgun_shield.ply"}
 					}
 				}
 			}
@@ -815,7 +815,7 @@
 				{bone "hull_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/hull_hatch.ply"}
 				}
 			}
 			{bone "helper_driverh"
@@ -828,7 +828,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_76w_hvss/driver_hatch.ply"}
 				}
 			}
 			{bone "shield1"

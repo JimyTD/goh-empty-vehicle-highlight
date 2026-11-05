@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: 1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 01.05.2022 08:24:29
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\Trailer\AP_2\AP_2.max
@@ -88,7 +88,7 @@
 						-0.3584 	 0 	 0.9336
 						-13.5304 	 0 	 -1.5893
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/trailer/ap_2/1.ply"}
 				}
 			}
 			{bone "susp_back"

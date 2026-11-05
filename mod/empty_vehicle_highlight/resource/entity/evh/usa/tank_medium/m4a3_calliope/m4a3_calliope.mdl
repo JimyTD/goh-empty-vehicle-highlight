@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 radio_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 18.01.2024 12:45:41
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3D_vehicle_usa\vehicles\tank_medium\M4A3_Calliope\M4A3_calliope.max
@@ -38,7 +38,10 @@
 				}
 				{speed 0.007}
 				{Position 4.0677 	 0.0051 	 25.1771}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/turret.ply"}
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -51,7 +54,10 @@
 						0 	 -1 	 0
 						14.0918 	 0 	 5.0128
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -60,7 +66,7 @@
 							0 	 1 	 0
 							5.7827 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun.ply"}
 						{bone "foresight1"
 							{Position 35.1429 	 0.0148 	 0.0018}
 						}
@@ -89,7 +95,7 @@
 							0 	 1 	 0
 							-4.0774 	 0.0308 	 -7.6543
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/mgun_turrret.ply"}
 					}
 					{bone "rod"
 						{parameters "id=gun;"}
@@ -99,23 +105,23 @@
 							0 	 1 	 0
 							8.5207 	 3.7419 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rod.ply"}
 					}
 				}
 				{bone revolute "cupola_ring"
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5949 	 -9.1255 	 13.2943}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/cupola_ring.ply"}
 					{bone "copola_cover1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 6.7246 	 1.4608}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/copola_cover1.ply"}
 					}
 					{bone "copola_cover2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -6.7246 	 1.4606}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/copola_cover2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -148,7 +154,7 @@
 						0 	 0 	 1
 						-11.2753 	 10.8505 	 14.2118
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/turret_hatch.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=turret;"}
@@ -158,7 +164,7 @@
 						-0.0921 	 0.2115 	 0.973
 						7.7803 	 23.752 	 15.6442
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{matrix34
@@ -167,7 +173,7 @@
 							-0.0132 	 -0.0148 	 0.9998
 							-0.0884 	 -0.0217 	 8.2594
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/antenna2.ply"}
 						{bone "antenna3"
 							{parameters "id=turret;"}
 							{matrix34
@@ -176,7 +182,7 @@
 								-0.0016 	 0.0026 	 1
 								0.0069 	 0.107 	 8.5307
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/antenna3.ply"}
 							{bone "antenna4"
 								{parameters "id=turret;"}
 								{matrix34
@@ -185,7 +191,7 @@
 									0.0088 	 -0.0097 	 0.9999
 									0.0197 	 0.0855 	 9.0789
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/antenna4.ply"}
 							}
 						}
 					}
@@ -193,7 +199,7 @@
 				{bone "detail1"
 					{parameters "id=turret;"}
 					{Position -24.9511 	 -0.0921 	 4.3824}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/detail1.ply"}
 				}
 				{bone "rocket_holder"
 					{parameters "id=gun1;"}
@@ -201,7 +207,7 @@
 						{sequence "repair" {file "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun1_r.anm"}{speed 0.7}}
 					}
 					{Position -3.5655 	 -21.2018 	 2.3857}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket_holder.ply"}
 					{bone revolute "gun_rot1"
 						{parameters "id=gun1;"}
 						{limits -10 25}
@@ -219,7 +225,10 @@
 								0 	 1 	 0
 								0 	 0 	 21.3467
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun1.ply"}
+								{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/gun1_lod1.ply"}
+							}
 							{bone "shooter00"
 								{matrix34
 									-0.9848 	 0 	 -0.1736
@@ -234,7 +243,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0013 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket00.ply"}
 								}
 							}
 							{bone "shooter01"
@@ -251,7 +260,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0036 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket01.ply"}
 								}
 							}
 							{bone "shooter02"
@@ -268,7 +277,7 @@
 										0 	 0 	 1
 										-7.9187 	 0.0153 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket02.ply"}
 								}
 							}
 							{bone "shooter03"
@@ -285,7 +294,7 @@
 										0 	 0 	 1
 										-7.9188 	 -0.0032 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket03.ply"}
 								}
 							}
 							{bone "shooter04"
@@ -302,7 +311,7 @@
 										0 	 0 	 1
 										-7.9187 	 0 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket04.ply"}
 								}
 							}
 							{bone "shooter05"
@@ -319,7 +328,7 @@
 										0 	 0 	 1
 										-7.9187 	 0 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket05.ply"}
 								}
 							}
 							{bone "shooter06"
@@ -336,7 +345,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0032 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket06.ply"}
 								}
 							}
 							{bone "shooter07"
@@ -353,7 +362,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0036 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket07.ply"}
 								}
 							}
 							{bone "shooter08"
@@ -370,7 +379,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0033 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket08.ply"}
 								}
 							}
 							{bone "shooter09"
@@ -387,7 +396,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.003 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket09.ply"}
 								}
 							}
 							{bone "shooter10"
@@ -404,7 +413,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0015 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket10.ply"}
 								}
 							}
 							{bone "shooter11"
@@ -421,7 +430,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0031 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket11.ply"}
 								}
 							}
 							{bone "shooter12"
@@ -438,7 +447,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0038 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket12.ply"}
 								}
 							}
 							{bone "shooter13"
@@ -455,7 +464,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0054 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket13.ply"}
 								}
 							}
 							{bone "shooter14"
@@ -472,7 +481,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0036 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket14.ply"}
 								}
 							}
 							{bone "shooter15"
@@ -489,7 +498,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0039 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket15.ply"}
 								}
 							}
 							{bone "shooter16"
@@ -506,7 +515,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0009 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket16.ply"}
 								}
 							}
 							{bone "shooter17"
@@ -523,7 +532,7 @@
 										0 	 0 	 1
 										-7.9187 	 -0.0016 	 -0.2018
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket17.ply"}
 								}
 							}
 							{bone "shooter18"
@@ -540,7 +549,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0013 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket18.ply"}
 								}
 							}
 							{bone "shooter19"
@@ -557,7 +566,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0045 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket19.ply"}
 								}
 							}
 							{bone "shooter20"
@@ -574,7 +583,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0148 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket20.ply"}
 								}
 							}
 							{bone "shooter21"
@@ -591,7 +600,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0111 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket21.ply"}
 								}
 							}
 							{bone "shooter22"
@@ -608,7 +617,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0004 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket22.ply"}
 								}
 							}
 							{bone "shooter23"
@@ -625,7 +634,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0001 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket23.ply"}
 								}
 							}
 							{bone "shooter24"
@@ -642,7 +651,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0026 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket24.ply"}
 								}
 							}
 							{bone "shooter25"
@@ -659,7 +668,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0051 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket25.ply"}
 								}
 							}
 							{bone "shooter26"
@@ -676,7 +685,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0065 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket26.ply"}
 								}
 							}
 							{bone "shooter27"
@@ -693,7 +702,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0038 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket27.ply"}
 								}
 							}
 							{bone "shooter28"
@@ -710,7 +719,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0011 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket28.ply"}
 								}
 							}
 							{bone "shooter29"
@@ -727,7 +736,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0041 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket29.ply"}
 								}
 							}
 							{bone "shooter30"
@@ -744,7 +753,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0029 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket30.ply"}
 								}
 							}
 							{bone "shooter31"
@@ -761,7 +770,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0046 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket31.ply"}
 								}
 							}
 							{bone "shooter32"
@@ -778,7 +787,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0005 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket32.ply"}
 								}
 							}
 							{bone "shooter33"
@@ -795,7 +804,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0075 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket33.ply"}
 								}
 							}
 							{bone "shooter34"
@@ -812,7 +821,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0022 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket34.ply"}
 								}
 							}
 							{bone "shooter35"
@@ -829,7 +838,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0012 	 -0.1868
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket35.ply"}
 								}
 							}
 							{bone "shooter36"
@@ -846,7 +855,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.002 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket36.ply"}
 								}
 							}
 							{bone "shooter37"
@@ -863,7 +872,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0227 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket37.ply"}
 								}
 							}
 							{bone "shooter38"
@@ -880,7 +889,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0188 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket38.ply"}
 								}
 							}
 							{bone "shooter39"
@@ -897,7 +906,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0205 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket39.ply"}
 								}
 							}
 							{bone "shooter40"
@@ -914,7 +923,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0227 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket40.ply"}
 								}
 							}
 							{bone "shooter41"
@@ -931,7 +940,7 @@
 										0 	 0 	 1
 										-7.9186 	 -0.0213 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket41.ply"}
 								}
 							}
 							{bone "shooter42"
@@ -948,7 +957,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.002 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket42.ply"}
 								}
 							}
 							{bone "shooter43"
@@ -965,7 +974,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.0106 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket43.ply"}
 								}
 							}
 							{bone "shooter44"
@@ -982,7 +991,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.0192 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket44.ply"}
 								}
 							}
 							{bone "shooter45"
@@ -999,7 +1008,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.0277 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket45.ply"}
 								}
 							}
 							{bone "shooter46"
@@ -1016,7 +1025,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.0363 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket46.ply"}
 								}
 							}
 							{bone "shooter47"
@@ -1033,7 +1042,7 @@
 										0 	 0 	 1
 										-7.917 	 -0.0449 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket47.ply"}
 								}
 							}
 							{bone "shooter48"
@@ -1050,7 +1059,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0495 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket48.ply"}
 								}
 							}
 							{bone "shooter49"
@@ -1067,7 +1076,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0289 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket49.ply"}
 								}
 							}
 							{bone "shooter50"
@@ -1084,7 +1093,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0328 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket50.ply"}
 								}
 							}
 							{bone "shooter51"
@@ -1101,7 +1110,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.031 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket51.ply"}
 								}
 							}
 							{bone "shooter52"
@@ -1118,7 +1127,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0289 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket52.ply"}
 								}
 							}
 							{bone "shooter53"
@@ -1135,7 +1144,7 @@
 										0 	 0 	 1
 										-7.9186 	 0.0303 	 -0.2355
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket53.ply"}
 								}
 							}
 							{bone "shooter54"
@@ -1152,7 +1161,7 @@
 										0 	 0 	 1
 										-7.917 	 0.0495 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket54.ply"}
 								}
 							}
 							{bone "shooter55"
@@ -1169,7 +1178,7 @@
 										0 	 0 	 1
 										-7.917 	 0.041 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket55.ply"}
 								}
 							}
 							{bone "shooter56"
@@ -1186,7 +1195,7 @@
 										0 	 0 	 1
 										-7.917 	 0.0324 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket56.ply"}
 								}
 							}
 							{bone "shooter57"
@@ -1203,7 +1212,7 @@
 										0 	 0 	 1
 										-7.917 	 0.0238 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket57.ply"}
 								}
 							}
 							{bone "shooter58"
@@ -1220,7 +1229,7 @@
 										0 	 0 	 1
 										-7.917 	 0.0153 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket58.ply"}
 								}
 							}
 							{bone "shooter59"
@@ -1237,7 +1246,7 @@
 										0 	 0 	 1
 										-7.917 	 0.0067 	 -0.2317
 									}
-									
+									{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/rocket59.ply"}
 								}
 							}
 							{bone "foresight2"
@@ -1248,7 +1257,7 @@
 					{bone "wires"
 						{parameters "id=gun1;"}
 						{Position -1.8447 	 21.2007 	 19.6517}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/wires.ply"}
 					}
 				}
 				{bone "ammo3"
@@ -1391,7 +1400,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -1401,7 +1410,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/mgun_hull.ply"}
 					}
 				}
 			}
@@ -1520,7 +1529,7 @@
 				{bone "radio_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/radio_hatch.ply"}
 				}
 			}
 			{bone "helper_driverh"
@@ -1533,7 +1542,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m4a3_calliope/driver_hatch.ply"}
 				}
 			}
 			{bone revolute "wheell1"

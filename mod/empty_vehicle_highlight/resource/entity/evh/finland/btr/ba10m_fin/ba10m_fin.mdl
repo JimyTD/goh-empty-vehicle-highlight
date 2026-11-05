@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 13.07.2025 22:17:00
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\btr\ba10m\BA-10M_fin.max
@@ -53,11 +53,11 @@
 					0.0349 	 0 	 0.9994
 					-25.526 	 0 	 13.4556
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/turret.ply"}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position 0.3494 	 0 	 10.7937}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/turret_hatch.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -70,7 +70,7 @@
 						0 	 -1 	 0
 						13.4977 	 -0.8425 	 4.6018
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -79,7 +79,7 @@
 							0 	 1 	 0
 							9.3429 	 0.0808 	 -0.8425
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/gun.ply"}
 						{bone "foresight1"
 							{Position 18.6262 	 -0.001 	 0}
 						}
@@ -100,7 +100,7 @@
 							0 	 1 	 0
 							3.5706 	 -0.9676 	 2.9703
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/dt29_mgun.ply"}
 					}
 				}
 				{bone "visor1"
@@ -131,7 +131,7 @@
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/doorleft.ply"}
 					{bone "enumerator2"
 						{matrix34
 							1 	 0 	 0
@@ -139,7 +139,7 @@
 							0 	 0.1219 	 0.9925
 							-4.6001 	 0.2428 	 -3.0634
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/enumerator2.ply"}
 					}
 				}
 			}
@@ -153,7 +153,7 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/doorright.ply"}
 					{bone "enumerator1"
 						{matrix34
 							1 	 0 	 0
@@ -161,7 +161,7 @@
 							0 	 -0.1219 	 0.9925
 							-4.6058 	 -0.2326 	 -3.0619
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/enumerator1.ply"}
 					}
 				}
 			}
@@ -204,11 +204,11 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/mgun_hull.ply"}
 						{bone "dt29_mgun2"
 							{parameters "id=body;"}
 							{Position 2.7199 	 -0.0268 	 -0.1753}
-							
+							{VolumeView "../../../../-vehicle/finland/btr/ba10m_fin/dt29_mgun2.ply"}
 						}
 					}
 					{bone "foresight4"

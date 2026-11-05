@@ -1,5 +1,5 @@
-{material envmap
-	{diffuse "$/_vehicle/bm13"}
-	{mask "$/_vehicle/bm13_sp"}
-	{blend blend}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

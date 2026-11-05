@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: front_hatch turret windshield
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 27.09.2025 22:21:30
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\btr\AEC_mk1\aec_mk1.max
@@ -32,16 +32,16 @@
 				}
 				{speed 0.008}
 				{Position 1.9187 	 0 	 22.8616}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/turret.ply"}
 				{bone "turrent_hatch1"
 					{parameters "id=turret;"}
 					{Position 0.265 	 -3.0516 	 13.3372}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/turrent_hatch1.ply"}
 				}
 				{bone "turret_hatch_aft"
 					{parameters "id=turret;"}
 					{Position -7.9455 	 3.2378 	 12.7613}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/turret_hatch_aft.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -64,7 +64,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/mantlet.ply"}
 						{bone "foresight5"
 							{matrix34
 								0.9999 	 0.0102 	 0.0002
@@ -82,7 +82,7 @@
 							0 	 1 	 0
 							5.9971 	 -0.4134 	 0.0476
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/gun.ply"}
 						{bone "foresight1"
 							{Position 24.9891 	 -0.0026 	 0.0025}
 						}
@@ -158,16 +158,16 @@
 			{bone "windshield"
 				{parameters "id=body;"}
 				{Position 31.045 	 0 	 20.7874}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/windshield.ply"}
 				{bone "glass"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/glass.ply"}
 				}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
 				{Position 19.8605 	 5.3867 	 23.2028}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk1/front_hatch.ply"}
 			}
 			{bone "ammo2"
 				{Position 11.198 	 -11.6434 	 10.4993}

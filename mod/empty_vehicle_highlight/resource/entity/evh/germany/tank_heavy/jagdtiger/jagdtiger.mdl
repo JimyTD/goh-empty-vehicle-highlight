@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hach1 mgun_a_rot1 mgun_h_rot1 nbk39 rear_crank top_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 07.12.2023 13:01:04
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3d_vehicle_ger\vehicles\tank_heavy\jagdtiger\Jagdtiger_export.max
@@ -97,7 +97,7 @@
 							0 	 0 	 1
 							0.2542 	 -0.0743 	 3.6273
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{limits -20 80}
 							{matrix34
@@ -117,7 +117,7 @@
 					{bone "rear_crank"
 						{parameters "id=engine;"}
 						{Position -0.5202 	 -0.0743 	 1.5299}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/rear_crank.ply"}
 					}
 				}
 			}
@@ -129,7 +129,7 @@
 					0 	 0 	 1
 					-1.0142 	 -5.9772 	 31.5721
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/top_hatch.ply"}
 			}
 			{bone "antenna1"
 				{parameters "id=body;"}
@@ -213,7 +213,7 @@
 			{bone "driver_hach1"
 				{parameters "id=body;"}
 				{Position 44.0773 	 16.6792 	 10.8538}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/driver_hach1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
@@ -279,14 +279,14 @@
 					{bone "mgun1"
 						{parameters "id=body;"}
 						{Position -0.0029 	 0.0136 	 0.0268}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/mgun1.ply"}
 						{bone "foresight4"
 							{Position 9.8401 	 0.0588 	 0.2904}
 						}
 						{bone "gpu"
 							{parameters "id=body;"}
 							{Position 2.4612 	 0.0022 	 0.2853}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/gpu.ply"}
 						}
 					}
 				}
@@ -294,7 +294,7 @@
 			{bone revolute "nbk39"
 				{parameters "id=body;"}
 				{Position -0.0613 	 12.6986 	 30.1689}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/nbk39.ply"}
 				{bone "smoke_shot1"
 					{matrix34
 						-0.6428 	 0 	 -0.766
@@ -435,7 +435,7 @@
 						0 	 -1 	 0
 						10.0196 	 -0.009 	 -0.0771
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -444,7 +444,7 @@
 							0 	 1 	 0
 							26.0682 	 0.0832 	 -0.009
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/jagdtiger/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0024

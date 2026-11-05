@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: foresight stand
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 31.10.2023 14:14:12
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\cannon\M30_rocket_launcher\M30.max
@@ -105,7 +105,7 @@
 			{bone "stand"
 				{parameters "id=body;"}
 				{Position -0.0299 	 18.9065 	 -0.2492}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/300mm_m30/stand.ply"}
 			}
 			{bone "support1"
 				{Position 9.7969 	 18.8094 	 -25.0092}

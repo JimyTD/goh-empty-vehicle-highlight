@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorleft2 doorright1 doorright2 front_mgun
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 13.05.2025 00:40:01
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\car\kübenwagen\kubelwagen_mg.max
@@ -69,22 +69,22 @@
 					0 	 0 	 1
 					0.2 	 12.1111 	 8.4393
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen_mg/doorleft1.ply"}
 			}
 			{bone "doorright2"
 				{parameters "commonmesh;id=body;"}
 				{Position 0.2067 	 -12.1336 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen_mg/doorright2.ply"}
 			}
 			{bone "doorright1"
 				{parameters "commonmesh;id=body;"}
 				{Position 0.2052 	 -12.1309 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen_mg/doorright1.ply"}
 			}
 			{bone "doorleft2"
 				{parameters "commonmesh;id=body;"}
 				{Position 0.2029 	 12.1053 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen_mg/doorleft2.ply"}
 			}
 			{bone "canvas_close"
 				{parameters "id=body;"}
@@ -182,7 +182,7 @@
 					{parameters "id=body;ikspeed2=50;"}
 					{limits -35 40}
 					{Position -0.0745 	 0.0168 	 11.4992}
-					
+					{VolumeView "../../../../-vehicle/germany/car/kubelwagen_mg/front_mgun.ply"}
 					{bone revolute "front_mgun1"
 						{parameters "ikspeed2=50;"}
 						{limits -13 55}

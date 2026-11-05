@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 radio_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 16.12.2023 21:28:46
 ;File:			 D:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\tank_medium\M4A2_75_early\M4A2_75_early_rus.max
@@ -35,7 +35,7 @@
 				}
 				{speed 0.007}
 				{Position 3.5983 	 0.0051 	 24.0379}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -49,7 +49,7 @@
 						0 	 -1 	 0
 						14.0884 	 0 	 5.6236
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -58,7 +58,7 @@
 							0 	 1 	 0
 							6.6659 	 -0.0117 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/gun.ply"}
 						{bone "foresight1"
 							{Position 35.1005 	 0.0324 	 0.0407}
 						}
@@ -71,7 +71,7 @@
 							0 	 1 	 0
 							5.4172 	 1.6769 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mantlet.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -89,23 +89,23 @@
 							0 	 1 	 0
 							-3.3546 	 -0.0091 	 -7.9884
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mgun_turrret.ply"}
 					}
 				}
 				{bone revolute "cupola_ring"
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5917 	 -9.1255 	 14.1333}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/cupola_ring.ply"}
 					{bone "copola_cover1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 7.5969 	 0.7573}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/copola_cover1.ply"}
 					}
 					{bone "copola_cover2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.5977 	 0.7626}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/copola_cover2.ply"}
 					}
 					{bone revolute "mgun_a_rot1"
 						{parameters "id=turret;"}
@@ -117,7 +117,7 @@
 							0 	 0 	 1
 							7.8365 	 0 	 2.9824
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mgun_a_rot1.ply"}
 						{bone revolute "mgun_a_rot2"
 							{parameters "id=turret;"}
 							{limits -10 40}
@@ -128,7 +128,7 @@
 								0 	 -1 	 0
 								-1.6332 	 0.9054 	 4.3931
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mgun_a_rot2.ply"}
 							{bone "mgun"
 								{matrix34
 									1 	 0 	 0
@@ -147,7 +147,7 @@
 							0 	 1 	 0
 							-7.3071 	 -0.0009 	 2.1024
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/holder.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.7377 	 0.4027 	 -19.313}
@@ -156,11 +156,11 @@
 				{bone "antena1"
 					{parameters "id=body;"}
 					{Position -19.8419 	 7.9492 	 17.8997}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/antena1.ply"}
 					{bone "antena2"
 						{parameters "id=body;"}
 						{Position -0.0306 	 0 	 8.5133}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/antena2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -300,7 +300,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -310,7 +310,7 @@
 							0 	 1 	 0
 							-3.6754 	 -0.2683 	 0.346
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/mgun_hull.ply"}
 					}
 				}
 			}
@@ -552,7 +552,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/driver_hatch.ply"}
 				}
 			}
 			{bone "helper_radioh"
@@ -564,7 +564,7 @@
 				}
 				{bone "radio_hatch"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m4a2_75_early_rus/radio_hatch.ply"}
 				}
 			}
 			{bone "fxsmoke2"

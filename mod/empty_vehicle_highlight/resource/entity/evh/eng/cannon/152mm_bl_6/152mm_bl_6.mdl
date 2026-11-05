@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor dragbar fixer gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.10.2025 12:42:53
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\152mm_BL6\152mm_BL_6.max
@@ -40,7 +40,7 @@
 					0 	 0.0087 	 1
 					11.9412 	 -0.0309 	 1.7693
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -54,7 +54,7 @@
 						0 	 -1 	 0
 						-3.8534 	 0 	 9.6254
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -63,15 +63,15 @@
 							0 	 1 	 0
 							-13.6661 	 2.1163 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position 4.682 	 -2.3762 	 -0.6002}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/breech.ply"}
 							{bone "handle"
 								{parameters "id=gun;"}
 								{Position 0.961 	 -2.5087 	 0.6738}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/handle.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -98,27 +98,27 @@
 				{bone "detail3"
 					{parameters "id=turret;"}
 					{Position -8.5593 	 8.8885 	 5.2519}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=turret;"}
 					{Position -8.6198 	 8.8503 	 4.2757}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/detail4.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=turret;"}
 					{Position -7.5805 	 -8.8579 	 6.5028}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/detail5.ply"}
 				}
 				{bone "detail6"
 					{parameters "id=turret;"}
 					{Position -8.5713 	 -8.7635 	 4.4804}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/detail6.ply"}
 				}
 				{bone "rod_gun"
 					{parameters "id=gun;"}
 					{Position -10.1536 	 6.1003 	 14.7753}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/rod_gun.ply"}
 				}
 				{bone "aim_ver_help"
 					{matrix34
@@ -130,7 +130,7 @@
 					{bone "aim_ver"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/aim_ver.ply"}
 					}
 				}
 			}
@@ -144,7 +144,7 @@
 				{bone "fixer"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/fixer.ply"}
 				}
 			}
 			{bone "seat1"
@@ -196,7 +196,7 @@
 					-65.1853 	 -0.0948 	 -5.5435
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/dragbar.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -236,7 +236,7 @@
 					0 	 0.0087 	 1
 					-10.7248 	 13.4877 	 2.7538
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/152mm_bl_6/aim_hor.ply"}
 			}
 		}
 		{bone "pivot_front"

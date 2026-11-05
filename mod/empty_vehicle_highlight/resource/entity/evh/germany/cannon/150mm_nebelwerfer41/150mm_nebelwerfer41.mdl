@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: box legf sandbag standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.05.2021 21:25:37
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\150mm_nebelwerfer41\150mm_nebelwerfer41.max
@@ -113,7 +113,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0.0657 	 1.2159 	 7.226}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/turret.ply"}
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{matrix34
@@ -122,7 +122,7 @@
 						0.3539 	 -0.0941 	 0.9305
 						-5.2823 	 4.9061 	 -2.2638
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/aim_h.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
@@ -132,7 +132,7 @@
 						0.0023 	 -1 	 -0.0012
 						-3.7989 	 7.3864 	 0.7207
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/aim_v.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -142,7 +142,7 @@
 						0 	 -1 	 0
 						-1.385 	 -1.2159 	 4.4882
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -154,7 +154,7 @@
 							0 	 1 	 0
 							0 	 0.0074 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/gun.ply"}
 						{bone "shooter00"
 							{matrix34
 								-1 	 0 	 0
@@ -169,7 +169,7 @@
 									0 	 0.9848 	 0.1736
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket00.ply"}
 							}
 						}
 						{bone "shooter03"
@@ -186,7 +186,7 @@
 									0 	 0.9962 	 -0.0872
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket03.ply"}
 							}
 						}
 						{bone "shooter04"
@@ -203,7 +203,7 @@
 									0 	 0.9962 	 -0.0872
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket04.ply"}
 							}
 						}
 						{bone "shooter01"
@@ -220,7 +220,7 @@
 									0 	 0.9848 	 0.1736
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket01.ply"}
 							}
 						}
 						{bone "shooter05"
@@ -237,7 +237,7 @@
 									0 	 0.9848 	 0.1736
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket05.ply"}
 							}
 						}
 						{bone "shooter02"
@@ -254,7 +254,7 @@
 									0 	 0.9848 	 0.1736
 									-3.0491 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/rocket02.ply"}
 							}
 						}
 						{bone "fxsmoke1"
@@ -276,7 +276,7 @@
 								0 	 0 	 1
 								-1.4917 	 7.6181 	 3.2591
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/box1.ply"}
 						}
 						{bone "trigger"
 							{parameters "id=gun;"}
@@ -286,7 +286,7 @@
 								0 	 0 	 1
 								3.6195 	 -5.8427 	 4.9253
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/trigger.ply"}
 						}
 						{bone "visor"
 							{Position 2.1765 	 10.7112 	 0.5957}
@@ -302,7 +302,7 @@
 					0 	 0 	 1
 					6.2118 	 -5.7826 	 0.0352
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/legf.ply"}
 			}
 			{bone "box"
 				{parameters "id=body;"}
@@ -312,7 +312,7 @@
 					0 	 0 	 1
 					-10.748 	 -4.1768 	 -7.9118
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/box.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
@@ -322,7 +322,7 @@
 					0 	 0 	 1
 					-6.239 	 -9.2333 	 0.7307
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/standr.ply"}
 				{bone "lockr"
 					{parameters "id=body;"}
 					{matrix34
@@ -331,7 +331,7 @@
 						-0.8192 	 0 	 -0.5736
 						7.7335 	 32.1224 	 -5.1102
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/lockr.ply"}
 				}
 			}
 			{bone "standl"
@@ -342,7 +342,7 @@
 					0 	 0 	 1
 					-6.239 	 9.1847 	 0.7307
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/standl.ply"}
 				{bone "lockl"
 					{parameters "id=body;"}
 					{matrix34
@@ -351,7 +351,7 @@
 						-0.9962 	 0 	 0.0872
 						-7.6573 	 32.1252 	 -5.1391
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_nebelwerfer41/lockl.ply"}
 				}
 			}
 			{bone "visor2"

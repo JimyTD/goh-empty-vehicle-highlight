@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_lower hatch_upper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/kht130/start.anm"} {speed 0.6}}
@@ -26,12 +26,12 @@
 			{bone "hatch_lower"
 				{parameters "id=body;"}
 				{Position 22.3324 	 -9.7236 	 12.0341}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/hatch_lower.ply"}
 			}
 			{bone "hatch_upper"
 				{parameters "id=body;"}
 				{Position 14.6166 	 -9.7236 	 20.2757}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/hatch_upper.ply"}
 			}
 			{bone "visor2"
 				{Position 17.5189 	 -9.5844 	 16.5327}
@@ -60,16 +60,16 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/kht130/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 1.1209 	 -3.495 	 20.2047}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/turret.ply"}
 				{bone "hatchr"
 					{parameters "id=turret;"}
 					{Position -0.4676 	 -7.9787 	 12.6546}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/hatchr.ply"}
 				}
 				{bone "hatchl"
 					{parameters "id=turret;"}
 					{Position -0.4736 	 7.8687 	 12.6546}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/hatchl.ply"}
 				}
 				{bone "visor1"
 					{Position 6.7599 	 -6.0344 	 15.935}
@@ -106,7 +106,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -124,7 +124,7 @@
 						0 	 0 	 1
 						-10.0575 	 -10.5671 	 8.2801
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -133,7 +133,7 @@
 						0 	 0 	 1
 						-10.2695 	 10.5764 	 8.2688
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/enumerator2.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34
@@ -164,7 +164,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/mgun_shield.ply"}
 							{bone "dt29_turret"
 								{parameters "id=turret;"}
 								{matrix34
@@ -173,7 +173,7 @@
 									0 	 0 	 1
 									2.6559 	 -0.0188 	 -0.5592
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/tank_light/kht130/dt29_turret.ply"}
 								{bone "foresight5"
 									{Position 4.8672 	 -0.0001 	 0.2626}
 								}

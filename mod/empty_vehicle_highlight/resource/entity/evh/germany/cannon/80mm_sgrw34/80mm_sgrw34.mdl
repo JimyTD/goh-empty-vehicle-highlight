@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.12.2021 21:48:08
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\sgrw38\80mm_sgrw34.max
@@ -32,7 +32,7 @@
 				{bone "gun_rot"
 					{parameters "id=body;"}
 					{Position 0.179 	 -0.1456 	 1.5187}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{matrix34
@@ -41,7 +41,7 @@
 							0 	 -1 	 0
 							0.1753 	 0.0078 	 0.1575
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/gun.ply"}
 						{bone "grip"
 							{parameters "id=body;"}
 							{matrix34
@@ -50,7 +50,10 @@
 								0 	 1 	 0
 								7.6417 	 15.6602 	 -0.0122
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/grip.ply"}
+								{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/grip_lod1.ply"}
+							}
 						}
 						{bone revolute "foresight"
 							{matrix34
@@ -64,7 +67,7 @@
 					{bone "bipod_base"
 						{parameters "id=body;"}
 						{Position 13.5218 	 0.0275 	 10.2953}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/bipod_base.ply"}
 						{bone "stan_l"
 							{parameters "id=body;"}
 							{matrix34
@@ -73,7 +76,7 @@
 								-0.6293 	 0 	 0.7771
 								-1.4946 	 1.2398 	 1.7837
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/stan_l.ply"}
 							{bone "support1"
 								{matrix34
 									0.7771 	 0 	 -0.6293
@@ -91,7 +94,7 @@
 								-0.6293 	 0 	 0.7771
 								-1.4946 	 -1.3697 	 1.7837
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/80mm_sgrw34/stan_r.ply"}
 							{bone "support2"
 								{matrix34
 									0.7771 	 0 	 -0.6293

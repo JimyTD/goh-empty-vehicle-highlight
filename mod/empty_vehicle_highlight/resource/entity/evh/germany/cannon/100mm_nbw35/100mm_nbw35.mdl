@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.05.2022 15:20:51
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\100mm_nbw35\100mm_nbw35.max
@@ -24,7 +24,7 @@
 				{bone "gun_rot"
 					{parameters "id=body;"}
 					{Position -0.0577 	 -0.171 	 0.6767}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=body;"}
 						{matrix34
@@ -33,7 +33,7 @@
 							-0.0992 	 0 	 0.9951
 							0 	 -0.0062 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/gun.ply"}
 						{bone "grip"
 							{parameters "id=body;"}
 							{matrix34
@@ -42,7 +42,7 @@
 								0.0992 	 0 	 0.9951
 								15.6531 	 0 	 17.6598
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/grip.ply"}
 							{bone "2"
 								{parameters "id=body;"}
 								{matrix34
@@ -51,7 +51,7 @@
 									0.4695 	 0 	 0.8829
 									-2.3102 	 1.7515 	 0.7247
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/2.ply"}
 							}
 							{bone "1"
 								{parameters "id=body;"}
@@ -61,7 +61,7 @@
 									0.4695 	 0 	 0.8829
 									-2.0889 	 -1.7141 	 1.1029
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/1.ply"}
 							}
 						}
 						{bone revolute "foresight"
@@ -76,7 +76,7 @@
 					{bone "bipod_base"
 						{parameters "id=body;"}
 						{Position 13.8247 	 -0.0062 	 19.1249}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/bipod_base.ply"}
 						{bone "sight"
 							{parameters "id=body;"}
 							{matrix34
@@ -85,7 +85,7 @@
 								-0.0698 	 0 	 0.9976
 								0 	 4.8975 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/sight.ply"}
 						}
 						{bone "lever_h"
 							{parameters "id=body;"}
@@ -95,7 +95,7 @@
 								0 	 -1 	 0
 								0 	 -4.1101 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/lever_h.ply"}
 						}
 						{bone "bipod_cent"
 							{parameters "id=body;"}
@@ -105,14 +105,14 @@
 								-0.5446 	 0 	 0.8387
 								3.8848 	 0 	 -5.9612
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/bipod_cent.ply"}
 							{bone "bipod_lower"
 								{parameters "id=body;"}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/bipod_lower.ply"}
 								{bone "stan_l"
 									{parameters "id=body;"}
 									{Position 0.0056 	 2.1018 	 -0.2724}
-									
+									{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/stan_l.ply"}
 									{bone "support1"
 										{matrix34
 											0.8387 	 0 	 -0.5446
@@ -130,7 +130,7 @@
 										0 	 0.5 	 0.866
 										0.0057 	 -2.1254 	 -0.2724
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/cannon/100mm_nbw35/stan_r.ply"}
 									{bone "support2"
 										{matrix34
 											0.8387 	 0.2723 	 -0.4717

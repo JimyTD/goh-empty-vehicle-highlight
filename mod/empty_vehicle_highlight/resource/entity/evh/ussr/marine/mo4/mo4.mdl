@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: ammo1 ammo2 aux_turret1 body_front body_rear box1 box2 box3 box4 box5 box6 cabin camera detail1 dshk1 dshk2 emit1 emit2 emit3 emit4 emit5 emit6 emit7 emit8 engine enumerator1 enumerator2 enumerator3 fire_center1 fire_center2 fuel fx_bulb_norm_engine1 fx_bulb_norm_front1 fx_bulb_norm_front2 fx_bulb_small_center1 fx_bulb_small_center2 fx_bulb_small_center3 fx_bulb_small_center4 fx_bulb_small_center5 fx_bulb_small_center6 fx_bulb_small_engine1 fx_bulb_small_engine2 fx_exp1 fx_exp2 fx_fire1 fx_fire5 fxsmoke1 fxsmoke2 fxsmoke3 fxsmoke4 fxsmoke5 fxsmoke6 glasses gun gun1 gun_2_rot2 gun_rot gun_rot1 gunbase1 gunbase2 gunbase3 gunbase4 hatch3 lamp_glass1 lifering1 lifering2 lifering3 lifering4 lifering5 lifering6 mg_platforml mg_platformr mgun_1_rot1 mgun_1_rot2 mgun_2_rot1 mgun_2_rot2 scissors seat11 seat12 seat13 seat14 seat15 turret window1 window10 window11 window12 window13 window14 window2 window3 window4 window5 window6 window8 window9
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 20.06.2025 16:05:53
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_rus\vehicles\marine\mo4\mo4.max
@@ -56,7 +56,7 @@
 			}
 			{bone "enumerator1"
 				{Position -266.632 	 0.0284 	 16.2761}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/enumerator1.ply"}
 			}
 			{bone "hatch3"
 				{parameters "id=body_center;"}
@@ -66,7 +66,7 @@
 					0 	 0.0017 	 1
 					92.183 	 -2.9662 	 32.0042
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch3.ply"}
 			}
 			{bone "glasses"
 				{parameters "id=window;"}
@@ -76,12 +76,12 @@
 					0 	 0.0017 	 1
 					-2.8481 	 0.0969 	 55.5304
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/glasses.ply"}
 			}
 			{bone "lifering1"
 				{parameters "id=body_center;"}
 				{Position 73.1934 	 39.9675 	 37.7105}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering1.ply"}
 			}
 			{bone "lifering2"
 				{parameters "id=body_center;"}
@@ -91,11 +91,13 @@
 					0 	 0.0017 	 1
 					72.991 	 -39.8274 	 37.9162
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering2.ply"}
 			}
 			{bone "scissors"
 				{Position -2.6393 	 0.2301 	 4.5958}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/scissors.ply"
+					{Layer waterscissor}
+				}
 			}
 			{bone "enumerator2"
 				{matrix34
@@ -104,7 +106,7 @@
 					0 	 0.0017 	 1
 					225.791 	 15.7272 	 16.4514
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/enumerator2.ply"}
 			}
 			{bone "enumerator3"
 				{matrix34
@@ -113,7 +115,7 @@
 					0 	 0.0017 	 1
 					225.791 	 -15.7153 	 16.5025
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/enumerator3.ply"}
 			}
 			{bone "gunbase4"
 				{parameters "id=gun4;"}
@@ -123,7 +125,7 @@
 					0 	 0.0017 	 1
 					-67.2022 	 34.0007 	 30.0451
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/gunbase4.ply"}
 				{bone revolute "mgun_2_rot1"
 					{parameters "id=gun4;"}
 					{animation
@@ -136,11 +138,11 @@
 						0 	 0 	 1
 						0.013 	 -0.0103 	 20.7446
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/mgun_2_rot1.ply"}
 					{bone "3"
 						{parameters "id=gun3;"}
 						{Position 0.0054 	 -1.908 	 1.6576}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/3.ply"}
 					}
 					{bone revolute "mgun_2_rot2"
 						{parameters "id=gun4;"}
@@ -152,7 +154,7 @@
 							0 	 -1 	 0
 							-2.6744 	 0.8404 	 2.0993
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/mgun_2_rot2.ply"}
 						{bone "magazine2"
 							{parameters "id=gun4;"}
 							{matrix34
@@ -161,7 +163,7 @@
 								0 	 1 	 0
 								-3.272 	 0.453 	 -1.6847
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/magazine2.ply"}
 						}
 						{bone "dshk2"
 							{parameters "id=gun4;"}
@@ -171,7 +173,7 @@
 								0 	 1 	 0
 								5.0762 	 4.0289 	 0.8405
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/dshk2.ply"}
 							{bone "fxshell2"
 								{matrix34
 									0 	 -0.788 	 -0.6157
@@ -191,12 +193,12 @@
 							{bone "recoil2a"
 								{parameters "id=gun4;"}
 								{Position -4.4726 	 -0.0089 	 -2.3858}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/recoil2a.ply"}
 							}
 							{bone "recoil2b"
 								{parameters "id=gun3;"}
 								{Position -9.7305 	 -0.8593 	 -0.4887}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/recoil2b.ply"}
 							}
 						}
 					}
@@ -227,7 +229,7 @@
 					0 	 0.0017 	 1
 					-67.2022 	 -33.868 	 30.1636
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/gunbase3.ply"}
 				{bone revolute "mgun_1_rot1"
 					{parameters "id=gun3;"}
 					{animation
@@ -240,11 +242,11 @@
 						0 	 0 	 1
 						0.013 	 -0.0103 	 20.7446
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/mgun_1_rot1.ply"}
 					{bone "2"
 						{parameters "id=gun3;"}
 						{Position 0.0054 	 -1.908 	 1.6576}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/2.ply"}
 					}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=gun3;"}
@@ -256,7 +258,7 @@
 							0 	 -1 	 0
 							-2.6744 	 0.8405 	 2.0993
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/mgun_1_rot2.ply"}
 						{bone "magazine1"
 							{parameters "id=gun3;"}
 							{matrix34
@@ -265,7 +267,7 @@
 								0 	 1 	 0
 								-3.272 	 0.453 	 -1.6847
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/magazine1.ply"}
 						}
 						{bone "dshk1"
 							{parameters "id=gun3;"}
@@ -275,7 +277,7 @@
 								0 	 1 	 0
 								5.0762 	 4.0289 	 0.8404
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/dshk1.ply"}
 							{bone "fxshell1"
 								{matrix34
 									0 	 -0.6018 	 -0.7986
@@ -295,12 +297,12 @@
 							{bone "recoil1b"
 								{parameters "id=gun2;"}
 								{Position -9.7735 	 -0.8283 	 -0.5039}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/recoil1b.ply"}
 							}
 							{bone "recoil1a"
 								{parameters "id=gun3;"}
 								{Position -4.4726 	 -0.0089 	 -2.3858}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/recoil1a.ply"}
 							}
 						}
 					}
@@ -329,7 +331,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/marine/mo4/engine_r.anm"}{speed 0.7}}
 				}
 				{Position -62.9747 	 0.0274 	 15.7256}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/engine.ply"}
 				{bone "hatch4"
 					{parameters "id=engine;"}
 					{matrix34
@@ -338,7 +340,7 @@
 						0 	 0.0017 	 1
 						16.0507 	 2.7905 	 15.8111
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch4.ply"}
 				}
 				{bone "hatch5"
 					{parameters "id=engine;"}
@@ -348,7 +350,7 @@
 						0 	 0.0017 	 1
 						0.0867 	 -2.9075 	 15.7492
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch5.ply"}
 				}
 				{bone "ammo1"
 					{matrix34
@@ -368,7 +370,7 @@
 					{bone "prop1"
 						{parameters "id=engine;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/prop1.ply"}
 					}
 				}
 				{bone "prop2_helper"
@@ -381,7 +383,7 @@
 					{bone "prop2"
 						{parameters "id=engine;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/prop2.ply"}
 					}
 				}
 				{bone "prop3_helper"
@@ -394,14 +396,14 @@
 					{bone "prop3"
 						{parameters "id=engine;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/prop3.ply"}
 					}
 				}
 			}
 			{bone "box4"
 				{parameters "id=body_center;"}
 				{Position -100.969 	 28.9433 	 37.4547}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/box4.ply"}
 			}
 			{bone "box3"
 				{parameters "id=body_center;"}
@@ -411,7 +413,7 @@
 					0.015 	 0.0017 	 0.9999
 					85.7371 	 30.2909 	 37.8998
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/box3.ply"}
 			}
 			{bone "box6"
 				{parameters "id=body_center;"}
@@ -421,7 +423,7 @@
 					0.015 	 0.0017 	 0.9999
 					-99.8212 	 -28.8125 	 37.5469
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/box6.ply"}
 			}
 			{bone "box5"
 				{parameters "id=body_center;"}
@@ -431,7 +433,7 @@
 					0.015 	 0.0017 	 0.9999
 					-105.162 	 -28.8123 	 37.6271
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/box5.ply"}
 			}
 			{bone "fuel"
 				{matrix34
@@ -443,7 +445,7 @@
 			}
 			{bone "body_rear"
 				{parameters "id=body_rear;"}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/body_rear.ply"}
 				{bone "seat02"
 					{matrix34
 						0.9999 	 -0.0037 	 -0.015
@@ -532,7 +534,7 @@
 						0 	 0.0017 	 1
 						-227.831 	 -22.1831 	 -7.2402
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/steer_r.ply"}
 				}
 				{bone revolute "steer_l"
 					{parameters "id=body_rear;"}
@@ -542,7 +544,7 @@
 						0 	 0.0017 	 1
 						-227.831 	 22.1577 	 -7.3176
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/steer_l.ply"}
 				}
 				{bone revolute "steer_c"
 					{parameters "id=body_rear;"}
@@ -552,7 +554,7 @@
 						0 	 0.0017 	 1
 						-245.826 	 -0.0174 	 -9.9625
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/steer_c.ply"}
 				}
 				{bone "depth_chargel1"
 					{parameters "id=body_rear;"}
@@ -562,7 +564,7 @@
 						0 	 0.0017 	 1
 						-238.167 	 11.8303 	 39.5353
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_chargel1.ply"}
 				}
 				{bone "depth_chargel2"
 					{parameters "id=body_rear;"}
@@ -572,7 +574,7 @@
 						0 	 0.0017 	 1
 						-246.726 	 11.8622 	 39.0548
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_chargel2.ply"}
 				}
 				{bone "depth_chargel3"
 					{parameters "id=body_rear;"}
@@ -582,7 +584,7 @@
 						0 	 0.0017 	 1
 						-255.434 	 11.9193 	 38.6408
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_chargel3.ply"}
 				}
 				{bone "depth_chargel4"
 					{parameters "id=body_rear;"}
@@ -592,7 +594,7 @@
 						0 	 0.0017 	 1
 						-264.103 	 11.945 	 38.092
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_chargel4.ply"}
 				}
 				{bone "depth_charger1"
 					{parameters "id=body_rear;"}
@@ -602,7 +604,7 @@
 						0 	 0.0017 	 1
 						-238.167 	 -10.6304 	 39.5745
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_charger1.ply"}
 				}
 				{bone "depth_charger2"
 					{parameters "id=body_rear;"}
@@ -612,7 +614,7 @@
 						0 	 0.0017 	 1
 						-246.726 	 -10.5985 	 39.094
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_charger2.ply"}
 				}
 				{bone "depth_charger3"
 					{parameters "id=body_rear;"}
@@ -622,7 +624,7 @@
 						0 	 0.0017 	 1
 						-255.434 	 -10.5413 	 38.68
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_charger3.ply"}
 				}
 				{bone "depth_charger4"
 					{parameters "id=body_rear;"}
@@ -632,7 +634,7 @@
 						0 	 0.0017 	 1
 						-264.103 	 -10.5157 	 38.1312
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/depth_charger4.ply"}
 				}
 				{bone "gunbase2"
 					{parameters "id=gun1;"}
@@ -642,7 +644,7 @@
 						0 	 0.0017 	 1
 						-142.194 	 0.063 	 38.3921
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/gunbase2.ply"}
 					{bone revolute "aux_turret1"
 						{parameters "id=gun2;"}
 						{animation
@@ -650,7 +652,7 @@
 						}
 						{speed 0.003}
 						{Position 0.0073 	 0.0018 	 8.0199}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/aux_turret1.ply"}
 						{bone "aim_hor1"
 							{parameters "id=gun2;"}
 							{matrix34
@@ -659,12 +661,12 @@
 								0 	 0 	 1
 								-5.984 	 5.4706 	 0.2418
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/aim_hor1.ply"}
 						}
 						{bone "aim_ver1"
 							{parameters "id=gun2;"}
 							{Position -2.8282 	 7.0463 	 2.5092}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/aim_ver1.ply"}
 						}
 						{bone revolute "gun_rot1"
 							{parameters "id=gun2;"}
@@ -676,7 +678,7 @@
 								0 	 -1 	 0
 								-6.0811 	 -0.5827 	 9.8257
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun_rot1.ply"}
 							{bone "gun1"
 								{parameters "id=gun2;"}
 								{matrix34
@@ -685,7 +687,7 @@
 									0 	 1 	 0
 									7.6038 	 0.3514 	 -0.3921
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun1.ply"}
 								{bone "foresight1a"
 									{matrix34
 										1 	 0 	 0
@@ -710,7 +712,7 @@
 										0.0012 	 0 	 1
 										-16.5995 	 -1.8781 	 -0.4158
 									}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/rod1.ply"}
 								}
 								{bone "lever1"
 									{parameters "id=gun2;"}
@@ -720,12 +722,12 @@
 										0 	 -1 	 0
 										-19.3372 	 -1.9559 	 -1.0764
 									}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/lever1.ply"}
 								}
 								{bone "breech1"
 									{parameters "id=gun2;"}
 									{Position -20.8716 	 0.3063 	 0.0215}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/breech1.ply"}
 								}
 							}
 						}
@@ -765,7 +767,7 @@
 						0 	 0.0017 	 1
 						-175.458 	 7.3232 	 31.3147
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch6.ply"}
 				}
 				{bone "hatch7"
 					{parameters "id=body_rear;"}
@@ -775,7 +777,7 @@
 						0 	 0.0017 	 1
 						-222.396 	 2.7335 	 31.1555
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch7.ply"}
 				}
 				{bone "lifering5"
 					{parameters "id=body_rear;"}
@@ -785,7 +787,7 @@
 						0 	 0.0017 	 1
 						-210.87 	 34.8151 	 36.9549
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering5.ply"}
 				}
 				{bone "lifering6"
 					{parameters "id=body_rear;"}
@@ -795,7 +797,7 @@
 						0 	 0.0017 	 1
 						-211.039 	 -34.7308 	 37.0522
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering6.ply"}
 				}
 				{bone "smoke1"
 					{parameters "id=body_rear;"}
@@ -805,7 +807,7 @@
 						0 	 0.0017 	 1
 						-271.93 	 19.9943 	 49.5356
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke1.ply"}
 				}
 				{bone "smoke2"
 					{parameters "id=body_rear;"}
@@ -815,7 +817,7 @@
 						0 	 0.0017 	 1
 						-263.536 	 14.9868 	 49.8303
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke2.ply"}
 				}
 				{bone "smoke3"
 					{parameters "id=body_rear;"}
@@ -825,7 +827,7 @@
 						0 	 0.0017 	 1
 						-263.535 	 25.0152 	 49.5405
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke3.ply"}
 				}
 				{bone "smoke4"
 					{parameters "id=body_rear;"}
@@ -835,7 +837,7 @@
 						0 	 0.0017 	 1
 						-271.93 	 -18.7697 	 49.6032
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke4.ply"}
 				}
 				{bone "smoke5"
 					{parameters "id=body_rear;"}
@@ -845,7 +847,7 @@
 						0 	 0.0017 	 1
 						-263.535 	 -23.7906 	 49.6257
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke5.ply"}
 				}
 				{bone "smoke6"
 					{parameters "id=body_rear;"}
@@ -855,7 +857,7 @@
 						0 	 0.0017 	 1
 						-263.536 	 -13.7612 	 49.8805
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/smoke6.ply"}
 				}
 				{bone "fire_rear2"
 					{matrix34
@@ -874,7 +876,7 @@
 					-0.0036 	 0.086 	 0.9963
 					198.928 	 18.9579 	 37.0439
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/detail1.ply"}
 			}
 			{bone "cabin"
 				{parameters "id=cabin;"}
@@ -882,7 +884,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/marine/mo4/cabin_r.anm"}{speed 0.7}}
 				}
 				{Position 25.406 	 0.0532 	 30.4637}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/cabin.ply"}
 				{bone "doorleft"
 					{parameters "id=cabin;"}
 					{matrix34
@@ -891,12 +893,12 @@
 						0 	 0.0017 	 1
 						14.9886 	 22.5383 	 10.5
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/doorleft.ply"}
 				}
 				{bone "doorright"
 					{parameters "id=cabin;"}
 					{Position 14.9592 	 -22.5035 	 9.7018}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/doorright.ply"}
 				}
 				{bone "lifering3"
 					{parameters "id=cabin;"}
@@ -906,7 +908,7 @@
 						0 	 0.0017 	 1
 						-37.7527 	 23.1586 	 27.6795
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering3.ply"}
 				}
 				{bone "lifering4"
 					{parameters "id=cabin;"}
@@ -916,7 +918,7 @@
 						0 	 0.0017 	 1
 						-37.7527 	 -23.0527 	 27.7601
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/lifering4.ply"}
 				}
 				{bone "mast"
 					{parameters "id=cabin;"}
@@ -926,7 +928,7 @@
 						0 	 0.0017 	 1
 						-7.0783 	 0.0786 	 45.0152
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/mast.ply"}
 				}
 				{bone revolute "steer_1"
 					{parameters "id=cabin;"}
@@ -936,7 +938,7 @@
 						-1 	 0 	 -0.0006
 						-26.6284 	 0.0569 	 33.7995
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/steer_1.ply"}
 				}
 				{bone revolute "steer_2"
 					{parameters "id=cabin;"}
@@ -946,7 +948,7 @@
 						-1 	 0 	 -0.0006
 						21.8625 	 10.691 	 17.2482
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/steer_2.ply"}
 				}
 				{bone "grill3"
 					{parameters "id=cabin;"}
@@ -956,7 +958,7 @@
 						0 	 0.0017 	 1
 						-38.0172 	 -14.9028 	 15.5903
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/grill3.ply"}
 				}
 				{bone "grill4"
 					{parameters "id=cabin;"}
@@ -966,7 +968,7 @@
 						0 	 0.0017 	 1
 						-38.0172 	 14.957 	 15.5382
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/grill4.ply"}
 				}
 				{bone "window1"
 					{parameters "id=window1;"}
@@ -976,7 +978,7 @@
 						0 	 0.0017 	 1
 						-19.3374 	 21.6045 	 43.827
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window1.ply"}
 				}
 				{bone "window2"
 					{parameters "id=window2;"}
@@ -986,7 +988,7 @@
 						0 	 0.0017 	 1
 						-15.0513 	 15.427 	 44.5361
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window2.ply"}
 				}
 				{bone "window3"
 					{parameters "id=window3;"}
@@ -996,7 +998,7 @@
 						0 	 0.0017 	 1
 						-13.8569 	 4.2708 	 44.6084
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window3.ply"}
 				}
 				{bone "window4"
 					{parameters "id=window4;"}
@@ -1006,7 +1008,7 @@
 						0 	 0.0017 	 1
 						-13.8569 	 -4.1151 	 44.623
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window4.ply"}
 				}
 				{bone "window5"
 					{parameters "id=window5;"}
@@ -1016,7 +1018,7 @@
 						0 	 0.0017 	 1
 						-15.0513 	 -15.2715 	 44.5896
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window5.ply"}
 				}
 				{bone "window6"
 					{parameters "id=window6;"}
@@ -1026,7 +1028,7 @@
 						0 	 0.0017 	 1
 						-19.3374 	 -21.4514 	 43.9021
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window6.ply"}
 				}
 				{bone "window8"
 					{parameters "id=window8;"}
@@ -1036,7 +1038,7 @@
 						-0.0006 	 0.0018 	 1
 						-12.138 	 22.0895 	 30.1342
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window8.ply"}
 				}
 				{bone "window9"
 					{parameters "id=window9;"}
@@ -1046,7 +1048,7 @@
 						-0.0006 	 0.0018 	 1
 						23.531 	 22.0895 	 30.1342
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window9.ply"}
 				}
 				{bone "window10"
 					{parameters "id=window10;"}
@@ -1056,7 +1058,7 @@
 						-0.0006 	 0.0018 	 1
 						37.7506 	 12.7263 	 30.1505
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window10.ply"}
 				}
 				{bone "window11"
 					{parameters "id=window11;"}
@@ -1066,7 +1068,7 @@
 						-0.0006 	 0.0018 	 1
 						39.693 	 0.0527 	 30.1727
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window11.ply"}
 				}
 				{bone "window12"
 					{parameters "id=window12;"}
@@ -1076,7 +1078,7 @@
 						-0.0006 	 0.0018 	 1
 						37.7506 	 -12.621 	 30.1948
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window12.ply"}
 				}
 				{bone "window13"
 					{parameters "id=window13;"}
@@ -1086,7 +1088,7 @@
 						-0.0006 	 0.0018 	 1
 						23.531 	 -21.9841 	 30.2111
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window13.ply"}
 				}
 				{bone "window14"
 					{parameters "id=window14;"}
@@ -1096,7 +1098,7 @@
 						-0.0006 	 0.0018 	 1
 						-12.138 	 -21.9841 	 30.2111
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/window14.ply"}
 				}
 				{bone "commander"
 					{parameters "group=crew;"}
@@ -1124,7 +1126,7 @@
 						-0.0006 	 0.0018 	 1
 						-20.3179 	 13.9635 	 49.673
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun_2_rot1.ply"}
 					{bone revolute "gun_2_rot2"
 						{parameters "id=cabin;"}
 						{matrix34
@@ -1133,7 +1135,7 @@
 							0 	 -1 	 0
 							-0.0008 	 5.1505 	 7.9003
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun_2_rot2.ply"}
 						{bone "foresight6"
 							{matrix34
 								1 	 0 	 0
@@ -1150,7 +1152,7 @@
 								0 	 1 	 0
 								3.1045 	 0.6115 	 5.2014
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/lamp_glass1.ply"}
 						}
 						{bone "visor2"
 							{matrix34
@@ -1218,7 +1220,7 @@
 						0 	 0.0017 	 1
 						-7.0783 	 0.0786 	 45.0152
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/wire.ply"}
 				}
 				{bone "flag"
 					{parameters "commonmesh;"}
@@ -1228,7 +1230,7 @@
 						0 	 -1 	 0.0017
 						-43.7312 	 0.2044 	 117.144
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/flag.ply"}
 				}
 			}
 			{bone "mg_platformr"
@@ -1239,7 +1241,7 @@
 					0.0019 	 0 	 1
 					-66.9481 	 -41.173 	 28.069
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/mg_platformr.ply"}
 				{bone "grill2"
 					{parameters "id=body;"}
 					{matrix34
@@ -1248,7 +1250,7 @@
 						-0.0019 	 0.0017 	 1
 						-0.1 	 -8.446 	 1.0585
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/grill2.ply"}
 				}
 			}
 			{bone "mg_platforml"
@@ -1259,7 +1261,7 @@
 					0.015 	 0 	 0.9999
 					-66.7068 	 41.3541 	 27.928
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/mg_platforml.ply"}
 				{bone "grill1"
 					{parameters "id=body;"}
 					{matrix34
@@ -1268,12 +1270,12 @@
 						0 	 0.0017 	 1
 						-0.3311 	 8.3663 	 1.0263
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/grill1.ply"}
 				}
 			}
 			{bone "body_front"
 				{parameters "id=body_front;"}
-				
+				{VolumeView "../../../../-vehicle/ussr/marine/mo4/body_front.ply"}
 				{bone "box2"
 					{parameters "id=body_front;"}
 					{matrix34
@@ -1282,7 +1284,7 @@
 						0.015 	 0.0017 	 0.9999
 						97.291 	 -30.1426 	 37.9273
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/box2.ply"}
 				}
 				{bone "box1"
 					{parameters "id=body_front;"}
@@ -1292,7 +1294,7 @@
 						0.015 	 0.0017 	 0.9999
 						96.4557 	 30.2909 	 37.9497
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/box1.ply"}
 				}
 				{bone "seat16"
 					{matrix34
@@ -1326,7 +1328,7 @@
 						0 	 0.0017 	 1
 						182.356 	 2.6891 	 33.0941
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch2.ply"}
 				}
 				{bone "hatch1"
 					{parameters "id=body_front;"}
@@ -1336,7 +1338,7 @@
 						0 	 0.0017 	 1
 						197.87 	 2.7514 	 33.086
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/hatch1.ply"}
 				}
 				{bone "gunbase1"
 					{parameters "id=gun;"}
@@ -1346,7 +1348,7 @@
 						0 	 0.0017 	 1
 						131.487 	 0.0651 	 39.5768
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/marine/mo4/gunbase1.ply"}
 					{bone revolute "turret"
 						{parameters "id=gun1;"}
 						{animation
@@ -1354,7 +1356,7 @@
 						}
 						{speed 0.003}
 						{Position 0.0073 	 0.0018 	 8.0199}
-						
+						{VolumeView "../../../../-vehicle/ussr/marine/mo4/turret.ply"}
 						{bone "aim_hor"
 							{parameters "id=gun1;"}
 							{matrix34
@@ -1363,12 +1365,12 @@
 								0 	 0 	 1
 								-5.7145 	 5.3779 	 0.2418
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/aim_hor.ply"}
 						}
 						{bone "aim_ver"
 							{parameters "id=gun1;"}
 							{Position -2.8282 	 7.654 	 2.5092}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/aim_ver.ply"}
 						}
 						{bone revolute "gun_rot"
 							{parameters "id=gun1;"}
@@ -1380,7 +1382,7 @@
 								0 	 -1 	 0
 								-6.0811 	 -0.5827 	 9.8257
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun1;"}
 								{matrix34
@@ -1389,7 +1391,7 @@
 									0 	 1 	 0
 									7.6038 	 0.3514 	 -0.3921
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/marine/mo4/gun.ply"}
 								{bone "foresight1"
 									{matrix34
 										1 	 0 	 0
@@ -1409,7 +1411,7 @@
 								{bone "rod"
 									{parameters "id=gun1;"}
 									{Position -16.5994 	 -1.8781 	 -0.4158}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/rod.ply"}
 								}
 								{bone "lever"
 									{parameters "id=gun1;"}
@@ -1419,12 +1421,12 @@
 										0 	 -1 	 0
 										-19.3372 	 -1.9559 	 -1.0764
 									}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/lever.ply"}
 								}
 								{bone "breech"
 									{parameters "id=gun1;"}
 									{Position -20.8716 	 0.3063 	 0.0215}
-									
+									{VolumeView "../../../../-vehicle/ussr/marine/mo4/breech.ply"}
 								}
 							}
 						}

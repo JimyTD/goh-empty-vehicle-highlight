@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:30:26
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Staghound_mk3\staghound_mk3.max
@@ -213,7 +213,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mk3/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 1.2577 	 0 	 11.9291}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -225,7 +225,7 @@
 						0 	 -1 	 0
 						10.1324 	 2.553 	 5.1944
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -234,7 +234,7 @@
 							0 	 1 	 0
 							0 	 -0.0959 	 2.3425
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/gun.ply"}
 						{bone "foresight1"
 							{Position 42.6427 	 0 	 0}
 						}
@@ -251,7 +251,7 @@
 				{bone "hatch_commander"
 					{parameters "id=turret;"}
 					{Position -16.262 	 7.4604 	 12.6564}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/hatch_commander.ply"}
 				}
 				{bone "hatch_gunner"
 					{parameters "id=turret;"}
@@ -261,7 +261,7 @@
 						0.006 	 0.0692 	 0.9976
 						-9.2943 	 -10.006 	 13.4441
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/hatch_gunner.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -288,19 +288,19 @@
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -20.4974 	 -8.6177 	 13.9961}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 8.5236}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position 0 	 0 	 5.5315}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position 0 	 0 	 3.5827}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at1_4.ply"}
 							}
 						}
 					}
@@ -308,19 +308,19 @@
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -18.6787 	 5.4797 	 17.4606}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position -0.0678 	 0.0296 	 9.2323}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position -0.0515 	 0.012 	 6.8898}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at2_3.ply"}
 							{bone "at2_4"
 								{parameters "id=turret;"}
 								{Position -0.0581 	 0.0132 	 7.2835}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/at2_4.ply"}
 							}
 						}
 					}
@@ -360,7 +360,7 @@
 					0 	 -0.2267 	 0.974
 					16.7402 	 -16.8113 	 1.9317
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/doorright.ply"}
 			}
 			{bone "doorleft"
 				{parameters "id=body;"}
@@ -370,7 +370,7 @@
 					0 	 0.2267 	 0.974
 					16.7402 	 16.8113 	 1.9317
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mk3/doorleft.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

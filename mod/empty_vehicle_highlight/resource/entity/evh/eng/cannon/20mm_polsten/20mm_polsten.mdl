@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: chair driver1 driver2 emit1 emit2 gun gun_rot ik_bone_leveler ik_bone_main link1 magazine spring_rot_holder towing_bar turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "close" {file "../../../../-vehicle/eng/cannon/20mm_polsten/close.anm"} {speed 0.5} {events {1 "close"}}}
@@ -21,7 +21,7 @@
 				{bone revolute "wheelr"
 					{parameters "id=wheelright;radius=0.36;"}
 					{Position 0 	 -11.8272 	 -0.4408}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/wheelr.ply"}
 				}
 			}
 			{bone "ik_left"
@@ -34,7 +34,7 @@
 						0 	 0 	 -1
 						0 	 11.7765 	 -0.4304
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/wheell.ply"}
 				}
 			}
 		}
@@ -48,7 +48,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0 	 -0.0117 	 0.8443}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -60,7 +60,7 @@
 						0 	 -1 	 0
 						-0.7677 	 -1.1817 	 6.3988
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -69,20 +69,20 @@
 							0 	 1 	 0
 							0.8849 	 0.3096 	 -1.1934
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/gun.ply"}
 						{bone "magazine"
 							{parameters "id=gun;"}
 							{Position 12.3277 	 0 	 0.7634}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/magazine.ply"}
 						}
 						{bone "gun_recoil"
 							{parameters "id=gun;"}
 							{Position 9.7809 	 0.0005 	 0.0012}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/gun_recoil.ply"}
 							{bone "bolt"
 								{parameters "id=gun;"}
 								{Position -5.6905 	 -0.0005 	 -0.0052}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/bolt.ply"}
 							}
 						}
 						{bone "fx_invers"
@@ -96,7 +96,7 @@
 						{bone "spring"
 							{parameters "id=gun;"}
 							{Position 15.6308 	 0.0005 	 0.0012}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/spring.ply"}
 						}
 					}
 					{bone "foresight1"
@@ -111,67 +111,67 @@
 				{bone "sight_joint1_1"
 					{parameters "id=body;"}
 					{Position -0.7717 	 -3.0417 	 6.3988}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint1_1.ply"}
 					{bone "sight_joint1_4"
 						{parameters "id=body;"}
 						{Position -2.8426 	 -1.0383 	 5.2372}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint1_4.ply"}
 					}
 					{bone "sight_joint2_3"
 						{parameters "id=body;"}
 						{Position -4.3042 	 -1.4697 	 17.5372}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint2_3.ply"}
 					}
 					{bone "sight_joint2_2"
 						{parameters "id=body;"}
 						{Position -14.3993 	 -0.9454 	 19.5729}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint2_2.ply"}
 					}
 					{bone "sight_joint2_1"
 						{parameters "id=body;"}
 						{Position -5.2826 	 -1.195 	 13.4727}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint2_1.ply"}
 					}
 					{bone "sight_joint1_2"
 						{parameters "id=body;"}
 						{Position -3.4694 	 -1.9364 	 -1.3625}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint1_2.ply"}
 					}
 					{bone "sight_joint1_3"
 						{parameters "id=body;"}
 						{Position -5.2826 	 -1.6555 	 13.4727}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/sight_joint1_3.ply"}
 					}
 				}
 				{bone "spring_rot_holder"
 					{parameters "id=body;"}
 					{Position 3.189 	 0.0117 	 4.1335}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/spring_rot_holder.ply"}
 					{bone "spring_rot"
 						{parameters "id=body;"}
 						{Position 3.8272 	 0.0005 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/spring_rot.ply"}
 					}
 					{bone "springs"
 						{parameters "id=body;"}
 						{Position 16.2322 	 1.8975 	 -0.1098}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/springs.ply"}
 					}
 				}
 				{bone "lever"
 					{parameters "id=body;"}
 					{Position -5.4224 	 -3.0761 	 7.0058}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/lever.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position -6.6423 	 -0.3545 	 11.3525}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/aim_v.ply"}
 				}
 				{bone "chair"
 					{parameters "id=body;"}
 					{Position -0.5512 	 0.0117 	 2.741}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/chair.ply"}
 					{bone "gunner"
 						{matrix34
 							0.9848 	 0 	 0.1736
@@ -209,7 +209,7 @@
 					0 	 0 	 1
 					-1.9882 	 0 	 0.5418
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/20mm_polsten/towing_bar.ply"}
 				{bone "seat2"
 					{matrix34
 						0.0002 	 0.9986 	 -0.0523

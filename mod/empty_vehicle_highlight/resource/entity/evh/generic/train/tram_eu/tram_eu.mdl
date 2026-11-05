@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1a doorleft2a doorright1a doorright2a safetyl1a safetyl1b safetyl2a safetyl2b safetyr1a safetyr1b safetyr2a safetyr2b slider spring
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 18.06.2025 17:33:26
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_generic\vehicles\train\Tram_german\tram_euro.max
@@ -28,11 +28,11 @@
 					0 	 0 	 1
 					74.4165 	 18.661 	 25.3721
 				}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorleft1a.ply"}
 				{bone "glass5"
 					{parameters "id=glass5;"}
 					{Position -4.1969 	 0.2066 	 9.58}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass5.ply"}
 				}
 				{bone "doorleft1b"
 					{parameters "id=body;"}
@@ -42,158 +42,158 @@
 						0 	 0 	 1
 						-7.9715 	 0.6363 	 0.7524
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorleft1b.ply"}
 					{bone "glass6"
 						{parameters "id=glass6;"}
 						{Position -3.8201 	 -0.068 	 8.8276}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass6.ply"}
 					}
 				}
 			}
 			{bone "doorleft2a"
 				{parameters "id=body;"}
 				{Position -74.41 	 18.6955 	 25.3721}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorleft2a.ply"}
 				{bone "glass14"
 					{parameters "id=glass14;"}
 					{Position 4.1904 	 0.1722 	 9.58}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass14.ply"}
 				}
 				{bone "doorleft2b"
 					{parameters "id=body;"}
 					{Position 7.9715 	 0.6018 	 0}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorleft2b.ply"}
 					{bone "glass13"
 						{parameters "id=glass13;"}
 						{Position 3.8137 	 -0.068 	 9.58}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass13.ply"}
 					}
 				}
 			}
 			{bone "doorright1a"
 				{parameters "id=body;"}
 				{Position 74.4165 	 -18.6998 	 25.3721}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorright1a.ply"}
 				{bone "glass17"
 					{parameters "id=glass17;"}
 					{Position -4.1969 	 -0.0439 	 9.58}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass17.ply"}
 				}
 				{bone "doorright1b"
 					{parameters "id=body;"}
 					{Position -7.9715 	 -0.6122 	 0}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorright1b.ply"}
 					{bone "glass18"
 						{parameters "id=glass18;"}
 						{Position -3.8202 	 0.2067 	 9.58}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass18.ply"}
 					}
 				}
 			}
 			{bone "doorright2a"
 				{parameters "id=body;"}
 				{Position -74.41 	 -18.6998 	 25.3721}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorright2a.ply"}
 				{bone "glass26"
 					{parameters "id=glass26;"}
 					{Position 4.1904 	 -0.0439 	 9.58}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass26.ply"}
 				}
 				{bone "doorright2b"
 					{parameters "id=body;"}
 					{Position 7.9715 	 -0.6122 	 0}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/doorright2b.ply"}
 					{bone "glass25"
 						{parameters "id=glass25;"}
 						{Position 3.8137 	 0.2066 	 9.58}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_eu/glass25.ply"}
 					}
 				}
 			}
 			{bone "safetyl1a"
 				{parameters "id=body;"}
 				{Position 73.7221 	 20.1198 	 26.723}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl1a.ply"}
 				{bone "safetyl1c"
 					{parameters "id=body;"}
 					{Position -4.3627 	 0 	 -1.4582}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl1c.ply"}
 				}
 				{bone "safetyl1d"
 					{parameters "id=body;"}
 					{Position -10.3425 	 0 	 -1.4599}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl1d.ply"}
 				}
 			}
 			{bone "safetyl1b"
 				{parameters "id=body;"}
 				{Position 73.7221 	 20.1198 	 10.4549}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl1b.ply"}
 			}
 			{bone "safetyl2a"
 				{parameters "id=body;"}
 				{Position -73.7164 	 20.0935 	 26.7186}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl2a.ply"}
 				{bone "safetyl2c"
 					{parameters "id=body;"}
 					{Position 4.3468 	 0 	 -1.4598}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl2c.ply"}
 				}
 				{bone "safetyl2d"
 					{parameters "id=body;"}
 					{Position 10.3377 	 0 	 -1.4644}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl2d.ply"}
 				}
 			}
 			{bone "safetyl2b"
 				{parameters "id=body;"}
 				{Position -73.7164 	 20.0935 	 10.4573}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyl2b.ply"}
 			}
 			{bone "safetyr1a"
 				{parameters "id=body;"}
 				{Position 73.7221 	 -20.0005 	 26.723}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr1a.ply"}
 				{bone "safetyr1c"
 					{parameters "id=body;"}
 					{Position -4.3569 	 0 	 -1.4751}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr1c.ply"}
 				}
 				{bone "safetyr1d"
 					{parameters "id=body;"}
 					{Position -10.3268 	 0 	 -1.4642}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr1d.ply"}
 				}
 			}
 			{bone "safetyr1b"
 				{parameters "id=body;"}
 				{Position 73.7221 	 -20.0005 	 10.4664}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr1b.ply"}
 			}
 			{bone "slider"
 				{parameters "id=body;"}
 				{Position 0.1158 	 0 	 60.9593}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/slider.ply"}
 			}
 			{bone "safetyr2a"
 				{parameters "id=body;"}
 				{Position -73.7243 	 -19.9924 	 26.7186}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr2a.ply"}
 				{bone "safetyr2d"
 					{parameters "id=body;"}
 					{Position 4.3629 	 0 	 -1.4675}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr2d.ply"}
 				}
 				{bone "safetyr2c"
 					{parameters "id=body;"}
 					{Position 10.345 	 0 	 -1.4615}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr2c.ply"}
 				}
 			}
 			{bone "safetyr2b"
 				{parameters "id=body;"}
 				{Position -73.7243 	 -19.9924 	 10.4634}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/safetyr2b.ply"}
 			}
 			{bone "glass1"
 				{parameters "id=glass1;"}
@@ -308,7 +308,7 @@
 			{bone "spring"
 				{parameters "commonmesh;id=body;"}
 				{Position 14.7563 	 0 	 62.8646}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_eu/spring.ply"}
 			}
 			{bone "rearlightr"
 				{matrix34

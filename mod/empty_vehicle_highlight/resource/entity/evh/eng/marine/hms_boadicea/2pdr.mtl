@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/2pdr_mk2_naval"}
-	{bump "$/_vehicle/eng/2pdr_mk2_naval_bp"}
-	{specular "$/_vehicle/eng/2pdr_mk2_naval_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

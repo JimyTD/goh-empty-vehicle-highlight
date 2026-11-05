@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.06.2022 19:48:26
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\tank_heavy\SMK\SMK.max
@@ -32,15 +32,15 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_heavy/smk/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -0.8239 	 0 	 26.6812}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/turret.ply"}
 				{bone "turrethatch_ring"
 					{parameters "id=turret;"}
 					{Position -14.0689 	 0.0089 	 16.039}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/turrethatch_ring.ply"}
 					{bone "turret_hatch"
 						{parameters "id=turret;"}
 						{Position -5.9997 	 -0.0083 	 1.8478}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/turret_hatch.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -56,7 +56,7 @@
 						0 	 -1 	 0
 						15.5687 	 1.2222 	 6.9406
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -65,7 +65,7 @@
 							0 	 1 	 0
 							23.8164 	 -1.4102 	 1.1688
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0079
@@ -136,7 +136,7 @@
 								0 	 -1 	 0
 								-2.3434 	 1.2601 	 -0.0042
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/dt29_rear.ply"}
 						}
 						{bone "turret_mg_shield"
 							{parameters "id=turret;"}
@@ -146,7 +146,7 @@
 								0 	 -1 	 0
 								-0.2926 	 0.0624 	 0.1071
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/turret_mg_shield.ply"}
 						}
 					}
 				}
@@ -159,11 +159,11 @@
 				{limits -120 120}
 				{speed 0.002}
 				{Position 37.1592 	 2.6772 	 16.9483}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/aux_turret1.ply"}
 				{bone "auxturret_hatch"
 					{parameters "id=aux_turret1;"}
 					{Position 1.3895 	 0 	 8.5281}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/auxturret_hatch.ply"}
 				}
 				{bone revolute "gun_rot1"
 					{parameters "id=gun1;"}
@@ -178,7 +178,7 @@
 						0 	 -1 	 0
 						15.5323 	 -0.6103 	 2.8111
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/gun_rot1.ply"}
 					{bone "gun1"
 						{parameters "id=gun1;"}
 						{matrix34
@@ -187,7 +187,7 @@
 							0 	 1 	 0
 							16.7887 	 0.6934 	 -0.4305
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/gun1.ply"}
 						{bone "foresight1a"
 							{Position 10.1286 	 0.0036 	 0.0017}
 						}
@@ -207,7 +207,7 @@
 							0 	 1 	 0
 							3.8206 	 0.0831 	 2.9442
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/dt_aux_tur.ply"}
 					}
 				}
 			}
@@ -486,7 +486,7 @@
 							0 	 -1 	 0
 							-4.8686 	 0.7669 	 0.1148
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/dt29_hull.ply"}
 					}
 					{bone "hull_mg_shield"
 						{parameters "id=body;"}
@@ -495,7 +495,7 @@
 							0 	 0 	 1
 							0 	 -1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/smk/hull_mg_shield.ply"}
 					}
 				}
 			}

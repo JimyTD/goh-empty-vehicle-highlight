@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/bt7a/start.anm"} {speed 0.7}}
@@ -81,12 +81,12 @@
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 45.2973 	 1.3271 	 4.2874}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/driver_hatch2.ply"}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 35.8605 	 1.3271 	 15.229}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/driver_hatch1.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -94,20 +94,20 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/bt7a/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 13.7045 	 0 	 15.1109}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/turret.ply"}
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position 0.3263 	 6.7342 	 15.5482}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/cover1.ply"}
 				}
 				{bone "turretring"
 					{parameters "id=turret;"}
 					{Position -8.4344 	 -6.0757 	 18.8047}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/turretring.ply"}
 					{bone "cover2"
 						{parameters "id=turret;"}
 						{Position 8.7564 	 0 	 -2.2353}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/cover2.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -121,7 +121,7 @@
 						0 	 -1 	 0
 						11.9766 	 1.5795 	 8.996
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -130,7 +130,7 @@
 							0 	 1 	 0
 							1.6982 	 0.3944 	 1.8326
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -144,7 +144,7 @@
 				{bone "turretbackdoor"
 					{parameters "id=turret;"}
 					{Position -21.1458 	 -3.0696 	 8.7098}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/turretbackdoor.ply"}
 					{bone revolute "mgun_r_rot1"
 						{limits -15 15}
 						{terminator}
@@ -169,7 +169,7 @@
 									0 	 -1 	 0
 									-4.3748 	 0.2958 	 0.0025
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/dt29_rear.ply"}
 							}
 							{bone "foresight6"
 								{matrix34
@@ -187,7 +187,7 @@
 									0 	 -1 	 0
 									-0.8191 	 0.0084 	 0.0418
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/mgun_rear.ply"}
 							}
 						}
 					}
@@ -235,7 +235,7 @@
 								0 	 1 	 0
 								-2.015 	 -0.2393 	 0.0241
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/dt29.ply"}
 						}
 						{bone "mgun_coax"
 							{parameters "id=turret;"}
@@ -245,7 +245,7 @@
 								0 	 1 	 0
 								0 	 -0.0007 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/bt7a/mgun_coax.ply"}
 						}
 					}
 				}

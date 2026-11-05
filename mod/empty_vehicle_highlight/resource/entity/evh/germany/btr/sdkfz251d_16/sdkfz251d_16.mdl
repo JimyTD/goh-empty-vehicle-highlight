@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1 back_door2 mgun_a3_rot1 mgun_a4_rot1 mgun_a_rot1 mgun_rear_holder
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 19.10.2023 14:55:59
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\btr\sdkfz251d_16_flamethrower\SdKfz251d_16_flame.max
@@ -73,7 +73,7 @@
 				{parameters "id=body;"}
 				{limits -40 40}
 				{Position 5.2281 	 0 	 23.821}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{limits -10 45}
 					{matrix34
@@ -97,7 +97,7 @@
 				{bone "gun_shield"
 					{parameters "id=body;"}
 					{Position -1.8053 	 0 	 3.6417}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/gun_shield.ply"}
 				}
 			}
 			{bone "mgun_rear_holder"
@@ -108,7 +108,7 @@
 					0 	 0 	 1
 					-54.2445 	 0.0011 	 22.847
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_rear_holder.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -144,7 +144,7 @@
 							0 	 -1 	 0
 							0 	 0 	 1
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_rear_holder2.ply"}
 					}
 				}
 			}
@@ -246,7 +246,7 @@
 					0.8753 	 0 	 0.4836
 					-55.211 	 10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/back_door1.ply"}
 			}
 			{bone "back_door2"
 				{parameters "id=body;"}
@@ -256,7 +256,7 @@
 					0.8734 	 0 	 0.4871
 					-55.2181 	 -10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/back_door2.ply"}
 			}
 			{bone "transmission"
 				{Position 10.2156 	 0 	 -0.2838}
@@ -365,7 +365,7 @@
 					0 	 0 	 1
 					-26.5767 	 14.6227 	 24.1208
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_a3_rot1.ply"}
 				{bone revolute "mgun_a3_rot2"
 					{parameters "id=body;"}
 					{limits -9 20}
@@ -375,7 +375,7 @@
 						0 	 -1 	 0
 						-1.4671 	 -1.4222 	 2.9545
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_a3_rot2.ply"}
 					{bone "foresight1"
 						{matrix34
 							1 	 0 	 0
@@ -388,12 +388,12 @@
 				{bone "gun_shield1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 -1.9526}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/gun_shield1.ply"}
 				}
 				{bone "spring_l"
 					{parameters "id=body;"}
 					{Position -2.6196 	 1.2692 	 0.954}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/spring_l.ply"}
 				}
 				{bone "hose_l"
 					{parameters "id=body;"}
@@ -403,7 +403,7 @@
 						0 	 0 	 1
 						-6.786 	 -0.4245 	 -6.5293
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/hose_l.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -423,7 +423,7 @@
 					0 	 0 	 1
 					-18.6242 	 -14.615 	 24.1208
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_a4_rot1.ply"}
 				{bone revolute "mgun_a4_rot2"
 					{parameters "id=body;"}
 					{limits -9 20}
@@ -433,7 +433,7 @@
 						0 	 -1 	 0
 						-1.4671 	 -1.4221 	 2.9545
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/mgun_a4_rot2.ply"}
 					{bone "foresight2"
 						{matrix34
 							1 	 0 	 0
@@ -445,17 +445,17 @@
 				}
 				{bone "gun_shield2"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/gun_shield2.ply"}
 				}
 				{bone "spring_r"
 					{parameters "id=body;"}
 					{Position -2.6196 	 1.2692 	 0.954}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/spring_r.ply"}
 				}
 				{bone "hose_r"
 					{parameters "id=body;"}
 					{Position -6.7661 	 0.0465 	 -6.5293}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_16/hose_r.ply"}
 				}
 				{bone "gunner1"
 					{matrix34

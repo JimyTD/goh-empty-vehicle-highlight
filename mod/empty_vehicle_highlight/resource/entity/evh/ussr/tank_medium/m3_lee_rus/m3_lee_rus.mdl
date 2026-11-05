@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 door_left door_right mgun_hull turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 17.10.2023 06:48:35
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\m3_lee\m3_lee_rus\m3_lee_rus.max
@@ -326,7 +326,7 @@
 				{parameters "id=gun1;"}
 				{limits -15 15}
 				{Position 16.5616 	 -15.6122 	 13.0181}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/aux_turret1.ply"}
 				{bone revolute "gun1_rot"
 					{parameters "id=gun1;"}
 					{animation
@@ -339,7 +339,7 @@
 						0 	 -1 	 0
 						4.418 	 0 	 -0.0176
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/gun1_rot.ply"}
 					{bone "gun1"
 						{parameters "id=gun1;"}
 						{matrix34
@@ -348,11 +348,11 @@
 							0 	 1 	 0
 							6.1831 	 0.1365 	 0.0303
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/gun1.ply"}
 						{bone "stab"
 							{parameters "id=gun1;"}
 							{Position 22.1471 	 0 	 -0.1092}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/stab.ply"}
 						}
 						{bone "foresight1a"
 							{matrix34
@@ -399,12 +399,12 @@
 			{bone "door_left"
 				{parameters "id=body;"}
 				{Position 4.6509 	 27.0821 	 15.0905}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/door_left.ply"}
 			}
 			{bone "door_right"
 				{parameters "id=body;"}
 				{Position 4.6431 	 -27.0948 	 15.1665}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/door_right.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -543,7 +543,7 @@
 					0 	 -1 	 0
 					35.7249 	 11.5181 	 4.8926
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/mgun_hull.ply"}
 				{bone revolute "foresight4"
 					{limits -1 1}
 					{speed 0.01}
@@ -612,22 +612,22 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/turret_r.anm"}{speed 0.6}}
 				}
 				{Position -6.9594 	 6.8873 	 21.6831}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/turret.ply"}
 				{bone revolute "aux_turret2"
 					{parameters "id=aux_turret2;"}
 					{animation
 						{sequence "repair" {file "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/turret2_r.anm"}{speed 0.6}}
 					}
 					{Position -5.0027 	 6.731 	 15.0176}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/aux_turret2.ply"}
 					{bone "cover"
 						{parameters "id=aux_turret2;"}
 						{Position 3.741 	 0.0017 	 3.9935}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/cover.ply"}
 						{bone "cover1"
 							{parameters "id=aux_turret2;"}
 							{Position -4.8039 	 -3.6892 	 0}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/cover1.ply"}
 						}
 					}
 					{bone revolute "gun2_rot"
@@ -639,7 +639,7 @@
 							0 	 -1 	 0
 							4.9847 	 0.0534 	 0.5
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/gun2_rot.ply"}
 						{bone "mgun_top"
 							{matrix34
 								1 	 0 	 0
@@ -647,7 +647,7 @@
 								0 	 1 	 0
 								-0.432 	 -0.2382 	 2.2963
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/mgun_top.ply"}
 							{bone "foresight6"
 								{Position 10.8241 	 0.3523 	 0.2566}
 							}
@@ -666,7 +666,7 @@
 						0 	 -1 	 0
 						7.3649 	 0.1174 	 6.5579
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -675,7 +675,7 @@
 							0 	 1 	 0
 							8.6369 	 0.8647 	 1.3145
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0079
@@ -692,7 +692,7 @@
 							0 	 1 	 0
 							0.148 	 0.4484 	 4.5896
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/m3_lee_rus/mgun_coax.ply"}
 						{bone "foresight5"
 							{Position 10.5439 	 0.3338 	 0.2699}
 						}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: 2 base_leverl base_leverr chainl chainr fixer gun_rot turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/recoil.anm"} {speed 0.7}}
@@ -33,7 +33,7 @@
 					-0.0212 	 0 	 0.9998
 					4.6414 	 -0.0012 	 8.1939
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/turret.ply"}
 				{bone "visor"
 					{Position -4.7427 	 5.7867 	 18.1745}
 				}
@@ -47,7 +47,7 @@
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/aim_ver.ply"}
 					}
 				}
 				{bone "aim_hor_help"
@@ -60,7 +60,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/aim_hor.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -76,7 +76,7 @@
 						0 	 -1 	 0
 						-1.5888 	 0 	 6.112
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -85,19 +85,19 @@
 							0 	 1 	 0
 							8.9721 	 1.5412 	 0.0006
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/gun.ply"}
 						{bone "foresight1"
 							{Position 21.9517 	 0.2513 	 0.0427}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -25.888 	 0 	 -0.5984}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -23.3838 	 -2.151 	 -3.0924}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/lever.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -112,7 +112,7 @@
 				{bone "rod"
 					{parameters "id=turret;"}
 					{Position -12.2674 	 4.6266 	 -0.0195}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/rod.ply"}
 				}
 			}
 			{bone "shield"
@@ -208,7 +208,7 @@
 					-0.0212 	 0 	 0.9998
 					-5.1234 	 4.2861 	 2.5005
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/fixer.ply"}
 			}
 			{bone "seat4"
 				{matrix34
@@ -268,7 +268,7 @@
 					-0.0212 	 0 	 0.9998
 					-13.1733 	 -7.182 	 5.3641
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/base_leverr.ply"}
 			}
 			{bone "base_leverl"
 				{parameters "id=body;"}
@@ -278,7 +278,7 @@
 					-0.0212 	 0 	 0.9998
 					-27.3261 	 8.2749 	 2.5563
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/base_leverl.ply"}
 			}
 			{bone "cover"
 				{parameters "id=body;"}
@@ -302,19 +302,19 @@
 				{bone "2"
 					{parameters "id=body;"}
 					{Position -0.0488 	 -0.6249 	 0.0135}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/2.ply"}
 					{bone "3"
 						{parameters "id=body;"}
 						{Position 12.64 	 -6.5036 	 -3.6398}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/3.ply"}
 						{bone "4"
 							{parameters "id=body;"}
 							{Position 4.6805 	 0 	 -1.3421}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/4.ply"}
 							{bone "base"
 								{parameters "id=body;"}
 								{Position 4.9871 	 0 	 -1.4416}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/base.ply"}
 							}
 						}
 					}
@@ -329,7 +329,7 @@
 					-12.9802 	 -7.6744 	 4.9793
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/chainr.ply"}
 			}
 			{bone "chainl"
 				{parameters "id=body;"}
@@ -340,7 +340,7 @@
 					-27.4922 	 8.8655 	 2.2936
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/88mm_qf25_mk2/chainl.ply"}
 			}
 			{bone "gunner"
 				{matrix34

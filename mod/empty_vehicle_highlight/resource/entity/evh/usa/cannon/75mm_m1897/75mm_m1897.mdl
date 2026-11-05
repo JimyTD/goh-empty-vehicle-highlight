@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.09.2023 13:29:15
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\75mm_m1897\75mm_m1897.max
@@ -30,7 +30,7 @@
 				{limits -30 30}
 				{speed 0.07}
 				{Position -1.8407 	 0 	 3.0689}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -44,7 +44,7 @@
 						0 	 -1 	 0
 						-6.7414 	 0 	 11.3375
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -53,11 +53,11 @@
 							0 	 1 	 0
 							44.2529 	 0.1131 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -51.7924 	 0 	 -1.1291}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/breech_block.ply"}
 							{bone "ign"
 								{parameters "id=gun;"}
 								{matrix34
@@ -66,7 +66,7 @@
 									0 	 -0.5736 	 0.8192
 									0.5059 	 -1.5795 	 -0.1033
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/ign.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -85,22 +85,22 @@
 				{bone "aim_ver2"
 					{parameters "id=body;"}
 					{Position -6.624 	 9.4377 	 3.5893}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/aim_ver2.ply"}
 				}
 				{bone "aim_ver1"
 					{parameters "id=body;"}
 					{Position -6.624 	 -6.3603 	 3.5893}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/aim_ver1.ply"}
 				}
 				{bone "gun_holder"
 					{parameters "id=body;"}
 					{Position 5.169 	 0 	 1.8934}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/gun_holder.ply"}
 				}
 				{bone "cylinder_piston"
 					{parameters "id=body;"}
 					{Position -3.8914 	 -1.7432 	 4.4233}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/cylinder_piston.ply"}
 				}
 				{bone "visor"
 					{Position -3.4144 	 8.3406 	 18.5883}
@@ -115,18 +115,18 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/aim_hor.ply"}
 					}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/shield.ply"}
 				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -1.8566 	 7.3862 	 0.4071}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/standl.ply"}
 				{bone "fixerl"
 					{parameters "id=body;"}
 					{matrix34
@@ -135,7 +135,7 @@
 						-0.1237 	 0.0858 	 0.9886
 						-50.2272 	 27.5347 	 -5.8618
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/fixerl.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
@@ -145,7 +145,7 @@
 						0 	 0 	 1
 						-17.7969 	 8.3025 	 -0.955
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
@@ -155,7 +155,7 @@
 						0 	 0 	 1
 						-45.0475 	 26.0267 	 -5.0883
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/detail2.ply"}
 				}
 				{bone "seat4"
 					{matrix34
@@ -177,7 +177,7 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -1.8566 	 -7.3899 	 0.4071}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/standr.ply"}
 				{bone "fixerr"
 					{parameters "id=body;"}
 					{matrix34
@@ -186,7 +186,7 @@
 						-0.1385 	 -0.0943 	 0.9859
 						-50.2816 	 -28.3427 	 -5.8528
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/fixerr.ply"}
 				}
 				{bone "towingbar"
 					{parameters "id=body;"}
@@ -196,7 +196,7 @@
 						-0.1289 	 -0.0886 	 0.9877
 						-56.9975 	 -30.259 	 -6.8034
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/towingbar.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
@@ -206,7 +206,7 @@
 						0 	 0 	 1
 						-18.7553 	 -9.6175 	 -2.1033
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
@@ -216,7 +216,7 @@
 						0 	 0 	 1
 						-18.5582 	 -9.5039 	 -3.5891
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/75mm_m1897/detail4.ply"}
 				}
 				{bone "seat3"
 					{matrix34

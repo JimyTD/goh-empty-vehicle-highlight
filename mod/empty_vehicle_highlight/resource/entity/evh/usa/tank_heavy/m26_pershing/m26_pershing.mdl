@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 rad_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.07.2024 19:37:44
 ;File:			 D:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\tank_heavy\m26\m26_pershing.max
@@ -34,13 +34,13 @@
 					{sequence "repair" {file "../../../../-vehicle/usa/tank_heavy/m26_pershing/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 2.0735 	 1.8837 	 14.2337}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/turret.ply"}
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
 					{limits -45 45}
 					{terminator}
 					{Position -20.5743 	 2.1721 	 24.1472}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -15 55}
@@ -50,7 +50,7 @@
 							0 	 1 	 0
 							1.3946 	 0.0208 	 2.755
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								-1 	 0.0015 	 0
@@ -72,7 +72,7 @@
 						0 	 0 	 1
 						-5.3468 	 6.8413 	 18.8627
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/turret_hatch.ply"}
 				}
 				{bone "com_hatch"
 					{parameters "id=turret;"}
@@ -82,32 +82,32 @@
 						0 	 0 	 1
 						-8.3903 	 -17.4521 	 21.0045
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/com_hatch.ply"}
 				}
 				{bone "antenna"
 					{parameters "id=turret;"}
 					{Position -31.7548 	 -4.1756 	 24.3661}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/antenna.ply"}
 				}
 				{bone "detail7"
 					{parameters "id=turret;"}
 					{Position 1.0031 	 21.8778 	 16.173}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/detail7.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=turret;"}
 					{Position 0.3436 	 -21.0669 	 8.5062}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=turret;"}
 					{Position -23.9029 	 -15.4734 	 14.1425}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=turret;"}
 					{Position -7.437 	 20.566 	 16.3341}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/detail3.ply"}
 				}
 				{bone "visor1"
 					{Position -5.4495 	 -9.8887 	 22.5293}
@@ -128,7 +128,7 @@
 						0 	 -0.9744 	 0.225
 						-32.2509 	 1.8878 	 18.0338
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/hmg_holder.ply"}
 				}
 				{bone "ammo2"
 					{Position 3.8471 	 13.5359 	 9.0323}
@@ -146,7 +146,7 @@
 						0 	 -1 	 0
 						19.6673 	 0 	 8.0681
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -155,7 +155,7 @@
 							0 	 1 	 0
 							9.0605 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -299,7 +299,7 @@
 					0.0616 	 0 	 0.9981
 					21.9993 	 23.4244 	 12.7434
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/driver_hatch.ply"}
 			}
 			{bone "rad_hatch"
 				{parameters "id=body;"}
@@ -309,7 +309,7 @@
 					0.0616 	 0 	 0.9981
 					22.3406 	 -19.6559 	 12.7244
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/rad_hatch.ply"}
 			}
 			{bone "detail4"
 				{parameters "id=body;"}
@@ -399,11 +399,11 @@
 							0 	 1 	 0
 							0 	 -0.0007 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/mg_shield.ply"}
 						{bone "30cal"
 							{parameters "id=body;"}
 							{Position -3.1015 	 -0.35 	 -0.2332}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_heavy/m26_pershing/30cal.ply"}
 						}
 					}
 				}

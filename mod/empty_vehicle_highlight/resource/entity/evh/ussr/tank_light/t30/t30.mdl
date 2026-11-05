@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover2 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t30/start.anm"} {speed 0.5}}
@@ -330,11 +330,11 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t30/turret_r.anm"}{speed 0.35}}
 				}
 				{Position -5.1708 	 6.2484 	 10.5376}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t30/turret.ply"}
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{Position 5.4406 	 0.0004 	 8.0433}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t30/cover2.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34
@@ -352,7 +352,7 @@
 						0 	 -0.9962 	 0.0872
 						10.3622 	 0.2326 	 3.7724
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t30/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -361,7 +361,7 @@
 							0 	 0.9962 	 0.0872
 							19.423 	 0.117 	 2.5892
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t30/gun.ply"}
 					}
 					{bone "mgun"
 						{parameters "id=turret;"}
@@ -371,7 +371,7 @@
 							1 	 0 	 0
 							1.8838 	 -0.4067 	 -2.2249
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t30/mgun.ply"}
 						{bone "foresight5"
 							{matrix34
 								0 	 0 	 1

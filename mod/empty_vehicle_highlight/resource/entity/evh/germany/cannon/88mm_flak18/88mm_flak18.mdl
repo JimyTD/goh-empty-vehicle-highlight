@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: fixer front_l_susp front_r_susp helper_t spikeb spikef spring_front standl standl_fixer2 standr standr_fixer2 susp_back trailer_front trailer_rear
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 20.07.2025 20:29:41
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\cannon\88mm_flak18\flak18_new.max
@@ -38,22 +38,22 @@
 					0.9998 	 0 	 -0.0175
 					35.5054 	 0 	 4.3555
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/fixer.ply"}
 			}
 			{bone "standl_fixer2"
 				{parameters "id=body;"}
 				{Position -3.0068 	 21.9191 	 1.1098}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standl_fixer2.ply"}
 			}
 			{bone "standr_fixer2"
 				{parameters "id=body;"}
 				{Position 3.0068 	 -21.9047 	 1.1131}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standr_fixer2.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -0.0113 	 -16.1966 	 3.6108}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standr.ply"}
 				{bone "spiker"
 					{parameters "id=body;"}
 					{matrix34
@@ -62,18 +62,18 @@
 						0 	 0 	 1
 						0.0076 	 -26.188 	 -5.9855
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/spiker.ply"}
 				}
 				{bone "standr_fixer1"
 					{parameters "id=body;"}
 					{Position 0 	 -5.1184 	 -0.8074}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standr_fixer1.ply"}
 				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -0.0023 	 16.1964 	 3.6108}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standl.ply"}
 				{bone "spikel"
 					{parameters "id=body;"}
 					{matrix34
@@ -82,12 +82,12 @@
 						0 	 0 	 1
 						-0.0015 	 26.2001 	 -5.0474
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/spikel.ply"}
 				}
 				{bone "standl_fixer1"
 					{parameters "id=body;"}
 					{Position 0 	 5.1184 	 -0.8074}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/standl_fixer1.ply"}
 				}
 			}
 			{bone "spikeb"
@@ -98,7 +98,7 @@
 					0 	 0 	 1
 					-40.5487 	 0.0112 	 -0.1899
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/spikeb.ply"}
 			}
 			{bone "spikef"
 				{parameters "id=body;"}
@@ -108,7 +108,7 @@
 					0 	 0 	 1
 					41.3702 	 0.0112 	 -2.91
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/spikef.ply"}
 			}
 			{bone "seat1"
 				{matrix34
@@ -163,7 +163,7 @@
 					{bone "turret1"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/turret1.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{animation
@@ -177,7 +177,7 @@
 								0 	 -1 	 0
 								-13.508 	 -1.3313 	 15.1965
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -186,16 +186,16 @@
 									0 	 1 	 0
 									9.7852 	 0.2277 	 -1.3313
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/gun.ply"}
 								{bone "lever"
 									{parameters "id=gun;"}
 									{Position -16.8046 	 -1.5523 	 4.0045}
-									
+									{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/lever.ply"}
 								}
 								{bone "breechblock"
 									{parameters "id=gun;"}
 									{Position -14.883 	 -0.0113 	 0.181}
-									
+									{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/breechblock.ply"}
 								}
 								{bone "foresight1"
 									{Position 85.7475 	 -0.0015 	 0.0071}
@@ -215,7 +215,7 @@
 										0 	 0 	 1
 										66.3443 	 0 	 -0.0093
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/enumerator.ply"}
 								}
 							}
 							{bone "visor"
@@ -230,42 +230,42 @@
 						{bone "shield"
 							{parameters "id=shield;"}
 							{Position 7.3893 	 0.0219 	 8.3552}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/shield.ply"}
 						}
 						{bone "detail1"
 							{parameters "id=body;"}
 							{Position -2.763 	 11.1596 	 -0.4896}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/detail1.ply"}
 						}
 						{bone "woodenseat1"
 							{parameters "id=body;"}
 							{Position -0.3101 	 -8.1453 	 -0.3875}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/woodenseat1.ply"}
 						}
 						{bone "woodenseat2"
 							{parameters "id=body;"}
 							{Position 8.2586 	 7.2687 	 -1.2082}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/woodenseat2.ply"}
 						}
 						{bone "aim_hor"
 							{parameters "id=body;"}
 							{Position 6.3244 	 -12.0453 	 0.9294}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/aim_hor.ply"}
 						}
 						{bone "aim_ver"
 							{parameters "id=body;"}
 							{Position -9.5434 	 -12.0455 	 0.9294}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/aim_ver.ply"}
 						}
 						{bone "cylinders"
 							{parameters "id=body;"}
 							{Position 9.7318 	 0 	 7.2169}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/cylinders.ply"}
 						}
 						{bone "rudazat"
 							{parameters "id=body;"}
 							{Position -8.203 	 -0.0002 	 7.4047}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/rudazat.ply"}
 						}
 						{bone "gunner"
 							{matrix34
@@ -336,7 +336,7 @@
 					{parameters "id=body;"}
 					{Position 0 	 3.1678 	 3.221}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/front_r_susp.ply"}
 				}
 				{bone revolute "wheelr1"
 					{parameters "id=wheelright1;"}
@@ -368,25 +368,25 @@
 					{parameters "id=body;"}
 					{Position 0 	 -17.2537 	 0}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/front_l_susp.ply"}
 				}
 			}
 			{bone "spring_front"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 0}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/spring_front.ply"}
 			}
 			{bone "trailer_front"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 0}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/trailer_front.ply"}
 				{bone "reeling_front"
 					{parameters "id=body;"}
 					{Position 3.9645 	 -0.5754 	 14.47}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/reeling_front.ply"}
 				}
 				{bone "towpole"
 					{parameters "id=body;"}
@@ -397,7 +397,7 @@
 						8.1983 	 0.5218 	 2.6467
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/towpole.ply"}
 				}
 			}
 			{bone "fxtracel1"
@@ -431,7 +431,7 @@
 				{parameters "id=body;"}
 				{Position 0.0013 	 0 	 0.0346}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/susp_back.ply"}
 			}
 			{bone prizmatic "suspension_r2"
 				{limits -0 0.06}
@@ -471,12 +471,12 @@
 				{parameters "id=body;"}
 				{Position 0.0013 	 0 	 0.0346}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/trailer_rear.ply"}
 				{bone "reeling_back"
 					{parameters "id=body;"}
 					{Position -17.1305 	 1.0498 	 14.7768}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/88mm_flak18/reeling_back.ply"}
 				}
 			}
 			{bone "fxtracer2"

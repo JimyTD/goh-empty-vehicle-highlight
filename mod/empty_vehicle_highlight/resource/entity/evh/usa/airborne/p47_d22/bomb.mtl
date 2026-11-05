@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_ammo/m64_bomb"}
-	{bump "$/_ammo/m64_bomb_bp"}
-	{specular "$/_ammo/m64_bomb_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

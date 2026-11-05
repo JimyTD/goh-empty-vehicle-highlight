@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: l1 r1 shield2 standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 27.02.2025 13:19:41
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\40mm_QF2\40mm_qf2_ty.max
@@ -91,41 +91,44 @@
 				{bone "turret_mesh"
 					{parameters "id=body;"}
 					{Position -0.8441 	 0 	 -0.1245}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/turret_mesh.ply"}
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/turret_mesh_lod1.ply"}
+					}
 					{bone "ammo_box"
 						{parameters "id=body;"}
 						{Position -6.1567 	 -4.6177 	 5.5851}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/ammo_box.ply"}
 						{bone "detail4"
 							{parameters "id=body;"}
 							{Position 0.4033 	 -3.1441 	 1.2419}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/detail4.ply"}
 						}
 						{bone "detail3"
 							{parameters "id=body;"}
 							{Position 0.4033 	 -3.1519 	 1.2419}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/detail3.ply"}
 						}
 						{bone "detail2"
 							{parameters "id=body;"}
 							{Position 0.0551 	 -2.4113 	 -1.4035}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/detail2.ply"}
 						}
 						{bone "detail1"
 							{parameters "id=body;"}
 							{Position 3.0461 	 -3.093 	 4.0891}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/detail1.ply"}
 						}
 					}
 					{bone "cover"
 						{parameters "id=body;"}
 						{Position -9.8937 	 -9.4298 	 9.0836}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/cover.ply"}
 					}
 					{bone "spare_ammo_boxes"
 						{parameters "id=body;"}
 						{Position 4.1869 	 -7.4389 	 6.4665}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/spare_ammo_boxes.ply"}
 					}
 					{bone "visor"
 						{Position 5.4346 	 5.7218 	 13.7077}
@@ -140,13 +143,13 @@
 						{bone "aim_hor"
 							{parameters "id=body;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/aim_hor.ply"}
 						}
 					}
 					{bone "sight"
 						{parameters "id=body;"}
 						{Position -0.8773 	 3.4803 	 13.249}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/sight.ply"}
 					}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
@@ -161,7 +164,7 @@
 							0 	 -1 	 0
 							1.9385 	 -0.8209 	 5.4203
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -170,16 +173,16 @@
 								0 	 1 	 0
 								1.8034 	 0.5191 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/gun.ply"}
 							{bone "breech"
 								{parameters "id=gun;"}
 								{Position -14.2006 	 0 	 -0.5395}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/breech.ply"}
 							}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -11.898 	 -2.0926 	 -2.4596}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/lever.ply"}
 							}
 							{bone "fx_invers"
 								{matrix34
@@ -192,7 +195,7 @@
 							{bone "littlejohn"
 								{parameters "id=gun;"}
 								{Position 30.2545 	 -0.0001 	 0.0072}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/littlejohn.ply"}
 								{bone "foresight1"
 									{Position 14.5706 	 0 	 0.0017}
 								}
@@ -202,17 +205,17 @@
 					{bone "shield1"
 						{parameters "id=shield;"}
 						{Position 6.3094 	 -0.0477 	 8.3298}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/shield1.ply"}
 						{bone "shield2"
 							{parameters "id=shield;"}
 							{Position -0.0924 	 12.4456 	 1.9418}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/shield2.ply"}
 						}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0.0415 	 3.4005 	 3.9089}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/aim_ver.ply"}
 					}
 					{bone "gunner"
 						{matrix34
@@ -264,7 +267,7 @@
 					-0.2693 	 -0.3846 	 0.8829
 					7.9598 	 9.001 	 1.3278
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/l1.ply"}
 				{bone "l2"
 					{parameters "id=body;"}
 					{matrix34
@@ -273,7 +276,7 @@
 						0 	 1 	 0
 						-1.8921 	 0.1225 	 -0.1597
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/l2.ply"}
 				}
 			}
 			{bone "r1"
@@ -284,7 +287,7 @@
 					0.2693 	 -0.3846 	 -0.8829
 					7.9598 	 -8.983 	 1.3278
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/r1.ply"}
 				{bone "r2"
 					{parameters "id=body;"}
 					{matrix34
@@ -293,7 +296,7 @@
 						0 	 1 	 0
 						1.8921 	 -0.1225 	 0.1597
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/r2.ply"}
 				}
 			}
 			{bone "lifting_rod"
@@ -316,7 +319,7 @@
 				{bone "standr"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/standr.ply"}
 				}
 			}
 			{bone "standl_help"
@@ -329,7 +332,7 @@
 				{bone "standl"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/40mm_qf2/standl.ply"}
 				}
 			}
 			{bone "seat3"

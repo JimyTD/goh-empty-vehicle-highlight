@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 radio_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 27.11.2023 19:30:54
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\M36B1\m36b1.max
@@ -34,7 +34,7 @@
 				}
 				{speed 0.006}
 				{Position 2.3248 	 0.0216 	 28.4299}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -47,7 +47,7 @@
 						0 	 -1 	 0
 						19.1132 	 4.9956 	 3.177
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -56,7 +56,7 @@
 							0 	 1 	 0
 							10.9487 	 -0.13 	 4.9797
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -76,7 +76,7 @@
 						{bone "breechblock"
 							{parameters "id=gun;"}
 							{Position -30.8809 	 -0.0159 	 1.5839}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/breechblock.ply"}
 						}
 					}
 				}
@@ -85,7 +85,7 @@
 					{limits -15 15}
 					{terminator}
 					{Position 10.4828 	 11.9003 	 14.0638}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -10 35}
@@ -95,7 +95,7 @@
 							0 	 -1 	 0
 							-1.1892 	 -0.4368 	 4.2544
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -10.1198 	 0.8216 	 -0.3678}
 						}
@@ -289,7 +289,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -299,7 +299,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/mgun_hull.ply"}
 					}
 				}
 			}
@@ -337,7 +337,7 @@
 				{bone "radio_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/radio_hatch.ply"}
 				}
 			}
 			{bone "helper_driverh"
@@ -350,7 +350,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m36b1_gmc/driver_hatch.ply"}
 				}
 			}
 			{bone revolute "wheell1"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl1 doorr1 holder1 holder2 holder3 leveler mgun_1_rot1 rear_door ws_shield
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 27.01.2025 15:51:29
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_usa\vehicles\btr\M4_halftrack\m4_halftrack.max
@@ -94,7 +94,7 @@
 					{parameters "id=body;"}
 					{limits -45 45}
 					{Position -1.404 	 0.0145 	 0.4849}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -15 60}
@@ -104,7 +104,7 @@
 							0 	 -1 	 0
 							-1.7545 	 -0.8192 	 3.6141
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/mgun_1_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0 	 0
@@ -127,21 +127,21 @@
 			{bone "doorl1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 16.099 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/doorl1.ply"}
 				{bone "doorl_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/doorl_ext.ply"}
 				}
 			}
 			{bone "doorr1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 -16.0992 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/doorr1.ply"}
 				{bone "doorr_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 -0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/doorr_ext.ply"}
 				}
 			}
 			{bone "ws_shield"
@@ -152,7 +152,7 @@
 					0.8829 	 0 	 0.4695
 					19.4999 	 14.5538 	 25.5067
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/ws_shield.ply"}
 			}
 			{bone "holder1"
 				{parameters "id=body;"}
@@ -162,7 +162,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -13.781 	 18.6832
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/holder1.ply"}
 			}
 			{bone "holder2"
 				{parameters "id=body;"}
@@ -172,7 +172,7 @@
 					0 	 0.9998 	 -0.0175
 					25.7989 	 -2.512 	 18.6832
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/holder2.ply"}
 			}
 			{bone "holder3"
 				{parameters "id=body;"}
@@ -182,7 +182,7 @@
 					0 	 -0.9998 	 -0.0175
 					25.7989 	 13.6335 	 18.6832
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/holder3.ply"}
 			}
 			{bone "window1"
 				{parameters "id=window1;"}
@@ -400,11 +400,11 @@
 			{bone "rear_door"
 				{parameters "id=body;"}
 				{Position -46.6079 	 -7.689 	 21.6666}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/rear_door.ply"}
 				{bone "handle"
 					{parameters "id=body;"}
 					{Position -0.6283 	 14.4806 	 -5.2757}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m4_mortar_carrier/handle.ply"}
 				}
 			}
 			{bone "roller"

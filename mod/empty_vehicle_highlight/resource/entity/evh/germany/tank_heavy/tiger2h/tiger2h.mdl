@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driverhutch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 05.08.2025 12:59:38
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_heavy\tiger2h\kingtiger_export.max
@@ -46,11 +46,11 @@
 					{bone "mgun1"
 						{parameters "id=body;"}
 						{Position 1.0328 	 0.0136 	 0.584}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/mgun1.ply"}
 						{bone "gpu"
 							{parameters "id=body;"}
 							{Position 2.5089 	 -0.5715 	 0.2908}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/gpu.ply"}
 						}
 						{bone "foresight4"
 							{matrix34
@@ -70,7 +70,7 @@
 				}
 				{speed 0.003}
 				{Position -0.0017 	 0 	 25.6808}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -8 14}
@@ -81,7 +81,7 @@
 						0 	 -1 	 0
 						27.1251 	 -0.9901 	 -2.0647
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -93,7 +93,10 @@
 							0 	 1 	 0
 							17.3573 	 -0.0506 	 -0.9968
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0024
@@ -118,7 +121,7 @@
 							0 	 1 	 0
 							17.3573 	 -0.0506 	 -0.9968
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/detail21.ply"}
 					}
 				}
 				{bone "visor1"
@@ -137,7 +140,7 @@
 					{limits -155 54}
 					{terminator}
 					{Position -5.5188 	 8.4224 	 12.3222}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/mgun_a_rot1.ply"}
 					{bone "gunner2"
 						{matrix34
 							0.9408 	 -0.2206 	 -0.2575
@@ -155,7 +158,7 @@
 							0 	 -1 	 0
 							8.9266 	 0.0428 	 -0.0075
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/mgun_a_rot2.ply"}
 						{bone "mgun_rot"
 							{matrix34
 								1 	 0 	 -0.0084
@@ -168,31 +171,31 @@
 				}
 				{bone "enumerator"
 					{Position -6.0059 	 -21.7484 	 1.4018}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/enumerator.ply"}
 				}
 				{bone "cupola"
 					{parameters "id=turret;"}
 					{Position -5.3998 	 8.4122 	 10.2}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/cupola.ply"}
 				}
 				{bone "detail20"
 					{Position 0.0017 	 0 	 -7.248}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/detail20.ply"}
 				}
 				{bone revolute "cover"
 					{parameters "id=turret;"}
 					{Position -3.7629 	 15.4516 	 11.7834}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/cover.ply"}
 				}
 				{bone "backdoor"
 					{parameters "id=turret;"}
 					{Position -44.1658 	 0.0445 	 -5.8321}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/backdoor.ply"}
 				}
 				{bone revolute "nbk39"
 					{parameters "id=turret;"}
 					{Position 2.3105 	 -11.9491 	 8.9919}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/nbk39.ply"}
 					{bone "smoke_shot1"
 						{matrix34
 							-0.6428 	 0 	 -0.766
@@ -213,42 +216,66 @@
 				{bone "shield4"
 					{parameters "id=turret;"}
 					{Position -29.7774 	 16.5872 	 2.933}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield4.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield4_lod1.ply"}
+					}
 				}
 				{bone "shield3"
 					{parameters "id=turret;"}
 					{Position -32.1701 	 18.4452 	 -3.5555}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield3.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield3_lod1.ply"}
+					}
 				}
 				{bone "shield8"
 					{parameters "id=turret;"}
 					{Position -29.8472 	 -16.5751 	 3.1478}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield8.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield8_lod1.ply"}
+					}
 				}
 				{bone "shield7"
 					{parameters "id=turret;"}
 					{Position -32.1624 	 -18.4999 	 -3.3978}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield7.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield7_lod1.ply"}
+					}
 				}
 				{bone "shield2"
 					{parameters "id=turret;"}
 					{Position 18.1597 	 15.4924 	 2.1355}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield2.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield2_lod1.ply"}
+					}
 				}
 				{bone "shield1"
 					{parameters "id=turret;"}
 					{Position 17.8038 	 18.6105 	 -4.5875}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield1.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield1_lod1.ply"}
+					}
 				}
 				{bone "shield6"
 					{parameters "id=turret;"}
 					{Position 17.9255 	 -15.7711 	 1.9434}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield6.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield6_lod1.ply"}
+					}
 				}
 				{bone "shield5"
 					{parameters "id=turret;"}
 					{Position 17.6439 	 -18.3974 	 -4.3982}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield5.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/shield5_lod1.ply"}
+					}
 				}
 				{bone "ammo1"
 					{Position -27.0607 	 9.8027 	 -7.7353}
@@ -350,7 +377,7 @@
 			{bone "driverhutch"
 				{parameters "commonmesh;id=body;"}
 				{Position 39.5202 	 16.2312 	 14.5456}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/tiger2h/driverhutch.ply"}
 			}
 			{bone "shieldl2"
 				{parameters "id=body;"}

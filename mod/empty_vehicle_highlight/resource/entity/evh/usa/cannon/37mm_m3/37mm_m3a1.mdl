@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot holder shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 06.02.2025 18:15:08
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_usa\vehicles\cannon\37mm_m3a1\37mm M3A1.max
@@ -34,12 +34,12 @@
 					0.6812 	 0 	 0.7321
 					-2.2925 	 -3.2368 	 -0.7113
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/holder.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -1.5058 	 5.5282 	 1.1767}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/standl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{matrix34
@@ -48,13 +48,13 @@
 						0 	 0 	 1
 						-15.701 	 10.6789 	 -3.1917
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/detail1.ply"}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -1.5058 	 -5.5266 	 1.1767}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/standr.ply"}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{matrix34
@@ -63,7 +63,7 @@
 						0 	 0 	 1
 						-15.7292 	 -10.6371 	 -3.1917
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/detail2.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -71,7 +71,7 @@
 				{limits -30 30}
 				{speed 0.007}
 				{Position -1.4577 	 0.0004 	 2.124}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -85,7 +85,7 @@
 						0 	 -1 	 0
 						-0.066 	 -0.0003 	 3.6154
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -94,16 +94,16 @@
 							0 	 1 	 0
 							-4.5651 	 -0.0229 	 0.0002
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -6.005 	 -0.0008 	 -0.1435}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -4.958 	 -1.0029 	 -2.1522}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/lever.ply"}
 						}
 						{bone "foresight1"
 							{Position 33.9952 	 -0.0006 	 -0.036}
@@ -119,14 +119,14 @@
 						{bone "m3a1"
 							{parameters "id=gun;"}
 							{Position 31.1248 	 0 	 -0.0403}
-							
+							{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/m3a1.ply"}
 						}
 					}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position -3.7827 	 -1.5253 	 5.8071}
-					
+					{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/shield.ply"}
 				}
 				{bone "visor"
 					{Position 3.1162 	 4.3387 	 9.3559}
@@ -141,7 +141,7 @@
 					{bone "aim_v"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/aim_v.ply"}
 					}
 				}
 				{bone "aim_h_helper"
@@ -154,7 +154,7 @@
 					{bone "aim_h"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/aim_h.ply"}
 					}
 				}
 			}
@@ -171,7 +171,7 @@
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
 				{Position -0.0017 	 0 	 -0.8846}
-				
+				{VolumeView "../../../../-vehicle/usa/cannon/37mm_m3/shield_lower.ply"}
 			}
 			{bone "visor2"
 				{Position 1.8456 	 -7.269 	 11.1967}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch1 hatch2 hatch3 lever mgun_1_rot1 mgun_2_rot1 mgun_3_rot1 mgun_4_rot1 ramp
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 17.04.2025 15:37:01
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_usa\vehicles\tank_light\lvt4\lvt4.max
@@ -33,10 +33,10 @@
 				{parameters "id=body;"}
 				{limits -10 30}
 				{Position 5.8766 	 16.1482 	 35.0689}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_1_rot1.ply"}
 				{bone "shield1a"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/shield1a.ply"}
 				}
 				{bone revolute "mgun_1_rot2"
 					{parameters "id=body;"}
@@ -47,7 +47,7 @@
 						0 	 -1 	 0
 						0.003 	 -0.003 	 4.8333
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_1_rot2.ply"}
 					{bone "mgun1"
 						{matrix34
 							1 	 0 	 0.0015
@@ -123,11 +123,11 @@
 				{parameters "id=body;"}
 				{limits -30 10}
 				{Position 5.8766 	 -16.1571 	 35.0689}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_2_rot1.ply"}
 				{bone "shield1b"
 					{parameters "id=body;"}
 					{Position 0 	 0.0184 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/shield1b.ply"}
 				}
 				{bone revolute "mgun_2_rot2"
 					{parameters "id=body;"}
@@ -138,7 +138,7 @@
 						0 	 -1 	 0
 						0.003 	 -0.003 	 4.8333
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_2_rot2.ply"}
 					{bone "mgun2"
 						{matrix34
 							1 	 0 	 0.0015
@@ -164,7 +164,7 @@
 				{parameters "id=body;"}
 				{limits -25 25}
 				{Position -31.6379 	 26.6953 	 35.191}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_3_rot1.ply"}
 				{bone revolute "mgun_3_rot2"
 					{parameters "id=body;"}
 					{limits -10 20}
@@ -174,7 +174,7 @@
 						1 	 0 	 0
 						-1.0084 	 -0.013 	 3.4048
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_3_rot2.ply"}
 					{bone "mgun3"
 						{matrix34
 							-0.0523 	 0.9986 	 0
@@ -202,7 +202,7 @@
 					0 	 0 	 1
 					-31.6346 	 -26.7256 	 35.191
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_4_rot1.ply"}
 				{bone revolute "mgun_4_rot2"
 					{parameters "id=body;"}
 					{limits -10 20}
@@ -212,7 +212,7 @@
 						1 	 0 	 0
 						-1.0084 	 -0.013 	 3.4048
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/mgun_4_rot2.ply"}
 					{bone "mgun4"
 						{matrix34
 							-0.0523 	 0.9986 	 0
@@ -259,7 +259,7 @@
 			{bone "lever"
 				{parameters "id=body;"}
 				{Position -47.3463 	 19.0133 	 30.0284}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/lever.ply"}
 			}
 			{bone "driver"
 				{Position 35.3216 	 9.0551 	 13.6573}
@@ -275,7 +275,7 @@
 					0.1288 	 0 	 0.9917
 					42.5778 	 13.3555 	 32.6174
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/hatch1.ply"}
 			}
 			{bone "hatch2"
 				{parameters "id=body;"}
@@ -285,12 +285,12 @@
 					0.1281 	 0 	 0.9918
 					31.3622 	 -12.3858 	 33.9924
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/hatch2.ply"}
 			}
 			{bone "hatch3"
 				{parameters "id=body;"}
 				{Position 45.7733 	 8.8804 	 31.348}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/hatch3.ply"}
 			}
 			{bone "armor2"
 				{parameters "id=body;"}
@@ -310,7 +310,7 @@
 			{bone "ramp"
 				{parameters "id=body;"}
 				{Position -67.4428 	 0 	 2.9698}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/lvt4_eng/ramp.ply"}
 			}
 			{bone revolute "wheelr12"
 				{parameters "id=trackright;"}

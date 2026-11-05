@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorright1 mgun_1_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.11.2023 12:15:03
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\btr\M5_HST\m5_hst.max
@@ -215,7 +215,7 @@
 					{parameters "id=body;"}
 					{limits -15 15}
 					{Position 12.0253 	 -11.5938 	 12.7742}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m5_hst/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -10 60}
@@ -225,7 +225,7 @@
 							0 	 -1 	 0
 							-1.2012 	 -0.0551 	 4.1494
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m5_hst/mgun_1_rot2.ply"}
 						{bone "mgun"
 							{Position -10.0482 	 0.8476 	 0.0553}
 						}
@@ -243,21 +243,21 @@
 			{bone "doorleft1"
 				{parameters "id=body;"}
 				{Position 39.705 	 7.6178 	 14.7801}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m5_hst/doorleft1.ply"}
 				{bone "doorleft2"
 					{parameters "id=body;"}
 					{Position 0.1417 	 3.5993 	 0.0239}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m5_hst/doorleft2.ply"}
 				}
 			}
 			{bone "doorright1"
 				{parameters "id=body;"}
 				{Position 39.705 	 -7.6178 	 14.5744}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m5_hst/doorright1.ply"}
 				{bone "doorright2"
 					{parameters "id=body;"}
 					{Position 0.1417 	 -3.5993 	 0.2297}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m5_hst/doorright2.ply"}
 				}
 			}
 			{bone "doorleft3"

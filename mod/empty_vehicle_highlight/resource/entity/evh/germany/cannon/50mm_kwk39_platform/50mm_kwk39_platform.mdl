@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_h aim_v
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.01.2025 10:12:04
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\cannon\50mm_kwk_platform\50mm_kwk39_platform.max
@@ -91,7 +91,7 @@
 					{bone "aim_v"
 						{parameters "id=body;"}
 						{Position 1.8869 	 -10.7957 	 17.3669}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_kwk39_platform/aim_v.ply"}
 					}
 					{bone "aim_h"
 						{parameters "id=body;"}
@@ -101,7 +101,7 @@
 							1 	 0 	 0
 							-1.3701 	 -13.7896 	 13.6928
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_kwk39_platform/aim_h.ply"}
 					}
 					{bone "shield"
 						{parameters "id=body;"}

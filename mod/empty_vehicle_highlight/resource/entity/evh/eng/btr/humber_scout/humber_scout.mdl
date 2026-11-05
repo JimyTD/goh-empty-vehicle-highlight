@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:37:58
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Humber_scout\humber_scout.max
@@ -31,7 +31,7 @@
 					0.0782 	 0.3255 	 0.9423
 					11.8527 	 12.3025 	 -4.1769
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_scout/doorleft.ply"}
 				{bone "detail8"
 					{parameters "id=body;"}
 					{matrix34
@@ -40,7 +40,7 @@
 						-0.3338 	 -0.0247 	 0.9423
 						-0.4591 	 4.31 	 2.2751
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_scout/detail8.ply"}
 				}
 			}
 			{bone "engine"
@@ -132,7 +132,7 @@
 			{bone revolute "mgun_h_rot1"
 				{parameters "id=body;"}
 				{Position 6.2534 	 0.7311 	 14.376}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/humber_scout/mgun_h_rot1.ply"}
 				{bone "visor1"
 					{Position 5.0353 	 0 	 3.7674}
 				}
@@ -145,7 +145,7 @@
 						0 	 -1 	 0
 						-2.7708 	 0.4626 	 3.5559
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/humber_scout/mgun_h_rot2.ply"}
 					{bone "mgun1"
 						{Position -1.7063 	 0.2597 	 -1.3574}
 					}

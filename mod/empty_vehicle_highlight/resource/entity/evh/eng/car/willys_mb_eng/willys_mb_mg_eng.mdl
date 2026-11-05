@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_2_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 03.01.2026 12:43:43
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\car\Willys_MB_ENG\willys_mb_mg_eng.max
@@ -232,7 +232,7 @@
 					{limits -15 15}
 					{speed 0.008}
 					{Position 3.0127 	 2.1885 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/mgun_2_rot1.ply"}
 					{bone revolute "mgun_2_rot2"
 						{parameters "id=body;"}
 						{limits -10 20}
@@ -243,7 +243,7 @@
 							0 	 -1 	 0
 							-0.0394 	 -0.0197 	 0.9773
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/mgun_2_rot2.ply"}
 						{bone "box"
 							{parameters "id=gun;"}
 							{matrix34
@@ -252,7 +252,7 @@
 								0 	 1 	 0
 								-1.277 	 0.7825 	 3.7094
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/box.ply"}
 							{bone "lid"
 								{parameters "id=gun;"}
 								{matrix34
@@ -261,7 +261,7 @@
 									0 	 0.0349 	 0.9994
 									0.3541 	 -0.0802 	 1.5028
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/lid.ply"}
 							}
 							{bone "object001"
 								{parameters "id=gun;"}
@@ -271,7 +271,7 @@
 									0 	 0 	 1
 									0.4154 	 3.1629 	 1.9213
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 								{bone "object002"
 									{parameters "id=gun;"}
 									{matrix34
@@ -280,7 +280,7 @@
 										0 	 -0.4067 	 0.9135
 										0 	 -0.5381 	 0
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 									{bone "object003"
 										{parameters "id=gun;"}
 										{matrix34
@@ -289,7 +289,7 @@
 											0 	 -0.515 	 0.8572
 											0 	 -0.5381 	 0
 										}
-										
+										{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 										{bone "object004"
 											{parameters "id=gun;"}
 											{matrix34
@@ -298,7 +298,7 @@
 												0 	 -0.2419 	 0.9703
 												0 	 -0.5381 	 0
 											}
-											
+											{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 											{bone "object005"
 												{parameters "id=gun;"}
 												{matrix34
@@ -307,7 +307,7 @@
 													0 	 0.2079 	 0.9781
 													0 	 -0.5381 	 0
 												}
-												
+												{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 												{bone "object006"
 													{parameters "id=gun;"}
 													{matrix34
@@ -316,7 +316,7 @@
 														0 	 0.5736 	 0.8192
 														0 	 -0.5381 	 0
 													}
-													
+													{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 													{bone "object007"
 														{parameters "id=gun;"}
 														{matrix34
@@ -325,7 +325,7 @@
 															0 	 0.6157 	 0.788
 															0 	 -0.5381 	 0
 														}
-														
+														{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 														{bone "object008"
 															{parameters "id=gun;"}
 															{matrix34
@@ -334,23 +334,23 @@
 																0 	 0.225 	 0.9744
 																0 	 -0.5381 	 0
 															}
-															
+															{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 															{bone "object009"
 																{parameters "id=gun;"}
 																{Position 0 	 -0.5381 	 0}
-																
+																{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 																{bone "object010"
 																	{parameters "id=gun;"}
 																	{Position 0 	 -0.5381 	 0}
-																	
+																	{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 																	{bone "object011"
 																		{parameters "id=gun;"}
 																		{Position 0 	 -0.5381 	 0}
-																		
+																		{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 																		{bone "object012"
 																			{parameters "id=gun;"}
 																			{Position 0 	 -0.5381 	 0}
-																			
+																			{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object001.ply"}
 																		}
 																	}
 																}
@@ -370,14 +370,14 @@
 										0 	 0 	 1
 										0.0276 	 0.5303 	 0.0052
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/object025.ply"}
 								}
 							}
 						}
 						{bone "vickers"
 							{parameters "id=gun;"}
 							{Position -7.9573 	 1.4097 	 -0.0298}
-							
+							{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/vickers.ply"}
 							{bone "foresight3"
 								{matrix34
 									1 	 0 	 0
@@ -394,7 +394,7 @@
 									0 	 0.761 	 -0.6488
 									7.1321 	 1.3557 	 -0.648
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/ammo_belt.ply"}
 							}
 							{bone "hammer"
 								{parameters "id=body;"}
@@ -404,14 +404,14 @@
 									0 	 1 	 0
 									1.8703 	 0.6735 	 0.8663
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/hammer.ply"}
 							}
 						}
 					}
 					{bone revolute "mgun_3_rot1"
 						{parameters "id=body;"}
 						{Position 0.0451 	 -0.0187 	 0.6453}
-						
+						{VolumeView "../../../../-vehicle/eng/car/willys_mb_eng/mgun_3_rot1.ply"}
 						{bone "mgun_3_rot2"
 							{matrix34
 								1 	 0 	 0

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_v1_1 aim_v1_2 gun_lock gun_rot seatfleft seatfright spade tow_bar
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/210mm_h17/recoil.anm"} {speed 0.7}}
@@ -32,7 +32,7 @@
 					0 	 -1 	 0
 					-5.8268 	 0 	 12.874
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/gun_rot.ply"}
 				{bone "gun"
 					{parameters "id=gun;"}
 					{matrix34
@@ -41,26 +41,26 @@
 						0 	 1 	 0
 						55.8858 	 5.0197 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/gun.ply"}
 					{bone "breech_lock"
 						{parameters "id=gun;"}
 						{Position -57.2047 	 -4.311 	 4.0323}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/breech_lock.ply"}
 					}
 					{bone "breech"
 						{parameters "id=gun;"}
 						{Position -55.3519 	 -0.1789 	 -0.0365}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/breech.ply"}
 					}
 					{bone "handle1_1"
 						{parameters "id=gun;"}
 						{Position -61.7623 	 -2.2099 	 5.4072}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/handle1_1.ply"}
 					}
 					{bone "handle1_2"
 						{parameters "id=gun;"}
 						{Position -61.7635 	 2.2047 	 5.5757}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/handle1_2.ply"}
 					}
 					{bone "foresight1"
 						{Position 0.1894 	 0 	 0}
@@ -83,18 +83,18 @@
 			{bone "seatfright"
 				{parameters "id=body;"}
 				{Position -24.8723 	 -10.2559 	 -2.3425}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/seatfright.ply"}
 			}
 			{bone "seatfleft"
 				{parameters "id=body;"}
 				{Position -24.8723 	 9.5669 	 -4.1929}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/seatfleft.ply"}
 			}
 			{bone "gun_lock"
 				{parameters "id=body;"}
 				{Position 12.4622 	 0 	 9.7405}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/gun_lock.ply"}
 			}
 			{bone "tension_bar_gun"
 				{parameters "id=body;"}
@@ -109,12 +109,12 @@
 					0.9397 	 0 	 -0.342
 					-60.3935 	 0 	 -7.6575
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/spade.ply"}
 			}
 			{bone "tow_bar"
 				{parameters "id=body;"}
 				{Position -74.8819 	 0.0197 	 -6.1614}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/tow_bar.ply"}
 			}
 			{bone "aim_v1_1"
 				{parameters "id=body;"}
@@ -124,7 +124,7 @@
 					0.3256 	 0 	 0.9455
 					-13.9454 	 8.486 	 9.9311
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/aim_v1_1.ply"}
 			}
 			{bone "aim_v1_2"
 				{parameters "id=body;"}
@@ -134,7 +134,7 @@
 					0.3256 	 0 	 0.9455
 					-15.5206 	 8.486 	 10.4763
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/210mm_h17/aim_v1_2.ply"}
 			}
 			{bone "seat1"
 				{matrix34

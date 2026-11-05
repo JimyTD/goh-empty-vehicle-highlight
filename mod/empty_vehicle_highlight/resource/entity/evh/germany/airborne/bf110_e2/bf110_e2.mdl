@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 cockpit_top cockpitback cockpitl elevator1 elevator2 gun_rot1 mgun_rot1 propeller1 propeller1_work propeller2 propeller2_work rudder1 rudder2
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/germany/airborne/bf110_e2/engine_start.anm"} {speed 0.7}}
@@ -117,7 +117,7 @@
 					0 	 -1 	 0
 					-109.293 	 -22.7593 	 3.9465
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/elevator2.ply"}
 			}
 			{bone "shooter_bb01"
 				{Position 51.6347 	 -5.6445 	 -21.2475}
@@ -138,7 +138,7 @@
 				{limits -20 20}
 				{speed 0.1}
 				{Position -109.332 	 -45.0968 	 7.8952}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/rudder2.ply"}
 			}
 			{bone "emit2"
 				{matrix34
@@ -212,7 +212,7 @@
 					0 	 0 	 1
 					37.3476 	 -10.0924 	 2.5507
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/cockpitback.ply"}
 			}
 			{bone "cockpitr"
 				{parameters "id=body;"}
@@ -232,7 +232,7 @@
 					0 	 0 	 1
 					70.9829 	 6.2601 	 2.3596
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/cockpitl.ply"}
 			}
 			{bone "cockpit_top"
 				{parameters "id=body;"}
@@ -242,7 +242,7 @@
 					0 	 0 	 1
 					61.3675 	 -1.6415 	 12.6628
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/cockpit_top.ply"}
 			}
 			{bone "cannon"
 				{parameters "id=body;"}
@@ -264,7 +264,7 @@
 				{limits -20 20}
 				{speed 0.1}
 				{Position -109.332 	 41.3686 	 7.8952}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/rudder1.ply"}
 			}
 			{bone revolute "elevator1"
 				{parameters "id=body;"}
@@ -276,7 +276,7 @@
 					0 	 -1 	 0
 					-109.293 	 19.4785 	 3.9465
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/elevator1.ply"}
 			}
 			{bone "cockpit"
 				{parameters "id=body;"}
@@ -328,7 +328,7 @@
 							-0.1391 	 -0.9874 	 -0.0751
 							-8.7232 	 1.4052 	 0.533
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/aileron1.ply"}
 					}
 				}
 				{bone "engine1"
@@ -390,7 +390,7 @@
 							0 	 0 	 1
 							98.0268 	 44.8635 	 -10.5574
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/propeller1.ply"}
 					}
 					{bone revolute "propeller1_work"
 						{parameters "commonmesh;id=engine1;"}
@@ -401,7 +401,7 @@
 							98.0267 	 44.8635 	 -10.5574
 						}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/propeller1_work.ply"}
 					}
 					{bone "door_left1"
 						{parameters "id=engine1;"}
@@ -466,7 +466,7 @@
 							-0.1504 	 0.9865 	 -0.0651
 							-8.2358 	 -0.7807 	 0.4585
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/aileron2.ply"}
 					}
 				}
 				{bone "engine2"
@@ -491,7 +491,7 @@
 							98.0268 	 -48.1138 	 -10.5574
 						}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/propeller2_work.ply"}
 					}
 					{bone revolute "propeller2"
 						{parameters "commonmesh;id=engine2;"}
@@ -501,7 +501,7 @@
 							0 	 -0.8858 	 0.464
 							98.0268 	 -48.1138 	 -10.5574
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/propeller2.ply"}
 					}
 					{bone "fxsmoke8"
 						{matrix34
@@ -677,7 +677,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf110_e2/mg.ply"}
 					{bone "foresight6"
 						{matrix34
 							1 	 0 	 0

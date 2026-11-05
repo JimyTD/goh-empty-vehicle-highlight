@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/vickers_6ton"}
-	{bump "$/_vehicle/vickers_6ton_bp"}
-	{specular "$/_vehicle/vickers_6ton_sp"}
-	{color "255 255 255 50"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

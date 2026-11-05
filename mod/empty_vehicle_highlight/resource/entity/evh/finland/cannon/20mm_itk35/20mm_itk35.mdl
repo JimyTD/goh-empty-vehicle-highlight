@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: centleg_holder left_susp right_susp standc standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:29:52
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\Cannon\20mm ITK35\20mm_itk35.max
@@ -27,7 +27,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0 	 0.001 	 2.1197}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -41,7 +41,7 @@
 						0 	 -1 	 0
 						2.1335 	 -0.0009 	 12.1526
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -50,7 +50,7 @@
 							0 	 1 	 0
 							-4.4743 	 -0.5734 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/gun.ply"}
 						{bone "magazine"
 							{parameters "id=gun;"}
 							{matrix34
@@ -59,7 +59,7 @@
 								0 	 0 	 1
 								-0.2078 	 3.9489 	 0.5425
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/magazine.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -108,7 +108,7 @@
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/aim_ver.ply"}
 					}
 				}
 				{bone "aim_h_helper"
@@ -121,23 +121,23 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/aim_hor.ply"}
 					}
 				}
 				{bone "1"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/1.ply"}
 				}
 			}
 			{bone "standc"
 				{parameters "id=body;"}
 				{Position -8.3971 	 0 	 1.7874}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/standc.ply"}
 			}
 			{bone "centleg_holder"
 				{parameters "id=body;"}
 				{Position -7.1329 	 -0.2434 	 -1.1985}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/centleg_holder.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
@@ -147,7 +147,7 @@
 					0 	 0 	 1
 					4.0615 	 7.3399 	 1.7874
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/standl.ply"}
 				{bone "leftleg_holder"
 					{parameters "id=body;"}
 					{matrix34
@@ -156,7 +156,7 @@
 						0 	 0 	 1
 						-0.1084 	 -1.2662 	 -2.9858
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/leftleg_holder.ply"}
 				}
 			}
 			{bone "standr"
@@ -167,7 +167,7 @@
 					0 	 0 	 1
 					4.2865 	 -7.1759 	 1.7874
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/standr.ply"}
 				{bone "rightleg_holder"
 					{parameters "id=body;"}
 					{matrix34
@@ -176,7 +176,7 @@
 						0 	 0 	 1
 						0.1304 	 1.2642 	 -2.9858
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/rightleg_holder.ply"}
 				}
 			}
 		}
@@ -190,7 +190,7 @@
 					0 	 -0.6691 	 0.7431
 					-0.0007 	 8.0852 	 0.4843
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/left_susp.ply"}
 				{bone revolute "wheell"
 					{parameters "id=wheelleft;"}
 					{matrix34
@@ -200,7 +200,7 @@
 						0.0007 	 2.6598 	 -1.1242
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/wheell.ply"}
 				}
 			}
 			{bone "right_susp"
@@ -211,7 +211,7 @@
 					0 	 0.6691 	 0.7431
 					-0.0007 	 -8.0844 	 0.4848
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/right_susp.ply"}
 				{bone revolute "wheelr"
 					{parameters "id=wheelright;"}
 					{matrix34
@@ -221,7 +221,7 @@
 						0.0007 	 -2.6479 	 -1.1247
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk35/wheelr.ply"}
 				}
 			}
 		}

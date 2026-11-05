@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: board_back board_left board_right
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 13.05.2024 11:18:58
 ;File:			 D:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\btr\sdkfz6_2\Sdkfz 6_cargo.max
@@ -281,65 +281,98 @@
 				{bone "board_right"
 					{parameters "id=bodyback;"}
 					{Position -31.0448 	 -23.5628 	 9.2795}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_right.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_right_lod1.ply"}
+					}
 					{bone "grid_right"
 						{parameters "id=bodyback;"}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/grid_right.ply"}
 					}
 					{bone "detail7"
 						{parameters "id=bodyback;"}
 						{Position -15.1607 	 -0.8608 	 5.575}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail7.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail7_lod1.ply"}
+						}
 					}
 					{bone "detail4"
 						{parameters "id=bodyback;"}
 						{Position 16.4746 	 -0.6842 	 5.9523}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail4.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail4_lod1.ply"}
+						}
 					}
 				}
 				{bone "board_left"
 					{parameters "id=bodyback;"}
 					{Position -31.0436 	 23.531 	 9.2887}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_left.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_left_lod1.ply"}
+					}
 					{bone "grid_left"
 						{parameters "id=bodyback;"}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/grid_left.ply"}
 					}
 					{bone "detail5"
 						{parameters "id=bodyback;"}
 						{Position 20.8462 	 1.2335 	 5.6322}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail5.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail5_lod1.ply"}
+						}
 					}
 					{bone "detail6"
 						{parameters "id=bodyback;"}
 						{Position -17.4998 	 0.6773 	 5.6577}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail6.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/detail6_lod1.ply"}
+						}
 					}
 				}
 				{bone "board_back"
 					{parameters "id=bodyback;"}
 					{Position -68.0832 	 0.0001 	 9.2816}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_back.ply"}
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/board_back_lod1.ply"}
+					}
 					{bone "grid_back"
 						{parameters "id=bodyback;"}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/grid_back.ply"}
 					}
 					{bone "step_left1"
 						{parameters "id=bodyback;"}
 						{Position -0.7873 	 23.3534 	 6.1586}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left1.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left1_lod1.ply"}
+						}
 						{bone "step_left2"
 							{parameters "id=bodyback;"}
 							{Position 0.7348 	 -8.02 	 0}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left2.ply"}
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left2_lod1.ply"}
+							}
 							{bone "step_left3"
 								{parameters "id=bodyback;"}
 								{Position 0.0028 	 -1.1938 	 0.0011}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left3.ply"}
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left3_lod1.ply"}
+								}
 								{bone "step_left4"
 									{parameters "id=bodyback;"}
 									{Position 0.0096 	 -2.3245 	 0.0036}
-									
+									{LODView
+										{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left4.ply"}
+										{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_left4_lod1.ply"}
+									}
 								}
 							}
 						}
@@ -347,19 +380,31 @@
 					{bone "step_right1"
 						{parameters "id=bodyback;"}
 						{Position -0.7445 	 -23.3942 	 6.1586}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right1.ply"}
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right1_lod1.ply"}
+						}
 						{bone "step_right2"
 							{parameters "id=bodyback;"}
 							{Position 0.692 	 8.0416 	 0}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right2.ply"}
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right2_lod1.ply"}
+							}
 							{bone "step_right3"
 								{parameters "id=bodyback;"}
 								{Position 0.0028 	 1.207 	 0.0011}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right3.ply"}
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right3_lod1.ply"}
+								}
 								{bone "step_right4"
 									{parameters "id=bodyback;"}
 									{Position 0.0096 	 2.3245 	 0.0036}
-									
+									{LODView
+										{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right4.ply"}
+										{VolumeView "../../../../-vehicle/germany/btr/sdkfz6_cargo/step_right4_lod1.ply"}
+									}
 								}
 							}
 						}

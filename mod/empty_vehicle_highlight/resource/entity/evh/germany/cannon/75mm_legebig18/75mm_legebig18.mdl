@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun shielddoor standl standr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/75mm_legebig18/recoil.anm"} {speed 0.4}}
@@ -30,7 +30,7 @@
 					0 	 0 	 1
 					0.0014 	 5.7591 	 -0.0077
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/standl.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
@@ -40,12 +40,12 @@
 					0 	 0 	 1
 					0.0014 	 -5.7519 	 -0.0077
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/standr.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 0.3393}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -57,11 +57,11 @@
 						0 	 -1 	 0
 						-8.3358 	 -0.0003 	 4.9745
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 4.3445 	 -0.0524 	 -0.0325}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/gun.ply"}
 						{bone "gun_barrel"
 							{parameters "id=gun;"}
 							{matrix34
@@ -70,7 +70,7 @@
 								0 	 1 	 0
 								13.2681 	 1.7426 	 0.0061
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/gun_barrel.ply"}
 							{bone "fx_invers"
 								{matrix34
 									-1 	 0 	 0
@@ -88,7 +88,7 @@
 								0 	 1 	 0
 								-2.3948 	 3.4528 	 1.5041
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/handle.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -103,11 +103,11 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 4.0042 	 -0.0019 	 5.3783}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/shield.ply"}
 					{bone "shielddoor"
 						{parameters "id=shield;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/shielddoor.ply"}
 					}
 				}
 				{bone "visor"
@@ -121,12 +121,12 @@
 						-0.2746 	 -0.0279 	 0.9611
 						-10.2947 	 -4.7006 	 1.3327
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
 					{Position -11.6745 	 4.1538 	 1.1698}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/75mm_legebig18/aim_wheel1.ply"}
 				}
 			}
 		}

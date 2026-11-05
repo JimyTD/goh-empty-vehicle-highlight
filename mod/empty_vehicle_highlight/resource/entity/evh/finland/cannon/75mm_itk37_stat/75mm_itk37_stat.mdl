@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor aim_ver
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 05.02.2025 14:07:14
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_fin\3d vehicles\Cannon\75mm_itk37\75mm_itk37_static.max
@@ -82,12 +82,12 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 5.0817 	 -9.2002 	 9.6566}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37_stat/aim_hor.ply"}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 3.6285 	 11.7181 	 13.0249}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_itk37_stat/aim_ver.ply"}
 					}
 					{bone "visor2"
 						{Position 7.4871 	 -13.0652 	 21.2884}

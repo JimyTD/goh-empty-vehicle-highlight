@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor aim_ver detail1 detail2 detail3 foot_b foot_l foot_r gun_rot lever_b lever_r magazine01 magazine02 magazine03 magazine04 saetbase_l seatbase_r shield4 shield5 shield6 shield7 susp_l susp_r trailer_body
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.08.2024 10:52:17
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\cannon\20mm_flakvierling38\20mm_flakvierling38.max
@@ -49,7 +49,10 @@
 						0 	 -1 	 0
 						-0.2472 	 0 	 11.2698
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun_rot_lod1.ply"}
+					}
 					{bone "foresight1"
 						{matrix34
 							1 	 0 	 0
@@ -66,7 +69,7 @@
 							0 	 1 	 0
 							11.1036 	 4.2516 	 -6.9492
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun1.ply"}
 						{bone "shooter00"
 							{matrix34
 								1 	 0 	 0
@@ -78,7 +81,7 @@
 						{bone "magazine01"
 							{parameters "id=gun;"}
 							{Position -9.7859 	 1.993 	 -0.9327}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/magazine01.ply"}
 						}
 					}
 					{bone "gun2"
@@ -89,7 +92,7 @@
 							0 	 1 	 0
 							11.1036 	 -2.6449 	 6.9524
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun2.ply"}
 						{bone "shooter01"
 							{matrix34
 								1 	 0 	 0
@@ -101,7 +104,7 @@
 						{bone "magazine02"
 							{parameters "id=gun;"}
 							{Position -9.7859 	 -2.0108 	 0.7849}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/magazine02.ply"}
 						}
 					}
 					{bone "gun3"
@@ -112,7 +115,7 @@
 							0 	 1 	 0
 							11.1036 	 -2.6722 	 -6.9492
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun3.ply"}
 						{bone "shooter02"
 							{matrix34
 								1 	 0 	 0
@@ -124,7 +127,7 @@
 						{bone "magazine03"
 							{parameters "id=gun;"}
 							{Position -9.7859 	 1.993 	 0.8704}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/magazine03.ply"}
 						}
 					}
 					{bone "gun4"
@@ -135,7 +138,7 @@
 							0 	 1 	 0
 							11.1036 	 4.2788 	 6.9524
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/gun4.ply"}
 						{bone "shooter03"
 							{matrix34
 								1 	 0 	 0
@@ -147,7 +150,7 @@
 						{bone "magazine04"
 							{parameters "id=gun;"}
 							{Position -9.7859 	 -2.0108 	 -0.96}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/magazine04.ply"}
 						}
 					}
 					{bone "shield2"
@@ -158,7 +161,7 @@
 							0 	 1 	 0
 							10.1015 	 -0.7126 	 5.803
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield2.ply"}
 					}
 					{bone "shield3"
 						{parameters "id=gun;"}
@@ -168,7 +171,7 @@
 							0 	 1 	 0
 							10.1015 	 -0.7126 	 -5.8048
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield3.ply"}
 					}
 				}
 				{bone "rod"
@@ -184,7 +187,7 @@
 				{bone "seatbase_r"
 					{parameters "id=body;"}
 					{Position -14.5766 	 -12.0716 	 -1.2387}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/seatbase_r.ply"}
 					{bone "seat_r"
 						{parameters "id=body;"}
 						{matrix34
@@ -193,13 +196,13 @@
 							0 	 0 	 1
 							8.6036 	 -7.8121 	 0.29
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/seat_r.ply"}
 					}
 				}
 				{bone "saetbase_l"
 					{parameters "id=body;"}
 					{Position -14.5766 	 12.0716 	 -1.2387}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/saetbase_l.ply"}
 					{bone "seat_l"
 						{parameters "id=body;"}
 						{matrix34
@@ -208,23 +211,23 @@
 							0 	 0 	 1
 							8.5552 	 7.8943 	 0.29
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/seat_l.ply"}
 					}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position -12.7425 	 -1.9625 	 13.7363}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/aim_ver.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -3.0468 	 -9.6574 	 0.9524}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -0.5402 	 -9.6574 	 0.9524}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
@@ -234,12 +237,12 @@
 						0 	 0 	 1
 						3.2847 	 -9.7309 	 0.9524
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/detail3.ply"}
 				}
 				{bone "shield4"
 					{parameters "id=shield1;"}
 					{Position 8.4284 	 8.4715 	 -1.8152}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield4.ply"}
 					{bone "shield5"
 						{parameters "id=shield1;"}
 						{matrix34
@@ -248,13 +251,13 @@
 							-0.3907 	 0 	 0.9205
 							-1.8965 	 0.1657 	 25.6703
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield5.ply"}
 					}
 				}
 				{bone "shield6"
 					{parameters "id=shield6;"}
 					{Position 8.4284 	 -8.4715 	 -1.8152}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield6.ply"}
 					{bone "shield7"
 						{parameters "id=shield6;"}
 						{matrix34
@@ -263,7 +266,7 @@
 							-0.3907 	 0 	 0.9205
 							-1.8965 	 -0.1657 	 25.6703
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/shield7.ply"}
 					}
 				}
 				{bone "aim_h_helper"
@@ -276,7 +279,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/aim_hor.ply"}
 					}
 				}
 				{bone "charger"
@@ -318,27 +321,27 @@
 			{bone "lever_r"
 				{parameters "id=body;"}
 				{Position 14.7236 	 -19.6459 	 1.9188}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/lever_r.ply"}
 			}
 			{bone "lever_b"
 				{parameters "id=body;"}
 				{Position -28.4748 	 -0.0046 	 1.9271}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/lever_b.ply"}
 			}
 			{bone "foot_r"
 				{parameters "id=body;"}
 				{Position 14.7236 	 -19.6459 	 -1.7148}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/foot_r.ply"}
 			}
 			{bone "foot_l"
 				{parameters "id=body;"}
 				{Position 14.7236 	 19.6286 	 -1.7148}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/foot_l.ply"}
 			}
 			{bone "foot_b"
 				{parameters "id=body;"}
 				{Position -28.4748 	 -0.0046 	 -1.7148}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/foot_b.ply"}
 			}
 			{bone "seat3"
 				{matrix34
@@ -369,18 +372,21 @@
 				-58.5175 	 0.0087 	 8.6238
 			}
 			{visibility 0}
-			
+			{LODView
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/trailer_body.ply"}
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/trailer_body_lod1.ply"}
+			}
 			{bone "trailer_leverr"
 				{parameters "id=body;"}
 				{Position 17.0353 	 -16.6059 	 7.1058}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/trailer_leverr.ply"}
 			}
 			{bone "trailer_leverl"
 				{parameters "id=body;"}
 				{Position 17.0353 	 16.5886 	 7.1058}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/trailer_leverl.ply"}
 			}
 		}
 		{bone "driver3"
@@ -459,7 +465,7 @@
 					0 	 15.64 	 0
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/susp_l.ply"}
 			}
 			{bone "susp_r"
 				{parameters "id=body;"}
@@ -470,7 +476,7 @@
 					0 	 -15.64 	 0
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flakvierling38/susp_r.ply"}
 			}
 			{bone "fxtracer1"
 				{matrix34

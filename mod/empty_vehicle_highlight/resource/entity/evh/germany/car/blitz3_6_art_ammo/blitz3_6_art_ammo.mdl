@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.07.2020 18:11:05
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\blitz3_6\opel_blitz_3_6_ammo.max
@@ -229,7 +229,7 @@
 						0 	 -0.1564 	 0.9877
 						29.646 	 -11.2493 	 -3.1149
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_art_ammo/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -238,7 +238,7 @@
 							0 	 0.1564 	 0.9877
 							-9.1806 	 0.4875 	 17.9812
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_art_ammo/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -249,7 +249,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						29.8257 	 11.5232 	 -2.5379
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6_art_ammo/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -258,7 +258,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.689 	 1.0591 	 17.6918
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6_art_ammo/glassl.ply"}
 					}
 				}
 			}

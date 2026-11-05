@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: bipod_base stan_l stan_r turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.05.2022 10:02:54
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\bm37\82mm_bm37.max
@@ -52,7 +52,7 @@
 						0 	 -1 	 0
 						0 	 0.046 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/gun_rot.ply"}
 					{bone "grip"
 						{parameters "id=body;"}
 						{matrix34
@@ -61,7 +61,7 @@
 							0 	 1 	 0
 							7.822 	 -1.6792 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/grip.ply"}
 					}
 					{bone "gun"
 						{orientation
@@ -104,7 +104,7 @@
 				{bone "bipod_base"
 					{parameters "id=body;"}
 					{Position 7.822 	 0.046 	 -1.6792}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/bipod_base.ply"}
 					{bone "stan_r"
 						{parameters "id=body;"}
 						{matrix34
@@ -113,7 +113,7 @@
 							0.8746 	 0 	 0.4848
 							8.4453 	 0 	 9.7698
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/stan_r.ply"}
 						{bone "support2"
 							{matrix34
 								0.4848 	 0 	 0.8746
@@ -131,7 +131,7 @@
 							0.8746 	 0 	 0.4848
 							8.4453 	 0 	 9.7698
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/stan_l.ply"}
 						{bone "support1"
 							{matrix34
 								0.4848 	 0 	 0.8746
@@ -144,7 +144,7 @@
 					{bone "connector"
 						{parameters "id=body;"}
 						{Position 11.0591 	 -1.9032 	 5.1161}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/connector.ply"}
 					}
 					{bone "washer"
 						{parameters "id=body;"}
@@ -154,7 +154,7 @@
 							-0.4848 	 0 	 0.8746
 							11.3743 	 -0.1377 	 4.544
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/82mm_bm37/washer.ply"}
 					}
 				}
 				{bone "commander"

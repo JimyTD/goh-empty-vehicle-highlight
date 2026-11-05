@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 27.02.2022 22:29:37
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\tank_light\t50\t-50.max
@@ -28,7 +28,7 @@
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 30.6194 	 2.5841 	 14.4054}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t50/driver_hatch.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -36,7 +36,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t50/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 11.4713 	 0 	 16.0178}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t50/turret.ply"}
 				{bone "cover1_help"
 					{matrix34
 						0.9853 	 0.1711 	 0
@@ -47,7 +47,7 @@
 					{bone "cover1"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t50/cover1.ply"}
 					}
 				}
 				{bone "cover2_help"
@@ -60,7 +60,7 @@
 					{bone "cover2"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t50/cover2.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -74,7 +74,7 @@
 						0 	 -1 	 0
 						14.0451 	 0 	 3.4722
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t50/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -83,7 +83,7 @@
 							0 	 1 	 0
 							9.5175 	 0.4671 	 -0.0455
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t50/gun.ply"}
 						{bone "foresight1"
 							{Position 19.7351 	 -0.0265 	 0.2478}
 						}
@@ -96,7 +96,7 @@
 							0 	 1 	 0
 							-2.0458 	 0.8917 	 6.2266
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t50/mgun2.ply"}
 						{bone "foresight5"
 							{Position 11.8488 	 1.4158 	 0.2156}
 						}
@@ -116,20 +116,20 @@
 						0.2585 	 -0.0692 	 0.9635
 						-16.0109 	 3.8207 	 5.8591
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t50/turret_door.ply"}
 				}
 				{bone "cover3"
 					{parameters "id=turret;"}
 					{Position -9.3452 	 -4.4301 	 12.8198}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t50/cover3.ply"}
 				}
 				{bone "enumerator2"
 					{Position -10.3718 	 -10.8743 	 4.5579}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t50/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position -10.6332 	 10.4915 	 4.5008}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t50/enumerator1.ply"}
 				}
 				{bone "visor1"
 					{Position 9.8663 	 6.5296 	 8.9309}

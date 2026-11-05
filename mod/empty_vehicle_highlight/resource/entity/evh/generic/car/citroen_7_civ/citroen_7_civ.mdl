@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorleft2 doorright1 doorright2
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.04.2025 14:26:27
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_generic\vehicles\car\citroen traction avant\citroen_7_civ.max
@@ -74,41 +74,41 @@
 			{bone "doorright1"
 				{parameters "id=body;"}
 				{Position -6.6521 	 -15.8765 	 -5.0589}
-				
+				{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/doorright1.ply"}
 				{bone "window3"
 					{parameters "id=window3;"}
 					{Position 7.3653 	 1.6682 	 5.9095}
-					
+					{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/window3.ply"}
 				}
 			}
 			{bone "doorright2"
 				{parameters "id=body;"}
 				{Position -7.161 	 -15.7413 	 -5.0172}
-				
+				{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/doorright2.ply"}
 				{bone "window5"
 					{parameters "id=window5;"}
 					{Position -8.1134 	 0.5376 	 5.7799}
-					
+					{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/window5.ply"}
 				}
 			}
 			{bone "doorleft1"
 				{parameters "id=body;"}
 				{Position -6.6521 	 12.662 	 -5.0589}
-				
+				{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/doorleft1.ply"}
 				{bone "window2"
 					{parameters "id=window2;"}
 					{Position 7.3653 	 -1.5504 	 5.9095}
-					
+					{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/window2.ply"}
 				}
 			}
 			{bone "doorleft2"
 				{parameters "id=body;"}
 				{Position -7.161 	 12.6699 	 -5.0172}
-				
+				{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/doorleft2.ply"}
 				{bone "window4"
 					{parameters "id=window4;"}
 					{Position -8.1134 	 -0.5629 	 5.7799}
-					
+					{VolumeView "../../../../-vehicle/generic/car/citroen_7_civ/window4.ply"}
 				}
 			}
 			{bone "window1"

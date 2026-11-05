@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/tiger_ii_porsche"}
-	{bump "$/_vehicle/tiger_ii_porsche_bp"}
-	{specular "$/_vehicle/tiger_ii_porsche_sp"}
-	{color "230 230 230 25"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

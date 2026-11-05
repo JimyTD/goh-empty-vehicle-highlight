@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 23.09.2023 15:07:48
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\cannon\bunker_mg_ring\bunker_mg_ring.max
@@ -23,17 +23,17 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 -1.2238}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/turret.ply"}
 				{bone "fixer"
 					{parameters "id=body;"}
 					{Position 0.6681 	 -8.8884 	 -0.2597}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/fixer.ply"}
 				}
 				{bone revolute "mgun_1_rot1"
 					{parameters "id=body;"}
 					{limits -10 10}
 					{Position 9.3405 	 0 	 2.1825}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -15 20}
@@ -43,7 +43,7 @@
 							0 	 -1 	 0
 							-0.0151 	 0 	 0.6645
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/mgun_1_rot2.ply"}
 						{bone "mgun"
 							{Position -4.3856 	 -0.2228 	 -0.0007}
 						}
@@ -52,12 +52,12 @@
 				{bone "shield1"
 					{parameters "id=shield;"}
 					{Position 8.7775 	 3.8253 	 1.404}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/shield1.ply"}
 				}
 				{bone "shield2"
 					{parameters "id=shield;"}
 					{Position 9.0594 	 -3.8754 	 1.1009}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/mgun_ring/shield2.ply"}
 				}
 				{bone "gunner"
 					{matrix34

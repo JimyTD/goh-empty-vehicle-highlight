@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 01.06.2021 12:23:26
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\car\gaz_aaa_fuel\GAZ-AAA_fuel.max
@@ -115,7 +115,7 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 5.1347 	 -11.662 	 10.5102}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/doorright.ply"}
 					{bone "window3"
 						{parameters "id=window3;"}
 						{matrix34
@@ -124,17 +124,17 @@
 							0 	 0 	 1
 							-7.3406 	 -0.7458 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/window3.ply"}
 					}
 					{bone "enumerator3"
 						{Position -3.4581 	 -0.4847 	 -3.1222}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/enumerator3.ply"}
 					}
 				}
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 5.1484 	 11.637 	 10.5169}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/doorleft.ply"}
 					{bone "window2"
 						{parameters "id=window2;"}
 						{matrix34
@@ -143,11 +143,11 @@
 							0 	 0 	 1
 							-7.3479 	 0.7707 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/window2.ply"}
 					}
 					{bone "enumerator2"
 						{Position -11.0296 	 1.6711 	 -3.1263}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_fuel/enumerator2.ply"}
 					}
 				}
 				{bone "commander"

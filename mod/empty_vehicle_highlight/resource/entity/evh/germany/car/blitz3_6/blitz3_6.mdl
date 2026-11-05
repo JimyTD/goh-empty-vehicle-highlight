@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 doorl doorr
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 18.03.2025 20:39:48
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\car\blitz3_6\opel_blitz_3_6.max
@@ -44,7 +44,7 @@
 						0 	 -0.1564 	 0.9877
 						29.646 	 -11.2493 	 -3.1149
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -53,7 +53,7 @@
 							0 	 0.1564 	 0.9877
 							-9.174 	 0.4934 	 17.9737
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -64,7 +64,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						29.8257 	 11.5232 	 -2.5379
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -73,7 +73,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.6795 	 1.0623 	 17.6914
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/blitz3_6/glassl.ply"}
 					}
 				}
 				{bone "driver"
@@ -135,7 +135,7 @@
 						0 	 -0.9998 	 -0.0175
 						-34.1383 	 -0.0127 	 13.3652
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/blitz3_6/cover1.ply"}
 				}
 				{bone "seat01"
 					{matrix34

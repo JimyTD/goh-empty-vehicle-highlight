@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door1 back_door2 mgun_rear_holder turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 21.10.2023 09:08:48
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger2\vehicles\btr\sdkfz251d_21_mg151\sdkfz251d_21_mg151.max
@@ -82,7 +82,7 @@
 					0 	 0 	 1
 					-54.2445 	 0.0011 	 22.847
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/mgun_rear_holder.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -118,7 +118,7 @@
 							0 	 -1 	 0
 							0 	 0 	 1
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/mgun_rear_holder2.ply"}
 					}
 				}
 			}
@@ -220,7 +220,7 @@
 					0.8753 	 0 	 0.4836
 					-55.211 	 10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/back_door1.ply"}
 			}
 			{bone "back_door2"
 				{parameters "id=body;"}
@@ -230,7 +230,7 @@
 					0.8734 	 0 	 0.4871
 					-55.2181 	 -10.3628 	 18.2761
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/back_door2.ply"}
 			}
 			{bone "transmission"
 				{Position 10.2156 	 0 	 -0.2838}
@@ -323,7 +323,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz251d_21/gun_r.anm"}{speed 0.7}}
 				}
 				{Position -12.3572 	 -0.0002 	 4.8113}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -5 60}
@@ -333,7 +333,7 @@
 						0 	 -1 	 0
 						0.9433 	 -0.0001 	 25.4528
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun_rot.ply"}
 					{bone "gun_shield"
 						{parameters "id=gun;"}
 						{matrix34
@@ -342,7 +342,7 @@
 							0 	 1 	 0
 							0.3348 	 -0.4433 	 -0.0003
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun_shield.ply"}
 					}
 					{bone "gun1"
 						{parameters "id=gun;"}
@@ -352,11 +352,11 @@
 							0 	 1 	 0
 							-6.1317 	 -0.2034 	 -5.7551
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun1.ply"}
 						{bone "b1"
 							{parameters "id=gun;"}
 							{Position 11.3599 	 0.2299 	 0.2299}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/b1.ply"}
 							{bone "shooter00"
 								{Position 22.5375 	 0.0177 	 0.0006}
 							}
@@ -370,11 +370,11 @@
 							0 	 1 	 0
 							-4.1946 	 -0.2986 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun2.ply"}
 						{bone "b2"
 							{parameters "id=gun;"}
 							{Position 11.3599 	 0 	 0.3251}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/b2.ply"}
 							{bone "shooter01"
 								{matrix34
 									1 	 0 	 0
@@ -393,11 +393,11 @@
 							0 	 1 	 0
 							-6.1317 	 -0.2034 	 5.7761
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun3.ply"}
 						{bone "b3"
 							{parameters "id=gun;"}
 							{Position 11.3599 	 -0.2299 	 0.2299}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/b3.ply"}
 							{bone "shooter02"
 								{Position 22.5557 	 -0.0274 	 -0.0297}
 							}
@@ -467,7 +467,7 @@
 							0 	 1 	 0
 							-10.1053 	 -1.6591 	 -0.5543
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/gun_seat.ply"}
 					}
 					{bone "camera"
 						{matrix34
@@ -481,22 +481,22 @@
 				{bone "magazine00"
 					{parameters "id=gun;"}
 					{Position 0.7538 	 8.5786 	 1.4012}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/magazine00.ply"}
 				}
 				{bone "magazine01"
 					{parameters "id=gun;"}
 					{Position 8.6067 	 -0.001 	 1.6287}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/magazine01.ply"}
 				}
 				{bone "magazine02"
 					{parameters "id=gun;"}
 					{Position 0.7516 	 -8.5828 	 1.404}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/magazine02.ply"}
 				}
 				{bone "belt_all"
 					{parameters "id=gun;"}
 					{Position -1.6573 	 6.3335 	 24.0867}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz251d_21/belt_all.ply"}
 				}
 				{bone "gunner"
 					{Position -11.8832 	 0.0002 	 8.9847}

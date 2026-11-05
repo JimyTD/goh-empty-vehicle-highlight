@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/tracks/track_tiger_e"}
-	{bump "$/_vehicle/tracks/track_tiger_e_bp"}
-	{specular "$/_vehicle/tracks/track_tiger_e_sp"}
-	{color "255 255 255 152"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

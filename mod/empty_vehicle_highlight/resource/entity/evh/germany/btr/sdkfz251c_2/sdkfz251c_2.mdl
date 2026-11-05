@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr leveler mg_support
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 27.01.2025 17:47:04
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\btr\sdkfz251\SdKfz 251_С_2_export.max
@@ -60,12 +60,12 @@
 			{bone "doorr"
 				{parameters "id=body;"}
 				{Position -53.9185 	 -12.0286 	 1.9847}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c_2/doorr.ply"}
 			}
 			{bone "doorl"
 				{parameters "id=body;"}
 				{Position -53.918 	 12.0276 	 1.9882}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c_2/doorl.ply"}
 			}
 			{bone "at1"
 				{parameters "id=body;"}
@@ -224,7 +224,7 @@
 					0 	 0 	 1
 					-47.4748 	 0 	 11.8902
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c_2/mg_support.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -40 45}
 					{matrix34
@@ -252,7 +252,7 @@
 								0.9744 	 0.225 	 0
 								0.0178 	 0.4671 	 0.0062
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c_2/mg_holder2.ply"}
 						}
 						{bone "gunner4"
 							{matrix34
@@ -271,7 +271,7 @@
 							0 	 0 	 1
 							-0.0014 	 0.0055 	 -0.1246
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz251c_2/mg_holder1.ply"}
 					}
 				}
 			}

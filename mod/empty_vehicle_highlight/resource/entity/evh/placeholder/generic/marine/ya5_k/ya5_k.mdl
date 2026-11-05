@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: dshk_turretb dshk_turretf flag fx_exp1 fx_exp2 fx_exp4
+;// moving parts without geometry: -
 ;Exported by: ubrashaev
 ;Date:        Wed Jul 20 15:08:33 2005
 ;File:        D:\-Projects1_5-\-work-\3d\-Model-\-�������\�\ya5.max
@@ -268,7 +268,7 @@
 							-1	0	0
 							-13.974	147.764	36.8773
 						}
-						
+						{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_turret.ply"}
 						{bone "gunner1"
 							{Matrix34
 								0	1	0
@@ -287,7 +287,7 @@
 								1	0	0
 								0	0	0
 							}
-							
+							{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_gun_rot.ply"}
 							{bone "dshk_gunF"
 								{parameters "ID=gun;"}
 								{Matrix34
@@ -296,7 +296,7 @@
 									0	-0.00195932	0.999998
 									-1.78297	-0.40419	-0.0192071
 								}
-								
+								{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_gun.ply"}
 								{bone "foresight5"
 									{parameters "Vis;"}
 									{Matrix34
@@ -344,7 +344,7 @@
 							-1	0	0
 							-13.974	147.764	36.8773
 						}
-						
+						{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_turret.ply"}
 						{bone "gunner2"
 							{Matrix34
 								0	1	0
@@ -363,7 +363,7 @@
 								1	0	0
 								0	0	0
 							}
-							
+							{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_gun_rot.ply"}
 							{bone "dshk_gunB"
 								{parameters "ID=gun;"}
 								{Matrix34
@@ -372,7 +372,7 @@
 									0	-0.00195932	0.999998
 									-1.78297	-0.40419	-0.0192071
 								}
-								
+								{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/dshk_gun.ply"}
 								{bone "foresight6"
 									{parameters "Vis;"}
 									{Matrix34
@@ -474,7 +474,7 @@
 					0	-1	0
 					-23.5228	-0.394688	151.36
 				}
-				
+				{VolumeView "../../../../../-vehicle/placeholder/generic/marine/ya5_k/flag.ply"}
 			}
 			{bone "body_front"
 				{parameters "ID=body_front;"}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot shield shield_lower standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 08.06.2022 17:26:14
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\cannon\m43\76mm_m43.max
@@ -33,7 +33,11 @@
 					-0.1045 	 0 	 0.9945
 					-1.1525 	 -7.3955 	 -0.3644
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standr.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standr_lod1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standr_lod2.ply"}
+				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
@@ -43,7 +47,11 @@
 					-0.1045 	 0 	 0.9945
 					-1.2887 	 7.5119 	 -0.3296
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standl.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standl_lod1.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/standl_lod2.ply"}
+				}
 			}
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
@@ -53,12 +61,12 @@
 					-0.1045 	 0 	 0.9945
 					1.5481 	 -0.0061 	 -1.4234
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/shield_lower.ply"}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.9997 	 0.1537 	 2.0228}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -70,7 +78,7 @@
 						0 	 -1 	 0
 						-0.1752 	 -0.0041 	 1.5112
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -79,7 +87,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/gun.ply"}
 						{bone "foresight1"
 							{Position 16.74 	 0.0404 	 2.427}
 						}
@@ -97,7 +105,7 @@
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -12.0001 	 -1.8697 	 1.7559}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/lever.ply"}
 						}
 					}
 				}
@@ -109,7 +117,7 @@
 						-0.1045 	 0 	 0.9945
 						-7.1467 	 -0.0041 	 0.7784
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/shield.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -119,7 +127,7 @@
 						0.057 	 -0.0119 	 0.9983
 						-11.4201 	 6.0175 	 0.9485
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
@@ -129,7 +137,7 @@
 						0.2183 	 -0.182 	 0.9588
 						-9.9317 	 7.3444 	 3.5299
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m43/aim_wheel1.ply"}
 				}
 			}
 			{bone "link1"

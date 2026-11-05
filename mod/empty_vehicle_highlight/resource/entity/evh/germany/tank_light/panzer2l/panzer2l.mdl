@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:25:18
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\tank_light\pz2luchs\panzer2l_export.max
@@ -30,7 +30,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer2l/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 0.8348 	 -0.0394 	 14.1811}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -39,7 +39,7 @@
 						0 	 -1 	 0
 						12.9192 	 0.0424 	 3.9082
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -48,7 +48,10 @@
 							0 	 1 	 0
 							6.3621 	 -0.1778 	 0.0047
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/gun_lod1.ply"}
+						}
 					}
 					{bone "foresight3"
 						{matrix34
@@ -66,7 +69,7 @@
 							0 	 1 	 0
 							1.0071 	 -0.0935 	 -7.2691
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/tmgu.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -80,7 +83,7 @@
 				{bone "hatch"
 					{parameters "id=turret;"}
 					{Position -12.2035 	 5.0999 	 9.8052}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/hatch.ply"}
 				}
 				{bone "visor1"
 					{Position -1.9474 	 4.592 	 10.9505}
@@ -95,12 +98,12 @@
 				}
 				{bone "enumerator"
 					{Position 2.3084 	 -12.7622 	 5.5093}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/enumerator.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -12.7442 	 11.0448 	 10.8331}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer2l/antenna1.ply"}
 				}
 				{bone "smoke_shot6"
 					{matrix34

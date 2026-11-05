@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch2 hatch_driver turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 11.11.2025 22:07:07
 ;File:			 E:\SVN GoH UK 3D models\vehicles\tank_medium\17pdr_SP_m10_achilles\Achilles_mk2.max
@@ -36,7 +36,7 @@
 				}
 				{speed 0.006}
 				{Position -0.4098 	 0 	 18.6678}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -50,7 +50,7 @@
 						0 	 -1 	 0
 						20.4523 	 -0.0179 	 5.5253
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -59,7 +59,7 @@
 							0 	 1 	 0
 							-17.6656 	 0 	 -0.0179
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -76,7 +76,7 @@
 								0 	 0 	 1
 								-4.5973 	 0 	 -0.0685
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/breechblock.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -98,7 +98,7 @@
 						0 	 0 	 1
 						-23.2952 	 0 	 14.643
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -10 30}
@@ -108,7 +108,7 @@
 							0 	 -1 	 0
 							-0.0105 	 4.0321 	 3.9989
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -10.1639 	 0.5405 	 3.9209}
 						}
@@ -155,12 +155,12 @@
 				{bone "detail6"
 					{parameters "id=turret;"}
 					{Position 5.1269 	 0.889 	 4.0996}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/detail6.ply"}
 				}
 				{bone "detail7"
 					{parameters "id=turret;"}
 					{Position 2.0996 	 -1.5163 	 7.4002}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/detail7.ply"}
 				}
 				{bone "sten3"
 					{matrix34
@@ -169,7 +169,7 @@
 						-0.2445 	 -0.8189 	 -0.5193
 						-6.8443 	 19.3505 	 5.9101
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/sten3.ply"}
 				}
 				{bone "sten4"
 					{matrix34
@@ -178,7 +178,7 @@
 						-0.2445 	 -0.8189 	 -0.5193
 						-7.7536 	 17.8994 	 9.2337
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/sten4.ply"}
 				}
 				{bone "sten2"
 					{matrix34
@@ -187,7 +187,7 @@
 						-0.2118 	 0.8215 	 -0.5295
 						-1.6545 	 -17.9004 	 5.9101
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/sten2.ply"}
 				}
 				{bone "sten1"
 					{matrix34
@@ -196,7 +196,7 @@
 						-0.2118 	 0.8215 	 -0.5295
 						-1.983 	 -16.1538 	 9.4451
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/sten1.ply"}
 				}
 				{bone "visor1"
 					{matrix34
@@ -433,7 +433,7 @@
 					0.3907 	 0 	 0.9205
 					29.4307 	 15.023 	 18.8376
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/hatch_driver.ply"}
 			}
 			{bone "visor2"
 				{matrix34
@@ -548,7 +548,7 @@
 					0.3584 	 0 	 0.9336
 					29.3168 	 -15.0324 	 18.729
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/achilles_mk2/hatch2.ply"}
 			}
 			{bone "detail10"
 				{parameters "id=body;"}

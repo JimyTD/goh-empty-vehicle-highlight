@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: drvhatch mgun_h_rot1 shield1 shield2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.07.2025 17:15:40
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_fin\3d vehicles\tank_medium\panzer4j_fin\pz4j_fin_export.max
@@ -33,26 +33,26 @@
 				}
 				{speed 0.003}
 				{Position -2.2978 	 1.1165 	 19.4809}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/turret.ply"}
 				{bone "turret_basket"
 					{parameters "id=turret;"}
 					{Position -22.8417 	 -0.1009 	 0.8689}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/turret_basket.ply"}
 				}
 				{bone "cover03"
 					{parameters "id=turret;"}
 					{Position -11.7118 	 5.0934 	 11.5175}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/cover03.ply"}
 				}
 				{bone "cover04"
 					{parameters "id=turret;"}
 					{Position -11.7119 	 -4.7382 	 11.5175}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/cover04.ply"}
 				}
 				{bone "shieldt"
 					{parameters "id=turret;"}
 					{Position -6.942 	 -0.0649 	 1.0168}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/shieldt.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -66,11 +66,14 @@
 						0 	 -1 	 0
 						13.317 	 -0.0335 	 0.0435
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 24.5361 	 0.0131 	 -0.0484}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -82,7 +85,7 @@
 					}
 					{bone "mgun_c"
 						{Position -5.3601 	 -0.1874 	 6.4938}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/mgun_c.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -156,7 +159,7 @@
 					0.2603 	 0 	 0.9655
 					3.0909 	 25.2802 	 9.887
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/shield1.ply"}
 			}
 			{bone revolute "shield2"
 				{parameters "id=body;"}
@@ -166,7 +169,7 @@
 					0.9138 	 0 	 0.4061
 					-6.1538 	 25.2802 	 9.887
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/shield2.ply"}
 			}
 			{bone "headlightl"
 				{Position 44.3308 	 21.4697 	 8.6774}
@@ -185,7 +188,7 @@
 			{bone "drvhatch"
 				{parameters "commonmesh;id=body;"}
 				{Position 29.831 	 11.721 	 12.498}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/drvhatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -400,7 +403,7 @@
 					{bone "hullmg"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 -0.0007}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/hullmg.ply"}
 						{bone "mgun_h"
 							{matrix34
 								1 	 0 	 0
@@ -408,7 +411,7 @@
 								0 	 -1 	 0
 								-7.8654 	 -0.0363 	 -0.9896
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_medium/panzer4j_fin/mgun_h.ply"}
 							{bone "foresight4"
 								{matrix34
 									1 	 0 	 0

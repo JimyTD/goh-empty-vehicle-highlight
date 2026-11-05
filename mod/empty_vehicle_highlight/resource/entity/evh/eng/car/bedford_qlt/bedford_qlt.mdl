@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor2_1 backdoor2_2 doorleft doorright seat01 seat02 seat03 seat04 seat05 seat06 seat07 seat08 seat09 seat10 seat11 seat12 seat13 seat14 seat15 seat16 seat17 seat18 seat19 seat20 seat21 seat22
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:31:41
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\car\Bedford_QLT\bedford_qlt.max
@@ -93,10 +93,10 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 53.8626 	 14.8378 	 0.8709}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/doorleft.ply"}
 				{bone "enumerator1"
 					{Position -10.4839 	 2.2488 	 2.0431}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/enumerator1.ply"}
 				}
 				{bone "glass1"
 					{parameters "id=glass1;"}
@@ -106,16 +106,16 @@
 						0 	 -0.0523 	 0.9986
 						-9.2923 	 0.8183 	 12.6303
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/glass1.ply"}
 				}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 53.822 	 -14.6122 	 8.3611}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/doorright.ply"}
 				{bone "enumerator2"
 					{Position -9.0805 	 -2.0585 	 -5.3789}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/enumerator2.ply"}
 				}
 				{bone "glass2"
 					{parameters "id=glass2;"}
@@ -125,7 +125,7 @@
 						0 	 0.0523 	 0.9986
 						-9.1684 	 -0.588 	 5.1612
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/glass2.ply"}
 				}
 			}
 			{bone "detail6"
@@ -162,7 +162,7 @@
 				{bone "backdoor2_2"
 					{parameters "id=bodyback;"}
 					{Position -49.2053 	 -21.5381 	 -4.2518}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/backdoor2_2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=bodyback;"}
@@ -197,7 +197,7 @@
 				{bone "backdoor2_1"
 					{parameters "id=bodyback;"}
 					{Position -49.2053 	 21.7493 	 -4.244}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qlt/backdoor2_1.ply"}
 				}
 				{bone "fxstop1"
 					{matrix34

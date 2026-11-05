@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/tracks/panther_g_track"}
-	{bump "$/_vehicle/tracks/panther_g_track_bp"}
-	{specular "$/_vehicle/tracks/panther_g_track_sp"}
-	{color "255 255 255 152"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

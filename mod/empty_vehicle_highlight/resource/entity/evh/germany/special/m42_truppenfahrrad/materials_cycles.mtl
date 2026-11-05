@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/truppenfahrrad"}
-	{bump "$/_vehicle/truppenfahrrad_bp"}
-	{specular "$/_vehicle/truppenfahrrad_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

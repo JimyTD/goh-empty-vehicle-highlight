@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_lower hatch_upper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/finland/tank_light/t26_33_fin/start.anm"} {speed 0.6}}
@@ -26,12 +26,12 @@
 			{bone "hatch_lower"
 				{parameters "id=body;"}
 				{Position 22.3324 	 -9.7236 	 12.0341}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/hatch_lower.ply"}
 			}
 			{bone "hatch_upper"
 				{parameters "id=body;"}
 				{Position 14.6166 	 -9.7236 	 20.2757}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/hatch_upper.ply"}
 			}
 			{bone "detail4"
 				{parameters "id=body;"}
@@ -90,16 +90,16 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_light/t26_33_fin/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 0.7075 	 3.716 	 28.4639}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/turret.ply"}
 				{bone "hatchr"
 					{parameters "id=turret;"}
 					{Position -0.0542 	 -4.9422 	 4.3954}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/hatchr.ply"}
 				}
 				{bone "hatchl"
 					{parameters "id=turret;"}
 					{Position -0.0602 	 4.9254 	 4.3954}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/hatchl.ply"}
 				}
 				{bone "visor1"
 					{Position 6.7482 	 6.1696 	 7.6757}
@@ -127,14 +127,14 @@
 							0 	 1 	 0
 							-0.6986 	 -0.2312 	 -0.2149
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/mantlet.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{animation
 								{sequence "repair" {file "../../../../-vehicle/finland/tank_light/t26_33_fin/gun_r.anm"}{speed 0.5}}
 							}
 							{Position 11.556 	 0.857 	 0.453}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -147,7 +147,7 @@
 						{bone "dt29_turret"
 							{parameters "id=turret;"}
 							{Position 4.0982 	 -2.9334 	 -0.7137}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/dt29_turret.ply"}
 							{bone "foresight5"
 								{Position 4.8992 	 0 	 0.2702}
 							}
@@ -156,11 +156,11 @@
 				}
 				{bone "enumerator1"
 					{Position -12.2522 	 -9.7994 	 -1.8175}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{Position -12.2522 	 9.7905 	 -1.8175}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t26_33_fin/enumerator2.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34

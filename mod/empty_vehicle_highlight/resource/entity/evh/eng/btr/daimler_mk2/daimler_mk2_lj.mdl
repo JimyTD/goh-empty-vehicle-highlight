@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 28.02.2025 23:57:08
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_eng\vehicles\btr\Daimler_Mk1_Mk2\daimler_mk2.max
@@ -261,7 +261,7 @@
 					0.989 	 -0.0536 	 -0.1381
 					6.8801 	 18.4024 	 3.5469
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/doorleft.ply"}
 				{bone "detail7"
 					{parameters "id=body;"}
 					{matrix34
@@ -270,7 +270,7 @@
 						-0.3616 	 0.922 	 -0.1381
 						3.0723 	 -1.5868 	 -4.4251
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/detail7.ply"}
 				}
 			}
 			{bone "doorright"
@@ -281,7 +281,7 @@
 					0.1087 	 0.3715 	 -0.922
 					-6.8836 	 -18.4024 	 3.5469
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/doorright.ply"}
 			}
 			{bone "detail4"
 				{parameters "id=body;"}
@@ -387,20 +387,20 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/btr/daimler_mk2/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -0.0197 	 0 	 8.2718}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/turret.ply"}
 				{bone "turret_hatch_hinge1_2"
 					{parameters "id=turret;"}
 					{Position -8.5022 	 0 	 14.708}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/turret_hatch_hinge1_2.ply"}
 				}
 				{bone "turret_hatch_hinge1_1"
 					{parameters "id=turret;"}
 					{Position -10.374 	 0 	 14.3407}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/turret_hatch_hinge1_1.ply"}
 					{bone "turret_hatch"
 						{parameters "id=turret;"}
 						{Position 4.2717 	 0 	 1.8404}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/turret_hatch.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -414,7 +414,7 @@
 						0 	 -1 	 0
 						7.6349 	 0 	 11.1303
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -423,11 +423,11 @@
 							0 	 1 	 0
 							-0.0155 	 -0.0016 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/gun.ply"}
 						{bone "little_john"
 							{parameters "id=gun;"}
 							{Position 29.782 	 0.0292 	 -0.0812}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/little_john.ply"}
 							{bone "foresight1"
 								{Position 11.46 	 -0.0686 	 -0.0042}
 							}
@@ -453,35 +453,35 @@
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -13.5634 	 10.9651 	 16.9488}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0587 	 -0.0005 	 4.9427}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0394 	 0.0197 	 4.2717}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0394 	 -0.0197 	 4.9016}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_4.ply"}
 								{bone "at1_5"
 									{parameters "id=turret;"}
 									{Position -0.0394 	 0 	 4.7047}
-									
+									{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_5.ply"}
 									{bone "at1_6"
 										{parameters "id=turret;"}
 										{Position -0.0197 	 0 	 2.7953}
-										
+										{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_6.ply"}
 										{bone "at1_7"
 											{parameters "id=turret;"}
 											{Position -0.0197 	 -0.0197 	 2.7362}
-											
+											{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_7.ply"}
 											{bone "at1_8"
 												{parameters "id=turret;"}
 												{Position -0.0394 	 0 	 3.9567}
-												
+												{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at1_8.ply"}
 											}
 										}
 									}
@@ -533,35 +533,35 @@
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -16.5902 	 -8.9454 	 15.215}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position -0.0437 	 0.1265 	 4.6079}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position -0.0394 	 0.1378 	 4.0157}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_3.ply"}
 							{bone "at2_4"
 								{parameters "id=turret;"}
 								{Position -0.0394 	 0.1575 	 4.6063}
-								
+								{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_4.ply"}
 								{bone "at2_5"
 									{parameters "id=turret;"}
 									{Position 0 	 0.0984 	 3.4055}
-									
+									{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_5.ply"}
 									{bone "at2_6"
 										{parameters "id=turret;"}
 										{Position -0.0197 	 0.1181 	 4.0748}
-										
+										{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_6.ply"}
 										{bone "at2_7"
 											{parameters "id=turret;"}
 											{Position 0 	 0.0787 	 2.7165}
-											
+											{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_7.ply"}
 											{bone "at2_8"
 												{parameters "id=turret;"}
 												{Position -0.0591 	 0.1772 	 5.1969}
-												
+												{VolumeView "../../../../-vehicle/eng/btr/daimler_mk2/at2_8.ply"}
 											}
 										}
 									}

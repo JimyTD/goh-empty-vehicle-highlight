@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover_driver mgun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 14.10.2022 16:28:56
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\tank_medium\t-34-85_berlin\T-34-85_berlin.max
@@ -32,7 +32,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_medium/t3485_44_late/turret_r.anm"}}
 				}
 				{Position 12.4785 	 0.0177 	 21.5634}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/turret.ply"}
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{matrix34
@@ -41,7 +41,7 @@
 						0 	 0 	 1
 						-12.9868 	 6.7779 	 10.1079
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/cover2.ply"}
 				}
 				{bone "cover1"
 					{parameters "id=turret;"}
@@ -51,7 +51,7 @@
 						0 	 0 	 1
 						-3.2091 	 6.7774 	 10.1113
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/cover1.ply"}
 				}
 				{bone "a1"
 					{parameters "id=turret;"}
@@ -61,23 +61,23 @@
 						0 	 0 	 1
 						-2.9221 	 13.8779 	 7.6317
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/a1.ply"}
 					{bone "a2"
 						{parameters "id=turret;"}
 						{Position 0.2698 	 0 	 14.0966}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/a2.ply"}
 						{bone "a3"
 							{parameters "id=turret;"}
 							{Position 0.6983 	 0 	 9.329}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/a3.ply"}
 							{bone "a4"
 								{parameters "id=turret;"}
 								{Position 1.1176 	 0 	 7.3373}
-								
+								{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/a4.ply"}
 								{bone "a5"
 									{parameters "id=turret;"}
 									{Position 1.4885 	 0 	 4.9004}
-									
+									{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/a5.ply"}
 								}
 							}
 						}
@@ -94,11 +94,11 @@
 						0 	 -1 	 0
 						19.1748 	 0.0582 	 -2.1856
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 40.6829 	 0.0829 	 0.0648}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -127,7 +127,7 @@
 				}
 				{bone "enumerator"
 					{Position -4.7336 	 17.4291 	 1.0902}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/enumerator.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -136,7 +136,7 @@
 						0 	 0.3443 	 0.9389
 						-6.4094 	 -17.7576 	 1.478
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/enumerator2.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34
@@ -165,7 +165,7 @@
 				{bone "detail9"
 					{parameters "id=turret;"}
 					{Position -30.1451 	 0.385 	 -1.0378}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/detail9.ply"}
 				}
 				{bone "ammo2"
 					{Position -24.1018 	 0.078 	 -3.0252}
@@ -175,12 +175,12 @@
 					{bone "turret_grill"
 						{parameters "id=turret;"}
 						{Position 7.0476 	 0.4909 	 2.3213}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/turret_grill.ply"}
 					}
 					{bone "turret_grill_top"
 						{parameters "id=turret;"}
 						{Position 7.0476 	 0.4909 	 2.3213}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/turret_grill_top.ply"}
 					}
 				}
 			}
@@ -192,7 +192,7 @@
 					0 	 0 	 1
 					35.6791 	 5.5653 	 8.2887
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/cover_driver.ply"}
 			}
 			{bone "shieldr1"
 				{parameters "id=shieldr1;"}
@@ -316,7 +316,7 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_medium/t3485_44_late/mgun.ply"}
 					{bone "foresight4"
 						{matrix34
 							1 	 0 	 0

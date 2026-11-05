@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_cover turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 10.04.2024 17:57:40
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\tank_medium\panzer35s\panzer35s.max
@@ -35,12 +35,18 @@
 				}
 				{speed 0.005}
 				{Position 12.6235 	 0.1641 	 18.681}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/turret.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/turret_lod1.ply"}
+				}
 				{bone revolute "commander_rot"
 					{parameters "id=turret;"}
 					{speed 0.005}
 					{Position -4.7269 	 1.6627 	 12.3671}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_rot.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_rot_lod1.ply"}
+					}
 					{bone "visor1"
 						{Position 7.2011 	 0.0287 	 2.0414}
 					}
@@ -59,12 +65,18 @@
 					{bone "commander_hatch1"
 						{parameters "id=turret;"}
 						{Position -0.1718 	 -3.9854 	 3.2135}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_hatch1.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_hatch1_lod1.ply"}
+						}
 					}
 					{bone "commander_hatch2"
 						{parameters "id=turret;"}
 						{Position -0.1718 	 3.9807 	 3.2111}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_hatch2.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/commander_hatch2_lod1.ply"}
+						}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -80,7 +92,10 @@
 						0 	 -1 	 0
 						11.7098 	 -3.3476 	 4.3108
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -89,7 +104,10 @@
 							0 	 1 	 0
 							13.6494 	 -0.0153 	 0.0212
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{Position 8.0397 	 0.0106 	 0.0055}
 						}
@@ -118,7 +136,7 @@
 						-0.077 	 0.8796 	 0.4695
 						-5.5953 	 12.2145 	 5.0211
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/enumerator.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -127,7 +145,7 @@
 						-0.072 	 -0.9142 	 0.3987
 						-5.1986 	 -12.9293 	 4.8115
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/enumerator2.ply"}
 				}
 				{bone revolute "mgun_c_rot1"
 					{limits -10 10}
@@ -141,7 +159,10 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/mgun_c_rot2.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/mgun_c_rot2_lod1.ply"}
+						}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -681,7 +702,10 @@
 					0 	 -0.284 	 0.9588
 					7.3607 	 18.2464 	 10.3471
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/body_cover.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer35s/body_cover_lod1.ply"}
+				}
 			}
 			{bone "antenna1"
 				{parameters "id=body;"}

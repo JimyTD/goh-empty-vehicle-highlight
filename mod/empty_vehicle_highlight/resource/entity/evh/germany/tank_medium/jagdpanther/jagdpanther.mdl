@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: door mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 20.07.2025 15:32:08
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_medium\jagdpanther\jagdpanther_export.max
@@ -127,7 +127,7 @@
 					{bone "hullmg"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 -0.0007}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/hullmg.ply"}
 					}
 					{bone "gpu"
 						{parameters "id=body;"}
@@ -137,7 +137,7 @@
 							0 	 -1 	 0
 							1.0375 	 -0.0338 	 0.9655
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/gpu.ply"}
 					}
 					{bone "foresight4"
 						{matrix34
@@ -356,7 +356,7 @@
 			{bone "door"
 				{parameters "id=body;"}
 				{Position -28.0813 	 0.1946 	 20.4139}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/door.ply"}
 			}
 			{bone revolute "turret"
 				{limits -12 12}
@@ -375,7 +375,7 @@
 						0 	 -0.9998 	 -0.0175
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -384,7 +384,7 @@
 							0 	 0.9998 	 -0.0175
 							11.7468 	 0 	 -0.0002
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/jagdpanther/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0

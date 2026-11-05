@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_co_driver hatch_driver mgun_h_rot1 seat01 seat02 seat03 seat04 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 08.04.2025 20:46:39
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_eng\vehicles\tank_medium\m4a1_late\sherman2_late.max
@@ -267,7 +267,7 @@
 					-0.9945 	 0 	 0.1043
 					23.2446 	 -14.2261 	 15.2362
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/hatch_co_driver.ply"}
 			}
 			{bone "shield1"
 				{parameters "id=shield1;"}
@@ -281,7 +281,7 @@
 				}
 				{speed 0.006}
 				{Position 1.1974 	 0.0062 	 14.8243}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/turret.ply"}
 				{bone "hatch_turret3"
 					{parameters "id=turret;"}
 					{matrix34
@@ -290,34 +290,34 @@
 						0 	 0 	 1
 						-10.7087 	 11.5945 	 14.8214
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/hatch_turret3.ply"}
 				}
 				{bone "hatch_turret1"
 					{parameters "id=turret;"}
 					{Position -6.5716 	 -2.4016 	 15.3923}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/hatch_turret1.ply"}
 				}
 				{bone "hatch_turret2"
 					{parameters "id=turret;"}
 					{Position -6.5748 	 -15.8465 	 15.3923}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/hatch_turret2.ply"}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -19.838 	 7.9429 	 17.7938}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.311}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.3307}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.311}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/at1_4.ply"}
 							}
 						}
 					}
@@ -333,7 +333,7 @@
 						0 	 -1 	 0
 						14.0945 	 0 	 5.6299
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -342,7 +342,7 @@
 							0 	 1 	 0
 							-1.5354 	 -0.0197 	 0.0062
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/gun.ply"}
 						{bone "foresight1"
 							{Position 42.1111 	 0.0058 	 0.0381}
 						}
@@ -363,7 +363,7 @@
 							0 	 1 	 0
 							0.9048 	 0.2933 	 -7.9625
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/mgun_turret.ply"}
 					}
 				}
 				{bone "visor1"
@@ -672,7 +672,7 @@
 					-0.9945 	 0 	 0.1043
 					23.2446 	 14.1991 	 15.2362
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/hatch_driver.ply"}
 			}
 			{bone "transmission"
 				{Position 40.6192 	 0.4128 	 -5.9538}
@@ -739,7 +739,7 @@
 							0 	 1 	 0
 							1.2551 	 0.0117 	 0.0006
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/mgun_hull.ply"}
 					}
 					{bone "mg_shield"
 						{parameters "id=body;"}
@@ -749,7 +749,7 @@
 							0 	 1 	 0
 							1.1462 	 0.0065 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman2_late/mg_shield.ply"}
 					}
 				}
 			}

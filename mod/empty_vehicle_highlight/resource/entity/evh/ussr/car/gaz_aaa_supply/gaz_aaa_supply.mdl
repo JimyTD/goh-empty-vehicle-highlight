@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 01.06.2021 12:30:19
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\car\gaz_aaa\GAZ-AAA_supply.max
@@ -123,7 +123,7 @@
 						0 	 -0.0174 	 0.9998
 						5.1347 	 -11.662 	 10.5102
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/doorright.ply"}
 					{bone "window3"
 						{parameters "id=window3;"}
 						{matrix34
@@ -132,17 +132,17 @@
 							-0.0172 	 0.0147 	 0.9997
 							-7.3406 	 -0.7458 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/window3.ply"}
 					}
 					{bone "enumerator3"
 						{Position -3.8438 	 -0.5574 	 -3.1222}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/enumerator3.ply"}
 					}
 				}
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 5.142 	 11.637 	 10.5102}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/doorleft.ply"}
 					{bone "window2"
 						{parameters "id=window2;"}
 						{matrix34
@@ -151,11 +151,11 @@
 							0 	 0 	 1
 							-7.3479 	 0.7707 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/window2.ply"}
 					}
 					{bone "enumerator2"
 						{Position -11.0296 	 1.6711 	 -3.1263}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/enumerator2.ply"}
 					}
 				}
 				{bone "commander"
@@ -191,10 +191,10 @@
 				{bone "back_door"
 					{parameters "id=bodyback;"}
 					{Position -24.9306 	 0 	 5.5912}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/back_door.ply"}
 					{bone "enumerator1"
 						{Position 0.1849 	 -9.5026 	 5.3114}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_supply/enumerator1.ply"}
 					}
 				}
 				{bone "crates_ammo2"

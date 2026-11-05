@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/opel_radio_cabin"}
-	{bump "$/_vehicle/opel_radio_cabin_bp"}
-	{specular "$/_vehicle/opel_radio_cabin_sp"}
-	{color "230 230 230 25"}
-	{blend blend}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 06.04.2022 17:49:41
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\goh_3d_vehicles_fin\3d vehicles\car\ford_v3000\ford_b3000_civ.max
@@ -38,10 +38,10 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -36.3263 	 18.8927 	 -0.6482}
-					
+					{VolumeView "../../../../-vehicle/generic/car/ford_b3000/backdoor.ply"}
 					{bone "enumerator1"
 						{Position 0.2786 	 -26.627 	 6.2674}
-						
+						{VolumeView "../../../../-vehicle/generic/car/ford_b3000/enumerator1.ply"}
 					}
 				}
 				{bone "leftdoor"
@@ -169,7 +169,7 @@
 					0 	 0.0523 	 0.9986
 					-6.1977 	 13.9257 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/generic/car/ford_b3000/doorleft.ply"}
 				{bone "window2"
 					{parameters "id=window2;"}
 					{matrix34
@@ -178,7 +178,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.3739 	 -0.0496 	 6.2751
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/car/ford_b3000/window2.ply"}
 				}
 			}
 			{bone "doorright"
@@ -189,7 +189,7 @@
 					0 	 -0.0523 	 0.9986
 					-6.1977 	 -13.8561 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/generic/car/ford_b3000/doorright.ply"}
 				{bone "window3"
 					{parameters "id=window3;"}
 					{matrix34
@@ -198,7 +198,7 @@
 						0 	 0.0523 	 0.9986
 						-8.3739 	 -0.0199 	 6.2787
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/car/ford_b3000/window3.ply"}
 				}
 			}
 			{bone "window1"

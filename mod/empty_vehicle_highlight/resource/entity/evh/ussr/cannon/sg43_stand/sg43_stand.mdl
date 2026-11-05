@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_angular box handle
+;// moving parts without geometry: -
 ;Exported by:	 carlos
 ;Date:			 20.08.2021 01:30:36
 ;File:			 E:\GoH_3D_vehicles_rus\vehicles\cannon\maxim MG\sg43_mounted.max
@@ -25,12 +25,12 @@
 			{bone "body_angular"
 				{parameters "id=body;"}
 				{Position -2.3074 	 0 	 -5.5859}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/body_angular.ply"}
 				{bone revolute "turret"
 					{parameters "id=body;"}
 					{limits 15 15}
 					{Position -1.5165 	 0 	 8.3952}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/turret.ply"}
 					{bone revolute "gun_rot"
 						{matrix34
 							1 	 0 	 0
@@ -49,16 +49,28 @@
 						{bone "gun"
 							{parameters "id=body;"}
 							{Position -9.218 	 0.5298 	 -0.0356}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/gun.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/gun_lod1.ply"}
+								{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/gun_lod2.ply"}
+							}
 							{bone "sg-43_cover"
 								{parameters "id=body;"}
 								{Position 7.9602 	 1.3913 	 0}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_cover.ply"}
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_cover_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_cover_lod2.ply"}
+								}
 							}
 							{bone "sg-43_trigger"
 								{parameters "id=body;"}
 								{Position 0.8556 	 -0.2646 	 0}
-								
+								{LODView
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_trigger.ply"}
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_trigger_lod1.ply"}
+									{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/sg-43_trigger_lod2.ply"}
+								}
 							}
 							{bone "belt2"
 								{parameters "commonmesh;id=body;"}
@@ -68,7 +80,7 @@
 									-1 	 0 	 0
 									7.0075 	 -0.8509 	 2.1198
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/belt2.ply"}
 							}
 							{bone "foresight14"
 								{matrix34
@@ -96,12 +108,12 @@
 							0 	 -1 	 0
 							-0.4746 	 0 	 1.2551
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/pole.ply"}
 					}
 					{bone "shield"
 						{parameters "id=shield;"}
 						{Position 0.3678 	 0.062 	 4.1199}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/shield.ply"}
 					}
 					{bone "gunner"
 						{matrix34
@@ -116,7 +128,7 @@
 			{bone "handle"
 				{parameters "id=body;"}
 				{Position -7.0035 	 0 	 -1.3724}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/handle.ply"}
 			}
 		}
 		{bone "pivot_front"
@@ -182,7 +194,7 @@
 				0 	 0 	 1
 				-6.7825 	 -7.6215 	 2.7351
 			}
-			
+			{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/box.ply"}
 			{bone "lid"
 				{parameters "id=body;"}
 				{matrix34
@@ -191,7 +203,7 @@
 					0 	 0.5 	 -0.866
 					0 	 -2.8075 	 2.0549
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/lid.ply"}
 				{bone "flap"
 					{parameters "id=body;"}
 					{matrix34
@@ -200,7 +212,7 @@
 						0 	 -0.454 	 -0.891
 						0 	 5.4225 	 0.0039
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/flap.ply"}
 				}
 			}
 			{bone "belt"
@@ -211,7 +223,7 @@
 					-0.9563 	 -0.2924 	 0
 					-0.853 	 5.5379 	 4.4962
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/sg43_stand/belt.ply"}
 			}
 		}
 		{bone "driver2"

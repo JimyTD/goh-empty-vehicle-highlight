@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/ger/unic304f"}
-	{bump "$/_vehicle/ger/unic304f_bp"}
-	{specular "$/_vehicle/ger/unic304f_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

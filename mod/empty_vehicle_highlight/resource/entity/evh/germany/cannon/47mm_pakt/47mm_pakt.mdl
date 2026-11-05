@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: standl standl_back standr standr_back turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/47mm_pakt/recoil.anm"} {speed 0.85}}
@@ -30,17 +30,17 @@
 					-0.0523 	 0 	 0.9986
 					-2.5591 	 -5.2524 	 -0.2362
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/standr.ply"}
 				{bone "standr_back"
 					{parameters "id=body;"}
 					{Position -35.2806 	 -0.3518 	 0.589}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/standr_back.ply"}
 				}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -2.7851 	 0.0056 	 3.4568}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/turret.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{matrix34
@@ -49,7 +49,7 @@
 						-0.0523 	 0 	 0.9986
 						8.3097 	 -0.0042 	 6.2433
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/shield.ply"}
 				}
 				{bone "visor2"
 					{Position -8.3979 	 -7.7753 	 10.8828}
@@ -68,7 +68,7 @@
 						0 	 -1 	 0
 						-0.3126 	 -0.0061 	 5.1056
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -77,7 +77,7 @@
 							0 	 1 	 0
 							0.0071 	 0.0006 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/gun.ply"}
 						{bone "foresight1"
 							{Position 44.7597 	 0.0077 	 -0.1602}
 						}
@@ -92,12 +92,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -6.0888 	 -0.0029 	 0.0627}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -5.1289 	 -1.8296 	 -1.6359}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/lever.ply"}
 						}
 					}
 				}
@@ -109,7 +109,7 @@
 						-0.0523 	 0 	 0.9986
 						3.6971 	 -0.0107 	 5.6069
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/telo.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
@@ -119,12 +119,12 @@
 						-0.0523 	 0 	 0.9986
 						-4.3408 	 6.6318 	 1.9369
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/aim_wheel1.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
 					{Position -6.0141 	 4.8208 	 0.7361}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/aim_wheel2.ply"}
 				}
 			}
 			{bone "standl"
@@ -134,7 +134,7 @@
 					-0.0523 	 0 	 0.9986
 					-2.5591 	 5.2791 	 -0.2362
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/standl.ply"}
 				{bone "standl_back"
 					{matrix34
 						0.9945 	 -0.1045 	 0
@@ -142,7 +142,7 @@
 						0 	 0 	 1
 						-35.1241 	 3.3379 	 0.589
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/standl_back.ply"}
 				}
 				{bone "detail1"
 					{orientation
@@ -150,7 +150,7 @@
 						0.1045 	 0.9945 	 0
 						0 	 0 	 -1
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/47mm_pakt/detail1.ply"}
 				}
 			}
 		}

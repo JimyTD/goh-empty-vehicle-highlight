@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 30.05.2022 19:37:23
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_fin\3d vehicles\car\ford_v3000\ford_v3000_ammo.max
@@ -38,10 +38,10 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -36.3263 	 18.8927 	 -0.6482}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/backdoor.ply"}
 					{bone "enumerator1"
 						{Position 0.2786 	 -26.627 	 6.2674}
-						
+						{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/enumerator1.ply"}
 					}
 				}
 				{bone "leftdoor"
@@ -119,7 +119,7 @@
 					0 	 0.0523 	 0.9986
 					-6.1977 	 13.9257 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/doorleft.ply"}
 				{bone "window2"
 					{parameters "id=window2;"}
 					{matrix34
@@ -128,7 +128,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.3739 	 -0.0496 	 6.2751
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/window2.ply"}
 				}
 			}
 			{bone "doorright"
@@ -139,7 +139,7 @@
 					0 	 -0.0523 	 0.9986
 					-6.1977 	 -13.8561 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/doorright.ply"}
 				{bone "window3"
 					{parameters "id=window3;"}
 					{matrix34
@@ -148,7 +148,7 @@
 						0 	 0.0523 	 0.9986
 						-8.3739 	 -0.0199 	 6.2787
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_v3000_ammo/window3.ply"}
 				}
 			}
 			{bone "window1"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: grenade_rot1 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.01.2022 12:25:32
 ;File:			 D:\GIT\GoH_3D_vehicles_rus\vehicles\special\gaz98\RF-8_GAZ-98_export.max
@@ -43,7 +43,7 @@
 				{parameters "id=body;"}
 				{limits -138 138}
 				{Position 15.7111 	 -0.2081 	 -3.0728}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/gaz98/mgun_h_rot1.ply"}
 				{bone revolute "mgun_h_rot2"
 					{limits -15 20}
 					{matrix34

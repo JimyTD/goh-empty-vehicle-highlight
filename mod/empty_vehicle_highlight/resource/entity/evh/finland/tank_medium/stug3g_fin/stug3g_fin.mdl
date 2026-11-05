@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover1 cover2 hatch mgun_a_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 21.08.2025 00:41:36
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\tank_medium\stug3g_fin\stug3g_fin.max
@@ -43,7 +43,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/stug3g_fin/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -52,7 +52,7 @@
 							0 	 1 	 0
 							16.8452 	 -0.979 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/stug3g_fin/gun.ply"}
 						{bone "foresight1"
 							{Position 42.8004 	 0.018 	 0.0214}
 						}
@@ -229,7 +229,7 @@
 			{bone "hatch"
 				{parameters "id=body;"}
 				{Position -6.6341 	 12.2684 	 13.6485}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_medium/stug3g_fin/hatch.ply"}
 			}
 			{bone "mgunshield"
 				{parameters "id=body;"}
@@ -409,7 +409,7 @@
 						-0.0033 	 0 	 1
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/stug3g_fin/cover1.ply"}
 				}
 			}
 			{bone "cover2_help"
@@ -427,7 +427,7 @@
 						-0.0033 	 0 	 1
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/stug3g_fin/cover2.ply"}
 				}
 			}
 			{bone "ammo3"

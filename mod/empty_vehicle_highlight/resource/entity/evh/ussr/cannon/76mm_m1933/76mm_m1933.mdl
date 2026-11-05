@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.04.2022 13:47:37
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\76mm_M1933\76mm_M1933.max
@@ -31,21 +31,21 @@
 				{limits -2 2}
 				{speed 0.001}
 				{Position -68.2156 	 0.0085 	 -9.8237}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/turret.ply"}
 				{bone "leverl"
 					{parameters "id=body;"}
 					{Position 45.1103 	 5.2225 	 7.4597}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/leverl.ply"}
 				}
 				{bone "aim_ho"
 					{parameters "id=body;"}
 					{Position 68.9826 	 6.5151 	 14.6036}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/aim_ho.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position 65.2889 	 6.3668 	 12.6526}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/aim_ver.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -58,7 +58,7 @@
 						0 	 -1 	 0
 						67.5308 	 -0.0125 	 17.0413
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -67,15 +67,15 @@
 							0 	 1 	 0
 							-8.5654 	 1.7786 	 -0.0125
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -4.5531 	 -2.6808 	 -1.2277}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/breech.ply"}
 							{bone "breech_lever"
 								{parameters "id=gun;"}
 								{Position -0.0689 	 0.0158 	 3.0366}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/breech_lever.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -94,52 +94,52 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 70.295 	 0 	 14.8022}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/shield.ply"}
 				}
 				{bone "lever_spade"
 					{parameters "id=body;"}
 					{Position 10.8508 	 -0.0952 	 -0.0582}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/lever_spade.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position 22.5489 	 -2.7809 	 1.0597}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/detail4.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position 25.3734 	 3.4321 	 1.7722}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position 39.5906 	 4.5276 	 2.0763}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/detail3.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=body;"}
 					{Position 44.8546 	 -4.6542 	 4.0507}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/detail5.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 47.8688 	 4.6231 	 4.3859}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/detail1.ply"}
 				}
 				{bone "holder"
 					{parameters "id=body;"}
 					{Position 7.0301 	 0 	 1.4377}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/holder.ply"}
 				}
 				{bone "spade"
 					{parameters "id=body;"}
 					{Position 7.9322 	 0 	 -2.0231}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/spade.ply"}
 				}
 				{bone "leverr"
 					{parameters "id=body;"}
 					{Position 45.1103 	 -5.2225 	 7.4596}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/76mm_m1933/leverr.ply"}
 				}
 				{bone "visor"
 					{Position 72.1175 	 5.2453 	 23.6679}

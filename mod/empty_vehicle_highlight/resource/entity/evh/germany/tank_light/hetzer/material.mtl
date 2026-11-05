@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/model/hetzer"}
-	{bump "$/model/hetzer_bp"}
-	{specular "$/model/hetzer_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

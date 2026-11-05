@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: drvhatch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 03.11.2025 18:14:27
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_medium\ostwind\ostwind.max
@@ -34,16 +34,16 @@
 				}
 				{speed 0.008}
 				{Position 0.9503 	 0.0349 	 23.7752}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/turret.ply"}
 				{bone "aim_hor"
 					{parameters "id=turret;"}
 					{Position 10.7531 	 -8.8985 	 5.4669}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=turret;"}
 					{Position 10.5211 	 -14.9822 	 7.7235}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/aim_ver.ply"}
 				}
 				{bone "charger"
 					{matrix34
@@ -64,7 +64,7 @@
 				{bone "cover"
 					{parameters "id=turret;"}
 					{Position 17.2322 	 -11.5361 	 12.6966}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/cover.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=turret;"}
@@ -74,7 +74,7 @@
 						0 	 0 	 1
 						5.597 	 10.6109 	 6.9386
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=turret;"}
@@ -84,7 +84,7 @@
 						0 	 0 	 1
 						7.1602 	 10.6109 	 6.9386
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=turret;"}
@@ -94,11 +94,11 @@
 						0 	 0 	 1
 						8.6922 	 10.6109 	 6.9386
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/detail3.ply"}
 				}
 				{bone "enumerator"
 					{Position -22.4662 	 9.8075 	 12.14}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/enumerator.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -113,7 +113,7 @@
 						0 	 -1 	 0
 						-4.8618 	 -6.1922 	 7.5754
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -122,7 +122,7 @@
 							0 	 1 	 0
 							-5.5968 	 0.1111 	 -6.1922
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-0.0511 	 -0.9821 	 0.181
@@ -151,7 +151,7 @@
 							1 	 0 	 0
 							-0.6861 	 -0.6413 	 -9.6184
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/magazine.ply"}
 					}
 				}
 				{bone "gunner"
@@ -165,7 +165,7 @@
 				{bone "rod"
 					{parameters "id=turret;"}
 					{Position -3.47 	 -6.6167 	 14.182}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/rod.ply"}
 				}
 				{bone "visor1"
 					{Position -13.3138 	 10.215 	 18.8139}
@@ -203,7 +203,7 @@
 							0 	 1 	 0
 							-194.572 	 -11.5125 	 -11.3921
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/hullmg.ply"}
 					}
 					{bone "mgun_h"
 						{matrix34
@@ -212,7 +212,7 @@
 							0 	 1 	 0
 							2.8447 	 0.3644 	 -0.042
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/mgun_h.ply"}
 					}
 				}
 			}
@@ -324,7 +324,7 @@
 					0.0097 	 0 	 1
 					30.356 	 11.721 	 19.6443
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/ostwind/drvhatch.ply"}
 			}
 			{bone revolute "wheell11"
 				{parameters "id=trackleft;radius=0.12;"}

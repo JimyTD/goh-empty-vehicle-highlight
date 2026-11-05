@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 aux_turret2 driver_hatch1_1 driver_hatch1_2 turret turret_hatch1_1 turret_hatch1_2
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 31.10.2025 13:18:07
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Cruiser_A9_mk1\Cruiser_mk1.max
@@ -31,11 +31,11 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret1_r.anm"}{speed 0.7}}
 				}
 				{Position 27.1611 	 11.5683 	 7.0434}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret1.ply"}
 				{bone "aux_turret1_hatch2_2"
 					{parameters "id=aux_turret1;"}
 					{Position -3.5587 	 -0.7021 	 3.8031}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret1_hatch2_2.ply"}
 				}
 				{bone revolute "aux_gun_rot1"
 					{parameters "id=aux_turret1;"}
@@ -46,7 +46,7 @@
 						0 	 -1 	 0
 						9.0594 	 -1.7922 	 -1.2296
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_gun_rot1.ply"}
 					{bone "foresight4"
 						{matrix34
 							1 	 0 	 0
@@ -59,12 +59,12 @@
 				{bone "aux_turret1_hatch2_1"
 					{parameters "id=aux_turret1;"}
 					{Position -0.4682 	 -0.7021 	 4.4527}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret1_hatch2_1.ply"}
 				}
 				{bone "aux_turret1_hatch1"
 					{parameters "id=aux_turret1;"}
 					{Position 6.4019 	 -0.7021 	 4.4527}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret1_hatch1.ply"}
 				}
 			}
 			{bone revolute "aux_turret2"
@@ -73,11 +73,11 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret2_r.anm"}{speed 0.7}}
 				}
 				{Position 27.1611 	 -11.54 	 7.0434}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret2.ply"}
 				{bone "aux_turret2_hatch2_2"
 					{parameters "id=aux_turret2;"}
 					{Position -3.5587 	 0.7112 	 3.8031}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret2_hatch2_2.ply"}
 				}
 				{bone revolute "aux_gun_rot2"
 					{parameters "id=aux_turret2;"}
@@ -88,7 +88,7 @@
 						0 	 -1 	 0
 						9.0594 	 -1.7922 	 -1.2296
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_gun_rot2.ply"}
 					{bone "foresight5"
 						{matrix34
 							1 	 0 	 0
@@ -101,12 +101,12 @@
 				{bone "aux_turret2_hatch2_1"
 					{parameters "id=aux_turret2;"}
 					{Position -0.4682 	 0.7112 	 4.4527}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret2_hatch2_1.ply"}
 				}
 				{bone "aux_turret2_hatch1"
 					{parameters "id=aux_turret2;"}
 					{Position 6.4019 	 0.7112 	 4.4527}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/aux_turret2_hatch1.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -115,32 +115,32 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 5.3317 	 0.0151 	 9.7281}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret.ply"}
 				{bone "turret_hatch1_2"
 					{parameters "id=turret;"}
 					{Position -14.6427 	 4.8238 	 16.0219}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret_hatch1_2.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -21.4735 	 0 	 4.6419}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret_hatch2.ply"}
 					{bone "at1_1"
 						{parameters "id=turret;"}
 						{Position -1.2392 	 -1.1794 	 14.5669}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/at1_1.ply"}
 						{bone "at1_2"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 5.0984}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/at1_2.ply"}
 							{bone "at1_3"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 5.0984}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/at1_3.ply"}
 								{bone "at1_4"
 									{parameters "id=turret;"}
 									{Position -0.0153 	 0 	 5.0984}
-									
+									{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/at1_4.ply"}
 								}
 							}
 						}
@@ -157,7 +157,7 @@
 						0 	 -1 	 0
 						9.8258 	 0 	 9.0362
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -166,7 +166,7 @@
 							0 	 1 	 0
 							3.8194 	 -0.5557 	 1.2342
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/gun.ply"}
 						{bone "foresight1"
 							{Position 28.2304 	 0 	 0}
 						}
@@ -183,17 +183,17 @@
 				{bone "hatch3_2"
 					{parameters "id=turret;"}
 					{Position -11.2569 	 -6.9367 	 16.0002}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/hatch3_2.ply"}
 				}
 				{bone "hatch3_1"
 					{parameters "id=turret;"}
 					{Position -0.7451 	 -6.9367 	 16.0002}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/hatch3_1.ply"}
 				}
 				{bone "turret_hatch1_1"
 					{parameters "id=turret;"}
 					{Position -0.942 	 4.8238 	 16.0219}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/turret_hatch1_1.ply"}
 				}
 				{bone "visor1"
 					{Position -0.1701 	 4.8238 	 19.3104}
@@ -205,7 +205,7 @@
 						0 	 -0.3457 	 0.9384
 						-13.3574 	 14.8847 	 6.4734
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{matrix34
@@ -214,7 +214,7 @@
 						0 	 0.3457 	 0.9384
 						-12.4946 	 -14.8718 	 6.5232
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/enumerator1.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -231,7 +231,7 @@
 			{bone "driver_hatch1_2"
 				{parameters "id=body;"}
 				{Position 32.8481 	 0.0151 	 9.5276}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/driver_hatch1_2.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -368,7 +368,7 @@
 			{bone "driver_hatch1_1"
 				{parameters "id=body;"}
 				{Position 41.37 	 0.0151 	 8.2376}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk1/driver_hatch1_1.ply"}
 			}
 			{bone "headlightl"
 				{Position 48.622 	 12.2389 	 1.0854}

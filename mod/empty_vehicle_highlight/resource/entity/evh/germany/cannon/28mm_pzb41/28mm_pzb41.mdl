@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/28mm_pzb41/recoil.anm"} {speed 1}}
@@ -142,7 +142,7 @@
 					{limits -10 10}
 					{speed 0.008}
 					{Position -3.9784 	 0 	 0.4487}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/turret.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -156,7 +156,7 @@
 							0 	 -1 	 0
 							-1.1282 	 0.1337 	 3.9085
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -165,16 +165,16 @@
 								0 	 1 	 0
 								5.4042 	 0.0094 	 0.1576
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/gun.ply"}
 							{bone "lever2"
 								{parameters "id=gun;"}
 								{Position -12.3719 	 0.1736 	 1.566}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/lever2.ply"}
 							}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position -12.7303 	 0.7946 	 1.2368}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/lever.ply"}
 							}
 							{bone "breech"
 								{matrix34
@@ -183,7 +183,7 @@
 									-0.0245 	 0 	 0.9997
 									-13.292 	 0.2525 	 0.0945
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/breech.ply"}
 							}
 							{bone "fx_invers"
 								{matrix34
@@ -205,7 +205,7 @@
 								0 	 1 	 0
 								5.4042 	 0.0094 	 0.1576
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/shield_rear.ply"}
 						}
 						{bone "visor"
 							{matrix34
@@ -224,7 +224,7 @@
 							-0.1908 	 0 	 0.9816
 							4.1749 	 -0.0239 	 4.9489
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/28mm_pzb41/shield.ply"}
 					}
 					{bone "gunner"
 						{matrix34

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 mgun_h_rot2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 26.08.2025 21:36:42
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\tank_light\vickers_MkF\Vickers MkF 6ton.max
@@ -341,7 +341,10 @@
 				}
 				{speed 0.005}
 				{Position -5.165 	 -3.9288 	 15.2533}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -355,7 +358,10 @@
 						0 	 -1 	 0
 						11.7349 	 0.4857 	 5.0854
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -364,7 +370,10 @@
 							0 	 1 	 0
 							8.1212 	 -0.1625 	 3.6944
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/gun_lod1.ply"}
+						}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -386,12 +395,18 @@
 				{bone "commander_hatch1"
 					{parameters "id=turret;"}
 					{Position 0.7846 	 0 	 11.3179}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/commander_hatch1.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/commander_hatch1_lod1.ply"}
+					}
 				}
 				{bone "commander_hatch2"
 					{parameters "id=turret;"}
 					{Position -12.0277 	 0 	 11.3238}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/commander_hatch2.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/commander_hatch2_lod1.ply"}
+					}
 				}
 				{bone "visor1"
 					{Position 2.0376 	 6.7272 	 12.9702}
@@ -411,7 +426,7 @@
 						0.0405 	 -0.1689 	 0.9848
 						-1.1743 	 11.7397 	 6.2195
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/enumerator.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -431,18 +446,24 @@
 						-0.0151 	 0.173 	 0.9848
 						-0.3938 	 -11.7343 	 6.1969
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/enumerator2.ply"}
 				}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 14.4793 	 -9.7211 	 13.5032}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/driver_hatch2.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/driver_hatch2_lod1.ply"}
+				}
 			}
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 23.3647 	 -9.7211 	 5.2219}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/driver_hatch1.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/driver_hatch1_lod1.ply"}
+				}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -725,7 +746,7 @@
 					0 	 -1 	 0
 					14.2444 	 7.586 	 9.6114
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/mgun_h_rot2.ply"}
 				{bone revolute "mgun_h_rot1"
 					{parameters "id=body;"}
 					{limits -15 15}
@@ -735,7 +756,7 @@
 						0 	 1 	 0
 						-0.1379 	 -0.0055 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/vickers_6t_altb/mgun_h_rot1.ply"}
 					{bone "foresight4"
 						{Position 5.9035 	 -1.025 	 -0.3083}
 					}

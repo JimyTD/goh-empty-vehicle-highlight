@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover2 propeller1 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "open_driver" {file "../../../../-vehicle/finland/tank_light/t37a_fin/open_driver.anm"} {speed 0.1} {events {2 "hatch_light"} {11 "hatch_light"}}}
@@ -28,11 +28,11 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_light/t37a_fin/turret_r.anm"}{speed 0.2}}
 				}
 				{Position 2.0901 	 -6.1018 	 18.9688}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t37a_fin/turret.ply"}
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position -4.9829 	 0 	 5.3903}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t37a_fin/cover1.ply"}
 				}
 				{bone "visor1"
 					{Position 11.8997 	 -1.4764 	 0.0765}
@@ -48,7 +48,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/t37a_fin/mgun_c_rot2.ply"}
 						{bone "mgun"
 							{Position -8.5048 	 -1.4836 	 0.035}
 						}
@@ -138,7 +138,7 @@
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position 0.3089 	 8.9348 	 15.201}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/t37a_fin/cover2.ply"}
 			}
 			{bone "headlightl"
 				{Position 10.554 	 16.587 	 11.7321}
@@ -184,7 +184,7 @@
 						1 	 0 	 0
 						-7.6781 	 0 	 -4.0759
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/t37a_fin/propeller1.ply"}
 				}
 				{bone "fxfire1"
 					{matrix34

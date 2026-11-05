@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 12.10.2025 19:52:06
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Bedford_QLD\bedford_qld_ammo.max
@@ -65,7 +65,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -40.5517 	 -0.7105 	 -0.832}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/backdoor.ply"}
 				}
 				{bone "ammo"
 					{parameters "id=bodyback;"}
@@ -112,7 +112,7 @@
 					0 	 0.0523 	 0.9986
 					48.9198 	 14.7328 	 12.0895
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/doorleft.ply"}
 				{bone "glass2"
 					{parameters "id=glass2;"}
 					{matrix34
@@ -121,11 +121,11 @@
 						0 	 -0.0523 	 0.9986
 						-9.2157 	 0.3593 	 12.7363
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/glass2.ply"}
 				}
 				{bone "enumerator1"
 					{Position -7.5542 	 1.5207 	 3.3038}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/enumerator1.ply"}
 				}
 			}
 			{bone "doorright"
@@ -136,7 +136,7 @@
 					0 	 -0.0523 	 0.9986
 					48.8791 	 -14.7172 	 19.5798
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/doorright.ply"}
 				{bone "glass3"
 					{parameters "id=glass3;"}
 					{matrix34
@@ -145,7 +145,7 @@
 						0 	 0.0523 	 0.9986
 						-9.1751 	 -0.7669 	 5.2571
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/glass3.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -154,7 +154,7 @@
 						0 	 0.1045 	 0.9945
 						-5.0208 	 -1.348 	 -3.7923
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_qld_art_ammo/enumerator2.ply"}
 				}
 			}
 			{bone "glass1"

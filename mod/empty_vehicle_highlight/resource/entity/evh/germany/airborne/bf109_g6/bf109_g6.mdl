@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 door elevator1 elevator2 gun_rot1 mgun_rot1 rudder
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 10.03.2026 23:49:24
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\airborne\bf109_f4\bf109g6_export.max
@@ -41,7 +41,7 @@
 						-0.1034 	 -0.0968 	 -0.9899
 						-5.7077 	 0.7226 	 8.9774
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/aileron2.ply"}
 				}
 			}
 			{bone "wingl2"
@@ -63,7 +63,7 @@
 						-0.0866 	 -0.1132 	 0.9898
 						-5.3984 	 0.5182 	 -8.7577
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/aileron1.ply"}
 				}
 			}
 			{bone "visor"
@@ -79,7 +79,7 @@
 				{limits -30 30}
 				{speed 0.1}
 				{Position -95.9497 	 -1.9797 	 18.1078}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/rudder.ply"}
 			}
 			{bone "radiator_bottom"
 				{Position -7.9284 	 -2.0483 	 -6.8719}
@@ -125,7 +125,7 @@
 						-1 	 0 	 0
 						3.592 	 -1.3316 	 0.0266
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/elevator2.ply"}
 				}
 				{bone revolute "elevator1"
 					{parameters "id=body_back;"}
@@ -137,7 +137,7 @@
 						-1 	 0 	 0
 						24.4902 	 -1.3316 	 0.0266
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/elevator1.ply"}
 				}
 			}
 			{bone revolute "gun_rot1"
@@ -265,16 +265,16 @@
 			{bone "door"
 				{parameters "id=body;"}
 				{Position -7.2384 	 -7.4416 	 9.3557}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/door.ply"}
 				{bone "glass2"
 					{parameters "id=body;"}
 					{Position 0.0053 	 5.3761 	 4.2334}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/glass2.ply"}
 				}
 				{bone "backrest"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_g6/backrest.ply"}
 				}
 			}
 			{bone "barrel_mg01"

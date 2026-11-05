@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_body1 hatch_body2 hatch_left hatch_right lever_arm turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_heavy/su152/start.anm"} {speed 0.7}}
@@ -32,7 +32,10 @@
 				{limits -12 12}
 				{speed 0.005}
 				{Position 41.2537 	 -3.9173 	 16.5915}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -46,7 +49,10 @@
 						0 	 -1 	 0
 						1.1934 	 3.9164 	 0
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -55,7 +61,10 @@
 							0 	 1 	 0
 							37.1708 	 0.8379 	 3.8189
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/gun.ply"}
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{Position 30.6959 	 0 	 0.0046}
 						}
@@ -91,7 +100,10 @@
 					0 	 0 	 1
 					19.9791 	 2.2555 	 26.9931
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_left.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_left_lod1.ply"}
+				}
 			}
 			{bone "hatch_right"
 				{parameters "id=body;"}
@@ -101,17 +113,20 @@
 					0 	 0 	 1
 					20.6823 	 -5.738 	 26.9417
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_right.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_right_lod1.ply"}
+				}
 			}
 			{bone "hatch_body1"
 				{parameters "id=body;"}
 				{Position 1.3528 	 7.0475 	 26.9564}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_body1.ply"}
 			}
 			{bone "hatch_body2"
 				{parameters "id=body;"}
 				{Position -13.2057 	 6.905 	 19.7092}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/hatch_body2.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -389,7 +404,10 @@
 			{bone revolute "lever_arm"
 				{parameters "id=body;"}
 				{Position 3.7368 	 -0.0009 	 -8.5656}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/lever_arm.ply"}
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su152/lever_arm_lod1.ply"}
+				}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

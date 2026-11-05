@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_co_driver hatch_driver mgun_h_rot1 seat01 seat02 seat03 seat04 turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 09.11.2025 00:45:09
 ;File:			 E:\SVN GoH UK 3D models\vehicles\tank_medium\m4a4_mid\sherman5_mid_armor\sherman5_mid_armor.max
@@ -408,7 +408,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2652 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/mgun_hull.ply"}
 					}
 					{bone "mgun_hull_shield"
 						{parameters "id=body;"}
@@ -418,7 +418,7 @@
 							0 	 1 	 0
 							2.7921 	 -0.0189 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/mgun_hull_shield.ply"}
 					}
 				}
 			}
@@ -458,7 +458,7 @@
 					0.1219 	 0 	 0.9925
 					24.7965 	 -14.0295 	 14.9225
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/hatch_co_driver.ply"}
 			}
 			{bone "hatch_driver"
 				{parameters "id=body;"}
@@ -468,7 +468,7 @@
 					0.1219 	 0 	 0.9925
 					24.7953 	 14.0343 	 14.9121
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/hatch_driver.ply"}
 			}
 			{bone "headlightl"
 				{matrix34
@@ -775,7 +775,7 @@
 				}
 				{speed 0.007}
 				{Position 3.5983 	 0.0051 	 14.2018}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -789,7 +789,7 @@
 						0 	 -1 	 0
 						14.0884 	 0 	 5.6386
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -798,7 +798,7 @@
 							0 	 1 	 0
 							6.6659 	 -0.0117 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/gun.ply"}
 						{bone "foresight1"
 							{Position 35.1005 	 0.0324 	 0.0407}
 						}
@@ -811,7 +811,7 @@
 							0 	 1 	 0
 							5.4172 	 1.6769 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/mantlet.ply"}
 					}
 					{bone "foresight5"
 						{matrix34
@@ -829,23 +829,23 @@
 							0 	 1 	 0
 							-3.3546 	 -0.0091 	 -7.6153
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/mgun_turrret.ply"}
 					}
 				}
 				{bone revolute "cupola_ring"
 					{parameters "id=turret;"}
 					{speed 0.007}
 					{Position -6.5917 	 -9.1255 	 14.1333}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/cupola_ring.ply"}
 					{bone "copola_cover1"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 7.5969 	 0.7573}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/copola_cover1.ply"}
 					}
 					{bone "copola_cover2"
 						{parameters "id=turret;"}
 						{Position 0.0003 	 -7.5977 	 0.7626}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/copola_cover2.ply"}
 					}
 					{bone "gunner2"
 						{Position -3.7377 	 0.4027 	 -19.313}
@@ -874,19 +874,19 @@
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -19.9116 	 7.9441 	 16.9333}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.3307}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.3307}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.311}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/at1_4.ply"}
 							}
 						}
 					}
@@ -894,7 +894,7 @@
 				{bone "basket_a"
 					{parameters "id=turret;"}
 					{Position -25.4067 	 -0.0051 	 7.5044}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman5_mid_armor/basket_a.ply"}
 				}
 			}
 			{bone "ammo1"

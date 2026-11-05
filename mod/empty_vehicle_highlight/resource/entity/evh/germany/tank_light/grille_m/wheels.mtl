@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/grille_wheels"}
-	{bump "$/_vehicle/grille_wheels_bp"}
-	{specular "$/_vehicle/grille_wheels_sp"}
-	{color "230 230 230 152"}
-	{blend test}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
 }

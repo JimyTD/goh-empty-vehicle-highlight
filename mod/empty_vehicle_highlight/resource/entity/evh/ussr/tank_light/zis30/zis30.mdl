@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver hatchr mgun_h_rot1 platel plater turret
+;// moving parts without geometry: -
 
 {skeleton
 	{animation
@@ -31,12 +31,12 @@
 			{bone "hatch_driver"
 				{parameters "id=body;"}
 				{Position 6.1193 	 6.7107 	 15.9916}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/hatch_driver.ply"}
 			}
 			{bone "hatchr"
 				{parameters "id=body;"}
 				{Position 6.1193 	 -6.4809 	 15.9916}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/hatchr.ply"}
 			}
 			{bone "gun_holder"
 				{parameters "id=body;"}
@@ -66,7 +66,7 @@
 					0 	 0 	 -1
 					-20.8131 	 -18.1448 	 5.0179
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/plater.ply"}
 			}
 			{bone "platel"
 				{parameters "id=body;"}
@@ -76,7 +76,7 @@
 					0 	 0 	 -1
 					-20.8131 	 18.1587 	 5.0185
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/platel.ply"}
 			}
 			{bone "supporter_rear"
 				{parameters "id=body;"}
@@ -101,7 +101,7 @@
 				{limits -30 30}
 				{speed 0.02}
 				{Position -8.7397 	 0 	 15.6486}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -4 22}
@@ -112,7 +112,7 @@
 						0 	 -1 	 0
 						-3.8701 	 0.3261 	 2.9916
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -121,7 +121,7 @@
 							0 	 1 	 0
 							4.0726 	 3.646 	 0.3261
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/gun.ply"}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{matrix34
@@ -130,12 +130,12 @@
 								-0.0493 	 0 	 0.9988
 								-13.7132 	 -2.7587 	 -1.5989
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/lever.ply"}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -11.4515 	 0 	 0.4869}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/breech_block.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -153,7 +153,7 @@
 				{bone "shield"
 					{parameters "id=gun;"}
 					{Position 2.9589 	 0 	 6.0054}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/shield.ply"}
 				}
 				{bone "visor1"
 					{matrix34
@@ -182,7 +182,7 @@
 						0 	 0 	 1
 						-7.268 	 6.4707 	 3.5122
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=gun;"}
@@ -192,7 +192,7 @@
 						0 	 0 	 1
 						-11.7324 	 5.9616 	 2.0755
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/aim_hor.ply"}
 				}
 			}
 			{bone "detail2"
@@ -362,10 +362,10 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/mg_shield.ply"}
 						{bone "dt29"
 							{Position -2.3656 	 -0.0127 	 -0.8467}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/zis30/dt29.ply"}
 						}
 					}
 					{bone "foresight4"

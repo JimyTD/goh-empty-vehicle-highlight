@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover2 cover3 torzl torzr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/bt2/start.anm"} {speed 0.7}}
@@ -28,7 +28,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/bt2/turret_r.anm"}{speed 0.6}}
 				}
 				{Position 13.77 	 0 	 9.5344}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -37,7 +37,7 @@
 						0 	 -1 	 0
 						10.5452 	 0.9539 	 6.8252
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -46,7 +46,7 @@
 							0 	 1 	 0
 							14.1086 	 0 	 0.0866
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/gun.ply"}
 						{bone "foresight1"
 							{parameters "id=turret;"}
 							{Position 9.0313 	 0 	 0}
@@ -56,7 +56,7 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position -1.2498 	 -2.0818 	 13.5056}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/cover1.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -84,7 +84,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/mgun_c_rot2.ply"}
 						{bone "mgun"
 							{parameters "id=turret;"}
 							{orientation
@@ -92,7 +92,7 @@
 								0 	 0 	 -1
 								1 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/mgun.ply"}
 							{bone "foresight3"
 								{parameters "id=turret;"}
 								{matrix34
@@ -189,12 +189,12 @@
 			{bone "cover2"
 				{parameters "id=body;"}
 				{Position 33.1787 	 0 	 9.8694}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/cover2.ply"}
 			}
 			{bone "cover3"
 				{parameters "id=body;"}
 				{Position 43.8463 	 0 	 -0.2904}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/cover3.ply"}
 			}
 			{bone "fxfire1"
 				{matrix34
@@ -510,7 +510,7 @@
 			{bone revolute "torzr"
 				{parameters "id=trackright;"}
 				{Position -1.3967 	 3.6292 	 -2.2392}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/torzr.ply"}
 			}
 		}
 		{bone "wheelsl"
@@ -619,7 +619,7 @@
 					0 	 1 	 0
 					22.5107 	 -1.1797 	 -3.8853
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt2/torzl.ply"}
 			}
 		}
 		{bone "emit7"

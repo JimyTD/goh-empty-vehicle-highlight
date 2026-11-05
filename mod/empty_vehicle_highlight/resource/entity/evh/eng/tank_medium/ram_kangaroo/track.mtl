@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/tracks/t48_duckhill"}
-	{bump "$/_vehicle/tracks/t48_duckbill_bp"}
-	{specular "$/_vehicle/tracks/t48_duckhill_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

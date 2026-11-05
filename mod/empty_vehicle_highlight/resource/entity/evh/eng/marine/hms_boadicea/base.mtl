@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/bclass_destroyer1"}
-	{bump "$/_vehicle/eng/bclass_destroyer1_bp"}
-	{specular "$/_vehicle/eng/bclass_destroyer1_sp"}
-	{color "255 255 255 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

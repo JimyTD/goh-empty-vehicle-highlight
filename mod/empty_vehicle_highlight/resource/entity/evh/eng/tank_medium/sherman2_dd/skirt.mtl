@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/usa/dd_skirt_eng"}
-	{bump "$/_vehicle/usa/dd_skirt_bp"}
-	{specular "$/_vehicle/usa/dd_skirt_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

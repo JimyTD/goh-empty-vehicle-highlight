@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover detail1 doorl doorr
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 14.10.2021 01:01:23
 ;File:			 C:\Users\TigerF\Desktop\Opel maultier.max
@@ -42,7 +42,7 @@
 						0 	 -0.1564 	 0.9877
 						-3.1607 	 -11.1798 	 -11.9011
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/opel_maultier/doorr.ply"}
 					{bone "glassr"
 						{parameters "id=glassr;"}
 						{matrix34
@@ -51,7 +51,7 @@
 							0 	 0.1564 	 0.9877
 							-9.1173 	 0.4904 	 17.8626
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/opel_maultier/glassr.ply"}
 					}
 				}
 				{bone revolute "doorl"
@@ -62,7 +62,7 @@
 						-0.0352 	 0.0971 	 0.9947
 						-2.9821 	 11.452 	 -11.3277
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/opel_maultier/doorl.ply"}
 					{bone "glassl"
 						{parameters "id=glassl;"}
 						{matrix34
@@ -71,7 +71,7 @@
 							0.0275 	 -0.0995 	 0.9947
 							-8.6259 	 1.0558 	 17.5821
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/opel_maultier/glassl.ply"}
 					}
 				}
 				{bone "driver"
@@ -102,7 +102,7 @@
 						0 	 -1 	 0
 						-33.9273 	 -0.0126 	 13.2825
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/opel_maultier/cover.ply"}
 				}
 				{bone "seiten"
 					{parameters "id=bodyback;"}
@@ -122,7 +122,7 @@
 						-0.9563 	 0 	 0.2924
 						28.4944 	 2.9 	 23.3359
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/car/opel_maultier/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=bodyback;"}

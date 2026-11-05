@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_driver hatch_radio mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 24.11.2023 06:34:02
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_light\M24_chaffee\m24_chaffee.max
@@ -33,26 +33,26 @@
 					{sequence "repair" {file "../../../../-vehicle/usa/tank_light/m24_chaffee/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 4.102 	 -0.0575 	 15.3497}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/turret.ply"}
 				{bone "cupola_hatch"
 					{parameters "id=turret;"}
 					{Position -13.9881 	 9.7505 	 14.4185}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/cupola_hatch.ply"}
 				}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position -2.8726 	 -13.6378 	 12.0336}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/turret_hatch.ply"}
 				}
 				{bone "antenna"
 					{parameters "id=body;"}
 					{Position -16.1501 	 13.6436 	 18}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/antenna.ply"}
 				}
 				{bone "basket"
 					{parameters "id=turret;"}
 					{Position -28.6725 	 0.0575 	 6.3719}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/basket.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
@@ -65,7 +65,7 @@
 						0 	 -1 	 0
 						13.2822 	 0.9559 	 4.2295
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -74,7 +74,7 @@
 							0 	 1 	 0
 							11.8895 	 -0.1091 	 0.8877
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -120,7 +120,7 @@
 					{limits -40 40}
 					{terminator}
 					{Position -17.8209 	 -5.3294 	 16.9825}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -10 40}
@@ -130,7 +130,7 @@
 							0 	 -1 	 0
 							-1.3606 	 1.1055 	 3.0306
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0 	 0
@@ -289,7 +289,7 @@
 					0.1394 	 0.1274 	 0.982
 					17.6567 	 15.3873 	 12.9381
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/hatch_driver.ply"}
 			}
 			{bone "hatch_radio"
 				{parameters "id=body;"}
@@ -299,7 +299,7 @@
 					0.1324 	 -0.148 	 0.9801
 					17.6567 	 -15.4061 	 12.9382
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/hatch_radio.ply"}
 			}
 			{bone revolute "mgun_h_rot1"
 				{limits -14 14}
@@ -328,7 +328,7 @@
 							0 	 1 	 0
 							0 	 -0.0007 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m24_chaffee/mgun_hull.ply"}
 					}
 				}
 			}

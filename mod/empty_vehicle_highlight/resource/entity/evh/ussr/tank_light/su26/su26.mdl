@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch_lower hatch_upper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/su26/start.anm"} {speed 0.6}}
@@ -28,12 +28,12 @@
 			{bone "hatch_lower"
 				{parameters "id=body;"}
 				{Position 22.3324 	 -9.7236 	 12.0341}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su26/hatch_lower.ply"}
 			}
 			{bone "hatch_upper"
 				{parameters "id=body;"}
 				{Position 14.6166 	 -9.7236 	 20.2757}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su26/hatch_upper.ply"}
 			}
 			{bone "detail4"
 				{parameters "id=body;"}
@@ -267,12 +267,12 @@
 				}
 				{speed 0.006}
 				{Position -16.1228 	 0.0001 	 17.9871}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/su26/turret.ply"}
 				{bone revolute "mgun_2_rot1"
 					{parameters "id=turret;iksoeed=0.01;"}
 					{limits -20 20}
 					{Position 5.4829 	 -8.5182 	 6.0914}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/mgun_2_rot1.ply"}
 					{bone revolute "mgun_2_rot2"
 						{parameters "id=turret;iksoeed=0.01;"}
 						{limits -15 15}
@@ -282,7 +282,7 @@
 							0 	 -1 	 0
 							0.0034 	 0.0035 	 1.8801
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su26/mgun_2_rot2.ply"}
 						{bone "dt030"
 							{matrix34
 								1 	 0 	 0
@@ -290,7 +290,7 @@
 								0 	 1 	 0
 								-0.9156 	 0.5943 	 0.0296
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/su26/dt030.ply"}
 							{bone "foresight5"
 								{Position 10.2965 	 0.0126 	 0.6807}
 							}
@@ -301,7 +301,7 @@
 					{parameters "id=turret;iksoeed=0.01;"}
 					{limits -20 20}
 					{Position 5.4829 	 9.1821 	 6.0914}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=turret;iksoeed=0.01;"}
 						{limits -15 15}
@@ -311,7 +311,7 @@
 							0 	 -1 	 0
 							0.0034 	 0.0035 	 1.8801
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su26/mgun_1_rot2.ply"}
 						{bone "dt29"
 							{matrix34
 								1 	 0 	 0
@@ -319,7 +319,7 @@
 								0 	 1 	 0
 								-0.9156 	 0.5943 	 0.0296
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/su26/dt29.ply"}
 							{bone "foresight4"
 								{Position 10.2965 	 0.0304 	 0.6807}
 							}
@@ -329,7 +329,7 @@
 				{bone "aim_hor"
 					{parameters "id=turret;"}
 					{Position -1.5481 	 -5.0182 	 3.2013}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/aim_hor.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;iksoeed=0.008;"}
@@ -343,7 +343,7 @@
 						0 	 -1 	 0
 						3.7296 	 -0.004 	 8.0269
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -352,7 +352,7 @@
 							0 	 1 	 0
 							-1.2658 	 3.1296 	 0.0075
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su26/gun.ply"}
 						{bone "handle"
 							{parameters "id=gun;"}
 							{matrix34
@@ -361,7 +361,7 @@
 								0 	 0 	 1
 								-9.6391 	 -2.0901 	 2.4152
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/su26/handle.ply"}
 						}
 						{bone "breech"
 							{parameters "id=gun;"}
@@ -371,7 +371,7 @@
 								0 	 0 	 1
 								-9.6348 	 -2.0892 	 1.05
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/su26/breech.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -398,7 +398,7 @@
 							0 	 1 	 0
 							0.633 	 -0.2172 	 0.001
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su26/sight.ply"}
 					}
 				}
 				{bone "visor1"
@@ -406,11 +406,11 @@
 				}
 				{bone "enumerator2"
 					{Position 0.0767 	 -15.0164 	 6.9507}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position 0.0766 	 15.0049 	 6.9507}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/su26/enumerator1.ply"}
 				}
 				{bone "aim_v_helper"
 					{matrix34
@@ -422,7 +422,7 @@
 					{bone revolute "aim_ver"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/su26/aim_ver.ply"}
 					}
 				}
 				{bone "commander"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1a doorleft2a doorright1a doorright2a slider
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 19.06.2025 00:34:29
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_generic\vehicles\train\Tram_soviet\tram_sov.max
@@ -28,7 +28,7 @@
 					0 	 0 	 1
 					61.1142 	 19.5374 	 27.6651
 				}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorleft1a.ply"}
 				{bone "glass5"
 					{parameters "id=glass5;"}
 					{matrix34
@@ -37,7 +37,7 @@
 						0 	 0 	 1
 						3.4522 	 -0.2949 	 10.4269
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass5.ply"}
 				}
 				{bone "doorleft1b"
 					{parameters "id=body;"}
@@ -47,7 +47,7 @@
 						0 	 0 	 1
 						6.9451 	 -0.509 	 0.3203
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorleft1b.ply"}
 					{bone "glass6"
 						{parameters "id=glass6;"}
 						{matrix34
@@ -56,12 +56,12 @@
 							0 	 0 	 1
 							3.2619 	 -1.1605 	 10.1066
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass6.ply"}
 					}
 					{bone "glass37"
 						{parameters "id=glass37;"}
 						{Position 3.2619 	 -1.1605 	 -9.2652}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass37.ply"}
 					}
 				}
 				{bone "glass38"
@@ -72,13 +72,13 @@
 						0 	 0 	 1
 						3.4522 	 -0.295 	 -8.9449
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass38.ply"}
 				}
 			}
 			{bone "doorleft2a"
 				{parameters "id=body;"}
 				{Position -61.1194 	 19.5363 	 27.6651}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorleft2a.ply"}
 				{bone "glass14"
 					{parameters "id=glass14;"}
 					{matrix34
@@ -87,17 +87,17 @@
 						0 	 0 	 1
 						-3.454 	 -0.2021 	 10.4269
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass14.ply"}
 				}
 				{bone "glass39"
 					{parameters "id=glass39;"}
 					{Position -3.454 	 -0.2021 	 -8.9449}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass39.ply"}
 				}
 				{bone "doorleft2b"
 					{parameters "id=body;"}
 					{Position -6.9434 	 -0.3867 	 0.3203}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorleft2b.ply"}
 					{bone "glass13"
 						{parameters "id=glass13;"}
 						{matrix34
@@ -106,19 +106,19 @@
 							0 	 0 	 1
 							-3.2685 	 -1.129 	 10.1066
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass13.ply"}
 					}
 					{bone "glass40"
 						{parameters "id=glass40;"}
 						{Position -3.2685 	 -1.1291 	 -9.2652}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass40.ply"}
 					}
 				}
 			}
 			{bone "doorright1a"
 				{parameters "id=body;"}
 				{Position 61.1142 	 -19.5431 	 27.6651}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorright1a.ply"}
 				{bone "glass17"
 					{parameters "id=glass17;"}
 					{matrix34
@@ -127,12 +127,12 @@
 						0 	 0 	 1
 						3.4571 	 0.2121 	 10.4269
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass17.ply"}
 				}
 				{bone "doorright1b"
 					{parameters "id=body;"}
 					{Position 6.9529 	 0.3935 	 0.3203}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorright1b.ply"}
 					{bone "glass18"
 						{parameters "id=glass18;"}
 						{matrix34
@@ -141,24 +141,24 @@
 							0 	 0 	 1
 							3.2622 	 1.1323 	 10.1066
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass18.ply"}
 					}
 					{bone "glass36"
 						{parameters "id=glass36;"}
 						{Position 3.2622 	 1.1323 	 -9.2652}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass36.ply"}
 					}
 				}
 				{bone "glass35"
 					{parameters "id=glass35;"}
 					{Position 3.4571 	 0.2121 	 -8.9448}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass35.ply"}
 				}
 			}
 			{bone "doorright2a"
 				{parameters "id=body;"}
 				{Position -61.1194 	 -19.5435 	 27.6651}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorright2a.ply"}
 				{bone "glass26"
 					{parameters "id=glass26;"}
 					{matrix34
@@ -167,12 +167,12 @@
 						0 	 0 	 1
 						-3.4271 	 0.2284 	 10.4269
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass26.ply"}
 				}
 				{bone "doorright2b"
 					{parameters "id=body;"}
 					{Position -6.9434 	 0.3939 	 0.3203}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/doorright2b.ply"}
 					{bone "glass25"
 						{parameters "id=glass25;"}
 						{matrix34
@@ -181,24 +181,24 @@
 							0 	 0 	 1
 							-3.2416 	 1.1482 	 10.1066
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass25.ply"}
 					}
 					{bone "glass42"
 						{parameters "id=glass42;"}
 						{Position -3.2416 	 1.1482 	 -9.2652}
-						
+						{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass42.ply"}
 					}
 				}
 				{bone "glass41"
 					{parameters "id=glass41;"}
 					{Position -3.4271 	 0.2285 	 -8.9448}
-					
+					{VolumeView "../../../../-vehicle/generic/train/tram_sov/glass41.ply"}
 				}
 			}
 			{bone "slider"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 62.6066}
-				
+				{VolumeView "../../../../-vehicle/generic/train/tram_sov/slider.ply"}
 			}
 			{bone "glass1"
 				{parameters "id=glass1;"}

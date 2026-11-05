@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: talp_back talp_l talp_r trailer_body turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/20mm_flak30/recoil.anm"} {speed 1.5}}
@@ -61,7 +61,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -11.1614 	 0.0026 	 0.1056}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -73,7 +73,7 @@
 						0 	 -1 	 0
 						4.4708 	 -0.0039 	 10.9404
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/gun_rot.ply"}
 					{bone "gun_holder"
 						{parameters "id=gun;"}
 						{matrix34
@@ -82,11 +82,11 @@
 							0 	 1 	 0
 							4.0932 	 -1.5915 	 0.0006
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/gun_holder.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 4.8424 	 0.0006 	 1.991}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/gun.ply"}
 							{bone "magazine"
 								{parameters "id=gun;"}
 								{matrix34
@@ -95,7 +95,7 @@
 									-0.9848 	 0.1736 	 0
 									-3.5703 	 0.609 	 -0.0125
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/magazine.ply"}
 							}
 							{bone "bullet"
 								{parameters "id=gun;"}
@@ -105,7 +105,7 @@
 									1 	 0 	 0
 									-2.0089 	 0.0042 	 0.0144
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/bullet.ply"}
 							}
 							{bone "ize"
 								{parameters "id=gun;"}
@@ -115,7 +115,7 @@
 									1 	 0 	 0
 									-7.6419 	 -0.3759 	 1.0542
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/ize.ply"}
 							}
 							{bone "fx_invers"
 								{matrix34
@@ -134,7 +134,7 @@
 								0 	 0 	 1
 								-8.7714 	 0.0047 	 1.6466
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/ize2.ply"}
 						}
 					}
 					{bone "fixing"
@@ -145,7 +145,7 @@
 							0 	 0 	 1
 							8.8451 	 -3.6637 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/fixing.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -159,7 +159,7 @@
 				{bone "kuplung"
 					{parameters "id=body;"}
 					{Position 4.3707 	 -0.0039 	 1.0688}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/kuplung.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -188,12 +188,12 @@
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position -7.1553 	 0.0067 	 8.2238}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/aim_h.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
 					{Position -3.1355 	 -4.1484 	 10.4638}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/aim_v.ply"}
 				}
 				{bone "body3"
 					{matrix34
@@ -207,7 +207,7 @@
 			{bone "talp_l"
 				{parameters "id=body;"}
 				{Position -4.5577 	 12.238 	 -0.9238}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/talp_l.ply"}
 			}
 			{bone "talp_r"
 				{parameters "id=body;"}
@@ -217,7 +217,7 @@
 					0 	 0 	 1
 					-4.5577 	 -12.2853 	 -0.9238
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/talp_r.ply"}
 			}
 			{bone "talp_back"
 				{parameters "id=body;"}
@@ -227,7 +227,7 @@
 					0 	 0 	 1
 					-24.047 	 -0.0086 	 -0.9238
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/talp_back.ply"}
 			}
 		}
 		{bone "trailer_body"
@@ -239,7 +239,7 @@
 				-36.3898 	 0.0024 	 8.635
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/trailer_body.ply"}
 			{bone "wheelsl"
 				{parameters "id=body;"}
 				{matrix34
@@ -249,7 +249,7 @@
 					-4.0537 	 -13.0817 	 0.2957
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/wheelsl.ply"}
 				{bone "springl"
 					{parameters "id=body;"}
 					{matrix34
@@ -259,7 +259,7 @@
 						4.0618 	 0.0135 	 0.732
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/springl.ply"}
 				}
 			}
 			{bone "wheelsr"
@@ -271,7 +271,7 @@
 					-4.0537 	 13.1066 	 0.2956
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/wheelsr.ply"}
 				{bone "springr"
 					{parameters "id=body;"}
 					{matrix34
@@ -281,7 +281,7 @@
 						-4.0618 	 -0.0135 	 -0.7319
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/20mm_flak30/springr.ply"}
 				}
 			}
 			{bone "seat1"

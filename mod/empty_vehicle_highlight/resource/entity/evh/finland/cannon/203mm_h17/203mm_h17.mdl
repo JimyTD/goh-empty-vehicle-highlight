@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_detail gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 Carlos
 ;Date:			 22.12.2021 18:55:06
 ;File:			 T:\goh_3d_vehicles_fin\3d vehicles\Cannon\B-8\BL-8 203mm.max
@@ -109,7 +109,10 @@
 				{limits -4 4}
 				{speed 0.002}
 				{Position 10.8741 	 -0.0463 	 -0.8545}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -123,7 +126,10 @@
 						0 	 -1 	 0
 						-7.4801 	 0.0169 	 10.8317
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -132,15 +138,21 @@
 							0 	 1 	 0
 							6.1337 	 1.9138 	 0.7657
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/gun_lod1.ply"}
+						}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position 4.6795 	 -26.6525 	 1.7059}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/breech.ply"}
+								{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/breech_lod1.ply"}
+							}
 							{bone "handle"
 								{parameters "id=gun;"}
 								{Position 0.8626 	 -3.1558 	 -0.2817}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/handle.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -169,7 +181,10 @@
 						0 	 0 	 1
 						-31.3766 	 16.0968 	 -0.9559
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/aim_horizontal.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/aim_horizontal_lod1.ply"}
+					}
 				}
 				{bone "visor"
 					{Position -21.3453 	 10.8812 	 13.5784}
@@ -182,7 +197,10 @@
 						0.1882 	 0 	 0.9821
 						-33.0355 	 11.1711 	 2.4993
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/aim_vertical.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/aim_vertical_lod1.ply"}
+					}
 				}
 			}
 			{bone "pivot_front"
@@ -269,16 +287,25 @@
 					-0.165 	 0 	 0.9863
 					-27.4077 	 -9.9476 	 -3.6212
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail.ply"}
+					{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail_lod1.ply"}
+				}
 				{bone "body_detail_r"
 					{parameters "id=body;"}
 					{Position -0.5547 	 -4.5609 	 2.7684}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail_r.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail_r_lod1.ply"}
+					}
 				}
 				{bone "body_detail_l"
 					{parameters "id=body;"}
 					{Position -0.5547 	 -15.3343 	 2.7684}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail_l.ply"}
+						{VolumeView "../../../../-vehicle/finland/cannon/203mm_h17/body_detail_l_lod1.ply"}
+					}
 				}
 			}
 		}

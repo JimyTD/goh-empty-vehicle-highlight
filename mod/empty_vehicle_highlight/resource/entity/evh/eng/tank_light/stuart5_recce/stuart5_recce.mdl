@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver driver_hatch1 front_hatch gunner mgun_a_rot1 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 17.10.2025 12:36:20
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Stuart_recce_m3a3\stuart5_recce.max
@@ -32,7 +32,7 @@
 					0 	 0 	 1
 					17.8067 	 14.1716 	 13.6178
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/driver_hatch1.ply"}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
@@ -42,7 +42,7 @@
 					0 	 0 	 1
 					17.582 	 -13.9518 	 13.619
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/front_hatch.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -258,7 +258,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/mg_frontring.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -268,7 +268,10 @@
 							0 	 1 	 0
 							-1.7912 	 -0.2324 	 0.3342
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/mgun_hull.ply"}
+							{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/mgun_hull_lod1.ply"}
+						}
 					}
 				}
 			}
@@ -425,7 +428,7 @@
 				{parameters "id=body;"}
 				{limits -20 20}
 				{Position 19.1713 	 -0.0359 	 15.7176}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/mgun_a_rot1.ply"}
 				{bone revolute "mgun_a_rot2"
 					{parameters "id=body;"}
 					{limits -15 60}
@@ -435,7 +438,7 @@
 						0 	 -1 	 0
 						-1.6195 	 0.8372 	 4.48
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/stuart5_recce/mgun_a_rot2.ply"}
 					{bone "mgun"
 						{matrix34
 							1 	 0 	 0.0015

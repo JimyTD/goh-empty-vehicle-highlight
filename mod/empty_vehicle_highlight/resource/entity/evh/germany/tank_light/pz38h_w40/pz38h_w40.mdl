@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch rocket_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.03.2023 15:58:12
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\tank_light\pz38h\Pz.38H_w40\Pz38H_w40.max
@@ -34,21 +34,21 @@
 				}
 				{speed 0.008}
 				{Position 1.7632 	 0.0224 	 15.8967}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/turret.ply"}
 				{bone "cover2"
 					{parameters "id=turet;"}
 					{Position -1.2736 	 6.5144 	 12.0761}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/cover2.ply"}
 				}
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position -1.2736 	 -2.8886 	 12.0636}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/cover1.ply"}
 				}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position -13.7085 	 -0.6358 	 1.9239}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/turret_hatch.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -73,7 +73,7 @@
 							0 	 0 	 1
 							0 	 -1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -82,7 +82,7 @@
 								0 	 1 	 0
 								13.8406 	 -0.326 	 0.1714
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/gun.ply"}
 							{bone "foresight1"
 								{matrix34
 									1 	 0 	 0
@@ -180,7 +180,7 @@
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 19.5449 	 2.6506 	 14.7997}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz38h_w40/driver_hatch.ply"}
 			}
 			{bone "driver_hutch1"
 				{parameters "id=body;"}

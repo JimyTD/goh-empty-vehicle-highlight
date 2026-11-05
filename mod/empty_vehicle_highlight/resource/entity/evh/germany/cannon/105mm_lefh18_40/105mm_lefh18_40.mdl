@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot sandbag shield_lower standl standr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/germany/cannon/105mm_lefh18_40/recoil.anm"} {speed 0.75}}
@@ -25,7 +25,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -7.6789 	 0 	 2.5311}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -37,7 +37,7 @@
 						0 	 -1 	 0
 						-1.4014 	 0 	 9.8241
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -46,11 +46,11 @@
 							0 	 1 	 0
 							-1.766 	 0.0049 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -4.1688 	 -0.0332 	 -0.2228}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/breech.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -66,19 +66,19 @@
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -5.893 	 -1.7272 	 2.9402}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/lever.ply"}
 						}
 					}
 				}
 				{bone "sight"
 					{parameters "id=body;"}
 					{Position -1.3997 	 6.2932 	 9.8257}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/sight.ply"}
 				}
 				{bone "hydraulic_cylinder"
 					{parameters "id=body;"}
 					{Position 3.2928 	 -4.3948 	 11.0271}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/hydraulic_cylinder.ply"}
 				}
 				{bone "visor"
 					{Position 6.4125 	 7.1069 	 17.8933}
@@ -91,12 +91,12 @@
 						0 	 0 	 1
 						-1.1248 	 -8.1025 	 3.0116
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/aim_v.ply"}
 				}
 				{bone "shield1"
 					{parameters "id=shield1;"}
 					{Position 0.4943 	 0 	 9.6141}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/shield1.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
@@ -106,7 +106,7 @@
 						0 	 0 	 1
 						-4.6847 	 4.9895 	 2.555
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/aim_hor.ply"}
 				}
 			}
 			{bone "shield_lower"
@@ -117,16 +117,16 @@
 					0.6004 	 0 	 0.7997
 					8.0265 	 -12.7837 	 -3.0638
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/shield_lower.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -8.9111 	 8.5834 	 -1.298}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/standl.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -17.123 	 13.5357 	 -1.5378}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/detail1.ply"}
 				}
 				{bone "fixer"
 					{parameters "id=body;"}
@@ -136,7 +136,7 @@
 						-0.0915 	 0.1771 	 0.9799
 						-17.3862 	 8.7398 	 -1.4843
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/fixer.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -158,11 +158,11 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -8.9111 	 -8.5466 	 -1.298}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/standr.ply"}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -16.9578 	 -13.468 	 -2.5587}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/detail2.ply"}
 				}
 				{bone "dragbar"
 					{parameters "id=body;"}
@@ -172,7 +172,7 @@
 						-0.1283 	 -0.0911 	 0.9875
 						-39.7926 	 -22.6715 	 -6.0757
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/105mm_lefh18_40/dragbar.ply"}
 				}
 				{bone "seat2"
 					{matrix34

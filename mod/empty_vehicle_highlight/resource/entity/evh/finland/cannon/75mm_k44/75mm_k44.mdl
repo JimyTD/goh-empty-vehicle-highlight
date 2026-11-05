@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_ver standl1 standl2 standr1 standr2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 20.06.2022 18:39:04
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_fin\3d vehicles\Cannon\75mm_K44\75mm_k44.max
@@ -28,12 +28,12 @@
 			{bone "aim_ver"
 				{parameters "id=body;"}
 				{Position -7.6905 	 7.7632 	 4.5962}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/aim_ver.ply"}
 			}
 			{bone "standr1"
 				{parameters "id=body;"}
 				{Position 0 	 -10.3811 	 -0.0037}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/standr1.ply"}
 				{bone "standr2"
 					{parameters "id=body;"}
 					{matrix34
@@ -42,7 +42,7 @@
 						0 	 0 	 1
 						-30.6979 	 -8.2255 	 -3.2934
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/standr2.ply"}
 				}
 				{bone "fixer2"
 					{parameters "id=body;"}
@@ -52,13 +52,13 @@
 						-0.1564 	 0 	 0.9877
 						-13.5833 	 -1.8618 	 -2.6507
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/fixer2.ply"}
 				}
 			}
 			{bone "standl1"
 				{parameters "id=body;"}
 				{Position 0 	 10.3853 	 -0.0037}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/standl1.ply"}
 				{bone "standl2"
 					{parameters "id=body;"}
 					{matrix34
@@ -67,7 +67,7 @@
 						0 	 0 	 1
 						-30.6842 	 8.2218 	 -3.2876
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/standl2.ply"}
 				}
 				{bone "fixer1"
 					{parameters "id=body;"}
@@ -77,7 +77,7 @@
 						-0.1564 	 0 	 0.9877
 						-13.5827 	 1.864 	 -2.6507
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/fixer1.ply"}
 				}
 			}
 			{bone "pivot_front"
@@ -128,7 +128,7 @@
 					0 	 -1 	 0
 					-0.0117 	 0 	 0.1153
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/turret.ply"}
 				{bone "vert_rod"
 					{parameters "id=body;"}
 					{matrix34
@@ -137,7 +137,7 @@
 						0 	 1 	 0
 						-7.6788 	 -2.2324 	 7.7546
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/vert_rod.ply"}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
@@ -147,26 +147,26 @@
 						0 	 1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/shield.ply"}
 					{bone "detail2"
 						{parameters "id=body;"}
 						{Position -0.3998 	 -1.8428 	 6.7005}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/detail2.ply"}
 					}
 					{bone "detail3"
 						{parameters "id=body;"}
 						{Position -2.135 	 2.2848 	 8.3348}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/detail3.ply"}
 					}
 					{bone "detail1"
 						{parameters "id=body;"}
 						{Position 2.6285 	 8.8453 	 4.9002}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/detail1.ply"}
 					}
 					{bone "shield_lower"
 						{parameters "id=shield_lower;"}
 						{Position 1.4375 	 -10.5232 	 -5.1296}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/shield_lower.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -182,31 +182,31 @@
 						0 	 1 	 0
 						-0.0135 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position -13.7923 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/gun.ply"}
 						{bone "spring"
 							{parameters "id=gun;"}
 							{Position -0.9025 	 -3.4373 	 -1.014}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/spring.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -8.6935 	 -2.874 	 -2.3255}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/lever.ply"}
 						}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -10.6682 	 0 	 -0.0208}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/breech_block.ply"}
 						}
 						{bone "towing_rod"
 							{parameters "id=body;"}
 							{Position 77.7007 	 0 	 -0.0607}
 							{visibility 0}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/towing_rod.ply"}
 						}
 						{bone "foresight1"
 							{Position 71.232 	 -0.0003 	 0.0064}
@@ -223,7 +223,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position -8.644 	 2.4874 	 2.3533}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/75mm_k44/aim_hor.ply"}
 					}
 					{bone "visor"
 						{Position 4.2519 	 3.2582 	 5.0978}

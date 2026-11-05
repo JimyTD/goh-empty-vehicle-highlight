@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_1_rot1 mgun_2_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.11.2023 21:08:03
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\Lend-Lease\M3A1E1_scout\m3a1e1_mgun.max
@@ -205,7 +205,7 @@
 			{bone "doorright"
 				{parameters "id=body;"}
 				{Position 7.7418 	 -16.1789 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/doorright.ply"}
 				{bone "armor3"
 					{parameters "id=body;"}
 					{matrix34
@@ -214,13 +214,13 @@
 						0 	 0 	 -1
 						-4.0333 	 -0.8578 	 2.8638
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/armor3.ply"}
 				}
 			}
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position 7.7297 	 16.1162 	 13.0316}
-				
+				{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/doorleft.ply"}
 				{bone "armor2"
 					{parameters "id=body;"}
 					{matrix34
@@ -229,7 +229,7 @@
 						0 	 0 	 -1
 						-4.0593 	 0.8691 	 2.8828
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/armor2.ply"}
 				}
 			}
 			{bone "detail1"
@@ -337,7 +337,7 @@
 							0 	 0 	 1
 							-0.111 	 0.1621 	 0.4298
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/mgun_2_rot1.ply"}
 						{bone revolute "mgun_2_rot2"
 							{parameters "id=body;"}
 							{limits -15 20}
@@ -348,7 +348,7 @@
 								0 	 -1 	 0
 								-1.4569 	 0 	 4.7145
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/mgun_2_rot2.ply"}
 							{bone "mgun2"
 								{matrix34
 									1 	 0 	 0
@@ -386,7 +386,7 @@
 							-0.225 	 0 	 0.9744
 							-0.2545 	 0.1621 	 0.4128
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/mgun_1_rot1.ply"}
 						{bone revolute "mgun_1_rot2"
 							{parameters "id=body;"}
 							{limits -15 20}
@@ -396,7 +396,7 @@
 								0 	 -1 	 0
 								-1.4255 	 0.1292 	 3.7753
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/m3a1e1_scout_mgun/mgun_1_rot2.ply"}
 							{bone "mgun"
 								{matrix34
 									1 	 0 	 0

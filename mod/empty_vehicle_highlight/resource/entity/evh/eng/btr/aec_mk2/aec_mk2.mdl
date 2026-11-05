@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: front_hatch turret windshield
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 27.09.2025 22:28:32
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\btr\AEC_mk2_3\aec_mk2.max
@@ -64,16 +64,16 @@
 			{bone "windshield"
 				{parameters "id=body;"}
 				{Position 31.045 	 0 	 20.7874}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/windshield.ply"}
 				{bone "glass"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/glass.ply"}
 				}
 			}
 			{bone "front_hatch"
 				{parameters "id=body;"}
 				{Position 19.8605 	 5.3867 	 23.2028}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/front_hatch.ply"}
 			}
 			{bone "ammo2"
 				{Position 11.198 	 -11.6434 	 10.4993}
@@ -133,7 +133,7 @@
 				}
 				{speed 0.008}
 				{Position 1.9977 	 -0.0004 	 25.0055}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -154,7 +154,7 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/mantlet.ply"}
 						{bone "foresight5"
 							{matrix34
 								0.9999 	 0.0102 	 0.0002
@@ -172,13 +172,13 @@
 							0 	 1 	 0
 							6.8905 	 -0.5857 	 2.3257
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/gun.ply"}
 						{bone "foresight1"
 							{Position 40.1678 	 -0.0026 	 0.0025}
 						}
 						{bone "57mm_barrel"
 							{parameters "id=gun;"}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/57mm_barrel.ply"}
 						}
 					}
 					{bone "sight"
@@ -188,12 +188,12 @@
 				{bone "turret_hatch1"
 					{parameters "id=turret;"}
 					{Position -2.125 	 -9.2413 	 13.4237}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/turret_hatch1.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -10.0746 	 -2.9618 	 13.4236}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/turret_hatch2.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -206,12 +206,12 @@
 				{bone "turret_hatch4"
 					{parameters "id=turret;"}
 					{Position -3.0738 	 11.9277 	 13.4235}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/turret_hatch4.ply"}
 				}
 				{bone "turret_hatch3"
 					{parameters "id=turret;"}
 					{Position -3.1744 	 3.9805 	 13.4238}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/aec_mk2/turret_hatch3.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34

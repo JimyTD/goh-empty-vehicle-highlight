@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 07.11.2020 10:03:21
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\m41_ampulomet\m41_ampulomet_export.max
@@ -21,7 +21,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0.0123 	 0.0046 	 3.5398}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/m41_ampulomet/turret.ply"}
 				{bone "commander"
 					{Position -14.2073 	 -15.04 	 -4.5721}
 				}
@@ -36,7 +36,7 @@
 						0 	 1 	 0
 						0 	 -0.0073 	 2.1441
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/m41_ampulomet/gun_rot.ply"}
 					{bone "aim"
 						{parameters "id=body;"}
 						{matrix34
@@ -45,7 +45,7 @@
 							0 	 -1 	 0
 							-4.1145 	 -1.4873 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/m41_ampulomet/aim.ply"}
 					}
 					{bone "visor"
 						{parameters "vis;"}

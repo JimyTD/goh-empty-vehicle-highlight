@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:27:59
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_fin\3d vehicles\tank_light\L-62\l62_antiII.max
@@ -48,7 +48,10 @@
 				}
 				{speed 0.006}
 				{Position 4.407 	 0 	 6.5129}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -62,7 +65,7 @@
 						0 	 -1 	 0
 						-2.887 	 -0.508 	 7.3778
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/gun_rot.ply"}
 					{bone "spring"
 						{parameters "id;"}
 						{matrix34
@@ -71,7 +74,7 @@
 							0 	 0 	 -1
 							20.1173 	 -0.5076 	 -0.2582
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/l62/spring.ply"}
 					}
 					{bone "magazine"
 						{parameters "id=gun;"}
@@ -80,7 +83,7 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/l62/magazine.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -90,7 +93,7 @@
 							0 	 1 	 0
 							24.9792 	 0.2582 	 -0.508
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_light/l62/gun.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -104,22 +107,25 @@
 				{bone "turret_rivets"
 					{parameters "id=turret;"}
 					{Position 0 	 0 	 3.3602}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_light/l62/turret_rivets.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_light/l62/turret_rivets_lod1.ply"}
+					}
 				}
 				{bone "aim_vertical"
 					{parameters "id=turret;"}
 					{Position 1.2633 	 9.3843 	 5.1966}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/aim_vertical.ply"}
 				}
 				{bone "aim_horizontal"
 					{parameters "id=turret;"}
 					{Position 2.6755 	 -10.486 	 3.9718}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/aim_horizontal.ply"}
 				}
 				{bone "piston1"
 					{parameters "id=turret;"}
 					{Position -1.0252 	 -0.0004 	 2.2556}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_light/l62/piston1.ply"}
 				}
 				{bone "fx_invers"
 					{matrix34
@@ -160,7 +166,7 @@
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 30.6683 	 0.1013 	 7.3757}
-				
+				{VolumeView "../../../../-vehicle/finland/tank_light/l62/driver_hatch.ply"}
 			}
 			{bone "rivets1"
 				{parameters "id=body;"}

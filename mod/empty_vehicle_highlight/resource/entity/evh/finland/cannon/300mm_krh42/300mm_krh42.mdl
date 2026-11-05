@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: leveler sinker
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "close" {file "../../../../-vehicle/finland/cannon/300mm_krh42/close.anm"} {speed 0.3} {events {1 "close"}}}
@@ -209,7 +209,7 @@
 								0.0347 	 0 	 0.9994
 								-7.8055 	 0 	 -1.5421
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/300mm_krh42/sinker.ply"}
 						}
 						{bone "hinge"
 							{parameters "id=body;"}

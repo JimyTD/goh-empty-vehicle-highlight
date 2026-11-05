@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 hatch_r
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.02.2026 11:31:46
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Ram_kangaroo\Ram_Kangaroo.max
@@ -140,7 +140,7 @@
 			{bone "hatch_r"
 				{parameters "id=body;"}
 				{Position 31.7845 	 -10.4023 	 13.4055}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hatch_r.ply"}
 			}
 			{bone "transmission"
 				{Position 40.7964 	 0.4128 	 -6.6442}
@@ -438,7 +438,7 @@
 					0 	 0 	 1
 					27.271 	 8.728 	 9.1875
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/aux_turret1.ply"}
 				{bone "visor1"
 					{Position 6.2292 	 2.2428 	 2.4566}
 				}
@@ -469,7 +469,7 @@
 							0.0005 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/mg_mount.ply"}
 						{bone "mgun_hull"
 							{parameters "id=body;"}
 							{matrix34
@@ -478,7 +478,7 @@
 								-0.0005 	 0 	 1
 								-0.0235 	 -2.2696 	 -0.2669
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/mgun_hull.ply"}
 						}
 					}
 				}
@@ -490,11 +490,11 @@
 						0 	 0 	 1
 						3.6918 	 2.3834 	 5.4586
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hatch_driver1.ply"}
 					{bone "hatch_driver2"
 						{parameters "id=aux_turret1;"}
 						{Position -4.7811 	 1.5962 	 -0.005}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/ram_kangaroo/hatch_driver2.ply"}
 					}
 				}
 			}

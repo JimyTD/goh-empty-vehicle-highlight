@@ -1,6 +1,5 @@
-{material envmap
-	{diffuse "$/_vehicle/bm_8_48"}
-	{envmap "$/_vehicle/envmap_gold01"}
-	{mask "$/_vehicle/bm_8_48_sp"}
-	{blend blend}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

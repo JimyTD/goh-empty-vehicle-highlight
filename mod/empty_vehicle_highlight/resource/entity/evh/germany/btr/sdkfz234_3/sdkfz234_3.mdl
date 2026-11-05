@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail11 mg_support susp turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 25.08.2022 15:09:18
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_ger\vehicles\btr\sdkfz 234_3\sdkfz_234_3_alt.max
@@ -32,10 +32,10 @@
 				}
 				{limits -20 20}
 				{Position 19.3378 	 -1.0218 	 5.325}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/turret.ply"}
 				{bone "gun_shield"
 					{parameters "id=gun_shield;"}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/gun_shield.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -50,7 +50,7 @@
 						0 	 -1 	 0
 						1.8141 	 0.0835 	 2.7698
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -59,7 +59,7 @@
 							0 	 1 	 0
 							17.47 	 0.0029 	 0.0271
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -80,7 +80,7 @@
 							0 	 1 	 0
 							-5.8568 	 2.2923 	 6.3787
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/mg_mount.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0 	 0
@@ -190,7 +190,7 @@
 			{bone revolute "detail11"
 				{parameters "id=body;"}
 				{Position -66.1206 	 0 	 -16.2043}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/detail11.ply"}
 			}
 			{bone "antenna"
 				{parameters "id=body;"}
@@ -287,7 +287,7 @@
 			{bone "mg_support"
 				{parameters "id=body;"}
 				{Position -13.6663 	 -1.1042 	 6.1385}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/mg_support.ply"}
 				{bone revolute "mgun_a2_rot1"
 					{limits -45 15}
 					{matrix34
@@ -559,7 +559,7 @@
 			{bone revolute "susp"
 				{parameters "id=body;"}
 				{Position 12.5559 	 -15.4414 	 -3.0881}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_3/susp.ply"}
 			}
 		}
 		{bone "emit1"

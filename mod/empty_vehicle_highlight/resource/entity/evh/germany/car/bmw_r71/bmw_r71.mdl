@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail1 mgun_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 10.09.2024 08:23:26
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\car\BMW r-71\bmw_r71.max
@@ -130,7 +130,7 @@
 					0 	 -1 	 0
 					-17.4276 	 -12.722 	 8.7712
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/car/bmw_r71/detail1.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}
@@ -145,7 +145,7 @@
 				{limits -15 15}
 				{speed 0.008}
 				{Position 7.4415 	 -12.757 	 9.2176}
-				
+				{VolumeView "../../../../-vehicle/germany/car/bmw_r71/mgun_rot1.ply"}
 				{bone revolute "mgun_rot2"
 					{limits -10 20}
 					{speed 0.008}

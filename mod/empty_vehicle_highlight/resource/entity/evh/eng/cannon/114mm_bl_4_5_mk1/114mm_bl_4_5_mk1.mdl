@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor gun gun_rot transport_fixer2 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/recoil.anm"} {speed 0.6}}
@@ -37,7 +37,7 @@
 					0 	 -1 	 0
 					4.6146 	 -0.2643 	 0
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -51,7 +51,7 @@
 						0 	 -1 	 0
 						0.3938 	 0 	 14.8239
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -60,15 +60,15 @@
 							0 	 1 	 0
 							-21.8706 	 1.6097 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position 4.3568 	 -6.5317 	 0.1267}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/breech.ply"}
 							{bone "lever"
 								{parameters "id=gun;"}
 								{Position 0.7925 	 -2.2761 	 -0.0365}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/lever.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -95,7 +95,7 @@
 								0 	 0 	 1
 								-0.1568 	 -8.8192 	 -3.7257
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/holder.ply"}
 						}
 						{bone "transport_fixer1"
 							{parameters "id=gun;"}
@@ -106,7 +106,7 @@
 								0 	 86.3199 	 -0.0123
 							}
 							{visibility 0}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/transport_fixer1.ply"}
 						}
 					}
 				}
@@ -116,7 +116,7 @@
 				{bone "sight"
 					{parameters "id=body;"}
 					{Position 0.3938 	 8.9105 	 14.8239}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/sight.ply"}
 				}
 				{bone "aim_v_help"
 					{matrix34
@@ -128,18 +128,18 @@
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/aim_ver.ply"}
 					}
 				}
 				{bone "controlrod_hor"
 					{parameters "id=body;"}
 					{Position -13.3836 	 4.9887 	 6.1354}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/controlrod_hor.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -3.5363 	 -8.3136 	 9.2367}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/detail1.ply"}
 				}
 			}
 			{bone "seat1"
@@ -192,7 +192,7 @@
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/aim_hor.ply"}
 				}
 			}
 			{bone "detail2"
@@ -254,7 +254,7 @@
 					-25.127 	 -0.5785 	 0
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/114mm_bl_4_5_mk1/transport_fixer2.ply"}
 			}
 		}
 		{bone "pivot_front"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 30.01.2022 00:07:22
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\Early WW2 tanks\russian\gaz_aaa_maximX4\GAZ-AAA_maximX4.max
@@ -120,7 +120,7 @@
 						0 	 -0.0174 	 0.9998
 						5.1347 	 -11.662 	 10.5102
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/doorright.ply"}
 					{bone "window3"
 						{parameters "id=window3;"}
 						{matrix34
@@ -129,17 +129,17 @@
 							-0.0172 	 0.0147 	 0.9997
 							-7.3406 	 -0.7458 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/window3.ply"}
 					}
 					{bone "enumerator3"
 						{Position -3.8438 	 -0.5574 	 -3.1222}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/enumerator3.ply"}
 					}
 				}
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 5.142 	 11.637 	 10.5102}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/doorleft.ply"}
 					{bone "window2"
 						{parameters "id=window2;"}
 						{matrix34
@@ -148,11 +148,11 @@
 							0 	 0 	 1
 							-7.3479 	 0.7707 	 6.2798
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/window2.ply"}
 					}
 					{bone "enumerator2"
 						{Position -11.0296 	 1.6711 	 -3.1263}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/enumerator2.ply"}
 					}
 				}
 				{bone "seat01"
@@ -227,7 +227,7 @@
 						{parameters "id=turret;"}
 						{speed 0.007}
 						{Position 0 	 0.0029 	 19.6286}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/turret.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{animation
@@ -241,7 +241,7 @@
 								0 	 -1 	 0
 								-1.5315 	 0.0002 	 5.4459
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/gun_rot.ply"}
 							{bone "gun4"
 								{parameters "id=gun;"}
 								{matrix34
@@ -250,7 +250,7 @@
 									0 	 1 	 0
 									0.7999 	 2.1359 	 -5.0392
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/gun4.ply"}
 							}
 							{bone "gun3"
 								{parameters "id=gun;"}
@@ -260,7 +260,7 @@
 									0 	 1 	 0
 									0.7999 	 2.1359 	 -1.6732
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/gun3.ply"}
 							}
 							{bone "gun2"
 								{parameters "id=gun;"}
@@ -270,7 +270,7 @@
 									0 	 1 	 0
 									0.7999 	 2.1359 	 1.673
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/gun2.ply"}
 							}
 							{bone "gun1"
 								{parameters "id=gun;"}
@@ -280,7 +280,7 @@
 									0 	 1 	 0
 									0.7999 	 2.1359 	 5.0396
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/gun1.ply"}
 							}
 							{bone "foresight14"
 								{matrix34
@@ -358,7 +358,7 @@
 						{bone "belts"
 							{parameters "id=body;"}
 							{Position -2.9251 	 -1.6546 	 5.5339}
-							
+							{VolumeView "../../../../-vehicle/ussr/car/gaz_aaa_maximx4/belts.ply"}
 						}
 						{bone "gunner"
 							{Position -10.7749 	 0 	 -19.6286}

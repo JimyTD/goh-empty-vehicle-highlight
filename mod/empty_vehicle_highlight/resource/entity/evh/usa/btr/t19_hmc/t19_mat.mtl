@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/t19_halftrack"}
-	{bump "$/_vehicle/t19_halftrack_bp"}
-	{specular "$/_vehicle/t19_halftrack_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

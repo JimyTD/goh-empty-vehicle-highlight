@@ -1,6 +1,5 @@
-{material envmap
-	{diffuse "$/_vehicle/cckw_353_lwb_transport"}
-	{envmap "$/_vehicle/envmap_gold01"}
-	{mask "$/_vehicle/cckw_353_lwb_transport_sp"}
-	{blend blend}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

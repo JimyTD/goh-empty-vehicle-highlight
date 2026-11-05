@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor cabin_cover doorleft doorright mount1_lp
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.10.2023 10:53:33
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\cckw\cckw_352_eng\cckw352_eng.max
@@ -123,7 +123,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -4.0188 	 -19.6787 	 4.5831}
-					
+					{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/backdoor.ply"}
 					{bone "fxstop2"
 						{matrix34
 							-1 	 0 	 0
@@ -155,12 +155,12 @@
 					{bone revolute "mount1_lp"
 						{parameters "id=body;"}
 						{Position 11.2212 	 -4.7614 	 33.7276}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/mount1_lp.ply"}
 						{bone revolute "mgun_a_rot1"
 							{parameters "id=body;"}
 							{limits -10 10}
 							{Position 10.874 	 -0.0517 	 0.1952}
-							
+							{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/mgun_a_rot1.ply"}
 							{bone revolute "mgun_a_rot2"
 								{parameters "id=body;"}
 								{limits -10 30}
@@ -170,7 +170,7 @@
 									0 	 -1 	 0
 									-0.6309 	 -0.4018 	 3.8991
 								}
-								
+								{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/mgun_a_rot2.ply"}
 								{bone "mgun"
 									{matrix34
 										1 	 0 	 0
@@ -193,7 +193,7 @@
 					{bone "cabin_cover"
 						{parameters "id=body;"}
 						{Position 11.1456 	 -4.6045 	 30.1739}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/cabin_cover.ply"}
 					}
 				}
 				{bone "doorright"
@@ -201,12 +201,12 @@
 					{bone "doorright2"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/doorright2.ply"}
 					}
 					{bone "window4"
 						{parameters "id=window4;"}
 						{Position -8.7036 	 -0.2418 	 18.7252}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/window4.ply"}
 					}
 				}
 				{bone "doorleft"
@@ -214,12 +214,12 @@
 					{bone "doorleft2"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/doorleft2.ply"}
 					}
 					{bone "window3"
 						{parameters "id=window3;"}
 						{Position -8.6685 	 0.2684 	 18.5998}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/window3.ply"}
 					}
 				}
 			}

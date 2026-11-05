@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 door_back1 elevator1 elevator2 propeller1 propeller1_work propeller2 propeller2_work rudder
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.12.2025 19:29:23
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_usa\vehicles\airborne\c47\C47D.max
@@ -43,7 +43,7 @@
 					0 	 -1 	 0
 					-236.469 	 36.5105 	 20.5959
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/c47_d/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=body;"}
@@ -55,14 +55,14 @@
 					0 	 -1 	 0
 					-236.469 	 -37.6566 	 20.5959
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/c47_d/elevator2.ply"}
 			}
 			{bone revolute "rudder"
 				{parameters "id=body;"}
 				{limits -20 20}
 				{speed 0.1}
 				{Position -223.836 	 -0.1458 	 60.7557}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/c47_d/rudder.ply"}
 			}
 			{bone "wingr1"
 				{parameters "id=wingright;"}
@@ -131,18 +131,18 @@
 					{bone revolute "propeller1"
 						{parameters "id=engine1;"}
 						{Position 39.4027 	 0.0192 	 -0.2212}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/propeller1.ply"}
 					}
 					{bone revolute "propeller1_work"
 						{parameters "id=engine1;"}
 						{Position 45.6116 	 0.0192 	 -0.2212}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/propeller1_work.ply"}
 						{bone "peak_work"
 							{parameters "id=engine1;"}
 							{Position 0 	 0 	 0}
 							{visibility 0}
-							
+							{VolumeView "../../../../-vehicle/usa/airborne/c47_d/peak_work.ply"}
 						}
 					}
 				}
@@ -160,7 +160,7 @@
 							0.0866 	 0.9898 	 -0.1134
 							-48.282 	 -98.2239 	 12.8068
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/aileron2.ply"}
 					}
 					{bone "flap_r"
 						{parameters "id=wingright;"}
@@ -259,18 +259,18 @@
 							0 	 0 	 -1
 							39.4029 	 -0.0215 	 -0.2212
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/propeller2.ply"}
 					}
 					{bone revolute "propeller2_work"
 						{parameters "id=engine2;"}
 						{Position 45.8215 	 -0.0215 	 -0.2212}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/propeller2_work.ply"}
 						{bone "peak2_work"
 							{parameters "id=engine2;"}
 							{Position 0 	 0 	 0}
 							{visibility 0}
-							
+							{VolumeView "../../../../-vehicle/usa/airborne/c47_d/peak2_work.ply"}
 						}
 					}
 				}
@@ -288,7 +288,7 @@
 							0.0674 	 -0.9896 	 -0.1271
 							-48.282 	 104.725 	 12.8068
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/c47_d/aileron1.ply"}
 					}
 					{bone "flap_l"
 						{parameters "id=wingleft;"}
@@ -337,7 +337,7 @@
 					0.0003 	 -0.1219 	 0.9925
 					-95.3058 	 22.2652 	 22.695
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/c47_d/door_back1.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{matrix34
@@ -346,7 +346,7 @@
 						0.0018 	 0.1219 	 0.9925
 						-9.9776 	 -2.9133 	 -8.0847
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/airborne/c47_d/detail1.ply"}
 				}
 			}
 			{bone "door_back2"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: stan_l stan_r
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 11.09.2023 16:52:11
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\cannon\50mm_rocket_projector\50mm_rocket_projector.max
@@ -63,7 +63,7 @@
 							0.2662 	 -0.1971 	 0.9436
 							12.3288 	 1.5667 	 16.7597
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/50mm_rocket_projector/stan_l.ply"}
 						{bone "support1"
 							{matrix34
 								0.9331 	 -0.2418 	 0.2662
@@ -81,7 +81,7 @@
 							0.2523 	 0.1457 	 0.9566
 							12.3986 	 -1.1722 	 16.6733
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/cannon/50mm_rocket_projector/stan_r.ply"}
 						{bone "support2"
 							{matrix34
 								0.9507 	 0.1804 	 0.2523

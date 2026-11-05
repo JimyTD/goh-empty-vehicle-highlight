@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 aux_turret2 aux_turret3 gun gun1 gun2 gun3 mgun_1_rot1 mgun_2_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 01.12.2025 00:33:28
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\marine\bclass destroyer\blcass_destroyer_fh_export.max
@@ -94,7 +94,7 @@
 					{bone revolute "turret"
 						{parameters "id=gun1;"}
 						{Position 0 	 0 	 3.4743}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/turret.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun1;"}
 							{matrix34
@@ -103,7 +103,7 @@
 								0 	 -1 	 0
 								2.4396 	 -0.001 	 29.8031
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun1;"}
 								{matrix34
@@ -112,16 +112,16 @@
 									0 	 1 	 0
 									69.2176 	 -0.0563 	 -0.001
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun.ply"}
 								{bone "breech_block"
 									{parameters "id=gun1;"}
 									{Position -95.9597 	 0.9049 	 0.0634}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_block.ply"}
 								}
 								{bone "breech_handle"
 									{parameters "id=gun1;"}
 									{Position -93.3124 	 -4.2261 	 6.1867}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_handle.ply"}
 								}
 								{bone "foresight1"
 									{parameters "group=crew;"}
@@ -145,11 +145,11 @@
 									0 	 1 	 0
 									-45.1814 	 -5.8956 	 -4.6221
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_pivot.ply"}
 								{bone "shell_bed"
 									{parameters "id=gun1;"}
 									{Position 11.8837 	 4.772 	 3.8498}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shell_bed.ply"}
 								}
 							}
 							{bone "loader_slide"
@@ -160,13 +160,13 @@
 									0 	 1 	 0
 									-56.38 	 -3.0668 	 -9.0006
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_slide.ply"}
 							}
 						}
 						{bone "shield1"
 							{parameters "id=shield1;"}
 							{Position 3.5552 	 0.06 	 24.5756}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shield1.ply"}
 							{bone "crew_shiedl1_1"
 								{parameters "id=shield1;"}
 								{matrix34
@@ -175,7 +175,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 23.8805 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl1_1.ply"}
 								{bone "crew_shiedl1_2"
 									{parameters "id=shield1;"}
 									{matrix34
@@ -184,7 +184,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 -4.4009 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl1_2.ply"}
 								}
 							}
 							{bone "crew_shiedr1_1"
@@ -195,7 +195,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 -23.8355 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr1_1.ply"}
 								{bone "crew_shiedr1_2"
 									{parameters "id=shield1;"}
 									{matrix34
@@ -204,19 +204,19 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 4.3712 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr1_2.ply"}
 								}
 							}
 						}
 						{bone "aim_hor"
 							{parameters "id=gun1;"}
 							{Position 2.1028 	 -14.4384 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor.ply"}
 						}
 						{bone "aim_ver"
 							{parameters "id=gun1;"}
 							{Position 2.1028 	 15.5966 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver.ply"}
 						}
 						{bone "charger"
 							{parameters "group=crew;"}
@@ -284,16 +284,16 @@
 					{bone revolute "aux_turret1"
 						{parameters "id=gun2;"}
 						{Position 0 	 0 	 3.4743}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aux_turret1.ply"}
 						{bone "aim_hor1"
 							{parameters "id=gun2;"}
 							{Position 2.103 	 -14.4384 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor1.ply"}
 						}
 						{bone "aim_ver1"
 							{parameters "id=gun2;"}
 							{Position 2.103 	 15.5966 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver1.ply"}
 						}
 						{bone "charger3"
 							{parameters "group=crew;"}
@@ -321,7 +321,7 @@
 								0 	 -1 	 0
 								2.4397 	 -0.001 	 29.8031
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun_rot1.ply"}
 							{bone "gun1"
 								{parameters "id=gun2;"}
 								{matrix34
@@ -330,16 +330,16 @@
 									0 	 1 	 0
 									69.2176 	 -0.0562 	 -0.001
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun1.ply"}
 								{bone "breech_block1"
 									{parameters "id=gun2;"}
 									{Position -95.9596 	 0.9049 	 0.0634}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_block1.ply"}
 								}
 								{bone "breech_handle1"
 									{parameters "id=gun2;"}
 									{Position -93.3124 	 -4.2261 	 6.1867}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_handle1.ply"}
 								}
 								{bone "foresight1a"
 									{parameters "group=crew;"}
@@ -363,11 +363,11 @@
 									0 	 1 	 0
 									-45.1815 	 -5.8956 	 -4.6221
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_pivot1.ply"}
 								{bone "shell_bed1"
 									{parameters "id=gun2;"}
 									{Position 11.8837 	 4.772 	 3.8498}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shell_bed1.ply"}
 								}
 							}
 							{bone "loader_slide1"
@@ -378,7 +378,7 @@
 									0 	 1 	 0
 									-56.38 	 -3.0668 	 -9.0006
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_slide1.ply"}
 							}
 						}
 						{bone "gunner3"
@@ -392,7 +392,7 @@
 						{bone "shield2"
 							{parameters "id=shield2;"}
 							{Position 3.5553 	 0.06 	 24.5756}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shield2.ply"}
 							{bone "crew_shiedl2_1"
 								{parameters "id=shield2;"}
 								{matrix34
@@ -401,7 +401,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 23.8805 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl2_1.ply"}
 								{bone "crew_shiedl2_2"
 									{parameters "id=shield2;"}
 									{matrix34
@@ -410,7 +410,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 -4.4008 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl2_2.ply"}
 								}
 							}
 							{bone "crew_shiedr2_1"
@@ -421,7 +421,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 -23.8355 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr2_1.ply"}
 								{bone "crew_shiedr2_2"
 									{parameters "id=shield2;"}
 									{matrix34
@@ -430,7 +430,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 4.3713 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr2_2.ply"}
 								}
 							}
 						}
@@ -499,16 +499,16 @@
 					{bone revolute "aux_turret2"
 						{parameters "id=gun3;"}
 						{Position 0 	 0 	 3.4743}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aux_turret2.ply"}
 						{bone "aim_hor2"
 							{parameters "id=gun3;"}
 							{Position 2.1029 	 -14.4384 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor2.ply"}
 						}
 						{bone "aim_ver2"
 							{parameters "id=gun3;"}
 							{Position 2.1029 	 15.5966 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver2.ply"}
 						}
 						{bone "charger6"
 							{parameters "group=crew;"}
@@ -536,7 +536,7 @@
 								0 	 -1 	 0
 								2.4396 	 -0.001 	 29.8031
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun_rot2.ply"}
 							{bone "gun2"
 								{parameters "id=gun3;"}
 								{matrix34
@@ -545,16 +545,16 @@
 									0 	 1 	 0
 									69.2177 	 -0.0563 	 -0.001
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun2.ply"}
 								{bone "breech_block2"
 									{parameters "id=gun3;"}
 									{Position -95.9597 	 0.9049 	 0.0634}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_block2.ply"}
 								}
 								{bone "breech_handle2"
 									{parameters "id=gun3;"}
 									{Position -93.3124 	 -4.2261 	 6.1867}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_handle2.ply"}
 								}
 								{bone "foresight1b"
 									{parameters "group=crew;"}
@@ -578,11 +578,11 @@
 									0 	 1 	 0
 									-45.1814 	 -5.8956 	 -4.6221
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_pivot2.ply"}
 								{bone "shell_bed2"
 									{parameters "id=gun3;"}
 									{Position 11.8837 	 4.772 	 3.8498}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shell_bed2.ply"}
 								}
 							}
 							{bone "loader_slide2"
@@ -593,7 +593,7 @@
 									0 	 1 	 0
 									-56.38 	 -3.0668 	 -9.0006
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_slide2.ply"}
 							}
 						}
 						{bone "gunner5"
@@ -607,7 +607,7 @@
 						{bone "shield3"
 							{parameters "id=shield3;"}
 							{Position 3.5552 	 0.06 	 24.5756}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shield3.ply"}
 							{bone "crew_shiedl3_1"
 								{parameters "id=shield3;"}
 								{matrix34
@@ -616,7 +616,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 23.8805 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl3_1.ply"}
 								{bone "crew_shiedl3_2"
 									{parameters "id=shield3;"}
 									{matrix34
@@ -625,7 +625,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 -4.4009 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl3_2.ply"}
 								}
 							}
 							{bone "crew_shiedr3_1"
@@ -636,7 +636,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 -23.8355 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr3_1.ply"}
 								{bone "crew_shiedr3_2"
 									{parameters "id=shield3;"}
 									{matrix34
@@ -645,7 +645,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 4.3713 	 3.1642
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr3_2.ply"}
 								}
 							}
 						}
@@ -666,16 +666,16 @@
 					{bone revolute "aux_turret3"
 						{parameters "id=gun4;"}
 						{Position 0 	 0 	 3.4743}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aux_turret3.ply"}
 						{bone "aim_hor3"
 							{parameters "id=gun4;"}
 							{Position 2.103 	 -14.4384 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor3.ply"}
 						}
 						{bone "aim_ver3"
 							{parameters "id=gun4;"}
 							{Position 2.103 	 15.5966 	 25.6238}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver3.ply"}
 						}
 						{bone "charger8"
 							{parameters "group=crew;"}
@@ -703,7 +703,7 @@
 								0 	 -1 	 0
 								2.4396 	 -0.001 	 29.8031
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun_rot3.ply"}
 							{bone "gun3"
 								{parameters "id=gun4;"}
 								{matrix34
@@ -712,16 +712,16 @@
 									0 	 1 	 0
 									69.2176 	 -0.0563 	 -0.001
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gun3.ply"}
 								{bone "breech_block3"
 									{parameters "id=gun4;"}
 									{Position -95.9597 	 0.9049 	 0.0634}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_block3.ply"}
 								}
 								{bone "breech_handle3"
 									{parameters "id=gun4;"}
 									{Position -93.3124 	 -4.2261 	 6.1867}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/breech_handle3.ply"}
 								}
 								{bone "foresight1c"
 									{parameters "group=crew;"}
@@ -745,11 +745,11 @@
 									0 	 1 	 0
 									-45.1813 	 -5.8956 	 -4.6221
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_pivot3.ply"}
 								{bone "shell_bed3"
 									{parameters "id=gun4;"}
 									{Position 11.8837 	 4.772 	 3.8498}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shell_bed3.ply"}
 								}
 							}
 							{bone "loader_slide3"
@@ -760,7 +760,7 @@
 									0 	 1 	 0
 									-56.3799 	 -3.0668 	 -9.0006
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/loader_slide3.ply"}
 							}
 						}
 						{bone "gunner7"
@@ -774,7 +774,7 @@
 						{bone "shield4"
 							{parameters "id=shield4;"}
 							{Position 3.5553 	 0.06 	 24.5756}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/shield4.ply"}
 							{bone "crew_shiedl4_1"
 								{parameters "id=shield4;"}
 								{matrix34
@@ -783,7 +783,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 23.8805 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl4_1.ply"}
 								{bone "crew_shiedl4_2"
 									{parameters "id=shield4;"}
 									{matrix34
@@ -792,7 +792,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0471 	 -4.4008 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedl4_2.ply"}
 								}
 							}
 							{bone "crew_shiedr4_1"
@@ -803,7 +803,7 @@
 									-0.1736 	 0 	 0.9848
 									13.4817 	 -23.8355 	 14.9078
 								}
-								
+								{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr4_1.ply"}
 								{bone "crew_shiedr4_2"
 									{parameters "id=shield4;"}
 									{matrix34
@@ -812,7 +812,7 @@
 										0.9962 	 0 	 0.0872
 										-0.0472 	 4.3712 	 3.1643
 									}
-									
+									{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/crew_shiedr4_2.ply"}
 								}
 							}
 						}
@@ -870,7 +870,7 @@
 				{bone revolute "mgun_2_rot1"
 					{parameters "id=gun6;"}
 					{Position -0.0004 	 0 	 0.6435}
-					
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mgun_2_rot1.ply"}
 					{bone "aim_hor5_1"
 						{parameters "id=gun6;"}
 						{matrix34
@@ -879,7 +879,7 @@
 							0.866 	 0 	 0.5
 							4.1409 	 8.2747 	 13.6522
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor5_1.ply"}
 					}
 					{bone "aim_hor5_2"
 						{parameters "id=gun6;"}
@@ -889,12 +889,12 @@
 							0.866 	 0 	 0.5
 							4.1409 	 -10.7783 	 13.6522
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor5_2.ply"}
 					}
 					{bone "aim_ver5"
 						{parameters "id=gun6;"}
 						{Position 5.1613 	 7.7611 	 13.4397}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver5.ply"}
 					}
 					{bone "charger10"
 						{parameters "group=crew;"}
@@ -921,7 +921,7 @@
 							0 	 -1 	 0
 							0.1381 	 0 	 23.0669
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mgun_2_rot2.ply"}
 						{bone "foresight1e"
 							{parameters "group=crew;"}
 							{matrix34
@@ -948,7 +948,7 @@
 								0 	 1 	 0
 								0.919 	 2.0858 	 3.0865
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase6_ammo.ply"}
 						}
 						{bone "gunbase6_ammobox"
 							{parameters "id=gun6;"}
@@ -958,7 +958,7 @@
 								0 	 1 	 0
 								0.9353 	 -2.0577 	 4.9571
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase6_ammobox.ply"}
 						}
 					}
 				}
@@ -975,7 +975,7 @@
 				{bone revolute "mgun_1_rot1"
 					{parameters "id=gun5;"}
 					{Position -0.0004 	 0 	 0.6435}
-					
+					{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=gun5;"}
 						{matrix34
@@ -984,7 +984,7 @@
 							0 	 -1 	 0
 							0.1381 	 0 	 23.0669
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/mgun_1_rot2.ply"}
 						{bone "gunbase5_ammo"
 							{parameters "id=gun5;"}
 							{matrix34
@@ -993,7 +993,7 @@
 								0 	 1 	 0
 								0.9191 	 2.0858 	 3.0865
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase5_ammo.ply"}
 						}
 						{bone "gunbase5_ammobox"
 							{parameters "id=gun5;"}
@@ -1003,7 +1003,7 @@
 								0 	 1 	 0
 								0.9353 	 -2.0577 	 4.9571
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/gunbase5_ammobox.ply"}
 						}
 						{bone "foresight1d"
 							{parameters "group=crew;"}
@@ -1027,7 +1027,7 @@
 					{bone "aim_ver4"
 						{parameters "id=gun5;"}
 						{Position 5.1613 	 7.7611 	 13.4397}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_ver4.ply"}
 					}
 					{bone "gunner9"
 						{parameters "group=crew;"}
@@ -1054,7 +1054,7 @@
 							0.866 	 0 	 0.5
 							4.1409 	 -10.7783 	 13.6522
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor4_2.ply"}
 					}
 					{bone "aim_hor4_1"
 						{parameters "id=gun5;"}
@@ -1064,7 +1064,7 @@
 							0.866 	 0 	 0.5
 							4.1409 	 8.2747 	 13.6522
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/marine/hms_boadicea/aim_hor4_1.ply"}
 					}
 				}
 			}

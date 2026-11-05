@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover3 turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/t70/start.anm"} {speed 0.7}}
@@ -52,7 +52,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/t70/turret_r.anm"}{speed 0.4}}
 				}
 				{Position -3.6117 	 5.6711 	 14.1003}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t70/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -61,7 +61,7 @@
 						0 	 -1 	 0
 						12.6635 	 -2.4522 	 5.5729
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t70/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -70,7 +70,7 @@
 							0 	 1 	 0
 							14.1086 	 0 	 0.0866
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t70/gun.ply"}
 						{bone "foresight1"
 							{Position 15.3586 	 0 	 0}
 						}
@@ -78,7 +78,7 @@
 					{bone "mgun"
 						{parameters "id=turret;"}
 						{Position 6.353 	 -0.0401 	 -3.7455}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/t70/mgun.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -92,7 +92,7 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position 3.7001 	 -0.1127 	 10.654}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t70/cover1.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -109,7 +109,7 @@
 						-0.119 	 0.9136 	 0.3888
 						-4.5876 	 9.6858 	 6.1166
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t70/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -118,7 +118,7 @@
 						-0.1131 	 -0.9181 	 0.3798
 						-4.0071 	 -9.7276 	 6.6242
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/t70/enumerator2.ply"}
 				}
 				{bone "visor1"
 					{Position 1.7403 	 1.2042 	 12.5384}
@@ -207,7 +207,7 @@
 			{bone "cover3"
 				{parameters "id=body;"}
 				{Position 17.6984 	 4.2103 	 14.2772}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/t70/cover3.ply"}
 			}
 			{bone revolute "wheell08"
 				{parameters "id=trackleft;radius=0.27;"}

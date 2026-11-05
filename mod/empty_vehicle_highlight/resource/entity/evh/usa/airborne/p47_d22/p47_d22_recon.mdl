@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 cockpit_hatch elevator1 elevator2 gun_rot1 propeller1 propeller1_work rudder
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.12.2025 19:35:51
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_usa\vehicles\airborne\p47\p47_export.max
@@ -32,7 +32,7 @@
 					0 	 -1 	 0
 					-108.836 	 19.4458 	 13.3274
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=body;"}
@@ -44,14 +44,14 @@
 					0 	 -1 	 0
 					-108.836 	 -19.741 	 13.3274
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/elevator2.ply"}
 			}
 			{bone revolute "rudder"
 				{parameters "id=body;"}
 				{limits -20 20}
 				{speed 0.1}
 				{Position -109.366 	 0 	 25.3187}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/rudder.ply"}
 			}
 			{bone "driver"
 				{matrix34
@@ -85,7 +85,7 @@
 					-0.0175 	 0 	 0.9998
 					-0.4467 	 -0.0384 	 22.7741
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/cockpit_hatch.ply"}
 				{bone "glass2"
 					{parameters "id=body;"}
 					{matrix34
@@ -94,7 +94,7 @@
 						0.0175 	 0 	 0.9998
 						1.5535 	 0.0015 	 5.3876
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/glass2.ply"}
 				}
 			}
 			{bone "glass1"
@@ -109,7 +109,7 @@
 				{bone revolute "propeller1"
 					{parameters "id=engine1;"}
 					{Position 16.3366 	 0 	 2.9858}
-					
+					{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/propeller1.ply"}
 				}
 				{bone revolute "propeller1_work"
 					{parameters "id=engine1;"}
@@ -120,7 +120,7 @@
 						19.4978 	 0 	 2.9858
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/propeller1_work.ply"}
 					{bone "prop_work_mid"
 						{parameters "id=engine1;"}
 						{matrix34
@@ -130,7 +130,7 @@
 							-3.1612 	 0 	 0
 						}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/prop_work_mid.ply"}
 					}
 				}
 				{bone "fxsmoke2"
@@ -267,7 +267,7 @@
 							-0.2319 	 0.9661 	 -0.1132
 							-9.6162 	 -0.6202 	 -0.2862
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/aileron2.ply"}
 					}
 					{bone "shooter03"
 						{Position 23.4398 	 28.3481 	 -1.6409}
@@ -348,7 +348,7 @@
 							-0.296 	 -0.9491 	 -0.1077
 							-9.6498 	 0.504 	 0.0809
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/airborne/p47_d22/aileron1.ply"}
 					}
 					{bone "shooter04"
 						{Position 23.4061 	 -28.4573 	 -1.6413}

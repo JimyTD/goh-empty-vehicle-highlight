@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail5
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.10.2023 15:32:21
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\cckw\cckw353_fuel\cckw_fuel.max
@@ -198,7 +198,7 @@
 			{bone revolute "detail5"
 				{parameters "id=wheelleft1;"}
 				{Position -1.0441 	 -0.0462 	 11.1643}
-				
+				{VolumeView "../../../../-vehicle/usa/car/cckw_fuel/detail5.ply"}
 			}
 		}
 		{bone "emit1"

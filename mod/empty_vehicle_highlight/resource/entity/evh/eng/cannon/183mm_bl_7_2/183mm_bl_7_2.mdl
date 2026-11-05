@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor fixer gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.10.2025 09:52:34
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\cannon\183mm_BL7.2\183mm_BL_7_2.max
@@ -40,7 +40,7 @@
 					0 	 -1 	 0
 					12.5941 	 -1.9107 	 0
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -54,7 +54,7 @@
 						0 	 -1 	 0
 						-7.0021 	 0 	 8.6115
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -63,15 +63,15 @@
 							0 	 1 	 0
 							-9.3535 	 2.8112 	 0.0003
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position 6.5962 	 -18.0167 	 -2.7625}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/breech.ply"}
 							{bone "handle"
 								{parameters "id=gun;"}
 								{Position -0.1562 	 -2.9969 	 2.6876}
-								
+								{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/handle.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -100,7 +100,7 @@
 						0 	 0 	 1
 						-37.8703 	 11.3885 	 -1.644
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/aim_ver.ply"}
 				}
 				{bone "visor"
 					{Position -29.5432 	 14.8287 	 15.8533}
@@ -108,7 +108,7 @@
 				{bone "rod"
 					{parameters "id=body;"}
 					{Position -12.6765 	 7.2171 	 12.8774}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/rod.ply"}
 				}
 			}
 			{bone "aim_hor"
@@ -119,7 +119,7 @@
 					0 	 -1 	 0
 					-20.9434 	 2.4255 	 17.7922
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/aim_hor.ply"}
 			}
 			{bone "fixer_helper"
 				{matrix34
@@ -131,7 +131,7 @@
 				{bone "fixer"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/183mm_bl_7_2/fixer.ply"}
 				}
 			}
 			{bone "rod_hor"

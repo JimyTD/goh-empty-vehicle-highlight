@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.10.2025 21:26:57
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Matilda_MK1_A11\Matilda_I_A11.max
@@ -30,7 +30,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/matilda1/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 7.607 	 -0.0011 	 16.6697}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -42,7 +42,7 @@
 						0 	 -1 	 0
 						8.2205 	 -2.3009 	 4.0366
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/gun_rot.ply"}
 					{bone "foresight1"
 						{matrix34
 							1 	 0 	 0
@@ -62,7 +62,7 @@
 					{bone "barrel_50"
 						{parameters "id=gun;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/barrel_50.ply"}
 					}
 				}
 				{bone "visor1"
@@ -121,7 +121,7 @@
 						0 	 0 	 1
 						-5.2115 	 5.2643 	 10.637
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/hatch2.ply"}
 				}
 				{bone "hatch1"
 					{parameters "id=turret;"}
@@ -131,7 +131,7 @@
 						0 	 0 	 1
 						-5.1385 	 -5.173 	 10.6284
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/matilda1/hatch1.ply"}
 				}
 			}
 			{bone "antenna1"

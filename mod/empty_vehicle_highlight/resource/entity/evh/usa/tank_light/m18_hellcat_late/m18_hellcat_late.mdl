@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 hull_hatch1 hull_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.07.2025 15:19:36
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_usa\vehicles\tank_light\M18_hellcat\m18_hellcat_late.max
@@ -34,31 +34,31 @@
 					{sequence "repair" {file "../../../../-vehicle/usa/tank_light/m18_hellcat_late/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 2.1138 	 0.0037 	 15.9279}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/turret.ply"}
 				{bone "antenna"
 					{parameters "id=turret;"}
 					{Position -20.0967 	 -9.4385 	 20.0021}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/antenna.ply"}
 				}
 				{bone "ammo1"
 					{parameters "id=turret;"}
 					{Position 4.1639 	 -7.2713 	 6.0098}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/ammo1.ply"}
 				}
 				{bone "detail9"
 					{parameters "id=body;"}
 					{Position -26.8147 	 11.3454 	 8.2447}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/detail9.ply"}
 				}
 				{bone "shield1"
 					{parameters "id=shield1;"}
 					{Position -35.8221 	 -6.9131 	 8.6404}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/shield1.ply"}
 				}
 				{bone "detail10"
 					{parameters "id=body;"}
 					{Position -16.6069 	 -14.9384 	 7.4935}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/detail10.ply"}
 				}
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
@@ -68,7 +68,7 @@
 						0 	 0 	 1
 						-11.2863 	 11.3815 	 11.1336
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -13 85}
@@ -78,7 +78,7 @@
 							0 	 1 	 0
 							-6.9964 	 0.7611 	 8.7124
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -8.6583 	 -0.0555 	 -0.7178}
 						}
@@ -108,7 +108,7 @@
 						0 	 -1 	 0
 						17.0764 	 -4.6403 	 7.0924
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -117,7 +117,7 @@
 							0 	 1 	 0
 							-20.4305 	 -1.8953 	 -5.8042
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/gun.ply"}
 						{bone "foresight1"
 							{Position 89.855 	 -1.7724 	 1.8314}
 						}
@@ -129,7 +129,7 @@
 								0 	 0 	 1
 								85.2021 	 -1.8226 	 1.8217
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mb.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -147,7 +147,7 @@
 								0 	 -0.7095 	 0.7047
 								-1.0482 	 -2.1669 	 2.1669
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
@@ -157,7 +157,7 @@
 								0 	 -0.7054 	 0.7089
 								0.4902 	 2.7941 	 1.4629
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/lever.ply"}
 						}
 					}
 				}
@@ -175,18 +175,18 @@
 				{bone "canvas"
 					{parameters "id=turret;"}
 					{Position 22.1013 	 0.3172 	 6.3431}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/canvas.ply"}
 				}
 				{bone "mount_30"
 					{parameters "id=turret;"}
 					{Position 2.0273 	 -11.2535 	 12.525}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mount_30.ply"}
 					{bone revolute "mgun_1_rot1"
 						{parameters "id=turret;"}
 						{limits -15 15}
 						{terminator}
 						{Position 0.329 	 -0.0003 	 3.5327}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mgun_1_rot1.ply"}
 						{bone revolute "mgun_1_rot2"
 							{parameters "id=turret;"}
 							{limits -15 40}
@@ -196,7 +196,7 @@
 								0 	 -1 	 0
 								-2.5555 	 0.8593 	 3.7515
 							}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/mgun_1_rot2.ply"}
 							{bone "mgun3"
 								{matrix34
 									0.9998 	 -0.0175 	 0
@@ -265,7 +265,7 @@
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 33.0514 	 18.018 	 15.2624}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/driver_hatch1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
@@ -275,7 +275,7 @@
 					0 	 0 	 1
 					31.9889 	 7.7404 	 15.2624
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/driver_hatch2.ply"}
 			}
 			{bone revolute "wheelr1"
 				{parameters "id=trackright;"}
@@ -603,12 +603,12 @@
 					0 	 0 	 1
 					32.1006 	 -7.7468 	 15.2624
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/hull_hatch1.ply"}
 			}
 			{bone "hull_hatch2"
 				{parameters "id=body;"}
 				{Position 25.224 	 -17.9454 	 15.2624}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_light/m18_hellcat_late/hull_hatch2.ply"}
 			}
 			{bone "seat01"
 				{matrix34

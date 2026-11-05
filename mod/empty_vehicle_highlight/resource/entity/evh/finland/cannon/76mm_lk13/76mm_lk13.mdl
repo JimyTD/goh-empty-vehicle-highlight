@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: shield_hatch shield_lower turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/finland/cannon/76mm_lk13/recoil.anm"} {speed 0.7}}
@@ -25,7 +25,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -54.3012 	 0.0591 	 -8.2775}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -37,7 +37,7 @@
 						0 	 -1 	 0
 						54.9983 	 -0.0591 	 14.6457
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/gun_rot.ply"}
 					{bone "sight_rot"
 						{parameters "id=body;"}
 						{matrix34
@@ -46,7 +46,7 @@
 							0 	 1 	 0
 							0 	 0 	 -1.4983
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/sight_rot.ply"}
 						{bone "visor"
 							{Position -0.2599 	 3.6232 	 9.5681}
 						}
@@ -59,25 +59,25 @@
 							0 	 1 	 0
 							-0.7321 	 2.7883 	 0.2756
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -9.335 	 -1.8504 	 0.8586}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/breech.ply"}
 							{bone "breech_part1_2"
 								{parameters "id=gun;"}
 								{Position -1.8599 	 1.9508 	 0.0435}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/breech_part1_2.ply"}
 							}
 							{bone "breech_part1_1"
 								{parameters "id=gun;"}
 								{Position -1.6937 	 2.9926 	 -0.543}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/breech_part1_1.ply"}
 							}
 							{bone "breech_part2_1"
 								{parameters "id=gun;"}
 								{Position -0.9564 	 0.5585 	 0.8047}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/breech_part2_1.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -96,37 +96,37 @@
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 25.5407 	 -3.8458 	 5.302}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position 28.7882 	 3.18 	 7.573}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/detail2.ply"}
 				}
 				{bone "spade_valve"
 					{parameters "id=body;"}
 					{Position 11.514 	 -0.0591 	 3.2087}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/spade_valve.ply"}
 					{bone "spade"
 						{parameters "id=body;"}
 						{Position -2.5628 	 0.0109 	 -2.5404}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/spade.ply"}
 					}
 				}
 				{bone "shield_lower"
 					{parameters "id=shield_lower;"}
 					{Position 63.3447 	 -0.0591 	 8.189}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/shield_lower.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position 45.5691 	 3.9961 	 9.1535}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/aim_h.ply"}
 				}
 				{bone "valve"
 					{parameters "id=body;"}
 					{Position 44.5986 	 -1.2525 	 9.1811}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/valve.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=body;"}
@@ -136,7 +136,7 @@
 						-0.1392 	 0 	 0.9903
 						47.6557 	 4.1732 	 11.2402
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/aim_v.ply"}
 				}
 				{bone "seat1"
 					{matrix34
@@ -173,7 +173,7 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 56.2697 	 -0.0591 	 15.6181}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/shield.ply"}
 					{bone "shield_hatch"
 						{parameters "id=shield;"}
 						{matrix34
@@ -182,7 +182,7 @@
 							-0.6017 	 0 	 0.7987
 							-1.5158 	 6.7717 	 7.7362
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/shield_hatch.ply"}
 						{bone "shield_hatch_lock"
 							{parameters "id=body;"}
 							{matrix34
@@ -191,7 +191,7 @@
 								0.8949 	 -0.4462 	 0
 								1.4776 	 2.3351 	 -0.9441
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/76mm_lk13/shield_hatch_lock.ply"}
 						}
 					}
 				}

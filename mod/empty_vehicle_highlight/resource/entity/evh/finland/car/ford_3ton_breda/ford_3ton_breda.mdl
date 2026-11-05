@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 14.08.2025 00:06:09
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_fin\3d vehicles\car\ford_v3000\ford_3ton_breda.max
@@ -40,10 +40,10 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -36.3263 	 18.8927 	 -0.6482}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/backdoor.ply"}
 					{bone "enumerator1"
 						{Position 0.2786 	 -26.627 	 6.2674}
-						
+						{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/enumerator1.ply"}
 					}
 				}
 				{bone "leftdoor"
@@ -77,7 +77,7 @@
 							0 	 0 	 1
 							0 	 0.001 	 2.1197
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/turret.ply"}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
 							{animation
@@ -91,7 +91,7 @@
 								0 	 -1 	 0
 								2.1335 	 -0.0009 	 12.1526
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -100,11 +100,11 @@
 									0 	 1 	 0
 									-4.4743 	 -0.5734 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/gun.ply"}
 								{bone "magazine"
 									{parameters "id=gun;"}
 									{Position -0.2078 	 3.9489 	 0.5425}
-									
+									{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/magazine.ply"}
 								}
 								{bone "fx_invers"
 									{matrix34
@@ -129,7 +129,7 @@
 							{bone "aim_ver"
 								{parameters "id=body;"}
 								{Position 0 	 0 	 0}
-								
+								{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/aim_ver.ply"}
 							}
 						}
 						{bone "aim_h_helper"
@@ -141,12 +141,12 @@
 							}
 							{bone "aim_hor"
 								{parameters "id=body;"}
-								
+								{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/aim_hor.ply"}
 							}
 						}
 						{bone "1"
 							{parameters "id=body;"}
-							
+							{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/1.ply"}
 						}
 						{bone "gunner"
 							{Position -15.0712 	 -0.0105 	 1.8267}
@@ -199,7 +199,7 @@
 					0 	 0.0523 	 0.9986
 					-6.1977 	 13.9257 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/doorleft.ply"}
 				{bone "window2"
 					{parameters "id=window2;"}
 					{matrix34
@@ -208,7 +208,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.3739 	 -0.0496 	 6.2751
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/window2.ply"}
 				}
 			}
 			{bone "doorright"
@@ -219,7 +219,7 @@
 					0 	 -0.0523 	 0.9986
 					-6.1977 	 -13.8561 	 16.4032
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/doorright.ply"}
 				{bone "window3"
 					{parameters "id=window3;"}
 					{matrix34
@@ -228,7 +228,7 @@
 						0 	 0.0523 	 0.9986
 						-8.3739 	 -0.0199 	 6.2787
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/car/ford_3ton_breda/window3.ply"}
 				}
 			}
 			{bone "window1"

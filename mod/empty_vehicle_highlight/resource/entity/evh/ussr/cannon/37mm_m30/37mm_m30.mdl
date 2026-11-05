@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot shield shield_lower standl standr turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "recoil" {file "../../../../-vehicle/ussr/cannon/37mm_m30/recoil.anm"} {speed 0.9}}
@@ -73,7 +73,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.9438 	 0 	 1.753}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -85,11 +85,11 @@
 						0 	 -1 	 0
 						-0.1497 	 0 	 1.5913
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position -3.7557 	 2.0853 	 0}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/gun.ply"}
 						{bone "visor2"
 							{matrix34
 								1 	 0 	 0
@@ -127,7 +127,7 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position -2.8874 	 0 	 0.9589}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/shield.ply"}
 				}
 				{bone "aim_wheel2"
 					{parameters "id=body;"}
@@ -137,7 +137,7 @@
 						0.0969 	 -0.02 	 0.9951
 						-11.1798 	 5.8819 	 1.6429
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
@@ -147,23 +147,23 @@
 						0.2434 	 -0.2022 	 0.9486
 						-9.5836 	 7.1872 	 4.079
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/aim_wheel1.ply"}
 				}
 			}
 			{bone "shield_lower"
 				{parameters "id=shield_lower;"}
 				{Position 1.3782 	 -0.0337 	 -1.6099}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/shield_lower.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -1.4086 	 7.2106 	 -0.4282}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/standl.ply"}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -1.2771 	 -7.3897 	 -0.4694}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_m30/standr.ply"}
 			}
 			{bone "seat1"
 				{matrix34

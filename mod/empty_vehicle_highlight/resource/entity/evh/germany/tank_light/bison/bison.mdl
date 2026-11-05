@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: detail2 detail4 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 09.04.2025 21:21:40
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_light\bison\bison_export.max
@@ -214,7 +214,7 @@
 			{bone revolute "turret"
 				{parameters "id=turret;"}
 				{Position -41.6268 	 -0.213 	 14.9833}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/bison/turret.ply"}
 				{bone "gunner"
 					{matrix34
 						0.9986 	 -0.0523 	 0
@@ -242,7 +242,7 @@
 						0 	 -1 	 0
 						47.9898 	 0.0838 	 16.8515
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -251,7 +251,7 @@
 							0 	 1 	 0
 							5.2673 	 0.4684 	 -0.0121
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/bison/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -280,17 +280,17 @@
 				}
 				{bone "gun_shield"
 					{parameters "id=gun_shield;"}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/gun_shield.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=turret;"}
 					{Position 37.1774 	 9.6007 	 6.4533}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/aim_h.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=turret;"}
 					{Position 37.1774 	 -9.487 	 6.4533}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/aim_v.ply"}
 				}
 			}
 			{bone "shieldt"
@@ -300,12 +300,12 @@
 				{bone revolute "detail2"
 					{parameters "id=body;"}
 					{Position 17.5531 	 14.4604 	 -1.6186}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/detail2.ply"}
 				}
 				{bone revolute "detail4"
 					{parameters "id=body;"}
 					{Position 17.5531 	 -14.576 	 -1.6186}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/bison/detail4.ply"}
 				}
 				{bone "enumerator"
 					{Position 12.4793 	 -20.1822 	 -11.8397}

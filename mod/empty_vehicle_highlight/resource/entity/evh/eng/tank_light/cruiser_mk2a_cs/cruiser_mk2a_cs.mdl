@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch1_1 mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 31.10.2025 13:14:12
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Cruiser_A10_mk2a_CS\cruiser_mk2a_cs.max
@@ -328,11 +328,11 @@
 			{bone "hatch1_1"
 				{parameters "id=body;"}
 				{Position 36.7967 	 10.1181 	 9.3117}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/hatch1_1.ply"}
 				{bone "hatch1_2"
 					{parameters "id=body;"}
 					{Position -5.1969 	 -0.0032 	 1.0433}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/hatch1_2.ply"}
 				}
 			}
 			{bone "hatch2_1"
@@ -478,43 +478,43 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 10.374 	 0 	 9.7244}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret.ply"}
 				{bone "turret_hatch2_2"
 					{parameters "id=turret;"}
 					{Position -11.2545 	 -6.9368 	 16.0046}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret_hatch2_2.ply"}
 				}
 				{bone "turret_hatch2_1"
 					{parameters "id=turret;"}
 					{Position -0.7426 	 -6.9368 	 16.0046}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret_hatch2_1.ply"}
 				}
 				{bone "turret_hatch1_1"
 					{parameters "id=turret;"}
 					{Position -0.9592 	 4.8237 	 16.0046}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret_hatch1_1.ply"}
 				}
 				{bone "turret_hatch1_2"
 					{parameters "id=turret;"}
 					{Position -14.6206 	 4.8237 	 16.0046}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/turret_hatch1_2.ply"}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -24.7577 	 -1.1866 	 18.5039}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0161 	 0 	 5.8268}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0141 	 0 	 4.3701}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0156 	 0 	 5.3937}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/at1_4.ply"}
 							}
 						}
 					}
@@ -530,7 +530,7 @@
 						0 	 -1 	 0
 						12.2244 	 -0.0198 	 9.0361
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -539,7 +539,7 @@
 							0 	 1 	 0
 							4.941 	 1.023 	 1.3976
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/gun.ply"}
 						{bone "foresight1"
 							{Position 17.8256 	 0.0083 	 0.0029}
 						}
@@ -566,11 +566,11 @@
 				}
 				{bone "enumerator1"
 					{Position -10.6587 	 -14.7103 	 6.9639}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{Position -15.2283 	 14.691 	 7.0727}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/enumerator2.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -673,7 +673,7 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/mgun_h_rot2.ply"}
 					{bone "hull_mgun"
 						{parameters "id=body;"}
 						{matrix34
@@ -682,7 +682,7 @@
 							0 	 1 	 0
 							-0.5581 	 -0.0397 	 0.0036
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk2a_cs/hull_mgun.ply"}
 						{bone "foresight4"
 							{Position 10.8697 	 0.0023 	 0.7108}
 						}

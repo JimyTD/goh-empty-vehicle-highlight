@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: fxtracel1 fxtracer1 gun_rot rear_door
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 06.03.2023 15:26:43
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\tank_light\grille_150\grille_k.max
@@ -56,7 +56,7 @@
 					0 	 -1 	 0
 					-16.6666 	 0.875 	 26.7165
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/grille_k/gun_rot.ply"}
 				{bone "gun"
 					{parameters "id=gun;"}
 					{matrix34
@@ -65,7 +65,7 @@
 						0 	 1 	 0
 						19.5347 	 -0.1118 	 -0.0002
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_k/gun.ply"}
 					{bone "fx_invers"
 						{matrix34
 							-1 	 0 	 0
@@ -155,7 +155,7 @@
 			{bone "rear_door"
 				{parameters "id=body;"}
 				{Position -46.1152 	 0.8753 	 13.022}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/grille_k/rear_door.ply"}
 			}
 			{bone revolute "wheell1"
 				{parameters "id=trackleft;radius=0.32;"}

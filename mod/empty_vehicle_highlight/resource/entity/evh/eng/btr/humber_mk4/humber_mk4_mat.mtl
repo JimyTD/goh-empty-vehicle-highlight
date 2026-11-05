@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/humber_mk4"}
-	{bump "$/_vehicle/eng/humber_mk4_bp"}
-	{specular "$/_vehicle/eng/humber_mk4_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

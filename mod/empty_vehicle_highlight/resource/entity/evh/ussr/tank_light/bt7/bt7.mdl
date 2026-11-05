@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover3a cover3b turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/bt7/start.anm"} {speed 0.7}}
@@ -28,7 +28,7 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/bt7/turret_r.anm"}{speed 0.6}}
 				}
 				{Position 13.6714 	 0 	 9.7027}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -37,7 +37,7 @@
 						0 	 -1 	 0
 						11.9494 	 -0.4487 	 6.4586
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -49,7 +49,7 @@
 							0 	 1 	 0
 							10.7763 	 0.3628 	 -0.8698
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/gun.ply"}
 						{bone "foresight1"
 							{Position 17.9201 	 0.0085 	 0.0061}
 						}
@@ -62,7 +62,7 @@
 							0 	 1 	 0
 							7.0322 	 -0.1963 	 3.0307
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/mgun.ply"}
 						{bone "foresight3"
 							{Position 3.264 	 0 	 0.2459}
 						}
@@ -71,7 +71,7 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position 1.8613 	 -4.6785 	 13.9002}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/cover1.ply"}
 				}
 				{bone "visor1"
 					{matrix34
@@ -92,7 +92,7 @@
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{Position 1.8613 	 4.6177 	 13.9002}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/cover2.ply"}
 				}
 				{bone "ammo4"
 					{matrix34
@@ -156,7 +156,7 @@
 			{bone "cover3a"
 				{parameters "id=body;"}
 				{Position 35.5318 	 1.3003 	 9.9073}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/cover3a.ply"}
 			}
 			{bone "cover3b"
 				{parameters "id=body;"}
@@ -166,7 +166,7 @@
 					0.1045 	 0 	 0.9945
 					45.0026 	 1.3002 	 -0.9601
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/bt7/cover3b.ply"}
 			}
 			{bone "fxsmoke1"
 				{matrix34

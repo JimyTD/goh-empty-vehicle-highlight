@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: 1 lever
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 08.01.2024 17:13:51
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3D_vehicle_usa\vehicles\trailer\ammo_trailer_usa\ammo_trailer_usa.max
@@ -33,7 +33,7 @@
 					-0.0872 	 0 	 0.9962
 					-28.5944 	 0.5904 	 0.4077
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/trailer/ammo_trailer_usa/1.ply"}
 			}
 			{bone "seat1"
 				{matrix34
@@ -59,7 +59,7 @@
 					-0.0396 	 0.891 	 0.4523
 					-20.6979 	 4.7286 	 3.4841
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/trailer/ammo_trailer_usa/lever.ply"}
 			}
 			{bone "ammo"
 				{parameters "id=body;"}

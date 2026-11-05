@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor hutch mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 20.09.2022 11:01:09
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\tank_heavy\sturmtiger\sturmtiger_export.max
@@ -106,14 +106,14 @@
 					{bone "mgun"
 						{parameters "id=body;"}
 						{Position -0.3146 	 0 	 -0.4685}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/mgun.ply"}
 						{bone "foresight4"
 							{Position 8.3745 	 -0.3177 	 0.0318}
 						}
 						{bone "gpu1"
 							{parameters "id=body;"}
 							{Position 1.3165 	 -0.3309 	 0.0023}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/gpu1.ply"}
 						}
 					}
 				}
@@ -225,7 +225,7 @@
 				{bone "hutch"
 					{parameters "id=body;"}
 					{Position -30.176 	 -5.9242 	 12.0376}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/hutch.ply"}
 					{bone "smoke_shot1"
 						{matrix34
 							-0.7071 	 0 	 -0.7071
@@ -278,7 +278,7 @@
 				{bone "backdoor"
 					{parameters "id=body;"}
 					{Position -35.572 	 6.5777 	 2.9768}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/backdoor.ply"}
 				}
 			}
 			{bone "seat01"
@@ -349,7 +349,7 @@
 						0 	 -1 	 0
 						0 	 0 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -358,13 +358,13 @@
 							0 	 1 	 0
 							2.7428 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/gun.ply"}
 						{bone "foresight"
 							{Position 23.1981 	 0.1708 	 -0.0259}
 						}
 						{bone "rocket"
 							{Position 0.2921 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_heavy/sturmtiger/rocket.ply"}
 						}
 					}
 				}

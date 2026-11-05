@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorright1 doorright2 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 05.06.2022 11:03:14
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\train\180mm_tm1\180mm_tm1.max
@@ -226,11 +226,14 @@
 					0 	 0 	 1
 					0 	 0 	 11.0685
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/turret.ply"}
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/turret_lod1.ply"}
+				}
 				{bone "turret_left"
 					{parameters "id=turret;"}
 					{Position 45.7693 	 26.4079 	 1.2425}
-					
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/turret_left.ply"}
 				}
 				{bone "turret_right"
 					{parameters "id=turret;"}
@@ -240,7 +243,7 @@
 						0 	 0 	 1
 						45.7992 	 -26.4151 	 0.9311
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/turret_right.ply"}
 					{bone revolute "commander"
 						{Position -55.5986 	 -10.0208 	 15.2914}
 					}
@@ -253,7 +256,7 @@
 						0 	 0 	 1
 						0 	 0.0001 	 27.7781
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/shield.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -268,11 +271,11 @@
 						0 	 -1 	 0
 						14.7195 	 0.0002 	 39.0214
 					}
-					
+					{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 10.8663 	 1.3855 	 0}
-						
+						{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{matrix34
@@ -281,7 +284,7 @@
 								0 	 1 	 0
 								-53.5979 	 9.4769 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/breech.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -354,7 +357,7 @@
 							0 	 0 	 1
 							68.1284 	 -20.0376 	 10.7072
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/doorright1.ply"}
 					}
 					{bone "window_r3"
 						{parameters "id=body;"}
@@ -478,7 +481,7 @@
 							0 	 0 	 1
 							-14.1549 	 -29.2621 	 19.1898
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/doorright2.ply"}
 					}
 					{bone "window_r2"
 						{parameters "id=body;"}
@@ -508,7 +511,7 @@
 							0 	 0 	 1
 							-69.3574 	 27.676 	 4.1746
 						}
-						
+						{VolumeView "../../../../-vehicle/generic/train/180mm_tm1/doorleft1.ply"}
 					}
 					{bone "window_l1"
 						{parameters "id=body;"}

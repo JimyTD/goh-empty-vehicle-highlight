@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 29.10.2025 22:30:50
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_heavy\Churchill_MK4\Churchill_MkIV.max
@@ -258,7 +258,7 @@
 							0 	 1 	 0
 							3.1467 	 0.1149 	 -0.052
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/mgun_hull.ply"}
 					}
 				}
 			}
@@ -269,7 +269,7 @@
 				}
 				{speed 0.003}
 				{Position 4.9166 	 0 	 16.2223}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -283,7 +283,7 @@
 						0 	 -1 	 0
 						14.8948 	 2.0754 	 5.9079
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/gun_rot.ply"}
 					{bone "foresight5"
 						{matrix34
 							1 	 0 	 0
@@ -303,7 +303,7 @@
 						{bone "6pdr_l50"
 							{parameters "id=gun;"}
 							{Position 0 	 0 	 0}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/6pdr_l50.ply"}
 							{bone "foresight1"
 								{Position 23.8527 	 0.0006 	 0.01}
 							}
@@ -319,28 +319,28 @@
 					}
 					{bone "mgun_coax"
 						{parameters "id=gun;"}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/mgun_coax.ply"}
 					}
 				}
 				{bone "vison_ring"
 					{parameters "id=turret;"}
 					{Position -5.4935 	 8.4504 	 15.2468}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/vison_ring.ply"}
 					{bone "turret_hutchl1"
 						{parameters "id=turret;"}
 						{Position 4.2035 	 3.7592 	 1.9234}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/turret_hutchl1.ply"}
 					}
 					{bone "turret_hutchl2"
 						{parameters "id=turret;"}
 						{Position -4.2122 	 3.7021 	 1.9255}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/turret_hutchl2.ply"}
 					}
 				}
 				{bone "basket"
 					{parameters "id=turret;"}
 					{Position -25.7645 	 -0.501 	 9.9603}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/basket.ply"}
 				}
 				{bone "turret_hutchr1"
 					{parameters "id=turret;"}
@@ -350,7 +350,7 @@
 						0 	 0 	 1
 						-0.482 	 -8.3131 	 16.5901
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/turret_hutchr1.ply"}
 				}
 				{bone "turret_hutchr2"
 					{parameters "id=turret;"}
@@ -360,7 +360,7 @@
 						0 	 0 	 1
 						-12.0533 	 -8.713 	 16.5901
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/turret_hutchr2.ply"}
 				}
 				{bone "visor1"
 					{Position 9.053 	 -8.2407 	 16.3886}
@@ -387,25 +387,25 @@
 				{bone "antenna21"
 					{parameters "id=turret;"}
 					{Position -17.5237 	 -8.3237 	 19.7968}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/antenna21.ply"}
 					{bone "antenna22"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 5.917}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/antenna22.ply"}
 					}
 				}
 				{bone "antenna11"
 					{parameters "id=turret;"}
 					{Position -17.0085 	 7.0559 	 19.2003}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/antenna11.ply"}
 					{bone "antenna12"
 						{parameters "id=turret;"}
 						{Position 0 	 0 	 5.7207}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/antenna12.ply"}
 						{bone "antenna13"
 							{parameters "id=turret;"}
 							{Position 0 	 0 	 5.7222}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_heavy/churchill_mk4/antenna13.ply"}
 						}
 					}
 				}

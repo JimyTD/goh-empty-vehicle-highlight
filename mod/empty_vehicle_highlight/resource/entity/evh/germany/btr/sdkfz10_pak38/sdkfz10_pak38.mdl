@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: charger gunner turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 10.08.2023 10:21:11
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\sdkfz10_pak38\sdkfz10_pak38.max
@@ -231,11 +231,11 @@
 					{bone revolute "turret"
 						{parameters "id=turret;"}
 						{Position 0.6292 	 -0.2009 	 4.688}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/turret.ply"}
 						{bone "shield"
 							{parameters "id=shield;"}
 							{Position 4.5945 	 0.1907 	 0.4041}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/shield.ply"}
 						}
 						{bone revolute "gun_rot"
 							{parameters "id=gun;"}
@@ -248,7 +248,7 @@
 								0 	 -1 	 0
 								-0.2893 	 1.6012 	 6.3273
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/gun_rot.ply"}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{matrix34
@@ -257,7 +257,7 @@
 									0 	 1 	 0
 									22.2131 	 2.0668 	 1.0648
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/gun.ply"}
 								{bone "foresight1"
 									{Position 30.0165 	 -0.4476 	 0.2425}
 								}
@@ -272,12 +272,12 @@
 								{bone "lever"
 									{parameters "id=gun;"}
 									{Position -28.575 	 -0.803 	 3.0818}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/lever.ply"}
 								}
 								{bone "breech"
 									{parameters "id=gun;"}
 									{Position -28.8006 	 -1.1016 	 0.2454}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/breech.ply"}
 								}
 							}
 						}
@@ -289,12 +289,12 @@
 								0 	 0 	 1
 								-4.6989 	 9.2138 	 2.4801
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/aim_wheel2.ply"}
 						}
 						{bone "aim_wheel1"
 							{parameters "id=turret;"}
 							{Position 0.2417 	 9.5451 	 3.6372}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_pak38/aim_wheel1.ply"}
 						}
 					}
 				}

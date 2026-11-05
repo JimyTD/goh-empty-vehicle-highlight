@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch1 hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.11.2025 16:40:08
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\tank_medium\Stug_3_a\stug3a.max
@@ -391,7 +391,7 @@
 				{limits -12 12}
 				{speed 0.008}
 				{Position 20.6061 	 -2.2177 	 -8.8945}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/stug3a/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;ikspeed2=0.008;"}
 					{animation
@@ -404,7 +404,7 @@
 						0 	 -1 	 0
 						0.1891 	 -0.1151 	 11.5589
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3a/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -413,7 +413,7 @@
 							0 	 1 	 0
 							16.9547 	 -0.1953 	 -0.1151
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/stug3a/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -470,7 +470,7 @@
 				{bone "hatch1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0.0002}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3a/hatch1.ply"}
 				}
 			}
 			{bone "hatch2_help"
@@ -483,7 +483,7 @@
 				{bone "hatch2"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 -0.0002}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/stug3a/hatch2.ply"}
 				}
 			}
 			{bone "hatch5"

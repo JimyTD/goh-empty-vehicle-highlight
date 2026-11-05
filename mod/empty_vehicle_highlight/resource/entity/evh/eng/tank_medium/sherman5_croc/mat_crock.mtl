@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/crocodile"}
-	{bump "$/_vehicle/eng/crocodile_bp"}
-	{specular "$/_vehicle/eng/crocodile_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

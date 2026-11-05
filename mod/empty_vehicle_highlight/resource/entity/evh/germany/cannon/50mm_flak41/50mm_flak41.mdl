@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: sandbag shield2 shield3 sight standl standr susp_back susp_front trailer_front trailer_rear turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:35:58
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\cannon\50mm_flak41\50mm_flak41.max
@@ -27,12 +27,12 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position 22.3322 	 -17.0921 	 -0.3931}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/standr.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position 22.3103 	 17.092 	 -0.3931}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/standl.ply"}
 			}
 			{bone revolute "turret"
 				{Position 1.6551 	 0 	 6.0242}
@@ -63,7 +63,7 @@
 				{bone "turret1"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/turret1.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -75,7 +75,7 @@
 							0 	 -1 	 0
 							-11.0359 	 0 	 17.7236
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -84,10 +84,10 @@
 								0 	 1 	 0
 								0.015 	 0.0003 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/gun.ply"}
 							{bone "enumerator"
 								{Position 40.4477 	 0 	 -0.2348}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/enumerator.ply"}
 							}
 						}
 						{bone "fx_invers"
@@ -106,7 +106,11 @@
 								0 	 1 	 0
 								-7.7134 	 -1.2174 	 -6.4691
 							}
-							
+							{LODView
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/clip.ply"}
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/clip_lod1.ply"}
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/clip_lod2.ply"}
+							}
 						}
 						{bone "visor"
 							{matrix34
@@ -128,7 +132,7 @@
 					{bone "shield1"
 						{parameters "id=shield;"}
 						{Position 7.3435 	 -0.2899 	 3.5892}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/shield1.ply"}
 						{bone "help_shield2"
 							{matrix34
 								0.8505 	 0.0186 	 0.5257
@@ -144,7 +148,7 @@
 									-0.0003 	 -0.0115 	 0.9999
 									0 	 0 	 0
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/shield2.ply"}
 							}
 						}
 						{bone "help_shield3"
@@ -161,7 +165,7 @@
 									-0.0062 	 0.9997 	 -0.0218
 									-0.0013 	 0.0218 	 0.9998
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/shield3.ply"}
 							}
 						}
 						{bone "sight"
@@ -172,28 +176,28 @@
 								-0.529 	 -0.0033 	 0.8486
 								9.8828 	 -15.4561 	 18.904
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/sight.ply"}
 						}
 						{bone "shield4"
 							{parameters "id=shield;"}
 							{Position 4.7849 	 10.011 	 26.8987}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/shield4.ply"}
 						}
 					}
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 9.5606 	 -14.7312 	 10.0176}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/aim_hor.ply"}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position 13.592 	 11.1682 	 10.9493}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/aim_ver.ply"}
 					}
 					{bone "grid"
 						{parameters "id=body;"}
 						{Position -6.6842 	 21.3666 	 1.5794}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/grid.ply"}
 					}
 					{bone "gunner"
 						{matrix34
@@ -266,7 +270,7 @@
 				44.1179 	 -0.0429 	 8.5766
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/trailer_front.ply"}
 		}
 		{bone "trailer_rear"
 			{parameters "id=body;"}
@@ -277,7 +281,7 @@
 				-48.5541 	 -0.0429 	 8.5766
 			}
 			{visibility 0}
-			
+			{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/trailer_rear.ply"}
 			{bone "rod"
 				{parameters "id=body;"}
 				{matrix34
@@ -287,7 +291,7 @@
 					-16.0626 	 0 	 3.4779
 				}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/rod.ply"}
 			}
 		}
 		{bone "pivot_front"
@@ -344,7 +348,7 @@
 				{parameters "id=body;"}
 				{Position 1.0794 	 -0.0748 	 2.6633}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/susp_front.ply"}
 			}
 		}
 		{bone "pivot_back"
@@ -406,7 +410,7 @@
 				{parameters "id=body;"}
 				{Position -1.0795 	 0.0111 	 2.6633}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_flak41/susp_back.ply"}
 			}
 		}
 		{bone "emit4"

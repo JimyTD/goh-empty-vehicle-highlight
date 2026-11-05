@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:28:27
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Staghound_aa\staghound_mkaa.max
@@ -306,7 +306,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/btr/staghound_mkaa/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 1.2577 	 -0.0951 	 10.5207}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/turret.ply"}
 				{bone "mgun_belt"
 					{parameters "id=turret;"}
 					{matrix34
@@ -315,7 +315,7 @@
 						0 	 0 	 -1
 						2.7847 	 2.2598 	 7.7111
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/mgun_belt.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -325,7 +325,7 @@
 						0 	 -1 	 0
 						3.3154 	 -4.8235 	 8.5576
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/gun_rot.ply"}
 					{bone "foresight14"
 						{matrix34
 							1 	 0 	 0
@@ -342,11 +342,11 @@
 							0 	 1 	 0
 							-11.1062 	 -0.1623 	 0.0087
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/gun2.ply"}
 						{bone "b1"
 							{parameters "id=gun;"}
 							{Position 22.2612 	 -0.0016 	 -0.2152}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/b1.ply"}
 							{bone "shooter01"
 								{Position 9.7057 	 0.0016 	 0}
 							}
@@ -368,11 +368,11 @@
 							0 	 1 	 0
 							-11.1062 	 -0.1623 	 -14.0464
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/gun1.ply"}
 						{bone "b0"
 							{parameters "id=gun;"}
 							{Position 22.2586 	 0.0016 	 -0.2152}
-							
+							{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/b0.ply"}
 							{bone "shooter00"
 								{Position 9.7076 	 -0.0016 	 0}
 							}
@@ -429,7 +429,7 @@
 					0 	 0.2267 	 0.974
 					16.7402 	 16.8113 	 1.9317
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/doorleft.ply"}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
@@ -439,7 +439,7 @@
 					0 	 -0.2267 	 0.974
 					16.7402 	 -16.8113 	 1.9317
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/staghound_mkaa/doorright.ply"}
 			}
 			{bone "body_extra"
 				{parameters "id=body;"}

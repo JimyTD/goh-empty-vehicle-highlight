@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/hurri2c_fuselage"}
-	{bump "$/_vehicle/eng/hurri1a_fuselage_bp"}
-	{specular "$/_vehicle/eng/hurri1a_fuselage_sp"}
-	{full_specular}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

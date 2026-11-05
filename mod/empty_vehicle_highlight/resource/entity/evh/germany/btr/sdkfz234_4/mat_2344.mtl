@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/sdkfz_2344"}
-	{bump "$/_vehicle/sdkfz_2344_bp"}
-	{specular "$/_vehicle/sdkfz_2344_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

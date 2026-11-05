@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 bomb_bay_l1 bomb_bay_l2 bomb_bay_r1 bomb_bay_r2 cockpit_hatch elevator1 elevator2 mgun_rot1 propeller1 propeller1_work propeller2 propeller2_work rudder turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.12.2025 18:47:09
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\airborne\blenheim_mk1\blenheim_mk1_export.max
@@ -30,7 +30,7 @@
 				{parameters "id=body;"}
 				{limits -100 100}
 				{Position -46.8368 	 0.0922 	 15.2546}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/turret.ply"}
 				{bone revolute "mgun_rot"
 					{parameters "id=body;"}
 					{limits -20 45}
@@ -40,7 +40,7 @@
 						0 	 1 	 0
 						-5.7122 	 -0.0057 	 9.3934
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/mgun_rot.ply"}
 					{bone "vickers_k"
 						{parameters "id=body;"}
 						{matrix34
@@ -49,7 +49,7 @@
 							0 	 1 	 0
 							-1.2365 	 0.0535 	 -0.0843
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/vickers_k.ply"}
 						{bone "foresight6"
 							{matrix34
 								1 	 0.0095 	 -0.0018
@@ -68,7 +68,7 @@
 						0 	 0 	 1
 						56.9853 	 -0.0901 	 -3.8249
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/glass_turret.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -82,22 +82,22 @@
 			{bone "bomb_bay_l1"
 				{parameters "id=body;"}
 				{Position 8.895 	 11.7671 	 -6.1684}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/bomb_bay_l1.ply"}
 			}
 			{bone "bomb_bay_l2"
 				{parameters "id=body;"}
 				{Position 8.895 	 -0.0135 	 -10.4486}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/bomb_bay_l2.ply"}
 			}
 			{bone "bomb_bay_r2"
 				{parameters "id=body;"}
 				{Position 8.895 	 0.0189 	 -10.5224}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/bomb_bay_r2.ply"}
 			}
 			{bone "bomb_bay_r1"
 				{parameters "id=body;"}
 				{Position 8.895 	 -11.7396 	 -6.3665}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/bomb_bay_r1.ply"}
 			}
 			{bone "glass"
 				{parameters "id=body;"}
@@ -114,7 +114,7 @@
 					0 	 -1 	 0
 					-139.249 	 25.7262 	 19.496
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=body;"}
@@ -126,14 +126,14 @@
 					0 	 -1 	 0
 					-139.249 	 -31.1918 	 19.496
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/elevator2.ply"}
 			}
 			{bone revolute "rudder"
 				{parameters "id=body;"}
 				{limits -20 20}
 				{speed 0.1}
 				{Position -144.438 	 0.0042 	 32.8344}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/rudder.ply"}
 			}
 			{bone "emit2"
 				{matrix34
@@ -201,7 +201,7 @@
 							-0.0523 	 -0.1217 	 0.9912
 							14.2856 	 6.7276 	 -60.4094
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/aileron2.ply"}
 					}
 				}
 				{bone "engine2"
@@ -211,13 +211,13 @@
 					{bone revolute "propeller2"
 						{parameters "id=engine2;"}
 						{Position 39.321 	 -0.1032 	 0.4816}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/propeller2.ply"}
 					}
 					{bone revolute "propeller2_work"
 						{parameters "id=engine2;"}
 						{Position 41.8793 	 -0.1071 	 0.4745}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/propeller2_work.ply"}
 					}
 					{bone "fxsmoke8"
 						{matrix34
@@ -300,7 +300,7 @@
 							0.0523 	 -0.0697 	 -0.9962
 							14.2856 	 6.7276 	 62.222
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/aileron1.ply"}
 					}
 					{bone "wing_mg"
 						{parameters "id=body;"}
@@ -344,13 +344,13 @@
 					{bone revolute "propeller1"
 						{parameters "id=engine1;"}
 						{Position 39.321 	 0.099 	 0.4818}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/propeller1.ply"}
 					}
 					{bone revolute "propeller1_work"
 						{parameters "id=engine1;"}
 						{Position 41.901 	 0.0953 	 0.4872}
 						{visibility 0}
-						
+						{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/propeller1_work.ply"}
 					}
 					{bone "fxtracem1"
 						{matrix34
@@ -413,7 +413,7 @@
 			{bone "cockpit_hatch"
 				{parameters "id=body;"}
 				{Position 36.15 	 0.0012 	 22.1027}
-				
+				{VolumeView "../../../../-vehicle/finland/airborne/blenheim_mk1/cockpit_hatch.ply"}
 			}
 			{bone "shooter_bb00"
 				{Position 5.3304 	 6.0968 	 -4.9196}

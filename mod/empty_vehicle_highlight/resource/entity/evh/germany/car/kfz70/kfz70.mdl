@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor1_1 backdoor1_2 seat01 seat02 seat03 seat04 seat05 seat06 seat07 seat08
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 20.06.2025 21:57:37
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_ger\vehicles\car\Krupp_protze_kfz70\kfz70.max
@@ -294,7 +294,7 @@
 				{bone "backdoor1_1"
 					{parameters "id=bodyback;"}
 					{Position -24.483 	 8.7884 	 -4.8638}
-					
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/backdoor1_1.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=bodyback;"}
@@ -304,11 +304,11 @@
 				{bone "backdoor1_2"
 					{parameters "id=bodyback;"}
 					{Position -24.483 	 -8.8494 	 -4.8638}
-					
+					{VolumeView "../../../../-vehicle/germany/car/kfz70/backdoor1_2.ply"}
 					{bone "backdoor1_2_hinge"
 						{parameters "id=bodyback;"}
 						{Position 0.0039 	 5.5512 	 4.0945}
-						
+						{VolumeView "../../../../-vehicle/germany/car/kfz70/backdoor1_2_hinge.ply"}
 					}
 				}
 				{bone "detail1"

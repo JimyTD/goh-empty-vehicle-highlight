@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl1 doorr1 rear_door turret ws_shield zar1 zar2 zar3
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 15.01.2024 15:05:59
 ;File:			 D:\GOH\3dsmax9_saves\scenes\_GoH_3D_vehicle_usa\vehicles\btr\T12_halftrack_M3gmc\M3_t12_gmc.max
@@ -90,21 +90,21 @@
 			{bone "doorl1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 16.099 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/doorl1.ply"}
 				{bone "doorl_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/doorl_ext.ply"}
 				}
 			}
 			{bone "doorr1"
 				{parameters "id=body;"}
 				{Position 21.5281 	 -16.0992 	 16.8148}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/doorr1.ply"}
 				{bone "doorr_ext"
 					{parameters "id=body;"}
 					{Position -1.4727 	 -0.3449 	 1.8747}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/doorr_ext.ply"}
 				}
 			}
 			{bone "ws_shield"
@@ -115,7 +115,7 @@
 					0.8829 	 0 	 0.4695
 					22.9081 	 14.5538 	 18.8263
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/ws_shield.ply"}
 			}
 			{bone "fxsmoke1"
 				{matrix34
@@ -340,7 +340,7 @@
 				{bone "zar2"
 					{parameters "id=body;"}
 					{Position -55.7012 	 7.1071 	 13.7805}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/zar2.ply"}
 				}
 				{bone "zar1"
 					{parameters "id=body;"}
@@ -350,7 +350,7 @@
 						-1 	 0 	 0
 						-55.8538 	 7.1071 	 12.5725
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/zar1.ply"}
 				}
 				{bone "zar3"
 					{parameters "id=body;"}
@@ -360,7 +360,7 @@
 						0 	 0 	 -1
 						-55.7012 	 7.105 	 9.9235
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/zar3.ply"}
 				}
 				{bone "rear_door"
 					{parameters "id=body;"}
@@ -370,7 +370,7 @@
 						0.0002 	 0 	 1
 						-55.6146 	 -6.751 	 4.7905
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/rear_door.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=body;"}
@@ -425,7 +425,10 @@
 				}
 				{limits -21 19}
 				{Position 2.4514 	 0 	 18.4823}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/turret.ply"}
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -10 29}
@@ -435,7 +438,10 @@
 						0 	 -1 	 0
 						-6.7414 	 0.2065 	 12.418
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -444,11 +450,11 @@
 							0 	 1 	 0
 							0.5569 	 0.1131 	 0.2065
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -8.0964 	 0 	 -1.1291}
-							
+							{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/breech_block.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -471,17 +477,17 @@
 				{bone "shield"
 					{parameters "id=gun;"}
 					{Position 0.1587 	 0 	 11.8876}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/shield.ply"}
 				}
 				{bone "cylinder_gun"
 					{parameters "id=gun;"}
 					{Position -3.8914 	 -1.7432 	 5.5038}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/cylinder_gun.ply"}
 				}
 				{bone "aim_ver1"
 					{parameters "id=gun;"}
 					{Position -6.624 	 9.4377 	 4.6698}
-					
+					{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/aim_ver1.ply"}
 				}
 				{bone "point001"
 					{matrix34
@@ -492,7 +498,7 @@
 					}
 					{bone "aim_hor"
 						{parameters "id=gun;"}
-						
+						{VolumeView "../../../../-vehicle/usa/btr/m3_gmc/aim_hor.ply"}
 					}
 				}
 				{bone "sight"

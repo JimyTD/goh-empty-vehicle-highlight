@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch mgun_h_rot1 radio_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 24.08.2024 22:59:13
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\tank_medium\m4_105\M4_sherman1b.max
@@ -34,7 +34,7 @@
 				}
 				{speed 0.007}
 				{Position 4.0409 	 0.0051 	 24.6809}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						15.571 	 0 	 5.027
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,7 +57,7 @@
 							0 	 1 	 0
 							8.0192 	 0.3052 	 -0.8571
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/gun.ply"}
 						{bone "foresight1"
 							{Position 25.8949 	 0.0084 	 0.0096}
 						}
@@ -78,17 +78,17 @@
 							0 	 1 	 0
 							-3.54 	 2.2776 	 -6.6268
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/mgun_turrret.ply"}
 					}
 				}
 				{bone "antena1"
 					{parameters "id=body;"}
 					{Position -19.8391 	 7.9492 	 17.7715}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/antena1.ply"}
 					{bone "antena2"
 						{parameters "id=body;"}
 						{Position -0.0306 	 0 	 8.5132}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/antena2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"
@@ -122,7 +122,7 @@
 				{bone "basket"
 					{parameters "id=turret;"}
 					{Position -26.1838 	 0 	 7.7771}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/basket.ply"}
 				}
 				{bone "hatch"
 					{parameters "id=turret;"}
@@ -132,7 +132,7 @@
 						0 	 0 	 1
 						-11.3239 	 -14.4113 	 16.5204
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/hatch.ply"}
 				}
 			}
 			{bone "engine"
@@ -260,7 +260,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/mgunhull_shield.ply"}
 					}
 					{bone "mgun_hull"
 						{parameters "id=body;"}
@@ -270,7 +270,7 @@
 							0 	 1 	 0
 							-3.4107 	 -0.2003 	 0.3502
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/mgun_hull.ply"}
 					}
 				}
 			}
@@ -354,7 +354,7 @@
 				{bone "radio_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/radio_hatch.ply"}
 				}
 			}
 			{bone "helper_driverh"
@@ -367,7 +367,7 @@
 				{bone "driver_hatch"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/sherman1b/driver_hatch.ply"}
 				}
 			}
 			{bone revolute "wheell1"

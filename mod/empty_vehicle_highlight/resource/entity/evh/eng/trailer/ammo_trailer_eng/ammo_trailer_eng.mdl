@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: 1 fixer hand_breakl hand_breakr holder1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 08.10.2025 15:50:41
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\trailer\M10_trailer\ammo_trailer_eng.max
@@ -28,7 +28,7 @@
 					-0.0872 	 0 	 0.9962
 					-44.9004 	 0.5904 	 5.2982
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/1.ply"}
 			}
 			{bone "seat1"
 				{matrix34
@@ -60,11 +60,11 @@
 					-0.0349 	 0 	 0.9994
 					-35.2156 	 -4.4551 	 4.6131
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/holder1.ply"}
 				{bone "holder2"
 					{parameters "id=body;"}
 					{Position -4.6282 	 4.4593 	 -5.3183}
-					
+					{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/holder2.ply"}
 				}
 			}
 			{bone "fixer"
@@ -75,7 +75,7 @@
 					-0.0349 	 0 	 0.9994
 					-35.2069 	 -0.2314 	 4.6208
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/fixer.ply"}
 			}
 			{bone "hand_breakl"
 				{parameters "id=body;"}
@@ -85,7 +85,7 @@
 					-0.0349 	 0 	 0.9994
 					-20.7517 	 -10.8084 	 0.9571
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/hand_breakl.ply"}
 			}
 			{bone "hand_breakr"
 				{parameters "id=body;"}
@@ -95,7 +95,7 @@
 					-0.0349 	 0 	 0.9994
 					-20.7517 	 10.8085 	 0.9571
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/trailer/ammo_trailer_eng/hand_breakr.ply"}
 			}
 			{bone "tarp"
 				{parameters "id=body;"}

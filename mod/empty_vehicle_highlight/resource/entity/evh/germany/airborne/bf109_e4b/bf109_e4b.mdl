@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 rudder
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/germany/airborne/bf109_e4b/engine_start.anm"} {speed 0.7}}
@@ -24,7 +24,7 @@
 				{limits -30 30}
 				{speed 0.1}
 				{Position -71.3225 	 0 	 26.8759}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/rudder.ply"}
 			}
 			{bone "stabilizer1"
 				{parameters "id=body;"}
@@ -74,7 +74,7 @@
 							-0.125 	 0.9877 	 -0.094
 							-10.6974 	 -8.6948 	 1.5079
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/aileron2.ply"}
 					}
 					{bone "barrel01"
 						{Position 17.7803 	 21.1132 	 -0.3965}
@@ -84,20 +84,20 @@
 			{bone "canopy"
 				{parameters "id=body;"}
 				{Position 18.215 	 -6.5479 	 18.7126}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/canopy.ply"}
 				{bone "glass2"
 					{parameters "id=body;"}
 					{Position 0.0265 	 6.5479 	 4.5894}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/glass2.ply"}
 					{bone "windowknobl"
 						{parameters "id=body;"}
 						{Position 5.2953 	 4.5897 	 -0.4479}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/windowknobl.ply"}
 					}
 					{bone "windowknobr"
 						{parameters "id=body;"}
 						{Position 5.2953 	 -4.5897 	 -0.4479}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/windowknobr.ply"}
 					}
 				}
 			}
@@ -126,7 +126,7 @@
 					0 	 -1 	 0
 					-71.0265 	 15.866 	 26.0087
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=elevator2;"}
@@ -138,7 +138,7 @@
 					0 	 -1 	 0
 					-71.0265 	 -15.8661 	 26.0087
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/elevator2.ply"}
 			}
 			{bone revolute "gun_rot1"
 				{limits -7.5 7.5}
@@ -234,7 +234,7 @@
 							-0.125 	 -0.9877 	 -0.094
 							-10.6974 	 8.6949 	 1.5079
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/bf109_e4b/aileron1.ply"}
 					}
 					{bone "barrel00"
 						{Position 17.7802 	 -21.1133 	 -0.3965}

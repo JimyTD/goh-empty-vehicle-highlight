@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aux_turret1 door_left door_right mgun_hull turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 12.11.2025 02:26:36
 ;File:			 E:\SVN GoH UK 3D models\vehicles\tank_medium\M3_grant\m3_grant.max
@@ -39,7 +39,7 @@
 				{parameters "id=gun1;"}
 				{limits -15 15}
 				{Position 16.5616 	 -15.6122 	 13.0181}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/grant/aux_turret1.ply"}
 				{bone revolute "gun1_rot"
 					{parameters "id=gun1;"}
 					{animation
@@ -52,7 +52,7 @@
 						0 	 -1 	 0
 						4.418 	 0 	 -0.0176
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/grant/gun1_rot.ply"}
 					{bone "gun1"
 						{parameters "id=gun1;"}
 						{matrix34
@@ -61,11 +61,11 @@
 							0 	 1 	 0
 							6.1831 	 0.1365 	 0.0303
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/grant/gun1.ply"}
 						{bone "stab"
 							{parameters "id=gun1;"}
 							{Position 27.6443 	 -0.0003 	 -0.1092}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/grant/stab.ply"}
 						}
 						{bone "foresight1a"
 							{matrix34
@@ -101,12 +101,12 @@
 			{bone "door_left"
 				{parameters "id=body;"}
 				{Position 4.6509 	 27.0821 	 15.0905}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/grant/door_left.ply"}
 			}
 			{bone "door_right"
 				{parameters "id=body;"}
 				{Position 4.6431 	 -27.0948 	 15.1665}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/grant/door_right.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -240,7 +240,7 @@
 					0 	 -1 	 0
 					39.5606 	 11.5181 	 4.8926
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/grant/mgun_hull.ply"}
 				{bone revolute "foresight4"
 					{limits -1 1}
 					{speed 0.01}
@@ -309,7 +309,7 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/grant/turret_r.anm"}{speed 0.6}}
 				}
 				{Position -6.8306 	 6.6561 	 22.2376}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/grant/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -322,7 +322,7 @@
 						0 	 -1 	 0
 						10.124 	 0.0726 	 6.9183
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/grant/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -331,7 +331,7 @@
 							0 	 1 	 0
 							5.7015 	 0.7512 	 1.3145
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/grant/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0079
@@ -348,7 +348,7 @@
 							0 	 1 	 0
 							0.148 	 0.4484 	 4.5896
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/grant/mgun_coax.ply"}
 						{bone "foresight5"
 							{Position 10.5439 	 0.3338 	 0.2699}
 						}
@@ -371,21 +371,21 @@
 				{bone "cover"
 					{parameters "id=aux_turret2;"}
 					{Position 1.3491 	 6.8336 	 14.7788}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/grant/cover.ply"}
 				}
 				{bone "cover1"
 					{parameters "id=aux_turret2;"}
 					{Position -9.7195 	 6.8341 	 14.7789}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/grant/cover1.ply"}
 				}
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -14.4599 	 -8.323 	 13.4433}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/grant/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{Position -0.0306 	 0 	 8.5108}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/grant/antenna2.ply"}
 					}
 				}
 				{bone "fxsmoke_shot1"

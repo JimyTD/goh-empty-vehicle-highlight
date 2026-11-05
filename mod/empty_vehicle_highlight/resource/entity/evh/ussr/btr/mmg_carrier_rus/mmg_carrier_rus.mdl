@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_1_rot1 mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 12.09.2021 12:22:38
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\Lend-Lease\universal_carrier\mmg_carrier_rus.max
@@ -268,7 +268,7 @@
 					{limits -15 15}
 					{terminator}
 					{Position 5.4776 	 2.1837 	 1.2626}
-					
+					{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -11 20}
@@ -278,7 +278,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/mgun_1_rot2.ply"}
 						{bone "box"
 							{parameters "id=body;"}
 							{matrix34
@@ -287,17 +287,17 @@
 								0 	 1 	 0
 								-0.6439 	 0.7637 	 3.9376
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/box.ply"}
 							{bone "lid"
 								{parameters "id=body;"}
 								{Position 0 	 -1.1887 	 2.3741}
-								
+								{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/lid.ply"}
 							}
 						}
 						{bone "maxim"
 							{parameters "id=body;"}
 							{Position -7.7241 	 1.2539 	 0.0151}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/maxim.ply"}
 							{bone "hammer"
 								{parameters "id=body;"}
 								{matrix34
@@ -306,7 +306,7 @@
 									0 	 1 	 0
 									2.4449 	 1.0217 	 0.6681
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/hammer.ply"}
 							}
 							{bone "foresight5"
 								{matrix34
@@ -325,7 +325,7 @@
 								0 	 0.9985 	 -0.0544
 								-0.6213 	 2.3682 	 1.1745
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/btr/mmg_carrier_rus/belt.ply"}
 						}
 					}
 					{bone "gunner2"

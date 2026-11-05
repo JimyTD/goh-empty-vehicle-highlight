@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorleft2 doorright1 doorright2
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 13.05.2025 00:42:16
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\car\kübenwagen\kubelwagen.max
@@ -69,22 +69,22 @@
 					0 	 0 	 1
 					0.2 	 12.1111 	 8.4393
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen/doorleft1.ply"}
 			}
 			{bone "doorright2"
 				{parameters "id=body;"}
 				{Position 0.2067 	 -12.1336 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen/doorright2.ply"}
 			}
 			{bone "doorright1"
 				{parameters "id=body;"}
 				{Position 0.2052 	 -12.1309 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen/doorright1.ply"}
 			}
 			{bone "doorleft2"
 				{parameters "id=body;"}
 				{Position 0.2029 	 12.1053 	 8.4393}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kubelwagen/doorleft2.ply"}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}

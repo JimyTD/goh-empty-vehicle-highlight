@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_virt dragbar footfront footrear holder lockl lockr standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:31:34
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\cannon\61k\37mm_61k.max
@@ -27,16 +27,19 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -0.405 	 0 	 4.0551}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/turret_lod1.ply"}
+				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position 3.8007 	 -10.8191 	 10.7013}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position 4.0592 	 10.6811 	 13.0306}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/aim_ver.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -49,7 +52,10 @@
 						0 	 -1 	 0
 						-3.3341 	 0 	 13.3409
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -58,7 +64,7 @@
 							0 	 1 	 0
 							16.3531 	 0.6797 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/gun.ply"}
 					}
 					{bone "ammo"
 						{parameters "id=gun;"}
@@ -68,7 +74,7 @@
 							0 	 1 	 0
 							0.5153 	 5.2463 	 -0.0004
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/ammo.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -82,17 +88,17 @@
 				{bone "rod1"
 					{parameters "id=body;"}
 					{Position 4.7869 	 5.376 	 10.5344}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/rod1.ply"}
 				}
 				{bone "rod2"
 					{parameters "id=body;"}
 					{Position 5.5042 	 4.0255 	 14.3674}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/rod2.ply"}
 				}
 				{bone "hidraulic"
 					{parameters "id=body;"}
 					{Position 7.1347 	 0 	 7.3881}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/hidraulic.ply"}
 				}
 				{bone "fx_invers"
 					{matrix34
@@ -132,47 +138,47 @@
 				{bone "hidraulic_rod"
 					{parameters "id=body;"}
 					{Position 1.3096 	 0 	 8.3215}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/hidraulic_rod.ply"}
 				}
 			}
 			{bone "lockl"
 				{parameters "id=body;"}
 				{Position -0.4033 	 14.2606 	 1.6741}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/lockl.ply"}
 			}
 			{bone "lockr"
 				{parameters "id=body;"}
 				{Position -0.4033 	 -14.2606 	 1.6741}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/lockr.ply"}
 			}
 			{bone "footfront"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 0.3749}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/footfront.ply"}
 			}
 			{bone "footrear"
 				{parameters "id=body;"}
 				{Position 0 	 0 	 0.3749}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/footrear.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -0.4033 	 14.2606 	 1.6741}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/standl.ply"}
 				{bone "footl"
 					{parameters "id=body;"}
 					{Position 0.4033 	 -14.2606 	 -1.2992}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/footl.ply"}
 				}
 			}
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -0.4033 	 -14.2606 	 1.6741}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/standr.ply"}
 				{bone "footr"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0.3749}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/footr.ply"}
 				}
 			}
 			{bone "axle_back"
@@ -192,7 +198,7 @@
 						-0.7986 	 0 	 -0.6018
 						-13.0227 	 0 	 -1.9897
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/dragbar.ply"}
 				}
 			}
 			{bone "axle_front"
@@ -212,7 +218,7 @@
 						-0.9511 	 0 	 0.309
 						1.5266 	 0 	 0.2912
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/holder.ply"}
 				}
 			}
 			{bone "seat2"
@@ -272,7 +278,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/wheelr2.ply"}
 							{bone "tire2r"
 								{parameters "id=wheelright2;"}
 								{matrix34
@@ -281,7 +287,7 @@
 									0 	 -1 	 0
 									0.0012 	 0 	 0.9589
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/tire2r.ply"}
 							}
 						}
 					}
@@ -302,7 +308,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/wheell2.ply"}
 							{bone "tire2l"
 								{parameters "id=wheelleft2;"}
 								{matrix34
@@ -311,7 +317,7 @@
 									0 	 -1 	 0
 									0.0012 	 0 	 -0.9622
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/tire2l.ply"}
 							}
 						}
 					}
@@ -358,7 +364,7 @@
 								0 	 0 	 -1
 								0 	 1 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/wheelr1.ply"}
 							{bone "tire1r"
 								{parameters "id=wheelright1;"}
 								{matrix34
@@ -367,7 +373,7 @@
 									0 	 -1 	 0
 									0 	 0 	 0.9589
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/tire1r.ply"}
 							}
 						}
 					}
@@ -388,7 +394,7 @@
 								0 	 1 	 0
 								0 	 0 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/wheell1.ply"}
 							{bone "tire1l"
 								{parameters "id=wheelleft1;"}
 								{matrix34
@@ -397,7 +403,7 @@
 									0 	 -1 	 0
 									0 	 0 	 -0.9622
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/37mm_61k/tire1l.ply"}
 							}
 						}
 					}

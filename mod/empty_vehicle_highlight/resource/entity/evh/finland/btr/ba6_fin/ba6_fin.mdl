@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright mgun_h_rot1 turret whll1 whlr1
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 22.10.2023 21:21:21
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3D_vehicles_fin\3d vehicles\btr\BA6_fin\BA_6_fin.max
@@ -65,11 +65,11 @@
 					{bone "mgun_hull"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/mgun_hull.ply"}
 						{bone "dt29"
 							{parameters "id=body;"}
 							{Position -1.6764 	 0.0526 	 -0.6988}
-							
+							{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/dt29.ply"}
 						}
 						{bone "foresight4"
 							{Position 8.7337 	 0.039 	 -0.0071}
@@ -83,7 +83,7 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/btr/ba6_fin/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -6.1994 	 -0.0005 	 22.3228}
-				
+				{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -103,7 +103,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/mantlet.ply"}
 					}
 					{bone "gun"
 						{parameters "id=gun;"}
@@ -113,7 +113,7 @@
 							0 	 1 	 0
 							11.4354 	 0.4369 	 -0.8649
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/gun.ply"}
 						{bone "foresight1"
 							{Position 18.9046 	 0 	 0}
 						}
@@ -126,7 +126,7 @@
 							0 	 1 	 0
 							3.0659 	 -0.9211 	 2.9668
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/dt29_turret.ply"}
 						{bone "foresight5"
 							{Position 4.8823 	 -0.0004 	 0.283}
 						}
@@ -135,12 +135,12 @@
 				{bone "hatch1"
 					{parameters "id=turret;"}
 					{Position -0.0461 	 -5.0293 	 11.9042}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/hatch1.ply"}
 				}
 				{bone "hatch2"
 					{parameters "id=turret;"}
 					{Position -0.046 	 5.0293 	 11.9042}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/hatch2.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -152,11 +152,11 @@
 				}
 				{bone "enumerator1"
 					{Position 6.8172 	 -10.8141 	 4.1609}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{Position 6.8201 	 10.8261 	 4.1609}
-					
+					{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/enumerator2.ply"}
 				}
 				{bone "ammo1"
 					{Position -3.262 	 -3.726 	 6.5788}
@@ -194,7 +194,7 @@
 					0 	 -0.1392 	 0.9903
 					23.8502 	 13.3071 	 14.5327
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/doorleft.ply"}
 			}
 			{bone "doorright"
 				{parameters "id=body;"}
@@ -204,7 +204,7 @@
 					0 	 0.1219 	 0.9925
 					23.87 	 -13.2643 	 14.5327
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/doorright.ply"}
 			}
 			{bone "fxsmoke1"
 				{matrix34
@@ -473,7 +473,7 @@
 					{bone revolute "whll1"
 						{parameters "id=body;"}
 						{Position 0.0112 	 -1.0368 	 0.2801}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/whll1.ply"}
 					}
 				}
 			}
@@ -514,7 +514,7 @@
 					{bone revolute "whlr1"
 						{parameters "id=body;"}
 						{Position 0.0112 	 1.0424 	 0.2807}
-						
+						{VolumeView "../../../../-vehicle/finland/btr/ba6_fin/whlr1.ply"}
 					}
 				}
 			}

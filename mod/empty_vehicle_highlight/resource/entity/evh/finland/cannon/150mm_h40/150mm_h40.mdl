@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.05.2020 23:40:52
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\sfh18\sfh18_150.max
@@ -31,11 +31,11 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/cannon/150mm_h40/gun_r.anm"}{speed 0.7}}
 				}
 				{Position -5.9999 	 -0.0015 	 4.4998}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/turret.ply"}
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position -17.5437 	 8.8678 	 3.9304}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/aim_hor.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						-3.2586 	 0 	 11.3014
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,11 +54,11 @@
 							0 	 1 	 0
 							-5.9613 	 0.2491 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -0.1577 	 -0.0018 	 0.002}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/breech.ply"}
 						}
 						{bone "foresight1"
 							{Position 82.2856 	 0 	 0.0055}
@@ -74,19 +74,19 @@
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -1.7341 	 -2.9421 	 4.2063}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/lever.ply"}
 						}
 					}
 				}
 				{bone "telor"
 					{parameters "id=gun;"}
 					{Position 14.5186 	 -5.3381 	 3.6289}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/telor.ply"}
 				}
 				{bone "telol"
 					{parameters "id=gun;"}
 					{Position 14.5186 	 5.3233 	 3.6289}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/telol.ply"}
 				}
 			}
 			{bone "standl"
@@ -97,7 +97,7 @@
 					0 	 0 	 1
 					-7.5925 	 9.1433 	 4.7856
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/standl.ply"}
 				{bone "spadel"
 					{parameters "id=body;"}
 					{matrix34
@@ -106,22 +106,22 @@
 						0 	 0 	 1
 						-72.4958 	 -0.0028 	 -13.0198
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/spadel.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position -35.0869 	 2.3923 	 -6.3792}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position -45.2094 	 -2.0752 	 -10.8996}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -35.3419 	 2.2419 	 -8.2481}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail3.ply"}
 				}
 				{bone "standplate"
 					{parameters "id=body;"}
@@ -131,7 +131,7 @@
 						0.0082 	 1 	 0
 						-17.1733 	 2.8746 	 -8.5099
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/standplate.ply"}
 				}
 				{bone "lockl"
 					{parameters "id=body;"}
@@ -141,7 +141,7 @@
 						-0.2242 	 0.0182 	 0.9744
 						-26.1658 	 0.4771 	 -2.2741
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/lockl.ply"}
 				}
 			}
 			{bone "standr"
@@ -152,26 +152,26 @@
 					0 	 0 	 1
 					-7.5925 	 -9.1451 	 4.7856
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/standr.ply"}
 				{bone "spader"
 					{parameters "id=body;"}
 					{Position -72.4958 	 0.0057 	 -13.0198}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/spader.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position -35.0869 	 -2.3923 	 -6.3792}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail4.ply"}
 				}
 				{bone "detail5"
 					{parameters "id=body;"}
 					{Position -45.2094 	 2.0752 	 -10.8996}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail5.ply"}
 				}
 				{bone "detail6"
 					{parameters "id=body;"}
 					{Position -35.3419 	 -2.2419 	 -8.2481}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/detail6.ply"}
 				}
 				{bone "vinch"
 					{parameters "id=body;"}
@@ -181,7 +181,7 @@
 						0 	 0 	 1
 						-18.7712 	 -1.9485 	 -1.2935
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/vinch.ply"}
 					{bone "aim_vert"
 						{parameters "id=body;"}
 						{matrix34
@@ -190,7 +190,7 @@
 							0 	 0 	 1
 							-0.0161 	 -1.5587 	 3.3107
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/aim_vert.ply"}
 					}
 				}
 				{bone "lockr"
@@ -201,7 +201,7 @@
 						-0.2242 	 -0.0182 	 0.9744
 						-26.1653 	 -0.3433 	 -2.2818
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/150mm_h40/lockr.ply"}
 				}
 			}
 			{bone "pivot_front"

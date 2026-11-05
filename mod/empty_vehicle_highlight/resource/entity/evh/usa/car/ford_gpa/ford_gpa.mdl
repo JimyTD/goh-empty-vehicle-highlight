@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 04.04.2025 14:30:09
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_usa\vehicles\car\Ford_GPA\Ford_GPA.max
@@ -69,7 +69,7 @@
 					{parameters "id=body;"}
 					{limits -40 35}
 					{Position -1.9439 	 0.0004 	 11.3513}
-					
+					{VolumeView "../../../../-vehicle/usa/car/ford_gpa/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=body;"}
 						{limits -10 45}
@@ -79,7 +79,7 @@
 							0 	 -1 	 0
 							-1.2565 	 0.1041 	 3.9857
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/car/ford_gpa/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -6.9852 	 -0.4131 	 0.0409}
 						}

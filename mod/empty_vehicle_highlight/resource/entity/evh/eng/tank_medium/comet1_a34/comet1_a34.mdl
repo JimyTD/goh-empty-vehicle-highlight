@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun_h_rot1 seat01 seat02 seat03 seat04 turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 24.09.2025 01:45:27
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\tank_medium\Comet\comet1_a34.max
@@ -115,30 +115,30 @@
 					{sequence "repair" {file "../../../../-vehicle/eng/tank_medium/comet1_a34/turret_r.anm"}{speed 0.7}}
 				}
 				{Position 11.8701 	 0 	 11.1683}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/turret.ply"}
 				{bone "detail8"
 					{parameters "id=turret;"}
 					{Position -18.0284 	 16.9423 	 9.6128}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/detail8.ply"}
 				}
 				{bone "hatch_charger1_2"
 					{parameters "id=turret;"}
 					{Position 1.686 	 -11.9291 	 13.9347}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/hatch_charger1_2.ply"}
 				}
 				{bone "hatch_commander_ring"
 					{parameters "id=turret;"}
 					{Position -8.919 	 9.5609 	 18.3878}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/hatch_commander_ring.ply"}
 					{bone "hatch_commander1_1"
 						{parameters "id=turret;"}
 						{Position -1.6391 	 -4.2263 	 0.6453}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/hatch_commander1_1.ply"}
 					}
 					{bone "hatch_commander1_2"
 						{parameters "id=turret;"}
 						{Position -1.6391 	 4.2383 	 0.6453}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/hatch_commander1_2.ply"}
 					}
 				}
 				{bone revolute "gun_rot"
@@ -152,7 +152,7 @@
 						0 	 1 	 0
 						12.9829 	 0.1374 	 6.4709
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -161,7 +161,7 @@
 							0 	 -1 	 0
 							-2.5394 	 -0.2787 	 0.0004
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -191,19 +191,19 @@
 				{bone "at2_1"
 					{parameters "id=turret;"}
 					{Position -15.7399 	 -12.2244 	 17.163}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at2_1.ply"}
 					{bone "at2_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.3307}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at2_2.ply"}
 						{bone "at2_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.311}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at2_3.ply"}
 							{bone "at2_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.311}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at2_4.ply"}
 							}
 						}
 					}
@@ -211,29 +211,29 @@
 				{bone "detail9"
 					{parameters "id=turret;"}
 					{Position -18.0283 	 -16.9498 	 9.6149}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/detail9.ply"}
 				}
 				{bone "hatch_charger1_1"
 					{parameters "id=turret;"}
 					{Position -10.5975 	 -11.9094 	 15.726}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/hatch_charger1_1.ply"}
 				}
 				{bone "at1_1"
 					{parameters "id=turret;"}
 					{Position -22.5108 	 -0.0262 	 17.9898}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at1_1.ply"}
 					{bone "at1_2"
 						{parameters "id=turret;"}
 						{Position -0.0153 	 0 	 4.311}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at1_2.ply"}
 						{bone "at1_3"
 							{parameters "id=turret;"}
 							{Position -0.0153 	 0 	 4.311}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at1_3.ply"}
 							{bone "at1_4"
 								{parameters "id=turret;"}
 								{Position -0.0153 	 0 	 4.311}
-								
+								{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/at1_4.ply"}
 							}
 						}
 					}
@@ -259,7 +259,7 @@
 						0 	 0 	 1
 						-8.2269 	 -19.7827 	 8.5119
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -268,7 +268,7 @@
 						0 	 0 	 1
 						-12.6681 	 17.8796 	 8.9819
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/enumerator2.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34
@@ -475,7 +475,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/comet1_a34/machine_gun_mount.ply"}
 					}
 					{bone "foresight4"
 						{matrix34

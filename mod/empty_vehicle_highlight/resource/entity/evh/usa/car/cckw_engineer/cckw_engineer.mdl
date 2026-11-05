@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.10.2023 09:57:02
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\cckw\cckw_352_eng\cckw352_eng.max
@@ -122,7 +122,7 @@
 				{bone "backdoor"
 					{parameters "id=bodyback;"}
 					{Position -4.0188 	 -19.6787 	 4.5831}
-					
+					{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/backdoor.ply"}
 					{bone "fxstop2"
 						{matrix34
 							-1 	 0 	 0
@@ -152,12 +152,12 @@
 					{bone "doorright1"
 						{parameters "id=body;"}
 						{Position -0.0348 	 0.0688 	 0.1768}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/doorright1.ply"}
 					}
 					{bone "window4"
 						{parameters "id=window4;"}
 						{Position -8.7036 	 -0.2418 	 18.7252}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/window4.ply"}
 					}
 				}
 				{bone "doorleft"
@@ -170,12 +170,12 @@
 							0 	 0 	 1
 							0.0053 	 0.0587 	 8.6521
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/doorleft1.ply"}
 					}
 					{bone "window3"
 						{parameters "id=window3;"}
 						{Position -8.6685 	 0.2684 	 18.5998}
-						
+						{VolumeView "../../../../-vehicle/usa/car/cckw_engineer/window3.ply"}
 					}
 				}
 			}

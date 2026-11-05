@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.08.2025 19:52:25
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_fin\3d vehicles\Cannon\155mm_K17\155mm_k17.max
@@ -31,7 +31,7 @@
 				{limits -4.5 4.5}
 				{speed 0.002}
 				{Position -75.7865 	 0 	 -13.5259}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						77.7471 	 0 	 32.7726
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,15 +54,15 @@
 							0 	 1 	 0
 							0.0723 	 2.3109 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -25.1145 	 3.5215 	 0.9252}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/breech.ply"}
 							{bone "lever2"
 								{parameters "id=gun;"}
 								{Position -0.7314 	 -3.9971 	 1.1664}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/lever2.ply"}
 							}
 						}
 						{bone "foresight1"
@@ -84,7 +84,7 @@
 						{bone "lever1"
 							{parameters "id=gun;"}
 							{Position -25.668 	 -0.3356 	 -3.018}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/lever1.ply"}
 						}
 					}
 					{bone "cover"
@@ -95,48 +95,48 @@
 							-0.6136 	 -0.7896 	 0
 							10.0306 	 -7.4473 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/cover.ply"}
 					}
 				}
 				{bone "aim_ver1"
 					{parameters "id=body;"}
 					{Position 69.789 	 10.5156 	 31.9565}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/aim_ver1.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position 66.9435 	 8.4057 	 19.5537}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/aim_ver.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 92.3522 	 13.9521 	 21.8062}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/detail1.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
 					{Position 89.0205 	 12.9902 	 28.414}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/detail2.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position 86.3354 	 -11.6021 	 32.6937}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
 					{Position 92.3522 	 -13.9521 	 21.8062}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/detail4.ply"}
 				}
 				{bone "fixer_spade"
 					{parameters "id=body;"}
 					{Position 4.4271 	 0.7881 	 0.3355}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/fixer_spade.ply"}
 				}
 				{bone "spade"
 					{parameters "id=body;"}
 					{Position -0.2234 	 0 	 -1.7503}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/spade.ply"}
 				}
 				{bone "holder_rod"
 					{parameters "id=body;"}
@@ -146,12 +146,12 @@
 						-0.014 	 0 	 0.9999
 						-10.115 	 -0.0003 	 1.643
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/holder_rod.ply"}
 				}
 				{bone "shield"
 					{parameters "id=body;"}
 					{Position 84.2192 	 6.6974 	 33.828}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/shield.ply"}
 					{bone "plate"
 						{parameters "id=body;"}
 						{matrix34
@@ -160,7 +160,7 @@
 							-0.5022 	 0 	 0.8648
 							-3.5677 	 6.48 	 8.2081
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/plate.ply"}
 					}
 				}
 				{bone "visor"
@@ -206,7 +206,7 @@
 				{bone "sight"
 					{parameters "id=gun;"}
 					{Position 77.7471 	 9.0739 	 32.7726}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/155mm_k17/sight.ply"}
 				}
 				{bone "aim_ver2"
 					{Position 69.789 	 -10.5156 	 31.9565}

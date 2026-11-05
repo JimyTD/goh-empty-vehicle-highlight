@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 doorleft elevator1 elevator2 mgun_r_rot1 rudder
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/germany/airborne/fi156/engine_start.anm"} {speed 0.7}}
@@ -24,7 +24,7 @@
 				{limits -25 25}
 				{speed 0.1}
 				{Position -131.274 	 0 	 29.3298}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/fi156/rudder.ply"}
 			}
 			{bone revolute "elevator1"
 				{parameters "id=body;"}
@@ -36,7 +36,7 @@
 					0 	 -1 	 0
 					-130.427 	 32.8895 	 16.7926
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/fi156/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=body;"}
@@ -48,7 +48,7 @@
 					0 	 -1 	 0
 					-130.427 	 -32.8954 	 16.7926
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/fi156/elevator2.ply"}
 			}
 			{bone "glass"
 				{parameters "id=body;"}
@@ -58,11 +58,11 @@
 			{bone "doorleft"
 				{parameters "id=body;"}
 				{Position -6.5682 	 -10.9808 	 12.2623}
-				
+				{VolumeView "../../../../-vehicle/germany/airborne/fi156/doorleft.ply"}
 				{bone "glass_door"
 					{parameters "id=body;"}
 					{Position -7.7955 	 0.0348 	 4.8963}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/fi156/glass_door.ply"}
 				}
 			}
 			{bone "visor"
@@ -161,7 +161,7 @@
 							0 	 -1 	 0
 							-15.5278 	 2.9256 	 -4.1998
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/fi156/aileron1.ply"}
 					}
 				}
 				{bone "flap1"
@@ -203,7 +203,7 @@
 							0 	 1 	 0
 							-15.5118 	 -35.7278 	 -4.1892
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/airborne/fi156/aileron2.ply"}
 					}
 				}
 			}
@@ -232,7 +232,7 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/airborne/fi156/mgun_r_rot2.ply"}
 					{bone "foresight6"
 						{matrix34
 							1 	 0 	 0

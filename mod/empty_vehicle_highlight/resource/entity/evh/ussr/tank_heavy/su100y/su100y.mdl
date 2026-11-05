@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_hatch driver_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.09.2021 09:52:18
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\tank_heavy\su100y\SU-100Y_export.max
@@ -29,7 +29,7 @@
 			{bone revolute "turret"
 				{parameters "id=mantlet;"}
 				{Position 27.6535 	 0.0003 	 29.8184}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/su100y/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -38,7 +38,7 @@
 						0 	 -1 	 0
 						-2.6364 	 0 	 -0.7337
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su100y/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -50,7 +50,7 @@
 							0 	 1 	 0
 							24.6669 	 0.1669 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/su100y/gun.ply"}
 						{bone "foresight1"
 							{Position 80.3236 	 0 	 0}
 						}
@@ -318,7 +318,7 @@
 			{bone "driver_hatch"
 				{parameters "commonmesh;id=body;"}
 				{Position 58.7054 	 -11.1927 	 14.7806}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/su100y/driver_hatch.ply"}
 			}
 			{bone "back_hatch_help"
 				{matrix34
@@ -335,7 +335,7 @@
 						0.0007 	 0 	 1
 						0.064 	 0.1138 	 -0.0261
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/su100y/back_hatch.ply"}
 				}
 			}
 			{bone "engine"

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot shield_lower2 standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.04.2020 22:26:10
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\50mm_pak38\50mm_pak38.max
@@ -42,17 +42,17 @@
 						0.1897 	 0 	 0.9818
 						1.3041 	 -0.0177 	 -0.2216
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/shield_lower2.ply"}
 				}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -6.8419 	 -0.1931 	 1.7864}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/turret.ply"}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 4.5945 	 0.1907 	 0.4029}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/shield.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -65,7 +65,7 @@
 						0 	 -1 	 0
 						-3.0923 	 1.6012 	 6.3273
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -74,7 +74,7 @@
 							0 	 1 	 0
 							22.3622 	 2.0797 	 1.0648
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/gun.ply"}
 						{bone "visor2"
 							{Position -34.0846 	 -8.3605 	 -1.2655}
 						}
@@ -95,12 +95,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -28.8006 	 -1.2198 	 0.2454}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -28.5827 	 -0.812 	 3.0786}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/lever.ply"}
 						}
 					}
 				}
@@ -112,12 +112,12 @@
 						0 	 0 	 1
 						-4.699 	 9.2139 	 2.4801
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/aim_wheel2.ply"}
 				}
 				{bone "aim_wheel1"
 					{parameters "id=body;"}
 					{Position 0.2417 	 9.9808 	 3.6372}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/aim_wheel1.ply"}
 				}
 			}
 			{bone "pivot_front"
@@ -198,12 +198,12 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -8.6926 	 -8.1189 	 0.5692}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/standr.ply"}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -8.7003 	 8.0174 	 0.5978}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/50mm_pak38/standl.ply"}
 			}
 			{bone "seat4"
 				{matrix34

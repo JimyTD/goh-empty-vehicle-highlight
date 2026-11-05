@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorl doorr gun turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 02.09.2021 09:46:32
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\btr\p204f\p204_f_rail.max
@@ -61,7 +61,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/btr/p204_f_rail/turret_r.anm"}{speed 0.25}}
 				}
 				{Position 7.1821 	 0 	 18.3858}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/turret.ply"}
 				{bone "visor1"
 					{matrix34
 						1 	 -0.0004 	 0
@@ -78,7 +78,7 @@
 						0 	 1 	 0
 						11.3189 	 0 	 0.9646
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -87,7 +87,7 @@
 							0 	 -1 	 0
 							23.8189 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/gun.ply"}
 						{bone "foresight1"
 							{Position 5.8678 	 0 	 0}
 						}
@@ -101,7 +101,7 @@
 						0 	 1 	 0
 						12.0306 	 6.2311 	 -0.8734
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/mgun_rot.ply"}
 					{bone "foresight3"
 						{matrix34
 							1 	 0 	 0
@@ -114,7 +114,7 @@
 				{bone "cover1"
 					{parameters "id=turret;"}
 					{Position 3.0355 	 -3.0239 	 7.479}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/cover1.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34
@@ -136,12 +136,12 @@
 			{bone "doorr"
 				{parameters "id=body;"}
 				{Position -0.8086 	 -18.1277 	 5.3283}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/doorr.ply"}
 			}
 			{bone "doorl"
 				{parameters "id=body;"}
 				{Position -4.2746 	 17.5236 	 4.0804}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/p204_f_rail/doorl.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}

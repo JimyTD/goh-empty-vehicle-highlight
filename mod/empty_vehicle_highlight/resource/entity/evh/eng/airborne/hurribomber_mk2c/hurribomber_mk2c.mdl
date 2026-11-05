@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 rudder step
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.12.2025 19:08:40
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\airborne\hawker_hurricane_1a\hurricane_2c.max
@@ -40,7 +40,7 @@
 							-0.1235 	 -0.9909 	 -0.054
 							-6.9945 	 53.5551 	 1.1083
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/aileron1.ply"}
 					}
 					{bone "flapl1"
 						{parameters "id=wingleft;"}
@@ -126,7 +126,7 @@
 							-0.1162 	 0.9913 	 -0.0613
 							-7.3005 	 -51.6814 	 0.9046
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/aileron2.ply"}
 					}
 					{bone "flapr1"
 						{parameters "id=wingright;"}
@@ -199,7 +199,7 @@
 				{limits -30 30}
 				{speed 0.1}
 				{Position -93.9936 	 0 	 13.5078}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/rudder.ply"}
 			}
 			{bone "emit1"
 				{matrix34
@@ -353,7 +353,7 @@
 						0 	 -1 	 0
 						-7.3601 	 14.5257 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/elevator1.ply"}
 				}
 			}
 			{bone "stabilizer2"
@@ -370,7 +370,7 @@
 						0 	 -1 	 0
 						-7.3601 	 -13.7916 	 0
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/elevator2.ply"}
 				}
 			}
 			{bone "coolantflap"
@@ -456,16 +456,16 @@
 					0.1045 	 0 	 0.9945
 					-18.4005 	 6.7227 	 -3.8713
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/step.ply"}
 			}
 			{bone "canopy"
 				{parameters "id=body;"}
 				{Position 4.2249 	 0 	 14.6269}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/canopy.ply"}
 				{bone "glass2"
 					{parameters "id=body;"}
 					{Position -2.4362 	 0 	 3.215}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/hurribomber_mk2c/glass2.ply"}
 				}
 			}
 		}

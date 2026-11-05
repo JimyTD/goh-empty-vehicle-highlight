@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 31.10.2025 13:01:04
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\Cruiser_A13_Mk3_Mk4\Cruiser_mk4a\Cruiser_mk4a.max
@@ -86,12 +86,12 @@
 			{bone "driver_hatch1"
 				{parameters "id=body;"}
 				{Position 36.6234 	 -0.2819 	 21.2675}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/driver_hatch1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 44.7912 	 4.6746 	 13.7647}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/driver_hatch2.ply"}
 			}
 			{bone revolute "wheell1"
 				{parameters "id=trackleft;radius=0.25;"}
@@ -269,16 +269,16 @@
 				}
 				{speed 0.006}
 				{Position 12.8153 	 0.0343 	 21.7307}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/turret.ply"}
 				{bone "turret_hatch1"
 					{parameters "id=turret;"}
 					{Position -2.4666 	 -6.4506 	 13.7126}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/turret_hatch1.ply"}
 				}
 				{bone "turret_hatch2"
 					{parameters "id=turret;"}
 					{Position -7.7387 	 -6.4506 	 13.7126}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/turret_hatch2.ply"}
 				}
 				{bone "visor1"
 					{Position 0.6634 	 4.4957 	 15.0517}
@@ -294,15 +294,15 @@
 				{bone "antenna1"
 					{parameters "id=turret;"}
 					{Position -22.2507 	 0.0153 	 16.9744}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/antenna1.ply"}
 					{bone "antenna2"
 						{parameters "id=turret;"}
 						{Position -0.0099 	 0 	 8.7565}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/antenna2.ply"}
 						{bone "antenna3"
 							{parameters "id=turret;"}
 							{Position -0.0099 	 0 	 8.8327}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/antenna3.ply"}
 						}
 					}
 				}
@@ -317,7 +317,7 @@
 						0 	 -1 	 0
 						12.5891 	 0.1042 	 6.6245
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -326,7 +326,7 @@
 							0 	 1 	 0
 							4.9411 	 0.0366 	 0.1199
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/gun.ply"}
 						{bone "foresight1"
 							{Position 25.6911 	 0.0053 	 0.0015}
 						}
@@ -382,7 +382,7 @@
 				}
 				{bone "enumerator1"
 					{Position -12.8662 	 -17.9991 	 6.1855}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/enumerator1.ply"}
 				}
 				{bone "turret2"
 					{Position 13.2857 	 -6.6168 	 6.5803}
@@ -398,7 +398,7 @@
 						0 	 0 	 1
 						-0.4019 	 6.817 	 17.4734
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/cupola_hatch1.ply"}
 				}
 				{bone "cupola_hatch2"
 					{parameters "id=turret;"}
@@ -408,7 +408,7 @@
 						0 	 0 	 1
 						-7.7893 	 -0.4867 	 17.4486
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/cruiser_mk4a/cupola_hatch2.ply"}
 				}
 			}
 		}

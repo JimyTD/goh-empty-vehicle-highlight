@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor aim_ver
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 16.07.2024 19:37:27
 ;File:			 D:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\cannon\210mm_K39\210mm_k39.max
@@ -78,12 +78,12 @@
 				{bone "aim_ver"
 					{parameters "id=body;"}
 					{Position 19.6426 	 10.1316 	 22.1008}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_k39/aim_ver.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=body;"}
 					{Position 0.0089 	 10.1316 	 22.1008}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_k39/aim_hor.ply"}
 				}
 				{bone "gunner"
 					{matrix34

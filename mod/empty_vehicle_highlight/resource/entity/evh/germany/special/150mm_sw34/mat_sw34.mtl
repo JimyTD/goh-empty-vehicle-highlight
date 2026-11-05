@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/searchlight_sw_34"}
-	{bump "$/_vehicle/searchlight_sw_34_bp"}
-	{specular "$/_vehicle/searchlight_sw_34_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

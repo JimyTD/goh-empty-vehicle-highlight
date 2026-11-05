@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 26.11.2023 14:56:36
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\dodge_wc51_52\wc52_50cal.max
@@ -85,11 +85,11 @@
 			{bone "backdoor"
 				{parameters "id=body;"}
 				{Position -40.9188 	 11.2359 	 1.2386}
-				
+				{VolumeView "../../../../-vehicle/usa/car/wc52_50cal/backdoor.ply"}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -1.0893 	 -11.2359 	 4.238}
-					
+					{VolumeView "../../../../-vehicle/usa/car/wc52_50cal/detail3.ply"}
 				}
 			}
 			{bone "mg_mount"
@@ -100,7 +100,7 @@
 					{parameters "id=body;"}
 					{limits -40 40}
 					{Position 0.004 	 0.0059 	 12.4511}
-					
+					{VolumeView "../../../../-vehicle/usa/car/wc52_50cal/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=body;"}
 						{limits -10 45}
@@ -110,7 +110,7 @@
 							0 	 -1 	 0
 							-1.3713 	 0.1243 	 3.6319
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/car/wc52_50cal/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0 	 0.0015

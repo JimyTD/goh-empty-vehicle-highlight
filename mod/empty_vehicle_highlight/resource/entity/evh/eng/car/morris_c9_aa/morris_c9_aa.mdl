@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 04.03.2025 16:03:43
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\car\Morris_c9_aa\Morris_c9_aa.max
@@ -311,10 +311,10 @@
 					0 	 0 	 1
 					-8.6498 	 0 	 9.5584
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/turret.ply"}
 				{bone "gun_rod"
 					{parameters "id=turret;"}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/gun_rod.ply"}
 				}
 				{bone "aim_hor"
 					{parameters "id=turret;"}
@@ -324,7 +324,7 @@
 						0 	 0 	 1
 						2.5895 	 -10.2545 	 12.7868
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=turret;"}
@@ -334,7 +334,7 @@
 						0 	 0 	 1
 						1.1772 	 9.07 	 14.0127
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/aim_ver.ply"}
 				}
 				{bone "commander"
 					{Position -16.0662 	 -6.2908 	 6.936}
@@ -363,7 +363,7 @@
 						0 	 -1 	 0
 						-2.9712 	 0 	 16.1928
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -372,7 +372,7 @@
 							0 	 1 	 0
 							25.0346 	 0.2575 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0.0015
@@ -390,7 +390,7 @@
 							0 	 1 	 0
 							21.3626 	 0.2575 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/gun_spring.ply"}
 					}
 					{bone "shells"
 						{parameters "id=gun;"}
@@ -400,7 +400,7 @@
 							0 	 1 	 0
 							0.2045 	 2.9095 	 0.009
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/shells.ply"}
 					}
 					{bone "sight"
 						{matrix34
@@ -414,12 +414,12 @@
 				{bone "shield2"
 					{parameters "id=turret;"}
 					{Position 11.2872 	 12.3569 	 12.1501}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/shield2.ply"}
 				}
 				{bone "shield1"
 					{parameters "id=turret;"}
 					{Position 12.2471 	 -12.3569 	 12.1501}
-					
+					{VolumeView "../../../../-vehicle/eng/car/morris_c9_aa/shield1.ply"}
 				}
 				{bone "camera"
 					{matrix34

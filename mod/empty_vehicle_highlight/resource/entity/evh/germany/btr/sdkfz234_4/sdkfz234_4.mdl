@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 20.08.2022 23:55:32
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\btr\sdkfz 234_4\SdKfz234_4.max
@@ -32,7 +32,7 @@
 				{limits -20 20}
 				{speed 0.008}
 				{Position 10.9006 	 -0.2467 	 13.6191}
-				
+				{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -46,7 +46,7 @@
 						0 	 -1 	 0
 						-0.7768 	 0.452 	 7.9118
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -55,7 +55,7 @@
 							0 	 1 	 0
 							-4.7219 	 1.3658 	 -0.2155
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/gun.ply"}
 						{bone "foresight1"
 							{Position 66.9161 	 -0.3189 	 -0.2444}
 						}
@@ -75,11 +75,11 @@
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position 3.5532 	 0.2311 	 6.3361}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/shield.ply"}
 				}
 				{bone "mg_support"
 					{Position -3.6779 	 -3.9083 	 3.3345}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz234_4/mg_support.ply"}
 					{bone revolute "mgun_a_rot1"
 						{limits -25 20}
 						{terminator}

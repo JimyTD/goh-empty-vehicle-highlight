@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_heavy/kv1_39/start.anm"} {speed 0.7}}
@@ -129,7 +129,7 @@
 				}
 				{speed 0.002}
 				{Position 10.9227 	 0 	 15.7811}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -143,7 +143,7 @@
 						0 	 -1 	 0
 						15.5718 	 0 	 4.1332
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -152,7 +152,7 @@
 							0 	 1 	 0
 							13.7002 	 -1.5941 	 0.3703
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/gun.ply"}
 						{bone "foresight1"
 							{Position 22.2215 	 0.3703 	 -0.0187}
 						}
@@ -164,7 +164,7 @@
 							0 	 1 	 0
 							6.5649 	 1.1293 	 5.6361
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/front_dt.ply"}
 						{bone "foresight5"
 							{Position 2.584 	 -0.0007 	 -0.0076}
 						}
@@ -172,16 +172,16 @@
 				}
 				{bone "detail1"
 					{Position -4.2137 	 -15.905 	 3.9342}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/detail1.ply"}
 				}
 				{bone "ring"
 					{parameters "id=turret;"}
 					{Position -13.1178 	 0 	 12.9316}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/ring.ply"}
 					{bone "turret_hatch"
 						{parameters "id=turret;"}
 						{Position -7.518 	 0 	 -1.2865}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/turret_hatch.ply"}
 					}
 				}
 				{bone "fxfire3"
@@ -189,11 +189,11 @@
 				}
 				{bone "enumerator"
 					{Position -9.8067 	 15.9664 	 6.409}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/enumerator.ply"}
 				}
 				{bone "detail2"
 					{Position 9.2372 	 15.0102 	 5.7837}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/detail2.ply"}
 				}
 				{bone revolute "mgun_r_rot1"
 					{limits -15 15}
@@ -228,7 +228,7 @@
 								0 	 -1 	 0
 								-3.6501 	 -0.0031 	 -0.0042
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_heavy/kv1_39/dt29_rear.ply"}
 						}
 					}
 				}

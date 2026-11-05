@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: ammo1 ammo2 ammo3 ammo4 cans cover3a cover3b detai9 detail2 detail5 detail6 detail8 emit1 emit2 emit3 emit4 emit5 emit6 emit7 engine fenderl1 fenderr1 fuel1 fuel2 fuel3 fxfire4 fxsmoke1 fxsmoke2 fxstop1 fxtracel1 fxtracer1 gun gun_rot headlightl headlightr lever1 lever2 seat01 seat02 seat03 seat04 shieldl1 shieldr1 transmission turret visor2
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "open_driver" {file "../../../../-vehicle/germany/tank_light/panzer742r/open_driver.anm"} {speed 0.1} {events {2 "hatch_light"} {18 "hatch_light"}}}
@@ -28,7 +28,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer742r/turret_r.anm"}{speed 0.9}}
 				}
 				{Position 13.6714 	 0 	 9.7027}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
 					{matrix34
@@ -37,7 +37,7 @@
 						0 	 -1 	 0
 						12.1113 	 -0.9571 	 6.8622
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{animation
@@ -49,7 +49,7 @@
 							0 	 1 	 0
 							10.6143 	 0.4317 	 -1.3783
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/gun.ply"}
 						{bone "foresight1"
 							{Position 19.8409 	 -0.5028 	 0.0326}
 						}
@@ -62,7 +62,7 @@
 							0 	 1 	 0
 							7.3589 	 0.4618 	 -0.865
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/turret_light.ply"}
 						{bone "headlightl1"
 							{matrix34
 								1 	 -0.0004 	 0
@@ -83,7 +83,7 @@
 					{bone "mgun"
 						{parameters "id=turret;"}
 						{Position -0.4202 	 -0.6839 	 2.5203}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/mgun.ply"}
 						{bone "foresight3"
 							{matrix34
 								1 	 0 	 0
@@ -113,7 +113,7 @@
 				{bone "cover"
 					{parameters "id=turret;"}
 					{Position 0.0339 	 1.7027 	 12.8525}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/cover.ply"}
 				}
 				{bone "ammo4"
 					{matrix34
@@ -126,18 +126,18 @@
 				{bone "tarp"
 					{parameters "id=turret;"}
 					{Position -15.1804 	 -0.0067 	 13.333}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/tarp.ply"}
 				}
 			}
 			{bone "shieldr1"
 				{parameters "id=shieldr1;"}
 				{Position 41.8766 	 -16.1828 	 -2.1364}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/shieldr1.ply"}
 			}
 			{bone "shieldl1"
 				{parameters "id=shieldl1;"}
 				{Position 41.8766 	 16.1527 	 -2.1364}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/shieldl1.ply"}
 			}
 			{bone revolute "wheell01"
 				{parameters "id=trackleft;radius=0.4;"}
@@ -162,7 +162,7 @@
 			{bone "cover3a"
 				{parameters "id=body;"}
 				{Position 35.5318 	 1.3003 	 9.9073}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/cover3a.ply"}
 			}
 			{bone "cover3b"
 				{parameters "id=body;"}
@@ -172,7 +172,7 @@
 					0.1045 	 0 	 0.9945
 					45.0026 	 1.3002 	 -0.9601
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/cover3b.ply"}
 			}
 			{bone "fxsmoke1"
 				{matrix34
@@ -231,27 +231,27 @@
 			{bone "lever1"
 				{parameters "id=trackright;"}
 				{Position 36.174 	 -11.3671 	 -6.6923}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/lever1.ply"}
 			}
 			{bone "lever2"
 				{parameters "id=trackleft;"}
 				{Position 36.174 	 11.3671 	 -6.6923}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/lever2.ply"}
 			}
 			{bone "detail2"
 				{parameters "id=body;"}
 				{Position -24.4992 	 0 	 11.1282}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detail2.ply"}
 			}
 			{bone "detail5"
 				{parameters "id=body;"}
 				{Position -47.5173 	 -18.5236 	 2.1845}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detail5.ply"}
 			}
 			{bone "detail6"
 				{parameters "id=body;"}
 				{Position -47.5173 	 18.5236 	 2.1845}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detail6.ply"}
 			}
 			{bone "seat01"
 				{matrix34
@@ -291,11 +291,11 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/panzer742r/engine_r.anm"}{speed 0.7}}
 				}
 				{Position -22.9926 	 0 	 -0.5155}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/engine.ply"}
 				{bone "enginecover"
 					{parameters "id=engine;"}
 					{Position 1.6205 	 0 	 10.4133}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/enginecover.ply"}
 				}
 				{bone "fxfire1"
 					{matrix34
@@ -307,7 +307,7 @@
 				}
 				{bone "detail10"
 					{Position -12.052 	 -17.8889 	 10.5816}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detail10.ply"}
 				}
 			}
 			{bone "headlightr"
@@ -376,16 +376,16 @@
 			}
 			{bone "detail8"
 				{Position -16.7862 	 -17.6119 	 8.716}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detail8.ply"}
 			}
 			{bone "detai9"
 				{Position 17.909 	 -15.2742 	 7.2962}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/detai9.ply"}
 			}
 			{bone "cans"
 				{parameters "id=body;"}
 				{Position -54.8859 	 -0.3685 	 -1.8133}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/panzer742r/cans.ply"}
 			}
 			{bone revolute "wheelr06"
 				{parameters "id=trackright;radius=0.4;"}

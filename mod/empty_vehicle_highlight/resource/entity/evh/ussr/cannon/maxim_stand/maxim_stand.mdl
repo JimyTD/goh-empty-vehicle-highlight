@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 10.04.2020 14:58:15
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\maxim MG\maxim_M1910-30_stand_export.max
@@ -39,7 +39,7 @@
 					{parameters "id=body;"}
 					{limits 15 15}
 					{Position -1.5165 	 0 	 8.3952}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/turret.ply"}
 					{bone revolute "gun_rot"
 						{matrix34
 							1 	 0 	 0
@@ -55,7 +55,7 @@
 								0 	 1 	 0
 								1.3185 	 2.1351 	 -0.0001
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/gun.ply"}
 							{bone "belt2"
 								{parameters "commonmesh;id=body;"}
 								{matrix34
@@ -64,7 +64,7 @@
 									-1 	 0 	 0
 									-2.9822 	 -2.0844 	 -2.6404
 								}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/belt2.ply"}
 							}
 							{bone "fxshell"
 								{matrix34
@@ -77,12 +77,12 @@
 							{bone "hammer"
 								{parameters "id=body;"}
 								{Position -7.6077 	 -0.6682 	 -0.9884}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/hammer.ply"}
 							}
 							{bone "hammer2"
 								{parameters "id=body;"}
 								{Position -7.6667 	 -0.5866 	 -0.9745}
-								
+								{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/hammer2.ply"}
 							}
 							{bone "foresight14"
 								{Position 11.6463 	 0 	 -1.0822}
@@ -97,12 +97,12 @@
 							0 	 -1 	 0
 							-0.4746 	 0 	 1.2551
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/pole.ply"}
 					}
 					{bone "shield"
 						{parameters "id=shield;"}
 						{Position 0.3678 	 0.062 	 4.1199}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/maxim_stand/shield.ply"}
 					}
 					{bone "gunner"
 						{matrix34

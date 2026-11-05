@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: body_angular box handle
+;// moving parts without geometry: -
 ;Exported by:	 Carlos
 ;Date:			 10.02.2022 12:57:44
 ;File:			 T:\goh_3d_vehicles_fin\3d vehicles\Cannon\Maxim M1910_30\8mm_maxim.max
@@ -25,12 +25,12 @@
 			{bone "body_angular"
 				{parameters "id=body;"}
 				{Position -2.3074 	 0 	 -5.5859}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/body_angular.ply"}
 				{bone revolute "turret"
 					{parameters "id=body;"}
 					{limits 15 15}
 					{Position -1.5165 	 0 	 8.3952}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/turret.ply"}
 					{bone revolute "gun_rot"
 						{matrix34
 							1 	 0 	 0
@@ -46,7 +46,7 @@
 								0 	 1 	 0
 								1.3185 	 2.1351 	 -0.0001
 							}
-							
+							{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/gun.ply"}
 							{bone "belt2"
 								{parameters "commonmesh;id=body;"}
 								{matrix34
@@ -55,7 +55,7 @@
 									-1 	 0 	 0
 									-2.9822 	 -2.0844 	 -2.6404
 								}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/belt2.ply"}
 							}
 							{bone "foresight14"
 								{Position 11.6463 	 0 	 -1.0822}
@@ -71,12 +71,12 @@
 							{bone "hammer"
 								{parameters "id=body;"}
 								{Position -7.6077 	 -0.6682 	 -0.9884}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/hammer.ply"}
 							}
 							{bone "hammer2"
 								{parameters "id=body;"}
 								{Position -7.6667 	 -0.5866 	 -0.9745}
-								
+								{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/hammer2.ply"}
 							}
 						}
 						{bone "visor"
@@ -96,7 +96,7 @@
 							0 	 -1 	 0
 							-0.4746 	 0 	 1.2551
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/pole.ply"}
 					}
 					{bone "gunner"
 						{matrix34
@@ -111,7 +111,7 @@
 			{bone "handle"
 				{parameters "id=body;"}
 				{Position -7.0035 	 0 	 -1.3724}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/handle.ply"}
 			}
 		}
 		{bone "pivot_front"
@@ -177,7 +177,7 @@
 				0 	 0 	 1
 				-6.7825 	 -7.6215 	 2.7351
 			}
-			
+			{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/box.ply"}
 			{bone "lid"
 				{parameters "id=body;"}
 				{matrix34
@@ -186,7 +186,7 @@
 					0 	 0.5 	 -0.866
 					0 	 -2.8075 	 2.0549
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/lid.ply"}
 				{bone "flap"
 					{parameters "id=body;"}
 					{matrix34
@@ -195,7 +195,7 @@
 						0 	 -0.454 	 -0.891
 						0 	 5.4225 	 0.0039
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/flap.ply"}
 				}
 			}
 			{bone "belt"
@@ -206,7 +206,7 @@
 					-0.9563 	 -0.2924 	 0
 					-0.853 	 5.5379 	 4.4962
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/maxim_m1910_30/belt.ply"}
 			}
 		}
 		{bone "driver2"

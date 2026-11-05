@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot helper vonorud
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 14.06.2020 01:05:16
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\210mm_morser18\210mm_morser.max
@@ -26,7 +26,7 @@
 				{parameters "id=body;"}
 				{Position -11.2918 	 -11.4782 	 1.7329}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/vonorud.ply"}
 			}
 			{bone revolute "wheell2"
 				{parameters "id=wheelleft2;support=1;radius=0.51;"}
@@ -128,7 +128,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/cannon/210mm_morser18/body_r.anm"}{speed 0.6}}
 				}
 				{Position -28.931 	 0.0112 	 -12.0771}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/turret.ply"}
 				{bone "pivot_front"
 					{parameters "id=body;"}
 					{matrix34
@@ -137,7 +137,7 @@
 						-0.225 	 0 	 0.9744
 						20.8268 	 0.0008 	 12.0636
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/pivot_front.ply"}
 					{bone revolute "wheell1"
 						{parameters "id=wheelleft1;support=1;radius=0.81;"}
 						{matrix34
@@ -146,7 +146,7 @@
 							0 	 1 	 0
 							8.1027 	 23.4355 	 0.0059
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/wheell1.ply"}
 					}
 					{bone revolute "wheelr1"
 						{parameters "id=wheelright1;support=1;radius=0.81;"}
@@ -156,21 +156,21 @@
 							0 	 1 	 0
 							8.1098 	 -22.1706 	 0.0042
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/wheelr1.ply"}
 					}
 				}
 				{bone "grillr"
 					{parameters "id=body;"}
 					{Position -39.8228 	 -14.911 	 5.7889}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grillr.ply"}
 					{bone "grillr_1"
 						{parameters "id=body;"}
 						{Position 0.1094 	 -5.5504 	 0.0379}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grillr_1.ply"}
 						{bone "grillr_2"
 							{parameters "id=body;"}
 							{Position -19.2039 	 -1.7322 	 -0.4528}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grillr_2.ply"}
 							{bone "grillr_3"
 								{parameters "id=body;"}
 								{matrix34
@@ -179,7 +179,7 @@
 									-0.0523 	 0 	 0.9986
 									-28.7205 	 -0.0001 	 0.9449
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grillr_3.ply"}
 							}
 						}
 					}
@@ -187,15 +187,15 @@
 				{bone "grilll"
 					{parameters "id=body;"}
 					{Position -39.816 	 14.8544 	 5.8042}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grilll.ply"}
 					{bone "grilll_1"
 						{parameters "id=body;"}
 						{Position 0.1094 	 5.5926 	 0.0226}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grilll_1.ply"}
 						{bone "grilll_2"
 							{parameters "id=body;"}
 							{Position -19.2107 	 1.7294 	 -0.4528}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grilll_2.ply"}
 							{bone "grilll_3"
 								{parameters "id=body;"}
 								{matrix34
@@ -204,7 +204,7 @@
 									-0.0523 	 0 	 0.9986
 									-28.7389 	 0 	 0.9646
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/grilll_3.ply"}
 							}
 						}
 					}
@@ -217,16 +217,16 @@
 						-0.0872 	 0 	 0.9962
 						-68.5544 	 -0.0081 	 14.4081
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/spring.ply"}
 				}
 				{bone "recoil"
 					{parameters "id=body;"}
 					{Position -23.3662 	 0.006 	 25.4803}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/recoil.ply"}
 					{bone "susp"
 						{parameters "id=gun;"}
 						{Position 35.3937 	 0.0149 	 -1.2573}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/susp.ply"}
 					}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
@@ -239,7 +239,7 @@
 							0 	 -1 	 0
 							-2.6181 	 0 	 6.7348
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/gun_rot.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{matrix34
@@ -248,7 +248,7 @@
 								0 	 1 	 0
 								0.0124 	 0.7616 	 0.0152
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/gun.ply"}
 							{bone "breech"
 								{parameters "id=gun;"}
 								{matrix34
@@ -257,7 +257,7 @@
 									0 	 -1 	 0
 									-9.1639 	 -0.0234 	 0.0769
 								}
-								
+								{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/breech.ply"}
 							}
 							{bone "foresight1"
 								{Position 112.463 	 -0.0032 	 0.1407}
@@ -275,7 +275,7 @@
 					{bone "aim_v"
 						{parameters "id=body;"}
 						{Position 1.0555 	 -19.5028 	 -5.0959}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/aim_v.ply"}
 					}
 				}
 				{bone "emelo"
@@ -286,7 +286,7 @@
 						0 	 -1 	 0
 						33.6811 	 11.27 	 19.7072
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/emelo.ply"}
 					{bone "2"
 						{parameters "id=body;"}
 						{matrix34
@@ -295,18 +295,18 @@
 							0.1045 	 0.9945 	 0
 							9.8213 	 0.006 	 11.2704
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/2.ply"}
 					}
 				}
 				{bone "turningwheels"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 -0.0305}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/turningwheels.ply"}
 				}
 				{bone "mudguard1"
 					{parameters "id=body;"}
 					{Position 45.4229 	 -0.0113 	 16.5609}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/mudguard1.ply"}
 				}
 				{bone "1"
 					{parameters "id=body;"}
@@ -316,7 +316,7 @@
 						-0.1392 	 0 	 0.9903
 						-79.0354 	 -0.0081 	 8.0481
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/1.ply"}
 				}
 				{bone "3"
 					{parameters "id=body;"}
@@ -326,12 +326,12 @@
 						0.4695 	 0 	 0.8829
 						14.2716 	 -0.0036 	 9.9894
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/3.ply"}
 				}
 				{bone "frontspring"
 					{parameters "id=body;"}
 					{Position 31.3976 	 -0.0107 	 16.9787}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/frontspring.ply"}
 				}
 				{bone "rogzr"
 					{parameters "id=body;"}
@@ -341,7 +341,7 @@
 						0 	 0 	 1
 						45.0197 	 -9.4612 	 19.8283
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/rogzr.ply"}
 				}
 				{bone "rogzl"
 					{parameters "id=body;"}
@@ -351,7 +351,7 @@
 						0 	 0 	 1
 						45 	 9.4308 	 19.8283
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/rogzl.ply"}
 				}
 				{bone "visor"
 					{Position -24.7413 	 14.1045 	 33.3726}
@@ -389,7 +389,7 @@
 				{bone "aim_h"
 					{parameters "id=body;"}
 					{Position -27.2835 	 20.4048 	 20.5025}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/aim_h.ply"}
 				}
 				{bone "charger"
 					{Position -67.4695 	 22.8591 	 5.8962}
@@ -439,7 +439,7 @@
 			{bone "talp"
 				{parameters "id=body;"}
 				{Position -28.931 	 0.0112 	 -14.3606}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/talp.ply"}
 			}
 			{bone "talp2"
 				{parameters "id=body;"}
@@ -449,7 +449,7 @@
 					0 	 0 	 1
 					-112.356 	 -0.0815 	 -12.8502
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/cannon/210mm_morser18/talp2.ply"}
 			}
 		}
 		{bone "driver3"

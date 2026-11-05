@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: commander doorleft driver mgun_h_rot1
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.12.2025 16:23:14
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\btr\Dingo\daimler_dingo.max
@@ -388,7 +388,7 @@
 					0 	 0.3424 	 0.9395
 					4.0995 	 13.9857 	 -0.487
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/btr/daimler_dingo/doorleft.ply"}
 				{bone "detail6"
 					{parameters "id=body;"}
 					{matrix34
@@ -397,7 +397,7 @@
 						0.3164 	 0.1311 	 0.9395
 						2.6883 	 -2.7818 	 -0.4178
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/btr/daimler_dingo/detail6.ply"}
 				}
 			}
 			{bone "hatch1_1"

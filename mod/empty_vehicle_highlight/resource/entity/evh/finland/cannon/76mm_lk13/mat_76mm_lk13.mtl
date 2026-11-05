@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/fin/76mm_lk13"}
-	{bump "$/_vehicle/fin/76mm_lk13_bp"}
-	{specular "$/_vehicle/fin/76mm_lk13_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

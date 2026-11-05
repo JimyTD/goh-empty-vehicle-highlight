@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: backdoor
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 25.10.2023 15:25:58
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\car\dodge_wc51_52\wc51.max
@@ -85,11 +85,11 @@
 			{bone "backdoor"
 				{parameters "id=body;"}
 				{Position -40.9188 	 11.2359 	 1.2386}
-				
+				{VolumeView "../../../../-vehicle/usa/car/wc51/backdoor.ply"}
 				{bone "detail3"
 					{parameters "id=body;"}
 					{Position -1.0893 	 -11.2359 	 4.238}
-					
+					{VolumeView "../../../../-vehicle/usa/car/wc51/detail3.ply"}
 				}
 			}
 			{bone "shield_cover"

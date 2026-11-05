@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driverhatch1 turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 10.12.2025 18:47:59
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_eng\vehicles\tank_medium\Valentine_MK_I\valentine_MKI.max
@@ -34,7 +34,7 @@
 			{bone "driverhatch1"
 				{parameters "id=body;"}
 				{Position 30.7734 	 -13.6084 	 9.4815}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/driverhatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -295,7 +295,7 @@
 				}
 				{speed 0.003}
 				{Position 10.6094 	 0.0403 	 13.3635}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -308,7 +308,7 @@
 						0 	 -1 	 0
 						10.267 	 -1.5412 	 6.0005
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -317,7 +317,7 @@
 							0 	 1 	 0
 							6.3444 	 -0.2582 	 -1.6929
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -335,7 +335,7 @@
 							0 	 1 	 0
 							4.7905 	 0.1689 	 2.7109
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/mgun_turret.ply"}
 					}
 					{bone "foresight5"
 						{Position 10.5866 	 0.4788 	 2.7207}
@@ -358,20 +358,20 @@
 				{bone "hatch1"
 					{parameters "id=turret;"}
 					{Position 0.253 	 0.8703 	 12.6234}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/hatch1.ply"}
 				}
 				{bone "hatch2"
 					{parameters "id=turret;"}
 					{Position -8.161 	 0.8703 	 12.0304}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/hatch2.ply"}
 				}
 				{bone "enumerator2"
 					{Position -5.5233 	 13.4472 	 3.1402}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/enumerator2.ply"}
 				}
 				{bone "enumerator1"
 					{Position 1.9509 	 -14.1019 	 3.5032}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/valentine_mk1/enumerator1.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34

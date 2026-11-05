@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/opel_blitz"}
-	{bump "$/_vehicle/opel_blitz_bp"}
-	{specular "$/_vehicle/opel_blitz_sp"}
-	{color "230 230 230 30"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "/entity/-vehicle/ussr/car/gaz_aaa_72k/bench"}
-	{bump "/entity/-vehicle/ussr/car/gaz_aaa_72k/bench_bp"}
-	{specular "/entity/-vehicle/ussr/car/gaz_aaa_72k/bench_sp"}
-	{color "230 230 230 25"}
-	{blend none}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

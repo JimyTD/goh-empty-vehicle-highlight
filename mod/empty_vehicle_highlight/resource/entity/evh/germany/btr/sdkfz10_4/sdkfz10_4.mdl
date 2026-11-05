@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:15:34
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\btr\sdkfz10_flak30\sdkfz10_flak30.max
@@ -67,7 +67,7 @@
 						{sequence "repair" {file "../../../../-vehicle/germany/btr/sdkfz10_4/turret_r.anm"}{speed 0.7}}
 					}
 					{Position -11.1617 	 0.0026 	 0.494}
-					
+					{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/turret.ply"}
 					{bone revolute "gun_rot"
 						{parameters "id=gun;"}
 						{animation
@@ -79,7 +79,7 @@
 							0 	 -1 	 0
 							4.4639 	 -0.0039 	 10.5478
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/gun_rot.ply"}
 						{bone "gun_holder"
 							{parameters "id=gun;"}
 							{matrix34
@@ -88,15 +88,15 @@
 								0 	 1 	 0
 								4.0942 	 -1.5889 	 0.0006
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/gun_holder.ply"}
 							{bone "gun"
 								{parameters "id=gun;"}
 								{Position 4.8411 	 0.0006 	 1.9941}
-								
+								{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/gun.ply"}
 								{bone "magazine"
 									{parameters "id=gun;"}
 									{Position -3.3814 	 0.7031 	 -0.1195}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/magazine.ply"}
 								}
 								{bone "ize"
 									{parameters "id=gun;"}
@@ -106,7 +106,7 @@
 										0.4848 	 0 	 0.8746
 										-7.6426 	 -0.3759 	 1.0493
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/ize.ply"}
 								}
 								{bone "ize2"
 									{parameters "id=gun;"}
@@ -116,7 +116,7 @@
 										0.0523 	 0 	 0.9986
 										-13.6135 	 0.0042 	 -0.3532
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/ize2.ply"}
 								}
 								{bone "bullet"
 									{parameters "id=gun;"}
@@ -126,7 +126,7 @@
 										0.4848 	 0 	 0.8746
 										-2.0089 	 -0.0703 	 0.0131
 									}
-									
+									{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/bullet.ply"}
 								}
 								{bone "fx_invers"
 									{matrix34
@@ -154,18 +154,18 @@
 								0.4848 	 0.8746 	 0
 								8.8475 	 -3.6581 	 0
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/fixing.ply"}
 						}
 					}
 					{bone "aim_ver"
 						{parameters "id=body;"}
 						{Position -3.142 	 -4.1484 	 10.0662}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/aim_ver.ply"}
 					}
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position -7.1604 	 0.0067 	 7.8237}
-						
+						{VolumeView "../../../../-vehicle/germany/btr/sdkfz10_4/aim_hor.ply"}
 					}
 					{bone "charger"
 						{matrix34

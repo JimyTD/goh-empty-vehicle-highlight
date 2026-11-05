@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot shield_upper standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 18.04.2020 14:18:09
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus\vehicles\cannon\m30\122mm_m-30_v19_1.max
@@ -31,7 +31,7 @@
 					0 	 0 	 1
 					-3.6904 	 6.3991 	 3.9568
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/standl.ply"}
 				{bone "footl"
 					{parameters "id=body;"}
 					{matrix34
@@ -40,7 +40,7 @@
 						0.9833 	 0 	 -0.1822
 						-57.8593 	 -0.1398 	 -12.447
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/footl.ply"}
 				}
 			}
 			{bone "standr"
@@ -51,7 +51,7 @@
 					0 	 0 	 1
 					-3.4372 	 -6.2923 	 3.9568
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/standr.ply"}
 				{bone "footr"
 					{parameters "id=body;"}
 					{matrix34
@@ -60,13 +60,13 @@
 						0.9833 	 0 	 -0.1822
 						-58.1125 	 0.033 	 -12.447
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/footr.ply"}
 				}
 			}
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position -3.3954 	 0.0435 	 2.1262}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -78,7 +78,7 @@
 						0 	 -1 	 0
 						-5.0089 	 -0.0435 	 10.7273
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -87,11 +87,11 @@
 							0 	 1 	 0
 							8.3725 	 0.0111 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -14.258 	 -3.1647 	 1.7347}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/breech.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -110,7 +110,7 @@
 							0 	 1 	 0
 							-7.4462 	 -8.8967 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/sight.ply"}
 					}
 					{bone "visor"
 						{matrix34
@@ -136,18 +136,18 @@
 							0 	 1 	 0
 							9.6488 	 5.1629 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/shield_upper.ply"}
 					}
 				}
 				{bone "shield"
 					{parameters "id=shield;"}
 					{Position -2.2816 	 -0.0435 	 7.9871}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/shield.ply"}
 				}
 				{bone "pneumatic_cylinders"
 					{parameters "id=body;"}
 					{Position -12.4551 	 -0.0435 	 1.8306}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_m30/pneumatic_cylinders.ply"}
 				}
 			}
 		}

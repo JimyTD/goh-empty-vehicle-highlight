@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.05.2025 00:08:47
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_eng\vehicles\car\Bedford_OYC\bedford_OYC.max
@@ -92,7 +92,7 @@
 					0 	 0.0523 	 0.9986
 					36.1068 	 14.8352 	 11.3636
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/doorleft.ply"}
 				{bone "glass2"
 					{parameters "id=glass2;"}
 					{matrix34
@@ -101,7 +101,7 @@
 						0 	 -0.0523 	 0.9986
 						-8.0462 	 -0.3345 	 13.4766
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/glass2.ply"}
 				}
 				{bone "enumerator1"
 					{matrix34
@@ -110,7 +110,7 @@
 						0 	 -0.0523 	 0.9986
 						-6.2212 	 0.6981 	 4.4681
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/enumerator1.ply"}
 				}
 			}
 			{bone "doorright"
@@ -121,7 +121,7 @@
 					0 	 -0.0523 	 0.9986
 					36.1068 	 -14.8352 	 19.3158
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/doorright.ply"}
 				{bone "glass3"
 					{parameters "id=glass3;"}
 					{matrix34
@@ -130,7 +130,7 @@
 						0 	 0.0523 	 0.9986
 						-8.0462 	 -0.0817 	 5.5354
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/glass3.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -139,7 +139,7 @@
 						0.0006 	 0.1045 	 0.9945
 						-6.6975 	 -1.0831 	 -3.1137
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/car/bedford_oyc_fuel/enumerator2.ply"}
 				}
 			}
 			{bone "glass1"

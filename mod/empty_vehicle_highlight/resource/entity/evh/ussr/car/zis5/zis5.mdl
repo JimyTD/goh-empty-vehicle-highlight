@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: back_door doorleft doorright
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 30.08.2023 19:50:10
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\car\ZIS-5\ZIS5.max
@@ -34,15 +34,15 @@
 				{bone "doorleft"
 					{parameters "id=body;"}
 					{Position 7.6007 	 11.3269 	 0.4097}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5/doorleft.ply"}
 					{bone "window4"
 						{parameters "id=window4;"}
 						{Position -7.3687 	 0.7618 	 6.6212}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5/window4.ply"}
 					}
 					{bone "enumerator2"
 						{Position -10.9948 	 1.4865 	 -4.2254}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5/enumerator2.ply"}
 					}
 				}
 				{bone "windscreen"
@@ -73,11 +73,11 @@
 				{bone "doorright"
 					{parameters "id=body;"}
 					{Position 7.647 	 -11.4001 	 0.4097}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5/doorright.ply"}
 					{bone "window5"
 						{parameters "id=window5;"}
 						{Position -7.415 	 -0.6886 	 6.6212}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5/window5.ply"}
 					}
 					{bone "enumerator3"
 						{matrix34
@@ -86,7 +86,7 @@
 							0 	 0 	 1
 							-3.8906 	 -0.4355 	 -4.2254
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5/enumerator3.ply"}
 					}
 				}
 				{bone "window6"
@@ -131,10 +131,10 @@
 				{bone "back_door"
 					{parameters "id=bodyback;"}
 					{Position -31.0801 	 0.3194 	 3.4925}
-					
+					{VolumeView "../../../../-vehicle/ussr/car/zis5/back_door.ply"}
 					{bone "enumerator1"
 						{Position 0.0922 	 -8.034 	 6.8423}
-						
+						{VolumeView "../../../../-vehicle/ussr/car/zis5/enumerator1.ply"}
 					}
 				}
 				{bone "shield_cover"

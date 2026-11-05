@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: ammo_car gun_rot lifter_lower spadeholder turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 16.05.2023 07:45:31
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_rus_updated\vehicles\cannon\b4_203mm\203mm_B4.max
@@ -361,7 +361,7 @@
 				0.0087 	 0 	 1
 				-55.3453 	 22.8084 	 5.9856
 			}
-			
+			{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/ammo_car.ply"}
 			{bone "ammo"
 				{matrix34
 					1 	 0 	 0.0087
@@ -369,7 +369,7 @@
 					-0.0087 	 0 	 1
 					-0.5555 	 -1.4394 	 -0.38
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/ammo.ply"}
 			}
 		}
 		{bone "driver4"
@@ -405,7 +405,7 @@
 					0.0087 	 0 	 1
 					-36.3391 	 16.2941 	 0.7186
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/lifter_lower.ply"}
 				{bone "lifter_middle"
 					{parameters "id=body;"}
 					{matrix34
@@ -414,7 +414,7 @@
 						0 	 0 	 1
 						0.0668 	 0 	 7.6524
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/lifter_middle.ply"}
 					{bone "lifter_upper"
 						{parameters "id=body;"}
 						{matrix34
@@ -423,7 +423,7 @@
 							-0.2175 	 0 	 0.9761
 							-0.5504 	 -0.6164 	 13.4914
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/lifter_upper.ply"}
 					}
 					{bone "cable"
 						{parameters "id=body;"}
@@ -433,7 +433,7 @@
 							0 	 0 	 1
 							-22.1466 	 -0.0253 	 13.6721
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/cable.ply"}
 					}
 				}
 			}
@@ -445,11 +445,11 @@
 					0.0087 	 0 	 1
 					-86.4013 	 0 	 -9.3014
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/spadeholder.ply"}
 				{bone "spade"
 					{parameters "id=body;"}
 					{Position -6.4329 	 0 	 2.5307}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/spade.ply"}
 				}
 			}
 			{bone revolute "turret"
@@ -465,7 +465,10 @@
 					0.0087 	 0 	 1
 					7.9629 	 0 	 11.056
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/turret.ply"}
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -0 60}
@@ -476,7 +479,7 @@
 						0 	 -1 	 0
 						-8.8194 	 -0.0007 	 17.812
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -485,11 +488,11 @@
 							0 	 1 	 0
 							-0.0167 	 -0.0109 	 -0.1499
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/gun.ply"}
 						{bone "breech_cap"
 							{parameters "id=gun;"}
 							{Position -26.7533 	 -6.0459 	 -1.59}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/breech_cap.ply"}
 						}
 						{bone "fx_invers"
 							{matrix34
@@ -520,7 +523,7 @@
 						-0.0087 	 0 	 1
 						-12.7469 	 16.8314 	 17.0223
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/aim_hor.ply"}
 				}
 				{bone "aim_vert1"
 					{parameters "id=body;"}
@@ -530,7 +533,7 @@
 						0.3121 	 0.0269 	 0.9497
 						-26.0681 	 12.2974 	 17.9826
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/aim_vert1.ply"}
 				}
 				{bone "aim_vert2"
 					{parameters "id=body;"}
@@ -540,7 +543,7 @@
 						-0.0087 	 0 	 1
 						-21.6092 	 -16.8848 	 9.8057
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/aim_vert2.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -560,11 +563,17 @@
 				}
 				{bone "shield1"
 					{parameters "id=shield1;"}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/shield1.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/shield1_lod1.ply"}
+					}
 				}
 				{bone "shield2"
 					{parameters "id=shield2;"}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/shield2.ply"}
+						{VolumeView "../../../../-vehicle/ussr/cannon/203mm_b4/shield2_lod1.ply"}
+					}
 				}
 			}
 			{bone "visor2"

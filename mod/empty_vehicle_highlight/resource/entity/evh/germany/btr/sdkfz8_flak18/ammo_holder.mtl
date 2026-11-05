@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/ammo_holder"}
-	{bump "$/_vehicle/ammo_holder_bp"}
-	{specular "$/_vehicle/ammo_holder_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

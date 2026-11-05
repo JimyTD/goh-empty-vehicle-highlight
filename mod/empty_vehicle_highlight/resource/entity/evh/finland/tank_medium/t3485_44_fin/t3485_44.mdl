@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: cover_driver mgun_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 09.03.2022 19:38:43
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\tank_medium\t-34-85\T-34-85.max
@@ -35,7 +35,10 @@
 					{sequence "repair" {file "../../../../-vehicle/finland/tank_medium/t3485_44_fin/turret_r.anm"}}
 				}
 				{Position 12.4785 	 0.0177 	 21.5634}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/turret.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/turret_lod1.ply"}
+				}
 				{bone "cover2"
 					{parameters "id=turret;"}
 					{matrix34
@@ -44,7 +47,10 @@
 						0 	 0 	 1
 						-12.9868 	 6.7779 	 10.1079
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover2.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover2_lod1.ply"}
+					}
 				}
 				{bone "cover1"
 					{parameters "id=turret;"}
@@ -54,7 +60,10 @@
 						0 	 0 	 1
 						-3.2091 	 6.7774 	 10.1113
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover1.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover1_lod1.ply"}
+					}
 				}
 				{bone "a1"
 					{parameters "id=turret;"}
@@ -64,23 +73,23 @@
 						0 	 0 	 1
 						-2.9221 	 13.8779 	 7.6317
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/a1.ply"}
 					{bone "a2"
 						{parameters "id=turret;"}
 						{Position 0.2698 	 0 	 14.0966}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/a2.ply"}
 						{bone "a3"
 							{parameters "id=turret;"}
 							{Position 0.6983 	 0 	 9.329}
-							
+							{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/a3.ply"}
 							{bone "a4"
 								{parameters "id=turret;"}
 								{Position 1.1176 	 0 	 7.3373}
-								
+								{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/a4.ply"}
 								{bone "a5"
 									{parameters "id=turret;"}
 									{Position 1.4885 	 0 	 4.9004}
-									
+									{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/a5.ply"}
 								}
 							}
 						}
@@ -97,11 +106,17 @@
 						0 	 -1 	 0
 						19.1748 	 0.0582 	 -2.1856
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/gun_rot_lod1.ply"}
+					}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{Position 40.6829 	 0.0829 	 0.0648}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/gun.ply"}
+							{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -114,7 +129,7 @@
 					{bone "mgun1"
 						{parameters "id=turret;"}
 						{Position -1.7301 	 0.6573 	 6.3094}
-						
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/mgun1.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -143,7 +158,7 @@
 						0 	 -0.3443 	 0.9389
 						-3.1328 	 17.7933 	 1.478
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/enumerator.ply"}
 				}
 				{bone "enumerator2"
 					{matrix34
@@ -152,7 +167,7 @@
 						0 	 0.3443 	 0.9389
 						-6.4094 	 -17.7576 	 1.478
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/enumerator2.ply"}
 				}
 				{bone "fxfire4"
 					{matrix34
@@ -179,7 +194,10 @@
 					0 	 0 	 1
 					35.6791 	 5.5653 	 8.2887
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover_driver.ply"}
+					{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/cover_driver_lod1.ply"}
+				}
 			}
 			{bone "detail1"
 				{parameters "id=body;"}
@@ -413,7 +431,10 @@
 						0 	 0 	 1
 						0 	 -1 	 0
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/mgun.ply"}
+						{VolumeView "../../../../-vehicle/finland/tank_medium/t3485_44_fin/mgun_lod1.ply"}
+					}
 					{bone "foresight4"
 						{matrix34
 							1 	 0 	 0

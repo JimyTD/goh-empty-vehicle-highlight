@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: doorleft1 doorleft2 doorright1 doorright2 mgun_a_rot1
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.05.2022 10:40:48
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\car\KFZ15\sdkfz15_export.max
@@ -106,22 +106,22 @@
 			{bone "doorleft2"
 				{parameters "id=body;"}
 				{Position -11.8609 	 15.7838 	 17.642}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kfz15/doorleft2.ply"}
 			}
 			{bone "doorright2"
 				{parameters "id=body;"}
 				{Position -11.8609 	 -12.4857 	 17.642}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kfz15/doorright2.ply"}
 			}
 			{bone "doorleft1"
 				{parameters "id=body;"}
 				{Position 15.1748 	 15.7838 	 17.5555}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kfz15/doorleft1.ply"}
 			}
 			{bone "doorright1"
 				{parameters "id=body;"}
 				{Position 15.1748 	 -12.4857 	 17.5555}
-				
+				{VolumeView "../../../../-vehicle/germany/car/kfz15/doorright1.ply"}
 			}
 			{bone "link2"
 				{matrix34
@@ -307,7 +307,7 @@
 					{parameters "id=body;"}
 					{limits -35 40}
 					{Position 0 	 0 	 5.9489}
-					
+					{VolumeView "../../../../-vehicle/germany/car/kfz15/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=body;"}
 						{limits -5 55}
@@ -317,7 +317,7 @@
 							0 	 -1 	 0
 							-2.8766 	 0 	 2.4715
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/car/kfz15/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 -0.0082 	 0

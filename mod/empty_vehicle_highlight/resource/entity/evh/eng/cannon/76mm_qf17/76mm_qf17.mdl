@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 15.01.2026 18:10:13
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\cannon\76.2mm_QF17\76mm_qf17.max
@@ -39,7 +39,7 @@
 					-0.0148 	 0 	 0.9999
 					-1.8929 	 -10.2772 	 -1.4442
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/standr.ply"}
 				{bone "legr_lock"
 					{parameters "id=body;"}
 					{matrix34
@@ -48,7 +48,7 @@
 						0.0148 	 0 	 0.9999
 						-3.6613 	 -0.3343 	 1.378
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/legr_lock.ply"}
 				}
 				{bone "spader"
 					{parameters "id=body;"}
@@ -58,7 +58,7 @@
 						0.8596 	 0.4951 	 0.1265
 						-55.1345 	 -31.8132 	 -1.7692
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/spader.ply"}
 				}
 				{bone "2"
 					{parameters "id=body;"}
@@ -68,11 +68,11 @@
 						-0.0908 	 -0.0609 	 0.994
 						-59.3106 	 -32.6673 	 -1.125
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/2.ply"}
 					{bone "3"
 						{parameters "id=body;"}
 						{Position -0.2228 	 -0.6503 	 0.0047}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/3.ply"}
 					}
 				}
 				{bone "spader_lock"
@@ -83,7 +83,7 @@
 						0.0148 	 0 	 0.9999
 						-52.7885 	 -27.8145 	 -1.382
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/spader_lock.ply"}
 				}
 				{bone "detail3"
 					{parameters "id=body;"}
@@ -93,7 +93,7 @@
 						0.0148 	 0 	 0.9999
 						-39.04 	 -24.6001 	 -0.1488
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail3.ply"}
 				}
 				{bone "detail4"
 					{parameters "id=body;"}
@@ -103,7 +103,7 @@
 						0.0148 	 0 	 0.9999
 						-19.9453 	 -13.8111 	 2.6279
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail4.ply"}
 				}
 				{bone "seat2"
 					{matrix34
@@ -130,7 +130,7 @@
 					-0.0148 	 0 	 0.9999
 					-1.8929 	 10.2771 	 -1.4442
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/standl.ply"}
 				{bone "latch"
 					{parameters "id=body;"}
 					{matrix34
@@ -139,7 +139,7 @@
 						0 	 0 	 1
 						-8.5295 	 2.5398 	 -0.3211
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/latch.ply"}
 				}
 				{bone "legl_lock"
 					{parameters "id=body;"}
@@ -149,7 +149,7 @@
 						0.0148 	 0 	 0.9999
 						-3.6613 	 0.3343 	 1.378
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/legl_lock.ply"}
 				}
 				{bone "spadel"
 					{parameters "id=body;"}
@@ -159,7 +159,7 @@
 						0.8596 	 -0.4951 	 0.1265
 						-55.1345 	 31.8132 	 -1.7692
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/spadel.ply"}
 				}
 				{bone "spadel_lock"
 					{parameters "id=body;"}
@@ -169,7 +169,7 @@
 						0.0148 	 0 	 0.9999
 						-52.5989 	 28.1431 	 -1.3848
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/spadel_lock.ply"}
 				}
 				{bone "detail2"
 					{parameters "id=body;"}
@@ -179,7 +179,7 @@
 						0.0148 	 0 	 0.9999
 						-20.2886 	 14.1078 	 2.3644
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail2.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
@@ -189,7 +189,7 @@
 						0.0148 	 0 	 0.9999
 						-17.1696 	 12.6415 	 0.8257
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail1.ply"}
 				}
 				{bone "seat4"
 					{matrix34
@@ -210,7 +210,7 @@
 				{limits -30 30}
 				{speed 0.008}
 				{Position -1.9344 	 0 	 2.4826}
-				
+				{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -224,7 +224,7 @@
 						0 	 -1 	 0
 						6.0056 	 0 	 8.0962
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/gun_rot.ply"}
 					{bone "visor"
 						{matrix34
 							1 	 0 	 0
@@ -244,7 +244,7 @@
 							0 	 1 	 0
 							-0.0121 	 1.1929 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/gun.ply"}
 						{bone "fx_invers"
 							{matrix34
 								-1 	 0 	 0
@@ -256,12 +256,12 @@
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position -21.4084 	 0.0001 	 -0.3639}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -18.056 	 -3.4351 	 -4.2592}
-							
+							{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/lever.ply"}
 						}
 					}
 				}
@@ -273,7 +273,7 @@
 						-0.5373 	 0 	 -0.8434
 						1.5298 	 9.5171 	 5.193
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/aim_ver.ply"}
 				}
 				{bone "aim_hor_helper"
 					{matrix34
@@ -285,7 +285,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/aim_hor.ply"}
 					}
 				}
 				{bone "gunner"
@@ -302,7 +302,7 @@
 						0.0268 	 0 	 0.9996
 						9.3525 	 0.0347 	 9.9993
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/shield1.ply"}
 					{bone "detail6"
 						{parameters "id=body;"}
 						{matrix34
@@ -311,7 +311,7 @@
 							-0.0268 	 0 	 0.9996
 							2.7649 	 10.7387 	 -0.7472
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail6.ply"}
 					}
 					{bone "detail5"
 						{parameters "id=body;"}
@@ -321,7 +321,7 @@
 							-0.0268 	 0 	 0.9996
 							-4.4715 	 18.2339 	 6.0627
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail5.ply"}
 					}
 					{bone "detail7"
 						{parameters "id=body;"}
@@ -331,7 +331,7 @@
 							-0.0268 	 0 	 0.9996
 							-1.303 	 -9.8349 	 5.3226
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/detail7.ply"}
 					}
 					{bone "shield2"
 						{parameters "id=shield;"}
@@ -341,7 +341,7 @@
 							-0.0268 	 0 	 0.9996
 							11.9163 	 0.0055 	 -9.6353
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/cannon/76mm_qf17/shield2.ply"}
 					}
 				}
 			}

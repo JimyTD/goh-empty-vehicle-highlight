@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/eng/horsa_glass"}
-	{bump "$/_vehicle/eng/horsa_glass"}
-	{specular "$/_vehicle/eng/horsa_glass_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

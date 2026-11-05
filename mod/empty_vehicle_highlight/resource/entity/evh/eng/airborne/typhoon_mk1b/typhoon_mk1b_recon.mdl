@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 retract_step rudder
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 11.12.2025 18:58:28
 ;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_eng\vehicles\airborne\Typhoon_mk1b\Typhoon_MkIb_export.max
@@ -41,7 +41,7 @@
 				{limits -30 30}
 				{speed 0.1}
 				{Position 106.822 	 0 	 8.4561}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/rudder.ply"}
 			}
 			{bone revolute "elevator1"
 				{parameters "id=elevator1;"}
@@ -53,7 +53,7 @@
 					0.0152 	 0.9999 	 0
 					93.8179 	 -19.2418 	 4.453
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/elevator1.ply"}
 			}
 			{bone revolute "elevator2"
 				{parameters "id=elevator2;"}
@@ -65,7 +65,7 @@
 					-0.0152 	 0.9999 	 0
 					93.8008 	 20.3675 	 4.453
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/elevator2.ply"}
 			}
 			{bone "engine1"
 				{parameters "id=engine1;"}
@@ -232,11 +232,11 @@
 					0.0238 	 0 	 0.9997
 					7.8047 	 0 	 14.5518
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/canopy.ply"}
 				{bone "glass2"
 					{parameters "id=body;"}
 					{Position 0 	 0 	 0}
-					
+					{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass2.ply"}
 				}
 			}
 			{bone "gear_r"
@@ -503,7 +503,7 @@
 					-0.3029 	 -0.2637 	 0.9158
 					10.6451 	 3.1144 	 -0.2188
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/retract_step.ply"}
 			}
 			{bone "emit1"
 				{matrix34
@@ -581,7 +581,7 @@
 							-0.1041 	 0.9907 	 -0.0872
 							-12.6366 	 3.3721 	 -0.536
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/aileron2.ply"}
 						{bone "glass_wingr"
 							{parameters "id=wingright;"}
 							{matrix34
@@ -590,7 +590,7 @@
 								0 	 -0.9962 	 -0.0872
 								9.2202 	 -0.1283 	 28.4913
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/glass_wingr.ply"}
 						}
 					}
 				}
@@ -676,7 +676,7 @@
 							-0.1041 	 -0.9907 	 -0.0872
 							-12.5708 	 -3.2569 	 2.89
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/airborne/typhoon_mk1b/aileron1.ply"}
 					}
 				}
 				{bone "flap1"

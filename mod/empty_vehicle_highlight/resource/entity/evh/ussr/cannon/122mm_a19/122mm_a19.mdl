@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun gun_rot standl standr turret
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 21.04.2021 18:00:43
 ;File:			 D:\PROGRAMS\3ds_max\3dsmax9_saves\scenes\GoH_3D_vehicles_rus\vehicles\cannon\122mm_a19\122mm_a19.max
@@ -30,7 +30,7 @@
 				{limits -29 29}
 				{speed 0.01}
 				{Position -3.3808 	 0 	 2.9749}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -44,7 +44,7 @@
 						0 	 -1 	 0
 						-4.6325 	 0.0015 	 13.8972
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -53,11 +53,11 @@
 							0 	 1 	 0
 							-8.0139 	 1.1243 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/gun.ply"}
 						{bone "breechhat"
 							{parameters "id=gun;"}
 							{Position -4.6779 	 -4.4444 	 1.5376}
-							
+							{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/breechhat.ply"}
 						}
 						{bone "foresight1"
 							{Position 104.386 	 0.2959 	 -0.1188}
@@ -74,7 +74,7 @@
 				}
 				{bone "shield"
 					{Position -8.8879 	 0.0015 	 10.0294}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/shield.ply"}
 				}
 				{bone "visor"
 					{Position -6.2672 	 9.699 	 20.5958}
@@ -87,7 +87,7 @@
 						0 	 0 	 1
 						-3.6557 	 11.0433 	 5.9767
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/aim_hor.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
@@ -97,7 +97,7 @@
 						0 	 0 	 1
 						-6.6002 	 -9.5278 	 6.8773
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/aim_ver.ply"}
 				}
 				{bone "telo_lower"
 					{parameters "id=body;"}
@@ -107,7 +107,7 @@
 						0 	 0 	 1
 						12.2144 	 -0.0021 	 2.4597
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/telo_lower.ply"}
 				}
 				{bone "telo"
 					{parameters "id=body;"}
@@ -117,13 +117,13 @@
 						0 	 0 	 1
 						6.5938 	 -0.0021 	 14.0133
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/telo.ply"}
 				}
 			}
 			{bone "standl"
 				{parameters "id=body;"}
 				{Position -4.0133 	 8.7598 	 -0.8546}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/standl.ply"}
 				{bone "tube002"
 					{parameters "id=body;"}
 					{matrix34
@@ -132,17 +132,17 @@
 						-0.0616 	 0.0327 	 0.9976
 						-65.9565 	 30.9296 	 -10.3777
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/tube002.ply"}
 				}
 				{bone "spadel2"
 					{parameters "id=body;"}
 					{Position -72.838 	 34.5874 	 -11.3253}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/spadel2.ply"}
 				}
 				{bone "spadel1"
 					{parameters "id=body;"}
 					{Position -69.4734 	 41.055 	 -12.1578}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/spadel1.ply"}
 				}
 				{bone "spadel2_help"
 					{matrix34
@@ -164,7 +164,7 @@
 			{bone "standr"
 				{parameters "id=body;"}
 				{Position -4.0133 	 -8.7598 	 -0.8546}
-				
+				{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/standr.ply"}
 				{bone "holder1"
 					{parameters "id=body;"}
 					{matrix34
@@ -174,21 +174,21 @@
 						-74.2494 	 -29.5563 	 -4.9354
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/holder1.ply"}
 				}
 				{bone "spader2"
 					{parameters "id=body;"}
 					{Position -69.4571 	 -41.115 	 -11.894}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/spader2.ply"}
 				}
 				{bone "spader1"
 					{parameters "id=body;"}
 					{Position -72.8655 	 -34.5356 	 -11.3253}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/spader1.ply"}
 				}
 				{bone "detail1"
 					{parameters "id=body;"}
-					
+					{VolumeView "../../../../-vehicle/ussr/cannon/122mm_a19/detail1.ply"}
 				}
 				{bone "spader1_help"
 					{matrix34

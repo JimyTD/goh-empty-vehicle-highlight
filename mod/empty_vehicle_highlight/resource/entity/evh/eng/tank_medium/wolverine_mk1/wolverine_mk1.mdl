@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch2 hatch_driver turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 11.11.2025 18:45:27
 ;File:			 E:\SVN GoH UK 3D models\vehicles\tank_medium\M10_gmc_wolverine\wolverine_mk1.max
@@ -36,7 +36,7 @@
 				}
 				{speed 0.006}
 				{Position -0.3647 	 0 	 20.4207}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -50,7 +50,7 @@
 						0 	 -1 	 0
 						20.6891 	 -0.0179 	 4.2598
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -59,7 +59,7 @@
 							0 	 1 	 0
 							-17.6656 	 0 	 -0.0179
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -84,7 +84,7 @@
 								0 	 0 	 1
 								-2.1307 	 0 	 0.5416
 							}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/breechblock.ply"}
 						}
 					}
 				}
@@ -98,7 +98,7 @@
 						0 	 0 	 1
 						-18.6206 	 0 	 13.4995
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/mgun_a_rot1.ply"}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -10 30}
@@ -108,7 +108,7 @@
 							0 	 -1 	 0
 							-0.2553 	 4.0321 	 3.6688
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/mgun_a_rot2.ply"}
 						{bone "mgun"
 							{Position -10.1888 	 0.8705 	 3.9209}
 						}
@@ -390,7 +390,7 @@
 					0.3907 	 0 	 0.9205
 					29.4307 	 15.023 	 18.8376
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/hatch_driver.ply"}
 			}
 			{bone "visor2"
 				{matrix34
@@ -505,7 +505,7 @@
 					0.3584 	 0 	 0.9336
 					29.3168 	 -14.9946 	 18.729
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/wolverine_mk1/hatch2.ply"}
 			}
 			{bone "detail10"
 				{parameters "id=body;"}

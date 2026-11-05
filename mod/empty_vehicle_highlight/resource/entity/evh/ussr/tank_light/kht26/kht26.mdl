@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hutchlower hutchupper turret
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/tank_light/kht26/start.anm"} {speed 0.65}}
@@ -28,11 +28,11 @@
 					{sequence "repair" {file "../../../../-vehicle/ussr/tank_light/kht26/turret_r.anm"}{speed 0.7}}
 				}
 				{Position -1.2535 	 -9.6104 	 21.3072}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/turret.ply"}
 				{bone "hatch"
 					{parameters "id=turret;"}
 					{Position 0.0812 	 0 	 12.1895}
-					
+					{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/hatch.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -63,7 +63,7 @@
 								0 	 1 	 0
 								0.1299 	 -0.0149 	 0.0104
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/mgunshield.ply"}
 						}
 						{bone "dt29"
 							{parameters "id=turret;"}
@@ -73,7 +73,7 @@
 								0 	 1 	 0
 								-3.7395 	 -1.0494 	 0.0139
 							}
-							
+							{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/dt29.ply"}
 						}
 						{bone "foresight5"
 							{matrix34
@@ -104,7 +104,7 @@
 							0 	 1 	 0
 							0.7476 	 0.098 	 0.005
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -129,12 +129,12 @@
 			{bone "hutchupper"
 				{parameters "id=body;"}
 				{Position 13.4555 	 -9.7283 	 20.333}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/hutchupper.ply"}
 			}
 			{bone "hutchlower"
 				{parameters "id=body;"}
 				{Position 22.3264 	 -9.7283 	 12.0605}
-				
+				{VolumeView "../../../../-vehicle/ussr/tank_light/kht26/hutchlower.ply"}
 			}
 			{bone revolute "wheell1"
 				{parameters "id=trackleft;"}

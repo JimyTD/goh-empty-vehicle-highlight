@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: sandbag turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 17.02.2022 18:45:06
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger\vehicles\cannon\sig33\150mm_sig33.max
@@ -129,7 +129,7 @@
 						0 	 -1 	 0
 						-0.1468 	 0.9452 	 3.5378
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/cannon/150mm_sig33/gun_rot.ply"}
 					{bone "gun_rot1"
 						{parameters "id=gun;"}
 						{matrix34
@@ -138,11 +138,11 @@
 							0 	 1 	 0
 							0.1468 	 -3.5377 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/cannon/150mm_sig33/gun_rot1.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 19.2915 	 -0.9385 	 3.7172}
-							
+							{VolumeView "../../../../-vehicle/germany/cannon/150mm_sig33/gun.ply"}
 							{bone "fx_invers"
 								{matrix34
 									-1 	 -0.0026 	 -0.001

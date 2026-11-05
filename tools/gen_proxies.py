@@ -2,13 +2,11 @@
 
 For every vehicle def in /entity/-vehicle (wrecks under /x/ and *_x / *_xx skipped):
   * proxy model    entity/evh/<faction>/.../<model>.mdl - copy of the vehicle's mdl whose
-                    ply/vol/anm references point back into /entity/-vehicle, with the
-                    geometry of moving parts removed (turrets, guns, trails, doors...:
-                    revolute bones and bones moved by pose animations such as close /
-                    open / aim). Those parts can sit in another pose on the real vehicle
-                    and showed up as a doubled image; the static rest of the proxy covers
-                    the vehicle exactly. Materials resolve next to the .mdl, so the
-                    vanilla .mtl files are copied alongside (texture paths kept valid).
+                    ply/vol/anm references point back into /entity/-vehicle. Materials
+                    resolve next to the .mdl, so every material name of the vanilla
+                    folder gets a copy of MARKER_MTL there: the proxy is invisible in
+                    the normal pass and only drawn by the key-C highlight pass.
+  * marker texture texture/common/evh/<MARKER_TEX>.dds - uniform alpha MARKER_ALPHA, see below
   * proxy entity   entity/evh/<faction>/.../evh_<name>.def - uses the proxy model, all
                     volumes "able clear", stuff extender -> outlined with key C
   * item           set/stuff/evh/evh_<name>  - hover text key desc/stuff/evh_<name>
@@ -43,8 +41,18 @@ ITEM_DIR = "evh"                       # items live in /set/stuff/evh/
 HOOK_FILE = "set/interaction_entity/debug.inc"
 KEY_SUFFIX = "obstacle_ignore_height"  # prop from /properties/vehicle.ext
 PROXY_LIFE = 3.3                       # must stay > refresh period in the .inc (3 s)
-# Note: an invisible proxy is not possible - the key-C outline is only drawn where the
-# proxy itself is drawn (tested: alpha 0 / alpha test / additive all lose the outline).
+# Invisible proxy: the normal pass of a "blend test" material discards pixels
+# with texture alpha < alpharef/255, the key-C highlight pass (silhouette_ps) discards
+# alpha < 0.5 regardless of alpharef. Alpha 0.6 with alpharef 255 is therefore dropped in
+# the normal pass and kept in the highlight pass. (Earlier test used alpha 0, which both
+# passes drop.)
+MARKER_TEX = "evh_marker"
+MARKER_ALPHA = 153                     # 0.6 * 255
+MARKER_MTL = ("{material simple\n"
+              f'\t{{diffuse "$/{PROXY_ROOT}/{MARKER_TEX}"}}\n'
+              "\t{alpharef 255}\n"
+              "\t{blend test}\n"
+              "}\n")
 
 # bones that rotate but keep the silhouette (wheels, tracks...) or carry the whole model
 KEEP_BONE = re.compile(r"(?i)wheel|track|roller|steer|suspension|sprocket|idler|basis|pivot"
@@ -53,16 +61,17 @@ KEEP_BONE = re.compile(r"(?i)wheel|track|roller|steer|suspension|sprocket|idler|
 TRANSIENT_SEQ = re.compile(r"(?i)^(start|stop|fire\w*|hit|recoil|shell_eject|repair|drift"
                            r"|engine\w*|board|wipers|headlight|reload\w*|move|wheels|water)$")
 MIN_VISIBLE = 0.10   # keep at least this share of the geometry, else hide less
+# Drop the geometry of moving parts from the proxy. Needed while the proxy was visible in
+# the normal pass (a part in another pose showed up doubled); with the invisible marker
+# material the proxy is only seen while key C is held, so the whole model is kept.
+HIDE_MOVING = False
 
 
 FILE_REF = re.compile(r'"([^"/\\]+\.(?:ply|vol|anm))"', re.I)
 SEQUENCE = re.compile(r'(?i)\{\s*sequence\s+"([^"]+)"')
-TEX_KEYS = re.compile(r'(\{\s*(?:diffuse1?|bump|specular|mask|lightmap|envmap|height)\s+")'
-                      r'([^"$/][^"]*)"', re.I)
 
 # outputs of older versions that must not be shipped any more
-LEGACY = ["resource/set/interaction_entity/entity.set", f"resource/entity/{VPAK}",
-          "resource/texture/common/evh"]
+LEGACY = ["resource/set/interaction_entity/entity.set", f"resource/entity/{VPAK}"]
 
 vz = zipfile.ZipFile(GAME / "resource/entity/-vehicle.pak")
 files = {n.lower(): n for n in vz.namelist()}
@@ -255,14 +264,14 @@ def explicit_sequence_files(text, mdl_dir):
 
 def write_proxy_model(mdl, proxy_dir):
     """Copy mdl into proxy_dir without the geometry of moving parts, file refs pointing
-    back to the vanilla folder, plus the vanilla materials. Returns (file name, hidden
-    bone names) or (None, None)."""
+    back to the vanilla folder, plus a marker material for every vanilla material name.
+    Returns (file name, hidden bone names) or (None, None)."""
     text = read(mdl)
     if text is None:
         return None, None
     mdl_dir = posixpath.dirname(mdl)
     back = posixpath.relpath(mdl_dir, proxy_dir)
-    drop, hidden = hidden_spans(text, mdl_dir)
+    drop, hidden = hidden_spans(text, mdl_dir) if HIDE_MOVING else ([], [])
     for s, e in sorted(drop, reverse=True):
         text = text[:s] + text[e:]
     plys = set()
@@ -285,27 +294,40 @@ def write_proxy_model(mdl, proxy_dir):
     header = (";// empty_vehicle_highlight proxy model (generated from vanilla)\n"
               f";// moving parts without geometry: {' '.join(hidden) or '-'}\n")
     (dest / name).write_text(header + out, encoding="utf-8")
-    # all vanilla materials of the folder (texmod variants included)
+    # every material name of the vanilla folder (texmod variants included) -> marker
     prefix = mdl_dir.lower() + "/"
     for low_name, real in files.items():
         if not (low_name.startswith(prefix) and low_name.endswith(".mtl")
                 and "/" not in low_name[len(prefix):]):
             continue
-        src = vz.read(real).decode("utf-8", "replace")
-
-        def absolute(t):
-            # texture next to the vanilla mtl -> absolute VFS path; others unchanged
-            local = posixpath.join(mdl_dir, t.group(2)).lower()
-            if any(local + ext in files for ext in (".dds", ".tex")):
-                return f'{t.group(1)}/entity/{mdl_dir}/{t.group(2)}"'
-            return t.group(0)
-
-        (dest / posixpath.basename(real)).write_text(TEX_KEYS.sub(absolute, src),
-                                                    encoding="utf-8")
-    missing = [m for m in mats if posixpath.join(mdl_dir, m).lower() not in files]
-    if missing:
-        print(f"  note {mdl}: plys use materials not in its folder: {missing}")
+        (dest / posixpath.basename(real)).write_text(MARKER_MTL, encoding="utf-8")
+    # materials the plys name but the folder lacks would otherwise render with a default
+    for m in mats:
+        if "/" not in m and "\\" not in m and not (dest / m).exists():
+            (dest / m).write_text(MARKER_MTL, encoding="utf-8")
     return name, hidden
+
+
+def write_marker_texture(size=64):
+    """DXT5 texture with mips, uniform grey, alpha MARKER_ALPHA everywhere."""
+    mips, w = [], size
+    while w >= 1:
+        mips.append(w)
+        w //= 2
+    # DXT5 block: alpha0 = alpha1 = MARKER_ALPHA, all alpha indices 0; colour 565 grey
+    grey = (16 << 11) | (32 << 5) | 16
+    block = bytes([MARKER_ALPHA, MARKER_ALPHA]) + bytes(6) + struct.pack("<HH", grey, grey) + bytes(4)
+    body = b"".join(block * (max(1, m // 4) ** 2) for m in mips)
+    header = struct.pack(
+        "<4s7I44s8I5I",
+        b"DDS ", 124, 0x1 | 0x2 | 0x4 | 0x1000 | 0x20000 | 0x80000, size, size,
+        max(1, size // 4) ** 2 * 16, 0, len(mips), bytes(44),
+        32, 0x4, int.from_bytes(b"DXT5", "little"), 0, 0, 0, 0, 0,
+        0x1000 | 0x8 | 0x400000, 0, 0, 0, 0)
+    assert len(header) == 128
+    dest = MOD / "resource" / "texture" / "common" / PROXY_ROOT / f"{MARKER_TEX}.dds"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_bytes(header + body)
 
 
 def resolve(cur_dir, ref):
@@ -405,6 +427,7 @@ def main():
         old_items.rmdir()
 
     write_hook()
+    write_marker_texture()
     names = load_names()
     defs = sorted(n for n in vz.namelist()
                   if n.endswith(".def") and not re.search(r"/x/|_xx?\.def$", n))

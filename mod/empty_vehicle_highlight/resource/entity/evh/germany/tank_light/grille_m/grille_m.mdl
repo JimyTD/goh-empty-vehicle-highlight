@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatchl driver_hatchr turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 28.09.2023 14:26:47
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_ger_updated\vehicles\tank_light\Grille_MK103\Grille M.max
@@ -235,21 +235,21 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/grille_m/turret_r.anm"}}
 				}
 				{Position -22.3374 	 0.8072 	 13.6343}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/turret.ply"}
 				{bone "grid"
 					{parameters "id=turret;"}
 					{Position 5.7865 	 -10.0576 	 10.7889}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/grid.ply"}
 				}
 				{bone "aim_h"
 					{parameters "id=turret;"}
 					{Position -10.3945 	 -1.5164 	 6.4331}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/aim_h.ply"}
 				}
 				{bone "aim_v"
 					{parameters "id=turret;"}
 					{Position -3.0541 	 -8.0427 	 9.7613}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/aim_v.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
@@ -262,7 +262,7 @@
 						0 	 -1 	 0
 						5.7472 	 -0.4636 	 12.4828
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/gun_rot.ply"}
 					{bone "gun_2"
 						{parameters "id=gun;"}
 						{matrix34
@@ -271,11 +271,11 @@
 							0 	 1 	 0
 							0.3098 	 -2.3096 	 -0.4217
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/gun_2.ply"}
 						{bone "gun"
 							{parameters "id=gun;"}
 							{Position 15.6792 	 0.1235 	 2.7173}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/gun.ply"}
 							{bone "fx_invers"
 								{matrix34
 									0 	 -1 	 0
@@ -289,7 +289,7 @@
 					{bone revolute "box_cover"
 						{parameters "id=gun;"}
 						{Position 0.1856 	 0.2566 	 -11.4521}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/box_cover.ply"}
 					}
 					{bone "ammo_help"
 						{matrix34
@@ -307,7 +307,7 @@
 							0 	 0.9999 	 -0.0154
 							0.2916 	 1.329 	 -1.1558
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_6"
 						{parameters "id=gun;"}
@@ -317,7 +317,7 @@
 							0 	 0.9974 	 -0.0715
 							0.2916 	 1.289 	 -2.2159
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_5"
 						{parameters "id=gun;"}
@@ -327,7 +327,7 @@
 							0 	 0.9749 	 -0.2227
 							0.2916 	 1.1401 	 -3.2653
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_4"
 						{parameters "id=gun;"}
@@ -337,7 +337,7 @@
 							0 	 0.8789 	 -0.4771
 							0.2916 	 0.7741 	 -4.2574
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_1"
 						{parameters "id=gun;"}
@@ -347,7 +347,7 @@
 							0 	 0.4867 	 -0.8736
 							0.2916 	 -1.56 	 -6.3493
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_2"
 						{parameters "id=gun;"}
@@ -357,7 +357,7 @@
 							0 	 0.5665 	 -0.8241
 							0.2916 	 -0.6507 	 -5.8035
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "ammo_3"
 						{parameters "id=gun;"}
@@ -367,7 +367,7 @@
 							0 	 0.7346 	 -0.6785
 							0.2916 	 0.153 	 -5.1144
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/ammo_7.ply"}
 					}
 					{bone "foresight1"
 						{matrix34
@@ -381,12 +381,12 @@
 				{bone "piston2"
 					{parameters "id=turret;"}
 					{Position 0.4182 	 -4.1834 	 4.8259}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/piston2.ply"}
 				}
 				{bone "piston1"
 					{parameters "id=turret;"}
 					{Position -0.5279 	 2.1687 	 3.549}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/piston1.ply"}
 				}
 				{bone "gunner"
 					{Position -10.7499 	 -8.338 	 2.1562}
@@ -495,12 +495,12 @@
 			{bone "driver_hatchr"
 				{parameters "id=body;"}
 				{Position 25.166 	 -11.7657 	 13.5236}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/driver_hatchr.ply"}
 			}
 			{bone "driver_hatchl"
 				{parameters "id=body;"}
 				{Position 25.1641 	 -0.6493 	 13.5246}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/grille_m/driver_hatchl.ply"}
 			}
 			{bone "detail5"
 				{parameters "id=body;"}

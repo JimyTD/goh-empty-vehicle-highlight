@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: mgun1_rot turret
+;// moving parts without geometry: -
 ;Exported by:	 nic21
 ;Date:			 18.04.2025 01:26:06
 ;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_ger\vehicles\tank_medium\pz3\pz3f.max
@@ -31,7 +31,7 @@
 				}
 				{speed 0.003}
 				{Position 5.9849 	 -0.008 	 8.408}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -45,7 +45,7 @@
 						0 	 -1 	 0
 						14.9876 	 0.1927 	 0.1207
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -54,7 +54,7 @@
 							0 	 1 	 0
 							15.0289 	 0.0823 	 -0.5146
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -72,7 +72,7 @@
 							-0.0151 	 0.9965 	 0.0827
 							1.5177 	 1.2333 	 5.8348
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/tmgu.ply"}
 						{bone "foresight5"
 							{matrix34
 								0.9999 	 -0.0023 	 -0.0151
@@ -85,7 +85,7 @@
 				}
 				{bone "enumerator1"
 					{Position 4.9828 	 -15.1178 	 0.7639}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/enumerator1.ply"}
 				}
 				{bone "fxfire3"
 					{matrix34
@@ -116,12 +116,12 @@
 				{bone "hatch_commander1_2"
 					{parameters "id=turret;"}
 					{Position -11.5714 	 5.5746 	 11.7113}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/hatch_commander1_2.ply"}
 				}
 				{bone "hatch_commander1_1"
 					{parameters "id=turret;"}
 					{Position -11.5714 	 -5.7715 	 11.7113}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/hatch_commander1_1.ply"}
 				}
 			}
 			{bone "engine"
@@ -437,7 +437,7 @@
 							1 	 0 	 0
 							-1.0395 	 0.167 	 -0.0007
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/hmgun1.ply"}
 						{bone "hmgu"
 							{parameters "id=body;"}
 							{matrix34
@@ -446,7 +446,7 @@
 								-0.9964 	 -0.0837 	 -0.0151
 								0.0246 	 0.0077 	 0.6388
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer3f/hmgu.ply"}
 							{bone "foresight4"
 								{matrix34
 									0.9999 	 -0.0013 	 -0.0151

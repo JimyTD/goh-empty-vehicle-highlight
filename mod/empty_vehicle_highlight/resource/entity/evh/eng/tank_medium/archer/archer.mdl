@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 04.11.2025 22:51:14
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_medium\Archer\archer.max
@@ -431,7 +431,7 @@
 					0 	 0 	 -1
 					16.3475 	 -0.0526 	 -3.6358
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_medium/archer/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -7 15}
@@ -442,7 +442,7 @@
 						0 	 -0.9998 	 -0.0175
 						-14.5364 	 0 	 -21.4646
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/archer/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -451,16 +451,16 @@
 							0 	 -0.9998 	 0.0175
 							-6.3137 	 0.8673 	 -0.0151
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/archer/gun.ply"}
 						{bone "breech"
 							{parameters "id=gun;"}
 							{Position 16.25 	 0 	 1.2034}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/archer/breech.ply"}
 						}
 						{bone "lever"
 							{parameters "id=body;"}
 							{Position 16.5587 	 3.4702 	 -0.1038}
-							
+							{VolumeView "../../../../-vehicle/eng/tank_medium/archer/lever.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -496,7 +496,7 @@
 						0 	 0 	 -1
 						-14.9307 	 0.0879 	 -23.6006
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/archer/gun_shield.ply"}
 				}
 				{bone "aim_ver"
 					{parameters "id=body;"}
@@ -506,7 +506,7 @@
 						0 	 0 	 -1
 						-8.0088 	 8.9408 	 -9.5411
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_medium/archer/aim_ver.ply"}
 				}
 				{bone "gunner"
 					{matrix34
@@ -526,7 +526,7 @@
 					{bone "aim_hor"
 						{parameters "id=body;"}
 						{Position 0 	 0 	 0}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_medium/archer/aim_hor.ply"}
 					}
 				}
 			}

@@ -1,7 +1,5 @@
-{material bump
-	{diffuse "$/_vehicle/uc_kieg"}
-	{bump "$/_vehicle/uc_kieg_bp"}
-	{specular "$/_vehicle/uc_kieg_sp"}
-	{color "230 230 230 25"}
-	{blend test}
-}
+{material simple
+	{diffuse "$/evh/evh_marker"}
+	{alpharef 255}
+	{blend test}
+}

@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aileron1 aileron2 canopy elevator1 elevator2 gun_rot1 propeller1 propeller1_work rudder
+;// moving parts without geometry: -
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/ussr/airborne/il2_mod42/engine_start.anm"} {speed 0.2}}
@@ -97,7 +97,7 @@
 							0.1561 	 0.9853 	 0.0698
 							-11.8555 	 3.9119 	 1.9178
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/aileron1.ply"}
 					}
 					{bone "shooter_r00"
 						{Position 11.4907 	 -24.8288 	 -5.3402}
@@ -157,7 +157,7 @@
 							-0.1758 	 0.9819 	 -0.0697
 							-16.0627 	 -4.2217 	 1.9637
 						}
-						
+						{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/aileron2.ply"}
 					}
 					{bone "shooter_r01"
 						{Position 7.2835 	 24.2994 	 -5.3307}
@@ -184,7 +184,7 @@
 				{limits -30 30}
 				{speed 0.1}
 				{Position -94.837 	 -0.0238 	 19.389}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/rudder.ply"}
 			}
 			{bone "glass"
 				{parameters "id=body;"}
@@ -194,11 +194,11 @@
 			{bone "canopy"
 				{parameters "id=body;"}
 				{Position 28.1665 	 0 	 16.3393}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/canopy.ply"}
 				{bone "glass_canopy"
 					{parameters "id=body;"}
 					{Position -0.8557 	 0 	 0.7543}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/glass_canopy.ply"}
 				}
 			}
 			{bone revolute "elevator2"
@@ -211,7 +211,7 @@
 					0 	 -1 	 0
 					-95.6857 	 -28.0872 	 4.7872
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/elevator2.ply"}
 			}
 			{bone revolute "elevator1"
 				{parameters "id=body;"}
@@ -223,7 +223,7 @@
 					0 	 -1 	 0
 					-95.6857 	 28.0872 	 4.7872
 				}
-				
+				{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/elevator1.ply"}
 			}
 			{bone "emit1"
 				{matrix34
@@ -301,7 +301,7 @@
 						0.163 	 -2.7879 	 26.605
 					}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/propeller1_work.ply"}
 				}
 				{bone revolute "propeller1"
 					{parameters "id=engine1;"}
@@ -311,7 +311,7 @@
 						0 	 1 	 0
 						0.163 	 -2.7879 	 26.605
 					}
-					
+					{VolumeView "../../../../-vehicle/ussr/airborne/il2_mod42/propeller1.ply"}
 				}
 			}
 			{bone "door2"

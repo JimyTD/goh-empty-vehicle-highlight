@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch driver_visor_hatch mgun_h_rot2 turret
+;// moving parts without geometry: -
 ;Exported by:	 Robin
 ;Date:			 01.07.2023 00:55:42
 ;File:			 G:\SVN GoH models\GoH_3D_vehicles_ger\vehicles\tank_medium\panther_gulegas\3dsmax\Panther A.max
@@ -431,12 +431,18 @@
 					0.4695 	 0 	 0.8829
 					41.8673 	 9.1026 	 13.9497
 				}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/driver_visor_hatch.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/driver_visor_hatch_lod1.ply"}
+				}
 			}
 			{bone "driver_hatch"
 				{parameters "id=body;"}
 				{Position 30.7861 	 15.8579 	 13.7905}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/driver_hatch.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/driver_hatch_lod1.ply"}
+				}
 			}
 			{bone revolute "turret"
 				{parameters "id=turret;"}
@@ -445,7 +451,10 @@
 				}
 				{speed 0.005}
 				{Position -1.9029 	 0 	 17.0798}
-				
+				{LODView
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret.ply"}
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_lod1.ply"}
+				}
 				{bone revolute "gun_rot"
 					{parameters "id=turret;"}
 					{animation
@@ -459,7 +468,10 @@
 						0 	 -1 	 0
 						21.3596 	 0 	 6.5459
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/gun_rot.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/gun_rot_lod1.ply"}
+					}
 					{bone "foresight5"
 						{matrix34
 							1 	 0 	 0
@@ -476,7 +488,10 @@
 							0 	 1 	 0
 							48.1253 	 0.1584 	 -0.0009
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/gun.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/gun_lod1.ply"}
+						}
 						{bone "foresight1"
 							{Position 38.6053 	 -0.0161 	 -0.0051}
 						}
@@ -489,7 +504,7 @@
 						-0.0318 	 -0.4279 	 0.9032
 						12.4005 	 17.6532 	 5.8209
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/enumerator.ply"}
 				}
 				{bone "visor1"
 					{Position 0.7968 	 7.0004 	 17.8967}
@@ -509,14 +524,17 @@
 						-0.0343 	 0.4277 	 0.9033
 						9.0885 	 -17.938 	 5.8582
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/enumerator2.ply"}
 				}
 				{bone revolute "mgun_a_rot1"
 					{parameters "id=turret;"}
 					{limits -179.9 65}
 					{terminator}
 					{Position -7.5539 	 6.938 	 19.5454}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_a_rot1.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_a_rot1_lod1.ply"}
+					}
 					{bone revolute "mgun_a_rot2"
 						{parameters "id=turret;"}
 						{limits -20 45}
@@ -526,7 +544,10 @@
 							0 	 -1 	 0
 							10.2818 	 -0.1094 	 0.0394
 						}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_a_rot2.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_a_rot2_lod1.ply"}
+						}
 						{bone "mgun"
 							{Position -1.5995 	 3.5232 	 0.0037}
 						}
@@ -551,12 +572,18 @@
 				{bone "detail9"
 					{parameters "id=turret;"}
 					{Position -16.6673 	 -17.3852 	 7.157}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/detail9.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/detail9_lod1.ply"}
+					}
 				}
 				{bone "commander_hatch"
 					{parameters "id=turret;"}
 					{Position -7.0162 	 12.9199 	 18.135}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/commander_hatch.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/commander_hatch_lod1.ply"}
+					}
 				}
 				{bone "smoke_shot1"
 					{matrix34
@@ -582,7 +609,10 @@
 						0.0266 	 -0.258 	 0.9658
 						-3.505 	 -18.2605 	 10.6724
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor1.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor1_lod1.ply"}
+					}
 				}
 				{bone "turret_armor2"
 					{parameters "id=turret;"}
@@ -592,7 +622,10 @@
 						0.0389 	 -0.2589 	 0.9651
 						9.798 	 -17.2507 	 10.3722
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor2.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor2_lod1.ply"}
+					}
 				}
 				{bone "turret_armor3"
 					{parameters "id=turret;"}
@@ -602,7 +635,10 @@
 						0.0247 	 0.2575 	 0.966
 						-3.5271 	 18.2473 	 10.6708
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor3.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor3_lod1.ply"}
+					}
 				}
 				{bone "turret_armor4"
 					{parameters "id=turret;"}
@@ -612,7 +648,10 @@
 						0.0588 	 0.2648 	 0.9625
 						9.7932 	 17.321 	 10.3814
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor4.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor4_lod1.ply"}
+					}
 				}
 				{bone "turret_armor5"
 					{parameters "id=turret;"}
@@ -622,7 +661,10 @@
 						-0.1484 	 0.2118 	 0.966
 						-16.0018 	 15.3075 	 10.6708
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor5.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/turret_armor5_lod1.ply"}
+					}
 				}
 			}
 			{bone "engine"
@@ -974,11 +1016,17 @@
 						0 	 1 	 0
 						0 	 0 	 0
 					}
-					
+					{LODView
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_h_rot1.ply"}
+						{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_h_rot1_lod1.ply"}
+					}
 					{bone "mgun_h"
 						{parameters "id=body;"}
 						{Position 5.7739 	 -0.4669 	 1.5104}
-						
+						{LODView
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_h.ply"}
+							{VolumeView "../../../../-vehicle/germany/tank_medium/panzer5a/mgun_h_lod1.ply"}
+						}
 						{bone "foresight4"
 							{Position 3.1373 	 -0.0013 	 0.0014}
 						}

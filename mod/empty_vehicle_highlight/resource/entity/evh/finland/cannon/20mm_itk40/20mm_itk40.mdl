@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: gun_rot leg_center leg_left leg_right mudguard_left mudguard_right stand turret valve_left valve_right
+;// moving parts without geometry: -
 ;Exported by:	 TigerF
 ;Date:			 13.07.2025 22:10:30
 ;File:			 D:\GOH\3dsmax9_saves\scenes\GoH_3d_vehicle_fin\3d vehicles\Cannon\20 ITK 40 VKT\20 ITK 40 VKT.max
@@ -40,7 +40,7 @@
 					{parameters "id=body;"}
 					{Position -39.3677 	 -1.3246 	 3.1533}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/mudguard_right.ply"}
 				}
 			}
 			{bone prizmatic "suspension_l1"
@@ -62,7 +62,7 @@
 					{parameters "id=body;"}
 					{Position -39.3677 	 1.5065 	 3.1918}
 					{visibility 0}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/mudguard_left.ply"}
 				}
 			}
 		}
@@ -76,7 +76,7 @@
 			{bone revolute "turret"
 				{parameters "id=body;"}
 				{Position 0.8319 	 0.0234 	 1.6114}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -88,7 +88,7 @@
 						0 	 -1 	 0
 						3.6499 	 0 	 9.2127
 					}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/gun_rot.ply"}
 					{bone "gun1"
 						{parameters "id=gun;"}
 						{matrix34
@@ -97,7 +97,7 @@
 							-0.0045 	 1 	 0
 							7.4303 	 0.4415 	 -1.5179
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/gun1.ply"}
 						{bone "shooter00"
 							{matrix34
 								0.9997 	 0 	 -0.0262
@@ -123,7 +123,7 @@
 							-0.0045 	 1 	 0
 							7.4303 	 0.4415 	 1.5179
 						}
-						
+						{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/gun2.ply"}
 						{bone "shooter01"
 							{matrix34
 								0.9997 	 0 	 -0.0262
@@ -153,17 +153,17 @@
 				{bone "aim_horizontal"
 					{parameters "id=body;"}
 					{Position -7.2756 	 0 	 5.3694}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/aim_horizontal.ply"}
 				}
 				{bone "aim_vertical"
 					{parameters "id=body;"}
 					{Position -7.5965 	 -5.3476 	 10.2025}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/aim_vertical.ply"}
 				}
 				{bone "sight_detail"
 					{parameters "id=body;"}
 					{Position -6.1988 	 3.6029 	 15.6234}
-					
+					{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/sight_detail.ply"}
 				}
 				{bone "gunner"
 					{Position -15.1448 	 -0.0243 	 -0.038}
@@ -183,7 +183,7 @@
 			{bone "valve_left"
 				{parameters "id=body;"}
 				{Position 4.5834 	 9.8196 	 1.6599}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/valve_left.ply"}
 			}
 			{bone "leg_left"
 				{parameters "id=body;"}
@@ -193,12 +193,12 @@
 					0 	 0 	 1
 					4.6462 	 9.7703 	 -2.2584
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/leg_left.ply"}
 			}
 			{bone "valve_right"
 				{parameters "id=body;"}
 				{Position 4.5834 	 -9.7727 	 1.6599}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/valve_right.ply"}
 			}
 			{bone "leg_right"
 				{parameters "id=body;"}
@@ -208,7 +208,7 @@
 					0 	 0 	 1
 					4.6462 	 -9.7235 	 -2.2584
 				}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/leg_right.ply"}
 			}
 			{bone "suspension_right"
 				{parameters "id=wheelright;"}
@@ -223,13 +223,13 @@
 			{bone "leg_center"
 				{parameters "id=body;"}
 				{Position -6.7795 	 0.0234 	 -2.0369}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/leg_center.ply"}
 			}
 			{bone "stand"
 				{parameters "id=body;"}
 				{Position -7.1027 	 0.0234 	 0.5513}
 				{visibility 0}
-				
+				{VolumeView "../../../../-vehicle/finland/cannon/20mm_itk40/stand.ply"}
 			}
 			{bone "seat1"
 				{matrix34

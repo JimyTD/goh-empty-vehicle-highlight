@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: driver_hatch1 driver_hatch2 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 22.10.2025 13:00:57
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_eng\vehicles\tank_light\tetrarch\tetrarch_mkvii.max
@@ -33,7 +33,7 @@
 				}
 				{speed 0.008}
 				{Position 4.3914 	 0.0045 	 16.8318}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{animation
@@ -47,7 +47,7 @@
 						0 	 -1 	 0
 						9.1335 	 0.0669 	 5.969
 					}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -56,7 +56,7 @@
 							0 	 1 	 0
 							9.3512 	 -0.7744 	 0.5372
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/gun.ply"}
 						{bone "foresight1"
 							{matrix34
 								1 	 0 	 0
@@ -74,7 +74,7 @@
 							0 	 1 	 0
 							1.2982 	 -1.6707 	 4.9147
 						}
-						
+						{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/coax.ply"}
 					}
 					{bone "foresight3"
 						{Position 12.2329 	 -0.9685 	 4.9215}
@@ -86,17 +86,17 @@
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{Position -8.2581 	 -0.0038 	 9.7652}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/turret_hatch.ply"}
 				}
 				{bone "1"
 					{parameters "id=turret;"}
 					{Position -7.459 	 -0.0014 	 9.274}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/1.ply"}
 				}
 				{bone "2"
 					{parameters "id=turret;"}
 					{Position -12.7282 	 -0.0033 	 7.8768}
-					
+					{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/2.ply"}
 				}
 				{bone "fxsmoke_shot1"
 					{matrix34
@@ -286,12 +286,12 @@
 					-0.1824 	 0 	 0.9832
 					26.2909 	 -6.9484 	 14.3184
 				}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/driver_hatch1.ply"}
 			}
 			{bone "driver_hatch2"
 				{parameters "id=body;"}
 				{Position 21.9768 	 0.0045 	 15.9419}
-				
+				{VolumeView "../../../../-vehicle/eng/tank_light/tetrarch_mk7/driver_hatch2.ply"}
 			}
 			{bone "fuel1"
 				{Position 18.1786 	 11.1316 	 9.9773}

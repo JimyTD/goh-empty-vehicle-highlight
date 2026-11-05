@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: dummy gun1_rot hull_hatch turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 27.04.2026 16:12:15
 ;File:			 G:\SVN\Working Resources\GatesOfHell\GoH_3d_vehicle_ger\vehicles\tank_heavy\B1-bis\B1_bis.max
@@ -104,7 +104,7 @@
 				}
 				{speed 0.005}
 				{Position 19.3871 	 2.6106 	 17.8036}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/turret.ply"}
 				{bone "turret_hatch"
 					{parameters "id=turret;"}
 					{matrix34
@@ -113,12 +113,12 @@
 						0 	 0 	 1
 						-15.0863 	 -4.8217 	 2.4326
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/turret_hatch.ply"}
 				}
 				{bone "commander_cupola"
 					{parameters "id=turret;"}
 					{Position -3.2082 	 1.9675 	 13.3221}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/commander_cupola.ply"}
 					{bone "visor1"
 						{Position 8.6232 	 0.0852 	 2.3414}
 					}
@@ -135,7 +135,7 @@
 							0 	 -1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/mgun_c_rot2.ply"}
 						{bone "foresight5"
 							{matrix34
 								1 	 0 	 0
@@ -166,7 +166,7 @@
 							0 	 0 	 -1
 							0 	 1 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/gun.ply"}
 						{bone "foresight1"
 							{Position 21.868 	 0.2472 	 -0.2611}
 						}
@@ -179,7 +179,7 @@
 							0 	 1 	 0
 							0 	 0 	 0
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/mantlet.ply"}
 					}
 				}
 				{bone "fxfire3"
@@ -204,7 +204,7 @@
 					0 	 -1 	 0
 					43.222 	 -5.5311 	 3.4866
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/gun1_rot.ply"}
 				{bone "gun1"
 					{parameters "id=gun1;"}
 					{matrix34
@@ -213,7 +213,7 @@
 						0 	 1 	 0
 						-0.5681 	 -0.3238 	 0.0272
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/gun1.ply"}
 					{bone "foresight1a"
 						{Position 19.1069 	 -0.0126 	 0.2785}
 					}
@@ -222,7 +222,7 @@
 			{bone "hull_hatch"
 				{parameters "id=body;"}
 				{Position 19.6055 	 -23.5114 	 0.9346}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_heavy/panzerb2/hull_hatch.ply"}
 			}
 			{bone "driver_hatch"
 				{parameters "id=body;"}

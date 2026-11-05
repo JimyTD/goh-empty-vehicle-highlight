@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: aim_hor hatch1 mgun_mount shield4 shield5 shield6 shield7 shield8 turret
+;// moving parts without geometry: -
 ;Exported by:	 guita
 ;Date:			 15.11.2023 10:14:29
 ;File:			 D:\Git\3D_Scenes\GoH_3D_vehicles_usa\vehicles\tank_medium\M7_priest\m7_hmc.max
@@ -37,7 +37,7 @@
 				{limits -30 15}
 				{speed 0.007}
 				{Position 15.0195 	 -5.1606 	 14.3159}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/turret.ply"}
 				{bone revolute "gun_rot"
 					{parameters "id=gun;"}
 					{limits -5 35}
@@ -48,7 +48,7 @@
 						0 	 -1 	 0
 						-5.4047 	 0.8877 	 3.436
 					}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -57,16 +57,16 @@
 							0 	 1 	 0
 							1.4495 	 3.1537 	 0.5955
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/gun.ply"}
 						{bone "breech_block"
 							{parameters "id=gun;"}
 							{Position -4.0067 	 -0.3608 	 0.4483}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/breech_block.ply"}
 						}
 						{bone "lever"
 							{parameters "id=gun;"}
 							{Position -5.2452 	 -2.2587 	 2.1074}
-							
+							{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/lever.ply"}
 						}
 						{bone "foresight1"
 							{matrix34
@@ -85,7 +85,7 @@
 							0 	 1 	 0
 							2.6662 	 -0.5988 	 8.0601
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/aim_ver1.ply"}
 					}
 					{bone "aim_ver2"
 						{parameters "id=gun;"}
@@ -95,7 +95,7 @@
 							0 	 1 	 0
 							-9.9063 	 -1.8052 	 -3.0753
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/aim_ver2.ply"}
 					}
 				}
 			}
@@ -103,12 +103,12 @@
 				{parameters "id=body;"}
 				{speed 0.01}
 				{Position 13.255 	 -18.9802 	 31.551}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/mgun_mount.ply"}
 				{bone revolute "mgun_1_rot1"
 					{parameters "id=body;"}
 					{limits -5 5}
 					{Position 7.272 	 0 	 2.0372}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/mgun_1_rot1.ply"}
 					{bone revolute "mgun_1_rot2"
 						{parameters "id=body;"}
 						{limits -10 35}
@@ -118,7 +118,7 @@
 							0 	 -1 	 0
 							0.0015 	 0 	 3.1871
 						}
-						
+						{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/mgun_1_rot2.ply"}
 						{bone "mgun"
 							{matrix34
 								1 	 0 	 0.0015
@@ -156,27 +156,27 @@
 			{bone "shield4"
 				{parameters "id=body;"}
 				{Position -1.3346 	 26.0831 	 21.1977}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/shield4.ply"}
 			}
 			{bone "shield5"
 				{parameters "id=body;"}
 				{Position -24.339 	 -0.0037 	 21.2625}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/shield5.ply"}
 				{bone "detail1"
 					{parameters "id=body;"}
 					{Position 1.5529 	 0.0242 	 2.6668}
-					
+					{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/detail1.ply"}
 				}
 			}
 			{bone "shield6"
 				{parameters "id=body;"}
 				{Position -1.3346 	 -26.0861 	 21.1977}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/shield6.ply"}
 			}
 			{bone "hatch1"
 				{parameters "id=body;"}
 				{Position 25.7022 	 11.0097 	 24.6408}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/hatch1.ply"}
 			}
 			{bone "engine"
 				{parameters "id=engine;"}
@@ -468,7 +468,7 @@
 					0 	 0 	 1
 					12.9417 	 5.2114 	 15.091
 				}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/aim_hor.ply"}
 			}
 			{bone "visor2"
 				{Position 30.303 	 10.4426 	 22.2632}
@@ -479,12 +479,12 @@
 			{bone "shield7"
 				{parameters "id=body;"}
 				{Position -24.339 	 23.3735 	 21.2625}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/shield7.ply"}
 			}
 			{bone "shield8"
 				{parameters "id=body;"}
 				{Position -24.339 	 -23.8764 	 21.2625}
-				
+				{VolumeView "../../../../-vehicle/usa/tank_medium/m7_hmc/shield8.ply"}
 			}
 			{bone "charger"
 				{matrix34

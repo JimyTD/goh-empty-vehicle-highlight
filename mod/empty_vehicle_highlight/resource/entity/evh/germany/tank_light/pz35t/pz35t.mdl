@@ -1,5 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
-;// moving parts without geometry: hatch hatch_l hatch_r mgun_h_rot1 turret
+;// moving parts without geometry: -
 ;Exported by:	 carlos
 ;Date:			 04.10.2023 13:49:42
 ;File:			 F:\GoH_3D_vehicles_ger\vehicles\tank_light\PZ35t\Pz_35t.max
@@ -187,12 +187,12 @@
 					0.0185 	 0 	 0.9998
 					30.2512 	 -5.7783 	 11.4346
 				}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/hatch_r.ply"}
 			}
 			{bone "hatch_l"
 				{parameters "id=body;"}
 				{Position 30.2688 	 8.2366 	 11.43}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/hatch_l.ply"}
 			}
 			{bone "visor2"
 				{Position 32.3654 	 -5.8146 	 10.0328}
@@ -226,11 +226,11 @@
 							0 	 1 	 0
 							0.0121 	 -0.0034 	 0.0009
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/mg_hull.ply"}
 						{bone "detail1"
 							{parameters "id=body;"}
 							{Position 5.2693 	 -0.0091 	 -0.3693}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail1.ply"}
 						}
 					}
 				}
@@ -241,7 +241,7 @@
 					{sequence "repair" {file "../../../../-vehicle/germany/tank_light/pz35t/turret_r.anm"}{speed 0.5}}
 				}
 				{Position 5.7323 	 -0.0839 	 17.4534}
-				
+				{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/turret.ply"}
 				{bone "hatch"
 					{parameters "id=turret;"}
 					{matrix34
@@ -250,7 +250,7 @@
 						0 	 0 	 1
 						-5.954 	 0.1932 	 11.4051
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/hatch.ply"}
 				}
 				{bone revolute "gun_rot"
 					{parameters "id=mantlet;"}
@@ -263,7 +263,7 @@
 						0 	 -1 	 0
 						11.0798 	 0.015 	 3.9557
 					}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/gun_rot.ply"}
 					{bone "gun"
 						{parameters "id=gun;"}
 						{matrix34
@@ -272,7 +272,7 @@
 							0 	 1 	 0
 							3.53 	 -1.296 	 0.015
 						}
-						
+						{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/gun.ply"}
 						{bone "foresight1"
 							{Position 18.2841 	 0.1593 	 0.0485}
 						}
@@ -310,11 +310,11 @@
 								0 	 1 	 0
 								0.0166 	 -0.1505 	 -0.022
 							}
-							
+							{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/mg_turret.ply"}
 							{bone "detail2"
 								{parameters "id=body;"}
 								{Position 5.2988 	 -0.0501 	 -0.3303}
-								
+								{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/detail2.ply"}
 							}
 						}
 						{bone "foresight5"
@@ -329,11 +329,11 @@
 				}
 				{bone "enumerator1"
 					{Position -0.3419 	 11.688 	 4.2943}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/enumerator1.ply"}
 				}
 				{bone "enumerator2"
 					{Position -0.3419 	 -11.6919 	 4.2943}
-					
+					{VolumeView "../../../../-vehicle/germany/tank_light/pz35t/enumerator2.ply"}
 				}
 				{bone revolute "commander_rot"
 					{terminator}
