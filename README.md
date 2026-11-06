@@ -76,7 +76,7 @@ python tools/check_log.py
 - 有人上车后轮廓最多还留 3 秒左右。
 - 覆盖了原版 `set/interaction_entity/debug.inc`（只追加两行 include），与同样覆盖该文件、或自带的 `entity.set` 不再引用 `debug.inc` 的模组冲突。
 - 其他模组新增的载具没有替身，不会高亮。
-- 未测试联机。
+- 面向单人游戏，联机不在支持范围内。
 
 ## License
 

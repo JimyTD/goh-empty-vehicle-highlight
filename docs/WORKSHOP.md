@@ -34,7 +34,7 @@ Press the vanilla [b]"highlight items"[/b] key (default [b]C[/b]) to also outlin
 [*]While C is held, the outline can differ from the real vehicle: turrets, barrels and doors are drawn in their default pose, and on slopes the outline can be tilted. This is only visible while C is held.
 [*]Towed guns and trailers are not outlined while being towed.
 [*]Only appends two include lines to the small vanilla [i]set/interaction_entity/debug.inc[/i]; it no longer overrides [i]entity.set[/i], so it works alongside most big mods. Vehicles added by other mods are not highlighted.
-[*]Multiplayer not tested.
+[*]Made for single player. Multiplayer is not supported.
 [/list]
 
 Source code & generator: https://github.com/JimyTD/goh-empty-vehicle-highlight
@@ -58,7 +58,7 @@ Source code & generator: https://github.com/JimyTD/goh-empty-vehicle-highlight
 [*]按住 C 时轮廓可能和真车不完全一致：炮塔、炮管、车门是默认姿态，坡上的轮廓可能带倾斜。这些偏差只在按住 C 时看得到。
 [*]被牵引中的火炮和拖车不显示轮廓。
 [*]只在原版很小的 [i]set/interaction_entity/debug.inc[/i] 末尾追加两行引用，不再覆盖 [i]entity.set[/i]，可与大多数大型模组同时使用。其他模组新增的载具不会高亮。
-[*]未测试联机。
+[*]面向单人游戏，联机不在支持范围内。
 [/list]
 
 源码与生成器：https://github.com/JimyTD/goh-empty-vehicle-highlight
