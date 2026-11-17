@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 10.03.2026 23:49:24
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\airborne\bf109_f4\bf109g6_export.max
 {skeleton
 	{animation
 		{sequence "engine_start" {file "../../../../-vehicle/germany/airborne/bf109_g6/engine_start.anm"} {speed 0.7}}

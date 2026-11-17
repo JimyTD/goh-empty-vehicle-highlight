@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 04.04.2025 14:06:39
-;File:			 D:\Program Files (x86)\gates_of_hell_3dsmax\GoH_3d_vehicle_rus\vehicles\car\gaz_67\GAZ-67.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/car/gaz67/start.anm"} {speed 0.6}}

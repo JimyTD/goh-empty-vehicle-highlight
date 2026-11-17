@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 02.10.2025 08:22:20
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\btr\sdkfz221\sdkfz-221_Export.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/germany/btr/sdkfz221/start.anm"} {speed 0.7}}

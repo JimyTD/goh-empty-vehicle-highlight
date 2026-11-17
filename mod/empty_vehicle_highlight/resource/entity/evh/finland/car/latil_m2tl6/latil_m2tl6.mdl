@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 15.01.2026 18:49:15
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_fin\3d vehicles\car\Latil_M2TL6\latil_m2tl6.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/finland/car/latil_m2tl6/start.anm"} {speed 0.6}}

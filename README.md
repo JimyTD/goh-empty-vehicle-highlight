@@ -68,7 +68,7 @@ python tools/install.py         # 装到游戏 mods 目录
 python tools/check_log.py
 ```
 
-游戏版本超出 `mod.info` 中 `maxGameVersion` 后，模组会被判定不兼容，需要修改版本号并重新上传。
+`mod.info` 只写 `minGameVersion`，不设 `maxGameVersion`：设了上限的话，游戏一更新超过上限，模组就会被判定不兼容并停用，用它建的存档也会读不了。
 
 ## 已知限制
 

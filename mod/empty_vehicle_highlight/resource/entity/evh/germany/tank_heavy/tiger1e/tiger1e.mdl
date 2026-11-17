@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 01.09.2025 21:40:38
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_heavy\tiger H and E\Pz6 Tiger E.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/germany/tank_heavy/tiger1e/start.anm"} {speed 0.7}}

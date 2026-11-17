@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 05.08.2025 12:59:38
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_ger\vehicles\tank_heavy\tiger2h\kingtiger_export.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/germany/tank_heavy/tiger2h/start.anm"} {speed 0.65}}

@@ -1,8 +1,5 @@
 ;// empty_vehicle_highlight proxy model (generated from vanilla)
 ;// moving parts without geometry: -
-;Exported by:	 nic21
-;Date:			 18.12.2025 19:14:08
-;File:			 C:\Gates of Hell SVN\GoH_3d_vehicle_rus\vehicles\btr\t20\t-20.max
 {skeleton
 	{animation
 		{sequence "start" {file "../../../../-vehicle/ussr/btr/t20/start.anm"} {speed 0.7}}
